@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2C4F7C">
+<title>Fuß-Track · Ihr Begleiter rund um die OP</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+  :root {
+    --c-main: #2C4F7C;
+    --c-main-dark: #1F3A5C;
+    --c-bg: #F7F8FA;
+    --c-card: #FFFFFF;
+    --c-text: #1A202C;
+    --c-text-muted: #4A5568;
+    --c-border: rgba(0,0,0,0.10);
+    --c-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    --c-warning-bg: #FFF6E5;
+    --c-warning-border: #E65100;
+    --c-success-bg: #E6F4EA;
+    --c-success-border: #137333;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--c-bg); color: var(--c-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app { max-width: 720px; margin: 0 auto; padding: 16px; min-height: 100vh; }
+  .app-header {
+    text-align: center; padding: 16px 0 8px;
+    border-bottom: 2px solid var(--c-main);
+    margin-bottom: 24px;
+  }
+  .app-header h1 {
+    margin: 0; font-size: 22px; font-weight: 800;
+    color: var(--c-main); letter-spacing: -0.5px;
+  }
+  .app-header .subtitle {
+    font-size: 12px; color: var(--c-text-muted); margin-top: 4px;
+    font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  /* Karten */
+  .card {
+    background: var(--c-card);
+    border-left: 3px solid var(--c-main);
+    border-radius: 6px;
+    box-shadow: var(--c-shadow);
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .card.warning {
+    background: var(--c-warning-bg); border-left-color: var(--c-warning-border);
+  }
+  .card.success {
+    background: var(--c-success-bg); border-left-color: var(--c-success-border);
+  }
+  .card h2 { margin: 0 0 12px; font-size: 17px; color: var(--c-main); }
+  .card h3 { margin: 0 0 8px; font-size: 14px; color: var(--c-text); font-weight: 600; }
+  .card p { margin: 0 0 8px; }
+  .card-label {
+    font-size: 11px; font-weight: 600; color: var(--c-main);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+  }
+  /* Buttons */
+  .btn {
+    display: inline-block; padding: 10px 18px;
+    border: none; border-radius: 6px; cursor: pointer;
+    font-size: 14px; font-weight: 600;
+    transition: opacity 0.15s;
+  }
+  .btn:hover { opacity: 0.88; }
+  .btn-primary { background: var(--c-main); color: white; }
+  .btn-secondary { background: white; color: var(--c-main); border: 1px solid var(--c-main); }
+  .btn-small { padding: 6px 12px; font-size: 13px; }
+  .btn-large { padding: 14px 24px; font-size: 16px; }
+  .btn-block { display: block; width: 100%; text-align: center; }
+  /* Inputs */
+  input[type="date"], input[type="text"], select {
+    width: 100%; padding: 10px 12px;
+    border: 1px solid var(--c-border); border-radius: 6px;
+    font-size: 15px; font-family: inherit;
+    background: white;
+  }
+  input[type="date"]:focus, select:focus { outline: 2px solid var(--c-main); outline-offset: -1px; }
+  label { display: block; font-size: 13px; font-weight: 600; color: var(--c-text); margin-bottom: 6px; }
+  /* Phasen-Timeline */
+  .timeline { display: flex; flex-direction: column; gap: 8px; }
+  .phase {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 12px 14px; border-radius: 6px;
+    border: 1px solid var(--c-border); background: white;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .phase:hover { background: var(--c-bg); }
+  .phase.current { border-color: var(--c-main); background: white; box-shadow: var(--c-shadow); }
+  .phase.past { opacity: 0.7; }
+  .phase-marker {
+    flex: 0 0 36px; width: 36px; height: 36px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 700;
+    background: var(--c-bg); color: var(--c-text-muted); border: 2px solid var(--c-border);
+  }
+  .phase.current .phase-marker { background: var(--c-main); color: white; border-color: var(--c-main); }
+  .phase.past .phase-marker { background: var(--c-text-muted); color: white; border-color: var(--c-text-muted); }
+  .phase-content { flex: 1; }
+  .phase-title { font-weight: 700; font-size: 14px; color: var(--c-text); }
+  .phase-meta { font-size: 12px; color: var(--c-text-muted); margin-top: 2px; }
+  .phase-thema { font-size: 13px; color: var(--c-text); margin-top: 4px; }
+  .phase.current .phase-title { color: var(--c-main); }
+  /* Aktive-Phase-Hervorhebung */
+  .current-badge {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    background: var(--c-main); color: white; border-radius: 10px;
+    padding: 2px 8px; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.3px;
+  }
+  /* Datenschutz-Banner */
+  .privacy-banner {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: white; border-top: 2px solid var(--c-main);
+    padding: 16px; box-shadow: 0 -4px 16px rgba(0,0,0,0.10);
+    z-index: 1000;
+  }
+  .privacy-banner-inner { max-width: 720px; margin: 0 auto; }
+  .privacy-banner p { margin: 0 0 12px; font-size: 13px; color: var(--c-text); }
+  .privacy-banner-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  /* Vorauswahl-Hinweis */
+  .preselect-hint {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; color: var(--c-main); font-weight: 600;
+    background: rgba(44,79,124,0.08); padding: 4px 10px;
+    border-radius: 12px; margin-top: 4px;
+  }
+  /* Branding-Box */
+  .branding {
+    max-width: 480px; margin: 24px auto 8px; padding: 14px 16px;
+    background: white; border-left: 3px solid var(--c-main);
+    border-radius: 6px; box-shadow: var(--c-shadow);
+    text-align: left; font-size: 12.5px; line-height: 1.5; color: var(--c-text);
+  }
+  .branding-label {
+    font-size: 10px; font-weight: 600; color: var(--c-main);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;
+  }
+  .branding-name { font-weight: 700; }
+  .branding-klinik {
+    color: var(--c-text); font-size: 12px;
+    margin-top: 4px; padding-top: 4px;
+    border-top: 1px solid var(--c-border);
+  }
+  /* Cover-Block */
+  .cover {
+    text-align: center; padding: 40px 20px 20px;
+  }
+  .cover-icon {
+    width: 64px; height: 64px; margin: 0 auto 16px;
+    color: var(--c-main);
+  }
+  .cover h1 {
+    margin: 0 0 12px; font-size: 26px; color: var(--c-main); letter-spacing: -0.5px;
+  }
+  .cover .lead {
+    font-size: 14px; color: var(--c-text-muted); max-width: 480px; margin: 0 auto 20px;
+  }
+  /* Error-Page (kein URL-Parameter) */
+  .error-page {
+    text-align: center; padding: 48px 24px;
+  }
+  .error-page .icon {
+    width: 64px; height: 64px; margin: 0 auto 20px;
+    color: var(--c-warning-border);
+  }
+  .error-page h2 { color: var(--c-main); margin: 0 0 12px; }
+  .error-page p { color: var(--c-text-muted); max-width: 420px; margin: 0 auto 16px; }
+  /* Progress-Indikator */
+  .progress-pill {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    background: rgba(44,79,124,0.10); color: var(--c-main);
+    padding: 4px 10px; border-radius: 12px;
+  }
+  /* Step-Indikator im Onboarding */
+  .stepper { display: flex; gap: 6px; justify-content: center; margin-bottom: 16px; }
+  .stepper-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--c-border);
+  }
+  .stepper-dot.active { background: var(--c-main); }
+  .stepper-dot.done { background: var(--c-main); opacity: 0.5; }
+  /* Footer */
+  .footer-links {
+    text-align: center; margin: 32px 0 16px;
+    font-size: 11px; color: var(--c-text-muted);
+  }
+  .footer-links a {
+    color: var(--c-text-muted); text-decoration: underline; margin: 0 6px;
+  }
+  /* Modal */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center; padding: 16px;
+    z-index: 999;
+  }
+  .modal {
+    background: white; border-radius: 8px; padding: 24px;
+    max-width: 480px; width: 100%; box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+  }
+  .modal h3 { margin: 0 0 12px; color: var(--c-main); }
+  .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+"use strict";
+
+/* ============================================================
+ * EINGRIFFE-KATALOG (skalierbar — neue Eingriffe einfach hinzufügen)
+ * ============================================================ */
+const EINGRIFFE = {
+  chevron: {
+    label: "Großzehe (Chevron-Osteotomie)",
+    kurzlabel: "Chevron",
+    varianten: {
+      einfach: {
+        label: "ohne Zusatzeingriffe",
+        beschreibung: "Operation an der Großzehe allein"
+      },
+      komplex: {
+        label: "mit weiteren Eingriffen",
+        beschreibung: "Großzehe plus z.B. Mittelfußosteotomie oder Kleinzehenkorrektur"
+      }
+    }
+  },
+  osg_arthrodese: {
+    label: "OSG-Versteifung (Arthrodese)",
+    kurzlabel: "OSG-Arthrodese",
+    varianten: {
+      einfach: {
+        label: "mit Teilbelastung",
+        beschreibung: "Sie dürfen mit 15 kg teilbelasten"
+      },
+      komplex: {
+        label: "mit kompletter Entlastung",
+        beschreibung: "Vollentlastung erforderlich (Immobilisation)"
+      }
+    }
+  },
+  osg_tep: {
+    label: "OSG-Prothese (Endoprothese)",
+    kurzlabel: "OSG-Prothese",
+    varianten: {
+      einfach: {
+        label: "Prothese allein",
+        beschreibung: "Standard-Nachbehandlung mit 4 Wochen Teilbelastung"
+      },
+      komplex: {
+        label: "mit Zusatzeingriff",
+        beschreibung: "Mit knöcherner Korrektur, längere Teilbelastung"
+      }
+    }
+  }
+  // Weitere Eingriffe hier ergänzen — Struktur bleibt gleich
+};
+
+/* ============================================================
+ * PHASEN-ARCHITEKTUR (skalierbar)
+ * ----------------------------------------------------------------
+ * Phase-Objekt: { id, type, tagOffset, label, thema, emoji }
+ *   type:
+ *     "onboarding" → wird sofort gezeigt, kein Datums-Bezug (tagOffset: null)
+ *     "calendar"   → tagOffset (Tage relativ zur OP) entscheidet, wann sichtbar/aktuell
+ *
+ * Aufbau pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey]
+ *   ONBOARDING        — nur Begrüßung (sofort sichtbar)
+ *   SHARED_PRE_OP     — kalenderbasiert, alle drei Eingriffe identisch
+ *   POST_OP[opKey]    — eingriffsspezifisch, beide Varianten teilen sich die Liste
+ *
+ * Texte stehen in PHASEN_INHALTE, getrennt nach Phase-ID.
+ * ============================================================ */
+
+const ONBOARDING_PHASEN = [
+  { id: "begruessung", type: "onboarding", tagOffset: null, label: "Bei Anlage", thema: "Begrüßung", emoji: "👋" }
+];
+
+const SHARED_PRE_OP_PHASEN = [
+  { id: "hintergrund",            type: "calendar", tagOffset: -50, label: "ca. 50 Tage vor OP", thema: "Hintergrundinformation", emoji: "ℹ️" },
+  { id: "risikoverminderung",     type: "calendar", tagOffset: -45, label: "ca. 45 Tage vor OP", thema: "Risikoverminderung", emoji: "🛡️" },
+  { id: "diabetes",               type: "calendar", tagOffset: -45, label: "ca. 45 Tage vor OP", thema: "Diabetes mellitus", emoji: "🩺" },
+  { id: "nikotin",                type: "calendar", tagOffset: -42, label: "ca. 42 Tage vor OP", thema: "Nikotinkonsum", emoji: "🚭" },
+  { id: "ernaehrung",             type: "calendar", tagOffset: -42, label: "ca. 42 Tage vor OP", thema: "Ernährung", emoji: "🍎" },
+  { id: "versorgung_sozial",      type: "calendar", tagOffset: -40, label: "ca. 40 Tage vor OP", thema: "Versorgung nach OP — Sozial", emoji: "🤝" },
+  { id: "versorgung_hilfsmittel", type: "calendar", tagOffset: -40, label: "ca. 40 Tage vor OP", thema: "Versorgung nach OP — Hilfsmittel", emoji: "🦯" },
+  { id: "wadendehnung",           type: "calendar", tagOffset: -36, label: "ca. 36 Tage vor OP", thema: "Wadenmuskeldehnung & Gleichgewicht", emoji: "🧘" },
+  { id: "aktiv_bleiben",          type: "calendar", tagOffset: -32, label: "ca. 32 Tage vor OP", thema: "Bleiben Sie aktiv", emoji: "🚴" },
+  { id: "entspannung",            type: "calendar", tagOffset: -30, label: "ca. 30 Tage vor OP", thema: "Entspannung & Achtsamkeit", emoji: "🧠" },
+  { id: "medikamente_vor",        type: "calendar", tagOffset: -28, label: "ca. 28 Tage vor OP", thema: "Medikamente prüfen", emoji: "💊" },
+  { id: "arbeitgeber",            type: "calendar", tagOffset: -21, label: "ca. 21 Tage vor OP", thema: "Arbeitgeber informieren", emoji: "💼" },
+  { id: "termine_nach",           type: "calendar", tagOffset: -18, label: "ca. 18 Tage vor OP", thema: "Termine nach OP planen", emoji: "📅" },
+  { id: "praemed_vorbereitung",   type: "calendar", tagOffset: -14, label: "ca. 14 Tage vor OP", thema: "Vorbereitung auf die Prämedikation", emoji: "📋" },
+  { id: "wohnung_vorbereitung",   type: "calendar", tagOffset: -14, label: "ca. 14 Tage vor OP", thema: "Vorbereitung der Wohnung", emoji: "🏠" },
+  { id: "fahrt_planung",          type: "calendar", tagOffset:  -7, label: "ca. 7 Tage vor OP",  thema: "Planung der Fahrt", emoji: "🚗" },
+  { id: "praemed_termin",         type: "calendar", tagOffset:  -5, label: "ca. 5 Tage vor OP",  thema: "Prämedikationstermin", emoji: "🩻" },
+  { id: "tasche_packen",          type: "calendar", tagOffset:  -4, label: "ca. 4 Tage vor OP",  thema: "Packen Sie Ihre Tasche", emoji: "🎒" },
+  { id: "blutverduenner",         type: "calendar", tagOffset:  -2, label: "2 Tage vor OP",      thema: "Blutverdünner pausieren", emoji: "💉" },
+  { id: "nuechternheit",          type: "calendar", tagOffset:  -2, label: "2 Tage vor OP",      thema: "Nüchternheit beachten", emoji: "🍽️" },
+  { id: "schmuck",                type: "calendar", tagOffset:  -1, label: "1 Tag vor OP",       thema: "Schmuck und Piercings ablegen", emoji: "💍" },
+  { id: "letzter_abend",          type: "calendar", tagOffset:  -1, label: "1 Tag vor OP",       thema: "Entspannung am Vorabend", emoji: "🌙" }
+];
+
+// Nach-OP-Phasen pro Eingriff (beide Varianten teilen sich die Liste)
+const POST_OP_PHASEN_BY_OP = {
+  chevron: [
+    { id: "ch_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "ch_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "ch_zuhause",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Zu Hause ankommen", emoji: "🏡" },
+    { id: "ch_mobilisierung",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
+    { id: "ch_hygiene",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "ch_verband_1",      type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "ch_verband_2",      type: "calendar", tagOffset:   7, label: "1 Woche nach OP",   thema: "Zweiter Verbandwechsel", emoji: "🩹" },
+    { id: "ch_faden",          type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "ch_verband_ab",     type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Abnahme des Verbandes", emoji: "👟" },
+    { id: "ch_bewegung",       type: "calendar", tagOffset:  22, label: "3 Wochen nach OP",  thema: "Bewegungsübungen Großzehengrundgelenk", emoji: "🦶" },
+    { id: "ch_narbe",          type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "ch_sport",          type: "calendar", tagOffset:  42, label: "ca. 6 Wochen nach OP", thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "ch_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+  ],
+  osg_arthrodese: [
+    { id: "ar_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "ar_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "ar_mobilisierung",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
+    { id: "ar_hygiene",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "ar_entlassung",     type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Entlassung", emoji: "🏡" },
+    { id: "ar_verband_1",      type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "ar_faden",          type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "ar_verband_ab",     type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
+    { id: "ar_bewegung",       type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
+    { id: "ar_narbe",          type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "ar_roentgen",       type: "calendar", tagOffset:  49, label: "ca. 7 Wochen nach OP", thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
+    { id: "ar_sport",          type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "ar_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+  ],
+  osg_tep: [
+    { id: "tep_op_tag",        type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "tep_abschwellung",  type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "tep_mobilisierung", type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
+    { id: "tep_hygiene",       type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "tep_entlassung",    type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Entlassung", emoji: "🏡" },
+    { id: "tep_verband_1",     type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "tep_faden",         type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "tep_verband_ab",    type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
+    { id: "tep_bewegung",      type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
+    { id: "tep_narbe",         type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "tep_roentgen",      type: "calendar", tagOffset:  42, label: "6 Wochen nach OP",  thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
+    { id: "tep_sport",         type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "tep_kontrolle",     type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+  ]
+};
+
+// Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey]
+// (beide Varianten eines Eingriffs bekommen dieselbe Liste — Differenzierung folgt später)
+function getPhasenForVariant(opKey, variantKey) {
+  const postPhasen = POST_OP_PHASEN_BY_OP[opKey] || [];
+  return ONBOARDING_PHASEN.concat(SHARED_PRE_OP_PHASEN).concat(postPhasen);
+}
+
+/* ============================================================
+ * PHASEN_INHALTE — Texte und Sub-Themen-Verweise pro Phase
+ * Texte defensiv formuliert (keine Heilversprechen, keine "schmerzfrei"-Aussagen).
+ * Sub-Themen mit { platzhalter: true } = Detailinhalt folgt später.
+ * ============================================================ */
+const PHASEN_INHALTE = {
+  // ====== ONBOARDING ======
+  begruessung: {
+    intro: "Mit dieser App und dem Ablauf zur geplanten Operation möchten wir Ihnen die Planung und Vorbereitung auf den Eingriff vereinfachen. Im Verlauf bekommen Sie viele Hinweise zum bevorstehenden Eingriff sowie Hilfestellungen, um typische organisatorische und medizinische Probleme gar nicht aufkommen zu lassen.",
+    text: "Dieser Ablauf ist für den Eingriff standardisiert und setzt einen unkomplizierten Verlauf voraus.\n\nWenn ein konkretes OP-Datum geplant wurde, dann hat in aller Regel bereits ein Termin in der Sprechstunde der behandelnden Klinik stattgefunden. Hier sollte sich ein Kollege der chirurgischen Abteilung anhand von Bildgebung, Untersuchung und Ihrer geschilderten Beschwerden einen Eindruck über Ihr Krankheitsbild gemacht haben. Ebenfalls sollte eine Aufklärung über die alternativen Behandlungsoptionen und ein Überblick über die Risiken verschafft worden sein.",
+    subthemen: [
+      { label: "Suchfeld bei den Krankheitsbildern", platzhalter: true }
+    ]
+  },
+
+  // ====== SHARED PRE-OP ======
+  hintergrund: {
+    intro: "Sollten zu Ihrem Krankheitsbild oder den Behandlungsmöglichkeiten noch Fragen bestehen, dann informieren Sie sich hier noch einmal genauer über die Erkrankung und den geplanten Eingriff.",
+    text: "Sollten Sie noch unsicher sein oder Fragen bestehen, dann kontaktieren Sie Ihren behandelnden Arzt.\n\nEbenfalls können Sie sich überlegen, ob Sie sich vor dem Eingriff eine Zweitmeinung einholen möchten. Wenn Sie dies wünschen, dann sollten Sie dies zeitnah organisieren, da hier gewisse Wartezeiten auf den Termin aufkommen können. Bezüglich in Frage kommender Experten können Sie bei Ihrer Krankenkasse nachfragen oder sich auf der Homepage von ClarCert über zertifizierte Zentren in Ihrer Umgebung informieren.",
+    subthemen: [
+      { label: "Weitere Informationen zur Auswahl des Behandlers", platzhalter: true }
+    ]
+  },
+  risikoverminderung: {
+    intro: "Jede Operation wird auf Grund von Schmerzen und Einschränkungen und in der Hoffnung einer Besserung des Befundes geplant. Die Auseinandersetzung mit den Risiken und Komplikationen gehört zu den unangenehmen Teilen, da man sich diese in der Regel gar nicht vorstellen möchte. Auch können die verschiedenen Komplikationen Ängste wecken und fördern.",
+    text: "Es ist aber ärztliche Pflicht, über Komplikationen zu informieren und den Patientinnen und Patienten die Möglichkeit zu geben, Kosten und Nutzen eines Eingriffes aufgeklärt abwiegen zu können.\n\nAls Patient kann man diese Auseinandersetzung auch konstruktiv nutzen, da die Wahrscheinlichkeit vieler Komplikationen maßgeblich durch Verhaltensweisen und vorbereitete Maßnahmen beeinflusst werden kann. Im Rahmen dieser Funktion werden Sie immer wieder auf Maßnahmen zur Sicherstellung des bestmöglichen Ergebnisses und größtmöglichen Schutzes vor Komplikationen hingewiesen.",
+    subthemen: [
+      { label: "Gängige Faktoren für erhöhte Komplikationswahrscheinlichkeit", platzhalter: true }
+    ]
+  },
+  diabetes: {
+    intro: "Wenn Sie an einer Zuckerkrankheit leiden, dann lassen Sie Ihren Blutzucker und HbA1c messen, falls Sie diese Werte nicht kennen.",
+    text: "Beide Werte sollten idealerweise im Normbereich liegen. Bei einem HbA1c über 7 % besteht ein deutlich erhöhtes Komplikationsrisiko. Nehmen Sie hier mit Ihrem Diabetologen oder Hausarzt Kontakt auf, um zu überlegen, ob eine bessere Einstellung möglich ist.\n\nGrundbausteine sind Bewegung, zuckerfreie Ernährung und eine gute medikamentöse Einstellung. Es hilft häufig bereits, seine Zuckerwerte regelmäßig selbst zu messen, um ein Gefühl für die Einstellung zu bekommen.",
+    subthemen: [
+      { label: "Diabetes Mellitus", platzhalter: true }
+    ]
+  },
+  nikotin: {
+    intro: "Ein maßgeblicher beeinflussbarer Risikofaktor ist Rauchen und Nikotinkonsum in jeglicher Form.",
+    text: "Sowohl das Risiko für Probleme der Wund- als auch der Knochenheilung ist erhöht. Auch beobachtet man in der Klinik regelhaft, dass Raucher sich besonders früh nach der OP selbstständig im Rollstuhl oder an Stützen mobilisieren, obwohl konsequente Schonung und Hochlagerung des Fußes für die Abschwellung der Weichteile notwendig wären.\n\nOhne Frage wäre aus vielen Gründen das Pausieren des Rauchens sinnvoll; bezüglich der Risikoverminderung bei Operationen des Bewegungsapparates sind hier vor allem die 6 Wochen vor und nach dem Eingriff von Bedeutung. Sollte man seinen Konsum nicht pausieren können, wäre eine konsequente Reduktion gerade in dieser Zeit für eine Verminderung des Risikos förderlich.\n\nInformieren Sie sich hier über Nikotinersatzprodukte wie Nikotinpflaster oder Akupunktur zur Unterstützung der Rauchentwöhnung.",
+    subthemen: [
+      { label: "Informationen zum Risikofaktor Rauchen", platzhalter: true },
+      { label: "Akupunktur zur Rauchentwöhnung", platzhalter: true }
+    ]
+  },
+  ernaehrung: {
+    intro: "Eine gesunde Ernährung ist wichtig für viele Körperfunktionen und ein stabiles Immunsystem.",
+    text: "Auch Erkrankungen oder Operationen werden besser überstanden, wenn der Körper keinen Mangel an wichtigen Nährstoffen hat.\n\nSollten Mangelzustände oder eine Blutarmut bei Ihnen bekannt sein, dann stellen Sie sich frühzeitig bei Ihrem Hausarzt vor, damit eine aktuelle Blutuntersuchung durchgeführt werden kann. Gerade der Ausgleich von Vitamin-D- oder Eisenmangelzuständen sollte frühzeitig erfolgen, da die Veränderungen im Knochenstoffwechsel oder die Blutbildung Zeit in Anspruch nehmen.",
+    subthemen: [
+      { label: "Ernährung bei Knochen-, Knorpel- und Sehneneingriffen", platzhalter: true },
+      { label: "Vitamin C", platzhalter: true }
+    ]
+  },
+  versorgung_sozial: {
+    intro: "Nach der Operation sind Sie vermindert mobil und auf Hilfsmittel angewiesen.",
+    text: "Treppensteigen, Einkaufen, Führen des Haushaltes und das Aufsuchen von Physiotherapiepraxen oder Arztterminen kann herausfordernd sein.\n\nÜberlegen Sie sich jetzt bereits, ob in Ihrer Wohnung noch Vorbereitungen notwendig werden oder ob Sie die Zeit nach der Operation lieber bei einem Freund oder Familienmitglied verbringen möchten, wenn Ihr Haushalt sich nicht eignet. Ungeeignet sind beispielsweise Wohnsituationen, bei denen man zwangsläufig viele Treppenstufen überwinden muss — etwa eine Wohnung in der 4. Etage ohne Aufzug oder eine Wohnung, in der Schlafzimmer und Bad auf verschiedenen Etagen sind. Dies kann nach dem Eingriff zu ungeahnten Problemen führen mit erhöhter Sturzgefahr, Frustration oder Überlastung.\n\nEbenfalls können Sie bereits Partner, Bekannte oder Freunde fragen, ob diese Ihnen nach der Operation helfen können, wenn Sie einen Termin wahrnehmen müssen. Nach der Entlassung werden Sie 1–2× pro Woche zum Arzt fahren müssen, dazu kommen Termine für Physiotherapie oder Lymphdrainage.",
+    subthemen: []
+  },
+  versorgung_hilfsmittel: {
+    intro: "Nach dem Eingriff werden verschiedene Hilfsmittel benötigt.",
+    text: "An Rollstühlen, Knierollern, Gehstützen, Duschhockern oder Badewannenbrettern stehen verschiedene Modelle zur Verfügung. Sie können hier bereits überlegen, was Sie benötigen, diese im Sanitätshaus ansehen oder ausprobieren und vorbestellen. Damit benötigen Sie nach dem Eingriff nur noch das Rezept und sind sofort mit allem versorgt, was Sie brauchen.\n\nGerade bei organisatorisch aufwendigen Hilfsmitteln wie einem Pflegebett oder Treppenlift muss zuerst eine Kostenzusage der Kasse eingeholt werden, was einige Zeit in Anspruch nehmen kann.",
+    subthemen: []
+  },
+  wadendehnung: {
+    intro: "Nach dem Eingriff werden Sie eingeschränkt mobil sein.",
+    text: "Eine Kontraktur der Wadenmuskulatur ist ein gängiges Problem, welches durch Ruhigstellungen nach dem Eingriff noch gefördert werden kann. Fangen Sie hier jetzt bereits mit einem konsequenten Dehnprogramm an und nutzen Sie Gleichgewichtsübungen.\n\nIhr Fuß wird es Ihnen nach dem Eingriff danken, wenn Sie bereits gut gedehnt und mit geschulter Körperwahrnehmung in die Klinik kommen.",
+    subthemen: [
+      { label: "Dehnung Achillessehne", platzhalter: true },
+      { label: "Propriozeptionsübungen", platzhalter: true }
+    ]
+  },
+  aktiv_bleiben: {
+    intro: "Auch wenn die Ursache Ihrer Behandlung zu Schmerzen führt, wird die Erholung schneller laufen, wenn Sie auch vor dem Eingriff möglichst aktiv bleiben.",
+    text: "Sinnvoll sind hier Aktivitäten mit geringer Belastung für Ihre Gelenke, wie Schwimmen, Wassergymnastik, Radfahren, Ergometertraining oder Spazierengehen.",
+    subthemen: []
+  },
+  entspannung: {
+    intro: "Neben Übungen für Ihren Fuß sind auch Übungen für den Geist sinnvoll.",
+    text: "Langsam merken Sie gegebenenfalls auch schon ein wenig Nervosität, wenn Sie an den Eingriff denken. Um entspannt durch die komplette Behandlung zu kommen und auch mit Situationen der Frustration zurechtzukommen, ist das Erlernen von Entspannungstechniken sinnvoll.\n\nDiese helfen Ihnen auch im Rahmen des Klinikaufenthaltes oder nach der Entlassung, besser in den Schlaf zu kommen oder Ihr Schmerzniveau zu senken. Viele Patientinnen und Patienten beklagen nicht nur Beschwerden im OP-Gebiet, sondern auch Verspannungen von Rücken, Nacken oder Kiefer.",
+    subthemen: []
+  },
+  medikamente_vor: {
+    intro: "Die meisten Medikamente können Sie im Rahmen eines Eingriffes weiter zu sich nehmen.",
+    text: "Einige Wirkstoffe müssen aber vor dem Eingriff abgesetzt oder pausiert werden. Dies betrifft vor allem Medikamente bei Diabetes- oder Rheumaerkrankungen sowie Blutverdünnungsmittel.\n\nSollten Sie hier Medikamente einnehmen, dann sollten Sie Kontakt zu Ihrem behandelnden Arzt aufnehmen, damit Sie die Einnahme oder Pause planen können.",
+    subthemen: [
+      { label: "Medikamente bei Rheuma", platzhalter: true }
+    ]
+  },
+  arbeitgeber: {
+    intro: "Erinnern Sie noch einmal Ihren Arbeitgeber und Ihre Kollegen an Ihre Abwesenheit.",
+    text: "Kommunizieren Sie grob die Dauer der Arbeitsunfähigkeit. So können gegebenenfalls noch Projekte abgeschlossen oder Planungen angepasst werden.",
+    subthemen: []
+  },
+  termine_nach: {
+    intro: "Nach der Entlassung werden Kontrolltermine nötig sein.",
+    text: "Diese können in der behandelnden Klinik durchgeführt werden; sollte diese aber keine Kassenzulassung haben oder weit entfernt sein, werden Sie zu Ihrem niedergelassenen Arzt gehen. Machen Sie sich hier bereits Termine, in der Regel 3–4 Tage nach dem Eingriff. Hier kann Ihnen dann die AU verlängert werden, neue Rezepte ausgestellt und der Verband erneuert werden.\n\nEbenfalls können Sie bereits Termine für Lymphdrainage oder Physiotherapie buchen, da diese häufig etwas Vorlauf benötigen. Wann dies nach dem Eingriff möglich ist, sagt Ihnen Ihr Behandler. Fragen Sie auch nach, ob ein Hausbesuch möglich ist, da dies gerade bei sehr eingeschränkter Mobilität das Leben deutlich vereinfachen kann.",
+    subthemen: []
+  },
+  praemed_vorbereitung: {
+    intro: "Der Eingriff rückt näher, und bald werden Sie zur OP-Vorbereitung in die Klinik fahren müssen, damit der Eingriff und die Narkose mit Ihnen besprochen werden.",
+    text: "Überlegen Sie sich nun noch genau, welche Fragen Sie zum Eingriff haben, und schreiben Sie sich diese auf. Ebenfalls sollten Sie Dokumente, die Sie benötigen, schon einmal zusammensuchen (Einweisung/Überweisung, Versicherungskarte, Ausweise, Medikamentenplan, Implantatpässe, Allergiepass, Narkosepass, Vorbefunde).",
+    subthemen: []
+  },
+  wohnung_vorbereitung: {
+    intro: "Nun rückt der Termin näher. Sie können nun auch im Haushalt konkrete Vorbereitungen treffen.",
+    text: "Erinnern Sie noch einmal Freunde und Bekannte, die Ihnen Hilfe angeboten haben, an Ihren Termin. Ebenfalls können Sie sich über Möglichkeiten zur Lieferung von Lebensmitteln informieren, ausreichend auf Vorrat einkaufen oder sogar vorkochen. Besonders wenn Sie alleine leben, sparen Sie sich so viel Arbeit und Stress in der sowieso anstrengenden Phase nach dem Eingriff.\n\nAchten Sie auf Dinge, die Sie häufig benötigen (Geschirr, Töpfe, Kleidungsstücke), die aber schwer erreichbar sind, weil sie unter dem Bett liegen oder auf dem Schrank stehen. Stellen Sie diese an Stellen bereit, an denen Sie sie einfach und auch aus dem Rollstuhl heraus oder an Gehstützen erreichen können.\n\nPrüfen Sie noch einmal Ihr Badezimmer und legen Sie rutschfeste Unterlagen in die Dusche oder Badewanne. Ebenfalls ist die Nutzung eines Badewannenbrettes, eines Duschhockers oder eines Schwammes mit langem Stiel sinnvoll. Nach der Operation sollten Sie nicht auf nassem Untergrund auf einem Bein in der Dusche jonglieren müssen.\n\nGehen Sie die Wege in Ihrer Wohnung ab und entfernen Sie Stolperfallen wie Teppiche oder niedrige Möbelstücke.\n\nSollte Ihr Bett niedrig sein, dann legen Sie sich eine zweite Matratze in Ihr Bett, damit Sie einfacher ein- und aussteigen können.",
+    subthemen: []
+  },
+  fahrt_planung: {
+    intro: "Am Tag des Eingriffes werden Sie in der Regel früh morgens gegen 6:45–8:00 Uhr — je nach Uhrzeit des Eingriffes — in der Klinik sein müssen.",
+    text: "Sie haben bei der Anfahrt einiges an Gepäck dabei, sind wahrscheinlich etwas nervös, und etwas Zuspruch schadet nicht.\n\nPlanen Sie noch einmal, wer Sie wann abholt, wie lange die Fahrt dauert, und erinnern Sie diese Person an den Termin.",
+    subthemen: []
+  },
+  praemed_termin: {
+    intro: "Nun steht der Termin zur Prämedikation bevor.",
+    text: "Legen Sie sich alle benötigten Unterlagen heraus und überprüfen Sie diese auf Vollständigkeit: Einweisung/Überweisung, Versicherungskarte, Ausweise, Medikamentenplan, Implantatpässe, Allergiepass, Narkosepass (falls einmal eine Narkoseproblematik bestand), Vorbefunde.\n\nWenn Sie bereits Aufklärungsunterlagen erhalten haben, dann füllen Sie diese aus und legen Sie sie ebenfalls bereit.\n\nNotieren Sie sich ruhig Fragen, damit Sie diese im Gespräch noch stellen können. Es kommt häufig vor, dass Patienten hier etwas aufgeregt sind und diese vergessen. Erfragen Sie beim Aufklärungsgespräch mit dem aufklärenden Arzt auch, wie genau in Ihrem Fall die Weiterbehandlung und Belastung nach dem Eingriff aussieht.",
+    subthemen: []
+  },
+  tasche_packen: {
+    intro: "Stellen Sie nun alles zusammen, was Sie mitnehmen möchten.",
+    text: "Dies sind persönliche Dinge, Glücksbringer, Snacks, gemütliche Kleidung mit weitem Bein, Hygieneartikel und Unterhaltungsmedien.\n\nNehmen Sie keine Wertgegenstände oder größere Bargeldsummen mit in die Klinik, dies werden Sie in der Regel nicht benötigen.",
+    subthemen: []
+  },
+  blutverduenner: {
+    intro: "Sollten Sie spezielle Blutverdünnungsmittel wie Xarelto, Lixiana oder Eliquis einnehmen, müssen diese in der Regel 2 Tage vor dem Eingriff abgesetzt werden.",
+    text: "Bei Einnahme von Marcumar muss bereits früher eine Pause eingehalten und regelmäßig der INR gemessen werden. Sollten Unklarheiten bestehen, dann kontaktieren Sie hier Ihren Behandler.",
+    subthemen: []
+  },
+  nuechternheit: {
+    intro: "Im Rahmen der Prämedikation werden die Kollegen der Anästhesie Sie zur Nüchternheit beraten.",
+    text: "Sollten Sie nicht nüchtern sein, kann das Narkoserisiko deutlich steigen, und die Narkoseärzte könnten die Narkose verweigern. Dies gilt auch bei geplanter peripherer Nervenblockade oder Rückenmarknarkose.\n\nSie können feste Nahrung bis zu 6 Stunden vor dem Eingriff zu sich nehmen. Da man nie genau weiß, wann der OP-Termin ist, sollte man am OP-Tag selber nichts mehr essen. Dies gilt auch für Milch und Fruchtsäfte. Klare Flüssigkeiten können Sie noch bis zu 2 Stunden vor dem Eingriff zu sich nehmen.",
+    subthemen: []
+  },
+  schmuck: {
+    intro: "Legen Sie Schmuck und Piercings ab.",
+    text: "Diese können im OP auf Grund der Nutzung von Strom am Körper stören, bei Schwellung der Hände nach dem Eingriff zu Schmerzen führen oder im schlimmsten Fall verloren gehen.",
+    subthemen: []
+  },
+  letzter_abend: {
+    intro: "Nutzen Sie den letzten Abend ruhig, um sich etwas zu zerstreuen und abzulenken.",
+    text: "Machen Sie eine Entspannungsübung, kochen Sie etwas Leckeres und trinken Sie ruhig auch ein Glas Wein. Seien Sie zuversichtlich und denken Sie an die positiven Erwartungen, die Sie an den Eingriff knüpfen.",
+    subthemen: []
+  },
+
+  // ====== CHEVRON Post-OP ======
+  ch_op_tag: {
+    intro: "Vor der OP sind Sie informiert worden, wie Sie sich anschließend verhalten können, um Ihre Genesung zu fördern.",
+    text: "Der Fuß sollte vorerst hochgelagert werden und kann gekühlt werden. Nach dem Eingriff wird in aller Regel eine Kollegin oder ein Kollege vom OP-Team bei Ihnen vorbeikommen und Sie über den Verlauf des Eingriffes informieren. Treten Sie vorerst nicht auf den Fuß auf, bis man Ihnen nach dem Eingriff hier die Freigabe erteilt. Je nach Befund in der OP kann es durchaus mal sein, dass das Behandlungs- und Belastungskonzept individuell angepasst werden muss.\n\nDie erste Mobilisierung findet in aller Regel mit einer Pflegeperson statt, die Sie anleitet und Ihnen hilft. Sobald die Schutzreflexe komplett wieder vorhanden sind, können Sie etwas essen und trinken. Seien Sie nicht besorgt, wenn man etwas Blut durch den Verband sieht. Dies ist nicht selten. Ebenfalls ist es möglich, dass der komplette Fuß oder Teile davon sich gefühlslos oder taub anfühlen. Auch dies ist kein Grund zur Sorge, da häufig eine Betäubung am Ende der OP zur besseren Einstellung der Schmerzen gegeben wird. Fragen Sie diesbezüglich bei der nächsten Visite aber einmal nach.\n\nSchmerz und Übelkeit sind nach einem Eingriff nicht immer zu vermeiden. Die Schwestern und Pfleger haben hier Bedarfsmedikamente angeordnet, die Sie sich selbst einfordern können, sollte dies nötig sein. Fragen Sie also stets gerne aktiv nach, wenn Sie Unterstützung benötigen.",
+    subthemen: []
+  },
+  ch_abschwellung: {
+    intro: "Es kommt bei Operationen des Fußes nicht selten zu deutlichen Schwellungen.",
+    text: "Dies ist in einem gewissen Rahmen nicht zu verhindern, kann aber bei ausgeprägter Form die Schmerzen und auch die Gefahr einer Wundheilungsstörung mit Infekt fördern. Eine konsequente Abschwellung ist also immer sinnvoll. Hier stellen Hochlagerung, Kühlung und Schonung die Basismaßnahmen dar. Der Fuß sollte auf einem Kissen oder einer Schiene hochgelagert werden, während Sie liegen.\n\nSitzen an der Bettkante, frühe Mobilisierung in den Stand oder den Rollstuhl mit herabhängendem Fuß fördert die Schwellung und sollte vorerst vermieden werden. Zusätzlich hilft Kühlung; hierfür können Sie Cool-Packs nutzen oder einfach eine Packung TK-Gemüse. Das Kühlelement sollte nicht direkt auf den Fuß gelegt werden, sondern in ein Handtuch eingeschlagen werden. Gerade in der Frühphase, in der eine Fußbetäubung noch wirkt oder bei vorbestehenden Nervenschäden, kann übermäßiges Kühlen auch zu Erfrierungen oder Gewebeschäden führen.\n\nAls Grundregel für das Kühlen gilt: Mindestens 15 Minuten 3× pro Tag. Bei häufigerem Kühlen sollte das Kühlelement regelmäßig entfernt werden, so dass der Fuß mindestens so lange ohne Kühlung liegt, wie er gekühlt wurde.\n\nEs bestehen medikamentöse Mittel zur Förderung der Abschwellung wie Papain oder Bromelain, deren Wirkung aber überschaubar ist und trotz deren Einnahme die Basismaßnahmen konsequent erfolgen müssen.\n\nLymphdrainage kann bei der Abschwellung zusätzlich helfen. Dies kann bei stationärer Therapie im Krankenhaus oder im häuslichen Bereich über Rezept erfolgen. Bei Entlassung kann man in der Regel ein Rezept über 6 Termine zu 30 Minuten vom Behandler im Rahmen des Entlassmanagements erhalten.",
+    subthemen: []
+  },
+  ch_zuhause: {
+    intro: "Die einfache Hallux-valgus-Korrektur mittels Chevron-Osteotomie findet häufig ambulant statt.",
+    text: "Bei aufwendigerem Kombinationseingriff, beidseitiger OP oder relevanten Vorerkrankungen kann hier auch eine stationäre Überwachung nötig sein. Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist und Sie die ersten Schritte selber bewältigt haben.\n\nBei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann. Sollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
+    subthemen: []
+  },
+  ch_mobilisierung: {
+    intro: "Bei der Chevron-Osteotomie oder ähnlichen Osteotomien am MT I können Sie in der Regel voll belasten.",
+    text: "Dies bedeutet, dass Sie in dem Verbandschuh ohne Stützen auftreten und nach Möglichkeit normal laufen. Wenn das volle Belasten möglich ist und keine Neigung zu Thrombosen vorliegt, müssen Sie keinen Thromboseschutz spritzen. Dies sollten Sie bei Ihrem Behandler aber immer explizit nachfragen.\n\nBei beidseitiger Operation ist nicht selten, dass die Patienten einige Tage 2 Stützen benötigen und durchaus etwas weniger mobil sind. Auch wenn bei beidseitiger OP eine volle Belastung erlaubt ist und formell kein Thromboseschutz angewendet werden muss, kann hier das Spritzen für 1–2 Wochen, zumindest bis zum Erreichen einer guten Mobilität, sinnvoll sein.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+    subthemen: [
+      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+    ]
+  },
+  ch_hygiene: {
+    intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
+    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: []
+  },
+  ch_verband_1: {
+    intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
+    text: "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten.\n\nEbenfalls wird nun in der Regel in Abhängigkeit von der Wunde der nächste Termin mit Ihnen geplant. Meistens ist dieser in ca. einer Woche.",
+    subthemen: []
+  },
+  ch_verband_2: {
+    intro: "Beim Verbandwechsel wird die Wunde desinfiziert, Steri-Strips können belassen werden.",
+    text: "Die Wunde sollte nun trocken sein, die Abschwellung bereits erkennbar. Ein neuer redressierender Verband wird angelegt mit Zentrierung der großen Zehe, damit hier die korrigierten Weichteile unterstützt ausheilen können. Eine Anleitung zur Verbandstechnik finden Sie in unserem Nachbehandlungsschema.\n\nSie können Fragen zum Verlauf stellen und eine neue AU ausgestellt bekommen. Der nächste Termin ist in der Regel in einer Woche zum Fadenzug. Sollten Sie noch Thromboseschutzspritzen nutzen, dann können Sie nun fragen, ob Sie diese noch weiter benötigen.",
+    subthemen: [
+      { label: "Anleitung zur Verbandstechnik (Nachbehandlungsschema)", platzhalter: true }
+    ]
+  },
+  ch_faden: {
+    intro: "Das einliegende Nahtmaterial wird entfernt; bei resorbierbaren Fäden müssen nur die Knoten gekappt werden.",
+    text: "Dies sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer redressierender Verband angelegt und das weitere Procedere besprochen. Sollten die Zwischenzehenkeile und eine Hallux-Schiene noch nicht vorliegen, können Sie nun mit Ihrem Behandler besprechen, ob dieser Ihnen die Hilfsmittel noch verschreibt. Die Zwischenzehenkeile sind in der Regel nicht verschreibungsfähig und müssen für wenige Euro im Sanitätshaus gekauft werden.",
+    subthemen: []
+  },
+  ch_verband_ab: {
+    intro: "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
+    text: "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht.",
+    subthemen: []
+  },
+  ch_bewegung: {
+    intro: "Eine Steife des Großzehengrundgelenkes als Folge der Ruhigstellung und Vernarbungen im Körper ist kein seltenes Problem.",
+    text: "Dieser Steife können Sie vorbeugen, indem Sie frühzeitig mit Bewegungsübungen des Großzehengrundgelenkes in die Beugung und Hebung beginnen. Dies können Sie vorsichtig selbst im beschwerdefreien Bereich machen. Häufig ist dies am Anfang nur in geringem Maße möglich und kann dann von Tag zu Tag gesteigert werden.\n\nEine Führung der Großzehe zur guten Ausreifung der gerafften Kapsel und verlagerten Sehne auf der Fußinnenseite ist aber weiterhin nötig mittels Zwischenzehenkeile und Schiene. Alternativ kann hier auch ein Taping genutzt werden, was aber regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden muss.",
+    subthemen: []
+  },
+  ch_narbe: {
+    intro: "Aktuell sollten Sie bereits schon wieder halbwegs flüssig im weiten Schuh mit Hilfe der Zwischenzehenkeile laufen.",
+    text: "Wenn die Wunde nun komplett abgeheilt ist, die Kruste sich gelöst hat und kein Sekret im Pflaster ist, können Sie mit Narbenpflege beginnen. Ein Beginn ca. 6 Wochen nach dem Eingriff ist ausreichend, früher muss dies nicht sein.\n\nSie können sich hier Narbenöl oder ähnliches kaufen; in der Regel ist es aber auch effektiv, die Narbe mehrmals täglich mit Bepanthen oder Panthenol kräftig zu massieren. Die Massage löst Verklebungen und fördert die Durchblutung. Dieser mechanische Effekt ist wichtiger als die Art der verwendeten Salbe.",
+    subthemen: []
+  },
+  ch_sport: {
+    intro: "Sie können nun mit sportlicher Betätigung beginnen.",
+    text: "In aller Regel bieten sich hier vorerst Radfahren auf dem Ergometer, Wassergymnastik oder Rudern an der Maschine im weiten Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nLauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist meistens 6 Wochen nach dem Eingriff noch nicht umsetzbar. Ab jetzt können Sie, bei guter Mobilität im Alltag, langsam nach eigenem Bauchgefühl schrittweise die sportliche Belastung steigern. Sollten Sie im Alltag und im Rahmen des Wiederbeginns der beruflichen Betätigung aber noch Schmerz und Schwellung im relevanten Ausmaß empfinden, ist es sinnvoll, noch etwas Geduld zu haben.",
+    subthemen: []
+  },
+  ch_kontrolle: {
+    intro: "Der Eingriff ist nun 3 Monate her.",
+    text: "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Die Zwischenzehenkeile und die Nachtschiene müssen Sie nun nicht mehr nutzen. Das Großzehengrundgelenk sollte bereits zufriedenstellend beweglich sein, so dass Sie dieses heben und über dem mittleren Teil des Vorfußes auch abrollen können. Eine gewisse Verminderung der Beweglichkeit im Seitenvergleich wäre aber zu diesem Zeitpunkt noch häufig.\n\nSollten noch relevante Beschwerden oder eine störende Steife des Gelenkes vorliegen, ist eine ärztliche Kontrolle nötig, am besten bei den Kolleginnen, die auch den Eingriff durchgeführt haben.\n\nZur Beurteilung der Sinnhaftigkeit von neuen Einlagen kann nun eine neue Beurteilung des Gangbildes und eine Fußdruckmessung erfolgen.",
+    subthemen: []
+  },
+
+  // ====== OSG-ARTHRODESE Post-OP ======
+  ar_op_tag: {
+    intro: "Vor der OP sind Sie informiert worden, wie Sie sich anschließend verhalten können, um Ihre Genesung zu fördern.",
+    text: "Der Fuß sollte vorerst hochgelagert werden und kann gekühlt werden. Bei der OSG-Arthrodese ist das Sprunggelenk in einem Verband und einer Schiene oder einem Walker ruhiggestellt. Nach dem Eingriff wird in aller Regel eine Kollegin oder ein Kollege vom OP-Team bei Ihnen vorbeikommen und Sie über den Verlauf des Eingriffes informieren. Treten Sie vorerst nicht auf den Fuß auf, bis man Ihnen nach dem Eingriff hier die Freigabe erteilt. Je nach Befund in der OP kann es durchaus mal sein, dass das Behandlungs- und Belastungskonzept individuell angepasst werden muss.\n\nDie erste Mobilisierung findet in aller Regel mit einer Pflegeperson statt, die Sie anleitet und Ihnen hilft. Sobald die Schutzreflexe komplett wieder vorhanden sind, können Sie etwas essen und trinken.\n\nSchmerz und Übelkeit sind nach einem Eingriff nicht immer zu vermeiden. Die Schwestern und Pfleger haben hier Bedarfsmedikamente angeordnet, die Sie sich selbst einfordern können, sollte dies nötig sein. Fragen Sie also stets gerne aktiv nach, wenn Sie Unterstützung benötigen.",
+    subthemen: []
+  },
+  ar_abschwellung: {
+    intro: "Es kommt bei Operationen des Fußes nicht selten zu deutlichen Schwellungen.",
+    text: "Dies ist in einem gewissen Rahmen nicht zu verhindern, kann aber bei ausgeprägter Form die Schmerzen und auch die Gefahr einer Wundheilungsstörung mit Infekt fördern. Eine konsequente Abschwellung ist also immer sinnvoll. Hier stellen Hochlagerung, Kühlung und Schonung die Basismaßnahmen dar. Der Fuß sollte auf einem Kissen oder einer Schiene hochgelagert werden, während Sie liegen.\n\nSitzen an der Bettkante, frühe Mobilisierung in den Stand oder den Rollstuhl mit herabhängendem Fuß fördert die Schwellung und sollte vorerst vermieden werden. Zusätzlich hilft Kühlung; hierfür können Sie Cool-Packs nutzen oder einfach eine Packung TK-Gemüse. Das Kühlelement sollte nicht direkt auf den Fuß gelegt werden, sondern in ein Handtuch eingeschlagen werden.\n\nAls Grundregel für das Kühlen gilt: Mindestens 15 Minuten 3× pro Tag. Bei häufigerem Kühlen sollte das Kühlelement regelmäßig entfernt werden, so dass der Fuß mindestens so lange ohne Kühlung liegt, wie er gekühlt wurde.\n\nEs bestehen medikamentöse Mittel zur Förderung der Abschwellung wie Papain oder Bromelain, deren Wirkung aber überschaubar ist und trotz deren Einnahme die Basismaßnahmen konsequent erfolgen müssen.\n\nLymphdrainage kann bei der Abschwellung zusätzlich helfen. Dies kann bei stationärer Therapie im Krankenhaus oder im häuslichen Bereich über Rezept erfolgen. Bei Entlassung kann man in der Regel ein Rezept über 6 Termine zu 30 Minuten vom Behandler im Rahmen des Entlassmanagements erhalten.",
+    subthemen: []
+  },
+  ar_mobilisierung: {
+    intro: "Bei der OSG-Arthrodese können Sie nach dem Eingriff in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
+    text: "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens 8 Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+    subthemen: [
+      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+    ]
+  },
+  ar_hygiene: {
+    intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
+    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: []
+  },
+  ar_entlassung: {
+    intro: "Die OSG-Arthrodese erfolgt stationär.",
+    text: "Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist, die Wunde unauffällig ist und Sie die ersten Schritte sicher selber bewältigt haben. Bei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
+    subthemen: []
+  },
+  ar_verband_1: {
+    intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
+    text: "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten. Solange diese noch Sekret oder Blut austrägt, müssen abschwellende Maßnahmen konsequent erfolgen, der Fuß sollte nicht herabhängen und die Mobilität sollte noch gering bleiben.",
+    subthemen: []
+  },
+  ar_faden: {
+    intro: "Das einliegende Nahtmaterial wird 14–18 Tage nach dem Eingriff entfernt.",
+    text: "Bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Dies sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer Verband angelegt und das weitere Procedere besprochen.",
+    subthemen: []
+  },
+  ar_verband_ab: {
+    intro: "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
+    text: "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.",
+    subthemen: []
+  },
+  ar_bewegung: {
+    intro: "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
+    text: "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.",
+    subthemen: []
+  },
+  ar_narbe: {
+    intro: "Wenn die Wunde nun komplett abgeheilt ist, die Kruste sich gelöst hat und kein Sekret im Pflaster ist, können Sie mit Narbenpflege beginnen.",
+    text: "Ein Beginn ca. 6 Wochen nach dem Eingriff ist ausreichend, früher muss dies nicht sein.\n\nSie können sich hier Narbenöl oder ähnliches kaufen; in der Regel ist es aber auch effektiv, die Narbe mehrmals täglich mit Bepanthen oder Panthenol kräftig zu massieren. Die Massage löst Verklebungen und fördert die Durchblutung. Dieser mechanische Effekt ist wichtiger als die Art der verwendeten Salbe.",
+    subthemen: []
+  },
+  ar_roentgen: {
+    intro: "Es erfolgt 7–8 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+    text: "In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Sie können die Kontrolle nun terminieren. In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+    subthemen: []
+  },
+  ar_sport: {
+    intro: "Wenn die Aufbelastung gut gelingt, können Sie eine langsame sportliche Belastungssteigerung wagen.",
+    text: "Dies sollte nur probiert werden, wenn die Mobilität im Alltag unter geringen Schmerzen sicher funktioniert.\n\nIn aller Regel bieten sich hier vorerst Radfahren auf dem Ergometer, Wassergymnastik oder Rudern an der Maschine im Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele sind: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+    subthemen: []
+  },
+  ar_kontrolle: {
+    intro: "Der Eingriff ist nun 3 Monate her.",
+    text: "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Das untere Sprunggelenk sollte bereits zufriedenstellend beweglich sein. Eine gewisse Anpassungszeit an die veränderte Biomechanik ist normal.\n\nSollten noch relevante Beschwerden im OP-Gebiet oder eine störende Steife eines nicht operierten Gelenkes vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
+    subthemen: []
+  },
+
+  // ====== OSG-TEP Post-OP ======
+  tep_op_tag: {
+    intro: "Vor der OP sind Sie informiert worden, wie Sie sich anschließend verhalten können, um Ihre Genesung zu fördern.",
+    text: "Der Fuß sollte vorerst hochgelagert werden und kann gekühlt werden. Bei der Implantation einer Sprunggelenkprothese ist das Sprunggelenk in einem Verband und einer Schiene oder einem Walker ruhiggestellt. Nach dem Eingriff wird in aller Regel eine Kollegin oder ein Kollege vom OP-Team bei Ihnen vorbeikommen und Sie über den Verlauf des Eingriffes informieren. Treten Sie vorerst nicht auf den Fuß auf, bis man Ihnen nach dem Eingriff hier die Freigabe erteilt. Je nach Befund in der OP kann es durchaus mal sein, dass das Behandlungs- und Belastungskonzept individuell angepasst werden muss.\n\nDie erste Mobilisierung findet in aller Regel mit einer Pflegeperson statt, die Sie anleitet und Ihnen hilft. Sobald die Schutzreflexe komplett wieder vorhanden sind, können Sie etwas essen und trinken.\n\nSchmerz und Übelkeit sind nach einem Eingriff nicht immer zu vermeiden. Die Schwestern und Pfleger haben hier Bedarfsmedikamente angeordnet, die Sie sich selbst einfordern können, sollte dies nötig sein. Fragen Sie also stets gerne aktiv nach, wenn Sie Unterstützung benötigen.",
+    subthemen: []
+  },
+  tep_abschwellung: {
+    intro: "Es kommt bei Operationen des Fußes nicht selten zu deutlichen Schwellungen.",
+    text: "Dies ist in einem gewissen Rahmen nicht zu verhindern, kann aber bei ausgeprägter Form die Schmerzen und auch die Gefahr einer Wundheilungsstörung mit Infekt fördern. Eine konsequente Abschwellung ist also immer sinnvoll. Hier stellen Hochlagerung, Kühlung und Schonung die Basismaßnahmen dar. Der Fuß sollte auf einem Kissen oder einer Schiene hochgelagert werden, während Sie liegen.\n\nSitzen an der Bettkante, frühe Mobilisierung in den Stand oder den Rollstuhl mit herabhängendem Fuß fördert die Schwellung und sollte vorerst vermieden werden. Zusätzlich hilft Kühlung; hierfür können Sie Cool-Packs nutzen oder einfach eine Packung TK-Gemüse. Das Kühlelement sollte nicht direkt auf den Fuß gelegt werden, sondern in ein Handtuch eingeschlagen werden.\n\nAls Grundregel für das Kühlen gilt: Mindestens 15 Minuten 3× pro Tag. Bei häufigerem Kühlen sollte das Kühlelement regelmäßig entfernt werden, so dass der Fuß mindestens so lange ohne Kühlung liegt, wie er gekühlt wurde.\n\nEs bestehen medikamentöse Mittel zur Förderung der Abschwellung wie Papain oder Bromelain, deren Wirkung aber überschaubar ist und trotz deren Einnahme die Basismaßnahmen konsequent erfolgen müssen.\n\nLymphdrainage kann bei der Abschwellung zusätzlich helfen. Dies kann bei stationärer Therapie im Krankenhaus oder im häuslichen Bereich über Rezept erfolgen. Bei Entlassung kann man in der Regel ein Rezept über 6 Termine zu 30 Minuten vom Behandler im Rahmen des Entlassmanagements erhalten.",
+    subthemen: []
+  },
+  tep_mobilisierung: {
+    intro: "Bei der Implantation einer Sprunggelenkprothese können Sie nach dem Eingriff in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
+    text: "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens 6 Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+    subthemen: [
+      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+    ]
+  },
+  tep_hygiene: {
+    intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
+    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: []
+  },
+  tep_entlassung: {
+    intro: "Die Implantation einer OSG-Endoprothese erfolgt stationär.",
+    text: "Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist, die Wunde unauffällig ist und Sie die ersten Schritte sicher selber bewältigt haben. Bei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
+    subthemen: []
+  },
+  tep_verband_1: {
+    intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
+    text: "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten. Solange diese noch Sekret oder Blut austrägt, müssen abschwellende Maßnahmen konsequent erfolgen, der Fuß sollte nicht herabhängen und die Mobilität sollte noch gering bleiben.",
+    subthemen: []
+  },
+  tep_faden: {
+    intro: "Das einliegende Nahtmaterial wird 14–18 Tage nach dem Eingriff entfernt.",
+    text: "Bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Dies sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer Verband angelegt und das weitere Procedere besprochen.",
+    subthemen: []
+  },
+  tep_verband_ab: {
+    intro: "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
+    text: "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt.",
+    subthemen: []
+  },
+  tep_bewegung: {
+    intro: "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
+    text: "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.",
+    subthemen: []
+  },
+  tep_narbe: {
+    intro: "Wenn die Wunde nun komplett abgeheilt ist, die Kruste sich gelöst hat und kein Sekret im Pflaster ist, können Sie mit Narbenpflege beginnen.",
+    text: "Ein Beginn ca. 6 Wochen nach dem Eingriff ist ausreichend, früher muss dies nicht sein.\n\nSie können sich hier Narbenöl oder ähnliches kaufen; in der Regel ist es aber auch effektiv, die Narbe mehrmals täglich mit Bepanthen oder Panthenol kräftig zu massieren. Die Massage löst Verklebungen und fördert die Durchblutung. Dieser mechanische Effekt ist wichtiger als die Art der verwendeten Salbe.",
+    subthemen: []
+  },
+  tep_roentgen: {
+    intro: "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+    text: "In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn die Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
+    subthemen: []
+  },
+  tep_sport: {
+    intro: "Wenn die Aufbelastung gut gelingt, können Sie eine langsame sportliche Belastungssteigerung wagen.",
+    text: "Dies sollte nur probiert werden, wenn die Mobilität im Alltag unter geringen Schmerzen sicher funktioniert.\n\nIn aller Regel bieten sich hier Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sind mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit nicht empfehlenswert.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele sind: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+    subthemen: []
+  },
+  tep_kontrolle: {
+    intro: "Der Eingriff ist nun 3 Monate her.",
+    text: "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Das obere Sprunggelenk sollte bereits zufriedenstellend beweglich sein. Eine gewisse Anpassungszeit an die Prothese ist normal.\n\nSollten noch relevante Beschwerden im OP-Gebiet oder eine störende Steife vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
+    subthemen: []
+  }
+};
+
+/* ============================================================
+ * STORAGE LAYER — abstrahierte Schnittstelle
+ * Heute: localStorage. Später: Firebase (Storage tauschen, Rest bleibt).
+ * Datenstruktur ist bereits firebase-tauglich.
+ * ============================================================ */
+const STORAGE_KEY = "fusstrack_session";
+const PRIVACY_KEY = "fusstrack_privacy_accepted";
+
+const Storage = {
+  get: function() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { return null; }
+  },
+  set: function(data) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); return true; }
+    catch (e) { return false; }
+  },
+  clear: function() {
+    try { localStorage.removeItem(STORAGE_KEY); return true; }
+    catch (e) { return false; }
+  },
+  getPrivacy: function() {
+    try { return localStorage.getItem(PRIVACY_KEY) === "yes"; }
+    catch (e) { return false; }
+  },
+  setPrivacy: function() {
+    try { localStorage.setItem(PRIVACY_KEY, "yes"); return true; }
+    catch (e) { return false; }
+  }
+};
+
+/* ============================================================
+ * HELPERS
+ * ============================================================ */
+function generateSessionId() {
+  // crypto.randomUUID() wenn verfügbar, sonst Fallback
+  if (typeof crypto !== "undefined" && crypto.randomUUID) {
+    return crypto.randomUUID();
+  }
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+    const r = Math.random() * 16 | 0;
+    return (c === "x" ? r : (r & 0x3 | 0x8)).toString(16);
+  });
+}
+
+function getUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    op: params.get("op"),
+    var: params.get("var")
+  };
+}
+
+function isValidEingriffsAuswahl(op, vari) {
+  if (!op || !EINGRIFFE[op]) return false;
+  if (!vari || !EINGRIFFE[op].varianten[vari]) return false;
+  return true;
+}
+
+function getPhaseKey(op, vari) {
+  return op + "_" + vari;
+}
+
+function formatDateGerman(isoDate) {
+  if (!isoDate) return "—";
+  const parts = isoDate.split("-");
+  if (parts.length !== 3) return isoDate;
+  return parts[2] + "." + parts[1] + "." + parts[0];
+}
+
+function todayIso() {
+  const d = new Date();
+  return d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+}
+
+function daysBetween(isoA, isoB) {
+  // isoB minus isoA in Tagen (positiv: B liegt nach A)
+  const a = new Date(isoA + "T00:00:00");
+  const b = new Date(isoB + "T00:00:00");
+  return Math.round((b - a) / (1000 * 60 * 60 * 24));
+}
+
+function computeCurrentPhaseIndex(phasen, opDatumIso) {
+  if (!opDatumIso) return -1;
+  const today = todayIso();
+  const diff = daysBetween(opDatumIso, today); // Tage seit OP (positiv) oder bis OP (negativ)
+  // Aktuelle Phase = die mit dem höchsten "Sortier-Offset" der <= diff ist
+  // Onboarding-Phasen (tagOffset null) gelten immer als "bereits durchlaufen" (offset = -Infinity)
+  let idx = -1;
+  for (let i = 0; i < phasen.length; i++) {
+    const off = phasen[i].tagOffset === null ? -Infinity : phasen[i].tagOffset;
+    if (off <= diff) idx = i;
+    else break;
+  }
+  return idx;
+}
+
+/* ============================================================
+ * REACT COMPONENTS
+ * ============================================================ */
+const { useState, useEffect, useMemo } = React;
+
+function App() {
+  const [privacyOk, setPrivacyOk] = useState(Storage.getPrivacy());
+  const urlParams = useMemo(getUrlParams, []);
+  const [session, setSession] = useState(Storage.get());
+  const [showResetModal, setShowResetModal] = useState(false);
+
+  // Zugang nur über URL-Parameter (II): wenn keine gültigen Parameter UND keine bestehende Session
+  const hasValidUrlParams = isValidEingriffsAuswahl(urlParams.op, urlParams.var);
+  const hasSession = session && isValidEingriffsAuswahl(session.eingriff, session.variante);
+
+  // Wenn URL-Parameter da sind und keine Session existiert → neue Session anlegen
+  useEffect(() => {
+    if (!hasValidUrlParams) return;
+    if (hasSession) {
+      // Falls Session existiert, aber Eingriff/Variante NICHT zu URL passt → URL gewinnt (Hart-Lock)
+      if (session.eingriff !== urlParams.op || session.variante !== urlParams.var) {
+        // Neue Session anlegen, alte überschreiben
+        const newSession = {
+          sessionId: generateSessionId(),
+          eingriff: urlParams.op,
+          variante: urlParams.var,
+          opDatum: null,
+          createdAt: new Date().toISOString(),
+          feedback: {},
+          pushAbo: {}
+        };
+        Storage.set(newSession);
+        setSession(newSession);
+      }
+      return;
+    }
+    // Keine Session → neu anlegen
+    const newSession = {
+      sessionId: generateSessionId(),
+      eingriff: urlParams.op,
+      variante: urlParams.var,
+      opDatum: null,
+      createdAt: new Date().toISOString(),
+      feedback: {},
+      pushAbo: {}
+    };
+    Storage.set(newSession);
+    setSession(newSession);
+  }, [hasValidUrlParams, urlParams.op, urlParams.var]);
+
+  function updateSession(updates) {
+    const next = Object.assign({}, session, updates);
+    Storage.set(next);
+    setSession(next);
+  }
+
+  function resetSession() {
+    Storage.clear();
+    setSession(null);
+    setShowResetModal(false);
+    // Bei aktiven URL-Parametern wird Session sofort wieder angelegt durch useEffect
+    if (!hasValidUrlParams) {
+      // Andernfalls: Page neu laden, damit ErrorPage erscheint
+      window.location.href = window.location.pathname;
+    }
+  }
+
+  function acceptPrivacy() {
+    Storage.setPrivacy();
+    setPrivacyOk(true);
+  }
+
+  // === RENDER ===
+  if (!hasValidUrlParams) {
+    return <ErrorPage />;
+  }
+
+  return (
+    <div className="app">
+      <Header />
+      {session && (
+        <>
+          {!session.opDatum
+            ? <DatumEingabe session={session} onUpdate={updateSession} />
+            : <PhasenVerlauf session={session} onUpdate={updateSession} onReset={() => setShowResetModal(true)} />
+          }
+        </>
+      )}
+      <Branding />
+      <FooterLinks />
+      {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+      {showResetModal && (
+        <ResetModal
+          onConfirm={resetSession}
+          onCancel={() => setShowResetModal(false)}
+        />
+      )}
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <div className="app-header">
+      <h1>Fuß-Track</h1>
+      <div className="subtitle">Ihr Begleiter rund um die Operation</div>
+    </div>
+  );
+}
+
+function ErrorPage() {
+  return (
+    <div className="app">
+      <Header />
+      <div className="error-page">
+        <svg className="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="14" y="20" width="36" height="28" rx="4" />
+          <path d="M22 20 V14 a 6 6 0 0 1 12 0 V20" />
+          <circle cx="32" cy="34" r="3" />
+        </svg>
+        <h2>Bitte verwenden Sie den QR-Code aus Ihrem Arztbrief</h2>
+        <p>
+          Fuß-Track ist Ihr persönlicher Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk.
+          Der Zugang erfolgt ausschließlich über den QR-Code, den Sie in Ihrem Arztbrief finden.
+        </p>
+        <p>
+          So wird sichergestellt, dass Sie die Informationen zum richtigen Eingriff und in der richtigen Variante erhalten.
+        </p>
+      </div>
+      <Branding />
+      <FooterLinks />
+    </div>
+  );
+}
+
+function DatumEingabe({ session, onUpdate }) {
+  const eingriff = EINGRIFFE[session.eingriff];
+  const variante = eingriff.varianten[session.variante];
+  const [datum, setDatum] = useState("");
+
+  function speichern() {
+    if (!datum) return;
+    onUpdate({ opDatum: datum });
+  }
+
+  return (
+    <>
+      <div className="card">
+        <div className="card-label">Ihr Eingriff (vom Arzt vorausgewählt)</div>
+        <h2 style={{ marginTop: 0 }}>{eingriff.label}</h2>
+        <p style={{ margin: "0 0 4px", fontWeight: 600 }}>{variante.label}</p>
+        <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
+        <div className="preselect-hint">🔒 Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
+      </div>
+
+      <div className="card">
+        <h2>Wann ist Ihr OP-Termin?</h2>
+        <p style={{ marginBottom: 12 }}>
+          Bitte geben Sie das geplante Datum Ihrer Operation ein. Sie können das Datum jederzeit anpassen, falls sich der Termin verschiebt.
+        </p>
+        <label htmlFor="op-datum">OP-Datum</label>
+        <input
+          id="op-datum"
+          type="date"
+          value={datum}
+          onChange={(e) => setDatum(e.target.value)}
+          min={todayIso()}
+        />
+        <button
+          className="btn btn-primary btn-block btn-large"
+          style={{ marginTop: 16 }}
+          disabled={!datum}
+          onClick={speichern}
+        >
+          Weiter
+        </button>
+      </div>
+    </>
+  );
+}
+
+function PhasenVerlauf({ session, onUpdate, onReset }) {
+  const eingriff = EINGRIFFE[session.eingriff];
+  const variante = eingriff.varianten[session.variante];
+  const phasen = useMemo(
+    () => getPhasenForVariant(session.eingriff, session.variante),
+    [session.eingriff, session.variante]
+  );
+  const currentIdx = useMemo(
+    () => computeCurrentPhaseIndex(phasen, session.opDatum),
+    [phasen, session.opDatum]
+  );
+
+  // Verpasste kalenderbasierte Phasen: tagOffset < heute relativ zur OP, aber NICHT current
+  const missedPhases = useMemo(() => {
+    if (!session.opDatum) return [];
+    const today = todayIso();
+    const diff = daysBetween(session.opDatum, today); // positiv: nach OP, negativ: vor OP
+    return phasen
+      .map((p, idx) => ({ p, idx }))
+      .filter(({ p }) => p.type === "calendar" && p.tagOffset !== null && p.tagOffset < diff && p.tagOffset < 0);
+  }, [phasen, session.opDatum]);
+
+  const [selectedPhaseIdx, setSelectedPhaseIdx] = useState(
+    currentIdx >= 0 ? currentIdx : 0
+  );
+  const [editingDate, setEditingDate] = useState(false);
+  const [tempDate, setTempDate] = useState(session.opDatum);
+
+  function saveDate() {
+    if (!tempDate) return;
+    onUpdate({ opDatum: tempDate });
+    setEditingDate(false);
+  }
+
+  return (
+    <>
+      {/* Übersicht */}
+      <div className="card">
+        <div className="card-label">Ihre Auswahl</div>
+        <h2 style={{ marginTop: 0 }}>{eingriff.label}</h2>
+        <p style={{ margin: "0 0 8px", fontWeight: 600 }}>{variante.label}</p>
+
+        {!editingDate ? (
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 13, color: "var(--c-text-muted)" }}>
+              OP-Termin: <strong style={{ color: "var(--c-text)" }}>{formatDateGerman(session.opDatum)}</strong>
+            </span>
+            <button className="btn btn-secondary btn-small" onClick={() => { setTempDate(session.opDatum); setEditingDate(true); }}>
+              Datum ändern
+            </button>
+          </div>
+        ) : (
+          <div>
+            <label htmlFor="edit-datum">OP-Datum</label>
+            <input
+              id="edit-datum"
+              type="date"
+              value={tempDate || ""}
+              onChange={(e) => setTempDate(e.target.value)}
+            />
+            <div style={{ display: "flex", gap: 8, marginTop: 8 }}>
+              <button className="btn btn-primary btn-small" onClick={saveDate}>Speichern</button>
+              <button className="btn btn-secondary btn-small" onClick={() => setEditingDate(false)}>Abbrechen</button>
+            </div>
+          </div>
+        )}
+
+        <div style={{ marginTop: 12, fontSize: 12, color: "var(--c-text-muted)" }}>
+          {currentIdx >= 0 ? (
+            <span className="progress-pill">
+              Aktuelle Phase: {phasen[currentIdx].label}
+            </span>
+          ) : (
+            <span className="progress-pill">Verlauf beginnt vor OP</span>
+          )}
+        </div>
+      </div>
+
+      {/* Verpasste Phasen — Hinweis-Karte */}
+      {missedPhases.length > 0 && (
+        <div className="card warning">
+          <h2 style={{ marginTop: 0 }}>⚠ Wichtige Themen nachholen</h2>
+          <p style={{ marginBottom: 8 }}>
+            Da Sie näher am OP-Termin sind als für den vollständigen Verlauf vorgesehen, sollten Sie folgende Themen jetzt prioritär nachholen:
+          </p>
+          <ul style={{ margin: 0, paddingLeft: 18 }}>
+            {missedPhases.map(({ p, idx }) => (
+              <li key={p.id} style={{ marginBottom: 4 }}>
+                <a href="#phase" onClick={(e) => { e.preventDefault(); setSelectedPhaseIdx(idx); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                   style={{ color: "var(--c-warning-border)", fontWeight: 600, textDecoration: "underline" }}>
+                  {p.thema} ({p.label})
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Timeline */}
+      <div className="card">
+        <h2>Ihr Verlauf</h2>
+        <p style={{ fontSize: 13, color: "var(--c-text-muted)", marginBottom: 16 }}>
+          Tippen Sie auf eine Phase, um die Inhalte zu öffnen.
+        </p>
+        <div className="timeline">
+          {phasen.map((phase, idx) => {
+            let cls = "phase";
+            const isMissed = missedPhases.some(m => m.idx === idx);
+            if (idx === currentIdx) cls += " current";
+            else if (idx < currentIdx && !isMissed) cls += " past";
+            const markerContent = phase.emoji || (idx + 1);
+            return (
+              <div key={phase.id} className={cls} onClick={() => setSelectedPhaseIdx(idx)}>
+                <div className="phase-marker">{markerContent}</div>
+                <div className="phase-content">
+                  <div className="phase-title">
+                    {phase.thema}
+                    {idx === currentIdx && <span className="current-badge">Aktuell</span>}
+                    {isMissed && <span className="current-badge" style={{ background: "var(--c-warning-border)" }}>📌 Nachholen</span>}
+                  </div>
+                  <div className="phase-meta">{phase.label}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Phasen-Detail-Ansicht */}
+      {phasen[selectedPhaseIdx] && (
+        <PhasenDetail
+          phase={phasen[selectedPhaseIdx]}
+          inhalt={PHASEN_INHALTE[phasen[selectedPhaseIdx].id]}
+          index={selectedPhaseIdx}
+          total={phasen.length}
+        />
+      )}
+
+      {/* Reset-Button */}
+      <div style={{ textAlign: "center", marginTop: 24 }}>
+        <button className="btn btn-secondary btn-small" onClick={onReset}>
+          Verlauf zurücksetzen
+        </button>
+      </div>
+    </>
+  );
+}
+
+function PhasenDetail({ phase, inhalt, index, total }) {
+  return (
+    <div className="card">
+      <div className="card-label">Phase {index + 1} von {total} · {phase.label}</div>
+      <h2 style={{ marginTop: 0 }}>
+        {phase.emoji && <span style={{ marginRight: 8 }}>{phase.emoji}</span>}
+        {phase.thema}
+      </h2>
+      {inhalt ? (
+        <>
+          {inhalt.intro && (
+            <p style={{ fontSize: 15, fontWeight: 500, color: "var(--c-text)", marginTop: 8 }}>
+              {inhalt.intro}
+            </p>
+          )}
+          {inhalt.text && inhalt.text.split("\n\n").map((para, i) => (
+            <p key={i} style={{ marginTop: 12, color: "var(--c-text)" }}>{para}</p>
+          ))}
+          {inhalt.subthemen && inhalt.subthemen.length > 0 && (
+            <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid var(--c-border)" }}>
+              <div style={{ fontSize: 11, fontWeight: 600, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>
+                Weiterführende Informationen
+              </div>
+              {inhalt.subthemen.map((sub, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 0", borderBottom: i < inhalt.subthemen.length - 1 ? "1px solid var(--c-border)" : "none" }}>
+                  <span style={{ fontSize: 14, color: "var(--c-text-muted)" }}>📖</span>
+                  <span style={{ fontSize: 13, color: "var(--c-text)" }}>{sub.label}</span>
+                  {sub.platzhalter && (
+                    <span style={{ fontSize: 10, padding: "2px 6px", background: "var(--c-bg)", borderRadius: 8, color: "var(--c-text-muted)", marginLeft: "auto" }}>
+                      bald verfügbar
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </>
+      ) : (
+        <p style={{ marginTop: 16, padding: 16, background: "var(--c-bg)", borderRadius: 6, fontSize: 13, color: "var(--c-text-muted)" }}>
+          <em>Die Inhalte zu dieser Phase werden derzeit vorbereitet und in den nächsten Tagen ergänzt.</em>
+        </p>
+      )}
+    </div>
+  );
+}
+
+function Branding() {
+  return (
+    <div className="branding">
+      <div className="branding-label">Inhalt und Bewertung</div>
+      <div><span className="branding-name">Dr. med. Benjamin Breuer D.O. DAAO</span></div>
+      <div>Spezialist für Fuß- und Sprunggelenkchirurgie</div>
+      <div className="branding-klinik">Florence Nightingale Krankenhaus, Düsseldorf Kaiserswerth</div>
+    </div>
+  );
+}
+
+function FooterLinks() {
+  return (
+    <div className="footer-links">
+      <a href="#datenschutz" onClick={(e) => { e.preventDefault(); alert("Datenschutzerklärung folgt"); }}>Datenschutz</a>
+      ·
+      <a href="#impressum" onClick={(e) => { e.preventDefault(); alert("Impressum folgt"); }}>Impressum</a>
+    </div>
+  );
+}
+
+function PrivacyBanner({ onAccept }) {
+  return (
+    <div className="privacy-banner">
+      <div className="privacy-banner-inner">
+        <p>
+          <strong>Hinweis zur Datenverarbeitung:</strong> Diese Seite speichert Ihre Auswahl
+          (Eingriff, Variante, OP-Datum) lokal in Ihrem Browser. Es werden keine personenbezogenen
+          Daten an einen Server übertragen. Mit „Einverstanden" bestätigen Sie die Verwendung
+          dieser lokalen Speicherung.
+        </p>
+        <div className="privacy-banner-actions">
+          <button className="btn btn-primary btn-small" onClick={onAccept}>Einverstanden</button>
+          <a href="#datenschutz" onClick={(e) => { e.preventDefault(); alert("Datenschutzerklärung folgt"); }}
+             className="btn btn-secondary btn-small" style={{ textDecoration: "none" }}>
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ResetModal({ onConfirm, onCancel }) {
+  return (
+    <div className="modal-overlay" onClick={onCancel}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <h3>Verlauf zurücksetzen?</h3>
+        <p>
+          Ihre Auswahl und das Datum werden gelöscht. Sie kehren zur Datumseingabe zurück.
+          Diese Aktion kann nicht rückgängig gemacht werden.
+        </p>
+        <div className="modal-actions">
+          <button className="btn btn-secondary btn-small" onClick={onCancel}>Abbrechen</button>
+          <button className="btn btn-primary btn-small" onClick={onConfirm}>Ja, zurücksetzen</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
