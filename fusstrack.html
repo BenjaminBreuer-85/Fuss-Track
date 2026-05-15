@@ -90,29 +90,72 @@
   input[type="date"]:focus, select:focus { outline: 2px solid var(--c-main); outline-offset: -1px; }
   label { display: block; font-size: 13px; font-weight: 600; color: var(--c-text); margin-bottom: 6px; }
   /* Phasen-Timeline */
-  .timeline { display: flex; flex-direction: column; gap: 8px; }
+  .timeline {
+    display: flex; flex-direction: column;
+    position: relative;
+    padding-left: 0;
+  }
   .phase {
-    display: flex; gap: 12px; align-items: flex-start;
-    padding: 12px 14px; border-radius: 6px;
-    border: 1px solid var(--c-border); background: white;
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 10px 12px 10px 0;
     cursor: pointer; transition: all 0.15s;
+    position: relative;
+    border-radius: 6px;
   }
   .phase:hover { background: var(--c-bg); }
-  .phase.current { border-color: var(--c-main); background: white; box-shadow: var(--c-shadow); }
-  .phase.past { opacity: 0.7; }
+  .phase.selected { background: var(--c-bg); box-shadow: inset 3px 0 0 var(--c-main); }
+
+  /* Vertikale Verbindungslinie zwischen Markern */
+  .phase-marker-wrap {
+    flex: 0 0 36px;
+    position: relative;
+    display: flex; flex-direction: column; align-items: center;
+    align-self: stretch;
+  }
+  /* Linie OBERHALB des Markers (verbindet zur vorigen Phase) */
+  .phase-marker-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 50%;
+    left: 50%; transform: translateX(-50%);
+    width: 2px; background: var(--c-border);
+  }
+  /* Linie UNTERHALB des Markers (verbindet zur nächsten Phase) */
+  .phase-marker-wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%; bottom: 0;
+    left: 50%; transform: translateX(-50%);
+    width: 2px; background: var(--c-border);
+  }
+  /* Erste/letzte Phase: keine Linie auf der jeweiligen Seite */
+  .phase:first-child .phase-marker-wrap::before { display: none; }
+  .phase:last-child .phase-marker-wrap::after { display: none; }
+  /* Vergangene Phasen: Linien-Marineblau */
+  .phase.past .phase-marker-wrap::before,
+  .phase.past .phase-marker-wrap::after { background: var(--c-main); }
+  /* Aktuelle Phase: Linie OBERHALB ist Marineblau (kommt von past), unten grau (geht zu future) */
+  .phase.current .phase-marker-wrap::before { background: var(--c-main); }
+
   .phase-marker {
-    flex: 0 0 36px; width: 36px; height: 36px;
+    width: 36px; height: 36px;
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
     font-size: 16px; font-weight: 700;
-    background: var(--c-bg); color: var(--c-text-muted); border: 2px solid var(--c-border);
+    background: white; color: var(--c-text-muted); border: 2px solid var(--c-border);
+    position: relative; z-index: 1;
   }
   .phase.current .phase-marker { background: var(--c-main); color: white; border-color: var(--c-main); }
-  .phase.past .phase-marker { background: var(--c-text-muted); color: white; border-color: var(--c-text-muted); }
-  .phase-content { flex: 1; }
+  .phase.past .phase-marker { background: var(--c-main); color: white; border-color: var(--c-main); opacity: 0.85; }
+  .phase.missed .phase-marker { background: #F4B83C; color: white; border-color: #E0A422; }
+  .phase.missed .phase-marker-wrap::before,
+  .phase.missed .phase-marker-wrap::after { background: #F4B83C; }
+
+  .phase-content { flex: 1; padding-top: 6px; padding-bottom: 6px; }
   .phase-title { font-weight: 700; font-size: 14px; color: var(--c-text); }
   .phase-meta { font-size: 12px; color: var(--c-text-muted); margin-top: 2px; }
   .phase-thema { font-size: 13px; color: var(--c-text); margin-top: 4px; }
   .phase.current .phase-title { color: var(--c-main); }
+  .phase.past { opacity: 0.85; }
   /* Aktive-Phase-Hervorhebung */
   .current-badge {
     display: inline-block; font-size: 10px; font-weight: 700;
@@ -1092,7 +1135,7 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
           <ul style={{ margin: 0, paddingLeft: 18 }}>
             {missedPhases.map(({ p, idx }) => (
               <li key={p.id} style={{ marginBottom: 4 }}>
-                <a href="#phase" onClick={(e) => { e.preventDefault(); setSelectedPhaseIdx(idx); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                <a href="#phase-detail" onClick={(e) => { e.preventDefault(); setSelectedPhaseIdx(idx); setTimeout(() => { const d = document.getElementById("phase-detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50); }}
                    style={{ color: "var(--c-warning-border)", fontWeight: 600, textDecoration: "underline" }}>
                   {p.thema} ({p.label})
                 </a>
@@ -1112,17 +1155,28 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
           {phasen.map((phase, idx) => {
             let cls = "phase";
             const isMissed = missedPhases.some(m => m.idx === idx);
-            if (idx === currentIdx) cls += " current";
-            else if (idx < currentIdx && !isMissed) cls += " past";
+            if (isMissed) cls += " missed";
+            else if (idx === currentIdx) cls += " current";
+            else if (idx < currentIdx) cls += " past";
+            if (idx === selectedPhaseIdx) cls += " selected";
             const markerContent = phase.emoji || (idx + 1);
             return (
-              <div key={phase.id} className={cls} onClick={() => setSelectedPhaseIdx(idx)}>
-                <div className="phase-marker">{markerContent}</div>
+              <div key={phase.id} className={cls} onClick={() => {
+                setSelectedPhaseIdx(idx);
+                // Smooth-scroll zum Detail-Bereich nach kurzer Verzögerung (lässt Render einen Tick Zeit)
+                setTimeout(() => {
+                  const detail = document.getElementById("phase-detail");
+                  if (detail) detail.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 50);
+              }}>
+                <div className="phase-marker-wrap">
+                  <div className="phase-marker">{markerContent}</div>
+                </div>
                 <div className="phase-content">
                   <div className="phase-title">
                     {phase.thema}
-                    {idx === currentIdx && <span className="current-badge">Aktuell</span>}
-                    {isMissed && <span className="current-badge" style={{ background: "var(--c-warning-border)" }}>📌 Nachholen</span>}
+                    {idx === currentIdx && !isMissed && <span className="current-badge">Aktuell</span>}
+                    {isMissed && <span className="current-badge" style={{ background: "#E0A422" }}>📌 Nachholen</span>}
                   </div>
                   <div className="phase-meta">{phase.label}</div>
                 </div>
@@ -1134,12 +1188,14 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
 
       {/* Phasen-Detail-Ansicht */}
       {phasen[selectedPhaseIdx] && (
-        <PhasenDetail
-          phase={phasen[selectedPhaseIdx]}
-          inhalt={PHASEN_INHALTE[phasen[selectedPhaseIdx].id]}
-          index={selectedPhaseIdx}
-          total={phasen.length}
-        />
+        <div id="phase-detail">
+          <PhasenDetail
+            phase={phasen[selectedPhaseIdx]}
+            inhalt={PHASEN_INHALTE[phasen[selectedPhaseIdx].id]}
+            index={selectedPhaseIdx}
+            total={phasen.length}
+          />
+        </div>
       )}
 
       {/* Reset-Button */}
