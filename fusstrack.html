@@ -531,7 +531,7 @@ const PHASEN_INHALTE = {
     intro: "Mit dieser App und dem Ablauf zur geplanten Operation möchten wir Ihnen die Planung und Vorbereitung auf den Eingriff vereinfachen. Im Verlauf bekommen Sie viele Hinweise zum bevorstehenden Eingriff sowie Hilfestellungen, um typische organisatorische und medizinische Probleme gar nicht aufkommen zu lassen.",
     text: "Dieser Ablauf ist für den Eingriff standardisiert und setzt einen unkomplizierten Verlauf voraus.\n\nWenn ein konkretes OP-Datum geplant wurde, dann hat in aller Regel bereits ein Termin in der Sprechstunde der behandelnden Klinik stattgefunden. Hier sollte sich ein Kollege der chirurgischen Abteilung anhand von Bildgebung, Untersuchung und Ihrer geschilderten Beschwerden einen Eindruck über Ihr Krankheitsbild gemacht haben. Ebenfalls sollte eine Aufklärung über die alternativen Behandlungsoptionen und ein Überblick über die Risiken verschafft worden sein.",
     subthemen: [
-      { label: "Suchfeld bei den Krankheitsbildern", platzhalter: true }
+      { wissen: "krankheitsbilder_suche" }
     ]
   },
 
@@ -540,37 +540,37 @@ const PHASEN_INHALTE = {
     intro: "Sollten zu Ihrem Krankheitsbild oder den Behandlungsmöglichkeiten noch Fragen bestehen, dann informieren Sie sich hier noch einmal genauer über die Erkrankung und den geplanten Eingriff.",
     text: "Sollten Sie noch unsicher sein oder Fragen bestehen, dann kontaktieren Sie Ihren behandelnden Arzt.\n\nEbenfalls können Sie sich überlegen, ob Sie sich vor dem Eingriff eine Zweitmeinung einholen möchten. Wenn Sie dies wünschen, dann sollten Sie dies zeitnah organisieren, da hier gewisse Wartezeiten auf den Termin aufkommen können. Bezüglich in Frage kommender Experten können Sie bei Ihrer Krankenkasse nachfragen oder sich auf der Homepage von ClarCert über zertifizierte Zentren in Ihrer Umgebung informieren.",
     subthemen: [
-      { label: "Weitere Informationen zur Auswahl des Behandlers", platzhalter: true }
+      { wissen: "behandlerauswahl" }
     ]
   },
   risikoverminderung: {
     intro: "Jede Operation wird auf Grund von Schmerzen und Einschränkungen und in der Hoffnung einer Besserung des Befundes geplant. Die Auseinandersetzung mit den Risiken und Komplikationen gehört zu den unangenehmen Teilen, da man sich diese in der Regel gar nicht vorstellen möchte. Auch können die verschiedenen Komplikationen Ängste wecken und fördern.",
     text: "Es ist aber ärztliche Pflicht, über Komplikationen zu informieren und den Patientinnen und Patienten die Möglichkeit zu geben, Kosten und Nutzen eines Eingriffes aufgeklärt abwiegen zu können.\n\nAls Patient kann man diese Auseinandersetzung auch konstruktiv nutzen, da die Wahrscheinlichkeit vieler Komplikationen maßgeblich durch Verhaltensweisen und vorbereitete Maßnahmen beeinflusst werden kann. Im Rahmen dieser Funktion werden Sie immer wieder auf Maßnahmen zur Sicherstellung des bestmöglichen Ergebnisses und größtmöglichen Schutzes vor Komplikationen hingewiesen.",
     subthemen: [
-      { label: "Gängige Faktoren für erhöhte Komplikationswahrscheinlichkeit", platzhalter: true }
+      { wissen: "komplikationsfaktoren" }
     ]
   },
   diabetes: {
     intro: "Wenn Sie an einer Zuckerkrankheit leiden, dann lassen Sie Ihren Blutzucker und HbA1c messen, falls Sie diese Werte nicht kennen.",
     text: "Beide Werte sollten idealerweise im Normbereich liegen. Bei einem HbA1c über 7 % besteht ein deutlich erhöhtes Komplikationsrisiko. Nehmen Sie hier mit Ihrem Diabetologen oder Hausarzt Kontakt auf, um zu überlegen, ob eine bessere Einstellung möglich ist.\n\nGrundbausteine sind Bewegung, zuckerfreie Ernährung und eine gute medikamentöse Einstellung. Es hilft häufig bereits, seine Zuckerwerte regelmäßig selbst zu messen, um ein Gefühl für die Einstellung zu bekommen.",
     subthemen: [
-      { label: "Diabetes Mellitus", platzhalter: true }
+      { wissen: "diabetes_info" }
     ]
   },
   nikotin: {
     intro: "Ein maßgeblicher beeinflussbarer Risikofaktor ist Rauchen und Nikotinkonsum in jeglicher Form.",
     text: "Sowohl das Risiko für Probleme der Wund- als auch der Knochenheilung ist erhöht. Auch beobachtet man in der Klinik regelhaft, dass Raucher sich besonders früh nach der OP selbstständig im Rollstuhl oder an Stützen mobilisieren, obwohl konsequente Schonung und Hochlagerung des Fußes für die Abschwellung der Weichteile notwendig wären.\n\nOhne Frage wäre aus vielen Gründen das Pausieren des Rauchens sinnvoll; bezüglich der Risikoverminderung bei Operationen des Bewegungsapparates sind hier vor allem die 6 Wochen vor und nach dem Eingriff von Bedeutung. Sollte man seinen Konsum nicht pausieren können, wäre eine konsequente Reduktion gerade in dieser Zeit für eine Verminderung des Risikos förderlich.\n\nInformieren Sie sich hier über Nikotinersatzprodukte wie Nikotinpflaster oder Akupunktur zur Unterstützung der Rauchentwöhnung.",
     subthemen: [
-      { label: "Informationen zum Risikofaktor Rauchen", platzhalter: true },
-      { label: "Akupunktur zur Rauchentwöhnung", platzhalter: true }
+      { wissen: "rauchen_risiko" },
+      { wissen: "akupunktur_rauchentwoehnung" }
     ]
   },
   ernaehrung: {
     intro: "Eine gesunde Ernährung ist wichtig für viele Körperfunktionen und ein stabiles Immunsystem.",
     text: "Auch Erkrankungen oder Operationen werden besser überstanden, wenn der Körper keinen Mangel an wichtigen Nährstoffen hat.\n\nSollten Mangelzustände oder eine Blutarmut bei Ihnen bekannt sein, dann stellen Sie sich frühzeitig bei Ihrem Hausarzt vor, damit eine aktuelle Blutuntersuchung durchgeführt werden kann. Gerade der Ausgleich von Vitamin-D- oder Eisenmangelzuständen sollte frühzeitig erfolgen, da die Veränderungen im Knochenstoffwechsel oder die Blutbildung Zeit in Anspruch nehmen.",
     subthemen: [
-      { label: "Ernährung bei Knochen-, Knorpel- und Sehneneingriffen", platzhalter: true },
-      { label: "Vitamin C", platzhalter: true }
+      { wissen: "ernaehrung_knochen" },
+      { wissen: "vitamin_c" }
     ]
   },
   versorgung_sozial: {
@@ -587,8 +587,8 @@ const PHASEN_INHALTE = {
     intro: "Nach dem Eingriff werden Sie eingeschränkt mobil sein.",
     text: "Eine Kontraktur der Wadenmuskulatur ist ein gängiges Problem, welches durch Ruhigstellungen nach dem Eingriff noch gefördert werden kann. Fangen Sie hier jetzt bereits mit einem konsequenten Dehnprogramm an und nutzen Sie Gleichgewichtsübungen.\n\nIhr Fuß wird es Ihnen nach dem Eingriff danken, wenn Sie bereits gut gedehnt und mit geschulter Körperwahrnehmung in die Klinik kommen.",
     subthemen: [
-      { label: "Dehnung Achillessehne", platzhalter: true },
-      { label: "Propriozeptionsübungen", platzhalter: true }
+      { wissen: "dehnung_achillessehne" },
+      { wissen: "propriozeption" }
     ]
   },
   aktiv_bleiben: {
@@ -605,7 +605,7 @@ const PHASEN_INHALTE = {
     intro: "Die meisten Medikamente können Sie im Rahmen eines Eingriffes weiter zu sich nehmen.",
     text: "Einige Wirkstoffe müssen aber vor dem Eingriff abgesetzt oder pausiert werden. Dies betrifft vor allem Medikamente bei Diabetes- oder Rheumaerkrankungen sowie Blutverdünnungsmittel.\n\nSollten Sie hier Medikamente einnehmen, dann sollten Sie Kontakt zu Ihrem behandelnden Arzt aufnehmen, damit Sie die Einnahme oder Pause planen können.",
     subthemen: [
-      { label: "Medikamente bei Rheuma", platzhalter: true }
+      { wissen: "medikamente_rheuma" }
     ]
   },
   arbeitgeber: {
@@ -684,7 +684,7 @@ const PHASEN_INHALTE = {
     intro: "Bei der Chevron-Osteotomie oder ähnlichen Osteotomien am MT I können Sie in der Regel voll belasten.",
     text: "Dies bedeutet, dass Sie in dem Verbandschuh ohne Stützen auftreten und nach Möglichkeit normal laufen. Wenn das volle Belasten möglich ist und keine Neigung zu Thrombosen vorliegt, müssen Sie keinen Thromboseschutz spritzen. Dies sollten Sie bei Ihrem Behandler aber immer explizit nachfragen.\n\nBei beidseitiger Operation ist nicht selten, dass die Patienten einige Tage 2 Stützen benötigen und durchaus etwas weniger mobil sind. Auch wenn bei beidseitiger OP eine volle Belastung erlaubt ist und formell kein Thromboseschutz angewendet werden muss, kann hier das Spritzen für 1–2 Wochen, zumindest bis zum Erreichen einer guten Mobilität, sinnvoll sein.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
     subthemen: [
-      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+      { wissen: "thromboseschutz_bewegung" }
     ]
   },
   ch_hygiene: {
@@ -696,42 +696,42 @@ const PHASEN_INHALTE = {
     intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
     text: "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten.\n\nEbenfalls wird nun in der Regel in Abhängigkeit von der Wunde der nächste Termin mit Ihnen geplant. Meistens ist dieser in ca. einer Woche.",
     subthemen: [
-      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+      { wissen: "verbandwechsel_chevron" }
     ]
   },
   ch_verband_2: {
     intro: "Beim Verbandwechsel wird die Wunde desinfiziert, Steri-Strips können belassen werden.",
     text: "Die Wunde sollte nun trocken sein, die Abschwellung bereits erkennbar. Ein neuer redressierender Verband wird angelegt mit Zentrierung der großen Zehe, damit hier die korrigierten Weichteile unterstützt ausheilen können. Eine Anleitung zur Verbandstechnik finden Sie in unserem Nachbehandlungsschema.\n\nSie können Fragen zum Verlauf stellen und eine neue AU ausgestellt bekommen. Der nächste Termin ist in der Regel in einer Woche zum Fadenzug. Sollten Sie noch Thromboseschutzspritzen nutzen, dann können Sie nun fragen, ob Sie diese noch weiter benötigen.",
     subthemen: [
-      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+      { wissen: "verbandwechsel_chevron" }
     ]
   },
   ch_faden: {
     intro: "Das einliegende Nahtmaterial wird entfernt; bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Im gleichen Termin wird auch der dritte Verbandwechsel durchgeführt.",
     text: "Der Fadenzug sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer redressierender Verband angelegt und das weitere Procedere besprochen. Sollten die Zwischenzehenkeile und eine Hallux-Schiene noch nicht vorliegen, können Sie nun mit Ihrem Behandler besprechen, ob dieser Ihnen die Hilfsmittel noch verschreibt. Die Zwischenzehenkeile sind in der Regel nicht verschreibungsfähig und müssen für wenige Euro im Sanitätshaus gekauft werden.",
     subthemen: [
-      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+      { wissen: "verbandwechsel_chevron" }
     ]
   },
   ch_verband_4: {
     intro: "Beim vierten Verbandwechsel wird die Wunde erneut desinfiziert und der redressierende Verband neu angelegt.",
     text: "Aufgrund der zusätzlichen Eingriffe (z.B. an Mittelfuß oder Kleinzehen) ist eine längere Verbandstherapie notwendig, um die korrekte Positionierung weiterhin zu unterstützen. Eine Anleitung zur Verbandstechnik finden Sie unten verlinkt.\n\nDer nächste Termin ist in der Regel in einer Woche zur Abnahme des Verbandes.",
     subthemen: [
-      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+      { wissen: "verbandwechsel_chevron" }
     ]
   },
   ch_verband_ab: {
     intro: "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
     text: "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht.",
     subthemen: [
-      { label: "Anleitung Nutzung Keile und Nachtschiene", platzhalter: true }
+      { wissen: "keile_nachtschiene_chevron" }
     ]
   },
   ch_verband_ab_kx: {
     intro: "Es sind nun ca. 4 Wochen seit dem Eingriff vergangen.",
     text: "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Sollte ein Draht in eine Zehe eingesetzt worden sein, wird dieser nun entfernt, und die Kleinzehen müssen weiter mit einem Tape zentrierend positioniert werden. Dies muss zwingend von einem in Fußchirurgie erfahrenen Behandler erfolgen.\n\nWenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Gerade bei komplexen Eingriffen an mehreren Zehen ergeben sich aber sehr individuelle Konzepte. Hier sollte genau mit den Operateuren geklärt werden, wie die Nachbehandlung und das Taping/Zentrieren der Zehen erfolgt, und keinen pauschalen Konzepten gefolgt werden.",
     subthemen: [
-      { label: "Anleitung Nutzung Keile und Nachtschiene", platzhalter: true }
+      { wissen: "keile_nachtschiene_chevron" }
     ]
   },
   ch_bewegung_kx: {
@@ -775,7 +775,7 @@ const PHASEN_INHALTE = {
     intro: "Bei der OSG-Arthrodese können Sie nach dem Eingriff in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
     text: "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens 8 Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
     subthemen: [
-      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+      { wissen: "thromboseschutz_bewegung" }
     ]
   },
   ar_hygiene: {
@@ -844,7 +844,7 @@ const PHASEN_INHALTE = {
     intro: "Bei der Implantation einer Sprunggelenkprothese können Sie nach dem Eingriff in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
     text: "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens 6 Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
     subthemen: [
-      { label: "Mehr Informationen zum Thromboseschutz durch Bewegung", platzhalter: true }
+      { wissen: "thromboseschutz_bewegung" }
     ]
   },
   tep_hygiene: {
@@ -896,6 +896,137 @@ const PHASEN_INHALTE = {
     intro: "Der Eingriff ist nun 3 Monate her.",
     text: "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Das obere Sprunggelenk sollte bereits zufriedenstellend beweglich sein. Eine gewisse Anpassungszeit an die Prothese ist normal.\n\nSollten noch relevante Beschwerden im OP-Gebiet oder eine störende Steife vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
     subthemen: []
+  }
+};
+
+/* ============================================================
+ * WISSEN-REGISTRY (Bibliothek der Detail-Themen)
+ * ----------------------------------------------------------------
+ * Zentrale Sammlung aller Detail-Inhalte, auf die Phasen verweisen.
+ * status: "platzhalter" (noch zu schreiben) | "veröffentlicht"
+ * Eingriffsspezifische Einträge tragen einen Suffix (z.B. _chevron, _osg_arthrodese).
+ * Generische Einträge ohne Suffix.
+ * Architektur ist vorbereitet für spätere Bibliothek-Sicht ("alle Themen browsen").
+ * ============================================================ */
+const WISSEN_KATEGORIEN = {
+  verband:           { label: "Verband & Wundpflege", emoji: "🩹" },
+  hilfsmittel:       { label: "Hilfsmittel",          emoji: "🦯" },
+  risiko:            { label: "Risikoverminderung",   emoji: "🛡️" },
+  bewegung:          { label: "Bewegung & Training",  emoji: "🧘" },
+  lebensfuehrung:    { label: "Lebensführung",        emoji: "🏠" },
+  medikamente:       { label: "Medikamente",          emoji: "💊" },
+  aufklaerung:       { label: "Aufklärung",           emoji: "ℹ️" }
+};
+
+const WISSEN = {
+  // === Verband & Wundpflege ===
+  verbandwechsel_chevron: {
+    titel: "Anleitung zum Verbandwechsel bei Chevron-Osteotomie",
+    kategorie: "verband",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+
+  // === Hilfsmittel ===
+  keile_nachtschiene_chevron: {
+    titel: "Nutzung von Zwischenzehenkeilen und Nachtschiene",
+    kategorie: "hilfsmittel",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+
+  // === Risikoverminderung ===
+  rauchen_risiko: {
+    titel: "Informationen zum Risikofaktor Rauchen",
+    kategorie: "risiko",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  akupunktur_rauchentwoehnung: {
+    titel: "Akupunktur zur Rauchentwöhnung",
+    kategorie: "risiko",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  diabetes_info: {
+    titel: "Diabetes mellitus und Operationen",
+    kategorie: "risiko",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  ernaehrung_knochen: {
+    titel: "Ernährung bei Knochen-, Knorpel- und Sehneneingriffen",
+    kategorie: "risiko",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  vitamin_c: {
+    titel: "Vitamin C in der Heilung",
+    kategorie: "risiko",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+
+  // === Bewegung & Training ===
+  thromboseschutz_bewegung: {
+    titel: "Thromboseschutz durch Bewegung",
+    kategorie: "bewegung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  dehnung_achillessehne: {
+    titel: "Dehnung der Achillessehne",
+    kategorie: "bewegung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  propriozeption: {
+    titel: "Propriozeptionsübungen",
+    kategorie: "bewegung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+
+  // === Medikamente ===
+  medikamente_rheuma: {
+    titel: "Medikamente bei Rheuma vor Operationen",
+    kategorie: "medikamente",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+
+  // === Aufklärung ===
+  krankheitsbilder_suche: {
+    titel: "Übersicht Krankheitsbilder",
+    kategorie: "aufklaerung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  behandlerauswahl: {
+    titel: "Auswahl des Behandlers",
+    kategorie: "aufklaerung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  komplikationsfaktoren: {
+    titel: "Gängige Faktoren für erhöhte Komplikationswahrscheinlichkeit",
+    kategorie: "aufklaerung",
+    status: "platzhalter",
+    intro: "",
+    text: ""
   }
 };
 
@@ -1369,10 +1500,15 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
 }
 
 function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, onClose, onPrev, onNext }) {
+  const [openedWissenId, setOpenedWissenId] = useState(null);
+
   // Klick auf Backdrop (nicht Panel) schließt
   function onBackdropClick(e) {
     if (e.target === e.currentTarget) onClose();
   }
+  // Wenn ein Sub-Theme geklickt wurde, beim Wechsel der Phase Modal-Stack zurücksetzen
+  useEffect(() => { setOpenedWissenId(null); }, [phase.id]);
+
   return (
     <div className="modal-backdrop" onClick={onBackdropClick} role="dialog" aria-modal="true">
       <div className="modal-panel">
@@ -1403,17 +1539,32 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
                   <div style={{ fontSize: 11, fontWeight: 600, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>
                     Weiterführende Informationen
                   </div>
-                  {inhalt.subthemen.map((sub, i) => (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 0", borderBottom: i < inhalt.subthemen.length - 1 ? "1px solid var(--c-border)" : "none" }}>
-                      <span style={{ fontSize: 14, color: "var(--c-text-muted)" }}>📖</span>
-                      <span style={{ fontSize: 13, color: "var(--c-text)" }}>{sub.label}</span>
-                      {sub.platzhalter && (
-                        <span style={{ fontSize: 10, padding: "2px 6px", background: "var(--c-bg)", borderRadius: 8, color: "var(--c-text-muted)", marginLeft: "auto" }}>
-                          bald verfügbar
-                        </span>
-                      )}
-                    </div>
-                  ))}
+                  {inhalt.subthemen.map((sub, i) => {
+                    const wissen = sub.wissen ? WISSEN[sub.wissen] : null;
+                    const titel = wissen ? wissen.titel : (sub.label || "(unbekanntes Thema)");
+                    const isPlatzhalter = !wissen || wissen.status === "platzhalter";
+                    const isLast = i === inhalt.subthemen.length - 1;
+                    return (
+                      <div key={i}
+                           onClick={() => { if (!isPlatzhalter && sub.wissen) setOpenedWissenId(sub.wissen); }}
+                           style={{
+                             display: "flex", alignItems: "center", gap: 8,
+                             padding: "10px 0",
+                             borderBottom: !isLast ? "1px solid var(--c-border)" : "none",
+                             cursor: !isPlatzhalter && sub.wissen ? "pointer" : "default"
+                           }}>
+                        <span style={{ fontSize: 14, color: "var(--c-text-muted)" }}>📖</span>
+                        <span style={{ fontSize: 13, color: "var(--c-text)", flex: 1 }}>{titel}</span>
+                        {isPlatzhalter ? (
+                          <span style={{ fontSize: 10, padding: "2px 6px", background: "var(--c-bg)", borderRadius: 8, color: "var(--c-text-muted)" }}>
+                            bald verfügbar
+                          </span>
+                        ) : (
+                          <span style={{ fontSize: 14, color: "var(--c-main)" }}>›</span>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </>
@@ -1434,6 +1585,64 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
             <span className="modal-nav-btn-label">{nextPhase ? nextPhase.thema : "Ende"}</span>
             <span>→</span>
           </button>
+        </div>
+      </div>
+
+      {/* Gestapeltes Wissens-Modal: liegt über dem PhasenDetailModal */}
+      {openedWissenId && WISSEN[openedWissenId] && (
+        <WissensDetailModal
+          wissenId={openedWissenId}
+          wissen={WISSEN[openedWissenId]}
+          onClose={() => setOpenedWissenId(null)}
+        />
+      )}
+    </div>
+  );
+}
+
+function WissensDetailModal({ wissenId, wissen, onClose }) {
+  // ESC schließt
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") { e.stopPropagation(); onClose(); } };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  function onBackdropClick(e) {
+    if (e.target === e.currentTarget) onClose();
+  }
+
+  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "📖" };
+  const isPlatzhalter = wissen.status === "platzhalter";
+
+  return (
+    <div className="modal-backdrop" onClick={onBackdropClick} role="dialog" aria-modal="true"
+         style={{ zIndex: 2100, background: "rgba(26,32,44,0.65)" }}
+         onClickCapture={(e) => e.stopPropagation()}>
+      <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header">
+          <div className="modal-header-text">
+            <div className="modal-header-label">{kategorie.emoji} {kategorie.label}</div>
+            <div className="modal-header-title">{wissen.titel}</div>
+          </div>
+          <button className="modal-close" onClick={onClose} aria-label="Schließen">×</button>
+        </div>
+        <div className="modal-body">
+          {isPlatzhalter ? (
+            <div style={{ padding: 16, background: "var(--c-bg)", borderRadius: 6, fontSize: 13, color: "var(--c-text-muted)" }}>
+              <p style={{ margin: 0 }}><strong>Diese Detailseite wird derzeit vorbereitet.</strong></p>
+              <p style={{ margin: "8px 0 0" }}>Inhalte zu „{wissen.titel}" werden in den nächsten Tagen ergänzt. Bitte schauen Sie später noch einmal vorbei.</p>
+            </div>
+          ) : (
+            <>
+              {wissen.intro && (
+                <p style={{ fontSize: 15, fontWeight: 500, color: "var(--c-text)", marginTop: 0 }}>{wissen.intro}</p>
+              )}
+              {wissen.text && wissen.text.split("\n\n").map((para, i) => (
+                <p key={i} style={{ marginTop: 12, color: "var(--c-text)" }}>{para}</p>
+              ))}
+            </>
+          )}
         </div>
       </div>
     </div>
