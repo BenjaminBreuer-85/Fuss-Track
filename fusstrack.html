@@ -347,44 +347,44 @@
  * ============================================================ */
 const EINGRIFFE = {
   chevron: {
-    label: "Großzehe (Chevron-Osteotomie)",
-    kurzlabel: "Chevron",
+    label: "Chevron/Akin-Osteotomie",
+    kurzlabel: "Chevron/Akin",
     varianten: {
       einfach: {
-        label: "ohne Zusatzeingriffe",
-        beschreibung: "Operation an der Großzehe allein"
+        anzeigename: "Chevron/Akin-Osteotomie",
+        beschreibung: "Chevron/Akin-Osteotomie"
       },
       komplex: {
-        label: "mit weiteren Eingriffen",
-        beschreibung: "Großzehe plus z.B. Mittelfußosteotomie oder Kleinzehenkorrektur"
+        anzeigename: "Chevron/Akin-Osteotomie mit Zusatzeingriff",
+        beschreibung: "Chevron/Akin-Osteotomie mit Zusatzeingriff an Metatarsale oder Zehen"
       }
     }
   },
   osg_arthrodese: {
-    label: "OSG-Versteifung (Arthrodese)",
+    label: "OSG-Arthrodese",
     kurzlabel: "OSG-Arthrodese",
     varianten: {
       einfach: {
-        label: "mit Teilbelastung",
-        beschreibung: "Sie dürfen mit 15 kg teilbelasten"
+        anzeigename: "OSG-Arthrodese — Teilbelastung",
+        beschreibung: "OSG-Arthrodese mit Teilbelastung in der Nachbehandlung"
       },
       komplex: {
-        label: "mit kompletter Entlastung",
-        beschreibung: "Vollentlastung erforderlich (Immobilisation)"
+        anzeigename: "OSG-Arthrodese — Entlastung",
+        beschreibung: "OSG-Arthrodese mit vollständiger Entlastung in der Nachbehandlung"
       }
     }
   },
   osg_tep: {
-    label: "OSG-Prothese (Endoprothese)",
+    label: "OSG-Prothese",
     kurzlabel: "OSG-Prothese",
     varianten: {
       einfach: {
-        label: "Prothese allein",
-        beschreibung: "Standard-Nachbehandlung mit 4 Wochen Teilbelastung"
+        anzeigename: "OSG-Prothese",
+        beschreibung: "OSG-Prothese"
       },
       komplex: {
-        label: "mit Zusatzeingriff",
-        beschreibung: "Mit knöcherner Korrektur, längere Teilbelastung"
+        anzeigename: "OSG-Prothese mit Zusatzeingriff",
+        beschreibung: "OSG-Prothese mit Stabilisierung oder weiterer knöcherner Korrektur (Osteotomie/Arthrodese)"
       }
     }
   }
@@ -436,9 +436,12 @@ const SHARED_PRE_OP_PHASEN = [
   { id: "letzter_abend",          type: "calendar", tagOffset:  -1, label: "1 Tag vor OP",       thema: "Entspannung am Vorabend", emoji: "🌙" }
 ];
 
-// Nach-OP-Phasen pro Eingriff (beide Varianten teilen sich die Liste)
-const POST_OP_PHASEN_BY_OP = {
-  chevron: [
+// Nach-OP-Phasen pro Eingriff und Variante — verschachtelt {op}.{variante}
+// Wenn beide Varianten denselben Flow haben, zeigen einfach und komplex auf dieselbe Array-Referenz.
+// Wenn sie sich unterscheiden (z.B. Chevron einfach vs. komplex), sind es eigene Listen.
+const POST_OP_PHASEN_BY_OP = (() => {
+  // Chevron — EINFACH (Basis-Flow, 13 Phasen)
+  const chevronEinfach = [
     { id: "ch_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "ch_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
     { id: "ch_zuhause",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Zu Hause ankommen", emoji: "🏡" },
@@ -446,14 +449,33 @@ const POST_OP_PHASEN_BY_OP = {
     { id: "ch_hygiene",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
     { id: "ch_verband_1",      type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
     { id: "ch_verband_2",      type: "calendar", tagOffset:   7, label: "1 Woche nach OP",   thema: "Zweiter Verbandwechsel", emoji: "🩹" },
-    { id: "ch_faden",          type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "ch_faden",          type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug und dritter Verbandwechsel", emoji: "✂️" },
     { id: "ch_verband_ab",     type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Abnahme des Verbandes", emoji: "👟" },
     { id: "ch_bewegung",       type: "calendar", tagOffset:  22, label: "3 Wochen nach OP",  thema: "Bewegungsübungen Großzehengrundgelenk", emoji: "🦶" },
     { id: "ch_narbe",          type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
     { id: "ch_sport",          type: "calendar", tagOffset:  42, label: "ca. 6 Wochen nach OP", thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
     { id: "ch_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
-  ],
-  osg_arthrodese: [
+  ];
+  // Chevron — KOMPLEX: zusätzlicher 4. Verbandwechsel an Woche 3,
+  // Abnahme Verband + Bewegungsübungen schieben sich um 1 Woche.
+  const chevronKomplex = [
+    { id: "ch_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "ch_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "ch_zuhause",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Zu Hause ankommen", emoji: "🏡" },
+    { id: "ch_mobilisierung",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
+    { id: "ch_hygiene",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "ch_verband_1",      type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "ch_verband_2",      type: "calendar", tagOffset:   7, label: "1 Woche nach OP",   thema: "Zweiter Verbandwechsel", emoji: "🩹" },
+    { id: "ch_faden",          type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug und dritter Verbandwechsel", emoji: "✂️" },
+    { id: "ch_verband_4",      type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Vierter Verbandwechsel", emoji: "🩹" },
+    { id: "ch_verband_ab_kx",  type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Abnahme des Verbandes", emoji: "👟" },
+    { id: "ch_bewegung_kx",    type: "calendar", tagOffset:  29, label: "4 Wochen nach OP",  thema: "Bewegungsübungen Großzehengrundgelenk", emoji: "🦶" },
+    { id: "ch_narbe",          type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "ch_sport",          type: "calendar", tagOffset:  42, label: "ca. 6 Wochen nach OP", thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "ch_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+  ];
+  // OSG-Arthrodese: aktuell identisch in beiden Varianten (Unterschied folgt in Texten der Nachbehandlung)
+  const osgArthrodese = [
     { id: "ar_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "ar_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
     { id: "ar_mobilisierung",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
@@ -467,8 +489,9 @@ const POST_OP_PHASEN_BY_OP = {
     { id: "ar_roentgen",       type: "calendar", tagOffset:  49, label: "ca. 7 Wochen nach OP", thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
     { id: "ar_sport",          type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
     { id: "ar_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
-  ],
-  osg_tep: [
+  ];
+  // OSG-Prothese: aktuell identisch in beiden Varianten (Differenzierung folgt später)
+  const osgTep = [
     { id: "tep_op_tag",        type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "tep_abschwellung",  type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
     { id: "tep_mobilisierung", type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
@@ -482,13 +505,18 @@ const POST_OP_PHASEN_BY_OP = {
     { id: "tep_roentgen",      type: "calendar", tagOffset:  42, label: "6 Wochen nach OP",  thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
     { id: "tep_sport",         type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
     { id: "tep_kontrolle",     type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
-  ]
-};
+  ];
+  return {
+    chevron:        { einfach: chevronEinfach,  komplex: chevronKomplex },
+    osg_arthrodese: { einfach: osgArthrodese,   komplex: osgArthrodese },
+    osg_tep:        { einfach: osgTep,          komplex: osgTep }
+  };
+})();
 
-// Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey]
-// (beide Varianten eines Eingriffs bekommen dieselbe Liste — Differenzierung folgt später)
+// Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey]
 function getPhasenForVariant(opKey, variantKey) {
-  const postPhasen = POST_OP_PHASEN_BY_OP[opKey] || [];
+  const opGroup = POST_OP_PHASEN_BY_OP[opKey];
+  const postPhasen = (opGroup && opGroup[variantKey]) || [];
   return ONBOARDING_PHASEN.concat(SHARED_PRE_OP_PHASEN).concat(postPhasen);
 }
 
@@ -667,23 +695,48 @@ const PHASEN_INHALTE = {
   ch_verband_1: {
     intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
     text: "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten.\n\nEbenfalls wird nun in der Regel in Abhängigkeit von der Wunde der nächste Termin mit Ihnen geplant. Meistens ist dieser in ca. einer Woche.",
-    subthemen: []
+    subthemen: [
+      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+    ]
   },
   ch_verband_2: {
     intro: "Beim Verbandwechsel wird die Wunde desinfiziert, Steri-Strips können belassen werden.",
     text: "Die Wunde sollte nun trocken sein, die Abschwellung bereits erkennbar. Ein neuer redressierender Verband wird angelegt mit Zentrierung der großen Zehe, damit hier die korrigierten Weichteile unterstützt ausheilen können. Eine Anleitung zur Verbandstechnik finden Sie in unserem Nachbehandlungsschema.\n\nSie können Fragen zum Verlauf stellen und eine neue AU ausgestellt bekommen. Der nächste Termin ist in der Regel in einer Woche zum Fadenzug. Sollten Sie noch Thromboseschutzspritzen nutzen, dann können Sie nun fragen, ob Sie diese noch weiter benötigen.",
     subthemen: [
-      { label: "Anleitung zur Verbandstechnik (Nachbehandlungsschema)", platzhalter: true }
+      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
     ]
   },
   ch_faden: {
-    intro: "Das einliegende Nahtmaterial wird entfernt; bei resorbierbaren Fäden müssen nur die Knoten gekappt werden.",
-    text: "Dies sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer redressierender Verband angelegt und das weitere Procedere besprochen. Sollten die Zwischenzehenkeile und eine Hallux-Schiene noch nicht vorliegen, können Sie nun mit Ihrem Behandler besprechen, ob dieser Ihnen die Hilfsmittel noch verschreibt. Die Zwischenzehenkeile sind in der Regel nicht verschreibungsfähig und müssen für wenige Euro im Sanitätshaus gekauft werden.",
-    subthemen: []
+    intro: "Das einliegende Nahtmaterial wird entfernt; bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Im gleichen Termin wird auch der dritte Verbandwechsel durchgeführt.",
+    text: "Der Fadenzug sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer redressierender Verband angelegt und das weitere Procedere besprochen. Sollten die Zwischenzehenkeile und eine Hallux-Schiene noch nicht vorliegen, können Sie nun mit Ihrem Behandler besprechen, ob dieser Ihnen die Hilfsmittel noch verschreibt. Die Zwischenzehenkeile sind in der Regel nicht verschreibungsfähig und müssen für wenige Euro im Sanitätshaus gekauft werden.",
+    subthemen: [
+      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+    ]
+  },
+  ch_verband_4: {
+    intro: "Beim vierten Verbandwechsel wird die Wunde erneut desinfiziert und der redressierende Verband neu angelegt.",
+    text: "Aufgrund der zusätzlichen Eingriffe (z.B. an Mittelfuß oder Kleinzehen) ist eine längere Verbandstherapie notwendig, um die korrekte Positionierung weiterhin zu unterstützen. Eine Anleitung zur Verbandstechnik finden Sie unten verlinkt.\n\nDer nächste Termin ist in der Regel in einer Woche zur Abnahme des Verbandes.",
+    subthemen: [
+      { label: "Anleitung zum Verbandwechsel", platzhalter: true }
+    ]
   },
   ch_verband_ab: {
     intro: "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
     text: "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht.",
+    subthemen: [
+      { label: "Anleitung Nutzung Keile und Nachtschiene", platzhalter: true }
+    ]
+  },
+  ch_verband_ab_kx: {
+    intro: "Es sind nun ca. 4 Wochen seit dem Eingriff vergangen.",
+    text: "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Sollte ein Draht in eine Zehe eingesetzt worden sein, wird dieser nun entfernt, und die Kleinzehen müssen weiter mit einem Tape zentrierend positioniert werden. Dies muss zwingend von einem in Fußchirurgie erfahrenen Behandler erfolgen.\n\nWenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Gerade bei komplexen Eingriffen an mehreren Zehen ergeben sich aber sehr individuelle Konzepte. Hier sollte genau mit den Operateuren geklärt werden, wie die Nachbehandlung und das Taping/Zentrieren der Zehen erfolgt, und keinen pauschalen Konzepten gefolgt werden.",
+    subthemen: [
+      { label: "Anleitung Nutzung Keile und Nachtschiene", platzhalter: true }
+    ]
+  },
+  ch_bewegung_kx: {
+    intro: "Eine Steife des Großzehengrundgelenkes als Folge der Ruhigstellung und Vernarbungen im Körper ist kein seltenes Problem.",
+    text: "Dieser Steife können Sie vorbeugen, indem Sie frühzeitig mit Bewegungsübungen des Großzehengrundgelenkes in die Beugung und Hebung beginnen. Dies können Sie vorsichtig selbst im beschwerdefreien Bereich machen. Häufig ist dies am Anfang nur in geringem Maße möglich und kann dann von Tag zu Tag gesteigert werden.\n\nEine Führung der Großzehe zur guten Ausreifung der gerafften Kapsel und verlagerten Sehne auf der Fußinnenseite ist aber weiterhin nötig mittels Zwischenzehenkeile und Schiene. Alternativ kann hier auch ein Taping genutzt werden, was aber regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden muss.",
     subthemen: []
   },
   ch_bewegung: {
@@ -1003,6 +1056,16 @@ function App() {
     setSession(next);
   }
 
+  // Tab-Titel dynamisch an den aktuellen Eingriff anpassen
+  useEffect(() => {
+    if (hasSession) {
+      const eingriff = EINGRIFFE[session.eingriff];
+      document.title = "Fuß-Track · " + (eingriff.kurzlabel || eingriff.label);
+    } else {
+      document.title = "Fuß-Track · Ihr Begleiter rund um die OP";
+    }
+  }, [hasSession, session && session.eingriff]);
+
   function resetSession() {
     Storage.clear();
     setSession(null);
@@ -1073,7 +1136,7 @@ function ErrorPage() {
           Der Zugang erfolgt ausschließlich über den QR-Code, den Sie in Ihrem Arztbrief finden.
         </p>
         <p>
-          So wird sichergestellt, dass Sie die Informationen zum richtigen Eingriff und in der richtigen Variante erhalten.
+          So wird sichergestellt, dass Sie die Informationen zum richtigen Eingriff und passend zu Ihrer Behandlung erhalten.
         </p>
       </div>
       <Branding />
@@ -1096,9 +1159,10 @@ function DatumEingabe({ session, onUpdate }) {
     <>
       <div className="card">
         <div className="card-label">Ihr Eingriff (vom Arzt vorausgewählt)</div>
-        <h2 style={{ marginTop: 0 }}>{eingriff.label}</h2>
-        <p style={{ margin: "0 0 4px", fontWeight: 600 }}>{variante.label}</p>
-        <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
+        <h2 style={{ marginTop: 0 }}>{variante.anzeigename}</h2>
+        {variante.beschreibung !== variante.anzeigename && (
+          <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
+        )}
         <div className="preselect-hint">🔒 Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
       </div>
 
@@ -1184,8 +1248,10 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
       {/* Übersicht */}
       <div className="card">
         <div className="card-label">Ihre Auswahl</div>
-        <h2 style={{ marginTop: 0 }}>{eingriff.label}</h2>
-        <p style={{ margin: "0 0 8px", fontWeight: 600 }}>{variante.label}</p>
+        <h2 style={{ marginTop: 0 }}>{variante.anzeigename}</h2>
+        {variante.beschreibung !== variante.anzeigename && (
+          <p style={{ margin: "0 0 8px", color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
+        )}
 
         {!editingDate ? (
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
