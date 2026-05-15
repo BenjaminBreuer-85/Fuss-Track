@@ -491,11 +491,33 @@ const POST_OP_PHASEN_BY_OP = (() => {
     { id: "ar_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
   ];
   // OSG-Prothese: aktuell identisch in beiden Varianten (Differenzierung folgt später)
-  const osgTep = [
+  // OSG-Prothese — EINFACH (Basis-Flow)
+  const osgTepEinfach = [
     { id: "tep_op_tag",        type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "tep_abschwellung",  type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
     { id: "tep_mobilisierung", type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
     { id: "tep_hygiene",       type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "tep_lymph",         type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Lymphdrainage", emoji: "💧" },
+    { id: "tep_entlassung",    type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Entlassung", emoji: "🏡" },
+    { id: "tep_verband_1",     type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "tep_faden",         type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "tep_verband_ab",    type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
+    { id: "tep_bewegung",      type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
+    { id: "tep_narbe",         type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "tep_roentgen",      type: "calendar", tagOffset:  42, label: "6 Wochen nach OP",  thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
+    { id: "tep_sport",         type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "tep_kontrolle",     type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+  ];
+  // OSG-Prothese — KOMPLEX (mit Zusatzeingriff: Stabilisierung oder weitere knöcherne Korrektur)
+  // Vorerst identische Phasenliste; Differenzierung folgt in nächster Iteration.
+  // Phase-IDs sind identisch zu einfach — d.h. beide Varianten teilen sich vorerst denselben PHASEN_INHALTE-Lookup.
+  // Sobald sich Inhalte unterscheiden sollen, neue ID mit Suffix _kx anlegen (Konvention wie bei Chevron).
+  const osgTepKomplex = [
+    { id: "tep_op_tag",        type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "tep_abschwellung",  type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "tep_mobilisierung", type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
+    { id: "tep_hygiene",       type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "tep_lymph",         type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Lymphdrainage", emoji: "💧" },
     { id: "tep_entlassung",    type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Entlassung", emoji: "🏡" },
     { id: "tep_verband_1",     type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
     { id: "tep_faden",         type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
@@ -509,7 +531,7 @@ const POST_OP_PHASEN_BY_OP = (() => {
   return {
     chevron:        { einfach: chevronEinfach,  komplex: chevronKomplex },
     osg_arthrodese: { einfach: osgArthrodese,   komplex: osgArthrodese },
-    osg_tep:        { einfach: osgTep,          komplex: osgTep }
+    osg_tep:        { einfach: osgTepEinfach,   komplex: osgTepKomplex }
   };
 })();
 
@@ -874,7 +896,12 @@ const PHASEN_INHALTE = {
   },
   tep_bewegung: {
     intro: "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
-    text: "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.",
+    text: "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Es können auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband erfolgen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nIm oberen Sprunggelenk selber kann auch sanft auf und ab bewegt werden, wenn Ihnen dies vom Behandler freigegeben wurde. In manchen Fällen kann die Wundheilung hier noch limitierend sein für die Beübung.",
+    subthemen: []
+  },
+  tep_lymph: {
+    intro: "Es kann direkt nach dem Eingriff zur Förderung der Abschwellung und Ödemreduktion eine Lymphdrainage im Abstromgebiet des Operationsgebietes erfolgen.",
+    text: "Der Verband wird dabei belassen.\n\nPlanen Sie auch Lymphdrainage für die Zeit nach der Entlassung vor und nehmen Sie Kontakt mit entsprechenden Einrichtungen auf — idealerweise findet dies als Hausbesuch statt.",
     subthemen: []
   },
   tep_narbe: {
