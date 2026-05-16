@@ -951,6 +951,155 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
   );
 }
 
+/* ============================================================
+ * MarkdownView — minimaler Markdown-Renderer
+ * Unterstützt:
+ *  - Überschriften: ## und ###
+ *  - Listen: Zeilen die mit "- " oder "* " beginnen
+ *  - Tabellen: GitHub-Flavored (| spalte | spalte |) mit Trenn-Zeile
+ *  - Fett: **text**
+ *  - Italic: *text*
+ *  - Absätze: durch Leerzeile getrennt
+ *
+ * Sicher gegen XSS: alle Texte werden via React als Children gerendert
+ * (kein dangerouslySetInnerHTML).
+ * ============================================================ */
+function renderInline(text) {
+  // Verarbeitet **fett** und *italic* in einem String.
+  // Gibt Array von React-Elementen / Strings zurück.
+  if (!text) return text;
+  const parts = [];
+  let buffer = "";
+  let i = 0;
+  let keyIdx = 0;
+  function flushBuffer() {
+    if (buffer) { parts.push(buffer); buffer = ""; }
+  }
+  while (i < text.length) {
+    // Fett: **...**
+    if (text[i] === "*" && text[i+1] === "*") {
+      const end = text.indexOf("**", i + 2);
+      if (end !== -1) {
+        flushBuffer();
+        parts.push(<strong key={"b" + (keyIdx++)}>{text.substring(i + 2, end)}</strong>);
+        i = end + 2;
+        continue;
+      }
+    }
+    // Italic: *...*
+    if (text[i] === "*") {
+      const end = text.indexOf("*", i + 1);
+      if (end !== -1) {
+        flushBuffer();
+        parts.push(<em key={"i" + (keyIdx++)}>{text.substring(i + 1, end)}</em>);
+        i = end + 1;
+        continue;
+      }
+    }
+    buffer += text[i];
+    i++;
+  }
+  flushBuffer();
+  return parts;
+}
+
+function MarkdownView({ source }) {
+  if (!source) return null;
+  const lines = source.split("\n");
+  const blocks = [];
+  let i = 0;
+  let keyIdx = 0;
+  function nextKey() { return "md" + (keyIdx++); }
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Leere Zeile → Block-Trenner
+    if (!line.trim()) { i++; continue; }
+
+    // Überschrift H3: ###
+    if (line.startsWith("### ")) {
+      blocks.push(<h4 key={nextKey()} style={{ fontSize: 14, fontWeight: 700, color: "var(--c-primary)", marginTop: 18, marginBottom: 6 }}>{renderInline(line.substring(4))}</h4>);
+      i++;
+      continue;
+    }
+    // Überschrift H2: ##
+    if (line.startsWith("## ")) {
+      blocks.push(<h3 key={nextKey()} style={{ fontSize: 15, fontWeight: 700, color: "var(--c-primary)", marginTop: 20, marginBottom: 8, paddingBottom: 4, borderBottom: "1px solid rgba(0,0,0,.06)" }}>{renderInline(line.substring(3))}</h3>);
+      i++;
+      continue;
+    }
+
+    // Tabelle: | spalte | spalte | gefolgt von | --- | --- |
+    if (line.trim().startsWith("|") && i + 1 < lines.length &&
+        lines[i + 1].trim().match(/^\|[\s\-:|]+\|$/)) {
+      const headers = line.split("|").slice(1, -1).map(c => c.trim());
+      i += 2; // Header + Trennzeile
+      const rows = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")) {
+        const cells = lines[i].split("|").slice(1, -1).map(c => c.trim());
+        rows.push(cells);
+        i++;
+      }
+      blocks.push(
+        <div key={nextKey()} style={{ overflowX: "auto", marginTop: 10, marginBottom: 10 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
+            <thead>
+              <tr style={{ background: "rgba(0,131,143,.06)" }}>
+                {headers.map((h, hi) => (
+                  <th key={hi} style={{ padding: "8px 10px", textAlign: "left", borderBottom: "1px solid rgba(0,0,0,.10)", color: "var(--c-primary)", fontWeight: 700 }}>{renderInline(h)}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, ri) => (
+                <tr key={ri} style={{ borderBottom: "1px solid rgba(0,0,0,.04)" }}>
+                  {row.map((cell, ci) => (
+                    <td key={ci} style={{ padding: "6px 10px", color: "var(--c-text)", verticalAlign: "top" }}>{renderInline(cell)}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+      continue;
+    }
+
+    // Liste: Zeilen mit "- " oder "* "
+    if (line.startsWith("- ") || line.startsWith("* ")) {
+      const items = [];
+      while (i < lines.length && (lines[i].startsWith("- ") || lines[i].startsWith("* "))) {
+        items.push(lines[i].substring(2));
+        i++;
+      }
+      blocks.push(
+        <ul key={nextKey()} style={{ marginTop: 8, marginBottom: 8, paddingLeft: 22, color: "var(--c-text)" }}>
+          {items.map((it, ii) => (
+            <li key={ii} style={{ marginBottom: 4 }}>{renderInline(it)}</li>
+          ))}
+        </ul>
+      );
+      continue;
+    }
+
+    // Sonst: normaler Absatz (alle Zeilen bis zur nächsten Leerzeile zusammenführen)
+    const paraLines = [];
+    while (i < lines.length && lines[i].trim() &&
+           !lines[i].startsWith("## ") && !lines[i].startsWith("### ") &&
+           !lines[i].startsWith("- ") && !lines[i].startsWith("* ") &&
+           !lines[i].trim().startsWith("|")) {
+      paraLines.push(lines[i]);
+      i++;
+    }
+    blocks.push(
+      <p key={nextKey()} style={{ marginTop: 10, marginBottom: 10, color: "var(--c-text)" }}>{renderInline(paraLines.join(" "))}</p>
+    );
+  }
+
+  return <div>{blocks}</div>;
+}
+
 function WissensDetailModal({ wissenId, wissen, onClose }) {
   // ESC schließt
   useEffect(() => {
@@ -989,9 +1138,7 @@ function WissensDetailModal({ wissenId, wissen, onClose }) {
               {wissen.intro && (
                 <p style={{ fontSize: 15, fontWeight: 500, color: "var(--c-text)", marginTop: 0 }}>{wissen.intro}</p>
               )}
-              {wissen.text && wissen.text.split("\n\n").map((para, i) => (
-                <p key={i} style={{ marginTop: 12, color: "var(--c-text)" }}>{para}</p>
-              ))}
+              {wissen.text && <MarkdownView source={wissen.text} />}
             </>
           )}
         </div>
