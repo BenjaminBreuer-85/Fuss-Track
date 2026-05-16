@@ -474,8 +474,8 @@ const POST_OP_PHASEN_BY_OP = (() => {
     { id: "ch_sport",          type: "calendar", tagOffset:  42, label: "ca. 6 Wochen nach OP", thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
     { id: "ch_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
   ];
-  // OSG-Arthrodese: aktuell identisch in beiden Varianten (Unterschied folgt in Texten der Nachbehandlung)
-  const osgArthrodese = [
+  // OSG-Arthrodese — EINFACH (Teilbelastung-Variante, Basis-Flow)
+  const osgArthrodeseEinfach = [
     { id: "ar_op_tag",         type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "ar_abschwellung",   type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
     { id: "ar_mobilisierung",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Mobilisierung und Thromboseschutz", emoji: "🚶" },
@@ -486,9 +486,33 @@ const POST_OP_PHASEN_BY_OP = (() => {
     { id: "ar_verband_ab",     type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
     { id: "ar_bewegung",       type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
     { id: "ar_narbe",          type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
-    { id: "ar_roentgen",       type: "calendar", tagOffset:  49, label: "ca. 7 Wochen nach OP", thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
-    { id: "ar_sport",          type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
-    { id: "ar_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
+    { id: "ar_roentgen",       type: "calendar", tagOffset:  49, label: "7 Wochen nach OP",  thema: "CT-Kontrolle planen", emoji: "🩻" },
+    { id: "ar_kontrolle",      type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" },
+    { id: "ar_sport",          type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" }
+  ];
+  // OSG-Arthrodese — KOMPLEX (Entlastung-Variante, 8 Wochen Vollentlastung dann 4 Wochen Walker)
+  // Unterschiede zu einfach:
+  //  - ar_mobilisierung_kx statt ar_mobilisierung (Vollentlastung)
+  //  - ar_hygiene_kx statt ar_hygiene (Gips-spezifisch)
+  //  - NEU: ar_ct_kx (Tag 56 = 8 Wochen) — CT durchgeführt, Wechsel in Walker
+  //  - NEU: ar_vollbelastung_kx (Tag 84 = 12 Wochen) — Röntgen, Vollbelastung freigegeben
+  //  - Reihenfolge Tag 84: ar_vollbelastung_kx → ar_kontrolle → ar_sport
+  const osgArthrodeseKomplex = [
+    { id: "ar_op_tag",            type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
+    { id: "ar_abschwellung",      type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
+    { id: "ar_mobilisierung_kx",  type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Vollentlastung und Thromboseschutz", emoji: "🚶" },
+    { id: "ar_hygiene_kx",        type: "calendar", tagOffset:   1, label: "Tag 1 nach OP",     thema: "Körperhygiene", emoji: "🚿" },
+    { id: "ar_entlassung",        type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Entlassung", emoji: "🏡" },
+    { id: "ar_verband_1",         type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
+    { id: "ar_faden",             type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
+    { id: "ar_verband_ab",        type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
+    { id: "ar_bewegung",          type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
+    { id: "ar_narbe",             type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
+    { id: "ar_roentgen",          type: "calendar", tagOffset:  49, label: "7 Wochen nach OP",  thema: "CT-Kontrolle planen", emoji: "🩻" },
+    { id: "ar_ct_kx",             type: "calendar", tagOffset:  56, label: "8 Wochen nach OP",  thema: "CT-Kontrolle und Wechsel in Walker", emoji: "🩻" },
+    { id: "ar_vollbelastung_kx",  type: "calendar", tagOffset:  84, label: "12 Wochen nach OP", thema: "Röntgenkontrolle und Vollbelastung", emoji: "🩻" },
+    { id: "ar_kontrolle",         type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" },
+    { id: "ar_sport",             type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" }
   ];
   // OSG-Prothese: aktuell identisch in beiden Varianten (Differenzierung folgt später)
   // OSG-Prothese — EINFACH (Basis-Flow)
@@ -511,7 +535,11 @@ const POST_OP_PHASEN_BY_OP = (() => {
   // OSG-Prothese — KOMPLEX (mit Zusatzeingriff: Stabilisierung oder weitere knöcherne Korrektur)
   // Vorerst identische Phasenliste; Differenzierung folgt in nächster Iteration.
   // Phase-IDs sind identisch zu einfach — d.h. beide Varianten teilen sich vorerst denselben PHASEN_INHALTE-Lookup.
-  // Sobald sich Inhalte unterscheiden sollen, neue ID mit Suffix _kx anlegen (Konvention wie bei Chevron).
+  // OSG-Prothese — KOMPLEX (mit Stabilisierung oder weiterer knöcherner Korrektur)
+  // Unterschiede zu einfach:
+  //  - tep_bewegung_kx statt tep_bewegung (vorsichtigere OSG-Mobilisierung in den ersten 6 Wochen)
+  //  - tep_roentgen_kx statt tep_roentgen (Hinweis auf Bandage für weitere 6 Wochen)
+  //  - tep_sport_kx statt tep_sport (defensivere Sport-Freigabe, Impact frühestens nach 6 Monaten)
   const osgTepKomplex = [
     { id: "tep_op_tag",        type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Am OP-Tag", emoji: "🏥" },
     { id: "tep_abschwellung",  type: "calendar", tagOffset:   0, label: "OP-Tag",            thema: "Abschwellung", emoji: "❄️" },
@@ -522,16 +550,16 @@ const POST_OP_PHASEN_BY_OP = (() => {
     { id: "tep_verband_1",     type: "calendar", tagOffset:   2, label: "Tag 2 nach OP",     thema: "Erster Verbandwechsel", emoji: "🩹" },
     { id: "tep_faden",         type: "calendar", tagOffset:  14, label: "2 Wochen nach OP",  thema: "Fadenzug", emoji: "✂️" },
     { id: "tep_verband_ab",    type: "calendar", tagOffset:  21, label: "3 Wochen nach OP",  thema: "Erneuter Verbandwechsel", emoji: "👟" },
-    { id: "tep_bewegung",      type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
+    { id: "tep_bewegung_kx",   type: "calendar", tagOffset:  28, label: "4 Wochen nach OP",  thema: "Sanfte Bewegungsübungen", emoji: "🦶" },
     { id: "tep_narbe",         type: "calendar", tagOffset:  40, label: "ca. 6 Wochen nach OP", thema: "Narbenpflege", emoji: "💆" },
-    { id: "tep_roentgen",      type: "calendar", tagOffset:  42, label: "6 Wochen nach OP",  thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
-    { id: "tep_sport",         type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
+    { id: "tep_roentgen_kx",   type: "calendar", tagOffset:  42, label: "6 Wochen nach OP",  thema: "Röntgenkontrolle und Belastungssteigerung", emoji: "🩻" },
+    { id: "tep_sport_kx",      type: "calendar", tagOffset:  63, label: "9 Wochen nach OP",  thema: "Sportliche Belastungssteigerung", emoji: "🚴" },
     { id: "tep_kontrolle",     type: "calendar", tagOffset:  84, label: "3 Monate nach OP",  thema: "Kontrolle", emoji: "✅" }
   ];
   return {
-    chevron:        { einfach: chevronEinfach,  komplex: chevronKomplex },
-    osg_arthrodese: { einfach: osgArthrodese,   komplex: osgArthrodese },
-    osg_tep:        { einfach: osgTepEinfach,   komplex: osgTepKomplex }
+    chevron:        { einfach: chevronEinfach,         komplex: chevronKomplex },
+    osg_arthrodese: { einfach: osgArthrodeseEinfach,   komplex: osgArthrodeseKomplex },
+    osg_tep:        { einfach: osgTepEinfach,          komplex: osgTepKomplex }
   };
 })();
 
@@ -711,8 +739,10 @@ const PHASEN_INHALTE = {
   },
   ch_hygiene: {
     intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
-    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
-    subthemen: []
+    text: "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: [
+      { wissen: "gips_wasserdicht" }
+    ]
   },
   ch_verband_1: {
     intro: "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 2. Tag nach der OP häufig die erste Wundkontrolle.",
@@ -802,7 +832,33 @@ const PHASEN_INHALTE = {
   },
   ar_hygiene: {
     intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
-    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    text: "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: [
+      { wissen: "gips_wasserdicht" }
+    ]
+  },
+  ar_hygiene_kx: {
+    intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
+    text: "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren.\n\nDer Verband und ggf. der Gips müssen belassen werden und dürfen nicht nass werden. Auch bei einer Gipsruhigstellung lässt sich der Fuß mit einer wasserdichten (Müll-)Tüte schützen, die am Bein mit Klebeband abgedichtet wird. Wie das praktisch funktioniert, zeigen wir Ihnen in einer Anleitung. Alternativ gibt es im Sanitätshaus wasserdichte Gipsschutz-Überzieher.\n\nDer Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: [
+      { wissen: "gips_wasserdicht" }
+    ]
+  },
+  ar_mobilisierung_kx: {
+    intro: "Bei dieser Variante der OSG-Arthrodese ist eine vollständige Entlastung des operierten Fußes für 8 Wochen vorgesehen.",
+    text: "Das bedeutet: Sie dürfen den Fuß in dieser Zeit gar nicht belasten, auch nicht auftupfen. Die Fortbewegung erfolgt im Rollstuhl oder an Unterarmgehstützen, wenn dies für Sie sicher umsetzbar ist. Welcher Weg für Sie passend ist, hängt von Ihrer körperlichen Verfassung, Ihrem Gleichgewicht und der Wohnsituation ab. Ein Gespräch mit Ihrem Behandler und ggf. der Physiotherapie klärt, was sicher ist.\n\nMit der vollständigen Entlastung verbunden ist eine stärkere Beanspruchung von Armen, Rumpf und gegenseitigem Bein. Achten Sie auf eine gute Sturzprophylaxe — gerade in Bad und Treppenhaus.\n\nEine Thromboseprophylaxe ist für die gesamte Entlastungsphase nötig, da die Muskulatur deutlich weniger beansprucht wird und das Sprunggelenk ruhiggestellt ist. Sollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen — fragen Sie hier spezifisch Ihre Behandler.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+    subthemen: [
+      { wissen: "thromboseschutz_bewegung" }
+    ]
+  },
+  ar_ct_kx: {
+    intro: "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
+    text: "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte noch so lange fortgeführt werden, wie Sie den Walker oder die Stützen nutzen.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+    subthemen: []
+  },
+  ar_vollbelastung_kx: {
+    intro: "Heute steht die Röntgenkontrolle an. Sie zeigt den Stand der knöchernen Durchbauung 12 Wochen nach dem Eingriff.",
+    text: "Wenn der Fortschritt als regelrecht befundet wurde, wird die Vollbelastung freigegeben. Sie können nun aus dem Walker in das normale, weite Schuhwerk wechseln.\n\nDie Vollbelastung sollte trotzdem schrittweise weiter aufgebaut werden — Ihr Körper braucht einige Wochen, um sich an die volle Belastung zu gewöhnen.\n\nFalls die knöcherne Heilung noch nicht abgeschlossen ist, wird das weitere Vorgehen individuell mit Ihrem Behandler abgestimmt — meist erfolgt dann eine Verlängerung der Walker-Phase und eine erneute Kontrolle in einigen Wochen.",
     subthemen: []
   },
   ar_entlassung: {
@@ -836,8 +892,8 @@ const PHASEN_INHALTE = {
     subthemen: []
   },
   ar_roentgen: {
-    intro: "Es erfolgt 7–8 Wochen nach dem Eingriff eine Röntgenkontrolle.",
-    text: "In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Sie können die Kontrolle nun terminieren. In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+    intro: "In etwa einer Woche steht Ihre CT-Kontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
+    text: "Die CT-Kontrolle sollte 8 Wochen nach dem Eingriff stattfinden. In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Die CT liefert hier genauere Informationen zum Fortschritt der knöchernen Heilung als ein normales Röntgenbild und ist bei der OSG-Arthrodese der bessere Verlaufsindikator.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
     subthemen: []
   },
   ar_sport: {
@@ -871,8 +927,10 @@ const PHASEN_INHALTE = {
   },
   tep_hygiene: {
     intro: "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
-    text: "Sie sollten sich im Bad auf einen Stuhl oder Hocker setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
-    subthemen: []
+    text: "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+    subthemen: [
+      { wissen: "gips_wasserdicht" }
+    ]
   },
   tep_entlassung: {
     intro: "Die Implantation einer OSG-Endoprothese erfolgt stationär.",
@@ -919,6 +977,21 @@ const PHASEN_INHALTE = {
     text: "Dies sollte nur probiert werden, wenn die Mobilität im Alltag unter geringen Schmerzen sicher funktioniert.\n\nIn aller Regel bieten sich hier Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sind mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit nicht empfehlenswert.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele sind: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
     subthemen: []
   },
+  tep_bewegung_kx: {
+    intro: "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
+    text: "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Es können auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband erfolgen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nWichtig: Aufgrund der zusätzlichen Bandstabilisierung soll das obere Sprunggelenk in den ersten 6 Wochen nach der OP nicht intensiv mobilisiert werden — insbesondere keine starken Bewegungen in die Plantarflexion (Fuß nach unten) und keine Inversion (Fuß nach innen kippen). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nEine sanfte, geführte Beübung im beschwerdearmen Bereich ist erlaubt, sobald Ihre Wundheilung dies zulässt. Im Zweifel sprechen Sie mit Ihrer Physiotherapie oder dem Behandler.",
+    subthemen: []
+  },
+  tep_roentgen_kx: {
+    intro: "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+    text: "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
+    subthemen: []
+  },
+  tep_sport_kx: {
+    intro: "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
+    text: "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+    subthemen: []
+  },
   tep_kontrolle: {
     intro: "Der Eingriff ist nun 3 Monate her.",
     text: "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Das obere Sprunggelenk sollte bereits zufriedenstellend beweglich sein. Eine gewisse Anpassungszeit an die Prothese ist normal.\n\nSollten noch relevante Beschwerden im OP-Gebiet oder eine störende Steife vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
@@ -958,6 +1031,13 @@ const WISSEN = {
   // === Hilfsmittel ===
   keile_nachtschiene_chevron: {
     titel: "Nutzung von Zwischenzehenkeilen und Nachtschiene",
+    kategorie: "hilfsmittel",
+    status: "platzhalter",
+    intro: "",
+    text: ""
+  },
+  gips_wasserdicht: {
+    titel: "Wasserdichter Schutz für Verband und Gips",
     kategorie: "hilfsmittel",
     status: "platzhalter",
     intro: "",
@@ -1704,12 +1784,13 @@ function PrivacyBanner({ onAccept }) {
         <p>
           <strong>Hinweis zur Datenverarbeitung:</strong> Diese Seite speichert Ihre Auswahl
           (Eingriff, Variante, OP-Datum) lokal in Ihrem Browser. Es werden keine personenbezogenen
-          Daten an einen Server übertragen. Mit „Einverstanden" bestätigen Sie die Verwendung
+          Daten an einen Server übertragen. Beim Aufruf werden technische Bibliotheken über
+          externe Anbieter (CDN) geladen. Mit „Einverstanden" bestätigen Sie die Verwendung
           dieser lokalen Speicherung.
         </p>
         <div className="privacy-banner-actions">
           <button className="btn btn-primary btn-small" onClick={onAccept}>Einverstanden</button>
-          <a href="#datenschutz" onClick={(e) => { e.preventDefault(); alert("Datenschutzerklärung folgt"); }}
+          <a href="#datenschutz" onClick={(e) => { e.preventDefault(); document.getElementById("impressum-overlay").style.display = "flex"; }}
              className="btn btn-secondary btn-small" style={{ textDecoration: "none" }}>
             Mehr erfahren
           </a>
@@ -1739,5 +1820,90 @@ function ResetModal({ onConfirm, onCancel }) {
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 </script>
+
+<!-- Impressum & Datenschutz Modal-Overlay -->
+<div id="impressum-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.55); z-index:9999; overflow-y:auto; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="max-width:680px; margin:24px auto; background:#fff; border-radius:12px; padding:24px; color:#1A202C; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; font-size:14px; line-height:1.6;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(0,0,0,.10);">
+      <h2 style="margin:0; font-size:18px; color:#006B6F;">Impressum &amp; Datenschutz</h2>
+      <span style="cursor:pointer; font-size:22px; color:#718096; line-height:1; padding:4px 8px;" onclick="document.getElementById('impressum-overlay').style.display='none'">&#10005;</span>
+    </div>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Angaben gemäß § 5 DDG</h3>
+    <p style="margin:4px 0;">
+      Dr. med. Benjamin Breuer<br>
+      Departmentleiter Spezielle Fußchirurgie<br><br>
+      Berufliche Erreichbarkeit:<br>
+      Florence-Nightingale-Krankenhaus<br>
+      Kaiserswerther Diakonie<br>
+      Kreuzbergstraße 79<br>
+      40489 Düsseldorf
+    </p>
+    <p style="margin:8px 0; font-size:12px; color:#718096; font-style:italic;">
+      Privat betriebene Anwendung von Dr. med. Benjamin Breuer. Kein offizielles Angebot der Kaiserswerther Diakonie oder des Florence-Nightingale-Krankenhauses.
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Kontakt</h3>
+    <p style="margin:4px 0;">
+      Telefon: 0211 409-5000
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Berufsbezeichnung</h3>
+    <p style="margin:4px 0;">
+      Arzt / Facharzt für Orthopädie und Unfallchirurgie<br>
+      Verliehen in der Bundesrepublik Deutschland<br>
+      Zuständige Kammer: Ärztekammer Nordrhein
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Zweck dieser Anwendung</h3>
+    <p style="margin:4px 0;">
+      Fuß-Track ist ein digitaler Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk. Die Anwendung bietet phasengerechte Informationen vor und nach der Operation.
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Keine medizinische Beratung</h3>
+    <p style="margin:4px 0;">
+      Die Inhalte dieser Anwendung dienen ausschließlich der ergänzenden Information. Sie ersetzen <strong>nicht</strong> das ärztliche Aufklärungsgespräch, die individuelle Untersuchung oder die fachliche Beratung durch Ihren behandelnden Arzt. Bei Beschwerden, Unsicherheiten oder Komplikationen wenden Sie sich bitte direkt an Ihre behandelnden Ärzte oder im Notfall an die Notaufnahme. Die Anwendung trifft keine individuellen medizinischen Empfehlungen.
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Datenschutz</h3>
+    <p style="margin:4px 0;">
+      <strong>Lokale Speicherung im Browser:</strong> Diese Anwendung läuft vollständig im Browser Ihres Geräts. Die Anwendung speichert folgende Angaben ausschließlich lokal in Ihrem Browser (über <em>localStorage</em>): die Auswahl des Eingriffs und der Variante (über die Aufruf-URL festgelegt), das eingegebene OP-Datum sowie die Bestätigung des Datenschutzhinweises. Diese Daten verbleiben auf Ihrem Gerät und werden zu keinem Zeitpunkt an einen Server übertragen.
+    </p>
+    <p style="margin:8px 0 4px;">
+      <strong>Keine Cookies, kein Tracking:</strong> Es werden keine Cookies gesetzt. Es findet keine Analyse Ihres Nutzungsverhaltens statt. Es werden keine Tracking- oder Analysedienste eingebunden.
+    </p>
+    <p style="margin:8px 0 4px;">
+      <strong>Externe Bibliotheken (CDN):</strong> Beim Aufruf der Seite werden technische Bibliotheken (React zur Darstellung der Oberfläche, eine QR-Code-Bibliothek) über externe Anbieter (Content Delivery Networks, u. a. <em>unpkg.com</em>, <em>cdn.jsdelivr.net</em>) geladen. Beim Laden dieser Bibliotheken übermittelt Ihr Browser technisch bedingt Ihre IP-Adresse an die jeweiligen Anbieter. Eine Verarbeitung über die reine Auslieferung der Bibliotheken hinaus findet nach unserem Kenntnisstand nicht statt; die jeweiligen Datenschutzbestimmungen der CDN-Anbieter gelten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technisch zuverlässigen Bereitstellung der Anwendung).
+    </p>
+    <p style="margin:8px 0 4px;">
+      <strong>Hosting:</strong> Diese Anwendung wird über GitHub Pages (GitHub Inc., USA) ausgeliefert. Beim Aufruf werden technisch bedingt Server-Logfiles (u. a. IP-Adresse, Zeitpunkt) durch den Hosting-Anbieter verarbeitet. Wir haben hierauf keinen Einfluss. Die Datenschutzbestimmungen von GitHub sind unter <em>https://docs.github.com/site-policy/privacy-policies</em> einsehbar.
+    </p>
+    <p style="margin:8px 0 4px;">
+      <strong>Ihre Rechte:</strong> Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten sowie auf Widerspruch und Datenübertragbarkeit. Da diese Anwendung keine personenbezogenen Daten auf Servern speichert, betreffen die genannten Rechte im Wesentlichen die in Ihrem Browser gespeicherten Angaben. Diese können Sie jederzeit selbst löschen, indem Sie die Speicherung Ihres Browsers für diese Seite zurücksetzen oder die Funktion „Verlauf zurücksetzen" in der Anwendung nutzen.
+    </p>
+    <p style="margin:8px 0 4px;">
+      <strong>Beschwerderecht:</strong> Sie können sich mit einer Beschwerde an die für Sie zuständige Datenschutzaufsichtsbehörde wenden. Für den Anbieter zuständig: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Haftungsausschluss</h3>
+    <p style="margin:4px 0;">
+      Die Inhalte dieser Anwendung wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Eine Haftung für Schäden, die durch die Nutzung oder Nichtnutzung der angebotenen Informationen entstehen, ist ausgeschlossen, soweit gesetzlich zulässig. Die Anwendung ersetzt nicht das ärztliche Aufklärungsgespräch.
+    </p>
+
+    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Urheberrecht</h3>
+    <p style="margin:4px 0;">
+      Die Inhalte und Werke auf dieser Seite unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors.
+    </p>
+
+    <div style="margin-top:20px; padding-top:12px; border-top:1px solid rgba(0,0,0,.10); font-size:11px; color:#718096;">
+      Fuß-Track &middot; &copy; 2026 Dr. med. Benjamin Breuer
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center; padding:14px 0 24px; font-size:12px; color:#718096; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  <span style="cursor:pointer; text-decoration:underline;" onclick="document.getElementById('impressum-overlay').style.display='flex'">Impressum &amp; Datenschutz</span>
+</div>
+
 </body>
 </html>
