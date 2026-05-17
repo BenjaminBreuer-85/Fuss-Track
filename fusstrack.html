@@ -620,9 +620,20 @@ function App() {
     if (!urlParams.op || !aufklObj) {
       return <ErrorPage />;
     }
+    // Switcher "Zum Patientenbegleiter" nur sichtbar, wenn der Begleit-Modus
+    // tatsächlich verfügbar ist (Variante im URL bekannt ODER bestehende Session)
+    const begleitVerfuegbar = !!(
+      (urlParams.var && isValidEingriffsAuswahl(urlParams.op, urlParams.var)) ||
+      (session && session.eingriff === urlParams.op && session.variante)
+    );
+    // Wenn aus der Session: var-Parameter wird beim Wechsel mitgegeben
+    const switcherUrlParams = {
+      op: urlParams.op,
+      var: urlParams.var || (session && session.eingriff === urlParams.op ? session.variante : null)
+    };
     return (
       <div className="app">
-        <Header showSwitcher={!!urlParams.op} switcherTarget="begleit" urlParams={urlParams} />
+        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} />
         <AufklaerungsView opKey={urlParams.op} />
         <Branding />
         <FooterLinks />
@@ -1139,7 +1150,7 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
  * (kein dangerouslySetInnerHTML).
  * ============================================================ */
 function renderInline(text) {
-  // Verarbeitet **fett** und *italic* in einem String.
+  // Verarbeitet **fett**, *italic* und [Link](url) in einem String.
   // Gibt Array von React-Elementen / Strings zurück.
   if (!text) return text;
   const parts = [];
@@ -1150,6 +1161,28 @@ function renderInline(text) {
     if (buffer) { parts.push(buffer); buffer = ""; }
   }
   while (i < text.length) {
+    // Link: [Text](url)
+    if (text[i] === "[") {
+      const closeBracket = text.indexOf("]", i + 1);
+      if (closeBracket !== -1 && text[closeBracket + 1] === "(") {
+        const closeParen = text.indexOf(")", closeBracket + 2);
+        if (closeParen !== -1) {
+          const linkText = text.substring(i + 1, closeBracket);
+          const linkUrl = text.substring(closeBracket + 2, closeParen);
+          // Sicherheits-Check: nur http/https und relative Pfade erlauben
+          const safeUrl = /^(https?:\/\/|\.|\/|#)/i.test(linkUrl) ? linkUrl : "#";
+          flushBuffer();
+          parts.push(
+            <a key={"l" + (keyIdx++)} href={safeUrl} target="_blank" rel="noopener noreferrer"
+               style={{ color: "var(--c-main)", textDecoration: "underline", fontWeight: 600 }}>
+              {linkText}
+            </a>
+          );
+          i = closeParen + 1;
+          continue;
+        }
+      }
+    }
     // Fett: **...**
     if (text[i] === "*" && text[i+1] === "*") {
       const end = text.indexOf("**", i + 2);
@@ -1342,8 +1375,7 @@ function WissensDetailModal({ wissenId, wissen, onClose }) {
 
   return (
     <div className="modal-backdrop" onClick={onBackdropClick} role="dialog" aria-modal="true"
-         style={{ zIndex: 2100, background: "rgba(26,32,44,0.65)" }}
-         onClickCapture={(e) => e.stopPropagation()}>
+         style={{ zIndex: 2100, background: "rgba(26,32,44,0.65)" }}>
       <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-header-text">
