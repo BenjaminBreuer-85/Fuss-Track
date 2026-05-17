@@ -1189,6 +1189,57 @@ function MarkdownView({ source }) {
     // Leere Zeile → Block-Trenner
     if (!line.trim()) { i++; continue; }
 
+    // ::: Blöcke — Akkordeons und Info-Boxen
+    // Syntax:
+    //   ::: details Titel
+    //   Inhalt mit Markdown
+    //   :::
+    //   ::: info | warning | note
+    //   Inhalt mit Markdown
+    //   :::
+    const blockMatch = line.match(/^:::\s*(details|info|warning|note)(?:\s+(.+))?\s*$/);
+    if (blockMatch) {
+      const blockType = blockMatch[1];
+      const blockTitle = blockMatch[2] ? blockMatch[2].trim() : "";
+      i++;
+      // Sammle Inhalt bis schließendes :::
+      const innerLines = [];
+      while (i < lines.length && lines[i].trim() !== ":::") {
+        innerLines.push(lines[i]);
+        i++;
+      }
+      // Schließendes ::: überspringen
+      if (i < lines.length) i++;
+      const innerSource = innerLines.join("\n");
+      // Rendern je nach Typ
+      if (blockType === "details") {
+        blocks.push(
+          <details key={nextKey()} style={{ marginTop: 10, marginBottom: 10, background: "var(--c-card-bg)", border: "1px solid rgba(0,0,0,.10)", borderRadius: 6 }}>
+            <summary style={{ padding: "10px 14px", cursor: "pointer", fontWeight: 600, color: "var(--c-primary)", userSelect: "none" }}>
+              {blockTitle || "Details"}
+            </summary>
+            <div style={{ padding: "0 14px 10px" }}>
+              <MarkdownView source={innerSource} />
+            </div>
+          </details>
+        );
+      } else {
+        // info | warning | note → Info-Boxen
+        const styles = {
+          info:    { background: "rgba(0,131,143,.06)",  border: "1px solid rgba(0,131,143,.20)",  borderLeft: "4px solid var(--c-primary)" },
+          warning: { background: "rgba(230,81,0,.06)",   border: "1px solid rgba(230,81,0,.20)",   borderLeft: "4px solid #E65100" },
+          note:    { background: "rgba(0,0,0,.03)",      border: "1px solid rgba(0,0,0,.08)",      borderLeft: "4px solid rgba(0,0,0,.30)" }
+        };
+        const s = styles[blockType];
+        blocks.push(
+          <div key={nextKey()} style={Object.assign({}, s, { borderRadius: 6, padding: "10px 14px", marginTop: 10, marginBottom: 10 })}>
+            <MarkdownView source={innerSource} />
+          </div>
+        );
+      }
+      continue;
+    }
+
     // Überschrift H3: ###
     if (line.startsWith("### ")) {
       blocks.push(<h4 key={nextKey()} style={{ fontSize: 14, fontWeight: 700, color: "var(--c-primary)", marginTop: 18, marginBottom: 6 }}>{renderInline(line.substring(4))}</h4>);
