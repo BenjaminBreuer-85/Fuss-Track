@@ -1161,6 +1161,31 @@ function renderInline(text) {
     if (buffer) { parts.push(buffer); buffer = ""; }
   }
   while (i < text.length) {
+    // Bild: ![Alt-Text](url)  — muss VOR der Link-Erkennung stehen
+    if (text[i] === "!" && text[i+1] === "[") {
+      const closeBracket = text.indexOf("]", i + 2);
+      if (closeBracket !== -1 && text[closeBracket + 1] === "(") {
+        const closeParen = text.indexOf(")", closeBracket + 2);
+        if (closeParen !== -1) {
+          const altText = text.substring(i + 2, closeBracket);
+          const imgUrl = text.substring(closeBracket + 2, closeParen);
+          // Sicherheits-Check: nur https und relative Pfade
+          const safeUrl = /^(https?:\/\/|\.|\/)/i.test(imgUrl) ? imgUrl : "";
+          if (safeUrl) {
+            flushBuffer();
+            parts.push(
+              <img key={"img" + (keyIdx++)} src={safeUrl} alt={altText}
+                   loading="lazy"
+                   style={{ display: "block", maxWidth: "100%", height: "auto",
+                            margin: "12px auto", borderRadius: 8,
+                            boxShadow: "0 2px 8px rgba(0,0,0,0.12)" }} />
+            );
+            i = closeParen + 1;
+            continue;
+          }
+        }
+      }
+    }
     // Link: [Text](url)
     if (text[i] === "[") {
       const closeBracket = text.indexOf("]", i + 1);
