@@ -679,9 +679,9 @@ function Header({ showSwitcher, switcherTarget, urlParams }) {
       {showSwitcher && (
         <div style={{ marginTop: 10, textAlign: "center" }}>
           <button onClick={switchMode}
-                  style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid rgba(255,255,255,.4)",
-                           background: "transparent", color: "#fff", fontSize: 12, fontWeight: 600,
-                           cursor: "pointer", opacity: 0.9 }}>
+                  style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-main)",
+                           background: "transparent", color: "var(--c-main)", fontSize: 12, fontWeight: 600,
+                           cursor: "pointer" }}>
             {switcherTarget === "aufklaerung"
               ? "ⓘ Aufklärung zum Krankheitsbild ansehen"
               : "→ Zum Patientenbegleiter"}
@@ -706,11 +706,11 @@ function AufklaerungsView({ opKey }) {
   if (slides.length === 0) {
     return (
       <div style={{ maxWidth: 680, margin: "32px auto", padding: "24px",
-                    background: "var(--c-card-bg)", borderRadius: 12,
-                    boxShadow: "var(--shadow-card)", textAlign: "center" }}>
+                    background: "var(--c-card)", borderRadius: 12,
+                    boxShadow: "var(--c-shadow)", textAlign: "center" }}>
         <div style={{ fontSize: 32, marginBottom: 12 }}>📖</div>
-        <h2 style={{ margin: "0 0 8px", fontSize: 18, color: "var(--c-primary)" }}>{aufkl.titel}</h2>
-        <div style={{ fontSize: 14, color: "var(--c-text-soft)", marginBottom: 16 }}>
+        <h2 style={{ margin: "0 0 8px", fontSize: 18, color: "var(--c-main)" }}>{aufkl.titel}</h2>
+        <div style={{ fontSize: 14, color: "var(--c-text-muted)", marginBottom: 16 }}>
           {aufkl.untertitel}
         </div>
         <div style={{ padding: 14, background: "rgba(0,0,0,.03)", borderRadius: 8,
@@ -728,14 +728,14 @@ function AufklaerungsView({ opKey }) {
   const current = slides[step];
 
   return (
-    <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px" }}>
-      <div style={{ background: "var(--c-card-bg)", borderRadius: 12, boxShadow: "var(--shadow-card)",
-                    padding: "20px 18px", minHeight: 240 }}>
-        <div style={{ fontSize: 11, color: "var(--c-text-soft)", marginBottom: 4 }}>
+    <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px", minWidth: 0 }}>
+      <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
+                    padding: "20px 18px", minHeight: 240, overflow: "hidden", wordWrap: "break-word" }}>
+        <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginBottom: 4 }}>
           Schritt {step + 1} von {total}
         </div>
         {current.titel && (
-          <h2 style={{ margin: "0 0 12px", fontSize: 18, color: "var(--c-primary)", lineHeight: 1.3 }}>
+          <h2 style={{ margin: "0 0 12px", fontSize: 18, color: "var(--c-main)", lineHeight: 1.3 }}>
             {current.titel}
           </h2>
         )}
@@ -747,26 +747,28 @@ function AufklaerungsView({ opKey }) {
         {current.text && <MarkdownView source={current.text} />}
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, gap: 8 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, gap: 8, flexWrap: "wrap" }}>
         <button onClick={() => setStep(Math.max(0, step - 1))}
                 disabled={step === 0}
-                style={{ padding: "8px 14px", borderRadius: 6, border: "1px solid rgba(0,0,0,.12)",
-                         background: step === 0 ? "rgba(0,0,0,.04)" : "var(--c-card-bg)",
-                         color: step === 0 ? "var(--c-text-soft)" : "var(--c-primary)",
-                         fontSize: 13, fontWeight: 600,
-                         cursor: step === 0 ? "not-allowed" : "pointer" }}>
+                style={{ padding: "10px 18px", borderRadius: 6, border: "1px solid rgba(0,0,0,.12)",
+                         background: step === 0 ? "rgba(0,0,0,.04)" : "var(--c-card)",
+                         color: step === 0 ? "var(--c-text-muted)" : "var(--c-main)",
+                         fontSize: 14, fontWeight: 600,
+                         cursor: step === 0 ? "not-allowed" : "pointer",
+                         flex: "0 0 auto" }}>
           ← Zurück
         </button>
-        <div style={{ fontSize: 11, color: "var(--c-text-soft)" }}>
+        <div style={{ fontSize: 11, color: "var(--c-text-muted)", flex: "1 1 auto", textAlign: "center" }}>
           {step + 1} / {total}
         </div>
         <button onClick={() => setStep(Math.min(total - 1, step + 1))}
                 disabled={step === total - 1}
-                style={{ padding: "8px 14px", borderRadius: 6, border: "none",
-                         background: step === total - 1 ? "rgba(0,0,0,.04)" : "var(--c-primary)",
-                         color: step === total - 1 ? "var(--c-text-soft)" : "#fff",
-                         fontSize: 13, fontWeight: 600,
-                         cursor: step === total - 1 ? "not-allowed" : "pointer" }}>
+                style={{ padding: "10px 18px", borderRadius: 6, border: "none",
+                         background: step === total - 1 ? "rgba(0,0,0,.04)" : "var(--c-main)",
+                         color: step === total - 1 ? "var(--c-text-muted)" : "#fff",
+                         fontSize: 14, fontWeight: 600,
+                         cursor: step === total - 1 ? "not-allowed" : "pointer",
+                         flex: "0 0 auto" }}>
           Weiter →
         </button>
       </div>
@@ -1214,8 +1216,8 @@ function MarkdownView({ source }) {
       // Rendern je nach Typ
       if (blockType === "details") {
         blocks.push(
-          <details key={nextKey()} style={{ marginTop: 10, marginBottom: 10, background: "var(--c-card-bg)", border: "1px solid rgba(0,0,0,.10)", borderRadius: 6 }}>
-            <summary style={{ padding: "10px 14px", cursor: "pointer", fontWeight: 600, color: "var(--c-primary)", userSelect: "none" }}>
+          <details key={nextKey()} style={{ marginTop: 10, marginBottom: 10, background: "var(--c-card)", border: "1px solid rgba(0,0,0,.10)", borderRadius: 6 }}>
+            <summary style={{ padding: "10px 14px", cursor: "pointer", fontWeight: 600, color: "var(--c-main)", userSelect: "none" }}>
               {blockTitle || "Details"}
             </summary>
             <div style={{ padding: "0 14px 10px" }}>
@@ -1226,7 +1228,7 @@ function MarkdownView({ source }) {
       } else {
         // info | warning | note → Info-Boxen
         const styles = {
-          info:    { background: "rgba(0,131,143,.06)",  border: "1px solid rgba(0,131,143,.20)",  borderLeft: "4px solid var(--c-primary)" },
+          info:    { background: "rgba(0,131,143,.06)",  border: "1px solid rgba(0,131,143,.20)",  borderLeft: "4px solid var(--c-main)" },
           warning: { background: "rgba(230,81,0,.06)",   border: "1px solid rgba(230,81,0,.20)",   borderLeft: "4px solid #E65100" },
           note:    { background: "rgba(0,0,0,.03)",      border: "1px solid rgba(0,0,0,.08)",      borderLeft: "4px solid rgba(0,0,0,.30)" }
         };
@@ -1242,13 +1244,13 @@ function MarkdownView({ source }) {
 
     // Überschrift H3: ###
     if (line.startsWith("### ")) {
-      blocks.push(<h4 key={nextKey()} style={{ fontSize: 14, fontWeight: 700, color: "var(--c-primary)", marginTop: 18, marginBottom: 6 }}>{renderInline(line.substring(4))}</h4>);
+      blocks.push(<h4 key={nextKey()} style={{ fontSize: 14, fontWeight: 700, color: "var(--c-main)", marginTop: 18, marginBottom: 6 }}>{renderInline(line.substring(4))}</h4>);
       i++;
       continue;
     }
     // Überschrift H2: ##
     if (line.startsWith("## ")) {
-      blocks.push(<h3 key={nextKey()} style={{ fontSize: 15, fontWeight: 700, color: "var(--c-primary)", marginTop: 20, marginBottom: 8, paddingBottom: 4, borderBottom: "1px solid rgba(0,0,0,.06)" }}>{renderInline(line.substring(3))}</h3>);
+      blocks.push(<h3 key={nextKey()} style={{ fontSize: 15, fontWeight: 700, color: "var(--c-main)", marginTop: 20, marginBottom: 8, paddingBottom: 4, borderBottom: "1px solid rgba(0,0,0,.06)" }}>{renderInline(line.substring(3))}</h3>);
       i++;
       continue;
     }
@@ -1270,7 +1272,7 @@ function MarkdownView({ source }) {
             <thead>
               <tr style={{ background: "rgba(0,131,143,.06)" }}>
                 {headers.map((h, hi) => (
-                  <th key={hi} style={{ padding: "8px 10px", textAlign: "left", borderBottom: "1px solid rgba(0,0,0,.10)", color: "var(--c-primary)", fontWeight: 700 }}>{renderInline(h)}</th>
+                  <th key={hi} style={{ padding: "8px 10px", textAlign: "left", borderBottom: "1px solid rgba(0,0,0,.10)", color: "var(--c-main)", fontWeight: 700 }}>{renderInline(h)}</th>
                 ))}
               </tr>
             </thead>
