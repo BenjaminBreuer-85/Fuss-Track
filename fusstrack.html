@@ -468,8 +468,13 @@ function getUrlParams() {
   return {
     op: params.get("op"),
     var: params.get("var"),
-    modus: params.get("modus") // "aufklaerung" für Aufklärungs-Modus, sonst Begleit-Modus
+    modus: params.get("modus"), // "aufklaerung" für Aufklärungs-Modus, sonst Begleit-Modus
+    wissen: params.get("wissen") // "KEY" für direkte Wissens-Einzelansicht
   };
+}
+
+function isValidWissenKey(key) {
+  return !!(key && WISSEN && WISSEN[key]);
 }
 
 function buildUrl(params) {
@@ -611,6 +616,22 @@ function App() {
   }
 
   // === RENDER ===
+  // 0. Wissens-Einzel-Modus: ?wissen=KEY (priorisiert, keine Session/Phasen nötig)
+  if (urlParams.wissen) {
+    if (!isValidWissenKey(urlParams.wissen)) {
+      return <ErrorPage />;
+    }
+    return (
+      <div className="app">
+        <Header showSwitcher={false} />
+        <WissenDirektView wissenKey={urlParams.wissen} />
+        <Branding />
+        <FooterLinks />
+        {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+      </div>
+    );
+  }
+
   // 1. Aufklärungs-Modus: ?op=X&modus=aufklaerung
   const isAufklaerungsModus = urlParams.modus === "aufklaerung";
   const aufklObj = getAufklaerungFor(urlParams.op);
@@ -1416,6 +1437,37 @@ function MarkdownView({ source }) {
   }
 
   return <div>{blocks}</div>;
+}
+
+function WissenDirektView({ wissenKey }) {
+  const wissen = WISSEN[wissenKey];
+  useEffect(() => {
+    if (wissen) document.title = "Fuß-Track · " + wissen.titel;
+  }, [wissenKey]);
+  if (!wissen) return null;
+  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "📖" };
+  const isPlatzhalter = wissen.status === "platzhalter";
+  return (
+    <div className="card" style={{ marginTop: 16, padding: 20, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+      <div style={{ fontSize: 12, color: "var(--c-text-muted)", fontWeight: 600, marginBottom: 6 }}>
+        {kategorie.emoji} {kategorie.label}
+      </div>
+      <h2 style={{ marginTop: 0, marginBottom: 16, fontSize: 22, color: "var(--c-main)" }}>{wissen.titel}</h2>
+      {isPlatzhalter ? (
+        <div style={{ padding: 16, background: "var(--c-bg)", borderRadius: 6, fontSize: 14, color: "var(--c-text-muted)" }}>
+          <p style={{ margin: 0 }}><strong>Diese Detailseite wird derzeit vorbereitet.</strong></p>
+          <p style={{ margin: "8px 0 0" }}>Inhalte zu „{wissen.titel}" werden in den nächsten Tagen ergänzt. Bitte schauen Sie später noch einmal vorbei.</p>
+        </div>
+      ) : (
+        <>
+          {wissen.intro && (
+            <p style={{ fontSize: 16, fontWeight: 500, color: "var(--c-text)", marginTop: 0, marginBottom: 12 }}>{wissen.intro}</p>
+          )}
+          {wissen.text && <MarkdownView source={wissen.text} />}
+        </>
+      )}
+    </div>
+  );
 }
 
 function WissensDetailModal({ wissenId, wissen, onClose }) {
