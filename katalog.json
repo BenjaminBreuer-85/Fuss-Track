@@ -137,7 +137,8 @@
       "haeufigkeit": "haeufig",
       "regionen": [
         "vorfuss_plantar",
-        "fusssohle"
+        "fusssohle",
+        "mtp_region"
       ]
     },
     {
@@ -146,7 +147,8 @@
       "kurz": "Schmerzen unter den Mittelfußköpfchen (Vorfuß-Ballen)",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "vorfuss_plantar"
+        "vorfuss_plantar",
+        "mtp_region"
       ]
     },
     {
@@ -155,7 +157,8 @@
       "kurz": "Ermüdungsbruch eines Mittelfußknochens nach starker Belastung",
       "haeufigkeit": "selten",
       "regionen": [
-        "vorfuss_plantar"
+        "vorfuss_plantar",
+        "mtp_region"
       ]
     },
     {
@@ -164,7 +167,8 @@
       "kurz": "Knochennekrose eines Mittelfußkopfes (meist Metatarsale II)",
       "haeufigkeit": "selten",
       "regionen": [
-        "vorfuss_plantar"
+        "vorfuss_plantar",
+        "mtp_region"
       ]
     },
     {
@@ -174,7 +178,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "vorfuss_plantar",
-        "fusssohle"
+        "fusssohle",
+        "mtp_region"
       ]
     },
     {
@@ -184,7 +189,8 @@
       "haeufigkeit": "haeufig",
       "regionen": [
         "medialer_fussrand",
-        "sg_innen_hinter"
+        "sg_innen_hinter",
+        "tn_gelenk"
       ]
     },
     {
@@ -193,7 +199,8 @@
       "kurz": "Ermüdungsbruch des Kahnbeins",
       "haeufigkeit": "selten",
       "regionen": [
-        "medialer_fussrand"
+        "medialer_fussrand",
+        "tn_gelenk"
       ]
     },
     {
@@ -202,7 +209,8 @@
       "kurz": "Zusätzlicher Knochen am inneren Fußrand (oft seit Jugend bekannt)",
       "haeufigkeit": "mittel",
       "regionen": [
-        "medialer_fussrand"
+        "medialer_fussrand",
+        "tn_gelenk"
       ]
     },
     {
@@ -220,7 +228,8 @@
       "kurz": "Verschleiß zwischen Sprungbein und Kahnbein",
       "haeufigkeit": "mittel",
       "regionen": [
-        "medialer_fussrand"
+        "medialer_fussrand",
+        "tn_gelenk"
       ]
     },
     {
@@ -2491,6 +2500,92 @@
         "schwere": "akut",
         "empfehlung": "Bei plötzlicher Rötung, Schwellung und Wärmegefühl im Fuß ohne Verletzung — insbesondere bei Diabetes — kann es sich um einen akuten Charcot-Fuß handeln. Bitte stellen Sie sich SOFORT bei Ihrer Hausärztin/Ihrem Hausarzt oder in einer Klinik vor. Verzögerte Behandlung kann zu schweren Fußdeformitäten führen."
       }
+    },
+    {
+      "id": "tn_gelenk",
+      "titel": "TN-Gelenk (Talonavikular)",
+      "ansichten": [
+        "oben"
+      ],
+      "fragen": [
+        {
+          "id": "symptomatik",
+          "frage": "Wie äußern sich die Beschwerden am inneren Fußrücken (TN-Gelenk)?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Belastungsschmerz am inneren Fußrücken mit Steifigkeit",
+              "punkte": {
+                "talo_naviculare_arthrose": 2
+              }
+            },
+            {
+              "label": "Belastungsabhängiger Schmerz, evtl. nach Überlastung",
+              "punkte": {
+                "naviculare_stressfx": 2
+              }
+            },
+            {
+              "label": "Druckschmerz an einem knöchernen Vorsprung an der Innenseite",
+              "punkte": {
+                "os_tibiale_externum": 2
+              }
+            },
+            {
+              "label": "Schmerz innen mit zunehmendem Knick-Senkfuß",
+              "punkte": {
+                "tpsd": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mtp_region",
+      "titel": "MTP-Region (Mittelfußköpfchen)",
+      "ansichten": [
+        "oben"
+      ],
+      "fragen": [
+        {
+          "id": "symptomatik",
+          "frage": "Wie äußern sich die Beschwerden im Bereich der Mittelfußköpfchen?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Brennend oder elektrisierend zwischen den Zehen, teils Taubheitsgefühl",
+              "punkte": {
+                "mortonneurom": 2
+              }
+            },
+            {
+              "label": "Druckschmerz unter den Mittelfußköpfchen beim Gehen/Abrollen",
+              "punkte": {
+                "metatarsalgie": 2
+              }
+            },
+            {
+              "label": "Plötzlicher Belastungsschmerz, evtl. nach Überlastung oder Sport",
+              "punkte": {
+                "stressfraktur_mt": 2
+              }
+            },
+            {
+              "label": "Schmerz und Schwellung am 2./3. Mittelfußköpfchen mit Bewegungseinschränkung",
+              "punkte": {
+                "freiberg_koehler": 2
+              }
+            },
+            {
+              "label": "Eine Zehe weicht ab oder krallt, Schmerz direkt unter dem Köpfchen",
+              "punkte": {
+                "plantar_plate_ruptur": 2
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

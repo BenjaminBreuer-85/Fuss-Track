@@ -1249,12 +1249,14 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
         <image href={FOOT_DORSAL_IMG} x="0" y="0" width="840" height="1000" preserveAspectRatio="xMidYMid meet" />
 
         {/* === Klickbare Region-Hotspots (unsichtbar bis Hover/Klick) === */}
-        <HotSpot regionId="grosszehe" points="386,20 554,20 588,130 554,220 462,260 395,200 378,100" label="Großzehe" />
-        <HotSpot regionId="kleinzehen" points="118,120 252,40 378,100 395,200 336,280 202,300 134,240" label="Kleinzehen" />
-        <HotSpot regionId="mittelfuss_zentral" points="395,200 462,260 470,420 504,600 437,660 370,600 370,420 336,280" label="Zentraler Mittelfuß" />
-        <HotSpot regionId="medialer_fussrand" points="462,260 554,220 622,340 638,520 588,660 504,600 470,420" label="Medialer Fußrand" />
-        <HotSpot regionId="lateraler_fussrand" points="202,300 336,280 370,420 353,600 286,660 185,580 151,420" label="Lateraler Fußrand" />
-        <HotSpot regionId="sg_vorne" points="286,660 370,600 437,660 504,600 588,660 571,840 487,980 370,980 286,820" label="Sprunggelenk vorne / Rist" />
+        <HotSpot regionId="grosszehe" points="488.1,111.8 445.6,119.6 433.9,140.1 422.2,144.5 411.9,177.7 420.2,519.5 503.2,519.5 554.5,456.5 562.8,335.4 549.6,185.1 520.3,126.5" label="Großzehe" />
+        <HotSpot regionId="kleinzehen" points="411.0,133.8 364.1,128.9 347.5,143.1 344.6,158.7 316.3,155.8 292.4,185.1 264.5,179.7 239.7,218.8 239.7,236.8 206.9,245.1 203.0,257.3 195.7,257.8 192.8,300.3 218.2,399.4 317.7,419.4 411.5,399.4" label="Kleinzehen" />
+        <HotSpot regionId="mtp_region" points="217.7,400.9 202.1,460.4 227.0,529.3 337.8,548.8 419.8,519.0 411.5,400.4 321.7,419.4" label="MTP-Region (Mittelfußköpfchen)" />
+        <HotSpot regionId="mittelfuss_zentral" points="486.6,559.1 420.7,520.0 336.3,549.8 319.2,618.7 336.3,719.2 471.5,718.3 487.1,699.7" label="Zentraler Mittelfuß" />
+        <HotSpot regionId="medialer_fussrand" points="555.0,461.4 503.7,519.5 487.6,558.1 487.6,699.7 527.1,715.8 533.0,694.8 550.1,499.0 558.4,488.3" label="Medialer Fußrand" />
+        <HotSpot regionId="lateraler_fussrand" points="200.6,462.4 190.4,485.8 195.2,521.5 187.9,525.4 193.8,577.6 203.5,587.4 212.3,656.2 253.3,817.4 335.3,719.7 319.2,623.5 335.3,549.8 227.0,529.8" label="Lateraler Fußrand" />
+        <HotSpot regionId="tn_gelenk" points="253.3,819.8 520.8,799.3 531.0,720.2 335.8,719.7" label="TN-Gelenk" />
+        <HotSpot regionId="sg_vorne" points="520.8,799.8 288.5,819.3 252.3,839.4 317.7,999.5 503.7,999.5 509.1,878.9" label="Sprunggelenk vorne / Rist" />
       </svg>
     );
   }
