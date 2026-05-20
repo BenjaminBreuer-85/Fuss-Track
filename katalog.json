@@ -11,10 +11,22 @@
     "selten": 0.0
   },
   "ansichten": {
-    "oben":   { "label": "Von oben",    "kurz": "Aufsicht" },
-    "unten":  { "label": "Von unten",   "kurz": "Sohle" },
-    "innen":  { "label": "Innenseite",  "kurz": "Medial" },
-    "aussen": { "label": "Außenseite",  "kurz": "Lateral" }
+    "oben": {
+      "label": "Von oben",
+      "kurz": "Aufsicht"
+    },
+    "unten": {
+      "label": "Von unten",
+      "kurz": "Sohle"
+    },
+    "innen": {
+      "label": "Innenseite",
+      "kurz": "Medial"
+    },
+    "aussen": {
+      "label": "Außenseite",
+      "kurz": "Lateral"
+    }
   },
   "ergebnis_logik": {
     "top1_min_abstand": 1.5,
@@ -1199,6 +1211,14 @@
           ]
         }
       ]
+    },
+    {
+      "id": "mittelfuss_zentral",
+      "titel": "Zentraler Mittelfuß (TMT 2–4 / Lisfranc)",
+      "ansichten": [
+        "oben"
+      ],
+      "fragen": []
     },
     {
       "id": "sg_vorne",
