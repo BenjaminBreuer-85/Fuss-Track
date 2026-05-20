@@ -358,6 +358,7 @@ let WISSEN_KATEGORIEN = {};
 let WISSEN = {};
 let KRANKHEITSBILDER = [];
 let AUFKLAERUNG = {}; // Daten aus aufklaerung.json (Aufklärungs-Modus)
+let KATALOG = null;   // Daten aus katalog.json (Schmerz-Finder) — null bevor geladen
 
 // Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey]
 function getPhasenForVariant(opKey, variantKey) {
@@ -397,6 +398,21 @@ async function loadAufklaerungData() {
   } catch (e) {
     // Stilles Scheitern - Aufklärungs-Modus wird einfach inaktiv sein.
     AUFKLAERUNG = {};
+  }
+}
+
+// Lädt die Schmerz-Finder-Daten (KB-Universum, Regionen, Fragen).
+// Wird zusätzlich zum Begleit-Modus geladen. Bei Fehlern wird die Anwendung
+// NICHT abgebrochen — der Finder ist dann nicht verfügbar, alle anderen Modi
+// funktionieren weiterhin.
+async function loadKatalogData() {
+  try {
+    const response = await fetch("./katalog.json?v=" + Date.now());
+    if (!response.ok) return;
+    KATALOG = await response.json();
+  } catch (e) {
+    // Stilles Scheitern - Finder wird einfach inaktiv sein.
+    KATALOG = null;
   }
 }
 
@@ -623,7 +639,24 @@ function App() {
   }
 
   // === RENDER ===
-  // 0. Wissens-Einzel-Modus: ?wissen=KEY (priorisiert, keine Session/Phasen nötig)
+  // 0a. Schmerz-Finder-Modus: ?finder=1
+  if (urlParams.finder === "1" || urlParams.finder === "true") {
+    if (!KATALOG) {
+      // Katalog-Daten nicht geladen — Finder ist nicht verfügbar
+      return <ErrorPage />;
+    }
+    return (
+      <div className="app">
+        <Header showSwitcher={false} />
+        <FinderView />
+        <Branding />
+        <FooterLinks />
+        {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+      </div>
+    );
+  }
+
+  // 0b. Wissens-Einzel-Modus: ?wissen=KEY (priorisiert, keine Session/Phasen nötig)
   if (urlParams.wissen) {
     if (!isValidWissenKey(urlParams.wissen)) {
       return <ErrorPage />;
@@ -738,6 +771,7 @@ function LandingView({ initialKbKey }) {
   // === Stufe 1: Krankheitsbild wählen ===
   if (!selectedKb) {
     return (
+      <>
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <h2 style={{ marginTop: 0, marginBottom: 8, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuß-Track</h2>
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
@@ -770,6 +804,24 @@ function LandingView({ initialKbKey }) {
           <strong>Hinweis:</strong> Wenn Sie von Ihrem Behandler einen QR-Code erhalten haben, scannen Sie diesen direkt — Sie landen dann sofort am richtigen Punkt.
         </div>
       </div>
+
+      {KATALOG && (
+        <div className="card" style={{ marginTop: 16, padding: 20, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+          <h3 style={{ marginTop: 0, marginBottom: 8, fontSize: 17, color: "var(--c-main)" }}>Sie wissen nicht, was Ihre Beschwerden verursacht?</h3>
+          <p style={{ marginTop: 0, marginBottom: 14, fontSize: 14, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+            Der Schmerz-Finder hilft Ihnen, mögliche Ursachen Ihrer Fuß- oder Sprunggelenksbeschwerden einzugrenzen.
+            Sie tippen auf eine schmerzhafte Region und beantworten einige Fragen — am Ende erhalten Sie eine
+            wahrscheinliche Diagnose und können einen Termin in unserer Sprechstunde vereinbaren.
+          </p>
+          <button
+            className="btn btn-primary"
+            onClick={function() { window.location.href = buildUrl({ finder: "1" }); }}
+          >
+            🔍 Schmerz-Finder starten
+          </button>
+        </div>
+      )}
+      </>
     );
   }
 
@@ -1024,6 +1076,636 @@ function ErrorPage() {
       </div>
       <Branding />
       <FooterLinks />
+    </div>
+  );
+}
+
+/* ============================================================
+ * FootSvg — schematisch-stilisierter Fuß mit klickbaren Regionen
+ * ============================================================
+ * Props:
+ *   ansicht           — "oben" | "unten" | "innen" | "aussen"
+ *   selectedRegions   — Array von Region-IDs, die aktuell ausgewählt sind
+ *   onRegionClick     — Callback(regionId)
+ *   getRegionTitel    — Funktion(regionId) → Titel-String (für Tooltip)
+ *
+ * Status: Pilot mit nur "oben" implementiert.
+ * Die anderen Ansichten zeigen einen Platzhalter.
+ * ============================================================ */
+function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
+  const [hoveredRegion, setHoveredRegion] = useState(null);
+
+  function isSelected(rid) { return selectedRegions.indexOf(rid) >= 0; }
+  function isHovered(rid) { return hoveredRegion === rid; }
+  function fillFor(rid) {
+    if (isSelected(rid)) return "rgba(19, 115, 51, 0.35)";  // grün, gewählt
+    if (isHovered(rid))  return "rgba(44, 79, 124, 0.30)";   // marineblau, hover
+    return "rgba(44, 79, 124, 0.10)";                          // marineblau, sanft
+  }
+  function strokeFor(rid) {
+    if (isSelected(rid)) return "#137333";
+    if (isHovered(rid))  return "#2C4F7C";
+    return "rgba(44, 79, 124, 0.35)";
+  }
+
+  // Helfer für anklickbare Region (innerhalb SVG)
+  function HotSpot({ regionId, d, cx, cy, r, x, y, width, height, label }) {
+    const common = {
+      fill: fillFor(regionId),
+      stroke: strokeFor(regionId),
+      strokeWidth: 2,
+      style: { cursor: "pointer", transition: "fill 0.15s, stroke 0.15s" },
+      onMouseEnter: function() { setHoveredRegion(regionId); },
+      onMouseLeave: function() { setHoveredRegion(null); },
+      onClick: function() { onRegionClick(regionId); }
+    };
+    const titleText = getRegionTitel ? getRegionTitel(regionId) : (label || regionId);
+    let shape;
+    if (d) {
+      shape = <path d={d} {...common} />;
+    } else if (cx !== undefined && cy !== undefined && r !== undefined) {
+      shape = <circle cx={cx} cy={cy} r={r} {...common} />;
+    } else {
+      shape = <rect x={x} y={y} width={width} height={height} rx={6} ry={6} {...common} />;
+    }
+    return <g><title>{titleText}</title>{shape}{isSelected(regionId) && (
+      <text x={(cx !== undefined ? cx : (d ? 0 : x + width / 2))}
+            y={(cy !== undefined ? cy + 6 : (d ? 0 : y + height / 2 + 6))}
+            fontSize="22" fill="#137333" textAnchor="middle" fontWeight="700" style={{ pointerEvents: "none" }}>✓</text>
+    )}</g>;
+  }
+
+  // === Ansicht: oben (Aufsicht eines rechten Fußes) ===
+  function renderOben() {
+    return (
+      <svg viewBox="0 0 300 500" style={{ width: "100%", maxWidth: 320, display: "block", margin: "0 auto" }}>
+        {/* Fußumriss — rechter Fuß von oben, stilisiert */}
+        <g>
+          {/* Fußkontur */}
+          <path d="
+            M 150 30
+            C 120 30, 100 50, 95 80
+            C 80 110, 75 150, 78 200
+            C 80 250, 85 310, 95 360
+            C 100 400, 110 430, 125 455
+            C 140 475, 165 475, 180 455
+            C 200 425, 215 380, 220 320
+            C 225 260, 225 200, 220 150
+            C 215 100, 200 60, 175 40
+            C 165 32, 158 30, 150 30
+            Z"
+            fill="#FFFFFF" stroke="#9CA3AF" strokeWidth="2"
+          />
+          {/* Zehen-Andeutung (nicht klickbar, nur visuell) */}
+          {/* Großzehen-Spitze */}
+          <ellipse cx="115" cy="55" rx="20" ry="18" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+          {/* Kleinzehen 2-5 */}
+          <ellipse cx="155" cy="48" rx="11" ry="13" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+          <ellipse cx="175" cy="50" rx="10" ry="12" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+          <ellipse cx="192" cy="55" rx="9" ry="11" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+          <ellipse cx="206" cy="62" rx="8" ry="10" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+          {/* Ansatz Unterschenkel */}
+          <rect x="135" y="445" width="50" height="40" rx="8" fill="#F9FAFB" stroke="#D1D5DB" strokeWidth="1.5" />
+        </g>
+
+        {/* Klickbare Hotspots */}
+        {/* Großzehe (links vorne) */}
+        <HotSpot regionId="grosszehe" cx={115} cy={55} r={26} label="Großzehe" />
+
+        {/* Kleinzehen (rechts vorne) */}
+        <HotSpot regionId="kleinzehen" d="M 145 35 Q 180 25 215 50 Q 220 75 200 80 Q 175 78 155 70 Q 142 60 145 35 Z" label="Kleinzehen" />
+
+        {/* Medialer Fußrand (Innenseite, links) */}
+        <HotSpot regionId="medialer_fussrand" d="M 90 130 Q 75 200 80 290 L 105 290 Q 110 200 115 130 Z" label="Medialer Fußrand" />
+
+        {/* Lateraler Fußrand (Außenseite, rechts) */}
+        <HotSpot regionId="lateraler_fussrand" d="M 210 130 Q 225 200 220 290 L 195 290 Q 195 200 195 130 Z" label="Lateraler Fußrand" />
+
+        {/* Sprunggelenk vorderer Bereich (oben hinten, Übergang zum Bein) */}
+        <HotSpot regionId="sg_vorne" d="M 130 380 Q 150 370 180 380 L 185 425 Q 150 430 125 425 Z" label="Sprunggelenk vorne" />
+      </svg>
+    );
+  }
+
+  function renderPlatzhalter(text) {
+    return (
+      <div style={{ padding: 40, textAlign: "center", background: "#F9FAFB", borderRadius: 8, color: "#6B7280", fontSize: 14 }}>
+        <div style={{ fontSize: 40, marginBottom: 8 }}>🚧</div>
+        <div>{text}</div>
+        <div style={{ fontSize: 12, marginTop: 8, color: "#9CA3AF" }}>
+          Tippen Sie nochmal auf den Tab „Von oben", um Regionen auszuwählen.
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      {ansicht === "oben"   && renderOben()}
+      {ansicht === "unten"  && renderPlatzhalter("Sohlen-Ansicht — kommt in Kürze")}
+      {ansicht === "innen"  && renderPlatzhalter("Innenseite — kommt in Kürze")}
+      {ansicht === "aussen" && renderPlatzhalter("Außenseite — kommt in Kürze")}
+    </div>
+  );
+}
+
+/* ============================================================
+ * FinderView — Schmerz-Finder (Patient ohne Diagnose)
+ * ============================================================
+ * Datenquelle: KATALOG (aus katalog.json, geladen via loadKatalogData)
+ *
+ * Flow-Schritte:
+ *   1. akut       — Frage nach frischer Verletzung (Bypass)
+ *   2. regionen   — Region(en) anklicken (max. 2)
+ *   3. fragen     — Region-spezifische Fragen sequentiell
+ *   4. ergebnis   — Top-1–3 KBs mit Häufigkeits-Bias
+ *
+ * Sonderfall-Triggers: werden inline während des Frage-Flows
+ * angezeigt (z.B. Gicht-Bypass bei Großzehe-„plötzlich heiß/rot").
+ * ============================================================ */
+function FinderView() {
+  const [step, setStep] = useState("akut");
+  const [akutWarnung, setAkutWarnung] = useState(false); // ja-Antwort gewählt
+  const [selectedRegions, setSelectedRegions] = useState([]);
+  const [askingForSecond, setAskingForSecond] = useState(false); // UI-State: nach 1. Klick fragen wir nach 2. Region
+  // answers Struktur: { regionId: { fragenId: [antwortIndex, ...] } }
+  const [answers, setAnswers] = useState({});
+  const [currentRegionIdx, setCurrentRegionIdx] = useState(0); // welche der gewählten Regionen wird gerade befragt
+  const [currentFrageIdx, setCurrentFrageIdx] = useState(0);
+  const [triggeredSonderfall, setTriggeredSonderfall] = useState(null); // { regionId, trigger }
+  const [ansicht, setAnsicht] = useState("oben"); // Aktive SVG-Ansicht im Region-Schritt
+
+  function getRegion(regionId) {
+    return KATALOG && KATALOG.regionen.find(function(r) { return r.id === regionId; });
+  }
+  function getKb(kbId) {
+    return KATALOG && KATALOG.kb_universum.find(function(kb) { return kb.id === kbId; });
+  }
+  function getHaeufigkeitsBonus(haeufigkeit) {
+    return (KATALOG && KATALOG.haeufigkeits_bonus[haeufigkeit]) || 0;
+  }
+
+  // ===== Reset =====
+  function resetFinder() {
+    setStep("akut");
+    setAkutWarnung(false);
+    setSelectedRegions([]);
+    setAskingForSecond(false);
+    setAnswers({});
+    setCurrentRegionIdx(0);
+    setCurrentFrageIdx(0);
+    setTriggeredSonderfall(null);
+    setAnsicht("oben");
+  }
+
+  // ===== Step "akut": Akut-Bypass =====
+  function renderAkut() {
+    const bp = KATALOG.akut_bypass;
+    return (
+      <div>
+        <div className="card">
+          <div className="card-label">Schritt 1 von 4 — Akute Verletzung?</div>
+          <h2 style={{ marginTop: 0 }}>{bp.frage}</h2>
+          {!akutWarnung && (
+            <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 12 }}>
+              {bp.antworten.map(function(a, i) {
+                return (
+                  <button
+                    key={i}
+                    className="btn btn-secondary btn-large"
+                    style={{ textAlign: "left", whiteSpace: "normal" }}
+                    onClick={function() {
+                      if (a.weiter === "akut") {
+                        setAkutWarnung(true);
+                      } else {
+                        setStep("regionen");
+                      }
+                    }}
+                  >
+                    {a.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          {akutWarnung && (
+            <div className="card warning" style={{ marginTop: 16 }}>
+              <strong>⚠ Wichtiger Hinweis</strong>
+              <p style={{ marginTop: 8 }}>{bp.antworten[0].empfehlung}</p>
+              <div style={{ marginTop: 16, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <button className="btn btn-primary" onClick={function() { setAkutWarnung(false); setStep("regionen"); }}>
+                  Trotzdem fortfahren
+                </button>
+                <button className="btn btn-secondary" onClick={function() { setAkutWarnung(false); }}>
+                  Zurück
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ===== Step "regionen": Region-Auswahl via SVG =====
+  function renderRegionen() {
+    // Welche Regionen sind in dieser Ansicht verfügbar?
+    const regionenInAnsicht = KATALOG.regionen.filter(function(r) {
+      return r.ansichten && r.ansichten.indexOf(ansicht) >= 0;
+    });
+
+    function handleRegionClick(rid) {
+      // Bereits gewählt? → toggle ab
+      if (selectedRegions.indexOf(rid) >= 0) {
+        setSelectedRegions(selectedRegions.filter(function(x) { return x !== rid; }));
+        setAskingForSecond(false);
+        return;
+      }
+      // Max. 2 Regionen
+      if (selectedRegions.length >= 2) {
+        return;
+      }
+      const next = selectedRegions.concat([rid]);
+      setSelectedRegions(next);
+      if (next.length === 1) {
+        setAskingForSecond(true);
+      }
+    }
+
+    return (
+      <div>
+        <div className="card">
+          <div className="card-label">Schritt 2 von 4 — Wo tut es weh?</div>
+          <h2 style={{ marginTop: 0 }}>
+            {selectedRegions.length === 0
+              ? "Tippen Sie auf den schmerzhaften Bereich"
+              : "Ihre Auswahl"}
+          </h2>
+
+          {/* Ansicht-Tabs */}
+          <div style={{ display: "flex", gap: 4, marginTop: 12, marginBottom: 16, borderBottom: "1px solid var(--c-border)" }}>
+            {["oben", "unten", "innen", "aussen"].map(function(an) {
+              const labels = { oben: "Von oben", unten: "Von unten", innen: "Innenseite", aussen: "Außenseite" };
+              const active = ansicht === an;
+              return (
+                <button key={an}
+                  onClick={function() { setAnsicht(an); }}
+                  style={{
+                    padding: "8px 14px",
+                    background: "none",
+                    border: "none",
+                    borderBottom: active ? "3px solid var(--c-main)" : "3px solid transparent",
+                    color: active ? "var(--c-main)" : "var(--c-text-muted)",
+                    fontWeight: active ? 700 : 500,
+                    cursor: "pointer",
+                    fontSize: 13,
+                    marginBottom: -1
+                  }}
+                >
+                  {labels[an]}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* SVG-Fuß */}
+          <FootSvg
+            ansicht={ansicht}
+            selectedRegions={selectedRegions}
+            onRegionClick={handleRegionClick}
+            getRegionTitel={function(rid) { const r = getRegion(rid); return r ? r.titel : rid; }}
+          />
+
+          {/* Hinweis bei leerer Ansicht */}
+          {ansicht === "oben" && regionenInAnsicht.length === 0 && (
+            <p style={{ fontSize: 13, color: "var(--c-text-muted)", marginTop: 12 }}>
+              Keine Regionen in dieser Ansicht.
+            </p>
+          )}
+
+          {/* Auswahl-Status */}
+          {selectedRegions.length > 0 && (
+            <div style={{ marginTop: 16, padding: 12, background: "#F0F4F8", borderRadius: 6, fontSize: 13 }}>
+              <strong>Gewählt:</strong> {selectedRegions.map(function(rid) { return getRegion(rid).titel; }).join(" + ")}
+              {" · "}
+              <a href="#" onClick={function(e) { e.preventDefault(); setSelectedRegions([]); setAskingForSecond(false); }} style={{ color: "var(--c-main)" }}>Zurücksetzen</a>
+            </div>
+          )}
+
+          {/* Mehrfach-Region-UI nach 1. Klick */}
+          {askingForSecond && selectedRegions.length === 1 && (
+            <div className="card" style={{ marginTop: 16, background: "#F0F4F8", borderLeft: "3px solid var(--c-main)" }}>
+              <strong>Schmerzt es noch an einer weiteren Stelle?</strong>
+              <p style={{ fontSize: 13, margin: "8px 0 12px", color: "var(--c-text-muted)" }}>
+                Sie können eine zweite Region auswählen — auch in einer anderen Ansicht.
+              </p>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <button className="btn btn-primary" onClick={function() { setAskingForSecond(false); setStep("fragen"); }}>
+                  Nein, weiter mit Fragen
+                </button>
+                <button className="btn btn-secondary" onClick={function() { setAskingForSecond(false); /* Patient kann jetzt weitere Region klicken */ }}>
+                  Ja, weitere Region wählen
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Weiter-Button wenn Patient 2 gewählt hat oder nach "Ja, weitere..." trotzdem mit nur einer weitermachen will */}
+          {!askingForSecond && selectedRegions.length >= 1 && (
+            <div style={{ marginTop: 16, textAlign: "right" }}>
+              <button className="btn btn-primary" onClick={function() { setStep("fragen"); }}>
+                Weiter mit Fragen →
+              </button>
+            </div>
+          )}
+
+          {/* Hinweis bei 2 gewählten Regionen */}
+          {selectedRegions.length === 2 && (
+            <p style={{ marginTop: 8, fontSize: 12, color: "var(--c-text-muted)", textAlign: "right" }}>
+              Maximum erreicht — bei mehr als 2 Regionen empfehlen wir die direkte Sprechstunden-Vorstellung.
+            </p>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ===== Step "fragen": Frage-Flow =====
+  function renderFragen() {
+    const region = getRegion(selectedRegions[currentRegionIdx]);
+    if (!region) return null;
+    const frage = region.fragen[currentFrageIdx];
+    if (!frage) return null;
+    const isMulti = frage.multi === true;
+    const regionAnswers = (answers[region.id] || {})[frage.id] || [];
+
+    const totalFragen = selectedRegions.reduce(function(sum, rid) { return sum + getRegion(rid).fragen.length; }, 0);
+    const aktuelle = (function() {
+      var n = 0;
+      for (var i = 0; i < currentRegionIdx; i++) {
+        n += getRegion(selectedRegions[i]).fragen.length;
+      }
+      return n + currentFrageIdx + 1;
+    })();
+
+    function toggleAntwort(antwortIdx) {
+      setAnswers(function(prev) {
+        const newAns = Object.assign({}, prev);
+        newAns[region.id] = Object.assign({}, newAns[region.id]);
+        const curr = newAns[region.id][frage.id] || [];
+        if (isMulti) {
+          if (curr.indexOf(antwortIdx) >= 0) {
+            newAns[region.id][frage.id] = curr.filter(function(x) { return x !== antwortIdx; });
+          } else {
+            newAns[region.id][frage.id] = curr.concat([antwortIdx]);
+          }
+        } else {
+          newAns[region.id][frage.id] = [antwortIdx];
+        }
+        return newAns;
+      });
+    }
+
+    function next() {
+      // Sonderfall-Check für die aktuelle Frage
+      const sft = region.sonderfall_trigger;
+      const newSelected = (answers[region.id] || {})[frage.id] || [];
+      if (sft && sft.frage_id === frage.id && newSelected.indexOf(sft.antwort_index) >= 0 && !triggeredSonderfall) {
+        const kb = getKb(sft.kb_verdacht);
+        setTriggeredSonderfall({
+          regionId: region.id,
+          trigger: sft,
+          kb: kb
+        });
+        return; // Sonderfall-Anzeige erscheint, Patient muss bestätigen
+      }
+      goToNextFrage();
+    }
+
+    function goToNextFrage() {
+      setTriggeredSonderfall(null);
+      if (currentFrageIdx + 1 < region.fragen.length) {
+        setCurrentFrageIdx(currentFrageIdx + 1);
+      } else if (currentRegionIdx + 1 < selectedRegions.length) {
+        setCurrentRegionIdx(currentRegionIdx + 1);
+        setCurrentFrageIdx(0);
+      } else {
+        setStep("ergebnis");
+      }
+    }
+
+    function back() {
+      setTriggeredSonderfall(null);
+      if (currentFrageIdx > 0) {
+        setCurrentFrageIdx(currentFrageIdx - 1);
+      } else if (currentRegionIdx > 0) {
+        setCurrentRegionIdx(currentRegionIdx - 1);
+        const prevRegion = getRegion(selectedRegions[currentRegionIdx - 1]);
+        setCurrentFrageIdx(prevRegion.fragen.length - 1);
+      } else {
+        // Zurück zur Region-Auswahl
+        setStep("regionen");
+      }
+    }
+
+    return (
+      <div>
+        <div className="card">
+          <div className="card-label">
+            Schritt 3 von 4 — Frage {aktuelle} von {totalFragen}
+            {selectedRegions.length > 1 && <> · Region: <strong>{region.titel}</strong></>}
+          </div>
+          <h2 style={{ marginTop: 0 }}>{frage.frage}</h2>
+          {isMulti && <p style={{ color: "var(--c-text-muted)", fontSize: 13, marginTop: 4 }}>Mehrfachauswahl möglich.</p>}
+
+          <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 10 }}>
+            {frage.antworten.map(function(a, i) {
+              const selected = regionAnswers.indexOf(i) >= 0;
+              return (
+                <button
+                  key={i}
+                  className={"btn " + (selected ? "btn-primary" : "btn-secondary")}
+                  style={{ textAlign: "left", whiteSpace: "normal", padding: "12px 16px" }}
+                  onClick={function() { toggleAntwort(i); }}
+                >
+                  {selected ? "✓ " : ""}{a.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {triggeredSonderfall && (
+            <div className="card warning" style={{ marginTop: 16 }}>
+              <strong>⚠ {triggeredSonderfall.kb && triggeredSonderfall.kb.titel}-Verdacht</strong>
+              <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
+              <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>
+                  Verstanden, weiter
+                </button>
+              </div>
+            </div>
+          )}
+
+          {!triggeredSonderfall && (
+            <div style={{ marginTop: 20, display: "flex", gap: 8, justifyContent: "space-between" }}>
+              <button className="btn btn-secondary" onClick={back}>Zurück</button>
+              <button
+                className="btn btn-primary"
+                onClick={next}
+                disabled={regionAnswers.length === 0}
+              >
+                Weiter
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ===== Step "ergebnis": Top-KBs anzeigen =====
+  function computeScores() {
+    const scores = {}; // { kbId: punktzahl }
+    selectedRegions.forEach(function(rid) {
+      const region = getRegion(rid);
+      const regionAnswers = answers[rid] || {};
+      region.fragen.forEach(function(f) {
+        const selectedIdxs = regionAnswers[f.id] || [];
+        selectedIdxs.forEach(function(i) {
+          const punkte = f.antworten[i].punkte || {};
+          Object.keys(punkte).forEach(function(kbId) {
+            scores[kbId] = (scores[kbId] || 0) + punkte[kbId];
+          });
+        });
+      });
+    });
+    // Häufigkeits-Bonus addieren (nur für KBs, die mind. 1 Punkt haben)
+    Object.keys(scores).forEach(function(kbId) {
+      const kb = getKb(kbId);
+      if (kb) {
+        scores[kbId] += getHaeufigkeitsBonus(kb.haeufigkeit);
+      }
+    });
+    return scores;
+  }
+
+  function renderErgebnis() {
+    const scores = computeScores();
+    const logic = KATALOG.ergebnis_logik || { top1_min_abstand: 1.5, top2_min_score: 1.0, max_top_eintraege: 3 };
+    // Sortiert nach Score absteigend, Tiebreaker = Häufigkeits-Bonus
+    const ranked = Object.keys(scores)
+      .map(function(kbId) {
+        const kb = getKb(kbId);
+        return {
+          kbId: kbId,
+          kb: kb,
+          score: scores[kbId],
+          haeufBonus: kb ? getHaeufigkeitsBonus(kb.haeufigkeit) : 0
+        };
+      })
+      .filter(function(e) { return e.kb && e.score > 0; })
+      .sort(function(a, b) {
+        if (b.score !== a.score) return b.score - a.score;
+        return b.haeufBonus - a.haeufBonus; // Tiebreaker
+      });
+
+    const top = ranked.slice(0, logic.max_top_eintraege || 3);
+    const top1 = top[0];
+    const top2 = top[1];
+    const istEindeutig = top1 && (!top2 || (top1.score - top2.score) > (logic.top1_min_abstand || 1.5));
+
+    return (
+      <div>
+        <div className="card">
+          <div className="card-label">Schritt 4 von 4 — Ihre mögliche Diagnose</div>
+          <h2 style={{ marginTop: 0 }}>
+            {top.length === 0 ? "Keine eindeutige Zuordnung möglich" :
+             istEindeutig ? "Sehr wahrscheinlich" : "Mögliche Ursachen"}
+          </h2>
+          {selectedRegions.length > 1 && (
+            <p style={{ color: "var(--c-text-muted)", fontSize: 13, marginTop: 4 }}>
+              Auswertung kombiniert Ihre Angaben aus beiden Regionen: <strong>{selectedRegions.map(function(rid) { return getRegion(rid).titel; }).join(" + ")}</strong>
+            </p>
+          )}
+        </div>
+
+        {top.length === 0 && (
+          <div className="card warning">
+            <p>Anhand Ihrer Antworten konnte keine eindeutige Eingrenzung erfolgen. Bitte vereinbaren Sie einen Termin in unserer Sprechstunde — wir helfen Ihnen gerne weiter.</p>
+          </div>
+        )}
+
+        {top1 && (
+          <div className="card success">
+            <div className="card-label">
+              {istEindeutig ? "Sehr wahrscheinlich" : "Wahrscheinlichste Ursache"}
+              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "🟢 häufig" : top1.kb.haeufigkeit === "mittel" ? "🟡 mittelhäufig" : "🔴 selten"}
+            </div>
+            <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
+            <p>{top1.kb.kurz}</p>
+            <button className="btn btn-primary" onClick={function() { alert("Mehr zum Krankheitsbild — folgt in einer späteren Version (Krankheitsbild-Detail-View)."); }}>
+              Mehr zum Krankheitsbild →
+            </button>
+          </div>
+        )}
+
+        {!istEindeutig && top.slice(1).map(function(e) {
+          return (
+            <div key={e.kbId} className="card" style={{ borderLeft: "3px solid #9CA3AF" }}>
+              <div className="card-label">
+                Möglich auch
+                {" · "}{e.kb.haeufigkeit === "haeufig" ? "🟢 häufig" : e.kb.haeufigkeit === "mittel" ? "🟡 mittelhäufig" : "🔴 selten"}
+              </div>
+              <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
+              <p style={{ marginBottom: 0 }}>{e.kb.kurz}</p>
+            </div>
+          );
+        })}
+
+        <div className="card" style={{ background: "#F0F4F8", borderLeft: "3px solid #6B7280" }}>
+          <p style={{ margin: 0, fontSize: 13, color: "var(--c-text-muted)" }}>
+            ℹ <em>{(KATALOG.ergebnis_logik && KATALOG.ergebnis_logik.disclaimer) || "Diese Auswertung ist keine ärztliche Diagnose. Eine genaue Abklärung erfolgt in der Sprechstunde."}</em>
+          </p>
+        </div>
+
+        <div style={{ marginTop: 16, display: "flex", gap: 8, flexWrap: "wrap" }}>
+          <button className="btn btn-secondary" onClick={resetFinder}>Erneut starten</button>
+        </div>
+
+        {/* Diagnose-Hilfe (nur in Entwicklung): Score-Übersicht */}
+        <details style={{ marginTop: 24, fontSize: 11, color: "#9CA3AF" }}>
+          <summary style={{ cursor: "pointer" }}>Score-Details (zur Prüfung)</summary>
+          <pre style={{ fontSize: 11, background: "#F9FAFB", padding: 8, borderRadius: 4, overflow: "auto" }}>
+            {ranked.map(function(e) {
+              return e.kb.titel + ": " + e.score.toFixed(1) + " (Antwort: " + (e.score - e.haeufBonus).toFixed(1) + " + Häufigkeit: " + e.haeufBonus.toFixed(1) + ")";
+            }).join("\n")}
+          </pre>
+        </details>
+      </div>
+    );
+  }
+
+  // ===== Render =====
+  if (!KATALOG) {
+    return (
+      <div style={{ padding: 16 }}>
+        <div className="card warning">
+          <strong>Schmerz-Finder noch nicht verfügbar</strong>
+          <p>Die Daten konnten nicht geladen werden. Bitte versuchen Sie es später erneut.</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="finder-view" style={{ maxWidth: 720, margin: "0 auto" }}>
+      <div style={{ fontSize: 11, color: "#9CA3AF", marginBottom: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+        Schmerz-Finder
+      </div>
+      {step === "akut" && renderAkut()}
+      {step === "regionen" && renderRegionen()}
+      {step === "fragen" && renderFragen()}
+      {step === "ergebnis" && renderErgebnis()}
     </div>
   );
 }
@@ -1785,8 +2467,8 @@ rootEl.innerHTML = '<div style="text-align:center;padding:48px 16px;font-family:
 
 loadPhasenData()
   .then(function() {
-    // Aufklärungs-Daten parallel laden (silently fail wenn nicht verfügbar)
-    return loadAufklaerungData();
+    // Aufklärungs-Daten und Katalog-Daten parallel laden (silently fail wenn nicht verfügbar)
+    return Promise.all([loadAufklaerungData(), loadKatalogData()]);
   })
   .then(function() {
     ReactDOM.createRoot(rootEl).render(<App />);
