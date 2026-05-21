@@ -528,8 +528,10 @@
       "id": "grosszehe",
       "titel": "Großzehe / Großzehengrundgelenk",
       "ansichten": [
+        "innen",
         "oben",
-        "innen"
+        "osg",
+        "unten"
       ],
       "fragen": [
         {
@@ -691,8 +693,9 @@
       "id": "kleinzehen",
       "titel": "Kleinzehen",
       "ansichten": [
+        "aussen",
         "oben",
-        "aussen"
+        "unten"
       ],
       "fragen": [
         {
@@ -1225,6 +1228,7 @@
       "id": "mittelfuss_zentral",
       "titel": "Zentraler Mittelfuß (TMT 2–4 / Lisfranc)",
       "ansichten": [
+        "aussen",
         "oben"
       ],
       "fragen": []
@@ -1233,7 +1237,9 @@
       "id": "sg_vorne",
       "titel": "Sprunggelenk vorderer Bereich",
       "ansichten": [
-        "oben"
+        "aussen",
+        "oben",
+        "osg"
       ],
       "fragen": [
         {
@@ -1377,7 +1383,8 @@
       "id": "sg_innen_vor",
       "titel": "Sprunggelenk innen — vor Innenknöchel",
       "ansichten": [
-        "innen"
+        "innen",
+        "osg"
       ],
       "fragen": [
         {
@@ -1643,7 +1650,8 @@
       "id": "sg_aussen_vor",
       "titel": "Sprunggelenk außen — vor Wadenbein",
       "ansichten": [
-        "aussen"
+        "aussen",
+        "osg"
       ],
       "fragen": [
         {
@@ -1891,8 +1899,8 @@
       "id": "achillessehne_verlauf",
       "titel": "Achillessehne — Verlauf",
       "ansichten": [
-        "innen",
-        "aussen"
+        "aussen",
+        "innen"
       ],
       "fragen": [
         {
@@ -2016,8 +2024,8 @@
       "id": "achillessehne_ansatz",
       "titel": "Achillessehne — Ansatz am Fersenbein",
       "ansichten": [
-        "innen",
-        "aussen"
+        "aussen",
+        "innen"
       ],
       "fragen": [
         {
@@ -2138,6 +2146,7 @@
       "id": "ferse_plantar",
       "titel": "Ferse — Fußsohle",
       "ansichten": [
+        "innen",
         "unten"
       ],
       "fragen": [
@@ -2505,7 +2514,9 @@
       "id": "tn_gelenk",
       "titel": "TN-Gelenk (Talonavikular)",
       "ansichten": [
-        "oben"
+        "innen",
+        "oben",
+        "osg"
       ],
       "fragen": [
         {
@@ -2545,7 +2556,9 @@
       "id": "mtp_region",
       "titel": "MTP-Region (Mittelfußköpfchen)",
       "ansichten": [
-        "oben"
+        "aussen",
+        "oben",
+        "osg"
       ],
       "fragen": [
         {
