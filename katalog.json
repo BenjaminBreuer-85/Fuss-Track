@@ -449,15 +449,6 @@
    ]
   },
   {
-   "id": "achillesruptur_akut",
-   "titel": "Achillessehnenruptur (akut)",
-   "kurz": "Frische Ruptur der Achillessehne (meist beim Sport)",
-   "haeufigkeit": "mittel",
-   "regionen": [
-    "achillessehne_verlauf"
-   ]
-  },
-  {
    "id": "achilles_distal",
    "titel": "Distale Achillessehnen-Tendopathie",
    "kurz": "Reizung am Übergang Achillessehne zur Wadenmuskulatur",
@@ -557,15 +548,6 @@
    "haeufigkeit": "mittel",
    "regionen": [
     "grosszehe_ip"
-   ]
-  },
-  {
-   "id": "lisfranc_verletzung",
-   "titel": "Lisfranc-Verletzung (Bandriss/Fehlstellung der Fußwurzel)",
-   "kurz": "Verletzung des zentralen Fußwurzel-Gelenkkomplexes",
-   "haeufigkeit": "selten",
-   "regionen": [
-    "mittelfuss_zentral"
    ]
   },
   {
@@ -1001,12 +983,6 @@
        "punkte": {
         "stressfraktur_mt": 2,
         "plantar_plate_ruptur": 1
-       }
-      },
-      {
-       "label": "Akut beim Auftreten (Es knackte)",
-       "punkte": {
-        "plantar_plate_ruptur": 2
        }
       }
      ]
@@ -1484,12 +1460,6 @@
        "punkte": {
         "marschfraktur": 2
        }
-      },
-      {
-       "label": "Starker Schmerz + Schwellung nach Sturz/Verdrehung",
-       "punkte": {
-        "lisfranc_verletzung": 2
-       }
       }
      ]
     },
@@ -1514,12 +1484,6 @@
        "label": "Höcker besteht länger, drückt zunehmend",
        "punkte": {
         "tarsaler_hoecker": 2
-       }
-      },
-      {
-       "label": "Akut nach Trauma (Sturz, Umknicken, Anprall)",
-       "punkte": {
-        "lisfranc_verletzung": 2
        }
       }
      ]
@@ -2281,12 +2245,6 @@
        "punkte": {
         "achilles_distal": 2
        }
-      },
-      {
-       "label": "Über die ganze Sehne mit Lücke- oder Riss-Gefühl",
-       "punkte": {
-        "achillesruptur_akut": 3
-       }
       }
      ]
     },
@@ -2295,12 +2253,6 @@
      "frage": "Wann begann es?",
      "multi": false,
      "antworten": [
-      {
-       "label": "Plötzlich beim Sport (Tritt in die Wade)",
-       "punkte": {
-        "achillesruptur_akut": 3
-       }
-      },
       {
        "label": "Schleichend nach Belastungsschub",
        "punkte": {
@@ -2324,7 +2276,6 @@
       {
        "label": "Nein",
        "punkte": {
-        "achillesruptur_akut": 1,
         "achilles_distal": 1
        }
       }
@@ -2357,12 +2308,6 @@
        "punkte": {
         "achillodynie_midportion": 1,
         "achilles_distal": 1
-       }
-      },
-      {
-       "label": "Schwierig — die Kraft fehlt",
-       "punkte": {
-        "achillesruptur_akut": 2
        }
       },
       {
@@ -3247,12 +3192,6 @@
      "frage": "Wie hat es begonnen?",
      "multi": false,
      "antworten": [
-      {
-       "label": "Nach einem Stoß / etwas auf die Zehe gefallen",
-       "punkte": {
-        "subunguales_haematom_d1": 2
-       }
-      },
       {
        "label": "Schleichend über Monate, Gelenk wird steifer",
        "punkte": {
