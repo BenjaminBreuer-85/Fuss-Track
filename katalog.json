@@ -219,7 +219,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand",
-        "tn_gelenk"
+        "tn_gelenk",
+        "medialer_fussrand_tief"
       ]
     },
     {
@@ -298,7 +299,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "lateraler_fussrand",
-        "sg_aussen_hinter"
+        "sg_aussen_hinter",
+        "rueckfuss_medial_tief"
       ]
     },
     {
@@ -355,7 +357,8 @@
       "kurz": "Reizung der inneren Sehne ohne (noch) Plattfuß-Bildung",
       "haeufigkeit": "mittel",
       "regionen": [
-        "sg_innen_hinter"
+        "sg_innen_hinter",
+        "medialer_fussrand_tief"
       ]
     },
     {
@@ -476,7 +479,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "ferse_plantar",
-        "ferse_plantar_tuber"
+        "ferse_plantar_tuber",
+        "rueckfuss_medial_tief"
       ]
     },
     {
@@ -608,7 +612,8 @@
       "kurz": "Nervenengpass an der Innenseite der Ferse, oft mit chronischem Fersenschmerz",
       "haeufigkeit": "selten",
       "regionen": [
-        "ferse_plantar"
+        "ferse_plantar",
+        "rueckfuss_medial_tief"
       ]
     },
     {
@@ -685,6 +690,34 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber"
+      ]
+    },
+    {
+      "id": "fhl_stenose",
+      "titel": "FHL-Stenose (Flexor-hallucis-longus-Sehne)",
+      "kurz": "Einengung der Großzehenbeuger-Sehne hinter dem Innenknöchel, oft bei Tänzern/Sportlern",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "medialer_fussrand_tief"
+      ]
+    },
+    {
+      "id": "tc_coalitio",
+      "titel": "Talokalkaneare Coalitio",
+      "kurz": "Angeborene knöcherne/knorpelige Verbindung zwischen Sprung- und Fersenbein",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "medialer_fussrand_tief",
+        "rueckfuss_medial_tief"
+      ]
+    },
+    {
+      "id": "kalkaneuszyste",
+      "titel": "Knochenzyste im Fersenbein",
+      "kurz": "Gutartiger flüssigkeitsgefüllter Hohlraum im Fersenbein (Tuber calcanei)",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "rueckfuss_medial_tief"
       ]
     }
   ],
@@ -2672,7 +2705,8 @@
       "id": "fusssohle",
       "titel": "Fußsohle — Längsgewölbe",
       "ansichten": [
-        "unten"
+        "unten",
+        "innen"
       ],
       "fragen": [
         {
@@ -3195,7 +3229,8 @@
       "titel": "IP-Gelenk und Zehenbeere I (Großzehen-Endgelenk)",
       "ansichten": [
         "oben",
-        "unten"
+        "unten",
+        "innen"
       ],
       "fragen": [
         {
@@ -3451,7 +3486,8 @@
       "titel": "Fersenpolster / Fersenbein-Unterseite (Tuber calcanei)",
       "kurz": "Schmerz direkt unter dem Fersenbein",
       "ansichten": [
-        "unten"
+        "unten",
+        "innen"
       ],
       "fragen": [
         {
@@ -3514,6 +3550,136 @@
               "label": "Nach viel Laufen/Training",
               "punkte": {
                 "stressfraktur_calcaneus": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medialer_fussrand_tief",
+      "titel": "Medialer Fußrand — tiefe Strukturen (Navikulare/Tib.-post.)",
+      "kurz": "Schmerz tief am inneren Fußrand, am Kahnbein und der hinteren Schienbeinsehne",
+      "ansichten": [
+        "innen"
+      ],
+      "fragen": [
+        {
+          "id": "charakter",
+          "frage": "Wann und wie tut es weh?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Beim Gehen/Stehen, das innere Längsgewölbe sackt ein",
+              "punkte": {
+                "tibialis_post_beschwerden": 2,
+                "os_tibiale_externum": 1
+              }
+            },
+            {
+              "label": "Druckschmerz an einem tastbaren Knöchelchen am inneren Fußrand",
+              "punkte": {
+                "os_tibiale_externum": 2
+              }
+            },
+            {
+              "label": "Beim Abrollen / Großzehe beugen, hinter dem Innenknöchel",
+              "punkte": {
+                "fhl_stenose": 2
+              }
+            },
+            {
+              "label": "Gefühl der Steife, diffuser tiefer Schmerz, ggf. hartnäckiger Knick-Senkfuß",
+              "punkte": {
+                "tc_coalitio": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "beginn",
+          "frage": "Seit wann bestehen die Beschwerden?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Schleichend im Erwachsenenalter",
+              "punkte": {
+                "tibialis_post_beschwerden": 2
+              }
+            },
+            {
+              "label": "Schon immer / seit Kindheit oder Jugend",
+              "punkte": {
+                "tc_coalitio": 2,
+                "os_tibiale_externum": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rueckfuss_medial_tief",
+      "titel": "Innerer Rückfuß — tiefe Strukturen (unteres Sprunggelenk)",
+      "kurz": "Schmerz tief am inneren Rückfuß, im Bereich des unteren Sprunggelenks und Fersenbeins",
+      "ansichten": [
+        "innen"
+      ],
+      "fragen": [
+        {
+          "id": "charakter",
+          "frage": "Wie fühlt sich der Schmerz an?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Tiefer Schmerz im Rückfuß beim Gehen auf unebenem Boden / bei Drehbewegungen",
+              "punkte": {
+                "subtalare_arthrose": 2
+              }
+            },
+            {
+              "label": "Gefühl der Steife, hartnäckiger Knick-Senkfuß, diffuser tiefer Schmerz",
+              "punkte": {
+                "tc_coalitio": 2
+              }
+            },
+            {
+              "label": "Brennen/Kribbeln an der inneren Ferse, ausstrahlend",
+              "punkte": {
+                "baxter_neuropathie": 2
+              }
+            },
+            {
+              "label": "Dumpfer Dauerschmerz, auch nachts / in Ruhe",
+              "punkte": {
+                "kalkaneuszyste": 2,
+                "stressfraktur_calcaneus": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "beginn",
+          "frage": "Wie hat es begonnen?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Nach viel Laufen/Training, belastungsabhängig",
+              "punkte": {
+                "stressfraktur_calcaneus": 2
+              }
+            },
+            {
+              "label": "Schleichend über Monate/Jahre",
+              "punkte": {
+                "subtalare_arthrose": 2,
+                "kalkaneuszyste": 1
+              }
+            },
+            {
+              "label": "Schon seit Kindheit/Jugend",
+              "punkte": {
+                "tc_coalitio": 2
               }
             }
           ]
