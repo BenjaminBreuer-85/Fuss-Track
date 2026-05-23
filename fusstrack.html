@@ -1289,7 +1289,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
   // === Ansicht: oben (Aufsicht, neutrales Foto als Hintergrund + klickbare Regionen) ===
   function renderOben() {
     return (
-      <svg viewBox="0 0 840 840" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
+      <svg viewBox="227 2 386 838" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
         <defs>
           {/* Punktraster für ausgewählte Region */}
           <pattern id="dotPattern" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
@@ -1319,7 +1319,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
 
   function renderInnen() {
     return (
-      <svg viewBox="0 0 840 534" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
+      <svg viewBox="5 8 813 520" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
         <defs>
           <pattern id="dotPattern" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
             <circle cx="7" cy="7" r="2.6" fill="#2C4F7C" opacity="0.65" />
@@ -1344,7 +1344,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
 
   function renderAussen() {
     return (
-      <svg viewBox="0 0 840 739" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
+      <svg viewBox="87 0 688 602" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
         <defs>
           <pattern id="dotPattern" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
             <circle cx="7" cy="7" r="2.6" fill="#2C4F7C" opacity="0.65" />
@@ -1366,7 +1366,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
 
   function renderOsg() {
     return (
-      <svg viewBox="0 0 840 504" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
+      <svg viewBox="188 0 513 504" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
         <defs>
           <pattern id="dotPattern" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
             <circle cx="7" cy="7" r="2.6" fill="#2C4F7C" opacity="0.65" />
@@ -1385,7 +1385,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
 
   function renderUnten() {
     return (
-      <svg viewBox="0 0 840 840" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
+      <svg viewBox="251 9 336 803" style={{ width: "100%", maxWidth: 360, display: "block", margin: "0 auto" }}>
         <defs>
           <pattern id="dotPattern" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
             <circle cx="7" cy="7" r="2.6" fill="#2C4F7C" opacity="0.65" />
@@ -1553,41 +1553,46 @@ function FinderView() {
               : "Ihre Auswahl"}
           </h2>
 
-          {/* Ansicht-Tabs */}
-          <div style={{ display: "flex", gap: 4, marginTop: 12, marginBottom: 16, borderBottom: "1px solid var(--c-border)", overflowX: "auto", flexWrap: "nowrap", WebkitOverflowScrolling: "touch" }}>
-            {["oben", "unten", "innen", "aussen", "osg"].map(function(an) {
-              const labels = { oben: "Von oben", unten: "Von unten", innen: "Innenseite", aussen: "Außenseite", osg: "OSG vorne" };
-              const active = ansicht === an;
-              return (
-                <button key={an}
-                  onClick={function() { setAnsicht(an); }}
-                  style={{
-                    padding: "8px 14px",
-                    background: "none",
-                    border: "none",
-                    borderBottom: active ? "3px solid var(--c-main)" : "3px solid transparent",
-                    color: active ? "var(--c-main)" : "var(--c-text-muted)",
-                    fontWeight: active ? 700 : 500,
-                    cursor: "pointer",
-                    fontSize: 13,
-                    marginBottom: -1,
-                    whiteSpace: "nowrap",
-                    flex: "0 0 auto"
-                  }}
-                >
-                  {labels[an]}
-                </button>
-              );
-            })}
-          </div>
+          {/* Ansicht-Tabs (links) + SVG-Fuß (rechts) nebeneinander */}
+          <div style={{ display: "flex", gap: 8, alignItems: "flex-start", marginTop: 12, marginBottom: 16 }}>
+            {/* Vertikale Tab-Spalte links */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 4, flex: "0 0 auto" }}>
+              {["oben", "unten", "innen", "aussen", "osg"].map(function(an) {
+                const labels = { oben: "Von oben", unten: "Von unten", innen: "Innenseite", aussen: "Außenseite", osg: "OSG vorne" };
+                const active = ansicht === an;
+                return (
+                  <button key={an}
+                    onClick={function() { setAnsicht(an); }}
+                    style={{
+                      padding: "10px 12px",
+                      background: active ? "rgba(44,79,124,0.08)" : "none",
+                      border: "none",
+                      borderLeft: active ? "3px solid var(--c-main)" : "3px solid transparent",
+                      borderRadius: "0 6px 6px 0",
+                      color: active ? "var(--c-main)" : "var(--c-text-muted)",
+                      fontWeight: active ? 700 : 500,
+                      cursor: "pointer",
+                      fontSize: 13,
+                      whiteSpace: "nowrap",
+                      textAlign: "left"
+                    }}
+                  >
+                    {labels[an]}
+                  </button>
+                );
+              })}
+            </div>
 
-          {/* SVG-Fuß */}
-          <FootSvg
-            ansicht={ansicht}
-            selectedRegions={selectedRegions}
-            onRegionClick={handleRegionClick}
-            getRegionTitel={function(rid) { const r = getRegion(rid); return r ? r.titel : rid; }}
-          />
+            {/* SVG-Fuß rechts, füllt den restlichen Platz */}
+            <div style={{ flex: "1 1 auto", minWidth: 0 }}>
+              <FootSvg
+                ansicht={ansicht}
+                selectedRegions={selectedRegions}
+                onRegionClick={handleRegionClick}
+                getRegionTitel={function(rid) { const r = getRegion(rid); return r ? r.titel : rid; }}
+              />
+            </div>
+          </div>
 
           {/* Hinweis bei leerer Ansicht */}
           {ansicht === "oben" && regionenInAnsicht.length === 0 && (
