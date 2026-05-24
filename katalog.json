@@ -997,6 +997,7 @@
       "ansichten": [
         "aussen",
         "oben",
+        "osg",
         "unten"
       ],
       "fragen": [
@@ -1259,7 +1260,8 @@
       "titel": "Medialer Fußrand / Mittelfußwurzel",
       "ansichten": [
         "innen",
-        "oben"
+        "oben",
+        "osg"
       ],
       "fragen": [
         {
@@ -1616,7 +1618,8 @@
       "titel": "Zentraler Mittelfuß (TMT 2–4 / Lisfranc)",
       "ansichten": [
         "aussen",
-        "oben"
+        "oben",
+        "osg"
       ],
       "fragen": [
         {
@@ -2169,8 +2172,7 @@
       "id": "sg_aussen_vor",
       "titel": "Sprunggelenk außen — vor Wadenbein",
       "ansichten": [
-        "aussen",
-        "osg"
+        "aussen"
       ],
       "fragen": [
         {
@@ -2320,7 +2322,8 @@
       "id": "sg_aussen_hinter",
       "titel": "Sprunggelenk außen — hinter Wadenbein",
       "ansichten": [
-        "aussen"
+        "aussen",
+        "osg"
       ],
       "fragen": [
         {
@@ -3266,6 +3269,7 @@
       "ansichten": [
         "aussen",
         "oben",
+        "osg",
         "unten"
       ],
       "fragen": [
