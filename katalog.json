@@ -96,8 +96,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe",
-        "mtp1_dorsal",
-        "grosszehe_ip"
+        "grosszehe_ip",
+        "mtp1_dorsal"
       ]
     },
     {
@@ -144,9 +144,9 @@
       "kurz": "Nervenkompression zwischen den Mittelfußköpfchen mit Ausstrahlung in die Zehen",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "vorfuss_plantar",
         "fusssohle",
-        "mtp_region"
+        "mtp_region",
+        "vorfuss_plantar"
       ]
     },
     {
@@ -155,9 +155,9 @@
       "kurz": "Schmerzen unter den Mittelfußköpfchen (Vorfuß-Ballen)",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "vorfuss_plantar",
+        "mtp5_lateral",
         "mtp_region",
-        "mtp5_lateral"
+        "vorfuss_plantar"
       ]
     },
     {
@@ -166,8 +166,8 @@
       "kurz": "Ermüdungsbruch eines Mittelfußknochens nach starker Belastung",
       "haeufigkeit": "selten",
       "regionen": [
-        "vorfuss_plantar",
-        "mtp_region"
+        "mtp_region",
+        "vorfuss_plantar"
       ]
     },
     {
@@ -176,8 +176,8 @@
       "kurz": "Knochennekrose eines Mittelfußkopfes (meist Metatarsale II)",
       "haeufigkeit": "selten",
       "regionen": [
-        "vorfuss_plantar",
-        "mtp_region"
+        "mtp_region",
+        "vorfuss_plantar"
       ]
     },
     {
@@ -186,9 +186,9 @@
       "kurz": "Riss der Gelenkkapsel-Platte unter einem Mittelfußköpfchen",
       "haeufigkeit": "selten",
       "regionen": [
-        "vorfuss_plantar",
         "fusssohle",
-        "mtp_region"
+        "mtp_region",
+        "vorfuss_plantar"
       ]
     },
     {
@@ -219,8 +219,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand",
-        "tn_gelenk",
-        "medialer_fussrand_tief"
+        "medialer_fussrand_tief",
+        "tn_gelenk"
       ]
     },
     {
@@ -259,7 +259,6 @@
       "kurz": "Springen der Wadenbein-Sehnen aus ihrer Führung",
       "haeufigkeit": "selten",
       "regionen": [
-        "lateraler_fussrand",
         "sg_aussen_hinter"
       ]
     },
@@ -270,7 +269,9 @@
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand",
-        "sg_aussen_vor"
+        "sg_aussen_hinter",
+        "sg_aussen_vor",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -299,8 +300,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "lateraler_fussrand",
-        "sg_aussen_hinter",
-        "rueckfuss_medial_tief"
+        "rueckfuss_medial_tief",
+        "sg_aussen_hinter"
       ]
     },
     {
@@ -318,9 +319,10 @@
       "kurz": "Verschleiß des oberen Sprunggelenks",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "sg_vorne",
+        "sg_aussen_vor",
         "sg_innen_vor",
-        "sg_aussen_vor"
+        "sg_vorne",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -329,7 +331,8 @@
       "kurz": "Eingrenzungsschmerz vorne im Sprunggelenk durch Knochensporne",
       "haeufigkeit": "mittel",
       "regionen": [
-        "sg_vorne"
+        "sg_vorne",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -338,8 +341,9 @@
       "kurz": "Entzündung der Gelenkinnenhaut des Sprunggelenks",
       "haeufigkeit": "mittel",
       "regionen": [
+        "sg_innen_vor",
         "sg_vorne",
-        "sg_innen_vor"
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -348,7 +352,8 @@
       "kurz": "Vorderer Knochensporn am Sprungbein, oft durch Sport",
       "haeufigkeit": "mittel",
       "regionen": [
-        "sg_vorne"
+        "sg_vorne",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -357,8 +362,8 @@
       "kurz": "Reizung der inneren Sehne ohne (noch) Plattfuß-Bildung",
       "haeufigkeit": "mittel",
       "regionen": [
-        "sg_innen_hinter",
-        "medialer_fussrand_tief"
+        "medialer_fussrand_tief",
+        "sg_innen_hinter"
       ]
     },
     {
@@ -376,8 +381,8 @@
       "kurz": "Nervenkompression hinter dem Innenknöchel mit Ausstrahlung in die Sohle",
       "haeufigkeit": "selten",
       "regionen": [
-        "sg_innen_hinter",
-        "ferse_plantar"
+        "ferse_plantar",
+        "sg_innen_hinter"
       ]
     },
     {
@@ -404,7 +409,8 @@
       "kurz": "Wiederholtes Umknicken trotz unauffälliger Bildgebung",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "sg_aussen_vor"
+        "sg_aussen_vor",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -413,7 +419,9 @@
       "kurz": "Knorpel-Knochen-Schaden am Sprungbein",
       "haeufigkeit": "mittel",
       "regionen": [
-        "sg_aussen_vor"
+        "sg_aussen_vor",
+        "sg_vorne",
+        "syndesmose_distale_tibia"
       ]
     },
     {
@@ -500,7 +508,7 @@
       "regionen": [
         "ferse_plantar",
         "fusssohle",
-        "systemerkrankungen"
+        "vorfuss_plantar"
       ]
     },
     {
@@ -508,9 +516,7 @@
       "titel": "Diabetisches Fußsyndrom",
       "kurz": "Fußkomplikationen im Rahmen eines Diabetes mellitus",
       "haeufigkeit": "mittel",
-      "regionen": [
-        "systemerkrankungen"
-      ]
+      "regionen": []
     },
     {
       "id": "charcot_fuss",
@@ -518,7 +524,7 @@
       "kurz": "Akute Knochen-Gelenk-Zerstörung bei Diabetes (Notfall!)",
       "haeufigkeit": "selten",
       "regionen": [
-        "systemerkrankungen"
+        "mittelfuss_zentral"
       ]
     },
     {
@@ -526,9 +532,7 @@
       "titel": "CRPS",
       "kurz": "Komplexes regionales Schmerzsyndrom, oft nach OP oder Verletzung",
       "haeufigkeit": "selten",
-      "regionen": [
-        "systemerkrankungen"
-      ]
+      "regionen": []
     },
     {
       "id": "ip_arthrose_d1",
@@ -581,8 +585,8 @@
       "kurz": "Druck auf den tiefen Wadennerv am Fußrücken, oft mit Taubheit im 1. Zehenzwischenraum",
       "haeufigkeit": "selten",
       "regionen": [
-        "mtp1_dorsal",
         "mittelfuss_zentral",
+        "mtp1_dorsal",
         "sg_vorne"
       ]
     },
@@ -622,8 +626,10 @@
       "kurz": "Einengung eines Hautnervs am äußeren Rückfuß mit Missempfindungen",
       "haeufigkeit": "selten",
       "regionen": [
+        "achillessehne_verlauf",
+        "ferse_plantar_tuber",
         "lateraler_fussrand",
-        "achillessehne_verlauf"
+        "mtp5_lateral"
       ]
     },
     {
@@ -642,8 +648,8 @@
       "kurz": "Nervenreizung an der Innenseite des Großzehengrundgelenks, oft nach Druck",
       "haeufigkeit": "selten",
       "regionen": [
-        "mtp1_dorsal",
-        "grosszehe"
+        "grosszehe",
+        "mtp1_dorsal"
       ]
     },
     {
@@ -719,6 +725,86 @@
       "regionen": [
         "rueckfuss_medial_tief"
       ]
+    },
+    {
+      "id": "syndesmosen_verletzung",
+      "titel": "Syndesmosenverletzung",
+      "kurz": "Verletzung der hohen Bandverbindung zwischen Schien- und Wadenbein knapp oberhalb des Sprunggelenks (hohe Sprunggelenkverstauchung), oft nach Verdrehung mit Auswärtsdrehung; kann subakut oder chronisch Beschwerden machen.",
+      "haeufigkeit": "mittel",
+      "regionen": [
+        "sg_aussen_vor",
+        "sg_vorne",
+        "syndesmose_distale_tibia"
+      ]
+    },
+    {
+      "id": "pops_syndrom",
+      "titel": "Painful Os Peroneum Syndrome (POPS)",
+      "kurz": "Schmerzhafte Reizung oder Bruch eines kleinen Knochens (Os peroneum) in der äußeren Wadenbeinsehne am Würfelbein; Schmerz am äußeren Mittelfuß.",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "ferse_plantar_tuber",
+        "lateraler_fussrand"
+      ]
+    },
+    {
+      "id": "cn_coalitio",
+      "titel": "Calcaneonavikulare Coalitio",
+      "kurz": "Angeborene knöcherne oder knorpelige Brücke zwischen Fersen- und Kahnbein; führt häufig ab dem Jugendalter zu einem steifen, schmerzhaften Knick-Senkfuß.",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "lateraler_fussrand",
+        "sg_aussen_hinter",
+        "tn_gelenk"
+      ]
+    },
+    {
+      "id": "mueller_weiss",
+      "titel": "Müller-Weiss-Syndrom",
+      "kurz": "Verformung und Verschleiß des Kahnbeins (Os naviculare) beim Erwachsenen mit Schmerz am inneren/mittleren Fußrücken.",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "tn_gelenk"
+      ]
+    },
+    {
+      "id": "shin_splints",
+      "titel": "Mediales Tibiakanten-Syndrom (Shin Splints)",
+      "kurz": "Belastungsabhängiger Schmerz entlang der inneren Schienbeinkante, typisch bei Läufern; bessert sich oft nach dem Aufwärmen.",
+      "haeufigkeit": "mittel",
+      "regionen": [
+        "syndesmose_distale_tibia"
+      ]
+    },
+    {
+      "id": "tibia_stressfraktur",
+      "titel": "Stressfraktur der Tibia",
+      "kurz": "Feiner Ermüdungsbruch im Schienbein nach wiederholter Überlastung; punktueller Belastungs-, teils Ruhe- oder Nachtschmerz.",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "syndesmose_distale_tibia"
+      ]
+    },
+    {
+      "id": "laterale_ueberlastung",
+      "titel": "Überlastung des lateralen Fußstrahls",
+      "kurz": "Belastungsabhängige Beschwerden am äußeren Fußrand durch Mehr- oder Fehlbelastung der Außenseite, ohne einzelne klar abgrenzbare Struktur.",
+      "haeufigkeit": "mittel",
+      "regionen": [
+        "ferse_plantar_tuber",
+        "lateraler_fussrand",
+        "mtp5_lateral"
+      ]
+    },
+    {
+      "id": "peroneale_sehnenlaesion",
+      "titel": "Peronealsehnen-Läsion (Längs-/Teilriss)",
+      "kurz": "Längs- oder Teilriss einer der beiden Wadenbeinsehnen hinter/unter dem Außenknöchel; Schmerz und Schwäche beim Auswärtsdrehen des Fußes.",
+      "haeufigkeit": "mittel",
+      "regionen": [
+        "lateraler_fussrand",
+        "sg_aussen_hinter"
+      ]
     }
   ],
   "regionen": [
@@ -726,6 +812,7 @@
       "id": "grosszehe",
       "titel": "Großzehe / Großzehengrundgelenk",
       "ansichten": [
+        "aussen",
         "innen",
         "oben",
         "osg",
@@ -1345,7 +1432,7 @@
               "label": "Hinter dem Außenknöchel (Sehnenverlauf)",
               "punkte": {
                 "peroneal_tendinitis": 1,
-                "peroneal_luxation": 1
+                "peroneale_sehnenlaesion": 1
               }
             },
             {
@@ -1385,7 +1472,6 @@
             {
               "label": "Nach Umknicken",
               "punkte": {
-                "peroneal_luxation": 1,
                 "sinus_tarsi_syndrom": 1,
                 "jones_fraktur": 1
               }
@@ -1404,12 +1490,6 @@
           "frage": "Schnappen, Springen oder Geräusch?",
           "multi": false,
           "antworten": [
-            {
-              "label": "Sehne springt hörbar",
-              "punkte": {
-                "peroneal_luxation": 2
-              }
-            },
             {
               "label": "Knirschen",
               "punkte": {
@@ -1441,7 +1521,8 @@
               "punkte": {
                 "jones_fraktur": 1,
                 "jones_pseudarthrose": 1,
-                "peroneal_tendinitis": 1
+                "peroneal_tendinitis": 1,
+                "peroneale_sehnenlaesion": 1
               }
             },
             {
@@ -1462,7 +1543,6 @@
               "label": "Mehrmals",
               "punkte": {
                 "sinus_tarsi_syndrom": 1,
-                "peroneal_luxation": 1,
                 "subtalare_arthrose": 1
               }
             },
@@ -1498,6 +1578,34 @@
             {
               "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
               "punkte": {}
+            }
+          ]
+        },
+        {
+          "id": "lateral_spezifisch",
+          "frage": "Wie zeigt sich der Schmerz am äußeren Fuß?",
+          "multi": true,
+          "ansichten": [
+            "aussen"
+          ],
+          "antworten": [
+            {
+              "label": "Druckpunkt am Würfelbein, evtl. nach Umknicken (äußerer Mittelfuß)",
+              "punkte": {
+                "pops_syndrom": 2
+              }
+            },
+            {
+              "label": "Steifer, hartnäckiger Knick-Senkfuß seit der Jugend (knöcherne Brücke)",
+              "punkte": {
+                "cn_coalitio": 2
+              }
+            },
+            {
+              "label": "Diffuser Belastungsschmerz am ganzen äußeren Fußrand bei viel Gehen/Stehen",
+              "punkte": {
+                "laterale_ueberlastung": 2
+              }
             }
           ]
         }
@@ -1577,6 +1685,23 @@
               "punkte": {}
             }
           ]
+        },
+        {
+          "id": "charcot_check",
+          "frage": "Besteht bei Ihnen ein Diabetes mellitus mit Gefühlsstörung oder Taubheit am Fuß?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Ja",
+              "punkte": {
+                "charcot_fuss": 2
+              }
+            },
+            {
+              "label": "Nein / nicht bekannt",
+              "punkte": {}
+            }
+          ]
         }
       ]
     },
@@ -1621,6 +1746,12 @@
               "punkte": {
                 "ocl": 1,
                 "synovitis_osg": 1
+              }
+            },
+            {
+              "label": "Knapp oberhalb des Gelenks, zwischen Schien- und Wadenbein, nach Verdrehung",
+              "punkte": {
+                "syndesmosen_verletzung": 2
               }
             }
           ]
@@ -1693,6 +1824,12 @@
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
+              }
+            },
+            {
+              "label": "Verdrehung mit ungewöhnlich langer Heilung",
+              "punkte": {
+                "syndesmosen_verletzung": 1
               }
             }
           ]
@@ -2060,6 +2197,12 @@
                 "osg_arthrose": 1,
                 "ocl": 1
               }
+            },
+            {
+              "label": "Oberhalb des Gelenks, zwischen den beiden Unterschenkelknochen",
+              "punkte": {
+                "syndesmosen_verletzung": 2
+              }
             }
           ]
         },
@@ -2086,6 +2229,12 @@
               "label": "Nein",
               "punkte": {
                 "osg_arthrose": 1
+              }
+            },
+            {
+              "label": "Mit Auswärtsdrehung, hält ungewöhnlich lange an",
+              "punkte": {
+                "syndesmosen_verletzung": 1
               }
             }
           ]
@@ -2183,13 +2332,15 @@
               "label": "Direkt hinter dem Außenknöchel entlang der Sehne",
               "punkte": {
                 "peroneal_tendinitis": 1,
-                "peroneal_luxation": 1
+                "peroneal_luxation": 1,
+                "peroneale_sehnenlaesion": 1
               }
             },
             {
               "label": "Unter dem Außenknöchel, eher tief",
               "punkte": {
-                "subtalare_arthrose": 1
+                "subtalare_arthrose": 1,
+                "sinus_tarsi_syndrom": 1
               }
             },
             {
@@ -2238,7 +2389,8 @@
               "label": "Drehen des Fußes nach außen",
               "punkte": {
                 "peroneal_tendinitis": 1,
-                "peroneal_luxation": 1
+                "peroneal_luxation": 1,
+                "peroneale_sehnenlaesion": 1
               }
             },
             {
@@ -2289,6 +2441,26 @@
               "punkte": {
                 "posteriores_impingement": 1
               }
+            }
+          ]
+        },
+        {
+          "id": "lateral_spezifisch",
+          "frage": "Steifer Knick-Senkfuß seit der Jugend?",
+          "multi": false,
+          "ansichten": [
+            "aussen"
+          ],
+          "antworten": [
+            {
+              "label": "Ja, mit knöcherner Brücke/Steife außen seit der Jugend",
+              "punkte": {
+                "cn_coalitio": 2
+              }
+            },
+            {
+              "label": "Nein / trifft nicht zu",
+              "punkte": {}
             }
           ]
         }
@@ -2705,8 +2877,7 @@
       "id": "fusssohle",
       "titel": "Fußsohle — Längsgewölbe",
       "ansichten": [
-        "unten",
-        "innen"
+        "unten"
       ],
       "fragen": [
         {
@@ -2853,111 +3024,10 @@
       ]
     },
     {
-      "id": "systemerkrankungen",
-      "titel": "Systemerkrankungen am Fuß",
-      "ansichten": [],
-      "fragen": [
-        {
-          "id": "grunderkrankung",
-          "frage": "Bestehen folgende Grunderkrankungen?",
-          "multi": true,
-          "antworten": [
-            {
-              "label": "Diabetes mellitus",
-              "punkte": {
-                "diabetisches_fusssyndrom": 1,
-                "polyneuropathie": 1,
-                "charcot_fuss": 1
-              }
-            },
-            {
-              "label": "Frühere OP / Verletzung am Fuß/Sprunggelenk (vor Monaten)",
-              "punkte": {
-                "crps": 2
-              }
-            },
-            {
-              "label": "Rheumatoide oder neurologische Erkrankung",
-              "punkte": {
-                "polyneuropathie": 1
-              }
-            },
-            {
-              "label": "Keine bekannte Grunderkrankung",
-              "punkte": {}
-            }
-          ]
-        },
-        {
-          "id": "beschwerden",
-          "frage": "Welche Beschwerden bestehen?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Druckstellen, Wunden, schlecht abheilend",
-              "punkte": {
-                "diabetisches_fusssyndrom": 2
-              }
-            },
-            {
-              "label": "Plötzlich Rötung, Schwellung, Wärme im Mittelfuß ohne Trauma",
-              "punkte": {
-                "charcot_fuss": 3
-              }
-            },
-            {
-              "label": "Brennen, Kribbeln, Taubheit in beiden Füßen",
-              "punkte": {
-                "polyneuropathie": 2
-              }
-            },
-            {
-              "label": "Brennende Dauerschmerzen, Überempfindlichkeit nach OP/Verletzung",
-              "punkte": {
-                "crps": 2
-              }
-            }
-          ]
-        },
-        {
-          "id": "dauer",
-          "frage": "Wie lange schon?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Wochen bis Monate, schleichend",
-              "punkte": {
-                "polyneuropathie": 1,
-                "diabetisches_fusssyndrom": 1
-              }
-            },
-            {
-              "label": "Tage bis Wochen, mit Schwellung",
-              "punkte": {
-                "charcot_fuss": 1
-              }
-            },
-            {
-              "label": "Seit OP/Verletzung, persistierend",
-              "punkte": {
-                "crps": 1
-              }
-            }
-          ]
-        }
-      ],
-      "sonderfall_trigger": {
-        "frage_id": "beschwerden",
-        "antwort_index": 1,
-        "kb_verdacht": "charcot_fuss",
-        "schwere": "akut",
-        "empfehlung": "Bei plötzlicher Rötung, Schwellung und Wärmegefühl im Fuß ohne Verletzung — insbesondere bei Diabetes — kann es sich um einen akuten Charcot-Fuß handeln. Bitte stellen Sie sich SOFORT bei Ihrer Hausärztin/Ihrem Hausarzt oder in einer Klinik vor. Verzögerte Behandlung kann zu schweren Fußdeformitäten führen."
-      }
-    },
-    {
       "id": "tn_gelenk",
       "titel": "TN-Gelenk (Talonavikular)",
       "ansichten": [
+        "aussen",
         "innen",
         "oben",
         "osg"
@@ -2991,6 +3061,12 @@
               "punkte": {
                 "tpsd": 2
               }
+            },
+            {
+              "label": "Dumpfer Schmerz am mittleren Fußrücken beim Erwachsenen, Fuß wirkt verformt",
+              "punkte": {
+                "mueller_weiss": 2
+              }
             }
           ]
         },
@@ -3022,6 +3098,12 @@
               "punkte": {
                 "tpsd": 2
               }
+            },
+            {
+              "label": "Schleichend im Erwachsenenalter, mit zunehmender Verformung",
+              "punkte": {
+                "mueller_weiss": 1
+              }
             }
           ]
         },
@@ -3047,6 +3129,26 @@
               "punkte": {
                 "naviculare_stressfx": 1
               }
+            }
+          ]
+        },
+        {
+          "id": "lateral_spezifisch",
+          "frage": "Knöcherne Brücke zwischen Fersen- und Kahnbein?",
+          "multi": false,
+          "ansichten": [
+            "aussen"
+          ],
+          "antworten": [
+            {
+              "label": "Ja, Steife/Brücke seit der Jugend",
+              "punkte": {
+                "cn_coalitio": 2
+              }
+            },
+            {
+              "label": "Nein / trifft nicht zu",
+              "punkte": {}
             }
           ]
         }
@@ -3162,6 +3264,7 @@
       "id": "mtp5_lateral",
       "titel": "Lateral über MTP-V-Gelenk (Kleinzehengrundgelenk außen)",
       "ansichten": [
+        "aussen",
         "oben",
         "unten"
       ],
@@ -3221,6 +3324,28 @@
               }
             }
           ]
+        },
+        {
+          "id": "lateral_spezifisch",
+          "frage": "Schmerz am äußeren Fußstrahl (laterale Ansicht)?",
+          "multi": true,
+          "ansichten": [
+            "aussen"
+          ],
+          "antworten": [
+            {
+              "label": "Diffuser Belastungsschmerz am ganzen äußeren Fußstrahl bei viel Gehen/Stehen",
+              "punkte": {
+                "laterale_ueberlastung": 2
+              }
+            },
+            {
+              "label": "Brennen/Kribbeln am äußeren Fußrand",
+              "punkte": {
+                "n_suralis_kompression": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -3229,8 +3354,7 @@
       "titel": "IP-Gelenk und Zehenbeere I (Großzehen-Endgelenk)",
       "ansichten": [
         "oben",
-        "unten",
-        "innen"
+        "unten"
       ],
       "fragen": [
         {
@@ -3486,8 +3610,8 @@
       "titel": "Fersenpolster / Fersenbein-Unterseite (Tuber calcanei)",
       "kurz": "Schmerz direkt unter dem Fersenbein",
       "ansichten": [
-        "unten",
-        "innen"
+        "aussen",
+        "unten"
       ],
       "fragen": [
         {
@@ -3550,6 +3674,34 @@
               "label": "Nach viel Laufen/Training",
               "punkte": {
                 "stressfraktur_calcaneus": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "lateral_spezifisch",
+          "frage": "Schmerz am äußeren Fuß (laterale Ansicht)?",
+          "multi": true,
+          "ansichten": [
+            "aussen"
+          ],
+          "antworten": [
+            {
+              "label": "Druckschmerz am äußeren Mittelfuß / Würfelbein",
+              "punkte": {
+                "pops_syndrom": 2
+              }
+            },
+            {
+              "label": "Diffuser Belastungsschmerz am äußeren Fußrand",
+              "punkte": {
+                "laterale_ueberlastung": 2
+              }
+            },
+            {
+              "label": "Brennen/Kribbeln am äußeren Rückfuß",
+              "punkte": {
+                "n_suralis_kompression": 2
               }
             }
           ]
@@ -3681,6 +3833,208 @@
               "punkte": {
                 "tc_coalitio": 2
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "syndesmose_distale_tibia",
+      "titel": "Vorderer äußerer Knöchel / distale Tibia (Syndesmose)",
+      "ansichten": [
+        "aussen"
+      ],
+      "fragen": [
+        {
+          "id": "lokalisation",
+          "frage": "Wo genau sitzt der Schmerz?",
+          "multi": true,
+          "antworten": [
+            {
+              "label": "Knapp oberhalb des Sprunggelenks, zwischen Schien- und Wadenbein",
+              "punkte": {
+                "syndesmosen_verletzung": 2
+              }
+            },
+            {
+              "label": "Am Schienbein, handbreit oberhalb des Knöchels",
+              "punkte": {
+                "shin_splints": 2,
+                "tibia_stressfraktur": 1
+              }
+            },
+            {
+              "label": "Vorn im Sprunggelenk, beim Anheben des Fußes",
+              "punkte": {
+                "anteriores_impingement": 1,
+                "talus_sporn_anterior": 1,
+                "osg_arthrose": 1
+              }
+            },
+            {
+              "label": "Direkt am Außenknöchel / an den Bändern",
+              "punkte": {
+                "chron_sg_instabilitaet": 1
+              }
+            },
+            {
+              "label": "Unter dem Außenknöchel (Mulde)",
+              "punkte": {
+                "sinus_tarsi_syndrom": 2
+              }
+            },
+            {
+              "label": "Tief im Gelenk",
+              "punkte": {
+                "ocl": 1,
+                "synovitis_osg": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "verlauf",
+          "frage": "Wie hat es begonnen?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Nach Verdrehen mit Auswärtsdrehung, hält ungewöhnlich lange an",
+              "punkte": {
+                "syndesmosen_verletzung": 2
+              }
+            },
+            {
+              "label": "Schleichend nach viel Lauftraining auf hartem Boden",
+              "punkte": {
+                "shin_splints": 2
+              }
+            },
+            {
+              "label": "Punktueller, zunehmender Belastungsschmerz am Knochen, auch in Ruhe",
+              "punkte": {
+                "tibia_stressfraktur": 2
+              }
+            },
+            {
+              "label": "Mehrmaliges Umknicken, Fuß kippt weiter",
+              "punkte": {
+                "chron_sg_instabilitaet": 2,
+                "sinus_tarsi_syndrom": 1
+              }
+            },
+            {
+              "label": "Schleichend über Monate/Jahre",
+              "punkte": {
+                "osg_arthrose": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "schmerzverhalten",
+          "frage": "Wann und wie schmerzt es?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Beim Abdrücken/Treppensteigen, Instabilitätsgefühl oben am Gelenk",
+              "punkte": {
+                "syndesmosen_verletzung": 1
+              }
+            },
+            {
+              "label": "Bessert sich nach dem Aufwärmen, kehrt nach Belastung zurück",
+              "punkte": {
+                "shin_splints": 1
+              }
+            },
+            {
+              "label": "Nacht-/Ruheschmerz, punktueller Klopfschmerz",
+              "punkte": {
+                "tibia_stressfraktur": 1
+              }
+            },
+            {
+              "label": "Eingeklemmt-Gefühl vorne bei tiefer Beugung/Hocke",
+              "punkte": {
+                "anteriores_impingement": 1,
+                "talus_sporn_anterior": 1
+              }
+            },
+            {
+              "label": "Auf unebenem Boden",
+              "punkte": {
+                "sinus_tarsi_syndrom": 1,
+                "chron_sg_instabilitaet": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "anlauf",
+          "frage": "Anlaufschmerz oder Steifigkeit?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Ja, morgens / nach Ruhe",
+              "punkte": {
+                "osg_arthrose": 1,
+                "synovitis_osg": 1
+              }
+            },
+            {
+              "label": "Fuß lässt sich kaum nach oben ziehen",
+              "punkte": {
+                "osg_arthrose": 2,
+                "anteriores_impingement": 1
+              }
+            },
+            {
+              "label": "Nein",
+              "punkte": {}
+            }
+          ]
+        },
+        {
+          "id": "schwellung",
+          "frage": "Sichtbare Schwellung?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Regelmäßig",
+              "punkte": {
+                "synovitis_osg": 2,
+                "osg_arthrose": 1
+              }
+            },
+            {
+              "label": "Manchmal nach Belastung",
+              "punkte": {
+                "ocl": 1,
+                "anteriores_impingement": 1
+              }
+            },
+            {
+              "label": "Nein",
+              "punkte": {}
+            }
+          ]
+        },
+        {
+          "id": "verletzung",
+          "frage": "Frühere Verletzung am Sprunggelenk?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Umknicken oder Bruch",
+              "punkte": {
+                "ocl": 1,
+                "osg_arthrose": 1,
+                "chron_sg_instabilitaet": 1
+              }
+            },
+            {
+              "label": "Nein",
+              "punkte": {}
             }
           ]
         }
