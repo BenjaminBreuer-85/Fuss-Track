@@ -1303,6 +1303,17 @@ function AufklaerungsView({ opKey, kbOrigin }) {
           </div>
         )}
         {current.text && <MarkdownView source={current.text} />}
+        {current.video && current.video.vimeo && (
+          <div style={{ position: "relative", paddingTop: "56.25%", marginTop: 14,
+                        borderRadius: 8, overflow: "hidden", background: "#000" }}>
+            <iframe
+              src={"https://player.vimeo.com/video/" + current.video.vimeo}
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Video zum Eingriff" />
+          </div>
+        )}
       </div>
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, gap: 8, flexWrap: "wrap" }}>
