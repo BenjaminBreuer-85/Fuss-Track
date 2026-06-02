@@ -494,7 +494,8 @@ function getUrlParams() {
     wissen: params.get("wissen"), // "KEY" für direkte Wissens-Einzelansicht
     kb: params.get("kb"), // "hallux_valgus" / "osg_arthrose" — Landing-Page-Vorauswahl
     finder: params.get("finder"), // "1" für Diagnose-Helfer-Modus
-    home: params.get("home") // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
+    home: params.get("home"), // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
+    ctx: params.get("ctx") // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
   };
 }
 
@@ -705,15 +706,18 @@ function App() {
       );
     }
     // Switcher "Zum Patientenbegleiter" nur sichtbar, wenn der Begleit-Modus
-    // tatsächlich verfügbar ist (Variante im URL bekannt ODER bestehende Session)
+    // tatsächlich verfügbar ist: ctx=begleiter-Marker (QR mit Begleiter-Kontext)
+    // ODER gültige Variante im URL bekannt.
+    // Eine zufällig laufende Hintergrund-Session löst den Link NICHT aus —
+    // das reine Infomaterial-Archiv bleibt immer linkfrei und konsistent.
     const begleitVerfuegbar = !!(
-      (urlParams.var && isValidEingriffsAuswahl(urlParams.op, urlParams.var)) ||
-      (session && session.eingriff === urlParams.op && session.variante)
+      (urlParams.ctx === "begleiter") ||
+      (urlParams.var && isValidEingriffsAuswahl(urlParams.op, urlParams.var))
     );
-    // Wenn aus der Session: var-Parameter wird beim Wechsel mitgegeben
     const switcherUrlParams = {
       op: urlParams.op,
-      var: urlParams.var || (session && session.eingriff === urlParams.op ? session.variante : null)
+      var: urlParams.var || null,
+      ctx: urlParams.ctx === "begleiter" ? "begleiter" : null
     };
     return (
       <div className="app">
@@ -1119,12 +1123,19 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue }) {
   function switchMode() {
     if (!urlParams || !urlParams.op) return;
     if (switcherTarget === "aufklaerung") {
-      // Vom Begleit-Modus in den Aufklärungs-Modus wechseln
-      window.location.href = buildUrl({ op: urlParams.op, modus: "aufklaerung" });
+      // Vom Begleit-Modus in den Aufklärungs-Modus wechseln.
+      // ctx=begleiter markiert, dass die Aufklärung im OP-Begleiter-Kontext
+      // geöffnet wird → dort erscheint der Rückweg-Link zum Begleiter.
+      window.location.href = buildUrl({ op: urlParams.op, modus: "aufklaerung", ctx: "begleiter" });
     } else {
-      // Vom Aufklärungs-Modus zurück in den Begleit-Modus
-      // Wenn var bekannt, beibehalten - sonst zurück zur Eingangsseite (var fehlt → ErrorPage zeigt was zu tun ist)
-      window.location.href = buildUrl({ op: urlParams.op, var: urlParams.var });
+      // Vom Aufklärungs-Modus zurück in den Begleit-Modus.
+      // Wenn var bekannt, beibehalten. Sonst (reiner ctx=begleiter-Einstieg ohne
+      // Variante) ctx weitergeben, damit der Begleit-Einstieg erkennbar bleibt.
+      if (urlParams.var) {
+        window.location.href = buildUrl({ op: urlParams.op, var: urlParams.var });
+      } else {
+        window.location.href = buildUrl({ op: urlParams.op, ctx: "begleiter" });
+      }
     }
   }
   function goHauptmenue() {
