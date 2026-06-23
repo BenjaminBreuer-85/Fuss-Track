@@ -390,6 +390,36 @@ async function loadPhasenData() {
 // Bei Fehlern wird die Anwendung NICHT abgebrochen - der Aufklärungs-Modus ist dann
 // nicht verfügbar, der Begleit-Modus funktioniert weiterhin.
 async function loadAufklaerungData() {
+  // Neues modulares Modell: infomaterial.json (Referenzlisten) + bausteine.json (Slide-Quelle).
+  // Fallback: altes aufklaerung.json (inline-Slides), falls die neuen Dateien fehlen.
+  try {
+    const [infoRes, bausteinRes] = await Promise.all([
+      fetch("./infomaterial.json?v=" + Date.now()),
+      fetch("./bausteine.json?v=" + Date.now())
+    ]);
+    if (infoRes.ok && bausteinRes.ok) {
+      const infoData = await infoRes.json();
+      const bausteinData = await bausteinRes.json();
+      const INFO = infoData.INFOMATERIAL || {};
+      const BAUSTEINE = bausteinData.BAUSTEINE || {};
+      // Referenzen zu vollständigen Slide-Objekten auflösen (Single Source of Truth).
+      const aufgeloest = {};
+      Object.keys(INFO).forEach(function(key) {
+        const eintrag = INFO[key];
+        const slides = (eintrag.slides || []).map(function(s) {
+          // String = Baustein-Referenz; Objekt = bereits inline (Abwärtskompatibilität).
+          if (typeof s === "string") return BAUSTEINE[s] || null;
+          return s;
+        }).filter(Boolean);
+        aufgeloest[key] = Object.assign({}, eintrag, { slides: slides });
+      });
+      AUFKLAERUNG = aufgeloest;
+      return;
+    }
+  } catch (e) {
+    // Fällt unten auf das alte Modell zurück.
+  }
+  // Fallback: altes Format
   try {
     const response = await fetch("./aufklaerung.json?v=" + Date.now());
     if (!response.ok) return;
@@ -422,7 +452,6 @@ async function loadKatalogData() {
 // Das hält den Brief-Generator einfach: er nutzt immer die Begleit-Modus-Keys.
 const AUFKLAERUNG_OP_MAP = {
   chevron:        "chevron",
-  chevron_akin:   "chevron",
   osg_arthrodese: "osg_arthrose",
   arthrodese_osg: "osg_arthrose",
   osg_tep:        "osg_arthrose",
@@ -646,7 +675,7 @@ function App() {
   if (urlParams.home === "1") {
     return (
       <div className="app">
-        <Header showSwitcher={false} />
+        <Header showSwitcher={false} hideSubtitle={true} />
         <LandingView initialKbKey={null} />
         <Branding />
         <FooterLinks />
@@ -697,7 +726,7 @@ function App() {
       // Kein gültiges Krankheitsbild für die Aufklärung → Landing zeigen
       return (
         <div className="app">
-          <Header showSwitcher={false} />
+          <Header showSwitcher={false} hideSubtitle={true} />
           <LandingView initialKbKey={urlParams.kb} />
           <Branding />
           <FooterLinks />
@@ -721,9 +750,8 @@ function App() {
     };
     return (
       <div className="app">
-        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={true} />
+        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={true} hideSubtitle={true} />
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} />
-        <Branding />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -736,7 +764,7 @@ function App() {
   if (!hasValidUrlParams && !hasSession) {
     return (
       <div className="app">
-        <Header showSwitcher={false} />
+        <Header showSwitcher={false} hideSubtitle={true} />
         <LandingView initialKbKey={urlParams.kb} />
         <Branding />
         <FooterLinks />
@@ -747,7 +775,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} />
+      <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} />
       {session && (
         <>
           {!session.opDatum
@@ -756,7 +784,6 @@ function App() {
           }
         </>
       )}
-      <Branding />
       <FooterLinks />
       {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       {showResetModal && (
@@ -820,9 +847,9 @@ function LandingView({ initialKbKey }) {
   if (bereich === null) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <h2 style={{ marginTop: 0, marginBottom: 8, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuß-Track</h2>
+        <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuß-Track</h2>
         <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
-          Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk. Wählen Sie einen Bereich aus.
+          Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk.<br /><br />Wählen Sie einen Bereich aus.
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {/* 1. Begleiter */}
@@ -1119,7 +1146,7 @@ function LandingView({ initialKbKey }) {
   );
 }
 
-function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue }) {
+function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideSubtitle }) {
   function switchMode() {
     if (!urlParams || !urlParams.op) return;
     if (switcherTarget === "aufklaerung") {
@@ -1145,7 +1172,9 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue }) {
   return (
     <div className="app-header">
       <h1>Fuß-Track</h1>
-      <div className="subtitle">Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk</div>
+      {!hideSubtitle && (
+        <div className="subtitle">Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk</div>
+      )}
       {(showSwitcher || showHauptmenue) && (
         <div style={{ marginTop: 10, textAlign: "center", display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
           {showHauptmenue && (
@@ -2840,6 +2869,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.1 · Juni 2026</div>
     </div>
   );
 }
