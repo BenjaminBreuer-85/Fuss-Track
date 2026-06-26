@@ -677,7 +677,6 @@ function App() {
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
         <LandingView initialKbKey={null} />
-        <Branding />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -728,7 +727,6 @@ function App() {
         <div className="app">
           <Header showSwitcher={false} hideSubtitle={true} />
           <LandingView initialKbKey={urlParams.kb} />
-          <Branding />
           <FooterLinks />
           {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
         </div>
@@ -766,7 +764,6 @@ function App() {
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
         <LandingView initialKbKey={urlParams.kb} />
-        <Branding />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -846,6 +843,7 @@ function LandingView({ initialKbKey }) {
   // ===== Hauptmenü: drei gleichwertige Bereiche =====
   if (bereich === null) {
     return (
+      <React.Fragment>
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuß-Track</h2>
         <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
@@ -886,6 +884,8 @@ function LandingView({ initialKbKey }) {
           <strong>Hinweis:</strong> Wenn Sie von Ihrem Behandler einen QR-Code erhalten haben, scannen Sie diesen direkt — Sie landen dann sofort am richtigen Punkt.
         </div>
       </div>
+      <Branding />
+      </React.Fragment>
     );
   }
 
@@ -1007,7 +1007,7 @@ function LandingView({ initialKbKey }) {
           {KRANKHEITSBILDER.map(function(kb) {
             return (
               <div key={kb.key}
-                   onClick={function() { setSelectedKb(kb); setModus(null); }}
+                   onClick={function() { setSelectedKb(kb); setModus("begleitung"); }}
                    style={{
                      padding: "20px 18px",
                      border: "1px solid rgba(0,0,0,.12)",
@@ -1032,57 +1032,9 @@ function LandingView({ initialKbKey }) {
     );
   }
 
-  // === Stufe 2: Modus wählen ===
-  if (selectedKb && !modus) {
-    return (
-      <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-          <div onClick={function() { setSelectedKb(null); }}
-               style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
-            ← zurück
-          </div>
-          <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.emoji} {selectedKb.label}</div>
-        </div>
-        <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
-          In welcher Phase sind Sie?
-        </p>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          <div onClick={function() { goAufklaerung(selectedKb); }}
-               style={{
-                 padding: "16px 18px",
-                 border: "1px solid rgba(0,0,0,.12)",
-                 background: "#fff",
-                 borderRadius: 8,
-                 cursor: "pointer",
-                 transition: "all .15s"
-               }}
-               onMouseEnter={function(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }}
-               onMouseLeave={function(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>ℹ️ Ich informiere mich</div>
-            <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Aufklärung zum Krankheitsbild und zu den Behandlungsmöglichkeiten — auch wenn noch keine Operation geplant ist.
-            </div>
-          </div>
-          <div onClick={function() { setModus("begleitung"); }}
-               style={{
-                 padding: "16px 18px",
-                 border: "1px solid rgba(0,0,0,.12)",
-                 background: "#fff",
-                 borderRadius: 8,
-                 cursor: "pointer",
-                 transition: "all .15s"
-               }}
-               onMouseEnter={function(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }}
-               onMouseLeave={function(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>📅 Ich habe einen OP-Termin</div>
-            <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Begleiter für die Wochen vor und nach der Operation — mit Phasenkalender und Erinnerungen.
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // === Stufe 2 (Phasenauswahl) entfernt: Krankheitsbild führt direkt in die Begleitung.
+  //     Informations-Inhalte sind als eigene Sektion im Infomaterial verfügbar. ===
+
 
   // === Stufe 3: OP-Variante wählen (nur Begleit-Modus) ===
   // Gruppierung nach `gruppe`-Feld (falls vorhanden)
@@ -1097,7 +1049,7 @@ function LandingView({ initialKbKey }) {
   return (
     <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-        <div onClick={function() { setModus(null); }}
+        <div onClick={function() { setSelectedKb(null); setModus(null); }}
              style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
           ← zurück
         </div>
@@ -2869,7 +2821,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.1 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.2 · Juni 2026</div>
     </div>
   );
 }
