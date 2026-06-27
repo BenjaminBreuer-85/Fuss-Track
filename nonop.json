@@ -1,0 +1,495 @@
+{
+ "_meta": {
+  "version": "0.1-entwurf",
+  "hinweis": "ENTWURF Non-OP-Begleiter. Anker = Unfalltag (tagOffset ab Unfall). Inhalte 1:1 aus Benjamins Text. Stufen 4-5 optional (Sportler)."
+ },
+ "NONOP_KB": {
+  "aussenband_konservativ": {
+   "label": "Außenbandverletzung (konservativ)",
+   "kurzlabel": "Außenband",
+   "kontext": "trauma",
+   "ankerFrage": "Wann war der Unfall?",
+   "ankerDefault": "heute",
+   "einleitung": "aussenband_einleitung",
+   "stufen": "aussenband_stufen",
+   "abklaerung": "aussenband_abklaerung",
+   "modell": "zeitanker"
+  },
+  "achillodynie_midportion": {
+   "label": "Achillodynie – mittlere Form (Mid-Portion)",
+   "kurzlabel": "Achillodynie Mid-Portion",
+   "kontext": "chronisch",
+   "modell": "stufenlos_ampel",
+   "gate": "achillo_gate",
+   "ampel": "achillo_ampel",
+   "einleitung": "achillo_mid_einleitung",
+   "stufen": "achillo_mid_stufen"
+  },
+  "achillodynie_insertion": {
+   "label": "Achillodynie – ansatznahe Form (insertionell)",
+   "kurzlabel": "Achillodynie insertionell",
+   "kontext": "chronisch",
+   "modell": "stufenlos_ampel",
+   "gate": "achillo_gate",
+   "ampel": "achillo_ampel",
+   "einleitung": "achillo_ins_einleitung",
+   "stufen": "achillo_ins_stufen"
+  }
+ },
+ "NONOP_INHALTE": {
+  "aussenband_einleitung": {
+   "intro": "Eine strukturierte Nachbehandlung nach Außenbandverletzung ist wichtig für eine erfolgreiche Rehabilitation, die Verringerung der Wahrscheinlichkeit erneuter Umknicktraumata, die Verhinderung einer chronischen Instabilität und die zeitgerechte Wiederaufnahme von Beruf und Sport.",
+   "text": "Ca. 70 % der Patienten erleiden nach einer Außenbandverletzung im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität (Gribble et al. 2016). Hierfür sind gerade wiederholte Traumata verantwortlich. Im ersten Jahr nach der Außenbandverletzung ist das Risiko für eine erneute Verletzung mehr als verdoppelt.\\n\\nMit spezifischem Training kann die Rate an wiederholten Verletzungen um 40 % reduziert werden (Wagemans et al. 2022). Bei wiederholten Verletzungen besteht ein erhebliches Risiko eines verfrühten Gelenkverschleißes mit damit verbundenen Beschwerden und der Notwendigkeit weiterer Behandlungen oder Operationen.\\n\\nDieses Konzept dient als allgemeine Empfehlung und Orientierung. Im Einzelfall muss dies fachärztlich überwacht und ggf. angepasst werden.\\n\\nDie Rehabilitation muss sich der Physiologie der Bandheilung anpassen. Je nach Phase der biologischen Heilung sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zur Ausbildung einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zum Vorliegen einer ausgereiften Bandheilung 9–12 Monate (Hubbard & Hicks-Little 2008). Ab wann Beruf, Sport oder Freizeit wieder risikofrei möglich sind, hängt von der initialen Bandverletzung (Grad 1–3), dem Heilungsfortschritt und dem Risikoprofil der Tätigkeit ab.\\n\\nDie Bandheilung läuft in drei Phasen ab:\\n• Inflammationsphase (1–10 Tage): Einblutung und Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\\n• Proliferationsphase (14 Tage–6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte kontrollierte Belastungen fördern die Faserausrichtung.\\n• Remodellierungsphase (bis Ende des 1. Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\\n\\nWährend die Stufen 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen die Stufen 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit spezifischer sportmedizinischer Betreuung dar.",
+   "quellen": [
+    "Gribble et al. 2016",
+    "Wagemans et al. 2022",
+    "Hubbard & Hicks-Little 2008",
+    "Hultman et al. 2010"
+   ]
+  },
+  "aussenband_stufe1": {
+   "ziel": "Reduktion von Schwellung und Schmerz.",
+   "ruhigstellung": "Semirigide Orthese Tag und Nacht (Grad 1–2 Rupturen; Grad 3 Rupturen, wenn tolerabel). Bei starker Schwellung (Grad 3) Gipsschiene an 2 Stützen mit Thromboseschutz für maximal 5–7 Tage.",
+   "massnahmen": [
+    "Lymphdrainage",
+    "Kryotherapie, Hochlagerung",
+    "Isometrische Anspannungen der Unterschenkelmuskulatur",
+    "NSAR wie Ibuprofen (van den Bekerom et al. 2015)"
+   ],
+   "steigerung": "Fortführung mit der nächsten Stufe, wenn eine gute Abschwellung erreicht ist und die Mobilisierung unter Vollbelastung möglich ist.",
+   "kriterien": [
+    "Gute Abschwellung erreicht",
+    "Mobilisierung unter Vollbelastung möglich"
+   ]
+  },
+  "aussenband_stufe2": {
+   "ziel": "Wiedergewinnung von Beweglichkeit und Stabilität zur kontrollierten Ausübung grundsätzlicher Bewegungsmuster.",
+   "ruhigstellung": "Semirigide Orthese Tag und Nacht. Eine konsequent getragene Orthese (=Schiene) gehört zu den am besten belegten Maßnahmen, um erneute Umknickverletzungen zu vermeiden.",
+   "text": "Eine frühe, kontrollierte Bewegung (=funktionelle Behandlung) und entzündungshemmende Medikamente zählen in der Frühphase zu den am besten untersuchten Maßnahmen. Bei Grad-1–2-Läsionen weist eine zügige funktionelle Nachbehandlung bessere Ergebnisse auf (Bleakley et al. 2010). Wackelbrett- und Balancetraining sowie Mobilisierungsübungen des OSG in die Extension können bereits nach einer Woche aufgenommen werden. Dies führte in zwei Studien zu schnellerer Rehabilitation ohne erhöhte Rate an Re-Verletzungen (Wester et al. 1996, Holme et al. 1999). Zu beachten ist, dass die Patienten im Studiensetting professionell durch Ärzte und Physiotherapeuten eng betreut und angeleitet wurden.",
+   "massnahmen": [
+    "Isometrische Eversion gegen Widerstand (Theraband)",
+    "Konsequenter Verzicht auf jegliche Inversion",
+    "Gangschule geradeaus in Orthese"
+   ],
+   "massnahmen_erweitert_titel": "Weitere Maßnahmen bei Schmerzfreiheit im Alltag und abgeschwollenen Weichteilen:",
+   "massnahmen_erweitert": [
+    "Gangschule mit Richtungswechseln",
+    "Stabilitätstraining unter Protektion mit Orthese (erst einbeinig, dann beidbeinig; erst auf dem Boden, dann auf wackeligem Untergrund/Balance-Board)",
+    "Ergometertraining in der Orthese",
+    "Kraftübungen in geschlossener Kette mit Orthese (Hamstring Curls, Beinpresse)",
+    "Passive Mobilisierung mit Theraband in die Extension"
+   ],
+   "steigerung": "Fortführung in der nächsten Stufe, wenn der Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund (Huber, Posturomed, MFT Training Disc) über 10 Sekunden sicher möglich ist.",
+   "kriterien": [
+    "Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund über 10 Sekunden sicher möglich"
+   ]
+  },
+  "aussenband_stufe3": {
+   "ziel": "Wiederaufnahme von Sport und volle berufliche Belastbarkeit.",
+   "ruhigstellung": "Taping oder Orthese bei längerer Belastung, Ermüdungsgefahr und Belastungssteigerungen.",
+   "text": "Die Übungen der 3. Stufe mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperets et al. 2008) sind als Langzeitübungen für das komplette erste Jahr nach dem Unfall gedacht. Sie sollten mehrfach pro Woche im Rahmen der Freizeit oder als Teil des eigenen Aufwärmprogramms durchgeführt werden. Ziel sind 3 Einheiten pro Woche mit je 30 Minuten Dauer.\\n\\nAuch bei gutem Heilungsverlauf können über Monate Restbeschwerden bestehen — etwa eine Schwellneigung oder ein Unsicherheitsgefühl. Das ist nicht ungewöhnlich und einer der Gründe, das Stabilitätstraining über das gesamte erste Jahr fortzuführen.",
+   "steigerung_hinweis": "Der Schwierigkeitsgrad wird im Verlauf gesteigert, wenn die jeweilige Übung sicher und ohne Schmerzen durchführbar ist. Die Wochenangaben beziehen sich auf die Zeit nach dem Trauma und stellen nur Orientierungspunkte dar. Eine spätere Steigerung ist kein Problem; eine frühere Steigerung sollte nur nach sportmedizinischer Beratung erfolgen.",
+   "uebungen": [
+    {
+     "name": "Einbeinige Kniebeuge",
+     "varianten": [
+      {
+       "text": "Auf ebenem Untergrund",
+       "woche": 6
+      },
+      {
+       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+       "woche": 10
+      },
+      {
+       "text": "Auf Wackelbrett",
+       "woche": 16
+      }
+     ]
+    },
+    {
+     "name": "Beidbeiniger Zehenspitzenstand",
+     "varianten": [
+      {
+       "text": "Auf erhöhtem Untergrund mit Festhalten",
+       "woche": 6
+      },
+      {
+       "text": "Auf erhöhtem Untergrund ohne Festhalten",
+       "woche": 12
+      }
+     ]
+    },
+    {
+     "name": "Einbeinstand",
+     "varianten": [
+      {
+       "text": "Auf ebenem Untergrund",
+       "woche": 6
+      },
+      {
+       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+       "woche": 10
+      },
+      {
+       "text": "Auf Wackelbrett",
+       "woche": 12
+      }
+     ]
+    },
+    {
+     "name": "Läuferpose",
+     "varianten": [
+      {
+       "text": "Auf ebenem Untergrund",
+       "woche": 6
+      },
+      {
+       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+       "woche": 8
+      },
+      {
+       "text": "Auf Wackelbrett",
+       "woche": 12
+      }
+     ]
+    },
+    {
+     "name": "Überkreuzschwung der Beine",
+     "varianten": [
+      {
+       "text": "Auf ebenem Untergrund mit Festhalten",
+       "woche": 6
+      },
+      {
+       "text": "Auf ebenem Untergrund ohne Festhalten",
+       "woche": 8
+      },
+      {
+       "text": "Auf ebenem Untergrund ohne Festhalten mit geschlossenen Augen",
+       "woche": 10
+      },
+      {
+       "text": "Auf Wackelbrett",
+       "woche": 12
+      }
+     ]
+    },
+    {
+     "name": "Zehenspitzengang",
+     "varianten": [
+      {
+       "text": "Auf ebenem Untergrund gehend",
+       "woche": 6
+      },
+      {
+       "text": "Auf ebenem Untergrund springend",
+       "woche": 10
+      }
+     ]
+    }
+   ]
+  },
+  "aussenband_stufe4": {
+   "ziel": "Wiederaufnahme des sportartspezifischen Trainings und Mannschaftstrainings außerhalb von Wettkämpfen.",
+   "ruhigstellung": "Externe Stabilisierung mit Orthese oder Tape während des Sports in den ersten 6 Monaten nach dem Trauma. Wegen des Effektivitätsverlustes von Tape muss nach 15–20 Minuten nachgetapt werden.",
+   "text": "Der exakte Zeitpunkt hängt vom Heilungsfortschritt und dem jeweiligen Sport ab. Ein Wiederbeginn vor dem 3. Monat nach dem Bandriss ist bei Risikosportarten kritisch.",
+   "voraussetzungen_titel": "Voraussetzungen für den Wiederbeginn (Chinn et al. 2010):",
+   "voraussetzungen": [
+    "Keine Defizite in Balance und Propriozeption in sportspezifischen Sprungübungen",
+    "Uneingeschränkte Beweglichkeit",
+    "Schmerzfreiheit",
+    "Sportartspezifische Bewegungsmuster ohne Kompensation möglich",
+    "Intra- und intermuskuläre Koordination gegeben",
+    "90 % der Kraft vor der Verletzung bzw. der Gegenseite",
+    "Aktive Ansteuerbarkeit der Mm. peronei",
+    "Subjektive Einschätzung des Sportlers, dass dies möglich ist (Fragebogen, z. B. CAIT mit mindestens 28 Punkten oder I-PRRS mit mindestens 50–60 Punkten)"
+   ],
+   "testbatterie": {
+    "titel": "Sportmedizinische Testbatterie (nach Bloch et al. 2019)",
+    "intro": "Die Testbatterie prüft strukturiert Faktoren, die wissenschaftlich belegt mit einer höheren Rate an erneuten Verletzungen einhergehen. Begonnen wird mit Aufwärmen auf dem Laufband bei 8, 10, 12, 8 km/h für je 2 Minuten, Kniebeugen, dynamischen Richtungswechseln und Sprüngen (Squat-Jumps, Countermovement-Jumps). Schmerzen beim Aufwärmen sind ein Abbruchkriterium.",
+    "bereiche": [
+     {
+      "name": "Posturale Kontrolle / Statische Stabilität",
+      "punkte": [
+       "Star Excursion Balance Test (Gribble et al. 2012): Gesamtwert mindestens 94 %, Seitendifferenz der einzelnen Bewegungsrichtungen nicht mehr als 4 cm. Zur Vergleichbarkeit werden die Reichweiten an die Beinlänge angepasst."
+      ]
+     },
+     {
+      "name": "Kraft",
+      "punkte": [
+       "Isokinetische Krafttestung",
+       "Heel Rise Test: einbeiniges Fersenanheben alle 2 Sekunden, mindestens ca. 30 Hebungen am Stück ohne Verlust der Rückfußstabilität",
+       "Einbeinige Kniebeuge: 5 Kniebeugen hintereinander bis zur maximalen Knieflexion aus erhöhter Position, rhythmisch getaktet, kontrollierte Ausführung und Stabilität der Hüftabduktoren"
+      ]
+     },
+     {
+      "name": "Sprung und Landung",
+      "punkte": [
+       "Einbeiniger Drop Jump: einbeinig von ca. 20 cm hoher Box auf den anderen Fuß fallen lassen und sofort maximal hoch abspringen; Hände in den Hüften, Oberkörper gerade, anderes Bein ohne Bodenkontakt. Beginn mit der unverletzten Seite, ein Probeversuch, dann 3 Versuche pro Seite; Bodenkontaktzeit und Sprunghöhe werden gemessen (LSI > 90).",
+       "Side Hop: Tapestreifen in 30 cm Entfernung; beim Hüpfen darf das Tape nicht berührt und das andere Bein nicht abgesetzt werden. Beginn mit dem unverletzten Bein, nach einem Probedurchgang 2 Testdurchgänge (besserer zählt); Zeit unter 13 Sekunden für 10 Sprünge hin und zurück (LSI 90–110)."
+      ]
+     },
+     {
+      "name": "Agilität",
+      "punkte": [
+       "Speed Course Test — nur in spezialisierten Einrichtungen möglich"
+      ]
+     }
+    ],
+    "psychologisch": "Die psychologische Bereitschaft zur Wiederaufnahme der (leistungssportlichen) Belastung kann in einem Fragebogen geprüft werden (Sigonney et al. 2020), z. B. CAIT, FAAM oder I-PRRS."
+   }
+  },
+  "aussenband_stufe5": {
+   "text": "Die Wiederaufnahme des Wettkampfbetriebs stellt eine individuelle sportmedizinische Entscheidung je nach Niveau und Sportart dar. Während des Wettkampfs ist eine externe Stabilisierung mit Orthese oder Tape in den ersten 6–12 Monaten nach dem Trauma sinnvoll."
+  },
+  "aussenband_abklaerung": {
+   "titel": "Wann sollten Sie ärztlich abklären lassen?",
+   "intro": "Die folgenden Kriterien orientieren sich an den Ottawa Ankle Rules — einer international etablierten, wissenschaftlich validierten Entscheidungshilfe, die zuverlässig erkennt, ob ein Knochenbruch (=Fraktur) wahrscheinlich ist. In Studien erreichte sie eine Sensitivität (=Trefferquote beim Erkennen von Brüchen) von nahezu 100 % (Stiell et al. 1993; Bachmann et al. 2003).",
+   "aufforderung": "Bitte lassen Sie Ihren Fuß ärztlich untersuchen, wenn eines der folgenden Zeichen vorliegt:",
+   "kriterien": [
+    "Sie können den Fuß direkt nach der Verletzung nicht belasten (keine vier Schritte möglich)",
+    "Druckschmerz direkt am Knochen des Außen- oder Innenknöchels (hinterer Rand oder Spitze)",
+    "Druckschmerz an der Basis des 5. Mittelfußknochens (tastbarer Höcker am äußeren Fußrand)",
+    "Druckschmerz am Kahnbein (=Os naviculare, am inneren Mittelfuß)"
+   ],
+   "warnzeichen": "Zusätzliche Warnzeichen (nicht Teil der Ottawa-Regeln): zunehmende statt abnehmende Schwellung oder Schmerzen, Taubheitsgefühl, sichtbare Fehlstellung, offene Wunde oder Fieber.",
+   "hinweis": "Im Zweifel gilt: lieber einmal mehr ärztlich vorstellen.",
+   "studienlage": "Die Ottawa Ankle Rules wurden in einer prospektiven Validierungsstudie mit 100 % Sensitivität für Knöchel- und Mittelfußfrakturen bestätigt und können die Zahl unnötiger Röntgenaufnahmen um rund ein Drittel senken (Stiell et al. 1993). Eine systematische Übersicht über 27 Studien mit 15.581 Patienten bestätigte die nahezu 100%ige Sensitivität zum Ausschluss von Brüchen (Bachmann et al. 2003)."
+  },
+  "achillo_gate": {
+   "titel": "Voraussetzung: gesicherte ärztliche Diagnose",
+   "text": "Dieses Programm setzt voraus, dass die Ursache Ihrer Beschwerden ärztlich abgeklärt und die Diagnose einer Achillessehnen-Reizung (=Tendinopathie) gestellt wurde — einschließlich der Einordnung, ob es sich um die mittlere Form (=Mid-Portion) oder die ansatznahe Form (=insertionell) handelt. Welcher Trainingspfad für Sie geeignet ist, legt Ihre Ärztin oder Ihr Arzt fest. Bitte beginnen Sie erst, wenn diese Zuordnung erfolgt ist.",
+   "bestaetigung": "Die Diagnose und der passende Pfad wurden ärztlich festgelegt"
+  },
+  "achillo_mid_einleitung": {
+   "intro": "Bei der mittleren Form sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
+   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\\n\\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+  },
+  "achillo_ins_einleitung": {
+   "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
+   "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\\n\\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+  },
+  "achillo_mid_s1": {
+   "was": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung halten, ohne Bewegung.",
+   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag.",
+   "hinweis": "Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt — wenn es nicht hilft, direkt mit Stufe 2 beginnen."
+  },
+  "achillo_mid_s2": {
+   "was": "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter.",
+   "dosis": "3 Sätze × 15 Wiederholungen, Tempo 3 Sekunden hoch / 3 Sekunden runter, täglich.",
+   "hinweis": "Volle Bewegung erlaubt — beim Absenken die Ferse leicht unter Stufenniveau sinken lassen."
+  },
+  "achillo_mid_s3": {
+   "was": "Auf einem Bein langsame Wadenhebung; bzw. mit Gewicht (Rucksack, Gerät, Langhantel).",
+   "dosis": "3–4 Sätze, Tempo 3 s hoch / 3 s runter, 3×/Woche. Wiederholungen sinken von 15 → 6, während das Gewicht steigt.",
+   "hinweis": "Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind, die Ausführung aber sauber bleibt."
+  },
+  "achillo_mid_s4": {
+   "was": "Auf der Stufe stehend mit dem gesunden Bein hochkommen, das langsame Absenken nur mit dem betroffenen Bein — Ferse unter die Stufenkante absenken. Mit gestrecktem und mit gebeugtem Knie.",
+   "dosis": "3 Sätze × 15 Wiederholungen, 2×/Tag, täglich (gestreckt + gebeugt = insgesamt 180 Absenkungen/Tag).",
+   "hinweis": "Last mit Rucksack/Gewicht steigern, sobald es ohne wesentlichen Schmerz geht."
+  },
+  "achillo_mid_s5": {
+   "was": "Federnde, schnellere Belastung (Hüpfen, Seilspringen, sportartspezifische Sprünge/Läufe).",
+   "dosis": "Sportartabhängig, langsam aufbauend.",
+   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit."
+  },
+  "achillo_ins_s1": {
+   "was": "Beidbeiniges Halten auf dem Vorfuß, ohne tiefe Fersenabsenkung.",
+   "dosis": "5 × 45 Sekunden, 2–3 Minuten Pause, 1–2×/Tag.",
+   "hinweis": "Optionaler Einstieg bei stark reizbarer Sehne."
+  },
+  "achillo_ins_s2": {
+   "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
+   "dosis": "3 × 15, Tempo 3 s / 3 s, täglich.",
+   "hinweis": "Keine Dehnung unter Bodenhöhe."
+  },
+  "achillo_ins_s3": {
+   "was": "Einbeinige Wadenhebung bzw. mit Gewicht, Bewegung nur bis Neutralstellung, keine Dehnung unter Bodenhöhe.",
+   "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last.",
+   "hinweis": "Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
+  },
+  "achillo_ins_s4": {
+   "was": "Kräftigung mit Gewicht, gestreckt und gebeugt, ohne Absenken unter die Stufenkante.",
+   "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag).",
+   "hinweis": "Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
+  },
+  "achillo_ins_s5": {
+   "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
+   "dosis": "Sportartabhängig, langsam aufbauend.",
+   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher."
+  }
+ },
+ "NONOP_STUFEN": {
+  "aussenband_stufen": [
+   {
+    "id": "stufe1",
+    "stufe": 1,
+    "tagOffset": 0,
+    "titel": "Return to daily life",
+    "zeitfenster": "Tag 1–7 nach dem Unfall",
+    "emoji": "🧊",
+    "erinnerung": "taeglich",
+    "optional": false,
+    "inhalt": "aussenband_stufe1"
+   },
+   {
+    "id": "stufe2",
+    "stufe": 2,
+    "tagOffset": 7,
+    "titel": "Return to activity",
+    "zeitfenster": "Woche 1–6 nach dem Unfall",
+    "emoji": "🚶",
+    "erinnerung": "mehrmals_woche",
+    "optional": false,
+    "inhalt": "aussenband_stufe2"
+   },
+   {
+    "id": "stufe3",
+    "stufe": 3,
+    "tagOffset": 35,
+    "titel": "Return to sport",
+    "zeitfenster": "ab Woche 5–6, Langzeitübungen übers 1. Jahr",
+    "emoji": "🏃",
+    "erinnerung": "3x_woche_30min",
+    "optional": false,
+    "inhalt": "aussenband_stufe3"
+   },
+   {
+    "id": "stufe4",
+    "stufe": 4,
+    "tagOffset": 90,
+    "titel": "Return to play",
+    "zeitfenster": "ab ca. Monat 3 (Sportler)",
+    "emoji": "⚽",
+    "erinnerung": "sportabhaengig",
+    "optional": true,
+    "inhalt": "aussenband_stufe4"
+   },
+   {
+    "id": "stufe5",
+    "stufe": 5,
+    "tagOffset": 180,
+    "titel": "Return to competition",
+    "zeitfenster": "individuell (Sportler)",
+    "emoji": "🏆",
+    "erinnerung": "keine",
+    "optional": true,
+    "inhalt": "aussenband_stufe5"
+   }
+  ],
+  "achillo_mid_stufen": [
+   {
+    "id": "mid1",
+    "stufe": 1,
+    "titel": "Isometrisches Halten",
+    "emoji": "⏸️",
+    "optional": true,
+    "inhalt": "achillo_mid_s1"
+   },
+   {
+    "id": "mid2",
+    "stufe": 2,
+    "titel": "Beidbeinige Wadenhebung",
+    "emoji": "🦶",
+    "optional": false,
+    "inhalt": "achillo_mid_s2"
+   },
+   {
+    "id": "mid3",
+    "stufe": 3,
+    "titel": "Einbeinig / Heavy Slow Resistance",
+    "emoji": "🏋️",
+    "optional": false,
+    "inhalt": "achillo_mid_s3"
+   },
+   {
+    "id": "mid4",
+    "stufe": 4,
+    "titel": "Exzentrik mit Zusatzlast",
+    "emoji": "⬇️",
+    "optional": false,
+    "inhalt": "achillo_mid_s4"
+   },
+   {
+    "id": "mid5",
+    "stufe": 5,
+    "titel": "Plyometrie / Rückkehr zu Sport",
+    "emoji": "🤸",
+    "optional": false,
+    "inhalt": "achillo_mid_s5"
+   }
+  ],
+  "achillo_ins_stufen": [
+   {
+    "id": "ins1",
+    "stufe": 1,
+    "titel": "Isometrisches Halten",
+    "emoji": "⏸️",
+    "optional": true,
+    "inhalt": "achillo_ins_s1"
+   },
+   {
+    "id": "ins2",
+    "stufe": 2,
+    "titel": "Beidbeinige Wadenhebung (bis Neutralstellung)",
+    "emoji": "🦶",
+    "optional": false,
+    "inhalt": "achillo_ins_s2"
+   },
+   {
+    "id": "ins3",
+    "stufe": 3,
+    "titel": "Einbeinig / HSR (bis Neutralstellung)",
+    "emoji": "🏋️",
+    "optional": false,
+    "inhalt": "achillo_ins_s3"
+   },
+   {
+    "id": "ins4",
+    "stufe": 4,
+    "titel": "Kräftigung mit Zusatzlast (bis Neutralstellung)",
+    "emoji": "💪",
+    "optional": false,
+    "inhalt": "achillo_ins_s4"
+   },
+   {
+    "id": "ins5",
+    "stufe": 5,
+    "titel": "Plyometrie / Rückkehr zu Sport",
+    "emoji": "🤸",
+    "optional": false,
+    "inhalt": "achillo_ins_s5"
+   }
+  ]
+ },
+ "NONOP_AMPEL": {
+  "achillo_ampel": {
+   "grundregel": "Ein Schmerz bis etwa 5 von 10 ist beim Sehnentraining erlaubt, solange er bis zum nächsten Morgen abklingt und die Morgensteifigkeit nicht von Woche zu Woche zunimmt.",
+   "stufen": [
+    {
+     "farbe": "gruen",
+     "emoji": "🟢",
+     "label": "Grün",
+     "bedeutung": "Schmerz ≤ 5/10 bei und nach Belastung, am nächsten Morgen abgeklungen, keine zunehmende Morgensteifigkeit.",
+     "empfehlung": "Gut so. Wenn die Stufe sicher sitzt, können Sie die nächste Stufe erwägen."
+    },
+    {
+     "farbe": "gelb",
+     "emoji": "🟡",
+     "label": "Gelb",
+     "bedeutung": "Schmerz um 5/10, morgens noch spürbar, aber rückläufig.",
+     "empfehlung": "Bleiben Sie auf dieser Stufe, noch nicht steigern."
+    },
+    {
+     "farbe": "rot",
+     "emoji": "🔴",
+     "label": "Rot",
+     "bedeutung": "Schmerz > 5/10 oder Morgensteifigkeit nimmt von Woche zu Woche zu.",
+     "empfehlung": "Gehen Sie eine Stufe zurück, bis es sich beruhigt."
+    }
+   ]
+  }
+ }
+}
