@@ -34,6 +34,14 @@
    "ampel": "achillo_ampel",
    "einleitung": "achillo_ins_einleitung",
    "stufen": "achillo_ins_stufen"
+  },
+  "knicksenkfuss": {
+   "label": "Knick-Senk-Fuß (Eigenübungen)",
+   "kurzlabel": "Knick-Senk-Fuß",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "ksf_einleitung",
+   "uebungen": "ksf_uebungen"
   }
  },
  "NONOP_INHALTE": {
@@ -319,6 +327,71 @@
    "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
    "dosis": "Sportartabhängig, langsam aufbauend.",
    "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher."
+  },
+  "ksf_einleitung": {
+   "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
+   "text": "Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet — die Sehne des hinteren Schienbeinmuskels (=Tibialis posterior), das Innenband und das Pfannenband (=Spring Ligament) — sowie die Mittel- und Rückfußgelenke. Die Stabilisierung des Fußes entsteht durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\\n\\nWarum aktive Übungen? Eine nicht-operative Therapie mit aktiver Beteiligung ist wirksamer als rein passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können die Beschwerden lindern. Übungen zur Kräftigung der entsprechenden Muskeln und zur Schulung der Tiefenwahrnehmung (=Propriozeption) können Funktion und Beschwerden verbessern — vorausgesetzt, sie werden regelmäßig und dauerhaft durchgeführt.\\n\\nWichtig und ehrlich: Eine echte Korrektur der knöchernen Fehlstellung ist beim ausgewachsenen Fuß nicht zu erwarten. Realistisches Ziel ist eine Verbesserung von Beschwerden und Funktion, nicht eine Begradigung des Fußes. Die Übungen sind besonders wirksam, wenn sie mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren kombiniert werden.",
+   "quellen": [
+    "Hoang et al. 2021",
+    "Elsayed et al. 2023",
+    "Jia et al. 2024"
+   ],
+   "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden. Dieses Programm eignet sich für den flexiblen Knick-Senk-Fuß; die ärztliche Diagnose sollte vorliegen."
+  },
+  "ksf_u1": {
+   "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
+   "schritte": [
+    "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in einwärtsgedrehter Position gegen den Zug eines Therabands von außen. Danach langsames, kontrolliertes (=exzentrisches) Führen des Fußes nach außen.",
+    "Einen Ball zwischen beiden Vorfüßen halten, aus der sitzenden Position anheben und zusammenpressen."
+   ],
+   "dosis": "Jeweils 5 Sekunden halten, 10 Wiederholungen.",
+   "hinweis": "Die langsame Auswärtsbewegung gegen Widerstand (exzentrisch) ist besonders wichtig."
+  },
+  "ksf_u2": {
+   "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
+   "schritte": [
+    "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
+    "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
+   ],
+   "dosis": "Ruhig und kontrolliert, mehrere Wiederholungen pro Seite.",
+   "hinweis": ""
+  },
+  "ksf_u3": {
+   "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln (=intrinsische Muskulatur).",
+   "schritte": [
+    "Fuß flach absetzen und den Vorfußballen in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen, ohne dass die Zehen krallen.",
+    "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
+   ],
+   "dosis": "Mehrere Wiederholungen, ohne Krallen der Zehen.",
+   "hinweis": "Diese Short-Foot-Übung gilt als Kernübung und ist wissenschaftlich am besten untersucht."
+  },
+  "ksf_u4": {
+   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann zur Instabilität des Längsgewölbes beitragen.",
+   "schritte": [
+    "Die genaue Durchführung der Wadendehnung folgt in einem eigenen Kapitel."
+   ],
+   "dosis": "",
+   "hinweis": "",
+   "verweis": "Wadenmuskeldehnung (eigenes Kapitel, folgt)"
+  },
+  "ksf_u5": {
+   "ziel": "Kräftigung der Gesäßmuskulatur (=Glutealmuskulatur). Sie stabilisiert die Beinachse und entlastet so das Fußgewölbe.",
+   "schritte": [
+    "Ein Theraband um die Oberschenkel knapp oberhalb der Knie legen.",
+    "Version 1: Auf den Rücken legen, Füße hüftbreit aufstellen, das Becken anheben und dabei die Knie nach außen gegen das Band drücken.",
+    "Version 2: In Seitenlage das Band um die Knie legen und das obere Knie anheben, sodass die Hüfte nach außen rotiert."
+   ],
+   "dosis": "Mehrere Wiederholungen pro Seite, kontrolliert.",
+   "hinweis": "Die Kombination der Fußübungen mit diesem Hüfttraining steigert die Wirksamkeit nachweislich (Jia et al. 2024)."
+  },
+  "ksf_u6": {
+   "ziel": "Allgemeine Aktivierung der kleinen Fußmuskeln und Schulung der Tiefenwahrnehmung (=Sensomotorik).",
+   "schritte": [
+    "Barfußlaufen, wann immer möglich, auf natürlichem Untergrund.",
+    "Im Urlaub im Sand oder im Garten auf dem Rasen."
+   ],
+   "dosis": "Regelmäßig, langsam steigern.",
+   "hinweis": "Langsam aufbauen, um Überlastungen zu vermeiden."
   }
  },
  "NONOP_STUFEN": {
@@ -461,6 +534,50 @@
     "emoji": "🤸",
     "optional": false,
     "inhalt": "achillo_ins_s5"
+   }
+  ],
+  "ksf_uebungen": [
+   {
+    "id": "ksf1",
+    "nr": 1,
+    "titel": "Haltekraft des hinteren Schienbeinmuskels",
+    "emoji": "💪",
+    "inhalt": "ksf_u1"
+   },
+   {
+    "id": "ksf2",
+    "nr": 2,
+    "titel": "Spiraldynamik",
+    "emoji": "🌀",
+    "inhalt": "ksf_u2"
+   },
+   {
+    "id": "ksf3",
+    "nr": 3,
+    "titel": "Fußsohle zusammenziehen (Short-Foot)",
+    "emoji": "🦶",
+    "inhalt": "ksf_u3"
+   },
+   {
+    "id": "ksf4",
+    "nr": 4,
+    "titel": "Dehnung der Achillessehne",
+    "emoji": "📐",
+    "inhalt": "ksf_u4"
+   },
+   {
+    "id": "ksf5",
+    "nr": 5,
+    "titel": "Hüftabduktoren & Außenrotatoren",
+    "emoji": "🍑",
+    "inhalt": "ksf_u5"
+   },
+   {
+    "id": "ksf6",
+    "nr": 6,
+    "titel": "Barfußlaufen",
+    "emoji": "👣",
+    "inhalt": "ksf_u6"
    }
   ]
  },

@@ -826,19 +826,65 @@ function NonOpView({ onBack }) {
   var [gateOk, setGateOk] = useState(persisted ? !!persisted.gateOk : false);
   var [stufeAktuell, setStufeAktuell] = useState(persisted && persisted.stufeAktuell ? persisted.stufeAktuell : 1);
   var [ampelWahl, setAmpelWahl] = useState(persisted && persisted.ampelWahl ? persisted.ampelWahl : null);
+  var [seite, setSeite] = useState(0);
 
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
   function ZurueckLeiste({ onBack, titel }) {
     return (
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
         <div onClick={onBack} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>← zurück</div>
-        <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{titel}</div>
+        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)" }}>{titel}</div>
+      </div>
+    );
+  }
+
+  // Gemeinsamer Seiten-Rahmen: volle Breite, Stepper oben, Tap-Spalten links/rechts
+  function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, children }) {
+    function TapSpalte({ richtung, aktiv }) {
+      return (
+        <div onClick={aktiv ? (richtung === "prev" ? onPrev : onNext) : undefined}
+             style={{ width: 30, flexShrink: 0, alignSelf: "stretch", display: "flex", alignItems: "center", justifyContent: "center",
+                      borderRadius: 8, cursor: aktiv ? "pointer" : "default",
+                      background: aktiv ? "rgba(44,79,124,.07)" : "transparent",
+                      color: aktiv ? "var(--c-main)" : "transparent",
+                      opacity: aktiv ? 1 : 0, pointerEvents: aktiv ? "auto" : "none",
+                      fontSize: 26, fontWeight: 700, userSelect: "none" }}>
+          {richtung === "prev" ? "‹" : "›"}
+        </div>
+      );
+    }
+    return (
+      <div className="card" style={{ marginTop: 12, padding: "14px 10px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <div style={{ padding: "0 4px" }}>
+          <ZurueckLeiste onBack={onBack} titel={titel} />
+        </div>
+        {items && items.length > 0 && (
+          <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 4px 10px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
+            {items.map(function(it, i){
+              var aktiv = i === activeIdx;
+              return (
+                <div key={it.key} onClick={function(){ onJump(i); }}
+                     style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1, gap: 1,
+                              background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
+                  {it.emoji && <span style={{ fontSize: 14 }}>{it.emoji}</span>}
+                  <span style={{ fontSize: it.wide ? 12 : 12 }}>{it.label}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        <div style={{ display: "flex", gap: 4, alignItems: "stretch" }}>
+          <TapSpalte richtung="prev" aktiv={canPrev} />
+          <div style={{ flex: 1, minWidth: 0 }}>{children}</div>
+          <TapSpalte richtung="next" aktiv={canNext} />
+        </div>
       </div>
     );
   }
 
   var kbListe = Object.keys(NONOP_KB || {});
+
 
   function persist(extra) {
     var base = { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks };
@@ -910,6 +956,7 @@ function NonOpView({ onBack }) {
       var clamped = Math.max(1, Math.min(stufen.length, n));
       setStufeAktuell(clamped);
       persistAmpel({ stufeAktuell: clamped });
+      if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0);
     }
     function waehleAmpel(farbe) {
       setAmpelWahl(farbe);
@@ -919,7 +966,7 @@ function NonOpView({ onBack }) {
     // --- Pflicht-Gate ---
     if (!gateOk) {
       return (
-        <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
           <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
           <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
             <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{gate.titel}</div>
@@ -936,51 +983,51 @@ function NonOpView({ onBack }) {
     var s = stufen[stufeAktuell - 1] || stufen[0];
     var c = NONOP_INHALTE[s.inhalt] || {};
     var aktAmpel = ampelStufen.filter(function(a){ return a.farbe === ampelWahl; })[0];
+    var stepItems = stufen.map(function(st){ return { key: st.id, label: String(st.stufe), emoji: st.emoji }; });
 
     return (
-      <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
+      <BlaetterRahmen titel={kb.label} onBack={function(){ setKbKey(null); }}
+        items={stepItems} activeIdx={stufeAktuell - 1}
+        onJump={function(i){ setStufe(i + 1); }}
+        onPrev={function(){ setStufe(stufeAktuell - 1); }} onNext={function(){ setStufe(stufeAktuell + 1); }}
+        canPrev={stufeAktuell > 1} canNext={stufeAktuell < stufen.length}>
 
-        {einleitung.intro && <div style={{ fontSize: 13.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 6 }}>{einleitung.intro}</div>}
-        {einleitung.text && <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.6, whiteSpace: "pre-line", marginBottom: 16 }}>{einleitung.text}</div>}
-
-        {/* Stufenleiter-Übersicht */}
-        <div style={{ display: "flex", gap: 5, marginBottom: 16 }}>
-          {stufen.map(function(st){
-            var aktiv = st.stufe === stufeAktuell;
-            return (
-              <div key={st.id} onClick={function(){ setStufe(st.stufe); }} style={{ flex: 1, textAlign: "center", padding: "8px 2px", borderRadius: 6, cursor: "pointer", background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.08)" }}>
-                <div style={{ fontSize: 16 }}>{st.emoji}</div>
-                <div style={{ fontSize: 10, fontWeight: 700, marginTop: 2 }}>St. {st.stufe}</div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Aktuelle Stufe */}
-        <div style={{ border: "2px solid var(--c-main)", borderRadius: 10, overflow: "hidden", marginBottom: 16 }}>
-          <div style={{ padding: "12px 14px", background: "rgba(44,79,124,.06)", display: "flex", alignItems: "center", gap: 10 }}>
-            <div style={{ fontSize: 24 }}>{s.emoji}</div>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>Stufe {s.stufe}: {s.titel}</div>
-              {s.optional && <div style={{ fontSize: 10, fontWeight: 600, color: "var(--c-text-muted)" }}>optionaler Einstieg</div>}
-            </div>
+        {stufeAktuell === 1 && (
+          <div style={{ marginBottom: 14 }}>
+            {einleitung.intro && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 6 }}>{einleitung.intro}</div>}
+            {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, whiteSpace: "pre-line" }}>{einleitung.text}</div>}
           </div>
-          <div style={{ padding: "14px 16px", fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6 }}>
-            {c.was && <div style={{ marginBottom: 10 }}><strong>Übung:</strong> {c.was}</div>}
-            {c.dosis && <div style={{ marginBottom: 10, padding: "10px 12px", background: "var(--c-bg)", borderRadius: 6 }}><strong>Dosierung:</strong> {c.dosis}</div>}
-            {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.hinweis}</div>}
+        )}
+
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
+          <div style={{ fontSize: 34 }}>{s.emoji}</div>
+          <div>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5 }}>Stufe {s.stufe} von {stufen.length}{s.optional ? " · optional" : ""}</div>
+            <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{s.titel}</div>
           </div>
         </div>
 
-        {/* Hoch/Runter */}
-        <div style={{ display: "flex", gap: 8, marginBottom: 18 }}>
-          <div onClick={function(){ setStufe(stufeAktuell - 1); }} style={{ flex: 1, textAlign: "center", padding: "10px", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: stufeAktuell > 1 ? "pointer" : "default", background: "#fff", border: "1px solid rgba(0,0,0,.15)", color: stufeAktuell > 1 ? "var(--c-text)" : "rgba(0,0,0,.25)" }}>↓ Eine Stufe zurück</div>
-          <div onClick={function(){ setStufe(stufeAktuell + 1); }} style={{ flex: 1, textAlign: "center", padding: "10px", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: stufeAktuell < stufen.length ? "pointer" : "default", background: "#fff", border: "1px solid var(--c-main)", color: stufeAktuell < stufen.length ? "var(--c-main)" : "rgba(0,0,0,.25)" }}>↑ Nächste Stufe</div>
+        <div style={{ marginBottom: 16, padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+          <div style={{ fontSize: 26, marginBottom: 6 }}>🖼️</div>
+          <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
         </div>
+
+        {c.was && (
+          <div style={{ marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.65 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Übung</div>
+            {c.was}
+          </div>
+        )}
+        {c.dosis && (
+          <div style={{ marginBottom: 14, padding: "12px 14px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Dosierung</div>
+            <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.5 }}>{c.dosis}</div>
+          </div>
+        )}
+        {c.hinweis && <div style={{ marginBottom: 18, fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
 
         {/* Ampel */}
-        <div style={{ border: "1px solid rgba(0,0,0,.10)", borderRadius: 10, padding: "14px 16px", marginBottom: 14 }}>
+        <div style={{ border: "1px solid rgba(0,0,0,.10)", borderRadius: 10, padding: "14px 14px", marginBottom: 14 }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 6 }}>Wie waren Ihre Beschwerden?</div>
           {ampel.grundregel && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 12 }}>{ampel.grundregel}</div>}
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
@@ -999,19 +1046,125 @@ function NonOpView({ onBack }) {
             <div style={{ padding: "12px 14px", borderRadius: 8, background: aktAmpel.farbe === "gruen" ? "rgba(46,125,50,.10)" : aktAmpel.farbe === "gelb" ? "rgba(249,168,37,.12)" : "rgba(198,40,40,.10)" }}>
               <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.5, marginBottom: 6 }}>{aktAmpel.bedeutung}</div>
               <div style={{ fontSize: 13.5, fontWeight: 700, color: aktAmpel.farbe === "gruen" ? "#2E7D32" : aktAmpel.farbe === "gelb" ? "#8A6D0B" : "#C62828" }}>{aktAmpel.empfehlung}</div>
+              {aktAmpel.farbe === "gruen" && stufeAktuell < stufen.length && (
+                <div onClick={function(){ setStufe(stufeAktuell + 1); }} style={{ marginTop: 10, textAlign: "center", padding: "10px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer" }}>Zur nächsten Stufe →</div>
+              )}
+              {aktAmpel.farbe === "rot" && stufeAktuell > 1 && (
+                <div onClick={function(){ setStufe(stufeAktuell - 1); }} style={{ marginTop: 10, textAlign: "center", padding: "10px", background: "#fff", border: "1px solid #C62828", color: "#C62828", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer" }}>← Eine Stufe zurück</div>
+              )}
             </div>
           )}
         </div>
 
         <div onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8 }}>Programm zurücksetzen</div>
         <div style={{ fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
-      </div>
+      </BlaetterRahmen>
+    );
+  }
+
+  // === Übungspaket-Modell (Knick-Senk-Fuß) — eine Seite pro Übung, volle Breite ===
+  function renderUebungspaket() {
+    var einl = NONOP_INHALTE[kb.einleitung] || {};
+    var uebungen = NONOP_STUFEN[kb.uebungen] || [];
+    var gesamtSeiten = uebungen.length + 1;
+
+    function geheZu(n) {
+      var clamped = Math.max(0, Math.min(gesamtSeiten - 1, n));
+      setSeite(clamped);
+      if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0);
+    }
+
+    var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr), emoji: u.emoji }; }));
+
+    var inhalt;
+    if (seite === 0) {
+      inhalt = (
+        <div>
+          {einl.intro && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 12 }}>{einl.intro}</div>}
+          {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line", marginBottom: 16 }}>{einl.text}</div>}
+          <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
+            <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: 6 Übungen</div>
+            {uebungen.map(function(u, i){
+              return (
+                <div key={u.id} onClick={function(){ geheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < uebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                  <div style={{ fontSize: 18 }}>{u.emoji}</div>
+                  <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{u.nr}.</strong> {u.titel}</div>
+                  <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
+                </div>
+              );
+            })}
+          </div>
+          {einl.hinweis && <div style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.5, marginTop: 14 }}>{einl.hinweis}</div>}
+          <div onClick={function(){ geheZu(1); }} style={{ marginTop: 18, textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Mit den Übungen beginnen →</div>
+        </div>
+      );
+    } else {
+      var u = uebungen[seite - 1];
+      var c = NONOP_INHALTE[u.inhalt] || {};
+      inhalt = (
+        <div>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
+            <div style={{ fontSize: 34 }}>{u.emoji}</div>
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5 }}>Übung {u.nr} von {uebungen.length}</div>
+              <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{u.titel}</div>
+            </div>
+          </div>
+          <div style={{ marginBottom: 16, padding: "30px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+            <div style={{ fontSize: 28, marginBottom: 6 }}>🖼️</div>
+            <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
+          </div>
+          {c.ziel && (
+            <div style={{ marginBottom: 16, padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Ziel</div>
+              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6 }}>{c.ziel}</div>
+            </div>
+          )}
+          {c.schritte && c.schritte.length > 0 && (
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 10 }}>So geht's</div>
+              {c.schritte.map(function(st, i){
+                return (
+                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12 }}>
+                    <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
+                    <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>🔗 {c.verweis}</div>}
+          {c.dosis && (
+            <div style={{ marginBottom: 14, padding: "12px 14px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Dosierung</div>
+              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.5 }}>{c.dosis}</div>
+            </div>
+          )}
+          {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
+          <div style={{ marginTop: 18, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
+        </div>
+      );
+    }
+
+    return (
+      <BlaetterRahmen titel={kb.label} onBack={function(){ setKbKey(null); setSeite(0); }}
+        items={stepItems} activeIdx={seite}
+        onJump={function(i){ geheZu(i); }}
+        onPrev={function(){ geheZu(seite - 1); }} onNext={function(){ geheZu(seite + 1); }}
+        canPrev={seite > 0} canNext={seite < gesamtSeiten - 1}>
+        {inhalt}
+      </BlaetterRahmen>
     );
   }
 
   // === Modell-Weiche: stufenloses Ampel-Modell (Achillodynie) ===
   if (kb.modell === "stufenlos_ampel") {
     return renderStufenlosAmpel();
+  }
+
+  // === Modell-Weiche: Übungspaket (Knick-Senk-Fuß) ===
+  if (kb.modell === "uebungspaket") {
+    return renderUebungspaket();
   }
 
   // --- Einleitung + Startdatum + Sportler-Frage (B1, B6) ---
@@ -3258,7 +3411,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.6 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.8 · Juni 2026</div>
     </div>
   );
 }
