@@ -13,7 +13,8 @@
    "einleitung": "aussenband_einleitung",
    "stufen": "aussenband_stufen",
    "abklaerung": "aussenband_abklaerung",
-   "modell": "zeitanker"
+   "modell": "zeitanker",
+   "weitereMassnahmen": []
   },
   "achillodynie_midportion": {
    "label": "Achillodynie – mittlere Form (Mid-Portion)",
@@ -23,7 +24,8 @@
    "gate": "achillo_gate",
    "ampel": "achillo_ampel",
    "einleitung": "achillo_mid_einleitung",
-   "stufen": "achillo_mid_stufen"
+   "stufen": "achillo_mid_stufen",
+   "weitereMassnahmen": []
   },
   "achillodynie_insertion": {
    "label": "Achillodynie – ansatznahe Form (insertionell)",
@@ -33,7 +35,8 @@
    "gate": "achillo_gate",
    "ampel": "achillo_ampel",
    "einleitung": "achillo_ins_einleitung",
-   "stufen": "achillo_ins_stufen"
+   "stufen": "achillo_ins_stufen",
+   "weitereMassnahmen": []
   },
   "knicksenkfuss": {
    "label": "Knick-Senk-Fuß (Eigenübungen)",
@@ -41,7 +44,31 @@
    "kontext": "chronisch",
    "modell": "uebungspaket",
    "einleitung": "ksf_einleitung",
-   "uebungen": "ksf_uebungen"
+   "uebungen": "ksf_uebungen",
+   "weitereMassnahmen": [
+    {
+     "ref": "einlagen",
+     "kurztext": "PLATZHALTER: Kurz, warum Einlagen beim Knick-Senk-Fuß sinnvoll sein können, plus ein Satz zur Evidenz."
+    }
+   ]
+  },
+  "hallux_valgus": {
+   "label": "Hallux valgus (Eigenübungen)",
+   "kurzlabel": "Hallux valgus",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "hv_einleitung",
+   "uebungen": "hv_uebungen",
+   "weitereMassnahmen": []
+  },
+  "plantarfasziitis": {
+   "label": "Plantarfasziitis (Eigenübungen)",
+   "kurzlabel": "Plantarfasziitis",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "pf_einleitung",
+   "uebungen": "pf_uebungen",
+   "weitereMassnahmen": []
   }
  },
  "NONOP_INHALTE": {
@@ -392,6 +419,165 @@
    ],
    "dosis": "Regelmäßig, langsam steigern.",
    "hinweis": "Langsam aufbauen, um Überlastungen zu vermeiden."
+  },
+  "hv_einleitung": {
+   "intro": "Beim Hallux valgus (=Schiefstand der Großzehe, „Ballenzeh“) bestehen wie bei jeder chronischen Erkrankung des Bewegungsapparates nicht-operative und operative Optionen. Vor einer Operation sollten alternative Maßnahmen probiert werden.",
+   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung — gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\\n\\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\\n\\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind — ähnlich wie an der Hand — für Feinmotorik und „Griffkraft“ des Fußes zuständig.\\n\\nEhrlich und realistisch: Das Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
+   "quellen": [
+    "Mortka & Lisiński 2015",
+    "Kim et al. 2013",
+    "Mortka et al. 2020",
+    "Liu et al. 2024"
+   ],
+   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt — ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar.",
+   "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden. Dieses Programm eignet sich begleitend; die ärztliche Diagnose sollte vorliegen."
+  },
+  "hv_u0": {
+   "ziel": "Lockerung des Fußes vor dem Üben.",
+   "schritte": [
+    "Ausstreichen der Fußsohle.",
+    "Querdehnung des Fußrückens."
+   ],
+   "dosis": "Als angenehme, risikoarme Vorbereitung vor den Übungen.",
+   "hinweis": "Die Massage ist eine Vorbereitung und dient der Lockerung — sie ersetzt die Übungen nicht."
+  },
+  "hv_u1": {
+   "ziel": "Stärkung der kleinen Zehenbeuger (=intrinsische Zehenbeuger).",
+   "schritte": [
+    "Mit den Zehen eine Kugel greifen und 10× von links nach rechts legen.",
+    "Einen Schnürsenkel oder ein kleines Band mit den Zehen aufnehmen und nacheinander die Buchstaben Ihres Vor- und Nachnamens formen."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": ""
+  },
+  "hv_u2": {
+   "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
+   "schritte": [
+    "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in neutraler Position gegen den Zug eines Therabands von außen.",
+    "Einen Ball zwischen beiden Füßen halten, aus der sitzenden Position anheben und 5 Sekunden zusammenpressen; 10 Wiederholungen."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": ""
+  },
+  "hv_u3": {
+   "ziel": "Dehnung des beim Hallux valgus häufig verkürzten Großzehen-Anziehers (=M. adductor hallucis).",
+   "schritte": [
+    "Ein Theraband über beide Großzehen ziehen und die Großzehen sanft auseinanderführen (passive Dehnung)."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": ""
+  },
+  "hv_u4": {
+   "ziel": "Ansteuerung und Kräftigung des Großzehen-Abspreizers (=M. abductor hallucis, der die Großzehe von der 2. Zehe wegzieht).",
+   "schritte": [
+    "Im Sitzen den Fuß flach absetzen.",
+    "Im Wechsel die Zehen krallen und die Großzehe abspreizen."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": "Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert — hier ist Geduld gefragt."
+  },
+  "hv_u5": {
+   "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
+   "schritte": [
+    "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
+    "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": ""
+  },
+  "hv_u6": {
+   "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln.",
+   "schritte": [
+    "Fuß flach absetzen und Ballen und Großzehe in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen.",
+    "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
+   ],
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "hinweis": ""
+  },
+  "hv_u7": {
+   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann — vor allem bei gleichzeitigem Knick-Senk-Fuß — zur Instabilität des Längsgewölbes und zur Dezentrierung des 1. Mittelfußknochens beitragen.",
+   "schritte": [
+    "Die genaue Durchführung der Wadendehnung folgt in einem eigenen Kapitel."
+   ],
+   "dosis": "",
+   "hinweis": "",
+   "verweis": "Achillessehnen-/Wadenmuskeldehnung (eigenes Kapitel, folgt)"
+  },
+  "pf_einleitung": {
+   "intro": "Bei der Plantarfasziitis kommt es zu einer verschleiß- und überlastungsbedingten Schädigung der Plantarfaszie (=bindegewebige Sehnenplatte der Fußsohle) mit häufig erheblichem chronischem Schmerz an der Ferse.",
+   "text": "Ziele der Eigenübungen sind die Dehnung von Plantarfaszie und Wadenmuskulatur, Schmerzlinderung und Entlastung, eine bessere Fußstabilität und Beweglichkeit sowie die Unterstützung des Heilungsverlaufs.\\n\\nDie Übungen sollten mindestens 3–4× pro Woche durchgeführt werden, jeweils etwa 10 Minuten. Die Dehnübungen dürfen durchaus unangenehm ziehend empfunden werden, sollten aber nicht schmerzen. Parallel darf gerne auf natürlichem Boden barfuß gelaufen werden. Bei Bewegung auf harten Böden sind gut gedämpftes Schuhwerk oder Bettungseinlagen sinnvoll.\\n\\nEine Besserung tritt auch bei konsequentem Training erst nach mehreren Wochen auf. Hier bedarf es also Geduld.",
+   "quellen": [
+    "Huffer et al. 2017",
+    "Boob et al. 2023",
+    "Rhim et al. 2021"
+   ],
+   "evidenz": "Regelmäßige Übungen sind neben Einlagenversorgung, Stoßwellentherapie und Gewichtsreduktion die wichtigste Maßnahme der Behandlung. Es konnte gezeigt werden, dass kontinuierliche Übungen über Wochen die Beschwerden wirksam verbessern können; besonders das Training der kleinen Fußmuskeln (=intrinsische Fußmuskulatur), die Faszienmassage und die Dehnung der Achillessehne gelten als wirksam (Huffer et al. 2017, Boob et al. 2023, Rhim et al. 2021).",
+   "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden."
+  },
+  "pf_u1": {
+   "ziel": "Lockerung vor dem Anlaufen am Morgen. Diese Übung ist gut bei Phasen von hohem Schmerz.",
+   "schritte": [
+    "Im Sitzen oder Liegen ein Handtuch um den Fußballen legen.",
+    "Den Fuß langsam zum Körper ziehen."
+   ],
+   "dosis": "3 × 30 Sekunden pro Seite, direkt nach dem Aufwachen empfehlenswert.",
+   "hinweis": ""
+  },
+  "pf_u2": {
+   "ziel": "Dehnen der Plantarfaszie.",
+   "schritte": [
+    "Im Sitzen ein Bein über das andere schlagen.",
+    "Die Zehen der schmerzhaften Seite mit der Hand langsam in Richtung Schienbein ziehen.",
+    "Mit dem Daumen kann nun eine tiefe Massage quer zur Fußsohle erfolgen; dies darf etwas schmerzhaft sein (=Querfriktion)."
+   ],
+   "dosis": "30 Sekunden halten, 3× wiederholen.",
+   "hinweis": ""
+  },
+  "pf_u3": {
+   "ziel": "Intensive Dehnung der Faszie.",
+   "schritte": [
+    "Stand vor einer Wand, die Großzehe nach oben gestellt.",
+    "Das Gewicht langsam nach vorne verlagern."
+   ],
+   "dosis": "30 Sekunden halten, 3× wiederholen.",
+   "hinweis": ""
+  },
+  "pf_u4": {
+   "ziel": "Entlastung der Faszie durch Lockerung der Waden.",
+   "schritte": [
+    "Ein Bein hinten gestreckt, das andere vorne gebeugt.",
+    "Beide Fersen bleiben am Boden.",
+    "Die Wand nach vorne drücken."
+   ],
+   "dosis": "30 Sekunden halten, 2–3 Wiederholungen pro Seite.",
+   "hinweis": ""
+  },
+  "pf_u5": {
+   "ziel": "Gewebemobilisierung und Schmerzlinderung, Entspannung (=Detonisierung) der Plantarfaszie.",
+   "schritte": [
+    "Im Sitzen mit dem schmerzenden Fuß über einen Igelball oder eine Faszienrolle rollen.",
+    "Von der Ferse bis zu den Zehen."
+   ],
+   "dosis": "1–2 Minuten pro Fuß.",
+   "hinweis": "Besonders effektiv ist das Rollen auf einem kalten Igelball oder einer Flasche mit gefrorenem Inhalt, da die Kühlung zusätzlich schmerzlindernd wirkt."
+  },
+  "pf_u6": {
+   "ziel": "Kräftigung der Fußmuskulatur.",
+   "schritte": [
+    "Ein Handtuch auf den Boden legen.",
+    "Mit den Zehen zusammenknautschen und heranziehen."
+   ],
+   "dosis": "1 Minute pro Seite, 1–2 Durchgänge.",
+   "hinweis": ""
+  },
+  "pf_u7": {
+   "ziel": "Aktivierung der kleinen Fußmuskeln (=intrinsische Fußmuskulatur).",
+   "schritte": [
+    "Stehend oder sitzend den Ballen leicht Richtung Ferse ziehen. Dadurch wird der Fuß kürzer und das Gewölbe hebt sich.",
+    "Die Zehen sollen dabei nicht krallen."
+   ],
+   "dosis": "10 Wiederholungen à 5 Sekunden.",
+   "hinweis": "Hier bedarf es viel Geduld, da die Muskulatur am Anfang oft nicht gut angesteuert werden kann. Die Übung ist aber sehr effektiv für die Fußgesundheit — investieren Sie ausreichend Zeit."
   }
  },
  "NONOP_STUFEN": {
@@ -578,6 +764,115 @@
     "titel": "Barfußlaufen",
     "emoji": "👣",
     "inhalt": "ksf_u6"
+   }
+  ],
+  "hv_uebungen": [
+   {
+    "id": "hv0",
+    "nr": 1,
+    "titel": "Vorbereitung: Massage",
+    "emoji": "🤲",
+    "inhalt": "hv_u0"
+   },
+   {
+    "id": "hv1",
+    "nr": 2,
+    "titel": "Zehengreifen",
+    "emoji": "✊",
+    "inhalt": "hv_u1"
+   },
+   {
+    "id": "hv2",
+    "nr": 3,
+    "titel": "Halteübungen",
+    "emoji": "💪",
+    "inhalt": "hv_u2"
+   },
+   {
+    "id": "hv3",
+    "nr": 4,
+    "titel": "Dehnung des Großzehen-Anziehers",
+    "emoji": "📐",
+    "inhalt": "hv_u3"
+   },
+   {
+    "id": "hv4",
+    "nr": 5,
+    "titel": "Abspreizen der Großzehe",
+    "emoji": "👍",
+    "inhalt": "hv_u4"
+   },
+   {
+    "id": "hv5",
+    "nr": 6,
+    "titel": "Spiraldynamik",
+    "emoji": "🌀",
+    "inhalt": "hv_u5"
+   },
+   {
+    "id": "hv6",
+    "nr": 7,
+    "titel": "Fußsohle zusammenziehen (Short-Foot)",
+    "emoji": "🦶",
+    "inhalt": "hv_u6"
+   },
+   {
+    "id": "hv7",
+    "nr": 8,
+    "titel": "Dehnung der Achillessehne",
+    "emoji": "📏",
+    "inhalt": "hv_u7"
+   }
+  ],
+  "pf_uebungen": [
+   {
+    "id": "pf1",
+    "nr": 1,
+    "titel": "Sanfte Dehnung im Sitzen",
+    "emoji": "🤚",
+    "inhalt": "pf_u1"
+   },
+   {
+    "id": "pf2",
+    "nr": 2,
+    "titel": "Plantarfaszie-Dehnung im Sitzen",
+    "emoji": "🦶",
+    "inhalt": "pf_u2"
+   },
+   {
+    "id": "pf3",
+    "nr": 3,
+    "titel": "Dehnung der Faszie an der Wand",
+    "emoji": "🧱",
+    "inhalt": "pf_u3"
+   },
+   {
+    "id": "pf4",
+    "nr": 4,
+    "titel": "Waden- und Achillessehnendehnung an der Wand",
+    "emoji": "📏",
+    "inhalt": "pf_u4"
+   },
+   {
+    "id": "pf5",
+    "nr": 5,
+    "titel": "Fasziendehnung unter dem Fuß",
+    "emoji": "⚪",
+    "inhalt": "pf_u5"
+   },
+   {
+    "id": "pf6",
+    "nr": 6,
+    "titel": "Zehengreifen mit Handtuch",
+    "emoji": "✊",
+    "inhalt": "pf_u6"
+   },
+   {
+    "id": "pf7",
+    "nr": 7,
+    "titel": "Short-Foot-Übung",
+    "emoji": "🦵",
+    "inhalt": "pf_u7"
    }
   ]
  },

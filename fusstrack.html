@@ -362,6 +362,7 @@ let NONOP_KB = {};       // Non-OP-Begleiter: Krankheitsbilder
 let NONOP_STUFEN = {};   // Non-OP-Begleiter: Stufenlisten je Krankheitsbild
 let NONOP_INHALTE = {};  // Non-OP-Begleiter: Inhaltsbausteine
 let NONOP_AMPEL = {};    // Non-OP-Begleiter: Ampel-Bausteine (stufenloses Modell)
+let NONOP_MASSNAHMEN = {}; // Non-OP-Begleiter: allgemeine nicht-operative Maßnahmen (aus infomaterial.json)
 let KATALOG = null;   // Daten aus katalog.json (Diagnose-Helfer) — null bevor geladen
 
 // Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey]
@@ -405,6 +406,7 @@ async function loadAufklaerungData() {
       const infoData = await infoRes.json();
       const bausteinData = await bausteinRes.json();
       const INFO = infoData.INFOMATERIAL || {};
+      NONOP_MASSNAHMEN = infoData.NONOP_MASSNAHMEN || {};
       const BAUSTEINE = bausteinData.BAUSTEINE || {};
       // Referenzen zu vollständigen Slide-Objekten auflösen (Single Source of Truth).
       const aufgeloest = {};
@@ -827,6 +829,7 @@ function NonOpView({ onBack }) {
   var [stufeAktuell, setStufeAktuell] = useState(persisted && persisted.stufeAktuell ? persisted.stufeAktuell : 1);
   var [ampelWahl, setAmpelWahl] = useState(persisted && persisted.ampelWahl ? persisted.ampelWahl : null);
   var [seite, setSeite] = useState(0);
+  var [massnahmeOffen, setMassnahmeOffen] = useState(null);
 
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
@@ -840,27 +843,12 @@ function NonOpView({ onBack }) {
   }
 
   // Gemeinsamer Seiten-Rahmen: volle Breite, Stepper oben, Tap-Spalten links/rechts
-  function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, children }) {
-    function TapSpalte({ richtung, aktiv }) {
-      return (
-        <div onClick={aktiv ? (richtung === "prev" ? onPrev : onNext) : undefined}
-             style={{ width: 30, flexShrink: 0, alignSelf: "stretch", display: "flex", alignItems: "center", justifyContent: "center",
-                      borderRadius: 8, cursor: aktiv ? "pointer" : "default",
-                      background: aktiv ? "rgba(44,79,124,.07)" : "transparent",
-                      color: aktiv ? "var(--c-main)" : "transparent",
-                      opacity: aktiv ? 1 : 0, pointerEvents: aktiv ? "auto" : "none",
-                      fontSize: 26, fontWeight: 700, userSelect: "none" }}>
-          {richtung === "prev" ? "‹" : "›"}
-        </div>
-      );
-    }
+  function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, weiterText, children }) {
     return (
-      <div className="card" style={{ marginTop: 12, padding: "14px 10px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <div style={{ padding: "0 4px" }}>
-          <ZurueckLeiste onBack={onBack} titel={titel} />
-        </div>
+      <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <ZurueckLeiste onBack={onBack} titel={titel} />
         {items && items.length > 0 && (
-          <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 4px 10px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
+          <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 0 12px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
             {items.map(function(it, i){
               var aktiv = i === activeIdx;
               return (
@@ -868,17 +856,75 @@ function NonOpView({ onBack }) {
                      style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1, gap: 1,
                               background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
                   {it.emoji && <span style={{ fontSize: 14 }}>{it.emoji}</span>}
-                  <span style={{ fontSize: it.wide ? 12 : 12 }}>{it.label}</span>
+                  <span style={{ fontSize: 12 }}>{it.label}</span>
                 </div>
               );
             })}
           </div>
         )}
-        <div style={{ display: "flex", gap: 4, alignItems: "stretch" }}>
-          <TapSpalte richtung="prev" aktiv={canPrev} />
-          <div style={{ flex: 1, minWidth: 0 }}>{children}</div>
-          <TapSpalte richtung="next" aktiv={canNext} />
+        <div>{children}</div>
+        {(canPrev || canNext) && (
+          <div style={{ marginTop: 20 }}>
+            {canNext && (
+              <div onClick={onNext} style={{ textAlign: "center", padding: "14px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 15, fontWeight: 700, cursor: "pointer" }}>{weiterText || "Weiter →"}</div>
+            )}
+            {canPrev && (
+              <div onClick={onPrev} style={{ textAlign: "center", padding: "10px", marginTop: 8, color: "var(--c-text-muted)", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>← Zurück</div>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Kachel "Weitere sinnvolle Maßnahmen" (in den Programmen), verlinkt auf allgemeine Maßnahmen-Seiten
+  function MassnahmenKachel({ liste }) {
+    if (!liste || liste.length === 0) return null;
+    return (
+      <div style={{ marginTop: 20, border: "1px solid rgba(44,79,124,.25)", borderRadius: 10, overflow: "hidden" }}>
+        <div style={{ padding: "12px 14px", background: "rgba(44,79,124,.06)", fontSize: 13.5, fontWeight: 700, color: "var(--c-main)" }}>
+          Weitere sinnvolle Maßnahmen
         </div>
+        <div style={{ padding: "6px 14px 12px" }}>
+          {liste.map(function(m, i){
+            var info = NONOP_MASSNAHMEN[m.ref] || {};
+            return (
+              <div key={m.ref} onClick={function(){ setMassnahmeOffen(m.ref); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); }}
+                   style={{ padding: "10px 0", cursor: "pointer", borderBottom: i < liste.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <div style={{ flex: 1, fontSize: 13.5, fontWeight: 700, color: "var(--c-text)" }}>{info.titel || m.ref}</div>
+                  <div style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 700 }}>ansehen ›</div>
+                </div>
+                {m.kurztext && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.5, marginTop: 3 }}>{m.kurztext}</div>}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
+  // Einzelne, allgemeine Maßnahmen-Seite (krankheitsbild-unabhängig)
+  function renderMassnahmeSeite() {
+    var info = NONOP_MASSNAHMEN[massnahmeOffen] || {};
+    var abschnitte = info.abschnitte || [];
+    return (
+      <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
+          <div onClick={function(){ setMassnahmeOffen(null); }} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>← zurück</div>
+          <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)" }}>{info.titel || "Maßnahme"}</div>
+        </div>
+        {info.kurz && <div style={{ fontSize: 14, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{info.kurz}</div>}
+        {abschnitte.map(function(a, i){
+          return (
+            <div key={i} style={{ marginBottom: 16 }}>
+              {a.titel && <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 5 }}>{a.titel}</div>}
+              {a.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{a.text}</div>}
+            </div>
+          );
+        })}
+        {info.stand && <div style={{ marginTop: 8, fontSize: 11, color: "var(--c-text-muted)" }}>Stand: {info.stand}</div>}
+        <div style={{ marginTop: 16, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Information. Ob diese Maßnahme in Ihrem Fall sinnvoll ist, klärt Ihre Ärztin oder Ihr Arzt.</div>
       </div>
     );
   }
@@ -990,7 +1036,7 @@ function NonOpView({ onBack }) {
         items={stepItems} activeIdx={stufeAktuell - 1}
         onJump={function(i){ setStufe(i + 1); }}
         onPrev={function(){ setStufe(stufeAktuell - 1); }} onNext={function(){ setStufe(stufeAktuell + 1); }}
-        canPrev={stufeAktuell > 1} canNext={stufeAktuell < stufen.length}>
+        canPrev={stufeAktuell > 1} canNext={stufeAktuell < stufen.length} weiterText="Nächste Stufe →">
 
         {stufeAktuell === 1 && (
           <div style={{ marginBottom: 14 }}>
@@ -1007,17 +1053,18 @@ function NonOpView({ onBack }) {
           </div>
         </div>
 
-        <div style={{ marginBottom: 16, padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-          <div style={{ fontSize: 26, marginBottom: 6 }}>🖼️</div>
-          <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
-        </div>
-
         {c.was && (
           <div style={{ marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.65 }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Übung</div>
             {c.was}
           </div>
         )}
+
+        <div style={{ marginBottom: 16, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+          <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
+          <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
+        </div>
+
         {c.dosis && (
           <div style={{ marginBottom: 14, padding: "12px 14px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Dosierung</div>
@@ -1056,7 +1103,9 @@ function NonOpView({ onBack }) {
           )}
         </div>
 
-        <div onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8 }}>Programm zurücksetzen</div>
+        <MassnahmenKachel liste={kb.weitereMassnahmen} />
+
+        <div onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8, marginTop: 14 }}>Programm zurücksetzen</div>
         <div style={{ fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
       </BlaetterRahmen>
     );
@@ -1082,8 +1131,14 @@ function NonOpView({ onBack }) {
         <div>
           {einl.intro && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 12 }}>{einl.intro}</div>}
           {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line", marginBottom: 16 }}>{einl.text}</div>}
+          {einl.evidenz && (
+            <div style={{ padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)", marginBottom: 16 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 5 }}>Was die Studienlage zeigt</div>
+              <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.6 }}>{einl.evidenz}</div>
+            </div>
+          )}
           <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
-            <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: 6 Übungen</div>
+            <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {uebungen.length} Übungen</div>
             {uebungen.map(function(u, i){
               return (
                 <div key={u.id} onClick={function(){ geheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < uebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
@@ -1095,7 +1150,7 @@ function NonOpView({ onBack }) {
             })}
           </div>
           {einl.hinweis && <div style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.5, marginTop: 14 }}>{einl.hinweis}</div>}
-          <div onClick={function(){ geheZu(1); }} style={{ marginTop: 18, textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Mit den Übungen beginnen →</div>
+          <MassnahmenKachel liste={kb.weitereMassnahmen} />
         </div>
       );
     } else {
@@ -1110,10 +1165,6 @@ function NonOpView({ onBack }) {
               <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{u.titel}</div>
             </div>
           </div>
-          <div style={{ marginBottom: 16, padding: "30px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-            <div style={{ fontSize: 28, marginBottom: 6 }}>🖼️</div>
-            <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
-          </div>
           {c.ziel && (
             <div style={{ marginBottom: 16, padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Ziel</div>
@@ -1122,12 +1173,18 @@ function NonOpView({ onBack }) {
           )}
           {c.schritte && c.schritte.length > 0 && (
             <div style={{ marginBottom: 16 }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 10 }}>So geht's</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 12 }}>So geht's</div>
               {c.schritte.map(function(st, i){
                 return (
-                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12 }}>
-                    <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
-                    <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                  <div key={i} style={{ marginBottom: 18 }}>
+                    <div style={{ display: "flex", gap: 12, marginBottom: 8 }}>
+                      <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
+                      <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                    </div>
+                    <div style={{ marginLeft: 38, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+                      <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
+                      <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu Schritt {i + 1} folgt</div>
+                    </div>
                   </div>
                 );
               })}
@@ -1151,10 +1208,15 @@ function NonOpView({ onBack }) {
         items={stepItems} activeIdx={seite}
         onJump={function(i){ geheZu(i); }}
         onPrev={function(){ geheZu(seite - 1); }} onNext={function(){ geheZu(seite + 1); }}
-        canPrev={seite > 0} canNext={seite < gesamtSeiten - 1}>
+        canPrev={seite > 0} canNext={seite < gesamtSeiten - 1} weiterText={seite === 0 ? "Mit den Übungen beginnen →" : "Nächste Übung →"}>
         {inhalt}
       </BlaetterRahmen>
     );
+  }
+
+  // === Vorrang: geöffnete allgemeine Maßnahmen-Seite ===
+  if (massnahmeOffen) {
+    return renderMassnahmeSeite();
   }
 
   // === Modell-Weiche: stufenloses Ampel-Modell (Achillodynie) ===
@@ -1333,12 +1395,18 @@ function NonOpView({ onBack }) {
                             <span>{u.name}</span><span style={{ color: "var(--c-text-muted)" }}>{uOpen ? "▲" : "▼"}</span>
                           </div>
                           {uOpen && (
-                            <ol style={{ margin: 0, padding: "8px 10px 8px 28px" }}>
-                              {u.varianten.map(function(v, j){
-                                var jetzt = v.woche != null && v.woche <= wocheAktuell;
-                                return <li key={j} style={{ marginBottom: 3, color: jetzt ? "var(--c-text)" : "var(--c-text-muted)" }}>{v.text} <span style={{ fontSize: 11, color: jetzt ? "#2E7D32" : "var(--c-text-muted)", fontWeight: jetzt ? 700 : 400 }}>· ab Woche {v.woche}{jetzt ? " ✓" : ""}</span></li>;
-                              })}
-                            </ol>
+                            <div>
+                              <ol style={{ margin: 0, padding: "8px 10px 8px 28px" }}>
+                                {u.varianten.map(function(v, j){
+                                  var jetzt = v.woche != null && v.woche <= wocheAktuell;
+                                  return <li key={j} style={{ marginBottom: 3, color: jetzt ? "var(--c-text)" : "var(--c-text-muted)" }}>{v.text} <span style={{ fontSize: 11, color: jetzt ? "#2E7D32" : "var(--c-text-muted)", fontWeight: jetzt ? 700 : 400 }}>· ab Woche {v.woche}{jetzt ? " ✓" : ""}</span></li>;
+                                })}
+                              </ol>
+                              <div style={{ margin: "0 10px 10px", padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+                                <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
+                                <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
+                              </div>
+                            </div>
                           )}
                         </div>
                       );
@@ -3411,7 +3479,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v1.8 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.3 · Juni 2026</div>
     </div>
   );
 }
