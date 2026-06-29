@@ -855,8 +855,7 @@ function NonOpView({ onBack }) {
                 <div key={it.key} onClick={function(){ onJump(i); }}
                      style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1, gap: 1,
                               background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
-                  {it.emoji && <span style={{ fontSize: 14 }}>{it.emoji}</span>}
-                  <span style={{ fontSize: 12 }}>{it.label}</span>
+                  <span style={{ fontSize: 13 }}>{it.label}</span>
                 </div>
               );
             })}
@@ -970,8 +969,7 @@ function NonOpView({ onBack }) {
             var kb = NONOP_KB[k];
             return (
               <div key={k} onClick={function(){ setKbKey(k); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kb.label}</div>
-                <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>{kb.kontext === "trauma" ? "Nach Verletzung" : "Chronische Beschwerden"}</div>
+                <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{kb.label}</div>
               </div>
             );
           })}
@@ -1045,8 +1043,7 @@ function NonOpView({ onBack }) {
           </div>
         )}
 
-        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
-          <div style={{ fontSize: 34 }}>{s.emoji}</div>
+        <div style={{ marginBottom: 14 }}>
           <div>
             <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5 }}>Stufe {s.stufe} von {stufen.length}{s.optional ? " · optional" : ""}</div>
             <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{s.titel}</div>
@@ -1142,7 +1139,6 @@ function NonOpView({ onBack }) {
             {uebungen.map(function(u, i){
               return (
                 <div key={u.id} onClick={function(){ geheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < uebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
-                  <div style={{ fontSize: 18 }}>{u.emoji}</div>
                   <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{u.nr}.</strong> {u.titel}</div>
                   <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
                 </div>
@@ -1158,8 +1154,7 @@ function NonOpView({ onBack }) {
       var c = NONOP_INHALTE[u.inhalt] || {};
       inhalt = (
         <div>
-          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
-            <div style={{ fontSize: 34 }}>{u.emoji}</div>
+          <div style={{ marginBottom: 14 }}>
             <div>
               <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5 }}>Übung {u.nr} von {uebungen.length}</div>
               <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{u.titel}</div>
@@ -1365,7 +1360,6 @@ function NonOpView({ onBack }) {
         return (
           <div key={s.id} style={{ marginBottom: 12, border: istAktuell ? "2px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)", borderRadius: 10, overflow: "hidden" }}>
             <div onClick={function(){ toggleStufe(s.id); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px", cursor: "pointer", background: istAktuell ? "rgba(44,79,124,.06)" : "var(--c-bg)" }}>
-              <div style={{ fontSize: 22 }}>{s.emoji}</div>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)" }}>Stufe {s.stufe}: {s.titel}{s.optional && <span style={{ fontSize: 10, fontWeight: 600, color: "var(--c-text-muted)", marginLeft: 6 }}>· Sportler</span>}</div>
                 <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{s.zeitfenster}</div>
@@ -3479,7 +3473,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.3 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.6 · Juni 2026</div>
     </div>
   );
 }

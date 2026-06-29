@@ -5,7 +5,7 @@
  },
  "NONOP_KB": {
   "aussenband_konservativ": {
-   "label": "Außenbandverletzung (konservativ)",
+   "label": "Frische Außenbandverletzung OSG",
    "kurzlabel": "Außenband",
    "kontext": "trauma",
    "ankerFrage": "Wann war der Unfall?",
@@ -17,7 +17,7 @@
    "weitereMassnahmen": []
   },
   "achillodynie_midportion": {
-   "label": "Achillodynie – mittlere Form (Mid-Portion)",
+   "label": "Achillodynie nicht-insertional",
    "kurzlabel": "Achillodynie Mid-Portion",
    "kontext": "chronisch",
    "modell": "stufenlos_ampel",
@@ -28,7 +28,7 @@
    "weitereMassnahmen": []
   },
   "achillodynie_insertion": {
-   "label": "Achillodynie – ansatznahe Form (insertionell)",
+   "label": "Achillodynie insertional",
    "kurzlabel": "Achillodynie insertionell",
    "kontext": "chronisch",
    "modell": "stufenlos_ampel",
@@ -39,7 +39,7 @@
    "weitereMassnahmen": []
   },
   "knicksenkfuss": {
-   "label": "Knick-Senk-Fuß (Eigenübungen)",
+   "label": "Knick-Senk-Fuß",
    "kurzlabel": "Knick-Senk-Fuß",
    "kontext": "chronisch",
    "modell": "uebungspaket",
@@ -53,7 +53,7 @@
    ]
   },
   "hallux_valgus": {
-   "label": "Hallux valgus (Eigenübungen)",
+   "label": "Hallux valgus",
    "kurzlabel": "Hallux valgus",
    "kontext": "chronisch",
    "modell": "uebungspaket",
@@ -62,12 +62,48 @@
    "weitereMassnahmen": []
   },
   "plantarfasziitis": {
-   "label": "Plantarfasziitis (Eigenübungen)",
+   "label": "Plantarfasziitis",
    "kurzlabel": "Plantarfasziitis",
    "kontext": "chronisch",
    "modell": "uebungspaket",
    "einleitung": "pf_einleitung",
    "uebungen": "pf_uebungen",
+   "weitereMassnahmen": []
+  },
+  "wadenmuskeldehnung": {
+   "label": "Wadenmuskeldehnung",
+   "kurzlabel": "Wadendehnung",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "waden_einleitung",
+   "uebungen": "waden_uebungen",
+   "weitereMassnahmen": []
+  },
+  "sprunggelenk_instabilitaet": {
+   "label": "Chronische Sprunggelenkinstabilität",
+   "kurzlabel": "SG-Instabilität",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "sgi_einleitung",
+   "uebungen": "sgi_uebungen",
+   "weitereMassnahmen": []
+  },
+  "hallux_rigidus": {
+   "label": "Hallux rigidus (Frühstadium)",
+   "kurzlabel": "Hallux rigidus",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "hr_einleitung",
+   "uebungen": "hr_uebungen",
+   "weitereMassnahmen": []
+  },
+  "sprunggelenk_arthrose": {
+   "label": "Sprunggelenkarthrose",
+   "kurzlabel": "SG-Arthrose",
+   "kontext": "chronisch",
+   "modell": "uebungspaket",
+   "einleitung": "sga_einleitung",
+   "uebungen": "sga_uebungen",
    "weitereMassnahmen": []
   }
  },
@@ -357,7 +393,7 @@
   },
   "ksf_einleitung": {
    "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
-   "text": "Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet — die Sehne des hinteren Schienbeinmuskels (=Tibialis posterior), das Innenband und das Pfannenband (=Spring Ligament) — sowie die Mittel- und Rückfußgelenke. Die Stabilisierung des Fußes entsteht durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\\n\\nWarum aktive Übungen? Eine nicht-operative Therapie mit aktiver Beteiligung ist wirksamer als rein passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können die Beschwerden lindern. Übungen zur Kräftigung der entsprechenden Muskeln und zur Schulung der Tiefenwahrnehmung (=Propriozeption) können Funktion und Beschwerden verbessern — vorausgesetzt, sie werden regelmäßig und dauerhaft durchgeführt.\\n\\nWichtig und ehrlich: Eine echte Korrektur der knöchernen Fehlstellung ist beim ausgewachsenen Fuß nicht zu erwarten. Realistisches Ziel ist eine Verbesserung von Beschwerden und Funktion, nicht eine Begradigung des Fußes. Die Übungen sind besonders wirksam, wenn sie mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren kombiniert werden.",
+   "text": "Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet — die Sehne des hinteren Schienbeinmuskels (=Tibialis posterior), das Innenband und das Pfannenband (=Spring Ligament) — sowie die Mittel- und Rückfußgelenke. Die Stabilisierung des Fußes entsteht durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\n\nWarum aktive Übungen? Eine nicht-operative Therapie mit aktiver Beteiligung ist wirksamer als rein passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können die Beschwerden lindern. Übungen zur Kräftigung der entsprechenden Muskeln und zur Schulung der Tiefenwahrnehmung (=Propriozeption) können Funktion und Beschwerden verbessern — vorausgesetzt, sie werden regelmäßig und dauerhaft durchgeführt.\n\nWichtig und ehrlich: Eine echte Korrektur der knöchernen Fehlstellung ist beim ausgewachsenen Fuß nicht zu erwarten. Realistisches Ziel ist eine Verbesserung von Beschwerden und Funktion, nicht eine Begradigung des Fußes. Die Übungen sind besonders wirksam, wenn sie mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren kombiniert werden.",
    "quellen": [
     "Hoang et al. 2021",
     "Elsayed et al. 2023",
@@ -399,7 +435,7 @@
    ],
    "dosis": "",
    "hinweis": "",
-   "verweis": "Wadenmuskeldehnung (eigenes Kapitel, folgt)"
+   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
   },
   "ksf_u5": {
    "ziel": "Kräftigung der Gesäßmuskulatur (=Glutealmuskulatur). Sie stabilisiert die Beinachse und entlastet so das Fußgewölbe.",
@@ -422,7 +458,7 @@
   },
   "hv_einleitung": {
    "intro": "Beim Hallux valgus (=Schiefstand der Großzehe, „Ballenzeh“) bestehen wie bei jeder chronischen Erkrankung des Bewegungsapparates nicht-operative und operative Optionen. Vor einer Operation sollten alternative Maßnahmen probiert werden.",
-   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung — gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\\n\\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\\n\\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind — ähnlich wie an der Hand — für Feinmotorik und „Griffkraft“ des Fußes zuständig.\\n\\nEhrlich und realistisch: Das Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
+   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung — gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\n\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\n\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind — ähnlich wie an der Hand — für Feinmotorik und „Griffkraft“ des Fußes zuständig.\n\nEhrlich und realistisch: Das Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
    "quellen": [
     "Mortka & Lisiński 2015",
     "Kim et al. 2013",
@@ -501,11 +537,11 @@
    ],
    "dosis": "",
    "hinweis": "",
-   "verweis": "Achillessehnen-/Wadenmuskeldehnung (eigenes Kapitel, folgt)"
+   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
   },
   "pf_einleitung": {
    "intro": "Bei der Plantarfasziitis kommt es zu einer verschleiß- und überlastungsbedingten Schädigung der Plantarfaszie (=bindegewebige Sehnenplatte der Fußsohle) mit häufig erheblichem chronischem Schmerz an der Ferse.",
-   "text": "Ziele der Eigenübungen sind die Dehnung von Plantarfaszie und Wadenmuskulatur, Schmerzlinderung und Entlastung, eine bessere Fußstabilität und Beweglichkeit sowie die Unterstützung des Heilungsverlaufs.\\n\\nDie Übungen sollten mindestens 3–4× pro Woche durchgeführt werden, jeweils etwa 10 Minuten. Die Dehnübungen dürfen durchaus unangenehm ziehend empfunden werden, sollten aber nicht schmerzen. Parallel darf gerne auf natürlichem Boden barfuß gelaufen werden. Bei Bewegung auf harten Böden sind gut gedämpftes Schuhwerk oder Bettungseinlagen sinnvoll.\\n\\nEine Besserung tritt auch bei konsequentem Training erst nach mehreren Wochen auf. Hier bedarf es also Geduld.",
+   "text": "Ziele der Eigenübungen sind die Dehnung von Plantarfaszie und Wadenmuskulatur, Schmerzlinderung und Entlastung, eine bessere Fußstabilität und Beweglichkeit sowie die Unterstützung des Heilungsverlaufs.\n\nDie Übungen sollten mindestens 3–4× pro Woche durchgeführt werden, jeweils etwa 10 Minuten. Die Dehnübungen dürfen durchaus unangenehm ziehend empfunden werden, sollten aber nicht schmerzen. Parallel darf gerne auf natürlichem Boden barfuß gelaufen werden. Bei Bewegung auf harten Böden sind gut gedämpftes Schuhwerk oder Bettungseinlagen sinnvoll.\n\nEine Besserung tritt auch bei konsequentem Training erst nach mehreren Wochen auf. Hier bedarf es also Geduld.",
    "quellen": [
     "Huffer et al. 2017",
     "Boob et al. 2023",
@@ -578,6 +614,183 @@
    ],
    "dosis": "10 Wiederholungen à 5 Sekunden.",
    "hinweis": "Hier bedarf es viel Geduld, da die Muskulatur am Anfang oft nicht gut angesteuert werden kann. Die Übung ist aber sehr effektiv für die Fußgesundheit — investieren Sie ausreichend Zeit."
+  },
+  "waden_einleitung": {
+   "intro": "Die Wadenmuskulatur besteht aus dem zweigelenkigen Zwillingswadenmuskel (=M. gastrocnemius, überspringt Knie und Sprunggelenk) und dem darunterliegenden Schollenmuskel (=M. soleus). Ist die Wade verkürzt, ist das Anheben des Fußes (=Dorsalextension) eingeschränkt.",
+   "text": "Eine verkürzte Wade ist sehr häufig und kann zu Mehrbelastung an Ferse, Fußsohle und Vorfuß beitragen. Sie steht in Zusammenhang mit verschiedenen Fußbeschwerden — unter anderem Plantarfasziitis, Knick-Senk-Fuß und Vorfußüberlastung.\n\nRealistisch und ehrlich: Dehnen verbessert die Beweglichkeit des Sprunggelenks, aber meist nur in kleinem Maß. Es ist ein sinnvoller ergänzender Baustein, keine alleinige Lösung. Der Effekt hält nur an, wenn dauerhaft gedehnt wird.\n\nWichtig ist die Unterscheidung: Mit gestrecktem Knie wird vor allem der Zwillingswadenmuskel gedehnt, mit gebeugtem Knie eher der tiefere Schollenmuskel. Beide Varianten gehören dazu.",
+   "quellen": [
+    "Radford et al. 2006",
+    "Patel & DiGiovanni 2011",
+    "Johanson/Dinh et al. 2010",
+    "Medeiros & Martini 2017"
+   ],
+   "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden — in einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017).",
+   "hinweis": "Die Dehnung darf ziehend, aber nicht schmerzhaft sein. Bei belasteter Dehnung mit Knick-Senk-Fuß das Längsgewölbe schützen (z. B. Einlage). Allgemeine Empfehlung; im Einzelfall ärztlich abklären."
+  },
+  "wd_u1": {
+   "ziel": "Dehnung des zweigelenkigen Zwillingswadenmuskels (=M. gastrocnemius).",
+   "schritte": [
+    "Mit den Händen an einer Wand abstützen.",
+    "Das zu dehnende Bein nach hinten stellen, das vordere Bein beugen.",
+    "Die hintere Ferse bleibt fest am Boden, das hintere Knie bleibt gestreckt.",
+    "Das Becken langsam nach vorne verlagern, bis ein Ziehen in der Wade spürbar ist."
+   ],
+   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen.",
+   "hinweis": "Belastet (im Stand) oder unbelastet ist gleich wirksam — wählen Sie die für Sie angenehmere Variante."
+  },
+  "wd_u2": {
+   "ziel": "Dehnung des tieferen Schollenmuskels (=M. soleus).",
+   "schritte": [
+    "Gleiche Ausgangsposition wie zuvor an der Wand.",
+    "Das hintere Knie diesmal leicht beugen, die Ferse bleibt am Boden.",
+    "Das Gewicht so verlagern, dass ein tiefes Ziehen tiefer in der Wade entsteht."
+   ],
+   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen.",
+   "hinweis": ""
+  },
+  "wd_u3": {
+   "ziel": "Alternative Dehnung über die Stufenkante.",
+   "schritte": [
+    "Mit dem Vorfuß auf eine Stufe oder einen Keil stellen, sich festhalten.",
+    "Die Ferse langsam und kontrolliert absenken, bis ein Ziehen in der Wade entsteht.",
+    "Für den Zwillingswadenmuskel das Knie gestreckt lassen, für den Schollenmuskel leicht beugen."
+   ],
+   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen.",
+   "hinweis": "Bei Knick-Senk-Fuß das Längsgewölbe schützen (z. B. mit einer Einlage oder einem untergelegten Handtuch an der Innenseite)."
+  },
+  "sgi_einleitung": {
+   "intro": "Nach wiederholten Umknickverletzungen kann eine chronische Instabilität (=anhaltendes Unsicherheits- und Wegknickgefühl im Sprunggelenk) entstehen. Häufig bestehen wiederkehrendes Umknicken, ein Gefühl der Unsicherheit und eine Schwellneigung.",
+   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nEhrlich und realistisch: Das Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nDie folgenden Übungen entsprechen dem Stabilitätsprogramm nach frischer Außenbandverletzung und sind als dauerhaftes Training gedacht. Der Schwierigkeitsgrad wird gesteigert, sobald die jeweilige Stufe sicher und schmerzfrei gelingt.",
+   "quellen": [
+    "Hupperets et al. 2008"
+   ],
+   "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll.",
+   "hinweis": "Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten. Bei Schmerzen oder häufigem Wegknicken trotz Training bitte ärztlich vorstellen. Allgemeine Empfehlung; ärztliche Diagnose sollte vorliegen."
+  },
+  "sgi_u1": {
+   "ziel": "Stabilisierung von Sprunggelenk und Beinachse unter Belastung.",
+   "schritte": [
+    "Auf einem Bein stehen und langsam in eine kontrollierte Kniebeuge gehen, ohne dass das Knie nach innen fällt.",
+    "Langsam wieder aufrichten."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung, sobald sicher: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+  },
+  "sgi_u2": {
+   "ziel": "Kräftigung der Wadenmuskulatur und Stabilisierung.",
+   "schritte": [
+    "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung: auf erhöhtem Untergrund mit Festhalten → ohne Festhalten."
+  },
+  "sgi_u3": {
+   "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung (=Propriozeption).",
+   "schritte": [
+    "Auf einem Bein stehen und das Gleichgewicht halten."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+  },
+  "sgi_u4": {
+   "ziel": "Dynamische Balance und Koordination der Hüft-Bein-Achse.",
+   "schritte": [
+    "Im Einbeinstand den Rumpf nach vorne neigen und das freie Bein nach hinten strecken (Standwaage-ähnliche Position), Rücken gerade.",
+    "Kontrolliert in die Ausgangsposition zurückkehren."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+  },
+  "sgi_u5": {
+   "ziel": "Dynamische Stabilität des Sprunggelenks gegen wechselnde Belastung.",
+   "schritte": [
+    "Im Einbeinstand das freie Bein kontrolliert über die Körpermitte zur Gegenseite schwingen und zurück."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung: mit Festhalten → ohne Festhalten → mit geschlossenen Augen → auf einem Wackelbrett."
+  },
+  "sgi_u6": {
+   "ziel": "Kräftigung und Stabilisierung über das Sprunggelenk im Gehen.",
+   "schritte": [
+    "Auf den Zehenspitzen gehen."
+   ],
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "hinweis": "Steigerung: gehend → federnd/springend."
+  },
+  "hr_einleitung": {
+   "intro": "Der Hallux rigidus ist ein Verschleiß (=Arthrose) des Großzehengrundgelenks mit zunehmender Einsteifung und Schmerz beim Abrollen. Im Frühstadium (oft „Hallux limitus“ genannt) ist die Beweglichkeit nur teilweise eingeschränkt.",
+   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen.\n\nEhrlich und realistisch: Die Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
+   "quellen": [
+    "Kunnasegaran & Thevendran 2015",
+    "Brantingham et al. 2009"
+   ],
+   "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose.",
+   "hinweis": "ENTWURF zur ärztlichen Prüfung. Sanft und schmerzarm üben. Bei zunehmender Einsteifung oder starkem Schmerz ärztliche Vorstellung. Allgemeine Empfehlung; ärztliche Diagnose sollte vorliegen."
+  },
+  "hr_u1": {
+   "ziel": "Erhalt der aktiven Beweglichkeit des Großzehengrundgelenks.",
+   "schritte": [
+    "Im Sitzen den Fuß aufstellen.",
+    "Die Großzehe aktiv langsam nach oben (Richtung Schienbein) und nach unten bewegen, soweit es schmerzarm möglich ist."
+   ],
+   "dosis": "10 ruhige Wiederholungen, 2–3× täglich, im schmerzarmen Bereich.",
+   "hinweis": "Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
+  },
+  "hr_u2": {
+   "ziel": "Sanfter Erhalt der Gelenkbeweglichkeit durch geführte Bewegung.",
+   "schritte": [
+    "Mit einer Hand den Mittelfuß stabilisieren.",
+    "Mit der anderen Hand die Großzehe sanft fassen und vorsichtig nach oben und unten führen.",
+    "Optional eine leichte Zugbewegung (Traktion) entlang der Zehe."
+   ],
+   "dosis": "1–2 Minuten, 1–2× täglich, sehr sanft.",
+   "hinweis": "Keine ruckartigen Bewegungen, kein Erzwingen. Bei Schmerzzunahme pausieren."
+  },
+  "hr_u3": {
+   "ziel": "Entlastung des Vorfußes durch Lockerung der Wade.",
+   "schritte": [
+    "Die Durchführung der Wadendehnung ist im eigenen Kapitel beschrieben."
+   ],
+   "dosis": "",
+   "hinweis": "",
+   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
+  },
+  "sga_einleitung": {
+   "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben — zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
+   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab — bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nEhrlich und realistisch: Die wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden — nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
+   "quellen": [
+    "Witteveen et al. 2015 (Cochrane)",
+    "Paterson et al. 2018"
+   ],
+   "evidenz": "Für konservative Maßnahmen bei Sprunggelenkarthrose ist die Evidenz begrenzt; eine Cochrane-Übersicht fand unzureichende Daten und weist darauf hin, dass sich Empfehlungen für Hüft- und Kniearthrose wegen der anderen Entstehung nicht ohne Weiteres übertragen lassen (Witteveen et al. 2015). Übungen werden in der Praxis ergänzend eingesetzt, hochwertige Studien fehlen jedoch weitgehend.",
+   "hinweis": "ENTWURF zur ärztlichen Prüfung. Wegen der sehr unterschiedlichen Ursachen ist die individuelle ärztliche Abklärung entscheidend. Übungen nur im schmerzarmen Bereich. Bei Schmerzzunahme pausieren und ärztlich abklären."
+  },
+  "sga_u1": {
+   "ziel": "Erhalt der verbliebenen Beweglichkeit im schmerzarmen Bereich.",
+   "schritte": [
+    "Im Sitzen den Fuß langsam auf und ab bewegen (Anheben und Absenken).",
+    "Sanfte kreisende Bewegungen des Fußes, soweit schmerzarm möglich."
+   ],
+   "dosis": "Ruhige Wiederholungen über 1–2 Minuten, 1–2× täglich, im schmerzarmen Bereich.",
+   "hinweis": "Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
+  },
+  "sga_u2": {
+   "ziel": "Kräftigung der das Sprunggelenk stabilisierenden Muskulatur.",
+   "schritte": [
+    "Beidbeiniger Zehenspitzenstand: langsam auf die Zehenspitzen und wieder herunter, bei Bedarf am Geländer festhalten.",
+    "Optional sanftes Training gegen ein Theraband in verschiedenen Richtungen."
+   ],
+   "dosis": "Mehrere ruhige Wiederholungen, mehrfach pro Woche.",
+   "hinweis": "Belastung langsam steigern. Bei Schmerzen reduzieren."
+  },
+  "sga_u3": {
+   "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung, besonders bei Instabilitätskomponente.",
+   "schritte": [
+    "Einbeinstand, bei Bedarf mit Festhalten.",
+    "Sicher im Stand das Gleichgewicht halten."
+   ],
+   "dosis": "Mehrere Haltezeiten, mehrfach pro Woche.",
+   "hinweis": "Nur in sicherem Umfeld mit Festhaltemöglichkeit. Steigerung nur, wenn sicher und schmerzarm."
   }
  },
  "NONOP_STUFEN": {
@@ -873,6 +1086,119 @@
     "titel": "Short-Foot-Übung",
     "emoji": "🦵",
     "inhalt": "pf_u7"
+   }
+  ],
+  "waden_uebungen": [
+   {
+    "id": "wd1",
+    "nr": 1,
+    "titel": "Zwillingswadenmuskel dehnen (Knie gestreckt)",
+    "emoji": "",
+    "inhalt": "wd_u1"
+   },
+   {
+    "id": "wd2",
+    "nr": 2,
+    "titel": "Schollenmuskel dehnen (Knie gebeugt)",
+    "emoji": "",
+    "inhalt": "wd_u2"
+   },
+   {
+    "id": "wd3",
+    "nr": 3,
+    "titel": "Dehnung auf einer Stufe",
+    "emoji": "",
+    "inhalt": "wd_u3"
+   }
+  ],
+  "sgi_uebungen": [
+   {
+    "id": "sgi1",
+    "nr": 1,
+    "titel": "Einbeinige Kniebeuge",
+    "emoji": "",
+    "inhalt": "sgi_u1"
+   },
+   {
+    "id": "sgi2",
+    "nr": 2,
+    "titel": "Beidbeiniger Zehenspitzenstand",
+    "emoji": "",
+    "inhalt": "sgi_u2"
+   },
+   {
+    "id": "sgi3",
+    "nr": 3,
+    "titel": "Einbeinstand",
+    "emoji": "",
+    "inhalt": "sgi_u3"
+   },
+   {
+    "id": "sgi4",
+    "nr": 4,
+    "titel": "Läuferpose",
+    "emoji": "",
+    "inhalt": "sgi_u4"
+   },
+   {
+    "id": "sgi5",
+    "nr": 5,
+    "titel": "Überkreuzschwung der Beine",
+    "emoji": "",
+    "inhalt": "sgi_u5"
+   },
+   {
+    "id": "sgi6",
+    "nr": 6,
+    "titel": "Zehenspitzengang",
+    "emoji": "",
+    "inhalt": "sgi_u6"
+   }
+  ],
+  "hr_uebungen": [
+   {
+    "id": "hr1",
+    "nr": 1,
+    "titel": "Beweglichkeit des Großzehengrundgelenks",
+    "emoji": "",
+    "inhalt": "hr_u1"
+   },
+   {
+    "id": "hr2",
+    "nr": 2,
+    "titel": "Sanfte Mobilisation mit der Hand",
+    "emoji": "",
+    "inhalt": "hr_u2"
+   },
+   {
+    "id": "hr3",
+    "nr": 3,
+    "titel": "Dehnung der Wade",
+    "emoji": "",
+    "inhalt": "hr_u3"
+   }
+  ],
+  "sga_uebungen": [
+   {
+    "id": "sga1",
+    "nr": 1,
+    "titel": "Beweglichkeit des Sprunggelenks erhalten",
+    "emoji": "",
+    "inhalt": "sga_u1"
+   },
+   {
+    "id": "sga2",
+    "nr": 2,
+    "titel": "Kräftigung der stabilisierenden Muskulatur",
+    "emoji": "",
+    "inhalt": "sga_u2"
+   },
+   {
+    "id": "sga3",
+    "nr": 3,
+    "titel": "Gleichgewicht und Tiefenwahrnehmung",
+    "emoji": "",
+    "inhalt": "sga_u3"
    }
   ]
  },
