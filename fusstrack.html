@@ -830,6 +830,7 @@ function NonOpView({ onBack }) {
   var [ampelWahl, setAmpelWahl] = useState(persisted && persisted.ampelWahl ? persisted.ampelWahl : null);
   var [seite, setSeite] = useState(0);
   var [massnahmeOffen, setMassnahmeOffen] = useState(null);
+  var [ubAck, setUbAck] = useState(persisted && persisted.ubAck ? persisted.ubAck : {});
 
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
@@ -1120,6 +1121,31 @@ function NonOpView({ onBack }) {
       if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0);
     }
 
+    // Start-Disclaimer: einmalig pro Kapitel, aktive Kenntnisnahme vor der ersten Übung
+    if (seite >= 1 && !ubAck[kbKey]) {
+      function ackKapitel() {
+        var next = Object.assign({}, ubAck);
+        next[kbKey] = true;
+        setUbAck(next);
+        var cur = nonopLoad() || {};
+        cur.ubAck = next;
+        nonopSave(cur);
+      }
+      return (
+        <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+          <ZurueckLeiste onBack={function(){ setSeite(0); }} titel={kb.label} />
+          <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
+            <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>Bitte zuerst lesen und bestätigen</div>
+            <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>Die Diagnose und die Freigabe des Trainings müssen ärztlich erfolgen. Die folgenden Übungen und Hinweise entsprechen einem allgemeinen Schema — Ihr Einzelfall kann davon abweichen. Bitte üben Sie nur nach ärztlicher Rücksprache und im schmerzarmen Bereich.</div>
+            <div onClick={ackKapitel}
+                 style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
+              ✓ Verstanden und zur Kenntnis genommen
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr), emoji: u.emoji }; }));
 
     var inhalt;
@@ -1163,7 +1189,7 @@ function NonOpView({ onBack }) {
           {c.ziel && (
             <div style={{ marginBottom: 16, padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Ziel</div>
-              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6 }}>{c.ziel}</div>
+              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, whiteSpace: "pre-line" }}>{c.ziel}</div>
             </div>
           )}
           {c.schritte && c.schritte.length > 0 && (
@@ -1193,7 +1219,6 @@ function NonOpView({ onBack }) {
             </div>
           )}
           {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
-          <div style={{ marginTop: 18, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
         </div>
       );
     }
@@ -3473,7 +3498,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.6 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.7 · Juni 2026</div>
     </div>
   );
 }
