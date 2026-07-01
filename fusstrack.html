@@ -457,7 +457,8 @@ async function loadKatalogData() {
 // (z.B. OSG-Arthrodese und OSG-Prothese -> gemeinsame OSG-Arthrose-Aufklärung).
 // Das hält den Brief-Generator einfach: er nutzt immer die Begleit-Modus-Keys.
 const AUFKLAERUNG_OP_MAP = {
-  chevron:        "chevron",
+  chevron:        "chevron_akin",
+  chevron_akin:   "chevron_akin",
   osg_arthrodese: "osg_arthrose",
   arthrodese_osg: "osg_arthrose",
   osg_tep:        "osg_arthrose",
@@ -843,6 +844,34 @@ function NonOpView({ onBack }) {
     );
   }
 
+  // Einheitlicher Start-Disclaimer (gleich in allen Modellen): einmalig pro Kapitel, aktive Kenntnisnahme
+  var DISCLAIMER_TITEL = "Bitte zuerst lesen und bestätigen";
+  var DISCLAIMER_TEXT = "Die Diagnose und die Freigabe des Trainings müssen ärztlich erfolgen. Die folgenden Übungen und Hinweise entsprechen einem allgemeinen Schema — Ihr Einzelfall kann davon abweichen. Bitte üben Sie nur nach ärztlicher Rücksprache und im schmerzarmen Bereich.";
+  var DISCLAIMER_BTN = "✓ Verstanden und zur Kenntnis genommen";
+  function ackKapitel(k) {
+    var next = Object.assign({}, ubAck);
+    next[k] = true;
+    setUbAck(next);
+    var cur = nonopLoad() || {};
+    cur.ubAck = next;
+    nonopSave(cur);
+  }
+  function DisclaimerGate({ titel, onBack, onConfirm }) {
+    return (
+      <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <ZurueckLeiste onBack={onBack} titel={titel} />
+        <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
+          <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{DISCLAIMER_TITEL}</div>
+          <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{DISCLAIMER_TEXT}</div>
+          <div onClick={onConfirm}
+               style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
+            {DISCLAIMER_BTN}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Gemeinsamer Seiten-Rahmen: volle Breite, Stepper oben, Tap-Spalten links/rechts
   function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, weiterText, children }) {
     return (
@@ -933,13 +962,13 @@ function NonOpView({ onBack }) {
 
 
   function persist(extra) {
-    var base = { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks };
+    var base = { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks, ubAck: ubAck };
     nonopSave(Object.assign(base, extra || {}));
   }
   function start(sportler) {
     var dd = tempDatum || todayIso();
     setUnfallDatum(dd); setZeigeSportler(sportler);
-    nonopSave({ kbKey: kbKey, unfallDatum: dd, zeigeSportler: sportler, checks: checks });
+    nonopSave({ kbKey: kbKey, unfallDatum: dd, zeigeSportler: sportler, checks: checks, ubAck: ubAck });
   }
   function reset() {
     setUnfallDatum(null); setKbKey(null); setOffen({}); setZeigeSportler(false); setChecks({});
@@ -953,7 +982,7 @@ function NonOpView({ onBack }) {
       var arr = (n[sid] || []).slice();
       arr[i] = !arr[i];
       n[sid] = arr;
-      nonopSave({ kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: n });
+      nonopSave({ kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: n, ubAck: ubAck });
       return n;
     });
   }
@@ -969,7 +998,7 @@ function NonOpView({ onBack }) {
           {kbListe.map(function(k) {
             var kb = NONOP_KB[k];
             return (
-              <div key={k} onClick={function(){ setKbKey(k); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+              <div key={k} onClick={function(){ setKbKey(k); setSeite(0); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                 <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{kb.label}</div>
               </div>
             );
@@ -990,11 +1019,11 @@ function NonOpView({ onBack }) {
     var ampelStufen = ampel.stufen || [];
 
     function persistAmpel(extra) {
-      var base = { kbKey: kbKey, gateOk: gateOk, stufeAktuell: stufeAktuell, ampelWahl: ampelWahl };
+      var base = { kbKey: kbKey, gateOk: gateOk, stufeAktuell: stufeAktuell, ampelWahl: ampelWahl, ubAck: ubAck };
       nonopSave(Object.assign(base, extra || {}));
     }
     function resetAchillo() {
-      setKbKey(null); setGateOk(false); setStufeAktuell(1); setAmpelWahl(null);
+      setKbKey(null); setGateOk(false); setStufeAktuell(1); setAmpelWahl(null); setUbAck({});
       nonopClear();
     }
     function setStufe(n) {
@@ -1008,21 +1037,9 @@ function NonOpView({ onBack }) {
       persistAmpel({ ampelWahl: farbe });
     }
 
-    // --- Pflicht-Gate ---
-    if (!gateOk) {
-      return (
-        <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-          <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
-          <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{gate.titel}</div>
-            <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{gate.text}</div>
-            <div onClick={function(){ setGateOk(true); persistAmpel({ gateOk: true }); }}
-                 style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
-              ✓ {gate.bestaetigung}
-            </div>
-          </div>
-        </div>
-      );
+    // --- Pflicht-Gate (einheitlicher Start-Disclaimer, einmalig pro Kapitel) ---
+    if (!ubAck[kbKey]) {
+      return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
     var s = stufen[stufeAktuell - 1] || stufen[0];
@@ -1052,9 +1069,9 @@ function NonOpView({ onBack }) {
         </div>
 
         {c.was && (
-          <div style={{ marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.65 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Übung</div>
-            {c.was}
+          <div style={{ marginBottom: 14 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Übung</div>
+            <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.was}</div>
           </div>
         )}
 
@@ -1064,9 +1081,9 @@ function NonOpView({ onBack }) {
         </div>
 
         {c.dosis && (
-          <div style={{ marginBottom: 14, padding: "12px 14px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Dosierung</div>
-            <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.5 }}>{c.dosis}</div>
+          <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+            <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
           </div>
         )}
         {c.hinweis && <div style={{ marginBottom: 18, fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
@@ -1104,7 +1121,6 @@ function NonOpView({ onBack }) {
         <MassnahmenKachel liste={kb.weitereMassnahmen} />
 
         <div onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8, marginTop: 14 }}>Programm zurücksetzen</div>
-        <div style={{ fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
       </BlaetterRahmen>
     );
   }
@@ -1123,27 +1139,7 @@ function NonOpView({ onBack }) {
 
     // Start-Disclaimer: einmalig pro Kapitel, aktive Kenntnisnahme vor der ersten Übung
     if (seite >= 1 && !ubAck[kbKey]) {
-      function ackKapitel() {
-        var next = Object.assign({}, ubAck);
-        next[kbKey] = true;
-        setUbAck(next);
-        var cur = nonopLoad() || {};
-        cur.ubAck = next;
-        nonopSave(cur);
-      }
-      return (
-        <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-          <ZurueckLeiste onBack={function(){ setSeite(0); }} titel={kb.label} />
-          <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>Bitte zuerst lesen und bestätigen</div>
-            <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>Die Diagnose und die Freigabe des Trainings müssen ärztlich erfolgen. Die folgenden Übungen und Hinweise entsprechen einem allgemeinen Schema — Ihr Einzelfall kann davon abweichen. Bitte üben Sie nur nach ärztlicher Rücksprache und im schmerzarmen Bereich.</div>
-            <div onClick={ackKapitel}
-                 style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
-              ✓ Verstanden und zur Kenntnis genommen
-            </div>
-          </div>
-        </div>
-      );
+      return <DisclaimerGate titel={kb.label} onBack={function(){ setSeite(0); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
     var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr), emoji: u.emoji }; }));
@@ -1157,7 +1153,7 @@ function NonOpView({ onBack }) {
           {einl.evidenz && (
             <div style={{ padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)", marginBottom: 16 }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 5 }}>Was die Studienlage zeigt</div>
-              <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.6 }}>{einl.evidenz}</div>
+              <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{einl.evidenz}</div>
             </div>
           )}
           <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
@@ -1187,9 +1183,9 @@ function NonOpView({ onBack }) {
             </div>
           </div>
           {c.ziel && (
-            <div style={{ marginBottom: 16, padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Ziel</div>
-              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, whiteSpace: "pre-line" }}>{c.ziel}</div>
+            <div style={{ marginBottom: 16, padding: "14px 16px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Ziel</div>
+              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.ziel}</div>
             </div>
           )}
           {c.schritte && c.schritte.length > 0 && (
@@ -1213,9 +1209,9 @@ function NonOpView({ onBack }) {
           )}
           {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>🔗 {c.verweis}</div>}
           {c.dosis && (
-            <div style={{ marginBottom: 14, padding: "12px 14px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>Dosierung</div>
-              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.5 }}>{c.dosis}</div>
+            <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+              <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
             </div>
           )}
           {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
@@ -1249,6 +1245,11 @@ function NonOpView({ onBack }) {
     return renderUebungspaket();
   }
 
+  // --- Start-Disclaimer (einheitlich, einmalig pro Kapitel) vor dem Zeitanker-Pfad ---
+  if (!ubAck[kbKey]) {
+    return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
+  }
+
   // --- Einleitung + Startdatum + Sportler-Frage (B1, B6) ---
   if (!unfallDatum) {
     return (
@@ -1262,7 +1263,7 @@ function NonOpView({ onBack }) {
           return (
             <div style={{ marginBottom: 18, padding: "14px 16px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
               <div style={{ fontSize: 14, fontWeight: 700, color: "#92670A", marginBottom: 8 }}>⚠️ {ab.titel}</div>
-              {ab.intro && <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 8 }}>{ab.intro}</div>}
+              {ab.intro && <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 10, whiteSpace: "pre-line" }}>{ab.intro}</div>}
               {ab.aufforderung && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", marginBottom: 6 }}>{ab.aufforderung}</div>}
               {ab.kriterien && <ul style={{ margin: "0 0 8px", paddingLeft: 20, fontSize: 13, color: "var(--c-text)", lineHeight: 1.5 }}>{ab.kriterien.map(function(x, i){ return <li key={i} style={{ marginBottom: 3 }}>{x}</li>; })}</ul>}
               {ab.warnzeichen && <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.5, marginBottom: 8 }}>{ab.warnzeichen}</div>}
@@ -1283,10 +1284,11 @@ function NonOpView({ onBack }) {
             <div onClick={function(){ setTempDatum(todayIso()); }} style={{ padding: "10px 14px", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap", display: "flex", alignItems: "center" }}>Heute</div>
           </div>
           <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 14 }}>Die Belastungsstufen und Übungen richten sich nach dem Unfalltag. Idealerweise starten Sie direkt heute.</div>
-          <div style={{ fontSize: 13, fontWeight: 700, color: "var(--c-text)", marginBottom: 8 }}>Planen Sie die Rückkehr zu Sport oder sportlicher Aktivität?</div>
+          <div style={{ fontSize: 13, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Soll das Programm auch eine strukturierte Rückkehr in den ambitionierten Sport enthalten?</div>
+          <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 10 }}>Zusätzlich zu den Grundstufen 1–3 ergänzt dies die aufbauenden Stufen 4 & 5 (Rückkehr zu Training und Wettkampf). Für die meisten Alltags- und Freizeitaktivitäten sind die Stufen 1–3 ausreichend.</div>
           <div style={{ display: "flex", gap: 8 }}>
-            <div onClick={function(){ start(true); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Ja, mit Sport</div>
-            <div onClick={function(){ start(false); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "#fff", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Nein, Alltag</div>
+            <div onClick={function(){ start(true); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Ja, mit Sport-Aufbau</div>
+            <div onClick={function(){ start(false); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "#fff", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Grundstufen genügen</div>
           </div>
           <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8, textAlign: "center" }}>Die Sportler-Stufen 4 & 5 lassen sich später jederzeit ein- und ausblenden.</div>
         </div>
@@ -1299,12 +1301,11 @@ function NonOpView({ onBack }) {
   var wocheAktuell = Math.floor(tageSeitUnfall / 7) + 1;
   var aktuelleStufe = 1;
   stufen.forEach(function(s){ if (!s.optional && s.tagOffset <= tageSeitUnfall && s.stufe > aktuelleStufe) aktuelleStufe = s.stufe; });
+  var gesamtStufen = zeigeSportler ? stufen.length : stufen.filter(function(s){ return !s.optional; }).length;
 
-  // B2: aktuelle Stufe einmalig automatisch aufklappen
+  // B2: Stufen starten eingeklappt (bessere Übersicht); Patient klappt selbst auf
   if (!initExpanded) {
-    var initObj = {};
-    stufen.forEach(function(s){ if (s.stufe === aktuelleStufe) initObj[s.id] = true; });
-    setOffen(initObj); setInitExpanded(true);
+    setOffen({}); setInitExpanded(true);
   }
 
   // B3: "Diese Woche dran" - aktuelle Übungsvarianten aus Stufe 3
@@ -1345,121 +1346,168 @@ function NonOpView({ onBack }) {
     );
   }
 
-  return (
-    <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-      <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
+  // sichtbare Stufen (Sportler-Stufen optional)
+  var sichtbareStufen = stufen.filter(function(s){ return !(s.optional && !zeigeSportler); });
 
-      {/* B4: Fortschritt */}
-      <div style={{ marginBottom: 6, display: "flex", justifyContent: "space-between", fontSize: 11, color: "var(--c-text-muted)" }}>
-        <span>Unfalltag: {formatDateGerman(unfallDatum)}</span>
-        <span>Woche {wocheAktuell} von 52 · Stufe {aktuelleStufe}</span>
-      </div>
-      <div style={{ height: 7, borderRadius: 4, background: "rgba(0,0,0,.07)", overflow: "hidden", marginBottom: 14 }}>
-        <div style={{ height: "100%", width: Math.min(wocheAktuell / 52 * 100, 100) + "%", background: "var(--c-main)" }}></div>
-      </div>
+  // ===== Übersichtsseite (seite 0) =====
+  if (seite === 0) {
+    return (
+      <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
 
-      {/* B3: Diese Woche dran */}
-      {tagesfokus.length > 0 && (
-        <div style={{ marginBottom: 16, padding: "14px 16px", border: "1px solid var(--c-main)", borderRadius: 10, background: "rgba(44,79,124,.05)" }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>🎯 Diese Woche dran (Stufe 3)</div>
-          {tagesfokus.map(function(t, i){
-            return (
-              <div key={i} style={{ fontSize: 13, color: "var(--c-text)", padding: "3px 0", lineHeight: 1.4 }}>
-                <strong>{t.name}:</strong> {t.text}
-                {t.neu && <span style={{ marginLeft: 6, fontSize: 9, fontWeight: 700, color: "#fff", background: "#2E7D32", padding: "1px 6px", borderRadius: 8 }}>NEU</span>}
-              </div>
-            );
-          })}
-          <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8, lineHeight: 1.4 }}>Ziel: 3 Einheiten/Woche à 30 Minuten. Steigern nur, wenn schmerzfrei und sicher.</div>
+        <div style={{ marginBottom: 16, padding: "14px 16px", background: "rgba(44,79,124,.06)", borderRadius: 10 }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 10 }}>Ihr Heilungsverlauf</div>
+          <div style={{ display: "flex", gap: 22, marginBottom: 12 }}>
+            <div>
+              <div style={{ fontSize: 23, fontWeight: 800, color: "var(--c-main)", lineHeight: 1 }}>Stufe {aktuelleStufe}<span style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)" }}> / {gesamtStufen}</span></div>
+              <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 4 }}>aktuelle Stufe</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 23, fontWeight: 800, color: "var(--c-main)", lineHeight: 1 }}>Woche {wocheAktuell}<span style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)" }}> / 52</span></div>
+              <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 4 }}>seit dem Unfall</div>
+            </div>
+          </div>
+          <div style={{ height: 7, borderRadius: 4, background: "rgba(0,0,0,.08)", overflow: "hidden" }}>
+            <div style={{ height: "100%", width: Math.min(wocheAktuell / 52 * 100, 100) + "%", background: "var(--c-main)" }}></div>
+          </div>
+          <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8 }}>Unfalltag: {formatDateGerman(unfallDatum)} · Das Programm begleitet Sie über das erste Jahr.</div>
         </div>
-      )}
 
-      <div onClick={reset} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 14 }}>Unfalldatum ändern / zurücksetzen</div>
+        {tagesfokus.length > 0 && (
+          <div style={{ marginBottom: 16, padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10 }}>
+            <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Diese Woche dran</div>
+            {tagesfokus.map(function(t, i){
+              return (
+                <div key={i} style={{ fontSize: 13, color: "var(--c-text)", padding: "3px 0", lineHeight: 1.4 }}>
+                  <strong>{t.name}:</strong> {t.text}
+                  {t.neu && <span style={{ marginLeft: 6, fontSize: 9, fontWeight: 700, color: "#fff", background: "#2E7D32", padding: "1px 6px", borderRadius: 8 }}>NEU</span>}
+                </div>
+              );
+            })}
+            <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8, lineHeight: 1.4 }}>Ziel: 3 Einheiten/Woche à 30 Minuten. Steigern nur, wenn schmerzfrei und sicher.</div>
+          </div>
+        )}
 
-      {stufen.map(function(s){
-        if (s.optional && !zeigeSportler) return null;
-        var c = NONOP_INHALTE[s.inhalt] || {};
-        var istAktuell = s.stufe === aktuelleStufe;
-        var freigeschaltet = s.tagOffset <= tageSeitUnfall;
-        var isOpen = !!offen[s.id];
-        return (
-          <div key={s.id} style={{ marginBottom: 12, border: istAktuell ? "2px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)", borderRadius: 10, overflow: "hidden" }}>
-            <div onClick={function(){ toggleStufe(s.id); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px", cursor: "pointer", background: istAktuell ? "rgba(44,79,124,.06)" : "var(--c-bg)" }}>
+        <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Die {gesamtStufen} Stufen Ihres Verlaufs</div>
+        {sichtbareStufen.map(function(s, i){
+          var istAktuell = s.stufe === aktuelleStufe;
+          var faellig = s.tagOffset <= tageSeitUnfall;
+          return (
+            <div key={s.id} onClick={function(){ setSeite(i + 1); window.scrollTo(0, 0); }}
+                 style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10, padding: "12px 14px", cursor: "pointer", borderRadius: 10, border: istAktuell ? "2px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)", background: istAktuell ? "rgba(44,79,124,.06)" : "#fff" }}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)" }}>Stufe {s.stufe}: {s.titel}{s.optional && <span style={{ fontSize: 10, fontWeight: 600, color: "var(--c-text-muted)", marginLeft: 6 }}>· Sportler</span>}</div>
                 <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{s.zeitfenster}</div>
               </div>
               {istAktuell && <span style={{ fontSize: 10, fontWeight: 700, color: "#fff", background: "var(--c-main)", padding: "2px 8px", borderRadius: 10 }}>AKTUELL</span>}
-              {!freigeschaltet && !istAktuell && <span style={{ fontSize: 13, color: "var(--c-text-muted)" }}>🔒</span>}
-              <span style={{ fontSize: 12, color: "var(--c-text-muted)" }}>{isOpen ? "▲" : "▼"}</span>
+              {!faellig && !istAktuell && <span style={{ fontSize: 10, fontWeight: 600, color: "#92670A", background: "rgba(245,158,11,.12)", padding: "2px 8px", borderRadius: 10 }}>später</span>}
+              <span style={{ fontSize: 16, color: "var(--c-text-muted)" }}>›</span>
             </div>
-            {isOpen && (
-              <div style={{ padding: "14px 16px", fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6 }}>
-                {c.ziel && <div style={{ marginBottom: 10 }}><strong>Ziel:</strong> {c.ziel}</div>}
-                {c.ruhigstellung && <div style={{ marginBottom: 10 }}><strong>Ruhigstellung:</strong> {c.ruhigstellung}</div>}
-                {c.text && <div style={{ marginBottom: 10, whiteSpace: "pre-line" }}>{c.text}</div>}
-                {c.massnahmen && <div style={{ marginBottom: 10 }}><strong>Maßnahmen:</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{c.massnahmen.map(function(x, i){ return <li key={i} style={{ marginBottom: 3 }}>{x}</li>; })}</ul></div>}
-                {c.massnahmen_erweitert && <div style={{ marginBottom: 10 }}><strong>{c.massnahmen_erweitert_titel || "Weitere Maßnahmen:"}</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{c.massnahmen_erweitert.map(function(x, i){ return <li key={i} style={{ marginBottom: 3 }}>{x}</li>; })}</ul></div>}
-                {c.steigerung_hinweis && <div style={{ marginBottom: 10, fontStyle: "italic", color: "var(--c-text-muted)" }}>{c.steigerung_hinweis}</div>}
-                {/* B7: Übungen einklappbar */}
-                {c.uebungen && (
-                  <div style={{ marginBottom: 10 }}>
-                    <strong>Langzeitübungen (Steigerung ab Unfalltag):</strong>
-                    {c.uebungen.map(function(u, i){
-                      var uid = s.id + "_u" + i;
-                      var uOpen = !!uebungOffen[uid];
-                      return (
-                        <div key={i} style={{ marginTop: 8, border: "1px solid rgba(0,0,0,.08)", borderRadius: 6, overflow: "hidden" }}>
-                          <div onClick={function(){ toggleUebung(uid); }} style={{ padding: "8px 10px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}>
-                            <span>{u.name}</span><span style={{ color: "var(--c-text-muted)" }}>{uOpen ? "▲" : "▼"}</span>
-                          </div>
-                          {uOpen && (
-                            <div>
-                              <ol style={{ margin: 0, padding: "8px 10px 8px 28px" }}>
-                                {u.varianten.map(function(v, j){
-                                  var jetzt = v.woche != null && v.woche <= wocheAktuell;
-                                  return <li key={j} style={{ marginBottom: 3, color: jetzt ? "var(--c-text)" : "var(--c-text-muted)" }}>{v.text} <span style={{ fontSize: 11, color: jetzt ? "#2E7D32" : "var(--c-text-muted)", fontWeight: jetzt ? 700 : 400 }}>· ab Woche {v.woche}{jetzt ? " ✓" : ""}</span></li>;
-                                })}
-                              </ol>
-                              <div style={{ margin: "0 10px 10px", padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                                <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
-                                <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
+          );
+        })}
+
+        <div onClick={function(){ var nv = !zeigeSportler; setZeigeSportler(nv); persist({ zeigeSportler: nv }); }} style={{ marginTop: 6, textAlign: "center", padding: "10px", border: "1px dashed rgba(0,0,0,.18)", borderRadius: 8, fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)", cursor: "pointer" }}>
+          {zeigeSportler ? "Sportler-Stufen (4 & 5) ausblenden" : "Sportler-Stufen (4 & 5) einblenden"}
+        </div>
+        <div onClick={reset} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginTop: 14, textAlign: "center" }}>Unfalldatum ändern / zurücksetzen</div>
+      </div>
+    );
+  }
+
+  // ===== Stufenseite (seite >= 1) =====
+  var stIdx = Math.min(seite - 1, sichtbareStufen.length - 1);
+  var sAkt = sichtbareStufen[stIdx];
+  var cAkt = NONOP_INHALTE[sAkt.inhalt] || {};
+  var faelligAkt = sAkt.tagOffset <= tageSeitUnfall;
+  var istAktuellAkt = sAkt.stufe === aktuelleStufe;
+  var stepItems = [{ key: "ueb", label: "Übersicht", wide: true }].concat(sichtbareStufen.map(function(s){ return { key: s.id, label: String(s.stufe) }; }));
+  var hatUebungen = cAkt.uebungen && cAkt.uebungen.length;
+  var stufenMedien = (cAkt.medien && cAkt.medien.length) ? cAkt.medien : (hatUebungen ? [] : [{}]);
+
+  return (
+    <BlaetterRahmen titel={kb.label} onBack={function(){ setSeite(0); window.scrollTo(0, 0); }}
+      items={stepItems} activeIdx={seite}
+      onJump={function(i){ setSeite(i); window.scrollTo(0, 0); }}
+      onPrev={function(){ setSeite(seite - 1); window.scrollTo(0, 0); }}
+      onNext={function(){ setSeite(Math.min(sichtbareStufen.length, seite + 1)); window.scrollTo(0, 0); }}
+      canPrev={true} canNext={seite < sichtbareStufen.length}
+      weiterText={seite < sichtbareStufen.length ? "Nächste Stufe →" : null}>
+
+      <div style={{ marginBottom: 14 }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5 }}>Stufe {sAkt.stufe} von {gesamtStufen}</div>
+        <div style={{ fontSize: 19, fontWeight: 800, color: "var(--c-main)", lineHeight: 1.2, marginTop: 2 }}>{sAkt.titel}</div>
+        <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", marginTop: 3 }}>{sAkt.zeitfenster}</div>
+        {istAktuellAkt && <div style={{ display: "inline-block", marginTop: 8, fontSize: 11, fontWeight: 700, color: "#fff", background: "var(--c-main)", padding: "3px 10px", borderRadius: 10 }}>Aktuell dran</div>}
+        {!faelligAkt && !istAktuellAkt && <div style={{ marginTop: 8, padding: "8px 12px", borderRadius: 8, background: "rgba(245,158,11,.10)", border: "1px solid #C99A06", fontSize: 12, color: "#92670A", lineHeight: 1.45 }}>Diese Stufe ist noch nicht an der Reihe ({sAkt.zeitfenster}). Sie können sich die Inhalte aber schon jetzt ansehen.</div>}
+      </div>
+
+      <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6 }}>
+        {cAkt.ziel && <div style={{ marginBottom: 12, padding: "14px 16px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}><div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Ziel</div><div style={{ whiteSpace: "pre-line", lineHeight: 1.65 }}>{cAkt.ziel}</div></div>}
+        {cAkt.ruhigstellung && <div style={{ marginBottom: 12 }}><strong>Ruhigstellung:</strong> {cAkt.ruhigstellung}</div>}
+        {cAkt.text && <div style={{ marginBottom: 12, whiteSpace: "pre-line" }}>{cAkt.text}</div>}
+        {cAkt.massnahmen && <div style={{ marginBottom: 12 }}><strong>Maßnahmen:</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{cAkt.massnahmen.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}</ul></div>}
+        {cAkt.massnahmen_erweitert && <div style={{ marginBottom: 12 }}><strong>{cAkt.massnahmen_erweitert_titel || "Weitere Maßnahmen:"}</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{cAkt.massnahmen_erweitert.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}</ul></div>}
+        {cAkt.steigerung_hinweis && <div style={{ marginBottom: 12, fontStyle: "italic", color: "var(--c-text-muted)" }}>{cAkt.steigerung_hinweis}</div>}
+
+        {cAkt.uebungen && (
+          <div style={{ marginBottom: 12 }}>
+            <div style={{ fontWeight: 700, marginBottom: 6 }}>Übungen (Steigerung im Verlauf):</div>
+            {cAkt.uebungen.map(function(u, i){
+              var uid = sAkt.id + "_u" + i;
+              var uOpen = !!uebungOffen[uid];
+              return (
+                <div key={i} style={{ marginTop: 8, border: "1px solid rgba(0,0,0,.08)", borderRadius: 6, overflow: "hidden" }}>
+                  <div onClick={function(){ toggleUebung(uid); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}>
+                    <span>{u.name}</span><span style={{ color: "var(--c-text-muted)" }}>{uOpen ? "▲" : "▼"}</span>
                   </div>
-                )}
-                {c.voraussetzungen && <div style={{ marginBottom: 10 }}><strong>{c.voraussetzungen_titel || "Voraussetzungen:"}</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{c.voraussetzungen.map(function(x, i){ return <li key={i} style={{ marginBottom: 3 }}>{x}</li>; })}</ul></div>}
-                {c.testbatterie && (
-                  <div style={{ marginBottom: 10, border: "1px solid rgba(0,0,0,.10)", borderRadius: 8, overflow: "hidden" }}>
-                    <div onClick={function(){ setTbOffen(!tbOffen); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}><span>{c.testbatterie.titel}</span><span>{tbOffen ? "▲" : "▼"}</span></div>
-                    {tbOffen && (
-                      <div style={{ padding: "12px 14px" }}>
-                        <div style={{ marginBottom: 10 }}>{c.testbatterie.intro}</div>
-                        {c.testbatterie.bereiche.map(function(b, i){ return <div key={i} style={{ marginBottom: 10 }}><strong>{b.name}:</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{b.punkte.map(function(p, j){ return <li key={j} style={{ marginBottom: 4 }}>{p}</li>; })}</ul></div>; })}
-                        <div style={{ fontStyle: "italic", color: "var(--c-text-muted)" }}>{c.testbatterie.psychologisch}</div>
+                  {uOpen && (
+                    <div>
+                      <ol style={{ margin: 0, padding: "10px 12px 8px 28px" }}>
+                        {u.varianten.map(function(v, j){
+                          var jetzt = v.woche != null && v.woche <= wocheAktuell;
+                          return <li key={j} style={{ marginBottom: 4, lineHeight: 1.5, color: jetzt ? "var(--c-text)" : "var(--c-text-muted)" }}>{v.text} <span style={{ fontSize: 11, color: jetzt ? "#2E7D32" : "var(--c-text-muted)", fontWeight: jetzt ? 700 : 400 }}>· ab Woche {v.woche}{jetzt ? " \u2713" : ""}</span></li>;
+                        })}
+                      </ol>
+                      <div style={{ margin: "0 12px 12px", padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+                        <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
+                        <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu „{u.name}“ folgt</div>
                       </div>
-                    )}
-                  </div>
-                )}
-                {/* B5: Checkliste + Ampel */}
-                {c.kriterien && c.kriterien.length > 0 && <Ampel sid={s.id} kriterien={c.kriterien} />}
-                {c.steigerung && !c.kriterien && <div style={{ marginTop: 10, padding: "10px 12px", background: "rgba(44,79,124,.06)", borderRadius: 6, fontSize: 13 }}><strong>➡️ Weiter zur nächsten Stufe:</strong> {c.steigerung}</div>}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {cAkt.voraussetzungen && <div style={{ marginBottom: 12 }}><strong>{cAkt.voraussetzungen_titel || "Voraussetzungen:"}</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{cAkt.voraussetzungen.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}</ul></div>}
+
+        {cAkt.testbatterie && (
+          <div style={{ marginBottom: 12, border: "1px solid rgba(0,0,0,.10)", borderRadius: 8, overflow: "hidden" }}>
+            <div onClick={function(){ setTbOffen(!tbOffen); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}><span>{cAkt.testbatterie.titel}</span><span>{tbOffen ? "▲" : "▼"}</span></div>
+            {tbOffen && (
+              <div style={{ padding: "12px 14px" }}>
+                <div style={{ marginBottom: 10 }}>{cAkt.testbatterie.intro}</div>
+                {cAkt.testbatterie.bereiche.map(function(b, i){ return <div key={i} style={{ marginBottom: 10 }}><strong>{b.name}:</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{b.punkte.map(function(p, j){ return <li key={j} style={{ marginBottom: 4 }}>{p}</li>; })}</ul></div>; })}
+                <div style={{ fontStyle: "italic", color: "var(--c-text-muted)" }}>{cAkt.testbatterie.psychologisch}</div>
               </div>
             )}
           </div>
-        );
-      })}
+        )}
 
-      <div onClick={function(){ var nv = !zeigeSportler; setZeigeSportler(nv); persist({ zeigeSportler: nv }); }} style={{ marginTop: 6, textAlign: "center", padding: "10px", border: "1px dashed rgba(0,0,0,.18)", borderRadius: 8, fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)", cursor: "pointer" }}>
-        {zeigeSportler ? "Sportler-Stufen (4 & 5) ausblenden" : "Sportler-Stufen (4 & 5) einblenden"}
+        {stufenMedien.map(function(m, i){
+          return (
+            <div key={i} style={{ marginBottom: 12, padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
+              <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
+              <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{m.titel ? ("Bild / Video: " + m.titel) : "Bild / Video folgt"}</div>
+            </div>
+          );
+        })}
+
+        {cAkt.kriterien && cAkt.kriterien.length > 0 && <Ampel sid={sAkt.id} kriterien={cAkt.kriterien} />}
+        {cAkt.steigerung && !cAkt.kriterien && <div style={{ marginTop: 12, padding: "12px 14px", background: "rgba(44,79,124,.06)", borderRadius: 8, fontSize: 13 }}><strong>Weiter zur nächsten Stufe:</strong> {cAkt.steigerung}</div>}
       </div>
-
-      <div style={{ marginTop: 14, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden.</div>
-    </div>
+    </BlaetterRahmen>
   );
 }
 
@@ -1618,7 +1666,7 @@ function LandingView({ initialKbKey }) {
                   <div style={{ fontSize: 20, lineHeight: 1, marginTop: 2 }}>{aktiveKat.icon}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 3 }}>{titel}</div>
-                    {e.daten.untertitel && (
+                    {e.daten.untertitel && infoKat !== "op_technik" && (
                       <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45 }}>{e.daten.untertitel}</div>
                     )}
                   </div>
@@ -3498,7 +3546,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v2.7 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v3.4 · Juni 2026</div>
     </div>
   );
 }

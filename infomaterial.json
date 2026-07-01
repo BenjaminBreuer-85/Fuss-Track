@@ -1,234 +1,307 @@
 {
-  "meta": {
-    "version": "1.0",
-    "erstellt": "2026-06-17",
-    "beschreibung": "Infomaterial-Einträge als Referenzlisten auf bausteine.json."
+ "meta": {
+  "version": "1.0",
+  "erstellt": "2026-06-17",
+  "beschreibung": "Infomaterial-Einträge als Referenzlisten auf bausteine.json."
+ },
+ "INFOMATERIAL": {
+  "osg_arthrose": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "OSG-Arthrose",
+   "titel": "OSG-Arthrose",
+   "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "osg_arthrodese",
+    "osg_tep"
+   ],
+   "slides": [
+    "osg_intro",
+    "osg_krankheitsbild",
+    "osg_behandlung",
+    "osg_op_arthrodese",
+    "osg_op_tep",
+    "osg_vergleich"
+   ]
   },
-  "INFOMATERIAL": {
-    "osg_arthrose": {
-      "infoKategorie": "krankheitsbild",
-      "infoTitel": "OSG-Arthrose",
-      "titel": "OSG-Arthrose",
-      "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "osg_arthrodese",
-        "osg_tep"
-      ],
-      "slides": [
-        "osg_intro",
-        "osg_krankheitsbild",
-        "osg_behandlung",
-        "osg_op_arthrodese",
-        "osg_op_tep",
-        "osg_vergleich"
-      ]
-    },
-    "osg_arthrodese_op": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "OSG-Versteifung (Arthrodese)",
-      "titel": "OSG-Versteifung (Arthrodese)",
-      "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "osg_arthrodese"
-      ],
-      "slides": [
-        "osg_op_arthrodese",
-        "osg_vergleich"
-      ]
-    },
-    "osg_tep_op": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "OSG-Prothese (Endoprothese)",
-      "titel": "OSG-Prothese (Endoprothese)",
-      "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "osg_tep"
-      ],
-      "slides": [
-        "osg_op_tep",
-        "osg_vergleich"
-      ]
-    },
-    "chevron": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Chevron-Osteotomie (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "chevron"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_chevron"
-      ]
-    },
-    "hallux_valgus": {
-      "infoKategorie": "krankheitsbild",
-      "infoTitel": "Hallux valgus",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "hallux_valgus"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung"
-      ]
-    },
-    "chevron_akin": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Chevron- mit Akin-Osteotomie (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "chevron_akin"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_chevron",
-        "hv_op_akin"
-      ]
-    },
-    "scarf": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Scarf-Osteotomie (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "scarf"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_scarf"
-      ]
-    },
-    "lapidus": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "lapidus"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_lapidus"
-      ]
-    },
-    "dmmo": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "DMMO – Mittelfuß-Osteotomie",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "dmmo"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_dmmo"
-      ]
-    },
-    "kleinzehen_pip": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Korrektur der Kleinzehen",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "kleinzehen_pip"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_kleinzehen"
-      ]
-    },
-    "akin": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Akin-Osteotomie (Zusatzeingriff)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "akin"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_akin"
-      ]
-    },
-    "mica": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Minimal-invasive Korrektur (MICA)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "mica"
-      ],
-      "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_mica"
-      ]
-    },
-    "hallux_rigidus": {
-      "infoKategorie": "krankheitsbild",
-      "infoTitel": "Hallux rigidus",
-      "titel": "Hallux rigidus",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "hallux_rigidus"
-      ],
-      "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung"
-      ]
-    },
-    "cheilektomie": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Cheilektomie (Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "cheilektomie"
-      ],
-      "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung",
-        "hr_op_cheilektomie"
-      ]
-    },
-    "youngswick": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "youngswick"
-      ],
-      "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung",
-        "hr_op_youngswick"
-      ]
-    },
-    "mtp1_arthrodese": {
-      "infoKategorie": "op_technik",
-      "infoTitel": "MTP1-Arthrodese (Versteifung, Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
-      "betrifft_eingriffe": [
-        "mtp1_arthrodese"
-      ],
-      "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung",
-        "hr_op_arthrodese"
-      ]
-    }
+  "osg_arthrodese_op": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "OSG-Versteifung (Arthrodese)",
+   "titel": "OSG-Versteifung (Arthrodese)",
+   "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "osg_arthrodese"
+   ],
+   "slides": [
+    "osg_op_arthrodese",
+    "osg_vergleich"
+   ]
+  },
+  "osg_tep_op": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "OSG-Prothese (Endoprothese)",
+   "titel": "OSG-Prothese (Endoprothese)",
+   "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "osg_tep"
+   ],
+   "slides": [
+    "osg_op_tep",
+    "osg_vergleich"
+   ]
+  },
+  "hallux_valgus": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Hallux valgus",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "hallux_valgus"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung"
+   ]
+  },
+  "chevron_akin": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Chevron-Akin-Osteotomie (Hallux-valgus-Korrektur)",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "chevron_akin"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_chevron",
+    "hv_op_akin"
+   ]
+  },
+  "scarf": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Scarf-Osteotomie (Hallux-valgus-Korrektur)",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "scarf"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_scarf"
+   ]
+  },
+  "lapidus": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "lapidus"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_lapidus"
+   ]
+  },
+  "dmmo": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "DMMO – Mittelfuß-Osteotomie",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "dmmo"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_dmmo"
+   ]
+  },
+  "kleinzehen_pip": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Korrektur der Kleinzehen",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "kleinzehen_pip"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_kleinzehen"
+   ]
+  },
+  "akin": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Akin-Osteotomie (Zusatzeingriff)",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "akin"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_akin"
+   ]
+  },
+  "mica": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Minimal-invasive Korrektur (MICA)",
+   "titel": "Hallux valgus",
+   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "mica"
+   ],
+   "slides": [
+    "hv_krankheitsbild",
+    "hv_behandlung",
+    "hv_op_mica"
+   ]
+  },
+  "hallux_rigidus": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Hallux rigidus",
+   "titel": "Hallux rigidus",
+   "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "hallux_rigidus"
+   ],
+   "slides": [
+    "hr_krankheitsbild",
+    "hr_behandlung"
+   ]
+  },
+  "cheilektomie": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Cheilektomie (Hallux-rigidus-Behandlung)",
+   "titel": "Hallux rigidus",
+   "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "cheilektomie"
+   ],
+   "slides": [
+    "hr_krankheitsbild",
+    "hr_behandlung",
+    "hr_op_cheilektomie"
+   ]
+  },
+  "youngswick": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
+   "titel": "Hallux rigidus",
+   "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "youngswick"
+   ],
+   "slides": [
+    "hr_krankheitsbild",
+    "hr_behandlung",
+    "hr_op_youngswick"
+   ]
+  },
+  "mtp1_arthrodese": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "MTP1-Arthrodese (Versteifung, Hallux-rigidus-Behandlung)",
+   "titel": "Hallux rigidus",
+   "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+   "betrifft_eingriffe": [
+    "mtp1_arthrodese"
+   ],
+   "slides": [
+    "hr_krankheitsbild",
+    "hr_behandlung",
+    "hr_op_arthrodese"
+   ]
   }
+ },
+ "NONOP_MASSNAHMEN": {
+  "stosswelle": {
+   "titel": "Stoßwellentherapie (=ESWT)",
+   "kurz": "PLATZHALTER: Kurzbeschreibung der extrakorporalen Stoßwellentherapie (ein bis zwei Sätze).",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "PLATZHALTER: Was ist die Stoßwellentherapie, wie wirkt sie (allgemein, krankheitsbild-unabhängig)."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "PLATZHALTER: Wie läuft eine Behandlung ab."
+    },
+    {
+     "titel": "Sitzungen",
+     "text": "PLATZHALTER: Typische Anzahl und Abstände der Sitzungen."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "PLATZHALTER: Häufige/seltene Nebenwirkungen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "PLATZHALTER: Gegenanzeigen."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "PLATZHALTER: Kurzer, allgemeiner Evidenz-Überblick."
+    }
+   ],
+   "stand": "PLATZHALTER: Monat/Jahr"
+  },
+  "einlagen": {
+   "titel": "Einlagen (=orthopädische Schuheinlagen)",
+   "kurz": "PLATZHALTER: Kurzbeschreibung.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Ablauf",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "PLATZHALTER"
+    }
+   ],
+   "stand": "PLATZHALTER"
+  },
+  "nachtschiene": {
+   "titel": "Nachtschiene (=Nachtlagerungsschiene)",
+   "kurz": "PLATZHALTER: Kurzbeschreibung.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Ablauf",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "PLATZHALTER"
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "PLATZHALTER"
+    }
+   ],
+   "stand": "PLATZHALTER"
+  }
+ }
 }
