@@ -549,6 +549,17 @@ function buildUrl(params) {
   return url.pathname + (url.search || "");
 }
 
+// Einheitliche Kopfzeile aller Unteransichten: zurück + Titel + Start (Hauptmenü erzwingen)
+function ZurueckLeiste({ onBack, titel }) {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
+      <div onClick={onBack} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600, flexShrink: 0 }}>← zurück</div>
+      <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)", flex: 1, minWidth: 0 }}>{titel}</div>
+      <div onClick={function(){ window.location.href = buildUrl({ home: "1" }); }} title="Zur Startseite" style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600, flexShrink: 0 }}>⌂ Start</div>
+    </div>
+  );
+}
+
 function isValidEingriffsAuswahl(op, vari) {
   if (!op || !EINGRIFFE[op]) return false;
   if (!vari || !EINGRIFFE[op].varianten[vari]) return false;
@@ -820,13 +831,10 @@ function NonOpView({ onBack }) {
   var [unfallDatum, setUnfallDatum] = useState(persisted ? persisted.unfallDatum : null);
   var [tempDatum, setTempDatum] = useState(todayIso());
   var [zeigeSportler, setZeigeSportler] = useState(persisted ? !!persisted.zeigeSportler : false);
-  var [offen, setOffen] = useState({});
   var [tbOffen, setTbOffen] = useState(false);
   var [uebungOffen, setUebungOffen] = useState({});
   var [checks, setChecks] = useState(persisted && persisted.checks ? persisted.checks : {});
-  var [initExpanded, setInitExpanded] = useState(false);
   var [studienOffen, setStudienOffen] = useState(false);
-  var [gateOk, setGateOk] = useState(persisted ? !!persisted.gateOk : false);
   var [stufeAktuell, setStufeAktuell] = useState(persisted && persisted.stufeAktuell ? persisted.stufeAktuell : 1);
   var [ampelWahl, setAmpelWahl] = useState(persisted && persisted.ampelWahl ? persisted.ampelWahl : null);
   var [seite, setSeite] = useState(0);
@@ -835,14 +843,6 @@ function NonOpView({ onBack }) {
 
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
-  function ZurueckLeiste({ onBack, titel }) {
-    return (
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-        <div onClick={onBack} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>← zurück</div>
-        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)" }}>{titel}</div>
-      </div>
-    );
-  }
 
   // Einheitlicher Start-Disclaimer (gleich in allen Modellen): einmalig pro Kapitel, aktive Kenntnisnahme
   var DISCLAIMER_TITEL = "Bitte zuerst lesen und bestätigen";
@@ -963,18 +963,22 @@ function NonOpView({ onBack }) {
 
   function persist(extra) {
     var base = { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks, ubAck: ubAck };
-    nonopSave(Object.assign(base, extra || {}));
+    nonopSave(Object.assign(nonopLoad() || {}, base, extra || {}));
   }
   function start(sportler) {
     var dd = tempDatum || todayIso();
     setUnfallDatum(dd); setZeigeSportler(sportler);
-    nonopSave({ kbKey: kbKey, unfallDatum: dd, zeigeSportler: sportler, checks: checks, ubAck: ubAck });
+    nonopSave(Object.assign(nonopLoad() || {}, { kbKey: kbKey, unfallDatum: dd, zeigeSportler: sportler, checks: checks, ubAck: ubAck }));
   }
   function reset() {
-    setUnfallDatum(null); setKbKey(null); setOffen({}); setZeigeSportler(false); setChecks({});
-    nonopClear();
+    // Nur Außenband-Felder + eigene Disclaimer-Bestätigung entfernen — andere Kapitel bleiben erhalten
+    var cur = nonopLoad() || {};
+    delete cur.unfallDatum; delete cur.zeigeSportler; delete cur.checks;
+    var acks = Object.assign({}, cur.ubAck || {}); delete acks[kbKey];
+    cur.ubAck = acks; cur.kbKey = null;
+    nonopSave(cur);
+    setUnfallDatum(null); setKbKey(null); setZeigeSportler(false); setChecks({}); setUbAck(acks);
   }
-  function toggleStufe(id) { setOffen(function(p){ var n=Object.assign({},p); n[id]=!n[id]; return n; }); }
   function toggleUebung(id) { setUebungOffen(function(p){ var n=Object.assign({},p); n[id]=!n[id]; return n; }); }
   function toggleCheck(sid, i) {
     setChecks(function(p){
@@ -982,7 +986,7 @@ function NonOpView({ onBack }) {
       var arr = (n[sid] || []).slice();
       arr[i] = !arr[i];
       n[sid] = arr;
-      nonopSave({ kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: n, ubAck: ubAck });
+      nonopSave(Object.assign(nonopLoad() || {}, { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: n, ubAck: ubAck }));
       return n;
     });
   }
@@ -1019,12 +1023,17 @@ function NonOpView({ onBack }) {
     var ampelStufen = ampel.stufen || [];
 
     function persistAmpel(extra) {
-      var base = { kbKey: kbKey, gateOk: gateOk, stufeAktuell: stufeAktuell, ampelWahl: ampelWahl, ubAck: ubAck };
-      nonopSave(Object.assign(base, extra || {}));
+      var base = { kbKey: kbKey, stufeAktuell: stufeAktuell, ampelWahl: ampelWahl, ubAck: ubAck };
+      nonopSave(Object.assign(nonopLoad() || {}, base, extra || {}));
     }
     function resetAchillo() {
-      setKbKey(null); setGateOk(false); setStufeAktuell(1); setAmpelWahl(null); setUbAck({});
-      nonopClear();
+      // Nur Achillodynie-Felder + eigene Disclaimer-Bestätigung entfernen — andere Kapitel bleiben erhalten
+      var cur = nonopLoad() || {};
+      delete cur.stufeAktuell; delete cur.ampelWahl; delete cur.gateOk;
+      var acks = Object.assign({}, cur.ubAck || {}); delete acks[kbKey];
+      cur.ubAck = acks; cur.kbKey = null;
+      nonopSave(cur);
+      setKbKey(null); setStufeAktuell(1); setAmpelWahl(null); setUbAck(acks);
     }
     function setStufe(n) {
       var clamped = Math.max(1, Math.min(stufen.length, n));
@@ -1045,7 +1054,7 @@ function NonOpView({ onBack }) {
     var s = stufen[stufeAktuell - 1] || stufen[0];
     var c = NONOP_INHALTE[s.inhalt] || {};
     var aktAmpel = ampelStufen.filter(function(a){ return a.farbe === ampelWahl; })[0];
-    var stepItems = stufen.map(function(st){ return { key: st.id, label: String(st.stufe), emoji: st.emoji }; });
+    var stepItems = stufen.map(function(st){ return { key: st.id, label: String(st.stufe) }; });
 
     return (
       <BlaetterRahmen titel={kb.label} onBack={function(){ setKbKey(null); }}
@@ -1076,8 +1085,7 @@ function NonOpView({ onBack }) {
         )}
 
         <div style={{ marginBottom: 16, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-          <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
-          <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
+                    <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
         </div>
 
         {c.dosis && (
@@ -1086,19 +1094,32 @@ function NonOpView({ onBack }) {
             <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
           </div>
         )}
-        {c.hinweis && <div style={{ marginBottom: 18, fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
+        {c.hinweis && <div style={{ marginBottom: 18, fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>{c.hinweis}</div>}
 
         {/* Ampel */}
         <div style={{ border: "1px solid rgba(0,0,0,.10)", borderRadius: 10, padding: "14px 14px", marginBottom: 14 }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 6 }}>Wie waren Ihre Beschwerden?</div>
+          <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 8 }}>Schätzen Sie hier nach dem Üben regelmäßig Ihre Beschwerden ein: Tippen Sie auf Grün, Gelb oder Rot. Sie erhalten dann eine Empfehlung, ob Sie steigern können, auf der Stufe bleiben oder einen Schritt zurückgehen sollten.</div>
           {ampel.grundregel && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 12 }}>{ampel.grundregel}</div>}
+          {!aktAmpel && (
+            <div style={{ marginBottom: 12, padding: "10px 12px", background: "var(--c-bg)", borderRadius: 8 }}>
+              {ampelStufen.map(function(a){
+                return (
+                  <div key={a.farbe} style={{ display: "flex", gap: 8, alignItems: "flex-start", padding: "4px 0" }}>
+                    <span style={{ width: 13, height: 13, borderRadius: "50%", flexShrink: 0, marginTop: 3, background: a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F0B429" : "#C62828" }}></span>
+                    <span style={{ fontSize: 12, color: "var(--c-text)", lineHeight: 1.5 }}><strong>{a.label}:</strong> {a.bedeutung}</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
             {ampelStufen.map(function(a){
               var sel = ampelWahl === a.farbe;
               var bg = a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F9A825" : "#C62828";
               return (
                 <div key={a.farbe} onClick={function(){ waehleAmpel(a.farbe); }} style={{ flex: 1, textAlign: "center", padding: "12px 4px", borderRadius: 8, cursor: "pointer", background: sel ? bg : "var(--c-bg)", color: sel ? "#fff" : "var(--c-text)", border: sel ? "none" : "1px solid rgba(0,0,0,.12)" }}>
-                  <div style={{ fontSize: 22 }}>{a.emoji}</div>
+                  <div style={{ width: 20, height: 20, borderRadius: "50%", margin: "0 auto", background: a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F0B429" : "#C62828" }}></div>
                   <div style={{ fontSize: 11, fontWeight: 700, marginTop: 2 }}>{a.label}</div>
                 </div>
               );
@@ -1142,7 +1163,7 @@ function NonOpView({ onBack }) {
       return <DisclaimerGate titel={kb.label} onBack={function(){ setSeite(0); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
-    var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr), emoji: u.emoji }; }));
+    var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr) }; }));
 
     var inhalt;
     if (seite === 0) {
@@ -1199,22 +1220,21 @@ function NonOpView({ onBack }) {
                       <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
                     </div>
                     <div style={{ marginLeft: 38, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                      <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
-                      <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu Schritt {i + 1} folgt</div>
+                                            <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu Schritt {i + 1} folgt</div>
                     </div>
                   </div>
                 );
               })}
             </div>
           )}
-          {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>🔗 {c.verweis}</div>}
+          {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
           {c.dosis && (
             <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
               <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
               <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
             </div>
           )}
-          {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>💡 {c.hinweis}</div>}
+          {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>{c.hinweis}</div>}
         </div>
       );
     }
@@ -1262,7 +1282,7 @@ function NonOpView({ onBack }) {
           if (!ab) return null;
           return (
             <div style={{ marginBottom: 18, padding: "14px 16px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: "#92670A", marginBottom: 8 }}>⚠️ {ab.titel}</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "#92670A", marginBottom: 8 }}>{ab.titel}</div>
               {ab.intro && <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 10, whiteSpace: "pre-line" }}>{ab.intro}</div>}
               {ab.aufforderung && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", marginBottom: 6 }}>{ab.aufforderung}</div>}
               {ab.kriterien && <ul style={{ margin: "0 0 8px", paddingLeft: 20, fontSize: 13, color: "var(--c-text)", lineHeight: 1.5 }}>{ab.kriterien.map(function(x, i){ return <li key={i} style={{ marginBottom: 3 }}>{x}</li>; })}</ul>}
@@ -1303,10 +1323,6 @@ function NonOpView({ onBack }) {
   stufen.forEach(function(s){ if (!s.optional && s.tagOffset <= tageSeitUnfall && s.stufe > aktuelleStufe) aktuelleStufe = s.stufe; });
   var gesamtStufen = zeigeSportler ? stufen.length : stufen.filter(function(s){ return !s.optional; }).length;
 
-  // B2: Stufen starten eingeklappt (bessere Übersicht); Patient klappt selbst auf
-  if (!initExpanded) {
-    setOffen({}); setInitExpanded(true);
-  }
 
   // B3: "Diese Woche dran" - aktuelle Übungsvarianten aus Stufe 3
   var st3 = NONOP_INHALTE["aussenband_stufe3"] || {};
@@ -1469,8 +1485,7 @@ function NonOpView({ onBack }) {
                         })}
                       </ol>
                       <div style={{ margin: "0 12px 12px", padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                        <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
-                        <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu „{u.name}“ folgt</div>
+                                                <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu „{u.name}“ folgt</div>
                       </div>
                     </div>
                   )}
@@ -1498,8 +1513,7 @@ function NonOpView({ onBack }) {
         {stufenMedien.map(function(m, i){
           return (
             <div key={i} style={{ marginBottom: 12, padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-              <div style={{ fontSize: 22, marginBottom: 4 }}>🖼️</div>
-              <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{m.titel ? ("Bild / Video: " + m.titel) : "Bild / Video folgt"}</div>
+                            <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{m.titel ? ("Bild / Video zu \u201E" + m.titel + "\u201C folgt") : "Bild / Video folgt"}</div>
             </div>
           );
         })}
@@ -1536,17 +1550,6 @@ function LandingView({ initialKbKey }) {
   };
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
-  function ZurueckLeiste({ onBack, titel }) {
-    return (
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-        <div onClick={onBack}
-             style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
-          ← zurück
-        </div>
-        <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{titel}</div>
-      </div>
-    );
-  }
 
   function goAufklaerung(kb) {
     // Direkt zur Aufklärung springen — verwendet den AUFKLAERUNG_OP_MAP-Key des Krankheitsbilds
@@ -1571,8 +1574,7 @@ function LandingView({ initialKbKey }) {
           {/* 1. Begleiter */}
           <div onClick={function() { setBereich("begleiter"); setBegleiterTyp(null); }}
                style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-            <div style={{ fontSize: 30, marginBottom: 6 }}>🗓️</div>
-            <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Begleiter</div>
+                        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Begleiter</div>
             <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
               Persönliche Begleitung vor und nach Ihrer Behandlung — mit Phasenkalender und Erinnerungen.
             </div>
@@ -1580,8 +1582,7 @@ function LandingView({ initialKbKey }) {
           {/* 2. Infomaterial */}
           <div onClick={function() { setBereich("info"); setInfoKat(null); }}
                style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-            <div style={{ fontSize: 30, marginBottom: 6 }}>📚</div>
-            <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Infomaterial</div>
+                        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Infomaterial</div>
             <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
               Verständliche Informationen zu Eingriffen und Erkrankungen rund um Fuß und Sprunggelenk.
             </div>
@@ -1590,8 +1591,7 @@ function LandingView({ initialKbKey }) {
           {KATALOG && (
             <div onClick={function() { window.location.href = buildUrl({ finder: "1" }); }}
                  style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-              <div style={{ fontSize: 30, marginBottom: 6 }}>🔍</div>
-              <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Diagnose-Helfer</div>
+                            <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Diagnose-Helfer</div>
               <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
                 Grenzen Sie mögliche Ursachen Ihrer Beschwerden ein und finden Sie die passende Sprechstunde.
               </div>
@@ -1610,15 +1610,15 @@ function LandingView({ initialKbKey }) {
   // ===== Infomaterial: Ebene 1 Kategorie-Auswahl, Ebene 2 Themen-Liste =====
   if (bereich === "info") {
     const INFO_KATEGORIEN = [
-      { key: "krankheitsbild", icon: "🦴", label: "Krankheitsbilder", sub: "Informationen zu Erkrankungen von Fuß und Sprunggelenk." },
-      { key: "op_technik",     icon: "🔧", label: "OP-Techniken",     sub: "Informationen zu operativen Verfahren." }
+      { key: "krankheitsbild", icon: "", label: "Krankheitsbilder", sub: "Informationen zu Erkrankungen von Fuß und Sprunggelenk." },
+      { key: "op_technik",     icon: "", label: "OP-Techniken",     sub: "Informationen zu operativen Verfahren." }
     ];
 
     // Ebene 1: Kategorie wählen
     if (!infoKat) {
       return (
         <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-          <ZurueckLeiste onBack={function() { setBereich(null); setInfoKat(null); }} titel="📚 Infomaterial" />
+          <ZurueckLeiste onBack={function() { setBereich(null); setInfoKat(null); }} titel="Infomaterial" />
           <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
             Verständliche Informationen rund um Fuß und Sprunggelenk. Wählen Sie einen Bereich.
           </p>
@@ -1646,7 +1646,7 @@ function LandingView({ initialKbKey }) {
 
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function() { setInfoKat(null); }} titel={aktiveKat.icon + " " + aktiveKat.label} />
+        <ZurueckLeiste onBack={function() { setInfoKat(null); }} titel={aktiveKat.label} />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wählen Sie ein Thema aus.
         </p>
@@ -1684,7 +1684,7 @@ function LandingView({ initialKbKey }) {
   if (bereich === "begleiter" && !begleiterTyp) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function() { setBereich(null); }} titel="🗓️ Begleiter" />
+        <ZurueckLeiste onBack={function() { setBereich(null); }} titel="Begleiter" />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wofür möchten Sie begleitet werden?
         </p>
@@ -1743,8 +1743,7 @@ function LandingView({ initialKbKey }) {
                    }}
                    onMouseEnter={function(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }}
                    onMouseLeave={function(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }}>
-                <div style={{ fontSize: 32, marginBottom: 8 }}>{kb.emoji}</div>
-                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kb.label}</div>
+                                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kb.label}</div>
                 <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>{kb.untertitel}</div>
               </div>
             );
@@ -1778,7 +1777,7 @@ function LandingView({ initialKbKey }) {
              style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
           ← zurück
         </div>
-        <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.emoji} {selectedKb.label}</div>
+        <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.label}</div>
         <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>· Begleitung</div>
       </div>
       <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
@@ -1920,8 +1919,7 @@ function AufklaerungsView({ opKey, kbOrigin }) {
         <div style={{ padding: "24px",
                       background: "var(--c-card)", borderRadius: 12,
                       boxShadow: "var(--c-shadow)", textAlign: "center" }}>
-        <div style={{ fontSize: 32, marginBottom: 12 }}>📖</div>
-        <h2 style={{ margin: "0 0 8px", fontSize: 18, color: "var(--c-main)" }}>{aufkl.titel}</h2>
+                <h2 style={{ margin: "0 0 8px", fontSize: 18, color: "var(--c-main)" }}>{aufkl.titel}</h2>
         <div style={{ fontSize: 14, color: "var(--c-text-muted)", marginBottom: 16 }}>
           {aufkl.untertitel}
         </div>
@@ -2308,8 +2306,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
   function renderPlatzhalter(text) {
     return (
       <div style={{ padding: 40, textAlign: "center", background: "#F9FAFB", borderRadius: 8, color: "#6B7280", fontSize: 14 }}>
-        <div style={{ fontSize: 40, marginBottom: 8 }}>🚧</div>
-        <div>{text}</div>
+                <div>{text}</div>
         <div style={{ fontSize: 12, marginTop: 8, color: "#9CA3AF" }}>
           Tippen Sie nochmal auf den Tab „Von oben", um Regionen auszuwählen.
         </div>
@@ -2418,7 +2415,7 @@ function FinderView() {
           )}
           {akutWarnung && (
             <div className="card warning" style={{ marginTop: 16 }}>
-              <strong>⚠ Bitte zeitnah ärztlich abklären lassen</strong>
+              <strong>Bitte zeitnah ärztlich abklären lassen</strong>
               <p style={{ marginTop: 8 }}>
                 Bei einer frischen Verletzung (z.&nbsp;B. nach Sturz, Umknicken oder Anprall) ist eine
                 zeitnahe ärztliche Untersuchung notwendig. Eine solche Verletzung lässt sich
@@ -2665,7 +2662,7 @@ function FinderView() {
 
           {triggeredSonderfall && (
             <div className="card warning" style={{ marginTop: 16 }}>
-              <strong>⚠ {triggeredSonderfall.kb && triggeredSonderfall.kb.titel}-Verdacht</strong>
+              <strong>{triggeredSonderfall.kb && triggeredSonderfall.kb.titel}-Verdacht</strong>
               <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
               <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>
@@ -2768,7 +2765,7 @@ function FinderView() {
           <div className="card success">
             <div className="card-label">
               {istEindeutig ? "Sehr wahrscheinlich" : "Wahrscheinlichste Ursache"}
-              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "🟢 häufig" : top1.kb.haeufigkeit === "mittel" ? "🟡 mittelhäufig" : "🔴 selten"}
+              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "häufig" : top1.kb.haeufigkeit === "mittel" ? "mittelhäufig" : "selten"}
             </div>
             <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
             <p>{top1.kb.kurz}</p>
@@ -2783,7 +2780,7 @@ function FinderView() {
             <div key={e.kbId} className="card" style={{ borderLeft: "3px solid #9CA3AF" }}>
               <div className="card-label">
                 Möglich auch
-                {" · "}{e.kb.haeufigkeit === "haeufig" ? "🟢 häufig" : e.kb.haeufigkeit === "mittel" ? "🟡 mittelhäufig" : "🔴 selten"}
+                {" · "}{e.kb.haeufigkeit === "haeufig" ? "häufig" : e.kb.haeufigkeit === "mittel" ? "mittelhäufig" : "selten"}
               </div>
               <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
               <p style={{ marginBottom: 0 }}>{e.kb.kurz}</p>
@@ -2857,7 +2854,7 @@ function DatumEingabe({ session, onUpdate }) {
         {variante.beschreibung !== variante.anzeigename && (
           <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
         )}
-        <div className="preselect-hint">🔒 Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
+        <div className="preselect-hint">Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
       </div>
 
       <div className="card">
@@ -2986,7 +2983,7 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
       {/* Verpasste Phasen — Hinweis-Karte */}
       {missedPhases.length > 0 && (
         <div className="card warning">
-          <h2 style={{ marginTop: 0 }}>⚠ Wichtige Themen nachholen</h2>
+          <h2 style={{ marginTop: 0 }}>Wichtige Themen nachholen</h2>
           <p style={{ marginBottom: 8 }}>
             Da Sie näher am OP-Termin sind als für den vollständigen Verlauf vorgesehen, sollten Sie folgende Themen jetzt prioritär nachholen:
           </p>
@@ -3017,7 +3014,7 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
             else if (idx === currentIdx) cls += " current";
             else if (idx < currentIdx) cls += " past";
             if (idx === selectedPhaseIdx) cls += " selected";
-            const markerContent = phase.emoji || (idx + 1);
+            const markerContent = idx + 1;
             return (
               <div key={phase.id} className={cls} onClick={() => setSelectedPhaseIdx(idx)}>
                 <div className="phase-marker-wrap">
@@ -3027,7 +3024,7 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
                   <div className="phase-title">
                     {phase.thema}
                     {idx === currentIdx && !isMissed && <span className="current-badge">Aktuell</span>}
-                    {isMissed && <span className="current-badge" style={{ background: "#E0A422" }}>📌 Nachholen</span>}
+                    {isMissed && <span className="current-badge" style={{ background: "#E0A422" }}>Nachholen</span>}
                   </div>
                   <div className="phase-meta">{phase.label}</div>
                 </div>
@@ -3079,8 +3076,7 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
           <div className="modal-header-text">
             <div className="modal-header-label">Phase {index + 1} von {total} · {phase.label}</div>
             <div className="modal-header-title">
-              {phase.emoji && <span style={{ marginRight: 6 }}>{phase.emoji}</span>}
-              {phase.thema}
+                            {phase.thema}
             </div>
           </div>
           <button className="modal-close" onClick={onClose} aria-label="Schließen">×</button>
@@ -3116,8 +3112,7 @@ function PhasenDetailModal({ phase, inhalt, index, total, prevPhase, nextPhase, 
                              borderBottom: !isLast ? "1px solid var(--c-border)" : "none",
                              cursor: !isPlatzhalter && sub.wissen ? "pointer" : "default"
                            }}>
-                        <span style={{ fontSize: 14, color: "var(--c-text-muted)" }}>📖</span>
-                        <span style={{ fontSize: 13, color: "var(--c-text)", flex: 1 }}>{titel}</span>
+                                                <span style={{ fontSize: 13, color: "var(--c-text)", flex: 1 }}>{titel}</span>
                         {isPlatzhalter ? (
                           <span style={{ fontSize: 10, padding: "2px 6px", background: "var(--c-bg)", borderRadius: 8, color: "var(--c-text-muted)" }}>
                             bald verfügbar
@@ -3451,12 +3446,12 @@ function WissenDirektView({ wissenKey }) {
     if (wissen) document.title = "Fuß-Track · " + wissen.titel;
   }, [wissenKey]);
   if (!wissen) return null;
-  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "📖" };
+  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "" };
   const isPlatzhalter = wissen.status === "platzhalter";
   return (
     <div className="card" style={{ marginTop: 16, padding: 20, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
       <div style={{ fontSize: 12, color: "var(--c-text-muted)", fontWeight: 600, marginBottom: 6 }}>
-        {kategorie.emoji} {kategorie.label}
+        {kategorie.label}
       </div>
       <h2 style={{ marginTop: 0, marginBottom: 16, fontSize: 22, color: "var(--c-main)" }}>{wissen.titel}</h2>
       {isPlatzhalter ? (
@@ -3488,7 +3483,7 @@ function WissensDetailModal({ wissenId, wissen, onClose }) {
     if (e.target === e.currentTarget) onClose();
   }
 
-  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "📖" };
+  const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "" };
   const isPlatzhalter = wissen.status === "platzhalter";
 
   return (
@@ -3497,7 +3492,7 @@ function WissensDetailModal({ wissenId, wissen, onClose }) {
       <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-header-text">
-            <div className="modal-header-label">{kategorie.emoji} {kategorie.label}</div>
+            <div className="modal-header-label">{kategorie.label}</div>
             <div className="modal-header-title">{wissen.titel}</div>
           </div>
           <button className="modal-close" onClick={onClose} aria-label="Schließen">×</button>
@@ -3546,7 +3541,7 @@ function FooterLinks() {
       <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
-      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v3.4 · Juni 2026</div>
+      <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v3.8 · Juli 2026</div>
     </div>
   );
 }
@@ -3621,7 +3616,7 @@ loadPhasenData()
   })
   .catch(function(err) {
     console.error("Fehler beim Laden der Phasen-Daten:", err);
-    rootEl.innerHTML = '<div style="max-width:480px;margin:48px auto;padding:24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;background:#FEF3C7;border:1px solid #F59E0B;border-radius:8px;color:#92400E;"><div style="font-size:32px;margin-bottom:8px;">⚠️</div><div style="font-weight:600;font-size:15px;margin-bottom:8px;">Die Anwendung konnte nicht geladen werden</div><div style="font-size:13px;line-height:1.5;">Bitte prüfen Sie Ihre Internetverbindung und laden Sie die Seite neu. Sollte das Problem bestehen bleiben, wenden Sie sich an Ihren Behandler.</div></div>';
+    rootEl.innerHTML = '<div style="max-width:480px;margin:48px auto;padding:24px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;background:#FEF3C7;border:1px solid #F59E0B;border-radius:8px;color:#92400E;"><div style="font-weight:600;font-size:15px;margin-bottom:8px;">Die Anwendung konnte nicht geladen werden</div><div style="font-size:13px;line-height:1.5;">Bitte prüfen Sie Ihre Internetverbindung und laden Sie die Seite neu. Sollte das Problem bestehen bleiben, wenden Sie sich an Ihren Behandler.</div></div>';
   });
 </script>
 

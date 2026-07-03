@@ -45,12 +45,7 @@
    "modell": "uebungspaket",
    "einleitung": "ksf_einleitung",
    "uebungen": "ksf_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen",
-     "kurztext": "PLATZHALTER: Kurz, warum Einlagen beim Knick-Senk-Fuß sinnvoll sein können, plus ein Satz zur Evidenz."
-    }
-   ]
+   "weitereMassnahmen": []
   },
   "hallux_valgus": {
    "label": "Hallux valgus",
@@ -110,7 +105,7 @@
  "NONOP_INHALTE": {
   "aussenband_einleitung": {
    "intro": "Eine strukturierte Nachbehandlung nach Außenbandverletzung ist wichtig für eine erfolgreiche Rehabilitation, die Verringerung der Wahrscheinlichkeit erneuter Umknicktraumata, die Verhinderung einer chronischen Instabilität und die zeitgerechte Wiederaufnahme von Beruf und Sport.",
-   "text": "Ca. 70 % der Patienten erleiden nach einer Außenbandverletzung im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität (Gribble et al. 2016). Hierfür sind gerade wiederholte Traumata verantwortlich. Im ersten Jahr nach der Außenbandverletzung ist das Risiko für eine erneute Verletzung mehr als verdoppelt.\\n\\nMit spezifischem Training kann die Rate an wiederholten Verletzungen um 40 % reduziert werden (Wagemans et al. 2022). Bei wiederholten Verletzungen besteht ein erhebliches Risiko eines verfrühten Gelenkverschleißes mit damit verbundenen Beschwerden und der Notwendigkeit weiterer Behandlungen oder Operationen.\\n\\nDieses Konzept dient als allgemeine Empfehlung und Orientierung. Im Einzelfall muss dies fachärztlich überwacht und ggf. angepasst werden.\\n\\nDie Rehabilitation muss sich der Physiologie der Bandheilung anpassen. Je nach Phase der biologischen Heilung sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zur Ausbildung einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zum Vorliegen einer ausgereiften Bandheilung 9–12 Monate (Hubbard & Hicks-Little 2008). Ab wann Beruf, Sport oder Freizeit wieder risikofrei möglich sind, hängt von der initialen Bandverletzung (Grad 1–3), dem Heilungsfortschritt und dem Risikoprofil der Tätigkeit ab.\\n\\nDie Bandheilung läuft in drei Phasen ab:\\n• Inflammationsphase (1–10 Tage): Einblutung und Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\\n• Proliferationsphase (14 Tage–6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte kontrollierte Belastungen fördern die Faserausrichtung.\\n• Remodellierungsphase (bis Ende des 1. Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\\n\\nWährend die Stufen 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen die Stufen 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit spezifischer sportmedizinischer Betreuung dar.",
+   "text": "Ca. 70 % der Patienten erleiden nach einer Außenbandverletzung im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität (Gribble et al. 2016). Hierfür sind gerade wiederholte Traumata verantwortlich. Im ersten Jahr nach der Außenbandverletzung ist das Risiko für eine erneute Verletzung mehr als verdoppelt.\n\nMit spezifischem Training kann die Rate an wiederholten Verletzungen um 40 % reduziert werden (Wagemans et al. 2022). Bei wiederholten Verletzungen besteht ein erhebliches Risiko eines verfrühten Gelenkverschleißes mit damit verbundenen Beschwerden und der Notwendigkeit weiterer Behandlungen oder Operationen.\n\nDieses Konzept dient als allgemeine Empfehlung und Orientierung. Im Einzelfall muss dies fachärztlich überwacht und ggf. angepasst werden.\n\nDie Rehabilitation muss sich der Physiologie der Bandheilung anpassen. Je nach Phase der biologischen Heilung sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zur Ausbildung einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zum Vorliegen einer ausgereiften Bandheilung 9–12 Monate (Hubbard & Hicks-Little 2008). Ab wann Beruf, Sport oder Freizeit wieder risikofrei möglich sind, hängt von der initialen Bandverletzung (Grad 1–3), dem Heilungsfortschritt und dem Risikoprofil der Tätigkeit ab.\n\nDie Bandheilung läuft in drei Phasen ab:\n• Inflammationsphase (1–10 Tage): Einblutung und Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\n• Proliferationsphase (14 Tage–6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte kontrollierte Belastungen fördern die Faserausrichtung.\n• Remodellierungsphase (bis Ende des 1. Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\n\nWährend die Stufen 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen die Stufen 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit spezifischer sportmedizinischer Betreuung dar.",
    "quellen": [
     "Gribble et al. 2016",
     "Wagemans et al. 2022",
@@ -158,7 +153,7 @@
   "aussenband_stufe3": {
    "ziel": "Wiederaufnahme von Sport und volle berufliche Belastbarkeit.",
    "ruhigstellung": "Taping oder Orthese bei längerer Belastung, Ermüdungsgefahr und Belastungssteigerungen.",
-   "text": "Die Übungen der 3. Stufe mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperets et al. 2008) sind als Langzeitübungen für das komplette erste Jahr nach dem Unfall gedacht. Sie sollten mehrfach pro Woche im Rahmen der Freizeit oder als Teil des eigenen Aufwärmprogramms durchgeführt werden. Ziel sind 3 Einheiten pro Woche mit je 30 Minuten Dauer.\\n\\nAuch bei gutem Heilungsverlauf können über Monate Restbeschwerden bestehen — etwa eine Schwellneigung oder ein Unsicherheitsgefühl. Das ist nicht ungewöhnlich und einer der Gründe, das Stabilitätstraining über das gesamte erste Jahr fortzuführen.",
+   "text": "Die Übungen der 3. Stufe mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperets et al. 2008) sind als Langzeitübungen für das komplette erste Jahr nach dem Unfall gedacht. Sie sollten mehrfach pro Woche im Rahmen der Freizeit oder als Teil des eigenen Aufwärmprogramms durchgeführt werden. Ziel sind 3 Einheiten pro Woche mit je 30 Minuten Dauer.\n\nAuch bei gutem Heilungsverlauf können über Monate Restbeschwerden bestehen — etwa eine Schwellneigung oder ein Unsicherheitsgefühl. Das ist nicht ungewöhnlich und einer der Gründe, das Stabilitätstraining über das gesamte erste Jahr fortzuführen.",
    "steigerung_hinweis": "Der Schwierigkeitsgrad wird im Verlauf gesteigert, wenn die jeweilige Übung sicher und ohne Schmerzen durchführbar ist. Die Wochenangaben beziehen sich auf die Zeit nach dem Trauma und stellen nur Orientierungspunkte dar. Eine spätere Steigerung ist kein Problem; eine frühere Steigerung sollte nur nach sportmedizinischer Beratung erfolgen.",
    "uebungen": [
     {
@@ -315,9 +310,9 @@
    "text": "Die Wiederaufnahme des Wettkampfbetriebs stellt eine individuelle sportmedizinische Entscheidung je nach Niveau und Sportart dar. Während des Wettkampfs ist eine externe Stabilisierung mit Orthese oder Tape in den ersten 6–12 Monaten nach dem Trauma sinnvoll."
   },
   "aussenband_abklaerung": {
-   "titel": "Wann sollten Sie ärztlich abklären lassen?",
-   "intro": "Die folgenden Kriterien orientieren sich an den Ottawa Ankle Rules — einer international etablierten, wissenschaftlich validierten Entscheidungshilfe, die zuverlässig erkennt, ob ein Knochenbruch (=Fraktur) wahrscheinlich ist. In Studien erreichte sie eine Sensitivität (=Trefferquote beim Erkennen von Brüchen) von nahezu 100 % (Stiell et al. 1993; Bachmann et al. 2003).",
-   "aufforderung": "Bitte lassen Sie Ihren Fuß ärztlich untersuchen, wenn eines der folgenden Zeichen vorliegt:",
+   "titel": "Ärztliche Abklärung – und wann ein Röntgen sinnvoll ist",
+   "intro": "Jede frische Außenbandverletzung sollte ärztlich abgeklärt werden — unabhängig von den folgenden Hinweisen.\n\nDie folgenden Kriterien helfen nur einzuschätzen, wann zusätzlich ein Röntgenbild sinnvoll ist, um einen Knochenbruch (=Fraktur) auszuschließen. Sie orientieren sich an den Ottawa Ankle Rules — einer international etablierten, wissenschaftlich validierten Entscheidungshilfe, die zuverlässig erkennt, ob ein Knochenbruch wahrscheinlich ist. In Studien erreichte sie eine Sensitivität (=Trefferquote beim Erkennen von Brüchen) von nahezu 100 % (Stiell et al. 1993; Bachmann et al. 2003).",
+   "aufforderung": "Ein Röntgenbild ist besonders sinnvoll, wenn eines der folgenden Zeichen vorliegt (bitte bei der ärztlichen Vorstellung ansprechen):",
    "kriterien": [
     "Sie können den Fuß direkt nach der Verletzung nicht belasten (keine vier Schritte möglich)",
     "Druckschmerz direkt am Knochen des Außen- oder Innenknöchels (hinterer Rand oder Spitze)",
@@ -335,11 +330,11 @@
   },
   "achillo_mid_einleitung": {
    "intro": "Bei der mittleren Form sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
-   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\\n\\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
   },
   "achillo_ins_einleitung": {
    "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
-   "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\\n\\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+   "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
   },
   "achillo_mid_s1": {
    "was": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung halten, ohne Bewegung.",
@@ -483,7 +478,7 @@
     "Mit den Zehen eine Kugel greifen und 10× von links nach rechts legen.",
     "Einen Schnürsenkel oder ein kleines Band mit den Zehen aufnehmen und nacheinander die Buchstaben Ihres Vor- und Nachnamens formen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": ""
   },
   "hv_u2": {
@@ -492,7 +487,7 @@
     "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in neutraler Position gegen den Zug eines Therabands von außen.",
     "Einen Ball zwischen beiden Füßen halten, aus der sitzenden Position anheben und 5 Sekunden zusammenpressen; 10 Wiederholungen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": ""
   },
   "hv_u3": {
@@ -500,7 +495,7 @@
    "schritte": [
     "Ein Theraband über beide Großzehen ziehen und die Großzehen sanft auseinanderführen (passive Dehnung)."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": ""
   },
   "hv_u4": {
@@ -509,7 +504,7 @@
     "Im Sitzen den Fuß flach absetzen.",
     "Im Wechsel die Zehen krallen und die Großzehe abspreizen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": "Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert — hier ist Geduld gefragt."
   },
   "hv_u5": {
@@ -518,7 +513,7 @@
     "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
     "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": ""
   },
   "hv_u6": {
@@ -527,7 +522,7 @@
     "Fuß flach absetzen und Ballen und Großzehe in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen.",
     "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen. Wichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
    "hinweis": ""
   },
   "hv_u7": {
@@ -673,7 +668,7 @@
     "Auf einem Bein stehen und langsam in eine kontrollierte Kniebeuge gehen, ohne dass das Knie nach innen fällt.",
     "Langsam wieder aufrichten."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung, sobald sicher: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
   },
   "sgi_u2": {
@@ -681,7 +676,7 @@
    "schritte": [
     "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung: auf erhöhtem Untergrund mit Festhalten → ohne Festhalten."
   },
   "sgi_u3": {
@@ -689,7 +684,7 @@
    "schritte": [
     "Auf einem Bein stehen und das Gleichgewicht halten."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
   },
   "sgi_u4": {
@@ -698,7 +693,7 @@
     "Im Einbeinstand den Rumpf nach vorne neigen und das freie Bein nach hinten strecken (Standwaage-ähnliche Position), Rücken gerade.",
     "Kontrolliert in die Ausgangsposition zurückkehren."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
   },
   "sgi_u5": {
@@ -706,7 +701,7 @@
    "schritte": [
     "Im Einbeinstand das freie Bein kontrolliert über die Körpermitte zur Gegenseite schwingen und zurück."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung: mit Festhalten → ohne Festhalten → mit geschlossenen Augen → auf einem Wackelbrett."
   },
   "sgi_u6": {
@@ -714,7 +709,7 @@
    "schritte": [
     "Auf den Zehenspitzen gehen."
    ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training. Pro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
+   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten.",
    "hinweis": "Steigerung: gehend → federnd/springend."
   },
   "hr_einleitung": {
