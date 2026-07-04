@@ -21,6 +21,12 @@
     "osg_op_arthrodese",
     "osg_op_tep",
     "osg_vergleich"
+   ],
+   "weitereMassnahmen": [
+    {
+     "ref": "hyaluronsaeure",
+     "kurztext": "Spritze ins Gelenk; als alleinige Behandlung am Sprunggelenk nicht empfohlen, im Einzelfall als Selbstzahlerleistung erwägbar."
+    }
    ]
   },
   "osg_arthrodese_op": {
@@ -302,6 +308,41 @@
     }
    ],
    "stand": "PLATZHALTER"
+  },
+  "hyaluronsaeure": {
+   "titel": "Hyaluronsäure-Injektion (Gelenkspritze)",
+   "kurz": "Spritze eines körpereigenen Mehrfachzuckers in das Gelenk bei Arthrose, also Gelenkverschleiß; Selbstzahlerleistung mit begrenzter und uneinheitlicher Studienlage an Fuß und Sprunggelenk.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Hyaluronsäure ist ein körpereigener Mehrfachzucker, der natürlicherweise in der Gelenkflüssigkeit vorkommt und Wasser bindet. Für die Behandlung wird sie industriell hergestellt und in das betroffene Gelenk gespritzt – man spricht von einer intraartikulären Injektion, also einer Spritze in das Gelenkinnere –, um über die wasserbindenden Eigenschaften ein reibungsärmeres Gleiten zu unterstützen. Daneben werden entzündungsmodulierende Eigenschaften beschrieben. „Hyaluronsäure“ ist dabei kein einheitlicher Wirkstoff, sondern ein Oberbegriff: Die Präparate unterscheiden sich in Herstellung, Molekülgröße und Anwendungsschema. Es gibt Hinweise, dass höhermolekulare Präparate – größer als 1.500 kDa – tendenziell wirksamer sein könnten; ein einheitlicher Beweis dafür steht aus."
+    },
+    {
+     "titel": "Anwendung und Wirkeintritt",
+     "text": "Eine mögliche Wirkung tritt in der Regel nicht sofort ein, sondern frühestens nach etwa 4–8 Wochen. Bei ausgeprägten Schmerzen mit entzündlicher Komponente kann im Einzelfall zu Beginn eine kombinierte Injektion mit Kortison – einem entzündungshemmenden Medikament – abgewogen werden, um die Zeit bis zum möglichen Wirkeintritt zu überbrücken."
+    },
+    {
+     "titel": "Wann nicht geeignet",
+     "text": "Bei Gelenken, deren Verschleiß stark durch mechanische Ursachen geprägt ist, erscheinen die Injektionen wenig aussichtsreich. Dazu zählen erhebliche Fehlstellungen, ein Anschlagen von Knochen – ein sogenanntes Impingement, ein schmerzhaftes Einklemmen –, deutliches Übergewicht oder eine fortgeführte Überlastung des Gelenks."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Spezifische Nebenwirkungen der Hyaluronsäure sind nicht üblich. Wie bei allen Medikamenten ist je nach Präparat theoretisch eine allergische Reaktion möglich. Jede Injektion in ein Gelenk ist zudem mit einem – insgesamt geringen – Infektionsrisiko verbunden."
+    },
+    {
+     "titel": "Kostenübernahme",
+     "text": "Die gesetzlichen Krankenkassen übernehmen diese Behandlung nicht. Es handelt sich um eine Individuelle Gesundheitsleistung, kurz IGeL, also eine Selbstzahlerleistung, die privat zu tragen ist."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Aussagekraft der Forschung ist begrenzt, weil sich die Arbeiten in Präparat, Dosierung, Injektionsschema und im Ausmaß der Arthrose unterscheiden. Oberes Sprunggelenk, kurz OSG: Die Datenlage ist uneinheitlich. Einzelne kleinere Studien fanden bei mehrfacher Anwendung eine Schmerzlinderung gegenüber einer Scheinbehandlung mit Placebo nach etwa drei Monaten und deuteten an, dass sich eine Operation hinauszögern lassen könnte (Cohen et al. 2008; Salk et al. 2006). Andere hochwertige Studien zeigten keinen Vorteil gegenüber einer Kochsalz-Scheinbehandlung (DeGroot et al. 2012; Kubo et al. 2022); in einer weiteren Studie war Hyaluronsäure einer Bewegungstherapie über ein Jahr nicht überlegen (Karatosun et al. 2008). Die aktuelle Leitlinie der amerikanischen Fachgesellschaft für Orthopädie (AAOS 2026) spricht sich gegen die alleinige Anwendung aus, weist aber auf einen möglichen kurzfristigen Nutzen von 1,5 bis 3 Monaten in Kombination mit Kortison hin; ein Vergleich dieser Kombination mit einer Scheinbehandlung fehlt jedoch. Einordnung: Als alleinige Behandlung nicht empfohlen; in Kombination mit Kortison im Einzelfall ein kurzfristiger, leichter Effekt denkbar, aber nicht verlässlich vorhersehbar. Großzehengrundgelenk, das MTP-I-Gelenk: In einer randomisierten, placebokontrollierten Studie mit 151 Teilnehmenden zeigte sich nach drei Monaten kein Unterschied zur Scheinbehandlung (Munteanu et al. 2011). Einordnung: Hier sprechen die Daten nicht für einen Nutzen; andere Behandlungswege sind in der Regel vorzuziehen. Ergebnisse von anderen Gelenken lassen sich nicht einfach auf Fuß und Sprunggelenk übertragen; zum Sprunggelenk liegt derzeit keine eigene deutsche Leitlinie der AWMF vor."
+    },
+    {
+     "titel": "Zusammenfassung",
+     "text": "Für Fuß und Sprunggelenk ergibt sich kein überzeugender Beleg für eine eindeutig bessere Wirksamkeit als eine Scheinbehandlung mit Placebo, wenn Hyaluronsäure allein angewendet wird. Beobachtete Effekte sind tendenziell leicht ausgeprägt und zeigen sich am ehesten drei bis sechs Monate nach der Anwendung; für die Kombination mit Kortison gibt es Hinweise auf einen kurzfristigen Nutzen. Die Behandlung kann im Einzelfall als Selbstzahlerleistung erwogen werden – gemeinsam mit der behandelnden Ärztin oder dem behandelnden Arzt und mit realistischer Erwartung. Konservative und operative Wege sind je nach Beschwerdebild gleichermaßen zu bedenken."
+    }
+   ],
+   "stand": "Juli 2026"
   }
  }
 }

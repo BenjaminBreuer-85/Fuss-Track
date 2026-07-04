@@ -531,7 +531,8 @@ function getUrlParams() {
     kb: params.get("kb"), // "hallux_valgus" / "osg_arthrose" — Landing-Page-Vorauswahl
     finder: params.get("finder"), // "1" für Diagnose-Helfer-Modus
     home: params.get("home"), // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
-    ctx: params.get("ctx") // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
+    ctx: params.get("ctx"), // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
+    massnahme: params.get("massnahme") // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
   };
 }
 
@@ -694,7 +695,7 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
-        <LandingView initialKbKey={null} />
+        <LandingView initialKbKey={null} initialMassnahme={urlParams.massnahme} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -744,7 +745,7 @@ function App() {
       return (
         <div className="app">
           <Header showSwitcher={false} hideSubtitle={true} />
-          <LandingView initialKbKey={urlParams.kb} />
+          <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} />
           <FooterLinks />
           {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
         </div>
@@ -781,7 +782,7 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
-        <LandingView initialKbKey={urlParams.kb} />
+        <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -1525,19 +1526,23 @@ function NonOpView({ onBack }) {
   );
 }
 
-function LandingView({ initialKbKey }) {
+function LandingView({ initialKbKey, initialMassnahme }) {
   // Navigationsebenen:
   //   bereich: null (Hauptmenü) | "begleiter" | "info"
   //   begleiterTyp: null (OP/Non-OP-Auswahl) | "op" | "nonop"
   //   dann (nur Begleiter→OP): Krankheitsbild → Modus → OP-Variante
   // Wenn initialKbKey gesetzt (Deep-Link): direkt in Begleiter→OP→Stufe 2
-  const [bereich, setBereich] = useState(initialKbKey ? "begleiter" : null);
+  // Deep-Link auf eine Nicht-OP-Maßnahme (?massnahme=…): direkt Info → Nicht-operative Maßnahmen → Maßnahme öffnen
+  const massnahmeDeepLink = (initialMassnahme && typeof NONOP_MASSNAHMEN !== "undefined" && NONOP_MASSNAHMEN[initialMassnahme]) ? initialMassnahme : null;
+  const [bereich, setBereich] = useState(initialKbKey ? "begleiter" : (massnahmeDeepLink ? "info" : null));
   const [begleiterTyp, setBegleiterTyp] = useState(initialKbKey ? "op" : null);
   const [selectedKb, setSelectedKb] = useState(
     initialKbKey ? (KRANKHEITSBILDER.find(k => k.key === initialKbKey) || null) : null
   );
   const [modus, setModus] = useState(null); // "aufklaerung" | "begleitung"
-  const [infoKat, setInfoKat] = useState(null); // "krankheitsbild" | "op_technik" — Infomaterial-Kategorie
+  const [infoKat, setInfoKat] = useState(massnahmeDeepLink ? "nichtoperativ" : null); // "krankheitsbild" | "op_technik" | "nichtoperativ"
+  const [massnahmeKey, setMassnahmeKey] = useState(massnahmeDeepLink || null); // offene Nicht-OP-Maßnahme (aus NONOP_MASSNAHMEN)
+  const [massnahmeSeite, setMassnahmeSeite] = useState(0); // Slide-Position in der Maßnahme
 
   // Karten-Stil (wiederverwendet)
   const cardClickStyle = {
@@ -1611,8 +1616,79 @@ function LandingView({ initialKbKey }) {
   if (bereich === "info") {
     const INFO_KATEGORIEN = [
       { key: "krankheitsbild", icon: "", label: "Krankheitsbilder", sub: "Informationen zu Erkrankungen von Fuß und Sprunggelenk." },
-      { key: "op_technik",     icon: "", label: "OP-Techniken",     sub: "Informationen zu operativen Verfahren." }
+      { key: "op_technik",     icon: "", label: "OP-Techniken",     sub: "Informationen zu operativen Verfahren." },
+      { key: "nichtoperativ",  icon: "", label: "Nicht-operative Maßnahmen", sub: "Informationen zu konservativen Behandlungen ohne Operation." }
     ];
+
+    // Offene Nicht-OP-Maßnahme als Slides-Ablauf (wie Krankheitsbilder/OP-Techniken)
+    if (massnahmeKey) {
+      const mInfo = NONOP_MASSNAHMEN[massnahmeKey] || {};
+      const mAbschnitte = mInfo.abschnitte || [];
+      const mGesamt = mAbschnitte.length + 1;
+      const mIdx = Math.max(0, Math.min(mGesamt - 1, massnahmeSeite));
+      const mGeheZu = function(n){ setMassnahmeSeite(Math.max(0, Math.min(mGesamt - 1, n))); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); };
+      const mSteps = [{ key: "info", label: "Info", wide: true }].concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1) }; }));
+      const mZurueck = function(){ setMassnahmeKey(null); setMassnahmeSeite(0); };
+
+      let mInhalt;
+      if (mIdx === 0) {
+        mInhalt = (
+          <div>
+            {mInfo.kurz && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{mInfo.kurz}</div>}
+            <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
+              <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {mAbschnitte.length} Abschnitte</div>
+              {mAbschnitte.map(function(a, i){
+                return (
+                  <div key={i} onClick={function(){ mGeheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mAbschnitte.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                    <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{i + 1}.</strong> {a.titel}</div>
+                    <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
+                  </div>
+                );
+              })}
+            </div>
+            {mInfo.stand && <div style={{ marginTop: 12, fontSize: 11, color: "var(--c-text-muted)" }}>Stand: {mInfo.stand}</div>}
+            <div style={{ marginTop: 12, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Information. Ob diese Maßnahme in Ihrem Fall sinnvoll ist, klärt Ihre Ärztin oder Ihr Arzt.</div>
+          </div>
+        );
+      } else {
+        const a = mAbschnitte[mIdx - 1] || {};
+        mInhalt = (
+          <div>
+            {a.titel && <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>{a.titel}</div>}
+            {a.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{a.text}</div>}
+          </div>
+        );
+      }
+
+      return (
+        <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+          <ZurueckLeiste onBack={mZurueck} titel={mInfo.titel || "Maßnahme"} />
+          {mSteps.length > 0 && (
+            <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 0 12px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
+              {mSteps.map(function(it, i){
+                var aktiv = i === mIdx;
+                return (
+                  <div key={it.key} onClick={function(){ mGeheZu(i); }}
+                       style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1,
+                                background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
+                    {it.label}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          <div>{mInhalt}</div>
+          <div style={{ marginTop: 20 }}>
+            {mIdx < mGesamt - 1 && (
+              <div onClick={function(){ mGeheZu(mIdx + 1); }} style={{ textAlign: "center", padding: "14px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 15, fontWeight: 700, cursor: "pointer" }}>Weiter →</div>
+            )}
+            {mIdx > 0 && (
+              <div onClick={function(){ mGeheZu(mIdx - 1); }} style={{ textAlign: "center", padding: "10px", marginTop: 8, color: "var(--c-text-muted)", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>← Zurück</div>
+            )}
+          </div>
+        </div>
+      );
+    }
 
     // Ebene 1: Kategorie wählen
     if (!infoKat) {
@@ -1638,11 +1714,14 @@ function LandingView({ initialKbKey }) {
       );
     }
 
-    // Ebene 2: Themen-Liste der gewählten Kategorie (dynamisch aus AUFKLAERUNG)
+    // Ebene 2: Themen-Liste der gewählten Kategorie
     const aktiveKat = INFO_KATEGORIEN.find(function(k) { return k.key === infoKat; }) || INFO_KATEGORIEN[0];
-    const eintraege = Object.keys(AUFKLAERUNG)
-      .map(function(key) { return { key: key, daten: AUFKLAERUNG[key] }; })
-      .filter(function(e) { return e.daten && e.daten.infoKategorie === infoKat; });
+    // Nicht-operative Maßnahmen kommen direkt aus NONOP_MASSNAHMEN, die übrigen aus AUFKLAERUNG (nach infoKategorie).
+    const eintraege = infoKat === "nichtoperativ"
+      ? Object.keys(NONOP_MASSNAHMEN).map(function(key) { return { key: key, daten: NONOP_MASSNAHMEN[key], istMassnahme: true }; })
+      : Object.keys(AUFKLAERUNG)
+          .map(function(key) { return { key: key, daten: AUFKLAERUNG[key] }; })
+          .filter(function(e) { return e.daten && e.daten.infoKategorie === infoKat; });
 
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
@@ -1660,14 +1739,17 @@ function LandingView({ initialKbKey }) {
               const titel = e.daten.infoTitel || e.daten.titel || e.key;
               return (
                 <div key={e.key}
-                     onClick={function() { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung" }); }}
+                     onClick={function() { if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung" }); } }}
                      style={{ padding: 16, border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", gap: 12, alignItems: "flex-start" }}
                      onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                   <div style={{ fontSize: 20, lineHeight: 1, marginTop: 2 }}>{aktiveKat.icon}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 3 }}>{titel}</div>
-                    {e.daten.untertitel && infoKat !== "op_technik" && (
+                    {e.daten.untertitel && infoKat !== "op_technik" && infoKat !== "nichtoperativ" && (
                       <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45 }}>{e.daten.untertitel}</div>
+                    )}
+                    {infoKat === "nichtoperativ" && e.daten.kurz && (
+                      <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45 }}>{e.daten.kurz}</div>
                     )}
                   </div>
                   <div style={{ marginLeft: "auto", color: "var(--c-text-muted)", fontSize: 18, alignSelf: "center" }}>›</div>
@@ -2056,6 +2138,36 @@ function AufklaerungsView({ opKey, kbOrigin }) {
           Weiter →
         </button>
       </div>
+
+      {/* Weitere sinnvolle Maßnahmen — nur auf der letzten Slide, wenn im Infomaterial-Eintrag verknüpft */}
+      {step === total - 1 && Array.isArray(aufkl.weitereMassnahmen) && aufkl.weitereMassnahmen.length > 0 && (
+        <div style={{ marginTop: 16, background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)", border: "1px solid rgba(44,79,124,.20)", overflow: "hidden" }}>
+          <div style={{ padding: "10px 16px", background: "rgba(44,79,124,.06)", borderBottom: "1px solid rgba(44,79,124,.12)" }}>
+            <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--c-main)" }}>Weitere sinnvolle Maßnahmen</div>
+          </div>
+          <div style={{ padding: "4px 16px 8px" }}>
+            {aufkl.weitereMassnahmen.map(function(m, i) {
+              var ref = (m && m.ref) ? m.ref : (typeof m === "string" ? m : null);
+              if (!ref) return null;
+              var info = (typeof NONOP_MASSNAHMEN !== "undefined" && NONOP_MASSNAHMEN[ref]) || {};
+              var titel = info.titel || ref;
+              var kurztext = (m && m.kurztext) ? m.kurztext : "";
+              return (
+                <a key={i} href={buildUrl({ massnahme: ref })}
+                   style={{ display: "block", textDecoration: "none", padding: "11px 0", borderBottom: i < aufkl.weitereMassnahmen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: 13.5, fontWeight: 600, color: "var(--c-main)" }}>{titel}</div>
+                      {kurztext && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45, marginTop: 2 }}>{kurztext}</div>}
+                    </div>
+                    <div style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 600, whiteSpace: "nowrap" }}>ansehen ›</div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
