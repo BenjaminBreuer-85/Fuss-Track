@@ -311,7 +311,7 @@
   },
   "lat_stabil": {
    "infoKategorie": "op_technik",
-   "infoTitel": "Laterale anatomische Stabilisierung",
+   "infoTitel": "Laterale anat. Stabilisierung",
    "titel": "Außenbandinstabilität — Sehnentransplantat",
    "untertitel": "",
    "betrifft_eingriffe": [],
@@ -506,7 +506,7 @@
    "_review": true
   },
   "metallallergie": {
-   "infoKategorie": "op_technik",
+   "infoKategorie": "allgemein",
    "infoTitel": "Metallallergie und Implantate",
    "titel": "Allgemeine Information",
    "untertitel": "",
@@ -529,18 +529,6 @@
    "_quelle": "Übertrag aus mediq (B. Breuer)",
    "_review": true
   },
-  "osg_abwaegung": {
-   "infoKategorie": "op_technik",
-   "infoTitel": "Prothese oder Versteifung? (OSG)",
-   "titel": "OSG-Arthrose — Entscheidungshilfe",
-   "untertitel": "",
-   "betrifft_eingriffe": [],
-   "slides": [
-    "op_osg_abwaegung"
-   ],
-   "_quelle": "Übertrag aus mediq (B. Breuer)",
-   "_review": true
-  },
   "innenknoechel": {
    "infoKategorie": "op_technik",
    "infoTitel": "Innenknöchelosteotomie (Zugang)",
@@ -554,7 +542,7 @@
    "_review": true
   },
   "pin_pflege": {
-   "infoKategorie": "op_technik",
+   "infoKategorie": "allgemein",
    "infoTitel": "Pin-Pflege bei Fixateur externe",
    "titel": "Nachbehandlung / Pflege",
    "untertitel": "",
