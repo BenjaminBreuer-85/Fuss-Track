@@ -221,6 +221,510 @@
     "hr_behandlung",
     "hr_op_arthrodese"
    ]
+  },
+  "weil": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Weil-Osteotomie",
+   "titel": "Metatarsalgie",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_weil"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "cotton": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Cotton-Osteotomie",
+   "titel": "Knick-Senk-Fuß (Zusatzeingriff)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_cotton"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "morton": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Entfernung Morton-Neurom",
+   "titel": "Morton-Neurom",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_morton"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "schede": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Schede-/McBride-Operation",
+   "titel": "Hallux valgus (leichte Fehlstellung)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_schede"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "plantarfascie": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Plantarfaszien-Release",
+   "titel": "Fersenschmerz / Plantarfasziitis",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_plantarfascie"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "kidner": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Modifizierte Kidner-Prozedur",
+   "titel": "Os tibiale externum",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_kidner"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "brostrom": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Außenbandreparatur nach Broström",
+   "titel": "Außenbandinstabilität Sprunggelenk",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_brostrom"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "lat_stabil": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Laterale anatomische Stabilisierung",
+   "titel": "Außenbandinstabilität — Sehnentransplantat",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_lat_stabil"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "peroneal_instab": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Peronealsehnen-Instabilität",
+   "titel": "Peronealsehnen — Instabilität/Luxation",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_peroneal_instab"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "peroneal_riss": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Peronealsehnen-Riss",
+   "titel": "Peronealsehnen — Riss/Schaden",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_peroneal_riss"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "haglund_split": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Haglund-Exostose / Insertionstendinopathie",
+   "titel": "Hinterer Fersenschmerz (Ansatz)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_haglund_split"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "tendoskopie_achilles": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Achillessehnen-Tendoskopie",
+   "titel": "Achillessehne — Mid-Portion-Tendinopathie",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_tendoskopie_achilles"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "achilles_nekrose": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Offene Achillessehnen-Sanierung",
+   "titel": "Achillessehne — offene Sanierung (Mid-Portion)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_achilles_nekrose"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "calc_verlaengerung": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Calcaneus-Verlängerungs-Osteotomie",
+   "titel": "Knick-Senk-Fuß (Betonung Abduktion)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_calc_verlaengerung"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "calc_medial": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Medialisierende Calcaneus-Verschiebe-Osteotomie",
+   "titel": "Knick-Senk-Fuß (Betonung Rückfuß-Valgus)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_calc_medial"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "calcaneoplastie": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Calcaneoplastie (endoskopisch)",
+   "titel": "Hinterer Fersenschmerz (Haglund, minimal-invasiv)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_calcaneoplastie"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "smot_valgus": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Supramalleoläre Osteotomie (Valgus)",
+   "titel": "Fehlstellung oberhalb des Sprunggelenks (Valgus)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_smot_valgus"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "smot_varus": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Supramalleoläre Osteotomie (Varus)",
+   "titel": "Fehlstellung oberhalb des Sprunggelenks (Varus)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_smot_varus"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "triple": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Triple-/Diple-Arthrodese",
+   "titel": "Schwere Rückfußfehlstellung / Rückfuß-Arthrose",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_triple"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "knorpel_osg": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Knorpelchirurgie am OSG",
+   "titel": "Knorpelschaden am Sprunggelenk (OCL)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_knorpel_osg"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "arthrorise": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Arthrorise (Kind)",
+   "titel": "Kindlicher flexibler Knick-Senk-Fuß",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_arthrorise"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "coalitio_cn": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Coalitio calcaneonavicular — Resektion",
+   "titel": "Coalitio (Fußwurzelverbindung)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_coalitio_cn"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "coalitio_tc": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Coalitio talocalcaneare — OP",
+   "titel": "Coalitio (Fußwurzelverbindung)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_coalitio_tc"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "metallallergie": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Metallallergie und Implantate",
+   "titel": "Allgemeine Information",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_metallallergie"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "spongiosa": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Knochenentnahme (Beckenkamm)",
+   "titel": "Zusatzeingriff bei Knochenoperationen",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_spongiosa"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "osg_abwaegung": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Prothese oder Versteifung? (OSG)",
+   "titel": "OSG-Arthrose — Entscheidungshilfe",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_osg_abwaegung"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "innenknoechel": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Innenknöchelosteotomie (Zugang)",
+   "titel": "Zugang bei Sprungbein-/Knorpeleingriffen",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_innenknoechel"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "pin_pflege": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Pin-Pflege bei Fixateur externe",
+   "titel": "Nachbehandlung / Pflege",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_pin_pflege"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "teilprothese_talus": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Teilprothese des Talus",
+   "titel": "Knorpelschaden am Sprungbein (Rückzugsoption)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_teilprothese_talus"
+   ],
+   "_quelle": "Übertrag aus mediq (B. Breuer)",
+   "_review": true
+  },
+  "fhl": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "FHL-Sehnentransfer",
+   "titel": "Achillessehne — chronischer Schaden",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_fhl"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true
+  },
+  "moberg": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Moberg-Osteotomie",
+   "titel": "Hallux rigidus",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_moberg"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true
+  },
+  "achilles_naht": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Achillessehnen-Naht (offen)",
+   "titel": "Achillessehnenriss",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_achilles_naht"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "achilles_perkutan": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Perkutane Achillessehnen-Naht",
+   "titel": "Achillessehnenriss (minimal-invasiv)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_achilles_perkutan"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "subtalar": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Subtalararthrodese",
+   "titel": "Unteres Sprunggelenk — Arthrose/Fehlstellung",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_subtalar"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "tmt": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "TMT-Arthrodese",
+   "titel": "Mittelfuß (Lisfranc) — Arthrose/Instabilität",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_tmt"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true
+  },
+  "tn": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "TN-Arthrodese",
+   "titel": "Talonavikulargelenk — Arthrose/Fehlstellung",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_tn"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true
+  },
+  "tarsaltunnel": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Tarsaltunnel-Dekompression",
+   "titel": "Nervenengpass Innenknöchel (Tarsaltunnelsyndrom)",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_tarsaltunnel"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "ttc": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Tibio-talo-calcaneare Arthrodese",
+   "titel": "Sprunggelenk + unteres Sprunggelenk — schwere Arthrose",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_ttc"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "gastroc": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Wadenmuskel-Verlängerung",
+   "titel": "Verkürzte Wadenmuskulatur",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_gastroc"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true,
+   "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+  },
+  "osg_arthroskopie": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Arthroskopie des OSG",
+   "titel": "Sprunggelenk — Gelenkspiegelung",
+   "untertitel": "",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_osg_arthroskopie"
+   ],
+   "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
+   "_review": true,
+   "_entwurf": true
   }
  },
  "NONOP_MASSNAHMEN": {
