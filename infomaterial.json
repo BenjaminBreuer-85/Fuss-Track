@@ -717,124 +717,540 @@
  },
  "NONOP_MASSNAHMEN": {
   "stosswelle": {
-   "titel": "Stoßwellentherapie (=ESWT)",
-   "kurz": "PLATZHALTER: Kurzbeschreibung der extrakorporalen Stoßwellentherapie (ein bis zwei Sätze).",
+   "titel": "Stoßwellentherapie (=extrakorporale Druckwellen-Behandlung)",
+   "kurz": "Druckimpulse von außen regen die Heilung von Sehnen-, Knochen- und Weichteilbeschwerden an.",
    "abschnitte": [
     {
      "titel": "Worum es geht",
-     "text": "PLATZHALTER: Was ist die Stoßwellentherapie, wie wirkt sie (allgemein, krankheitsbild-unabhängig)."
+     "text": "Stoßwellengeräte erzeugen hochenergetische **Druckimpulse**. Im Gewebe entstehen kleine **Kavitationsblasen (=Bläschen durch schnellen Druckwechsel)**, wodurch ein Heilungsimpuls angeregt wird. Es gibt einen schmerzstillenden **Soforteffekt** sowie über **Mechanotransduktion (=Umwandlung mechanischer Reize in Zellsignale)** zeitverzögerte Effekte nach 8–12 Wochen. Man unterscheidet die **fokussierte** und die **radiale** Stoßwelle."
     },
     {
      "titel": "Ablauf",
-     "text": "PLATZHALTER: Wie läuft eine Behandlung ab."
-    },
-    {
-     "titel": "Sitzungen",
-     "text": "PLATZHALTER: Typische Anzahl und Abstände der Sitzungen."
+     "text": "In der Regel **4–6 Sitzungen**; eine Befundbesserung ist nach 4–6 Wochen zu erwarten."
     },
     {
      "titel": "Mögliche Nebenwirkungen",
-     "text": "PLATZHALTER: Häufige/seltene Nebenwirkungen."
+     "text": "Vorübergehend Schmerzen, Rötung, Schwellung oder kleine Blutergüsse an der behandelten Stelle."
     },
     {
      "titel": "Wann nicht geeignet (Kontraindikationen)",
-     "text": "PLATZHALTER: Gegenanzeigen."
+     "text": "Zurückhaltung u. a. bei Blutgerinnungsstörungen/Blutverdünnung, akuter Infektion im Behandlungsgebiet, Tumoren sowie in der Schwangerschaft (bitte individuell ärztlich prüfen)."
     },
     {
      "titel": "Was die Studienlage zeigt",
-     "text": "PLATZHALTER: Kurzer, allgemeiner Evidenz-Überblick."
+     "text": "Bei **Plantarfasziitis** gut erforscht und als wirksam belegt; empfohlen bei fehlender Besserung nach 3–6 Monaten. Ab 6 Monaten Beschwerdedauer übernehmen die gesetzlichen Kassen die Behandlung. Die Wirksamkeit ist besser bei radiologisch kontrollierter Anwendung und verkürzt die Arbeitsunfähigkeit stärker als andere nicht-operative Techniken."
     }
    ],
-   "stand": "PLATZHALTER: Monat/Jahr"
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
   },
   "einlagen": {
    "titel": "Einlagen (=orthopädische Schuheinlagen)",
-   "kurz": "PLATZHALTER: Kurzbeschreibung.",
+   "kurz": "Individuell angepasste Einlagen stützen, entlasten oder korrigieren den Fuß.",
    "abschnitte": [
     {
      "titel": "Worum es geht",
-     "text": "PLATZHALTER"
+     "text": "**Orthopädische Einlagen** werden individuell nach Fußform und Beschwerden angefertigt. Je nach Ziel **stützen** sie das Fußgewölbe, **entlasten** Druckstellen (z. B. am Fußballen) oder **korrigieren/führen** eine Fehlstellung. Sie sind eine der häufigsten nicht-operativen Maßnahmen bei Fußbeschwerden."
     },
     {
      "titel": "Ablauf",
-     "text": "PLATZHALTER"
+     "text": "Abdruck/Vermessung des Fußes, Anfertigung durch das Sanitätshaus, ggf. Anpassung im Verlauf; Tragen in geeignetem Schuhwerk."
     },
     {
      "titel": "Mögliche Nebenwirkungen",
-     "text": "PLATZHALTER"
+     "text": "Anfangs Druck-/Gewöhnungsbeschwerden möglich; bei falscher Passform Reizungen."
     },
     {
      "titel": "Wann nicht geeignet (Kontraindikationen)",
-     "text": "PLATZHALTER"
+     "text": "Keine spezifischen Kontraindikationen; die Versorgung wird an das Krankheitsbild angepasst."
     },
     {
      "titel": "Was die Studienlage zeigt",
-     "text": "PLATZHALTER"
+     "text": "Einlagen können Beschwerden lindern und Fehlbelastungen ausgleichen; die Evidenz ist je nach Krankheitsbild unterschiedlich. Sie werden meist als Baustein eines Gesamtkonzepts eingesetzt."
     }
    ],
-   "stand": "PLATZHALTER"
+   "stand": "Entwurf (Claude), 07/2026 — ärztlich zu prüfen",
+   "_review": true,
+   "_entwurf": true
   },
   "nachtschiene": {
-   "titel": "Nachtschiene (=Nachtlagerungsschiene)",
-   "kurz": "PLATZHALTER: Kurzbeschreibung.",
+   "titel": "Nachtschiene (=Lagerungsschiene für die Nacht)",
+   "kurz": "Eine Schiene hält den Fuß nachts in Dehnstellung — v. a. bei Plantarfasziitis/Achillesbeschwerden.",
    "abschnitte": [
     {
      "titel": "Worum es geht",
-     "text": "PLATZHALTER"
+     "text": "Eine **Nachtschiene** hält das Sprunggelenk in der Nacht in einer leichten **Dehnstellung**, sodass Wadenmuskel und Plantarfaszie nicht verkürzt „einschlafen\". Dadurch soll v. a. der typische **morgendliche Anlaufschmerz** bei **Plantarfasziitis** oder Achillessehnenbeschwerden reduziert werden."
     },
     {
      "titel": "Ablauf",
-     "text": "PLATZHALTER"
+     "text": "Anlegen der Schiene für die Nacht (oder mehrere Stunden) über einige Wochen."
     },
     {
      "titel": "Mögliche Nebenwirkungen",
-     "text": "PLATZHALTER"
+     "text": "Zu Beginn Druck- oder Gewöhnungsbeschwerden, gestörter Schlaf möglich."
     },
     {
      "titel": "Wann nicht geeignet (Kontraindikationen)",
-     "text": "PLATZHALTER"
+     "text": "Keine spezifischen Kontraindikationen; bei Passproblemen anpassen."
     },
     {
      "titel": "Was die Studienlage zeigt",
-     "text": "PLATZHALTER"
+     "text": "Bei Plantarfasziitis kann eine Nachtschiene den morgendlichen Anlaufschmerz lindern; sie wird meist mit Dehnübungen und Einlagen kombiniert."
     }
    ],
-   "stand": "PLATZHALTER"
+   "stand": "Entwurf (Claude), 07/2026 — ärztlich zu prüfen",
+   "_review": true,
+   "_entwurf": true
   },
   "hyaluronsaeure": {
-   "titel": "Hyaluronsäure-Injektion (Gelenkspritze)",
-   "kurz": "Spritze eines körpereigenen Mehrfachzuckers in das Gelenk bei Arthrose, also Gelenkverschleiß; Selbstzahlerleistung mit begrenzter und uneinheitlicher Studienlage an Fuß und Sprunggelenk.",
+   "titel": "Hyaluronsäure-Injektion (=Spritze ins Gelenk)",
+   "kurz": "Ein wasserbindender Mehrfachzucker wird in ein verschlissenes Gelenk gespritzt, um das Gleiten zu verbessern.",
    "abschnitte": [
     {
      "titel": "Worum es geht",
-     "text": "Hyaluronsäure ist ein körpereigener Mehrfachzucker, der natürlicherweise in der Gelenkflüssigkeit vorkommt und Wasser bindet. Für die Behandlung wird sie industriell hergestellt und in das betroffene Gelenk gespritzt – man spricht von einer intraartikulären Injektion, also einer Spritze in das Gelenkinnere –, um über die wasserbindenden Eigenschaften ein reibungsärmeres Gleiten zu unterstützen. Daneben werden entzündungsmodulierende Eigenschaften beschrieben. „Hyaluronsäure“ ist dabei kein einheitlicher Wirkstoff, sondern ein Oberbegriff: Die Präparate unterscheiden sich in Herstellung, Molekülgröße und Anwendungsschema. Es gibt Hinweise, dass höhermolekulare Präparate – größer als 1.500 kDa – tendenziell wirksamer sein könnten; ein einheitlicher Beweis dafür steht aus."
+     "text": "**Hyaluronsäure** ist ein **Mehrfachzucker**, der im Körper natürlich vorkommt. Synthetisch hergestellt wird sie bei **Arthrose** in geschädigte Gelenke gespritzt; ihre wasserbindenden Eigenschaften sollen ein reibungsärmeres Gleiten der Gelenkpartner ermöglichen. Es handelt sich um eine **IGeL-Leistung (=Selbstzahlerleistung)**, die die gesetzlichen Kassen nicht übernehmen."
     },
     {
-     "titel": "Anwendung und Wirkeintritt",
-     "text": "Eine mögliche Wirkung tritt in der Regel nicht sofort ein, sondern frühestens nach etwa 4–8 Wochen. Bei ausgeprägten Schmerzen mit entzündlicher Komponente kann im Einzelfall zu Beginn eine kombinierte Injektion mit Kortison – einem entzündungshemmenden Medikament – abgewogen werden, um die Zeit bis zum möglichen Wirkeintritt zu überbrücken."
-    },
-    {
-     "titel": "Wann nicht geeignet",
-     "text": "Bei Gelenken, deren Verschleiß stark durch mechanische Ursachen geprägt ist, erscheinen die Injektionen wenig aussichtsreich. Dazu zählen erhebliche Fehlstellungen, ein Anschlagen von Knochen – ein sogenanntes Impingement, ein schmerzhaftes Einklemmen –, deutliches Übergewicht oder eine fortgeführte Überlastung des Gelenks."
+     "titel": "Ablauf",
+     "text": "Injektion ins Gelenk; ein Wirkeintritt ist frühestens nach 4–8 Wochen zu erwarten. Bei starkem, entzündlichem Schmerz kann initial eine kombinierte Injektion mit Cortison abgewogen werden."
     },
     {
      "titel": "Mögliche Nebenwirkungen",
-     "text": "Spezifische Nebenwirkungen der Hyaluronsäure sind nicht üblich. Wie bei allen Medikamenten ist je nach Präparat theoretisch eine allergische Reaktion möglich. Jede Injektion in ein Gelenk ist zudem mit einem – insgesamt geringen – Infektionsrisiko verbunden."
+     "text": "Wie bei jeder Injektion ein geringes Infektionsrisiko; vorübergehend Reizung/Schwellung des Gelenks möglich."
     },
     {
-     "titel": "Kostenübernahme",
-     "text": "Die gesetzlichen Krankenkassen übernehmen diese Behandlung nicht. Es handelt sich um eine Individuelle Gesundheitsleistung, kurz IGeL, also eine Selbstzahlerleistung, die privat zu tragen ist."
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht bei akutem Gelenkinfekt; Zurückhaltung bei Blutverdünnung (individuell ärztlich prüfen)."
     },
     {
      "titel": "Was die Studienlage zeigt",
-     "text": "Die Aussagekraft der Forschung ist begrenzt, weil sich die Arbeiten in Präparat, Dosierung, Injektionsschema und im Ausmaß der Arthrose unterscheiden. Oberes Sprunggelenk, kurz OSG: Die Datenlage ist uneinheitlich. Einzelne kleinere Studien fanden bei mehrfacher Anwendung eine Schmerzlinderung gegenüber einer Scheinbehandlung mit Placebo nach etwa drei Monaten und deuteten an, dass sich eine Operation hinauszögern lassen könnte (Cohen et al. 2008; Salk et al. 2006). Andere hochwertige Studien zeigten keinen Vorteil gegenüber einer Kochsalz-Scheinbehandlung (DeGroot et al. 2012; Kubo et al. 2022); in einer weiteren Studie war Hyaluronsäure einer Bewegungstherapie über ein Jahr nicht überlegen (Karatosun et al. 2008). Die aktuelle Leitlinie der amerikanischen Fachgesellschaft für Orthopädie (AAOS 2026) spricht sich gegen die alleinige Anwendung aus, weist aber auf einen möglichen kurzfristigen Nutzen von 1,5 bis 3 Monaten in Kombination mit Kortison hin; ein Vergleich dieser Kombination mit einer Scheinbehandlung fehlt jedoch. Einordnung: Als alleinige Behandlung nicht empfohlen; in Kombination mit Kortison im Einzelfall ein kurzfristiger, leichter Effekt denkbar, aber nicht verlässlich vorhersehbar. Großzehengrundgelenk, das MTP-I-Gelenk: In einer randomisierten, placebokontrollierten Studie mit 151 Teilnehmenden zeigte sich nach drei Monaten kein Unterschied zur Scheinbehandlung (Munteanu et al. 2011). Einordnung: Hier sprechen die Daten nicht für einen Nutzen; andere Behandlungswege sind in der Regel vorzuziehen. Ergebnisse von anderen Gelenken lassen sich nicht einfach auf Fuß und Sprunggelenk übertragen; zum Sprunggelenk liegt derzeit keine eigene deutsche Leitlinie der AWMF vor."
-    },
-    {
-     "titel": "Zusammenfassung",
-     "text": "Für Fuß und Sprunggelenk ergibt sich kein überzeugender Beleg für eine eindeutig bessere Wirksamkeit als eine Scheinbehandlung mit Placebo, wenn Hyaluronsäure allein angewendet wird. Beobachtete Effekte sind tendenziell leicht ausgeprägt und zeigen sich am ehesten drei bis sechs Monate nach der Anwendung; für die Kombination mit Kortison gibt es Hinweise auf einen kurzfristigen Nutzen. Die Behandlung kann im Einzelfall als Selbstzahlerleistung erwogen werden – gemeinsam mit der behandelnden Ärztin oder dem behandelnden Arzt und mit realistischer Erwartung. Konservative und operative Wege sind je nach Beschwerdebild gleichermaßen zu bedenken."
+     "text": "Trotz langjähriger Anwendung ist der Nutzen nicht abschließend geklärt — die Wirksamkeit scheint an Fuß- und Sprunggelenken unterschiedlich, und Studien variieren in Arthrosegrad, Schema und Dosierung. **Höhermolekulare Präparate (über 1500 kDa)** scheinen wirksamer zu sein."
     }
    ],
-   "stand": "Juli 2026"
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "botox_plantar": {
+   "titel": "Botox-Injektion bei Plantarfasziitis",
+   "kurz": "Botulinumtoxin entspannt verkrampfte Fußmuskeln und kann hartnäckige Fersenschmerzen lindern.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Die **Plantarfasziitis (=Reizung der Sehnenplatte an der Fußsohle)** ist hartnäckig zu behandeln. **Botulinumtoxin (Botox, =Eiweiß, das Muskeln vorübergehend entspannt)** wird in die **intrinsischen (=kleinen, im Fuß gelegenen) Fußmuskeln** injiziert, um verkrampfte Strukturen zu lösen. Es ist meist keine alleinige Therapie, sondern wird mit Einlagen, Wadendehnung usw. kombiniert."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Injektion in die Fußmuskulatur, in der Regel als Kombinationsbehandlung."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Vorübergehende Muskelschwäche; wie bei jeder Injektion ein geringes Infektionsrisiko (steril unter 1:10.000)."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht bei Infektion im Bereich; Zurückhaltung bei bestimmten neuromuskulären Erkrankungen (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Eine Vergleichsstudie zeigte ähnlich gute Effekte wie Cortison/Betäubungsmittel nach ca. 6 Monaten; im Vergleich zu **PRP** eher bessere **kurzfristige** Effekte (PRP eher langfristig). Eine Meta-Analyse bestätigte über 6–12 Monate verbesserte Funktion und weniger Schmerz. Die Studienlage ist noch begrenzt."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "prp_acp": {
+   "titel": "PRP/ACP (=Eigenblut-Injektion mit Wachstumsfaktoren)",
+   "kurz": "Aus dem eigenen Blut gewonnene Wachstumsfaktoren werden gezielt an die erkrankte Stelle gespritzt.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**PRP (=Platelet Rich Plasma, plättchenreiches Plasma)** wird aus dem eigenen Blut gewonnen: Eine Blutprobe wird **zentrifugiert (=in einer Schleuder aufgetrennt)** und der konzentrierte Überstand mit **Wachstumsfaktoren** (PDGF, TGF, VEGF u. a.) zurückgespritzt. Diese Faktoren fördern die Heilung von Wunden, Sehnen und Knochen; man geht davon aus, dass die gezielte Injektion den Heilungsprozess (wieder) aktiviert. PRP kann **leukozytenreich** oder **leukozytenarm** aufbereitet werden."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Blutabnahme, Aufbereitung, anschließende Injektion an die betroffene Stelle. Es handelt sich meist um eine Selbstzahlerleistung."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Vorübergehend Schmerz/Schwellung an der Injektionsstelle; geringes Infektionsrisiko."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht bei akutem Infekt; Zurückhaltung bei bestimmten Blut-/Gerinnungserkrankungen (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Tendenziell ist **leukozytenreiches** PRP eher bei Sehnenerkrankungen, **leukozytenarmes** eher bei Arthrose günstig. Bei der Achillessehnenentzündung ist die Datenlage eher ernüchternd (einzelne positive Arbeiten, in Reviews aber kein klarer Effekt); bei der Plantarfasziitis ist der Nutzen besser belegt."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "rso": {
+   "titel": "Radiosynoviorthese (RSO, =nuklearmedizinische Gelenkbehandlung)",
+   "kurz": "Ein ins Gelenk gespritztes Radionuklid behandelt eine entzündete Gelenkschleimhaut lokal.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Bei der **Radiosynoviorthese** wird ein **Radionuklid (=schwach strahlende Substanz)** ins Gelenk gespritzt. Es wird von den Zellen der **Gelenkschleimhaut (Synovia)** aufgenommen und zerstört die oberflächlichen Schleimhautschichten; die Strahlenwirkung ist auf wenige Millimeter begrenzt (geringe Auswirkung auf Knorpel/Nachbargewebe). In den Folgewochen bildet sich neue Schleimhaut. Etabliert v. a. bei **entzündlichen Gelenkerkrankungen (Rheuma)**."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Einmalige Injektion ins Gelenk durch die Nuklearmedizin; anschließend kurze Ruhigstellung nach Vorgabe."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Vorübergehende Reizung/Schwellung; sehr selten strahlenbedingte lokale Reaktionen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht in der Schwangerschaft/Stillzeit; Zurückhaltung bei Gelenkinfekt (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Sinnvoll v. a. bei **starker floride Entzündung der Schleimhaut**. Bei Rheuma (rheumatoide Arthritis, seronegative Spondylarthropathie, villonoduläre Synovialitis, Hämophilie-Arthropathie) gut untersucht, kurz- und mittelfristig wirksam und sicher. Bei reinem Verschleiß ohne starke Entzündung ist der Nutzen unsicher."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "lllt": {
+   "titel": "Low-Level-Lasertherapie (LLLT)",
+   "kurz": "Schwaches Laserlicht soll Zellprozesse anregen und Entzündungen dämpfen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Bei der **LLLT (=Behandlung mit niedrigenergetischem Laser)** ist das Ziel nicht Schädigung, sondern **Regulation von Zellen (Photo-Biomodulation)**. Genutzt werden Wellenlängen von 620 nm bis in den Infrarotbereich (oberflächlich kürzere, tief gelegenes Gewebe längere Wellen). Ausgelöst wird eine **photochemische Reaktion**; möglich sind entzündungshemmende Effekte sowie eine Förderung der Mikrozirkulation und der Kollagenbildung."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Mehrere Sitzungen; das genaue Schema hängt von Gerät, Wellenlänge und Intensität ab."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "In der Regel gut verträglich; selten lokale Reizung."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht direkt über Tumoren, nicht über Schilddrüse/Augen ohne Schutz, Zurückhaltung in der Schwangerschaft (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Für orthopädische Erkrankungen liegen überwiegend Grundlagen-/Tierdaten vor; Studien am Menschen sind wegen unterschiedlicher Laser/Wellenlängen schwer vergleichbar. Wichtig ist die **biphasische Dosis-Wirkung (Arndt-Schulz-Gesetz)**: eine niedrige Dosis kann wirken, eine zu hohe negativ. Bei chronischen Sehnen-/Faszienbeschwerden (z. B. Plantarfasziitis) ist die Datenlage am besten."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "lipus": {
+   "titel": "LIPUS (=niederintensiver gepulster Ultraschall)",
+   "kurz": "Schwacher, gepulster Ultraschall soll die Knochenheilung anregen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**LIPUS (=low-intensity pulsed ultrasound)** ist ein niederintensiver, gepulster Ultraschall, der die **Knochenheilung** anregen soll — vor allem bei verzögerter Heilung oder ausbleibender Durchbauung (Pseudarthrose). Das Gerät wird täglich für einige Minuten auf die Haut über der betroffenen Stelle aufgesetzt."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Tägliche Anwendung zu Hause über mehrere Wochen nach ärztlicher Vorgabe."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "In der Regel keine relevanten Nebenwirkungen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht direkt über Wachstumsfugen bei Kindern und über Tumoren (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Datenlage zum Nutzen ist uneinheitlich; einzelne Studien zeigen einen Effekt auf die Knochenheilung, größere Untersuchungen sind zurückhaltender. Einsatz v. a. als ergänzende Maßnahme."
+    }
+   ],
+   "stand": "Entwurf (Claude), 07/2026 — ärztlich zu prüfen",
+   "_review": true,
+   "_entwurf": true
+  },
+  "vitamin_d3": {
+   "titel": "Vitamin-D3-Therapie",
+   "kurz": "Vitamin D3 unterstützt die Knochenhärtung; bei Mangel kann eine Einnahme sinnvoll sein.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**Vitamin D3** steuert – zusammen mit **Parathormon** und **Calcitonin** – den Kalziumhaushalt und fördert die **Härtung des Knochens**. Rund 90 % des Körperkalziums sind im Knochen gebunden. Bei einem Mangel, der sich nicht über natürliche Sonnenexposition ausgleichen lässt, kann Vitamin D3 als Präparat eingenommen werden."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Einnahme als Präparat, häufig in den Wintermonaten; die Dosierung wird ärztlich festgelegt (die DGE gibt als Schätzwert 20 µg = 800 IE pro Tag an; einige Autoren empfehlen höhere Werte)."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Bei sachgerechter Dosierung selten; eine deutliche Überdosierung kann zu erhöhten Kalziumwerten führen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht bei Erkrankungen mit erhöhtem Kalziumspiegel; Dosierung bei Nierenerkrankungen anpassen (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Ein ausreichender Vitamin-D-Spiegel senkt u. a. das Risiko für Knochenbrüche/-schwäche. Über die optimale Dosierung besteht keine vollständige Einigkeit; bei nachgewiesenem Mangel ist die Einnahme sinnvoll."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "infiltrationen": {
+   "titel": "Infiltrationen und Injektionen",
+   "kurz": "Medikamente werden gezielt über eine Nadel an oder in die betroffene Struktur gebracht.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**Injektion** und **Infiltration** werden oft gleichbedeutend verwendet; fachlich unterscheiden sie sich am Wirkort: Bei der **Injektion** wird ein Medikament an einen Ort der Aufnahme gegeben (Wirkung ggf. anderswo), bei der **Infiltration** ist die Wirkung **direkt am Ort** gewünscht. Am Bewegungsapparat kommen verschiedenste Wirkstoffe (z. B. Betäubungsmittel, Cortison) mit unterschiedlichen Zielen zum Einsatz."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Aufziehen des gelösten Wirkstoffs in eine Spritze und Gabe über eine dünne Nadel."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Häufigste Risiken jeder Nadelgabe sind eine **allergische Reaktion** oder eine **Infektion**; die Wirkstoffe werden so gewählt, dass das Allergierisiko statistisch gering ist."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Nicht bei Infektion im Einstichbereich; Zurückhaltung bei Blutverdünnung/Allergien (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Wirkung hängt von der korrekten Platzierung, der Verteilung im Gewebe, dem Gewebe-pH und der zugrundeliegenden Problematik ab — eine pauschale Wirksamkeit lässt sich meist weder sicher zusagen noch ausschließen."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "schmerztherapie_op": {
+   "titel": "Schmerztherapie bei und nach einer Operation",
+   "kurz": "Ziel ist ein erträgliches Schmerzniveau, damit Bewegung, Schlaf und Heilung gut funktionieren.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**Schmerz** hat eine Schutz- und Warnfunktion und tritt nach jeder Gewebeschädigung auf. Eine gute Schmerztherapie will **nicht jeden Schmerz** unterdrücken, sondern ihn nach dem Eingriff auf ein **geringes, erträgliches Maß** senken — so, dass Mobilisierung, Ernährung, Atmung und Schlaf gut funktionieren. Neben Medikamenten spielen auch die eigene Erwartungshaltung und Entspannungs-/Selbsttechniken eine Rolle."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Kombination aus Medikamenten (nach Stufenschema) und begleitenden Maßnahmen (Hochlagern, Kühlen, Entspannungs-/Atemtechniken), die man teils schon vor der OP erlernen kann."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Abhängig von den eingesetzten Medikamenten (z. B. Magen-Darm-Beschwerden, Müdigkeit); individuell zu besprechen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Medikamentenauswahl bei Vorerkrankungen/Allergien anpassen (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Eine aktive Auseinandersetzung mit den eigenen Körperempfindungen und einfache **Relaxations-/Hypnosetechniken** können helfen, starke Schmerzmittel einzusparen; sie sollten idealerweise **vor** dem Eingriff eingeübt werden."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "entspannung": {
+   "titel": "Entspannungstechniken",
+   "kurz": "Entspannung heilt keine Fußerkrankung, kann aber Schmerzverarbeitung und Heilung unterstützen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Viele Menschen stehen unter **Dauerstress**. Keine orthopädische Fuß-/Sprunggelenk-Erkrankung heilt durch Entspannung allein — auch Operationen zielen meist auf Befundbesserung, nicht auf vollständige Beschwerdefreiheit. Wie stark Schmerzen empfunden, verarbeitet und **verinnerlicht** werden, lässt sich aber individuell beeinflussen, und hier können Entspannungstechniken unterstützen."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Auswahl einer passenden Technik (z. B. progressive Muskelrelaxation, Atem-/Achtsamkeitsübungen), idealerweise **vor** einer Behandlung erlernt und regelmäßig geübt."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Keine relevanten Nebenwirkungen."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Keine spezifischen Kontraindikationen."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Im orthopädischen Bereich gibt es kaum Evidenz; Studien zur progressiven Muskelrelaxation während des Klinikaufenthalts zeigten keine wegweisenden Effekte. Sinnvoller erscheint, bereits **vorher** eine für sich passende Technik zu wählen und einzuüben."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "phytoanalgesie": {
+   "titel": "Naturheilkundliche Schmerztherapie (Phytoanalgesie)",
+   "kurz": "Pflanzliche Wirkstoffe können bei akuten und chronischen Schmerzen eine Alternative oder Ergänzung sein.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Es gibt wirksame **pflanzliche (phytotherapeutische)** Alternativen zu klassischen Schmerzmitteln. Beispiele: **Teufelskralle** (schmerzlindernd über COX-2-Hemmung, bei Arthrose/Gelenkschmerz — Wirkeintritt erst nach ca. 10 Tagen), **Weidenrinde** (gut bei akuten Schmerzen), **Brennnessel** (chronische Schmerzen) und **Weihrauch** (bei entzündlicher Komponente)."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Einnahme als Präparat nach Anwendungsempfehlung; bei einigen Mitteln baut sich die Wirkung erst über mehrere Tage auf."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Meist geringe Nebenwirkungsrate; z. B. bei Teufelskralle ca. 3 % Magen-Darm-Beschwerden, selten Herzrhythmus-Effekte."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Teufelskralle nicht in der Schwangerschaft oder bei Magen-Darm-Geschwüren; Wechselwirkungen mit Blutverdünnern beachten (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Zur **akuten** Schmerztherapie eignet sich Weidenrinde (z. B. 120 mg) gut; bei **chronischen** Schmerzen Brennnessel oder Teufelskralle (Wirkeintritt beachten); bei entzündlicher Komponente Weihrauch."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "iloprost_bisphosphonate": {
+   "titel": "Iloprost und Bisphosphonate (bei Osteochondrosis dissecans)",
+   "kurz": "Medikamente, die bei der aseptischen Knochennekrose des Sprungbeins die Durchblutung bzw. den Knochenumbau beeinflussen sollen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Die **Osteochondrosis dissecans (OD, =aseptische Knochennekrose, hier des Sprungbeins)** betrifft meist junge Menschen. Etablierte spezifische **nicht-operative** Möglichkeiten fehlen weitgehend; meist bleibt Belastungsreduktion mit symptomatischen Maßnahmen und Verlaufskontrolle in der Hoffnung auf ein **Remodeling (=Wiederaufbau)**. **Iloprost** (ein gefäßerweiterndes **Prostazyklin-Analogon**, verbessert die **Mikrozirkulation**) und **Bisphosphonate** (beeinflussen den Knochenumbau) werden hier als Off-Label-Optionen diskutiert."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Iloprost meist als Infusion an mehreren aufeinanderfolgenden Tagen (nach Schema); Bisphosphonate als Tablette/Infusion. Anwendung individuell und meist im Off-Label-Bereich."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Iloprost: u. a. Kopfschmerz, Flush, Blutdruckabfall; Bisphosphonate: Magen-Darm-Beschwerden, sehr selten Kieferprobleme."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Iloprost nicht bei bestimmten Herz-/Blutungserkrankungen; Bisphosphonate nicht bei schwerer Niereninsuffizienz/Zahnproblemen (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Evidenz ist begrenzt und uneinheitlich; einzelne Arbeiten (v. a. zur Knochennekrose) berichten positive Effekte. Einsatz als individuelle, meist off-label Option nach ärztlicher Abwägung."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "allg_verschleiss": {
+   "titel": "Allgemeine Maßnahmen bei Verschleiß (Arthrose)",
+   "kurz": "Grundlegende, gelenkschonende Maßnahmen, die bei Arthrose der Fuß- und Sprunggelenke helfen können.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Diese Maßnahmen gelten für die **Arthrose aller Fußgelenke** (die beste Datenlage besteht für das obere Sprunggelenk). Zentrales Element ist die **Patientenaufklärung („patient education\")** — Wissen über Erkrankung, Verlauf und Möglichkeiten nimmt Unsicherheit. Dazu kommen u. a. Gewichtsmanagement, aktivitäts-/schuhbezogene Anpassungen, Einlagen und gezielte Bewegung."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Kombination mehrerer Bausteine (Aufklärung, Bewegung/Physiotherapie, Schuh-/Einlagenversorgung, ggf. Medikamente), individuell zusammengestellt."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Abhängig von den einzelnen Bausteinen; die Basismaßnahmen selbst sind risikoarm."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Keine spezifischen Kontraindikationen der Basismaßnahmen."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Evidenz für die einzelnen Verfahren ist insgesamt **gering**: Häufig lässt sich eine **Symptombesserung** erzielen, der **Verschleißfortschritt** wird aber meist nur wenig beeinflusst."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "ernaehrung_bewegung": {
+   "titel": "Ernährung bei Erkrankungen des Bewegungsapparates",
+   "kurz": "Eine ausgewogene Ernährung kann das „Gelenkklima\" und die Reparaturprozesse unterstützen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Gelenkschäden und ihre Reparatur werden auf biochemischer Ebene gesteuert (pH-Wert, **Zytokine (=Botenstoffe)**, Hormone, Stoffwechsel). Neben mechanischen Ursachen können ein **metabolisches Syndrom (Übergewicht, erhöhter Blutzucker)**, genetische Faktoren oder unklare Gründe eine Rolle spielen. Eine geeignete Ernährung kann ein für die Knorpelheilung günstigeres „Klima\" fördern — u. a. über **Antioxidantien** (Vitamine A, C, E) und Bausteine der Kollagenbildung."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Ausgewogene, entzündungsarme Kost mit ausreichend Obst/Gemüse; keine feste „Diät\", sondern langfristige Ernährungsgewohnheiten."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Keine relevanten Nebenwirkungen bei ausgewogener Ernährung."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Keine spezifischen Kontraindikationen; bei Begleiterkrankungen (z. B. Diabetes) individuell anpassen."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "**Vitamin C** hat antioxidative Wirkung und ist wichtig für die **Kollagenbildung** (Knorpel); es verbessert zudem die Eisenaufnahme aus pflanzlicher Kost. Insgesamt ist die Ernährung ein **unterstützender** Baustein — sie ersetzt keine ursächliche Behandlung."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "ernaehrung_gicht": {
+   "titel": "Ernährung bei Gicht",
+   "kurz": "Eine purinbewusste Ernährung senkt die Harnsäure und kann Gichtanfälle vermeiden helfen.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "**Gicht** entsteht durch Ablagerung von **Harnsäurekristallen** im Gelenk; Harnsäure entsteht beim Abbau von **Purinen**. Ziel der Ernährung ist, **purinreiche Kost zu reduzieren** und die **Harnsäureausscheidung zu fördern**. Purine stecken in vielen Lebensmitteln — nicht nur in rotem Fleisch, Wein und Bier, sondern auch in Speisen, die nicht pauschal als ungesund gelten."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Dauerhafte Ernährungsumstellung (purinbewusst, ausreichend trinken); weitere Informationen bietet z. B. die Deutsche Gichtliga."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "Keine Nebenwirkungen; ergänzt bei Bedarf eine medikamentöse Harnsäuresenkung."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Keine spezifischen Kontraindikationen."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Eine purinbewusste Ernährung und gute Flüssigkeitszufuhr können Harnsäurewerte senken und Gichtanfälle vermeiden helfen; bei ausgeprägter Gicht ist meist zusätzlich eine medikamentöse Therapie nötig."
+    }
+   ],
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+   "_review": true
+  },
+  "nahrungsergaenzung": {
+   "titel": "Nahrungsergänzungsmittel",
+   "kurz": "Präparate wie Kollagen, Glucosamin/Chondroitin, Omega-3 oder Kurkuma werden bei Gelenkbeschwerden häufig eingesetzt — mit begrenzter Evidenz.",
+   "abschnitte": [
+    {
+     "titel": "Worum es geht",
+     "text": "Bei Gelenk- und Sehnenbeschwerden werden häufig **Nahrungsergänzungsmittel** eingesetzt, z. B. **Kollagen(-peptide)**, **Glucosamin/Chondroitin**, **Omega-3-Fettsäuren** oder **Kurkuma/Curcumin**. Sie werden meist als Selbstzahlerleistung eingenommen und sollen Beschwerden lindern bzw. Reparaturprozesse unterstützen."
+    },
+    {
+     "titel": "Ablauf",
+     "text": "Einnahme als Präparat nach Herstellerangabe; Wirkung meist erst nach Wochen."
+    },
+    {
+     "titel": "Mögliche Nebenwirkungen",
+     "text": "In der Regel gut verträglich; einzelne Präparate können Magen-Darm-Beschwerden verursachen oder mit Medikamenten (z. B. Blutverdünnern) wechselwirken."
+    },
+    {
+     "titel": "Wann nicht geeignet (Kontraindikationen)",
+     "text": "Vorsicht bei Blutverdünnung und bestimmten Vorerkrankungen; Qualität/Dosierung der Präparate variieren (individuell ärztlich prüfen)."
+    },
+    {
+     "titel": "Was die Studienlage zeigt",
+     "text": "Die Evidenz ist insgesamt begrenzt und uneinheitlich: Für einige Präparate (z. B. bestimmte Kollagen- oder Curcumin-Formulierungen) gibt es Hinweise auf eine leichte Symptombesserung, ein Aufhalten des Verschleißes ist nicht belegt. Einsatz als **ergänzende** Option."
+    }
+   ],
+   "stand": "Entwurf (Claude), 07/2026 — ärztlich zu prüfen",
+   "_review": true,
+   "_entwurf": true
   }
  }
 }
