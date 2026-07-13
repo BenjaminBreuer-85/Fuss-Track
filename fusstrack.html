@@ -1543,6 +1543,7 @@ function LandingView({ initialKbKey, initialMassnahme }) {
   const [infoKat, setInfoKat] = useState(massnahmeDeepLink ? "nichtoperativ" : null); // "krankheitsbild" | "op_technik" | "nichtoperativ"
   const [massnahmeKey, setMassnahmeKey] = useState(massnahmeDeepLink || null); // offene Nicht-OP-Maßnahme (aus NONOP_MASSNAHMEN)
   const [massnahmeSeite, setMassnahmeSeite] = useState(0); // Slide-Position in der Maßnahme
+  const [infoSuche, setInfoSuche] = useState(""); // Suchfeld in der Themen-Liste
 
   // Karten-Stil (wiederverwendet)
   const cardClickStyle = {
@@ -1718,21 +1719,45 @@ function LandingView({ initialKbKey, initialMassnahme }) {
     // Ebene 2: Themen-Liste der gewählten Kategorie
     const aktiveKat = INFO_KATEGORIEN.find(function(k) { return k.key === infoKat; }) || INFO_KATEGORIEN[0];
     // Nicht-operative Maßnahmen kommen direkt aus NONOP_MASSNAHMEN, die übrigen aus AUFKLAERUNG (nach infoKategorie).
-    const eintraege = infoKat === "nichtoperativ"
+    const eintraegeRaw = infoKat === "nichtoperativ"
       ? Object.keys(NONOP_MASSNAHMEN).map(function(key) { return { key: key, daten: NONOP_MASSNAHMEN[key], istMassnahme: true }; })
       : Object.keys(AUFKLAERUNG)
           .map(function(key) { return { key: key, daten: AUFKLAERUNG[key] }; })
           .filter(function(e) { return e.daten && e.daten.infoKategorie === infoKat; });
+    // Titel-Hilfsfunktion, alphabetische Sortierung und Suchfilter
+    const titelVon = function(e) { return (e.daten.infoTitel || e.daten.titel || e.key || "").toString(); };
+    const suchBegriff = infoSuche.trim().toLowerCase();
+    const eintraege = eintraegeRaw
+      .filter(function(e) {
+        if (!suchBegriff) return true;
+        const hay = (titelVon(e) + " " + (e.daten.untertitel || "") + " " + (e.daten.kurz || "")).toLowerCase();
+        return hay.indexOf(suchBegriff) !== -1;
+      })
+      .sort(function(a, b) { return titelVon(a).localeCompare(titelVon(b), "de", { sensitivity: "base" }); });
 
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <ZurueckLeiste onBack={function() { setInfoKat(null); }} titel={aktiveKat.label} />
-        <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
+        <p style={{ marginTop: 0, marginBottom: 12, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wählen Sie ein Thema aus.
         </p>
+        <div style={{ position: "relative", marginBottom: 14 }}>
+          <input
+            type="text"
+            value={infoSuche}
+            onChange={function(ev) { setInfoSuche(ev.target.value); }}
+            placeholder="Suchen…"
+            style={{ width: "100%", boxSizing: "border-box", padding: "10px 34px 10px 12px", fontSize: 14,
+                     border: "1px solid rgba(0,0,0,.15)", borderRadius: 8, outline: "none", color: "var(--c-text)", background: "var(--c-bg)" }} />
+          {infoSuche && (
+            <button onClick={function() { setInfoSuche(""); }} title="Zurücksetzen"
+              style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", border: "none",
+                       background: "transparent", cursor: "pointer", fontSize: 16, color: "var(--c-text-muted)", lineHeight: 1 }}>×</button>
+          )}
+        </div>
         {eintraege.length === 0 ? (
           <div style={{ padding: 16, background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.6 }}>
-            Für diesen Bereich werden derzeit Informationen vorbereitet.
+            {suchBegriff ? "Keine Treffer für Ihre Suche." : "Für diesen Bereich werden derzeit Informationen vorbereitet."}
           </div>
         ) : (
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -1970,6 +1995,7 @@ function AufklaerungsView({ opKey, kbOrigin }) {
   if (!aufkl) return <ErrorPage />;
   const slides = aufkl.slides || [];
   const [step, setStep] = useState(0);
+  const [toggleSel, setToggleSel] = useState(0); // aktive Option eines Umschalter-Slides
 
   // Zurück-Link: nur anzeigen, wenn der Patient aus einer KB-Auswahl kam (kb-URL-Param da)
   function ZurueckLink() {
@@ -2101,6 +2127,29 @@ function AufklaerungsView({ opKey, kbOrigin }) {
           </div>
         )}
         {current.text && <MarkdownView source={current.text} />}
+        {current.toggle && Array.isArray(current.toggle.options) && current.toggle.options.length > 0 && (function(){
+          const opts = current.toggle.options;
+          const sel = Math.max(0, Math.min(opts.length - 1, toggleSel));
+          return (
+            <div style={{ marginTop: 4 }}>
+              <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
+                {opts.map(function(o, oi){
+                  const on = oi === sel;
+                  return (
+                    <button key={oi} onClick={function(){ setToggleSel(oi); }}
+                      style={{ flex: "1 1 auto", padding: "9px 12px", borderRadius: 8, cursor: "pointer",
+                               border: on ? "1px solid var(--c-main)" : "1px solid rgba(0,0,0,.14)",
+                               background: on ? "var(--c-main)" : "var(--c-card)",
+                               color: on ? "#fff" : "var(--c-text)", fontSize: 13, fontWeight: on ? 700 : 600 }}>
+                      {o.label}
+                    </button>
+                  );
+                })}
+              </div>
+              {opts[sel] && opts[sel].text && <MarkdownView source={opts[sel].text} />}
+            </div>
+          );
+        })()}
         {current.video && current.video.vimeo && (
           <div style={{ position: "relative", paddingTop: "56.25%", marginTop: 14,
                         borderRadius: 8, overflow: "hidden", background: "#000" }}>
@@ -3329,8 +3378,8 @@ function renderInline(text) {
         if (closeParen !== -1) {
           const linkText = text.substring(i + 1, closeBracket);
           const linkUrl = text.substring(closeBracket + 2, closeParen);
-          // Sicherheits-Check: nur http/https und relative Pfade erlauben
-          const safeUrl = /^(https?:\/\/|\.|\/|#)/i.test(linkUrl) ? linkUrl : "#";
+          // Sicherheits-Check: nur http/https und relative Pfade (inkl. reiner Query-Links ?…) erlauben
+          const safeUrl = /^(https?:\/\/|\.|\/|#|\?)/i.test(linkUrl) ? linkUrl : "#";
           flushBuffer();
           parts.push(
             <a key={"l" + (keyIdx++)} href={safeUrl} target="_blank" rel="noopener noreferrer"

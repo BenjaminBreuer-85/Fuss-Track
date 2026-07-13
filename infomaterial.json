@@ -3,7 +3,7 @@
   "version": "1.0",
   "erstellt": "2026-06-17",
   "beschreibung": "Infomaterial-Einträge als Referenzlisten auf bausteine.json.",
-  "stand": "2026-07-13 (umfassende Überarbeitung: OP-Infoseiten mit Quellen-Reiter, 26 konservative Maßnahmen, Struktur)"
+  "stand": "2026-07-13b (Per-Abschnitt-Tabs, Fließtext, Suche/Sortierung, Nachsorge-Verweis, USG-Arthrose+Umschalter, Double-Arthrodese, PPV)"
  },
  "INFOMATERIAL": {
   "osg_arthrose": {
@@ -230,7 +230,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_weil",
+    "op_weil_ueberblick",
+    "op_weil_ablauf",
+    "op_weil_ergebnisse",
+    "op_weil_nachbehandlung",
+    "op_weil_komplikationen",
     "op_weil_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -244,7 +248,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_cotton",
+    "op_cotton_ueberblick",
+    "op_cotton_ablauf",
+    "op_cotton_ergebnisse",
+    "op_cotton_nachbehandlung",
+    "op_cotton_komplikationen",
     "op_cotton_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -257,7 +265,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_morton",
+    "op_morton_ueberblick",
+    "op_morton_ablauf",
+    "op_morton_ergebnisse",
+    "op_morton_nachbehandlung",
+    "op_morton_komplikationen",
     "op_morton_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -271,7 +283,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_schede",
+    "op_schede_ueberblick",
+    "op_schede_ablauf_weichteilkorrektu",
+    "op_schede_ergebnisse",
+    "op_schede_nachbehandlung",
+    "op_schede_komplikationen",
     "op_schede_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -284,7 +300,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_plantarfascie",
+    "op_plantarfascie_ueberblick",
+    "op_plantarfascie_ablauf",
+    "op_plantarfascie_ergebnisse",
+    "op_plantarfascie_nachbehandlung",
+    "op_plantarfascie_komplikationen",
     "op_plantarfascie_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -297,7 +317,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_kidner",
+    "op_kidner_ueberblick",
+    "op_kidner_ablauf",
+    "op_kidner_ergebnisse",
+    "op_kidner_nachbehandlung",
+    "op_kidner_komplikationen",
     "op_kidner_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -323,7 +347,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_lat_stabil",
+    "op_lat_stabil_ueberblick",
+    "op_lat_stabil_ablauf",
+    "op_lat_stabil_ergebnisse",
+    "op_lat_stabil_nachbehandlung",
+    "op_lat_stabil_komplikationen",
     "op_lat_stabil_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -336,7 +364,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_peroneal_instab",
+    "op_peroneal_instab_ueberblick",
+    "op_peroneal_instab_ablauf",
+    "op_peroneal_instab_ergebnisse",
+    "op_peroneal_instab_nachbehandlung",
+    "op_peroneal_instab_komplikationen",
     "op_peroneal_instab_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -349,7 +381,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_peroneal_riss",
+    "op_peroneal_riss_ueberblick",
+    "op_peroneal_riss_ablauf_und_verfahrenswah",
+    "op_peroneal_riss_ergebnisse",
+    "op_peroneal_riss_nachbehandlung",
+    "op_peroneal_riss_komplikationen",
     "op_peroneal_riss_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -362,7 +398,12 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_haglund_split",
+    "op_haglund_split_ueberblick",
+    "op_haglund_split_ablauf",
+    "op_haglund_split_ergebnisse",
+    "op_haglund_split_nachbehandlung",
+    "op_haglund_split_wann_nicht_geeignet_erh_",
+    "op_haglund_split_komplikationen",
     "op_haglund_split_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -375,7 +416,12 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_tendoskopie_achilles",
+    "op_tendoskopie_achilles_ueberblick",
+    "op_tendoskopie_achilles_ablauf",
+    "op_tendoskopie_achilles_vorteile_und_grenzen",
+    "op_tendoskopie_achilles_nachbehandlung",
+    "op_tendoskopie_achilles_ergebnisse",
+    "op_tendoskopie_achilles_komplikationen",
     "op_tendoskopie_achilles_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -388,7 +434,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_achilles_nekrose",
+    "op_achilles_nekrose_ueberblick",
+    "op_achilles_nekrose_ergebnisse",
+    "op_achilles_nekrose_nachbehandlung",
+    "op_achilles_nekrose_komplikationen",
     "op_achilles_nekrose_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -401,7 +450,12 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_calc_verlaengerung",
+    "op_calc_verlaengerung_ueberblick",
+    "op_calc_verlaengerung_ablauf_technik_nach_hint",
+    "op_calc_verlaengerung_ausma_der_verl_ngerung",
+    "op_calc_verlaengerung_ergebnisse",
+    "op_calc_verlaengerung_nachbehandlung",
+    "op_calc_verlaengerung_komplikationen",
     "op_calc_verlaengerung_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -414,7 +468,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_calc_medial",
+    "op_calc_medial_ueberblick",
+    "op_calc_medial_ablauf",
+    "op_calc_medial_ergebnisse",
+    "op_calc_medial_nachbehandlung",
+    "op_calc_medial_komplikationen",
     "op_calc_medial_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -427,7 +485,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_calcaneoplastie",
+    "op_calcaneoplastie_ueberblick",
+    "op_calcaneoplastie_nachbehandlung",
+    "op_calcaneoplastie_ergebnisse",
+    "op_calcaneoplastie_komplikationen",
     "op_calcaneoplastie_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -440,7 +501,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_smot_valgus",
+    "op_smot_valgus_ueberblick",
+    "op_smot_valgus_ablauf_und_planung",
+    "op_smot_valgus_ergebnisse",
+    "op_smot_valgus_nachbehandlung",
+    "op_smot_valgus_komplikationen",
     "op_smot_valgus_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -454,7 +519,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_smot_varus",
+    "op_smot_varus_ueberblick",
+    "op_smot_varus_ablauf_und_planung",
+    "op_smot_varus_ergebnisse",
+    "op_smot_varus_nachbehandlung",
+    "op_smot_varus_komplikationen",
     "op_smot_varus_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -468,7 +537,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_triple",
+    "op_triple_ueberblick",
+    "op_triple_ablauf",
+    "op_triple_ergebnisse",
+    "op_triple_nachbehandlung",
+    "op_triple_komplikationen",
     "op_triple_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -481,7 +554,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_knorpel_osg",
+    "op_knorpel_osg_ueberblick",
+    "op_knorpel_osg_verfahren",
+    "op_knorpel_osg_ergebnisse",
+    "op_knorpel_osg_nachbehandlung",
+    "op_knorpel_osg_komplikationen",
     "op_knorpel_osg_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -495,7 +572,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_arthrorise",
+    "op_arthrorise_ueberblick",
+    "op_arthrorise_ablauf",
+    "op_arthrorise_ergebnisse",
+    "op_arthrorise_nachbehandlung",
+    "op_arthrorise_komplikationen",
     "op_arthrorise_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -508,7 +589,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_coalitio_cn",
+    "op_coalitio_cn_ueberblick",
+    "op_coalitio_cn_ablauf",
+    "op_coalitio_cn_ergebnisse",
+    "op_coalitio_cn_nachbehandlung",
+    "op_coalitio_cn_komplikationen",
     "op_coalitio_cn_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -522,7 +607,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_coalitio_tc",
+    "op_coalitio_tc_ueberblick",
+    "op_coalitio_tc_ablauf",
+    "op_coalitio_tc_ergebnisse",
+    "op_coalitio_tc_nachbehandlung",
+    "op_coalitio_tc_komplikationen",
     "op_coalitio_tc_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -535,7 +624,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_metallallergie",
+    "op_metallallergie_ueberblick",
+    "op_metallallergie_nickelgehalt_g_ngiger_im",
+    "op_metallallergie_verdacht_auf_allergische",
+    "op_metallallergie_planung_bei_bekannter_me",
+    "op_metallallergie_ergebnisse_einordnung",
     "op_metallallergie_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -548,7 +641,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_spongiosa",
+    "op_spongiosa_ueberblick",
+    "op_spongiosa_ablauf",
+    "op_spongiosa_ergebnisse_spenderstelle",
+    "op_spongiosa_wie_h_ufig_sind_probleme",
     "op_spongiosa_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -561,7 +657,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_innenknoechel",
+    "op_innenknoechel_ueberblick",
+    "op_innenknoechel_ablauf",
+    "op_innenknoechel_ergebnisse",
+    "op_innenknoechel_nachbehandlung",
+    "op_innenknoechel_komplikationen",
     "op_innenknoechel_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -574,7 +674,9 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_pin_pflege",
+    "op_pin_pflege_ueberblick",
+    "op_pin_pflege_vorgehen_bei_reizlosen_p",
+    "op_pin_pflege_zus_tzliches_vorgehen_be",
     "op_pin_pflege_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -587,7 +689,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_teilprothese_talus",
+    "op_teilprothese_talus_ueberblick",
+    "op_teilprothese_talus_ablauf",
+    "op_teilprothese_talus_ergebnisse",
+    "op_teilprothese_talus_nachbehandlung",
+    "op_teilprothese_talus_komplikationen",
     "op_teilprothese_talus_quellen"
    ],
    "_quelle": "Übertrag aus mediq (B. Breuer)",
@@ -600,7 +706,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_fhl",
+    "op_fhl_ueberblick",
+    "op_fhl_ergebnisse",
+    "op_fhl_nachbehandlung",
+    "op_fhl_komplikationen",
     "op_fhl_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -614,7 +723,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_moberg",
+    "op_moberg_ueberblick",
+    "op_moberg_ergebnisse",
+    "op_moberg_nachbehandlung",
+    "op_moberg_komplikationen",
     "op_moberg_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -628,7 +740,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_achilles_naht",
+    "op_achilles_naht_ueberblick",
+    "op_achilles_naht_ergebnisse",
+    "op_achilles_naht_nachbehandlung",
+    "op_achilles_naht_komplikationen",
     "op_achilles_naht_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -643,7 +758,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_achilles_perkutan",
+    "op_achilles_perkutan_ueberblick",
+    "op_achilles_perkutan_ergebnisse",
+    "op_achilles_perkutan_nachbehandlung",
+    "op_achilles_perkutan_komplikationen",
     "op_achilles_perkutan_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -658,7 +776,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_subtalar",
+    "op_subtalar_ueberblick",
+    "op_subtalar_ergebnisse",
+    "op_subtalar_nachbehandlung",
+    "op_subtalar_komplikationen",
     "op_subtalar_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -673,7 +794,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_tmt",
+    "op_tmt_ueberblick",
+    "op_tmt_ergebnisse",
+    "op_tmt_nachbehandlung",
+    "op_tmt_komplikationen",
     "op_tmt_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -687,7 +811,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_tn",
+    "op_tn_ueberblick",
+    "op_tn_ergebnisse",
+    "op_tn_nachbehandlung",
+    "op_tn_komplikationen",
     "op_tn_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -701,7 +828,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_tarsaltunnel",
+    "op_tarsaltunnel_ueberblick",
+    "op_tarsaltunnel_ergebnisse",
+    "op_tarsaltunnel_nachbehandlung",
+    "op_tarsaltunnel_komplikationen",
     "op_tarsaltunnel_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -716,7 +846,10 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_ttc",
+    "op_ttc_ueberblick",
+    "op_ttc_ergebnisse",
+    "op_ttc_nachbehandlung",
+    "op_ttc_komplikationen",
     "op_ttc_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -731,7 +864,11 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_gastroc",
+    "op_gastroc_ueberblick",
+    "op_gastroc_ablauf",
+    "op_gastroc_ergebnisse",
+    "op_gastroc_nachbehandlung",
+    "op_gastroc_komplikationen",
     "op_gastroc_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
@@ -746,12 +883,64 @@
    "untertitel": "",
    "betrifft_eingriffe": [],
    "slides": [
-    "op_osg_arthroskopie",
+    "op_osg_arthroskopie_ueberblick",
+    "op_osg_arthroskopie_ergebnisse",
+    "op_osg_arthroskopie_nachbehandlung",
+    "op_osg_arthroskopie_komplikationen",
     "op_osg_arthroskopie_quellen"
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
    "_review": true,
    "_entwurf": true
+  },
+  "double_arthrodese": {
+   "infoKategorie": "op_technik",
+   "infoTitel": "Double-Arthrodese",
+   "titel": "Double-Arthrodese (TN + Subtalar)",
+   "untertitel": "Kombinierte Versteifung von unterem Sprunggelenk und Talonavikulargelenk",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "op_double_ueberblick",
+    "op_double_ablauf",
+    "op_double_ergebnisse",
+    "op_double_nachbehandlung",
+    "op_double_komplikationen",
+    "op_double_quellen"
+   ],
+   "_review": true,
+   "_entwurf": true,
+   "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen"
+  },
+  "usg_arthrose": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "USG-Arthrose (unteres Sprunggelenk)",
+   "titel": "Arthrose des unteren Sprunggelenks",
+   "untertitel": "Verschleiß von Subtalar-, Talonavikular- und Kalkaneokuboidgelenk — Behandlung je nach betroffenem Gelenk",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "usg_intro",
+    "usg_krankheitsbild",
+    "usg_umschalter",
+    "usg_quellen"
+   ],
+   "_review": true,
+   "_entwurf": true,
+   "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen"
+  },
+  "ppv_ksf": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Knick-Senk-Fuß (Pes planovalgus)",
+   "titel": "Knick-Senk-Fuß / Pes planovalgus",
+   "untertitel": "Abgesunkenes Längsgewölbe mit Rückfußvalgus — flexible und fixierte Formen",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "ppv_krankheitsbild",
+    "ppv_behandlung",
+    "ppv_quellen"
+   ],
+   "_review": true,
+   "_entwurf": true,
+   "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen"
   }
  },
  "NONOP_MASSNAHMEN": {
