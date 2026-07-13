@@ -2508,6 +2508,10 @@
           "multi": false,
           "antworten": [
             {
+              "label": "Plötzlich — wie ein Tritt oder Schlag in die Wade, seitdem Kraftverlust",
+              "punkte": {}
+            },
+            {
               "label": "Schleichend nach Belastungsschub",
               "punkte": {
                 "achillodynie_midportion": 1,
