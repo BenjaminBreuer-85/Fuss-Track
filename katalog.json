@@ -443,6 +443,15 @@
       ]
     },
     {
+      "id": "achillesruptur_akut",
+      "titel": "Akuter Achillessehnenriss",
+      "kurz": "Plötzlicher Riss der Achillessehne — typisch: Gefühl eines Tritts oder Peitschenschlags in die Wade mit Kraftverlust beim Abstoßen",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "achillessehne_verlauf"
+      ]
+    },
+    {
       "id": "achilles_insertion_haglund",
       "titel": "Insertionsbeschwerden mit Haglund-Exostose",
       "kurz": "Schmerzen am Achillessehnen-Ansatz mit knöchernem Vorsprung am Fersenbein",
@@ -997,7 +1006,6 @@
       "ansichten": [
         "aussen",
         "oben",
-        "osg",
         "unten"
       ],
       "fragen": [
@@ -1260,8 +1268,7 @@
       "titel": "Medialer Fußrand / Mittelfußwurzel",
       "ansichten": [
         "innen",
-        "oben",
-        "osg"
+        "oben"
       ],
       "fragen": [
         {
@@ -1618,8 +1625,7 @@
       "titel": "Zentraler Mittelfuß (TMT 2–4 / Lisfranc)",
       "ansichten": [
         "aussen",
-        "oben",
-        "osg"
+        "oben"
       ],
       "fragen": [
         {
@@ -2172,7 +2178,8 @@
       "id": "sg_aussen_vor",
       "titel": "Sprunggelenk außen — vor Wadenbein",
       "ansichten": [
-        "aussen"
+        "aussen",
+        "osg"
       ],
       "fragen": [
         {
@@ -2322,8 +2329,7 @@
       "id": "sg_aussen_hinter",
       "titel": "Sprunggelenk außen — hinter Wadenbein",
       "ansichten": [
-        "aussen",
-        "osg"
+        "aussen"
       ],
       "fragen": [
         {
@@ -3269,7 +3275,6 @@
       "ansichten": [
         "aussen",
         "oben",
-        "osg",
         "unten"
       ],
       "fragen": [

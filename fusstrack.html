@@ -2824,7 +2824,7 @@ function FinderView() {
 
           {triggeredSonderfall && (
             <div className="card warning" style={{ marginTop: 16 }}>
-              <strong>{triggeredSonderfall.kb && triggeredSonderfall.kb.titel}-Verdacht</strong>
+              <strong>{triggeredSonderfall.kb ? triggeredSonderfall.kb.titel + "-Verdacht" : "Dringender Verdacht auf eine ernste Verletzung"}</strong>
               <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
               <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>
@@ -3380,9 +3380,13 @@ function renderInline(text) {
           const linkUrl = text.substring(closeBracket + 2, closeParen);
           // Sicherheits-Check: nur http/https und relative Pfade (inkl. reiner Query-Links ?…) erlauben
           const safeUrl = /^(https?:\/\/|\.|\/|#|\?)/i.test(linkUrl) ? linkUrl : "#";
+          // Interne Query-Links (?op=…/?massnahme=…) im selben Tab öffnen; nur externe/relative Ziele in neuem Tab
+          const isInternalLink = safeUrl.charAt(0) === "?" || safeUrl.charAt(0) === "#";
           flushBuffer();
           parts.push(
-            <a key={"l" + (keyIdx++)} href={safeUrl} target="_blank" rel="noopener noreferrer"
+            <a key={"l" + (keyIdx++)} href={safeUrl}
+               target={isInternalLink ? undefined : "_blank"}
+               rel={isInternalLink ? undefined : "noopener noreferrer"}
                style={{ color: "var(--c-main)", textDecoration: "underline", fontWeight: 600 }}>
               {linkText}
             </a>
