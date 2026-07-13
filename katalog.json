@@ -57,7 +57,8 @@
       "regionen": [
         "grosszehe",
         "mtp1_dorsal"
-      ]
+      ],
+      "info_ref": "hallux_valgus"
     },
     {
       "id": "hallux_rigidus",
@@ -67,7 +68,8 @@
       "regionen": [
         "grosszehe",
         "mtp1_dorsal"
-      ]
+      ],
+      "info_ref": "hallux_rigidus"
     },
     {
       "id": "hallux_limitus",
@@ -98,7 +100,8 @@
         "grosszehe",
         "grosszehe_ip",
         "mtp1_dorsal"
-      ]
+      ],
+      "info_ref": "gicht_kb"
     },
     {
       "id": "bursitis_bunion",
@@ -178,7 +181,8 @@
       "regionen": [
         "mtp_region",
         "vorfuss_plantar"
-      ]
+      ],
+      "info_ref": "freiberg_kb"
     },
     {
       "id": "plantar_plate_ruptur",
@@ -200,7 +204,8 @@
         "medialer_fussrand",
         "sg_innen_hinter",
         "tn_gelenk"
-      ]
+      ],
+      "info_ref": "ppv_ksf"
     },
     {
       "id": "naviculare_stressfx",
@@ -282,7 +287,8 @@
       "regionen": [
         "lateraler_fussrand",
         "mtp5_lateral"
-      ]
+      ],
+      "info_ref": "mfk5_fraktur_kb"
     },
     {
       "id": "jones_pseudarthrose",
@@ -302,7 +308,8 @@
         "lateraler_fussrand",
         "rueckfuss_medial_tief",
         "sg_aussen_hinter"
-      ]
+      ],
+      "info_ref": "usg_arthrose"
     },
     {
       "id": "calcaneocuboid_arthrose",
@@ -323,7 +330,8 @@
         "sg_innen_vor",
         "sg_vorne",
         "syndesmose_distale_tibia"
-      ]
+      ],
+      "info_ref": "osg_arthrose"
     },
     {
       "id": "anteriores_impingement",
@@ -364,7 +372,8 @@
       "regionen": [
         "medialer_fussrand_tief",
         "sg_innen_hinter"
-      ]
+      ],
+      "info_ref": "ppv_ksf"
     },
     {
       "id": "deltoidband_verletzung",
@@ -440,7 +449,8 @@
       "haeufigkeit": "haeufig",
       "regionen": [
         "achillessehne_verlauf"
-      ]
+      ],
+      "info_ref": "achilles_midportion_kb"
     },
     {
       "id": "achillesruptur_akut",
@@ -449,7 +459,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "achillessehne_verlauf"
-      ]
+      ],
+      "info_ref": "achilles_riss_kb"
     },
     {
       "id": "achilles_insertion_haglund",
@@ -458,7 +469,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "achillessehne_ansatz"
-      ]
+      ],
+      "info_ref": "achilles_insertional_kb"
     },
     {
       "id": "retrocalcaneare_bursitis",
@@ -476,7 +488,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "achillessehne_verlauf"
-      ]
+      ],
+      "info_ref": "achillodynie_kb"
     },
     {
       "id": "plantarfasziitis",
@@ -487,7 +500,8 @@
         "ferse_plantar",
         "fusssohle",
         "plantarfaszie_ansatz"
-      ]
+      ],
+      "info_ref": "plantarfasziitis_kb"
     },
     {
       "id": "stressfraktur_calcaneus",
@@ -507,7 +521,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "ferse_plantar"
-      ]
+      ],
+      "info_ref": "plantarer_fersenschmerz_kb"
     },
     {
       "id": "polyneuropathie",
@@ -568,7 +583,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe_ip"
-      ]
+      ],
+      "info_ref": "unguis_incarnatus_kb"
     },
     {
       "id": "marschfraktur",
@@ -627,7 +643,8 @@
       "regionen": [
         "ferse_plantar",
         "rueckfuss_medial_tief"
-      ]
+      ],
+      "info_ref": "plantarer_fersenschmerz_kb"
     },
     {
       "id": "n_suralis_kompression",
@@ -696,7 +713,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber"
-      ]
+      ],
+      "info_ref": "plantarer_fersenschmerz_kb"
     },
     {
       "id": "morbus_sever",
@@ -705,7 +723,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber"
-      ]
+      ],
+      "info_ref": "sever_kb"
     },
     {
       "id": "fhl_stenose",

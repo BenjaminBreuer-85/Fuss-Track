@@ -2931,9 +2931,11 @@ function FinderView() {
             </div>
             <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
             <p>{top1.kb.kurz}</p>
-            <button className="btn btn-primary" onClick={function() { alert("Mehr zum Krankheitsbild — folgt in einer späteren Version (Krankheitsbild-Detail-View)."); }}>
-              Mehr zum Krankheitsbild →
-            </button>
+            {top1.kb.info_ref && (
+              <button className="btn btn-primary" onClick={function() { window.location.href = buildUrl({ op: top1.kb.info_ref, modus: "aufklaerung" }); }}>
+                Mehr zum Krankheitsbild →
+              </button>
+            )}
           </div>
         )}
 
@@ -2945,7 +2947,10 @@ function FinderView() {
                 {" · "}{e.kb.haeufigkeit === "haeufig" ? "häufig" : e.kb.haeufigkeit === "mittel" ? "mittelhäufig" : "selten"}
               </div>
               <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
-              <p style={{ marginBottom: 0 }}>{e.kb.kurz}</p>
+              <p style={{ marginBottom: e.kb.info_ref ? 10 : 0 }}>{e.kb.kurz}</p>
+              {e.kb.info_ref && (
+                <a href={buildUrl({ op: e.kb.info_ref, modus: "aufklaerung" })} style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", textDecoration: "underline" }}>Mehr zum Krankheitsbild →</a>
+              )}
             </div>
           );
         })}
