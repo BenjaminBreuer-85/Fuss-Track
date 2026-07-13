@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stand": "2026-07-13b"
+  "stand": "2026-07-13c Krankheitsbilder-Batch1"
  },
  "BAUSTEINE": {
   "osg_intro": {
@@ -1265,17 +1265,492 @@
   },
   "ppv_krankheitsbild": {
    "titel": "Krankheitsbild",
-   "text": "Der **Pes planovalgus (PPV, =Knick-Senk-Fuß)** ist eine Fehlstellung, bei der das **Längsgewölbe absinkt** und die Ferse nach außen kippt (Rückfußvalgus). Beim Erwachsenen liegt häufig eine **Insuffizienz der Tibialis-posterior-Sehne** zugrunde, die das Gewölbe aktiv stützt; hinzu kommen eine Schwäche der inneren Bänder (Spring Ligament) und eine mit der Zeit zunehmende knöcherne Fehlstellung.\n\n## Flexibel oder fixiert?\n\nEntscheidend für die Behandlung ist, ob die Fehlstellung **flexibel** (passiv noch ausgleichbar) oder **fixiert** (nicht mehr korrigierbar, oft mit begleitender Arthrose des Rückfußes) ist. Flexible Formen lassen sich häufig gelenkerhaltend behandeln, fixierte Formen erfordern in fortgeschrittenen Fällen eine Versteifung. Man spricht auch von Stadien der erworbenen Plattfußdeformität (Stadium I–IV).\n\n## Beschwerden\n\nTypisch sind Schmerzen an der Innenseite des Rückfußes (entlang der Tibialis-posterior-Sehne), eine zunehmende Abflachung des Fußes, eine Rückfußabweichung nach außen, eine rasche Ermüdung und im Verlauf auch Beschwerden an der Außenseite (knöcherner Anschlag) sowie an den Nachbargelenken.",
-   "bilder": []
+   "bilder": [],
+   "text": "Der **Pes planovalgus (PPV, =Knick-Senk-Fuß)** des Erwachsenen ist eine dreidimensionale — **flexible oder kontrakte (fixierte)** — Fußfehlstellung mit vermehrter **Valgusstellung der Ferse** und **Abflachung des medialen Längsgewölbes** (ICD-10: M21.61). Beim Erwachsenen liegt häufig eine **Insuffizienz der Tibialis-posterior-Sehne** zugrunde, die das Längsgewölbe aktiv stützt; hinzu kommen eine Schwäche der inneren Bänder (u. a. Spring Ligament) und eine mit der Zeit zunehmende knöcherne Fehlstellung.\n\n**Übergewicht** ist ein erwiesener unabhängiger Faktor für das Fortbestehen der Fehlstellung (in Studien mehr als verdoppeltes Risiko) und daher ein zentraler Ansatzpunkt der Behandlung.\n\n## Flexibel oder fixiert?\n\nEntscheidend für die Behandlung ist, ob die Fehlstellung **flexibel** (passiv noch ausgleichbar) oder **fixiert** (nicht mehr korrigierbar, oft mit begleitender Arthrose des Rückfußes) ist. Flexible Formen lassen sich häufig gelenkerhaltend behandeln, fixierte Formen erfordern in fortgeschrittenen Fällen eine Versteifung. Man spricht auch von Stadien der erworbenen Plattfußdeformität (Stadium I–IV)."
   },
   "ppv_behandlung": {
    "titel": "Behandlung",
-   "text": "## Nicht-operativ\n\nAm Anfang stehen konsequente **konservative Maßnahmen**: stützende Einlagen bzw. Orthesen zur Aufrichtung des Gewölbes und Rückfußführung, Schuhzurichtung, **Kräftigung der Tibialis-posterior- und Fußmuskulatur** sowie **Dehnung der verkürzten Wade** (siehe die entsprechenden Übungsprogramme und die Kapitel „Einlagen\" und „Eigenübungen beim Knick-Senk-Fuß\"). Gewichtsreduktion und Belastungsanpassung unterstützen die Behandlung.\n\n## Operativ — flexibel\n\nBei **flexibler** Fehlstellung mit anhaltenden Beschwerden werden **gelenkerhaltende** Verfahren kombiniert: eine **medialisierende Fersenbein-Osteotomie**, ggf. eine **Verlängerungs-Osteotomie** des äußeren Fersenbeins, eine **Cotton-Osteotomie**, eine **Sehnenrekonstruktion (z. B. FDL-Transfer)** und eine **Wadenmuskelverlängerung**. Ziel ist die Wiederherstellung der Achse ohne Versteifung.\n\n## Operativ — fixiert\n\nBei **fixierter** Fehlstellung oder begleitender Rückfußarthrose ist eine **Versteifung** nötig. Je nach betroffenen Gelenken kommen die **Double-Arthrodese** (Subtalar- + Talonavikulargelenk, Kalkaneokuboidgelenk erhalten) oder die **Triple-Arthrodese** (zusätzlich Kalkaneokuboidgelenk) infrage. Die Double-Arthrodese über einen meist medialen Zugang gilt beim fixierten erworbenen Plattfuß (Stadium III) heute vielfach als weichteilschonende, gleichwertige Alternative zur Triple-Arthrodese.\n\n→ [Double-Arthrodese](?op=double_arthrodese&modus=aufklaerung)  ·  [Triple-/Diple-Arthrodese](?op=triple&modus=aufklaerung)  ·  [Subtalararthrodese](?op=subtalar&modus=aufklaerung)",
+   "text": "## Nicht-operativ\n\nZiel der konservativen Therapie ist nicht die Heilung der Fehlstellung, sondern Symptomlinderung und der Erhalt des Status quo durch Entlastung der medialen Stabilisatoren. **Gewichtsreduktion** ist dabei elementar. Weiter kommen zum Einsatz: stützende Einlagen bzw. Orthesen zur Aufrichtung des Gewölbes und Rückfußführung, Schuhzurichtung, **Kräftigung der Tibialis-posterior- und Fußmuskulatur** sowie **Dehnung der verkürzten Wade** (siehe die entsprechenden Übungsprogramme und die Kapitel „Einlagen\" und „Eigenübungen beim Knick-Senk-Fuß\"). Gewichtsreduktion und Belastungsanpassung unterstützen die Behandlung.\n\n## Operativ — flexibel\n\nBei **flexibler** Fehlstellung mit anhaltenden Beschwerden werden **gelenkerhaltende** Verfahren kombiniert: eine **medialisierende Fersenbein-Osteotomie**, ggf. eine **Verlängerungs-Osteotomie** des äußeren Fersenbeins, eine **Cotton-Osteotomie**, eine **Sehnenrekonstruktion (z. B. FDL-Transfer)** und eine **Wadenmuskelverlängerung**. Ziel ist die Wiederherstellung der Achse ohne Versteifung.\n\n## Operativ — fixiert\n\nBei **fixierter** Fehlstellung oder begleitender Rückfußarthrose ist eine **Versteifung** nötig. Je nach betroffenen Gelenken kommen die **Double-Arthrodese** (Subtalar- + Talonavikulargelenk, Kalkaneokuboidgelenk erhalten) oder die **Triple-Arthrodese** (zusätzlich Kalkaneokuboidgelenk) infrage. Die Double-Arthrodese über einen meist medialen Zugang gilt beim fixierten erworbenen Plattfuß (Stadium III) heute vielfach als weichteilschonende, gleichwertige Alternative zur Triple-Arthrodese.\n\n→ [Double-Arthrodese](?op=double_arthrodese&modus=aufklaerung)  ·  [Triple-/Diple-Arthrodese](?op=triple&modus=aufklaerung)  ·  [Subtalararthrodese](?op=subtalar&modus=aufklaerung)",
    "bilder": []
   },
   "ppv_quellen": {
    "titel": "Quellen",
-   "text": "[1] Röhm J, et al. Double versus triple arthrodesis for adult-acquired flatfoot deformity due to stage III PTTD: prospective comparative study. (PMC8494666)\n\n[2] Jennison T, et al. Subtalar Arthrodesis Union Rates With and Without Adjacent Ankle Arthrodesis. Foot Ankle Int. 2022.\n\n[3] Radiographic Outcomes of Talonavicular Joint Arthrodesis in Stage III AAFD Reconstruction. J Foot Ankle Surg. 2021.",
+   "text": "[1] Röhm J, et al. Double versus triple arthrodesis for adult-acquired flatfoot deformity due to stage III PTTD: prospective comparative study. (PMC8494666)\n\n[2] Jennison T, et al. Subtalar Arthrodesis Union Rates With and Without Adjacent Ankle Arthrodesis. Foot Ankle Int. 2022.\n\n[3] Radiographic Outcomes of Talonavicular Joint Arthrodesis in Stage III AAFD Reconstruction. J Foot Ankle Surg. 2021.\n\n[4] S2k-Leitlinie „Kindlicher Knick-Senk-Fuß\" (AWMF) — Definition und Stadien.\n[5] Übersichten zur adulten erworbenen Plattfußdeformität (Tibialis-posterior-Insuffizienz) und zum Einfluss von Übergewicht.",
+   "bilder": []
+  },
+  "ppv_diagnostik": {
+   "titel": "Beschwerden & Diagnostik",
+   "bilder": [],
+   "text": "Typisch sind Schmerzen an der **Innenseite des Rückfußes** (entlang der Tibialis-posterior-Sehne), eine zunehmende Abflachung des Fußes, eine Rückfußabweichung nach außen, rasche Ermüdung und im Verlauf auch Beschwerden an der **Außenseite** (knöcherner Anschlag) sowie an den Nachbargelenken.\n\nDie Untersuchung umfasst eine gründliche **Anamnese** (auch zum Ausschluss neurologischer oder syndromaler Ursachen, bisherige Entwicklung, Kompensationsfähigkeit, Schuhwerk/Einlagen) und die **Inspektion**: Beschwielung der Fußsohle, Rückfußstellung (Valgus), Supination im Mittelfuß und das **„Too-many-toes\"-Zeichen** (von hinten sieht man wegen der Vorfußabduktion mehr Zehen als normal). Geprüft wird die **Flexibilität** (u. a. Zehenspitzenstand: richtet sich die Ferse dabei auf, ist die Fehlstellung flexibel). Ergänzt wird durch **belastete Röntgenaufnahmen** mit Rückfußachse (Saltzmann)."
+  },
+  "kb_pf_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **Plantarfasziitis (=Reizung der Sehnenplatte an der Fußsohle)**, umgangssprachlich oft mit dem Begriff „Fersensporn\" verbunden, ist eine schmerzhafte, verschleißbedingte Umwandlung der **Plantarfaszie** an ihrem Ansatz am Fersenbein. Die Plantarfaszie ist eine kräftige bindegewebige Platte, die vom Fersenbein bis zu den Zehen zieht, das Längsgewölbe stabilisiert und über Faserverbindungen mit der Achillessehne in Zusammenhang steht.\n\nSie ist die häufigste Ursache von Fersenschmerz und macht etwa 1 % aller orthopädischen Vorstellungen aus. **Etwa jeder zehnte Mensch** ist im Lauf des Lebens betroffen, meist zwischen dem 40. und 65. Lebensjahr (Riddle et al. 2004); unter Läuferinnen und Läufern sind es rund 17 % (Lopes et al. 2012).",
+   "bilder": []
+  },
+  "kb_pf_ursachen": {
+   "titel": "Ursachen",
+   "text": "Die Plantarfaszie stabilisiert das Fußlängsgewölbe. Bei anhaltender Überlastung kommt es an ihrem Fersenansatz zu einer verschleißbedingten Umwandlung des Gewebes (eher ein degenerativer als ein rein entzündlicher Prozess). Typischerweise gibt es **zwei Patientengruppen**: übergewichtige, eher weibliche Personen mittleren Alters und sportlich aktive Menschen (v. a. Läufer). Ein **erhöhter Body-Mass-Index** ist ein gut belegter Risikofaktor (van Leeuwen et al. 2016).\n\nEine zentrale Rolle spielt die **Verkürzung der Wadenmuskulatur bzw. der Achillessehne**: Eine isolierte Kontraktur des Gastrocnemius ist häufig mit einer Plantarfasziitis vergesellschaftet (Patel & DiGiovanni 2011) und erhöht den Zug auf den Faszienansatz. Weitere begünstigende Faktoren sind Fußfehlstellungen (z. B. Knick-Senk-Fuß mit Überpronation), langes Stehen auf hartem Untergrund und ungeeignetes Schuhwerk.",
+   "bilder": []
+  },
+  "kb_pf_beschwerden": {
+   "titel": "Beschwerden",
+   "text": "Leitsymptom ist ein **stechender Schmerz an der Ferseninnenseite / Fußsohle nahe dem Fersenbein**. Typisch ist der **morgendliche Anlaufschmerz** (die ersten Schritte nach dem Aufstehen oder nach längerem Sitzen), der sich nach einigen Schritten oft bessert, bei längerer Belastung aber wieder zunimmt. Der Schmerz ist meist gut lokalisierbar am medialen Fersenbeinansatz.\n\nDie Beschwerden entwickeln sich in der Regel langsam und können über Monate anhalten. Eine wichtige **Differenzialdiagnose** ist die Baxter-Neuropathie (Einklemmung eines kleinen Fußsohlennervs), die ähnliche Schmerzen verursacht.",
+   "bilder": []
+  },
+  "kb_pf_diagnostik": {
+   "titel": "Diagnostik",
+   "text": "Die Diagnose wird überwiegend **klinisch** gestellt — anhand des typischen Anlaufschmerzes und der punktgenauen Druckschmerzhaftigkeit am medialen Fersenbeinansatz. Weitere Untersuchungen dienen vor allem dem **Ausschluss anderer, selteneren Ursachen**.\n\nIm **Ultraschall** lässt sich die Faszie gut beurteilen: Bei Betroffenen ist sie im Mittel etwa 2,1 mm dicker als bei Gesunden (Mohseni-Bandpei et al. 2014); ab einer Dicke von **4 mm** am Fersenansatz gilt sie als krankhaft. Das **Röntgen** (belastet, mit Rückfußachse) dient dem Ausschluss von Knochenzysten und der Beurteilung von Fehlstellungen; ein häufig sichtbarer **plantarer Fersensporn** liegt oberhalb der Faszie und steht in Größe und Form **nicht** im Zusammenhang mit den Beschwerden (Ahmad et al. 2016). Ein **MRT** wird nur bei unklaren Fällen zum Ausschluss anderer Erkrankungen ergänzt.",
+   "bilder": []
+  },
+  "kb_pf_behandlung": {
+   "titel": "Behandlung",
+   "text": "Die Behandlung ist ganz überwiegend **nicht-operativ und sehr erfolgreich**: Bei etwa **90 % der Betroffenen** bilden sich die Beschwerden innerhalb eines Jahres unter konservativer Therapie zufriedenstellend zurück (Thomas et al. 2010). Die aktuelle Leitlinie (Heel Pain / Plantar Fasciitis, 2023) stellt Dehnung, manuelle Therapie und Taping als Basis in den Vordergrund, ergänzt durch Nachtschienen und ausgewählte physikalische Verfahren.\n\n**Basis (bitte den verlinkten Programmen folgen):**\n- Konsequente **Dehnung von Wade und Plantarfaszie** → [Eigenübungen bei Plantarfasziitis](?massnahme=uebungen_plantarfasziitis) · [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n- **Gewichtsreduktion**, Belastungsanpassung, geeignetes/gedämpftes Schuhwerk\n- **Einlagen** zur Bettung und Gewölbestütze → [Einlagen](?massnahme=einlagen)\n- **Nachtschiene** bei ausgeprägtem Anlaufschmerz → [Nachtschiene](?massnahme=nachtschiene)\n\n**Ergänzende Verfahren:**\n- **Stoßwellentherapie** — gut belegt → [Stoßwellentherapie](?massnahme=stosswelle)\n- **PRP/ACP (Eigenblut)** → [PRP/ACP](?massnahme=prp_acp) · **Low-Level-Laser** → [LLLT](?massnahme=lllt) · **Botox** → [Botox bei Plantarfasziitis](?massnahme=botox_plantar)\n- Weitere Optionen: Taping, manuelle Therapie/Osteopathie, Akupunktur, Dry Needling; in seltenen therapieresistenten Fällen Strahlentherapie.\n\nAktuelle Vergleichsstudien (2024) zeigen: **Stoßwelle ist sicherer und wirksamer als Kortison-Spritzen** und der Wirkung auf mittlere Sicht überlegen; **PRP** wirkt Kortison-Injektionen bei 6–12 Monaten überlegen und ist mit der Stoßwelle vergleichbar (Daher et al. 2024, Metaanalyse ESWT vs. Kortison 2024). Kortison-Injektionen wirken nur kurzfristig und bergen das Risiko eines Faszienrisses und einer Fettpolster-Atrophie an der Ferse.\n\n**Operativ** (erst nach 6–12 Monaten erfolgloser konservativer Therapie): ein **Plantarfaszien-Release** (offen oder endoskopisch) → [Plantarfaszien-Release](?op=plantarfascie&modus=aufklaerung); bei relevanter Wadenverkürzung eine **Wadenmuskel-Verlängerung** (gute Ergebnisse bei geringeren Komplikationen als das Release) → [Wadenmuskel-Verlängerung](?op=gastroc&modus=aufklaerung); bei ursächlicher Rückfußfehlstellung deren Korrektur. Auch operativ verbleibt ein relevantes Restrisiko fortbestehender Beschwerden.",
+   "bilder": []
+  },
+  "kb_pf_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Riddle DL, Schappert SM. Volume of ambulatory care visits and patterns of care for plantar fasciitis: a national study. Foot Ankle Int. 2004;25(5):303–10.\n\n[2] Lopes AD, Hespanhol Júnior LC, Yeung SS, Costa LO. What are the main running-related musculoskeletal injuries? A systematic review. Sports Med. 2012;42(10):891–905.\n\n[3] van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy: systematic review and meta-analysis. Br J Sports Med. 2016;50(16):972–81.\n\n[4] Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot Ankle Int. 2011;32(1):5–8.\n\n[5] Mohseni-Bandpei MA, et al. Application of ultrasound in the assessment of plantar fascia in patients with plantar fasciitis: a systematic review. Ultrasound Med Biol. 2014;40(8):1737–54.\n\n[6] Ahmad J, Karim A, Daniel JN. Relationship and Classification of Plantar Heel Spurs in Patients With Plantar Fasciitis. Foot Ankle Int. 2016;37(9):994–1000.\n\n[7] Thomas JL, et al. The diagnosis and treatment of heel pain: a clinical practice guideline–revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1–19.\n\n[8] Koc TA Jr, et al. Heel Pain–Plantar Fasciitis: Clinical Practice Guideline 2023. J Orthop Sports Phys Ther. 2023;53(12):CPG1–CPG39.\n\n[9] Daher M, Covarrubias O, Herber A, et al. Platelet-Rich Plasma vs Extracorporeal Shock Wave Therapy in Plantar Fasciitis at 3–6 Months: systematic review and meta-analysis of RCTs. Foot Ankle Int. 2024.\n\n[10] Systematic review and meta-analysis: ESWT vs. corticosteroid injections on pain, plantar fascia thickness and foot function in plantar fasciitis. 2024 (PMID 38738305).",
+   "bilder": []
+  },
+  "kb_achillo_ueberblick": {
+   "titel": "Überblick",
+   "text": "**Achillodynie** ist ein Sammelbegriff für das Leitsymptom „schmerzhafte Achillessehne\" und umfasst mehrere unterschiedliche Erkrankungen. Sehnenschmerzen sind häufig: Jede dritte Vorstellung beim Sportmediziner erfolgt deswegen, an der unteren Extremität vor allem Achillessehne, Plantarfaszie und Patellarsehne. Die **Lebenszeitprävalenz** liegt beim aktiven Menschen bei 20–50 %, bei Läuferinnen und Läufern mit rund 52 % am höchsten (Hirschmüller & Weisskopf 2018).\n\nMan unterscheidet vor allem die **Mid-Portion-Tendinopathie** (Schädigung im mittleren, schlecht durchbluteten Sehnenabschnitt), die **insertionsnahe (insertionelle) Tendinopathie** (am Sehnenansatz, oft mit Haglund-Exostose) und die **Paratendinopathie** (Reizung der Sehnenhülle). Diese Seite gibt den Überblick; die spezifischen Formen sind gesondert beschrieben.",
+   "bilder": []
+  },
+  "kb_achillo_ursachen": {
+   "titel": "Ursachen",
+   "text": "In einer gesunden Sehne besteht ein ständiger Umbau mit Gleichgewicht zwischen Auf- und Abbau. Bei **Überlastung** kippt dieses Gleichgewicht. Zahlreiche Faktoren begünstigen eine Sehnenschädigung: **Übergewicht, Diabetes mellitus, rheumatische Erkrankungen, zunehmendes Alter, Gangbildstörungen**, Training bei kaltem Wetter, moderater Alkoholkonsum (van der Vlist et al. 2019), Blutgruppe 0 (Jozsa et al. 1989) sowie bestimmte **Medikamente** — Chinolon-Antibiotika, Statine (Blutfettsenker), Sildenafil und Anabolika.\n\nMechanisch-anatomisch spielt eine **Haglund-Exostose** (knöcherne Ausziehung am Fersenbein) eine Rolle, die beim Anheben des Fußes auf die Sehne drückt. Zudem hat die Achillessehne **schlecht durchblutete Areale**: Der Abschnitt etwa **2–4 cm oberhalb des Ansatzes** ist besonders minderversorgt — hier entstehen typischerweise die Mid-Portion-Tendinopathie und die klassischen Sehnenrisse (Chen et al. 2009).\n\nNach dem etablierten Modell von **Cook und Purdam (2009)** verläuft die Schädigung als **Kontinuum**: von der *reaktiven Tendinopathie* (akute, nicht-entzündliche Stressreaktion mit Wassereinlagerung und Verdickung) über die *Phase des gestörten Heilungsversuchs* bis zur *degenerativen Tendinopathie* mit strukturell umgebautem, minderwertigem Sehnengewebe.",
+   "bilder": []
+  },
+  "kb_achillo_behandlung": {
+   "titel": "Behandlung & weiterführend",
+   "text": "Grundlage fast aller Achillessehnen-Beschwerden ist ein **dosiertes Belastungs- und Krafttraining** sowie die **Dehnung der Wade** — konsequent über Wochen bis Monate:\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading)\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nErgänzend kommen je nach Form Stoßwellentherapie, Einlagen/Fersenkissen und ggf. PRP/ACP zum Einsatz:\n- [Stoßwellentherapie](?massnahme=stosswelle) · [Einlagen](?massnahme=einlagen) · [PRP/ACP](?massnahme=prp_acp)\n\n**Zur jeweiligen Form:**\n- [Mid-Portion-Tendinopathie](?op=achilles_midportion_kb&modus=aufklaerung)\n- [Insertionsnahe Tendinopathie](?op=achilles_insertional_kb&modus=aufklaerung)\n\nOperative Verfahren bleiben Fällen vorbehalten, die über viele Monate nicht auf die konservative Therapie ansprechen (siehe die jeweiligen Formen und OP-Techniken).",
+   "bilder": []
+  },
+  "kb_achillo_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Hirschmüller A, Weisskopf L. Epidemiologie der Achillessehnenbeschwerden. Sportverletz Sportschaden. 2018.\n\n[2] Jozsa L, et al. The role of blood type in Achilles tendon rupture. J Sports Med. 1989.\n\n[3] van der Vlist AC, et al. Which risk factors are associated with Achilles tendinopathy? A systematic review. Br J Sports Med. 2019;53(21):1352–1361.\n\n[4] Chen TM, et al. The arterial anatomy of the Achilles tendon: anatomical study and clinical implications. Clin Anat. 2009;22(3):377–85.\n\n[5] Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409–16.",
+   "bilder": []
+  },
+  "kb_amid_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **Mid-Portion-Tendinopathie** ist die schmerzhafte chronische Überlastung des **mittleren Abschnitts der Achillessehne** (etwa 2–6 cm oberhalb des Fersenbeinansatzes) mit Umwandlung des Sehnengewebes. Sie ist mit rund **65 %** die häufigste Form des Achillessehnenschmerzes.\n\nDie Inzidenz liegt bei etwa **37 pro 100.000** Europäern (Nyström et al. 2008); unter Langstreckenläuferinnen und -läufern ist sie mit einer jährlichen Rate von 7–9 % besonders hoch (Lysholm & Wiklander 1987), betrifft aber auch viele Hobbysportler und Nicht-Athleten. Der betroffene Sehnenabschnitt ist zugleich der am schlechtesten durchblutete Bereich (siehe Achillodynie).",
+   "bilder": []
+  },
+  "kb_amid_beschwerden": {
+   "titel": "Beschwerden & Diagnostik",
+   "text": "Typisch sind belastungsabhängige Schmerzen und eine tastbare, teils spindelförmige Verdickung im mittleren Sehnenverlauf, oft mit Steifigkeit am Morgen. \n\nZur Diagnostik gehört ein **belastetes Röntgen** (2 Ebenen, Saltzmann-/Rückfußachsen-Aufnahme) zur Darstellung von Fußfehlstellungen — eine Knick-Senk-Fuß-Stellung mit Überpronation ist mit Achillessehnenbeschwerden vergesellschaftet — sowie zur Beurteilung der Fersenbeingeometrie und möglicher Verkalkungen. Das **MRT** ist zur Beurteilung des Schädigungsausmaßes und zur Therapieplanung meist erforderlich; der **Ultraschall** erlaubt eine dynamische Beurteilung der Sehne.",
+   "bilder": []
+  },
+  "kb_amid_behandlung": {
+   "titel": "Behandlung",
+   "text": "Die Behandlung ist ganz überwiegend **konservativ und gut belegt**. Kernstück ist ein **dosiertes Belastungstraining (Tendoloading)** mit exzentrischen Übungen, das bei der Mid-Portion-Tendinopathie sehr wirksam ist (Magnusson & Kjaer 2009), ergänzt durch Wadendehnung:\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading)\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nErgänzend kommen **Stoßwellentherapie** und ggf. **PRP/ACP** sowie eine Einlagen-/Fußkorrektur bei begleitender Fehlstellung zum Einsatz:\n- [Stoßwellentherapie](?massnahme=stosswelle) · [PRP/ACP](?massnahme=prp_acp) · [Einlagen](?massnahme=einlagen)\n\n**Operativ** (erst nach vielen Monaten erfolgloser konservativer Therapie): je nach Befund eine **Tendoskopie** oder ein Débridement der Sehne:\n- [Achilles-Tendoskopie](?op=tendoskopie_achilles&modus=aufklaerung) · [Nekrosen/Débridement am Ansatz](?op=achilles_nekrose&modus=aufklaerung)",
+   "bilder": []
+  },
+  "kb_amid_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Nyström B, et al. Incidence of Achilles tendon rupture and mid-portion tendinopathy. 2008.\n[2] Lysholm J, Wiklander J. Injuries in runners. Am J Sports Med. 1987;15(2):168–71.\n[3] Janssen I, et al. Achilles tendinopathy in athletes. 2018.\n[4] Magnusson SP, Kjaer M. The impact of loading on tendon: eccentric training in Achilles tendinopathy. 2009.\n[5] Cook JL, Purdam CR. Is tendon pathology a continuum? Br J Sports Med. 2009;43(6):409–16.",
+   "bilder": []
+  },
+  "kb_ains_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **insertionsnahe (insertionelle) Achillessehnen-Tendinopathie** ist die schmerzhafte chronische Reizung und der Verschleiß der Achillessehne direkt an ihrem **Ansatz am hinteren Fersenbein**. Ansatznahe Achillessehnenschmerzen treten mit einer Inzidenz von etwa **2–3 %** in der Bevölkerung auf (Kujala et al. 2005). Sie ist seltener als die Mid-Portion-Tendinopathie und konservativ schwerer zu behandeln.",
+   "bilder": []
+  },
+  "kb_ains_ursachen": {
+   "titel": "Ursachen & Beschwerden",
+   "text": "Häufig liegt eine **Haglund-Exostose** vor — eine prominente hintere Fersenbein-Oberkante, die beim Anheben des Fußes Kontakt zur Achillessehne bekommt (streng genommen keine echte Knochenneubildung, sondern ein knöcherner Vorsprung). Zwischen Exostose und Sehne liegt ein Schleimbeutel (retroachilläre Bursa), der sich entzünden kann. Dazu kommen Verknöcherungen im Sehnenansatz (hinterer Fersensporn). Die allgemeinen Risikofaktoren der Sehnenschädigung sind unter „Achillodynie\" beschrieben.\n\nKlinisch fallen eine **Auftreibung der Kontur** am Ansatz, oft mit Rötung, Druckstellen oder chronischen Wunden durch die Fersenkappe des Schuhs, auf. Der Zehenspitzenstand und die passive Fußhebung können schmerzhaft sein; bei Bursitis besteht Querdruckschmerz hinter der Sehne.",
+   "bilder": []
+  },
+  "kb_ains_diagnostik": {
+   "titel": "Diagnostik",
+   "text": "Die Untersuchung zeigt die typische Ansatz-Auftreibung und Druckschmerzhaftigkeit. Der **Ultraschall** beurteilt Fersenbeinform, Schleimbeutel und Sehne. Das **Röntgen** stellt Haglund-Exostose, hinteren Fersensporn und Verkalkungen dar; das **MRT** erfasst das Ausmaß der Sehnenschädigung und die Bursitis und ist für die Therapieplanung meist erforderlich.",
+   "bilder": []
+  },
+  "kb_ains_behandlung": {
+   "titel": "Behandlung",
+   "text": "Die insertionelle Tendinopathie wird **immer primär konservativ** behandelt, auch wenn sie weniger erfolgreich anspricht als die Mid-Portion-Form — etwa **50–60 %** lassen sich nicht-operativ erfolgreich behandeln. Die Verfahren werden häufig kombiniert. Wichtige Elemente sind **exzentrisches Kraft-/Belastungstraining, Stoßwellentherapie** und ein **Fersenkeil bzw. eine Einlage mit Fersenerhöhung**:\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading) — bei der insertionellen Form die Übungen **nur bis zur Neutralstellung** (nicht in die tiefe Dehnung), da die knöcherne Ansatzregion sonst gereizt wird.\n- [Stoßwellentherapie](?massnahme=stosswelle) · [Einlagen](?massnahme=einlagen)\n\nWichtig: **Intensive Dehnübungen** sind hier zurückhaltend einzusetzen, da die knöchernen Veränderungen am hinteren Fersenbein durch starke Dehnung Schmerzen auslösen können — sie sind nur als Teil eines angeleiteten physiotherapeutischen Programms sinnvoll.\n\n**Operativ** (bei Leidensdruck über 6–9 Monate trotz konservativer Therapie): je nach Ausprägung eine **Calcaneoplastie** (Abtragung der Haglund-Exostose, endoskopisch) oder bei ausgeprägtem Ansatzbefund ein **zentraler Sehnensplit mit Refixation** (ggf. Haglund-Abtragung):\n- [Calcaneoplastie (endoskopisch)](?op=calcaneoplastie&modus=aufklaerung) · [Haglund + Sehnensplit/Refixation](?op=haglund_split&modus=aufklaerung) · [Nekrosen/Débridement](?op=achilles_nekrose&modus=aufklaerung)\n\nMögliche Komplikationen operativer Eingriffe sind eine unbefriedigende Schmerzreduktion, Wundheilungsstörungen/Infekte, Nervenschäden, Folgeeingriffe und ein Achillessehnenabriss; nach ausgedehnten Eingriffen kann die Rückkehr zum Wettkampfsport bis zu einem Jahr dauern.",
+   "bilder": []
+  },
+  "kb_ains_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Kujala UM, Sarna S, Kaprio J. Cumulative incidence of Achilles tendon rupture and tendinopathy in male former elite athletes. Clin J Sport Med. 2005;15(3):133–5.\n[2] Cook JL, Purdam CR. Is tendon pathology a continuum? Br J Sports Med. 2009;43(6):409–16.\n[3] Magnusson SP, Kjaer M. Eccentric training in Achilles tendinopathy. 2009.\n[4] Aktuelle Serien zum zentralen Sehnensplit mit Double-Row-Refixation bei insertioneller Tendinopathie (gute Ergebnisse, geringe Komplikationen), 2023.",
+   "bilder": []
+  },
+  "kb_asr_ueberblick": {
+   "titel": "Überblick",
+   "text": "Ein **Achillessehnenriss (Achillessehnenruptur)** ist die vollständige oder teilweise Durchtrennung der Achillessehne — meist **2–6 cm oberhalb des Fersenbeins** im schlecht durchbluteten Sehnenabschnitt — mit akutem Verlust der Kraft zum Absenken des Fußes (Plantarflexion).\n\nBetroffen sind vor allem **sportlich aktive Männer zwischen dem 30. und 50. Lebensjahr** (Männer etwa 5-mal häufiger als Frauen). Die Häufigkeit liegt bei etwa **18–40 pro 100.000** Einwohner pro Jahr und hat in den letzten Jahrzehnten zugenommen — bedingt durch mehr Freizeitsport und eine alternde, aber aktiv bleibende Bevölkerung (Noback et al. 2017, Ochen et al. 2019).",
+   "bilder": []
+  },
+  "kb_asr_ursachen": {
+   "titel": "Ursachen & Beschwerden",
+   "text": "Ein Achillessehnenriss entsteht meist durch eine **plötzliche exzentrische Überlastung** — beim Abstoß, Sprung oder abrupten Richtungswechsel. In vielen Fällen besteht eine **vorbestehende, klinisch stumme Sehnendegeneration**, die das Rupturrisiko erheblich erhöht (Krahe & Berlet 2009). Typisch ist der „Wochenendathlet\" mit unregelmäßigem oder plötzlich intensiviertem Training.\n\nBetroffene beschreiben oft einen **peitschenschlagartigen Schlag oder Knall** an der Wade, gefolgt von einem Kraftverlust beim Abrollen und dem Unvermögen, sicher auf die Zehenspitzen zu kommen.",
+   "bilder": []
+  },
+  "kb_asr_diagnostik": {
+   "titel": "Diagnostik",
+   "text": "Die Diagnose lässt sich meist **klinisch** stellen. Wegweisend ist der **Thompson-Test**: In Bauchlage wird die Wade zusammengedrückt — bleibt die normale Fußsenkung aus, ist der Test positiv. Eine tastbare **Delle** im Sehnenverlauf kann auf einen Riss hinweisen, wird aber gelegentlich durch die intakte Plantarissehne kaschiert und ist daher kein sicheres Ausschlusskriterium.\n\nDer **Ultraschall** stellt schnell und dynamisch den Rissspalt dar und beurteilt, ob sich die Sehnenstümpfe im Spitzfuß aneinanderlegen — wichtig für die Planung einer konservativen Behandlung (untersucherabhängig). Ein **MRT** ist bei unklaren Fällen oder zur genauen Beurteilung von Ausmaß und Lokalisation sinnvoll.",
+   "bilder": []
+  },
+  "kb_asr_behandlung": {
+   "titel": "Behandlung",
+   "text": "Zentraler Baustein ist heute die **funktionelle Nachbehandlung** — in einem Spezialstiefel (Vacoped) mit Fersenkeilen, die den Fuß zunächst in leichter Spitzfußstellung halten und schrittweise abgebaut werden. Diese funktionelle Behandlung wird **sowohl konservativ als auch nach einer Operation** eingesetzt.\n\nDie Entscheidung **konservativ vs. operativ** wird individuell getroffen. Die operative Naht **senkt die erneute Rissrate** (Reruptur ca. **3–4 %** gegenüber ca. **12 %** unter rein konservativer Behandlung), während die konservative Behandlung bei konsequenter funktioneller Nachbehandlung heute eine gleichwertige Option darstellt und Operationsrisiken (v. a. Wundheilung, Infekt) vermeidet (AOFAS-Statement 2024, RCT-Metaanalysen). **Minimalinvasive/perkutane** Nahttechniken haben dieselbe Reruptur-Rate wie die offene Naht bei weniger Wundproblemen, erfordern aber besondere **Schonung des N. suralis**.\n\n**Zu den OP-Techniken:**\n- [Achillessehnennaht — offen](?op=achilles_naht&modus=aufklaerung)\n- [Achillessehnennaht — perkutan/minimalinvasiv](?op=achilles_perkutan&modus=aufklaerung)\n\nNach der Ausheilung unterstützt ein **Aufbau-Training** die Rückkehr zu Belastung und Sport → [Exzentrische Kräftigung / Tendoloading](?massnahme=achilles_tendoloading) · [Wadenmuskeldehnung](?massnahme=waden_dehnung). Bleibt ein Riss länger unerkannt oder heilt er verlängert/verlängert aus, kann eine bleibende Schwäche entstehen — siehe [Achillessehneninsuffizienz](?op=achilles_insuffizienz_kb&modus=aufklaerung).",
+   "bilder": []
+  },
+  "kb_asr_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Noback PC, et al. Epidemiology of Achilles tendon rupture. 2017.\n[2] Ochen Y, et al. Operative vs nonoperative treatment of acute Achilles tendon rupture: systematic review and meta-analysis. BMJ. 2019;364:k5120.\n[3] Krahe MA, Berlet GC. Achilles tendon ruptures, re-rupture with revision surgery, tendinosis, and insertional disease. Foot Ankle Clin. 2009;14(2):247–75.\n[4] AOFAS Position Statement: Acute Achilles Tendon Ruptures. Nov 2024.\n[5] Meta-analysis of RCTs on acute Achilles rupture management. J Foot Ankle / Foot Ankle Orthop. 2025.",
+   "bilder": []
+  },
+  "kb_asi_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **Achillessehneninsuffizienz** ist eine fortschreitende Funktionsstörung der Achillessehne auf dem Boden einer **degenerativen Gewebeveränderung** — die Sehne verliert an Kraft und Belastbarkeit. Anders als der akute Achillessehnenriss, der typischerweise jüngere, sportliche Männer trifft, betrifft die Insuffizienz vor allem **ältere und weniger aktive Menschen**. Verlässliche Häufigkeitszahlen fehlen, da das Bild oft nicht klar von der Achillodynie oder der chronischen Ruptur abgegrenzt wird.",
+   "bilder": []
+  },
+  "kb_asi_ursachen": {
+   "titel": "Ursachen",
+   "text": "Die Insuffizienz entsteht durch verschiedene, teils kombinierte Prozesse: einen **nicht oder fehlverheilten akuten Achillessehnenriss**, eine **chronische Überdehnung** der Sehne ohne vollständige Ruptur, eine **fortgeschrittene Degeneration** bei langjähriger Tendinopathie oder eine **iatrogene Schädigung**, z. B. nach Kortison-Injektionen in die Sehne. Begünstigend wirken höheres Alter mit nachlassender Gewebequalität, systemische Erkrankungen (Rheuma, Diabetes, Gicht), Adipositas bzw. metabolisches Syndrom sowie Durchblutungsstörungen.",
+   "bilder": []
+  },
+  "kb_asi_diagnostik": {
+   "titel": "Beschwerden & Diagnostik",
+   "text": "Im Vordergrund steht der **Kraftverlust beim Absenken des Fußes**: Der Zehenspitzenstand — zunächst beidbeinig, dann einbeinig — zeigt den Schweregrad. Wegweisend ist die **vermehrte passive Dorsalextension**: Bei insuffizienter Sehne lässt sich der Fuß deutlich weiter nach oben bewegen als auf der Gegenseite. Ergänzend beurteilen **Ultraschall und MRT** Struktur, Ausdünnung oder Defekt der Sehne. Die Diagnose ergibt sich aus der Kombination von Anamnese, klinischer Untersuchung und Bildgebung.",
+   "bilder": []
+  },
+  "kb_asi_behandlung": {
+   "titel": "Behandlung",
+   "text": "Bei leichten bis mittelschweren Verläufen kann die **konservative Therapie** Beschwerden lindern und die Funktion stabilisieren, den strukturellen Sehnenschaden aber nicht beheben:\n- **Fersenerhöhung** zur Entlastung der Sehne, Orthesen/Schuhzurichtung zur Stabilisierung\n- **Physiotherapie** mit gezieltem Kraftaufbau der Wade → [Exzentrische Kräftigung / Tendoloading](?massnahme=achilles_tendoloading) · [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nBei ausgeprägtem Kraftverlust und eingeschränkter Alltagsfunktion sind die konservativen Möglichkeiten begrenzt. Die **operative Therapie** stellt die mechanische Funktion wieder her; die Verfahrenswahl richtet sich nach Defektgröße, Gewebequalität, Aktivitätsniveau und Begleiterkrankungen. Bei kleinem Defekt können eine **V-Y-Plastik oder Umkipp-(Turndown-)Plastik** zur Überbrückung genügen; bei größeren Defekten wird die Sehne durch einen **Sehnentransfer** verstärkt oder ersetzt — am gängigsten der **FHL-Transfer** (Flexor-hallucis-longus-Sehne):\n- [FHL-Sehnentransfer](?op=fhl&modus=aufklaerung)",
+   "bilder": []
+  },
+  "kb_asi_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Krahe MA, Berlet GC. Achilles tendon ruptures, re-rupture, tendinosis and insertional disease. Foot Ankle Clin. 2009;14(2):247–75.\n[2] Maffulli N, et al. Chronic Achilles tendon disorders: tendinopathy and chronic rupture. Clin Sports Med. 2015.\n[3] Übersichtsarbeiten zu Sehnentransfers (FHL) bei chronischer Achillessehneninsuffizienz.",
+   "bilder": []
+  },
+  "kb_tar_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **Tibialis-anterior-Sehnenruptur** ist der Riss der Sehne des vorderen Schienbeinmuskels, der wichtigsten Sehne zum **Anheben des Fußes (Dorsalextension)**. Sie ist selten und wird — vor allem in der chronischen Form ohne klares Unfallereignis — anfangs häufig übersehen. Etwa **80 %** der Fälle sind chronische Rupturen, seltener sind akute Risse.",
+   "bilder": []
+  },
+  "kb_tar_ursachen": {
+   "titel": "Ursachen",
+   "text": "Man unterscheidet zwei Formen. Die **akute Ruptur** entsteht meist ohne Vorschädigung durch eine Schnittverletzung oder ein stumpfes Trauma auf die angespannte Sehne (z. B. Anprall), bei Hyperflexionsverletzung gelegentlich als knöcherner Ausriss — typischerweise am Fußrücken vor dem oberen Sprunggelenk. Die **chronische Ruptur** tritt spontan bei einem Bagatellereignis auf einer vorgeschädigten, verschlissenen Sehne auf, oft nach mehreren aufeinanderfolgenden Teilrissen; betroffen sind meist vorerkrankte Männer über 45 Jahre mit Erkrankungen wie Rheuma, Lupus oder Diabetes mellitus.",
+   "bilder": []
+  },
+  "kb_tar_diagnostik": {
+   "titel": "Beschwerden & Diagnostik",
+   "text": "Leitbefund ist ein **Kraftdefizit beim Anheben des Fußes** im Seitenvergleich (ohne sonstige neurologische Auffälligkeiten — wichtige Abgrenzung zum Bandscheibenvorfall). Kompensatorisch spannen die Zehenheber an (Extensor-Recruitment). Die normalerweise tastbare, angespannte Tibialis-anterior-Sehne fehlt; stattdessen findet sich häufig ein tastbarer **Knoten des zurückgezogenen Sehnenstumpfes** vor dem Sprunggelenk unter dem oberen Streckhalteband (Retinaculum extensorum superius). Der **Ultraschall** lokalisiert die Sehne und das Ausmaß der Rückziehung (Retraktion); ergänzend ist ein MRT möglich.",
+   "bilder": []
+  },
+  "kb_tar_behandlung": {
+   "titel": "Behandlung",
+   "text": "Das Kernproblem ist die **Retraktion**: Der Muskel zieht das Sehnenende nach einer Komplettruptur bis auf Höhe des oberen Streckhaltebands zurück, sodass **kein Kontakt der Sehnenenden** mehr besteht und eine Heilung durch bloße Ruhigstellung nicht möglich ist. Ab etwa der **4. Woche** ist die Retraktion kritisch, da der Muskel-Sehnen-Anteil verkürzt und nur noch eingeschränkt mobilisierbar ist.\n\nDie Entscheidung ist **individuell**: Eine ältere Studie (1998, 16 Patienten) fand keinen Ergebnisunterschied zwischen operierten jüngeren und nicht operierten älteren Patienten — daraus wird abgeleitet, **ältere Patienten mit geringem funktionellem Anspruch eher konservativ** (mit Orthese/Fußheberschiene, Physiotherapie) und **jüngere, aktive Patienten operativ** zu behandeln. Operativ erfolgt je nach Situation eine direkte Naht, eine Reinsertion oder — bei Retraktion/Defekt — eine Rekonstruktion mit Sehnentransfer bzw. -transplantat. Wegen der drohenden Retraktion sollte die Diagnose zeitnah gestellt und die Behandlung nicht verzögert werden.",
+   "bilder": []
+  },
+  "kb_tar_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Markarian GG, et al. Anterior tibial tendon ruptures: an outcome analysis of operative versus nonoperative treatment. Foot Ankle Int. 1998;19(12):792–802.\n[2] Sammarco VJ, et al. Diagnosis and treatment of anterior tibial tendon rupture. J Am Acad Orthop Surg. 2009.\n[3] Übersichtsarbeiten zu akuter vs. chronischer Tibialis-anterior-Ruptur.",
+   "bilder": []
+  },
+  "kb_pfs_ueberblick": {
+   "titel": "Überblick",
+   "text": "**Plantarer Fersenschmerz** ist ein Sammelbegriff für Schmerzen an der **Unterseite der Ferse** — kein einzelnes Krankheitsbild, sondern ein Leitsymptom mit verschiedenen Ursachen. Er ist sehr häufig und macht **11–15 %** aller Vorstellungen wegen Fußschmerz aus; die Prävalenz liegt bei etwa **6–10 %**, mit einem Häufigkeitsgipfel im September/Oktober. Mit Abstand häufigste Ursache ist die **Plantarfasziitis** (rund 80 % der Fälle).",
+   "bilder": []
+  },
+  "kb_pfs_ursachen": {
+   "titel": "Ursachen & Abgrenzung",
+   "text": "Die wichtigste Aufgabe ist die **Zuordnung zur richtigen Ursache**, da sich danach die Behandlung richtet:\n- **Plantarfasziitis / Fersensporn** — mit Abstand am häufigsten (ca. 80 %) → [Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung)\n- **Baxter-Neuropathie** — Einklemmung eines kleinen Fußsohlennervs (erster Ast des N. plantaris lateralis)\n- **Joggers-Foot** — Reizung/Einklemmung des N. plantaris medialis\n- **Tarsaltunnelsyndrom** — Einklemmung des N. tibialis am inneren Knöchel\n- seltener: Atrophie des Fersenfettpolsters, Stressfraktur des Fersenbeins, entzündliche/rheumatische Ursachen\n\nDie nervalen Ursachen (Baxter, Joggers-Foot, Tarsaltunnel) verursachen eher brennende oder ausstrahlende Schmerzen und Missempfindungen, während die Plantarfasziitis typischerweise als punktförmiger Anlaufschmerz am inneren Fersenansatz auftritt.",
+   "bilder": []
+  },
+  "kb_pfs_behandlung": {
+   "titel": "Diagnostik & Behandlung",
+   "text": "Basis der Abklärung sind Anamnese und klinische Untersuchung (genaue Lokalisation des Druckschmerzes, Anlauf- vs. Ruheschmerz, neurologische Zeichen), ergänzt durch Ultraschall und Röntgen; bei Verdacht auf eine nervale oder knöcherne Ursache auch MRT bzw. Elektrophysiologie.\n\nEine sinnvolle Behandlung wird **erst nach der Diagnose** je nach zugrunde liegendem Krankheitsbild geplant. Für die häufigste Ursache siehe die Seite [Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung) mit den zugehörigen Übungen und Maßnahmen.",
+   "bilder": []
+  },
+  "kb_pfs_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Tong KB, Furia J. Economic burden of plantar fasciitis. Am J Orthop. 2010.\n[2] Thomas JL, et al. The diagnosis and treatment of heel pain: clinical practice guideline–revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1–19.\n[3] Riddle DL, Schappert SM. Volume of ambulatory care visits for plantar fasciitis. Foot Ankle Int. 2004;25(5):303–10.",
+   "bilder": []
+  },
+  "kb_gicht_ueberblick": {
+   "titel": "Überblick",
+   "text": "**Gicht** ist eine **Kristallablagerungs-Erkrankung**: Bei dauerhaft erhöhtem Harnsäurespiegel (Hyperurikämie) lagern sich **Mononatriumurat-Kristalle** in Gelenken und Weichteilen ab und lösen Entzündungen aus. Am Fuß ist das **Großzehengrundgelenk (MTP I)** mit Abstand am häufigsten betroffen — der akute Anfall dort heißt **Podagra**. Gicht ist die häufigste entzündliche Gelenkerkrankung des Mannes jenseits des 40. Lebensjahres; im Verlauf ist das MTP-I-Gelenk bei bis zu ~73 % der Betroffenen beteiligt (Stewart et al. 2016). Warum gerade dieses Gelenk? Vermutet werden die niedrigere Temperatur am Fuß, kleine Mikrotraumata und eine begleitende Arthroseneigung, die die Kristallbildung begünstigen (Roddy 2011).",
+   "bilder": []
+  },
+  "kb_gicht_ursachen": {
+   "titel": "Ursachen & Beschwerden am Fuß",
+   "text": "Grundlage ist eine **Hyperurikämie** durch verminderte Ausscheidung und/oder erhöhte Bildung von Harnsäure (purinreiche Ernährung, Alkohol, bestimmte Medikamente, Nierenfunktion, genetische Veranlagung).\n\nDer **akute Gichtanfall** am Fuß beginnt typischerweise schlagartig, oft nachts, mit heftigstem Schmerz, Rötung, Überwärmung und Schwellung — klassisch am Großzehengrundgelenk (Podagra), seltener an Mittelfuß, Sprunggelenk oder Rückfuß. Unbehandelt bzw. bei anhaltend hoher Harnsäure bilden sich über Jahre knotige Ablagerungen (**Tophi**, z. B. über dem MTP I, an Sehnen oder am Ballen), die auf die Haut drücken, **aufbrechen und schlecht heilende Wunden** verursachen können. Zusätzlich entstehen knöcherne Defekte (Erosionen) mit fortschreitender **Gelenkzerstörung und sekundärer Arthrose** — bis hin zu Fehlstellung und Funktionsverlust des Vorfußes.",
+   "bilder": []
+  },
+  "kb_gicht_diagnostik": {
+   "titel": "Diagnostik",
+   "text": "Die Diagnose ist häufig klinisch (typischer Podagra-Anfall). **Beweisend** ist der Nachweis von **Harnsäurekristallen** in der Gelenkflüssigkeit (negativ doppelbrechend im Polarisationsmikroskop). Der **Ultraschall** zeigt typische Zeichen wie das „Doppelkontur-Zeichen\" und Tophi; das **Röntgen** im Verlauf gichttypische Erosionen; das **MRT** hilft, die Ausdehnung tophöser Ablagerungen darzustellen, die im Röntgen schwer sichtbar sind. Ein erhöhter Harnsäurewert im Blut stützt die Diagnose, kann im akuten Anfall aber normal sein.",
+   "bilder": []
+  },
+  "kb_gicht_behandlung": {
+   "titel": "Behandlung",
+   "text": "**Akuter Anfall:** entzündungshemmende Medikamente (NSAR), Colchicin oder Kortison; Ruhigstellung und Kühlung des Gelenks.\n\n**Langfristig / vorbeugend:** Senkung des Harnsäurespiegels — durch **harnsäuresenkende Medikamente** (z. B. Allopurinol) sowie durch **Ernährungs- und Lebensstilanpassung**. Eine purinbewusste Ernährung ist ein wichtiger Baustein → [Ernährung bei Gicht](?massnahme=ernaehrung_gicht). Bei schmerzhaftem Großzehengrundgelenk mit begleitender Arthrose können zusätzlich die allgemeinen Maßnahmen bei Gelenkverschleiß helfen → [Allgemeine Maßnahmen bei Verschleiß](?massnahme=allg_verschleiss).\n\n_Hinweis: Für dieses Krankheitsbild lag kein mediq-Fachtext vor — die Seite wurde recherchebasiert erstellt und ist ärztlich zu prüfen/zu ergänzen._",
+   "bilder": []
+  },
+  "kb_gicht_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Roddy E. Revisiting the pathogenesis of podagra: why does gout target the foot? J Foot Ankle Res. 2011;4:13.\n[2] Stewart S, Dalbeth N, Vandal AC, Rome K. The first metatarsophalangeal joint in gout: a systematic review and meta-analysis. J Foot Ankle Res. 2016;9:6.\n[3] Kumar S, et al. First Metatarsophalangeal Joint Arthrodesis for the Treatment of Tophaceous Gouty Arthritis. Orthopedics. 2014.\n[4] Surgical Treatment of Chronic Tophaceous Gout in the 1st MTP joint (Exzision vs. Arthrodese; Scarf-Osteotomie).\n[5] Gouty arthritis with massive tophaceous deposits of the MTP joints — excision and reconstruction (Fibula-Autograft): case report. J Orthop Case Rep. 2025.\n[6] Arthroscopic surgery for ankle/MTP gouty arthritis — retrospective outcomes and novel classification. Int Orthop. 2023.\n[7] Richette P, et al. 2016 updated EULAR recommendations for the management of gout. Ann Rheum Dis. 2017;76(1):29–42.\n[8] FitzGerald JD, et al. 2020 ACR Guideline for the Management of Gout. Arthritis Care Res. 2020;72(6):744–760.",
+   "bilder": []
+  },
+  "kb_ung_ueberblick": {
+   "titel": "Überblick",
+   "text": "Ein **Unguis incarnatus (eingewachsener Zehennagel)** entsteht, wenn der seitliche Nagelrand in den umgebenden Nagelwall einwächst und dort — mit oder ohne Entzündung — Beschwerden verursacht. Es ist die **häufigste Erkrankung des Nagelorgans** mit einer Prävalenz von etwa **2,5–5 %** (Levy et al. 1992). Betroffen sind meist junge Menschen, Männer etwa doppelt so häufig wie Frauen; fast immer ist die Großzehe betroffen.",
+   "bilder": []
+  },
+  "kb_ung_ursachen": {
+   "titel": "Ursachen & Beschwerden",
+   "text": "Am proximalen Nagelwall liegt die **Nagelmatrix**, aus der die Nagelplatte wächst; seitlich begrenzen die Nagelwälle den Nagel. Kommt der mediale oder laterale Nagelrand in Kontakt mit der umgebenden Haut, entsteht eine Entzündungsreaktion mit Schwellung und Druckläsion. Begünstigend wirken zu enges Schuhwerk, falsche (zu runde) Nagelpflege, Schwitzen, Fehlstellungen und eine anlagebedingt breite Nagelform.\n\nTypisch sind eine **gerötete, schmerzhafte Schwellung des Nagelwalls** mit Austritt von Sekret oder Eiter; teils breitet sich die Entzündung aus (Rötung/Schwellung, Lymphangitis). Man unterscheidet (modifiziert nach Mozena/Martinez) akute von chronischen Stadien mit zunehmender Ausprägung und **überschießendem Granulationsgewebe**.",
+   "bilder": []
+  },
+  "kb_ung_behandlung": {
+   "titel": "Behandlung",
+   "text": "Zunächst erfolgt **immer ein konservativer Therapieversuch** — bei entzündeter Wunde ist der **Tetanusschutz** zu prüfen und ggf. aufzufrischen. Bausteine sind antiseptische **Fußbäder** (2–3× täglich, weichen das Gewebe auf), anschließend antiseptische Salbe (z. B. Jodsalbe) sowie eine **Druckentlastung des Nagelwalls mit Tape**; der geschulte Behandler kann unter sterilen Bedingungen Nagelfragmente entfernen und eine Nagelfalz-Tamponade oder eine **Nagelkorrekturspange** anlegen.\n\n**Operativ** bei wiederkehrenden, hartnäckigen Fällen, ausgeprägtem Granulationsgewebe oder starker akuter Entzündung: In lokaler Betäubung erfolgt eine Wundreinigung/Abszessentlastung mit Entfernung von Nagelfragmenten und Granulationsgewebe. Zur dauerhaften Lösung wird meist eine **seitliche Nagelkeil-Resektion mit Verödung des zugehörigen Matrixanteils** durchgeführt (z. B. Emmert-Plastik oder chemische Matrixverödung mit Phenol), die die Rückfallrate deutlich senkt.",
+   "bilder": []
+  },
+  "kb_ung_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Levy L, et al. Prävalenz des Unguis incarnatus. 1992.\n[2] Mozena JD. The Mozena classification system for ingrown nails. J Am Podiatr Med Assoc. 2002.\n[3] Eekhof JA, Van Wijk B, Knuistingh Neven A, van der Wouden JC. Interventions for ingrowing toenails. Cochrane Database Syst Rev. 2012;(4):CD001541.",
+   "bilder": []
+  },
+  "kb_jhv_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **juvenile (kindliche/jugendliche) Hallux valgus** ist eine Schiefstellung der Großzehe nach außen bei gleichzeitiger Einwärtswanderung des ersten Mittelfußknochens — beim **heranwachsenden** Menschen. In der Altersgruppe von 8–18 Jahren wird eine Prävalenz von rund **36 %** angenommen, wovon aber nur etwa **21 % schmerzhaft** sind (Cole et al. 1959). **Mädchen** sind mit 76–92 % deutlich häufiger betroffen. Grundlagen und allgemeine Aspekte sind auf der Seite [Hallux valgus](?op=hallux_valgus&modus=aufklaerung) beschrieben.",
+   "bilder": []
+  },
+  "kb_jhv_ursachen": {
+   "titel": "Ursachen",
+   "text": "Je früher die Fehlstellung auftritt, desto eher liegt die Ursache in **angeborenen/anlagebedingten Faktoren** als in Lebenseinflüssen — die genetische Komponente ist mit etwa **90 %** hoch (Piquet-Vidal et al. 2007). Häufig finden sich anatomische Besonderheiten, die den Hallux valgus fördern: ein pathologischer **DMAA** (nach außen abfallende Gelenkfläche des Mittelfußkopfes), ein **Os intermetatarseum**, eine nach innen abfallende Gelenkfläche des Keilbeins sowie eine Adduktusstellung des Mittelfußes. Je nach Alter sind zudem typische Grunderkrankungen zu bedenken (z. B. Bindegewebs- und neuromuskuläre Erkrankungen; Seidenstein et al. 2021).",
+   "bilder": []
+  },
+  "kb_jhv_behandlung": {
+   "titel": "Behandlung",
+   "text": "Wie beim Erwachsenen gibt es **keine erwiesenermaßen fehlstellungskorrigierende konservative Behandlung** — sinnvolle Maßnahmen zielen auf Beschwerdelinderung und ggf. Verlangsamung: gut passendes, im Vorfuß ausreichend weites **Schuhwerk** (wegen des Wachstums 1–2× pro Jahr erneuern), Einlagen bei begleitendem Knick-Senk-Fuß sowie **Fußübungen** → [Eigenübungen beim Hallux valgus](?massnahme=uebungen_hallux_valgus).\n\nEine **operative Korrektur vor Wachstumsabschluss** ist möglich, aber prognostisch unsicherer, da das Restwachstum die Korrektur beeinflusst und die **Rückfallrate erhöht** ist. Als Orientierung gilt: Die Füße sind bei Jungen mit etwa 15, bei Mädchen mit 12–13 Jahren ausgewachsen (Maier et al. 2003) — nach Möglichkeit wird die endgültige Korrektur an das Wachstumsende gelegt. Die eigentlichen Korrekturverfahren entsprechen denen beim Erwachsenen (siehe die jeweiligen OP-Techniken, z. B. [Chevron-/Akin-Osteotomie](?op=chevron_akin&modus=aufklaerung)).",
+   "bilder": []
+  },
+  "kb_jhv_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Cole WH. (Prävalenz des juvenilen Hallux valgus). 1959.\n[2] Piquet-Vidal, et al. Genetische Komponente des juvenilen Hallux valgus. 2007.\n[3] Maier E, et al. Zeitpunkt des Wachstumsabschlusses am Fuß. 2003.\n[4] Seidenstein A, et al. Pediatric hallux valgus: evaluation and management. 2021.",
+   "bilder": []
+  },
+  "kb_kppv_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **kindliche Knick-Senk-Fuß (Pes planovalgus)** ist eine dreidimensionale — flexible oder kontrakte — Fußfehlstellung mit vermehrter Valgusstellung der Ferse und Abflachung des medialen Längsgewölbes (S2k-Leitlinie). Wichtig: Ein Knick-Senk-Fuß ist im Kindesalter **zeitweise normal** — mit 19 Monaten besteht die Stellung bei 97 % der Kinder, und bis zum **6. Lebensjahr** gilt eine flexible Fehlstellung als physiologisch. Erst wenn sich der Fuß danach nicht aufrichtet, ist eine Abklärung sinnvoll.",
+   "bilder": []
+  },
+  "kb_kppv_ursachen": {
+   "titel": "Ursachen",
+   "text": "Kinder werden **physiologisch mit Plattfüßen geboren**. Das Längsgewölbe und die Knochenkerne reifen über die ersten Lebensjahre mit Quervernetzung des Kollagengewebes bis etwa zum 10. Lebensjahr; eine relevante mechanische Stabilität besteht ab dem 4. Lebensjahr (parallel zur Ossifikation der Fußknochen).\n\nRichtet sich der Fuß zwischen dem 6. und 10. Lebensjahr nicht auf, können **neurologische, muskuläre oder bindegewebige Ursachen** vorliegen. Meist bestehen eine **Bandlaxität** des Fußgewölbes und eine Schwäche des **M. tibialis posterior** mit Außenrotation der subtalaren Platte, Drehung des Talus nach innen, Pronation des Rückfußes und Supination des Vorfußes in unterschiedlichem Ausmaß.",
+   "bilder": []
+  },
+  "kb_kppv_diagnostik": {
+   "titel": "Diagnostik",
+   "text": "Zentral ist eine gründliche **Anamnese**, um neurologische oder syndromale Ursachen auszuschließen und die motorische Entwicklung einzuschätzen — dazu gehören Schwangerschafts- und Geburtsverlauf (z. B. APGAR, Nabelschnur-pH), Gewichts- und Größenentwicklung sowie das Erreichen der **Meilensteine** (z. B. Rollen/freies Sitzen ~6 Monate, Krabbeln/Hochziehen ~12 Monate, freies Gehen). Klinisch werden die **Flexibilität** (Aufrichtung des Gewölbes im Zehenspitzenstand), die Rückfußstellung und die Beweglichkeit geprüft; bei rigiden oder auffälligen Befunden folgen Bildgebung und ggf. eine neuropädiatrische Abklärung.",
+   "bilder": []
+  },
+  "kb_kppv_behandlung": {
+   "titel": "Behandlung",
+   "text": "Bei der **flexiblen, schmerzfreien** Form besteht meist **kein Behandlungsbedarf** — im Vordergrund stehen Aufklärung, **Gewichtsreduktion** (Übergewicht verdoppelt das Risiko für das Fortbestehen) und die Förderung von **täglicher Bewegung, auch barfuß auf wechselndem Untergrund**. Spezielle Schuhe oder das Erzwingen von Schuhwerk verbessern die Fußentwicklung des Kindes **nicht** (Rao et al. 1992). Bei Beschwerden können stützende Einlagen und Fußübungen helfen → [Eigenübungen beim Knick-Senk-Fuß](?massnahme=uebungen_knicksenkfuss) · [Wadenmuskeldehnung](?massnahme=waden_dehnung).\n\n**Operationsindikationen** (nach Alter):\n- **bis 6 Jahre:** nur bei neuromuskulären Erkrankungen oder erheblicher Rigidität\n- **6–10 Jahre:** schwere dekompensierte flexible Fehlstellungen ohne Besserung durch konservative Therapie; symptomatische rigide und neurogene Fehlstellungen\n- **ab 10 Jahren:** symptomatische flexible Fehlstellungen ohne Besserung durch konservative Therapie\n\nEingriffe erfolgen am besten **vor der skelettalen Reife** und nur in sehr schweren Fällen in der ersten Lebensdekade. Wachstumslenkende Verfahren wie die **Arthrorise** (temporäre Verblockung der übermäßigen Rückfuß-Eversion mit Schraube/Spacer) nutzen das Restwachstum; ergänzend kommen je nach Befund knöcherne Korrekturen (z. B. Verlängerungs-Osteotomie des äußeren Fersenbeins) und Weichteileingriffe zum Einsatz:\n- [Arthrorise](?op=arthrorise&modus=aufklaerung) · [Calcaneus-Verlängerung](?op=calc_verlaengerung&modus=aufklaerung)",
+   "bilder": []
+  },
+  "kb_kppv_quellen": {
+   "titel": "Quellen",
+   "text": "[1] S2k-Leitlinie „Kindlicher Knick-Senk-Fuß\" (AWMF).\n[2] Rao UB, Joseph B. The influence of footwear on the prevalence of flat foot. A survey of 2300 children. J Bone Joint Surg Br. 1992;74(4):525–7.\n[3] Reviews zum Einfluss von Übergewicht auf die kindliche Fußentwicklung (Metaanalyse, >15.000 Kinder).",
+   "bilder": []
+  },
+  "kb_cavo_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **Hohlfuß (Pes cavus)** ist durch ein **überhöhtes Längsgewölbe** gekennzeichnet — der Vorfuß steht relativ zum Rückfuß in vermehrter Beugung (Plantarflexion). Häufig steht die Ferse zusätzlich nach innen (Varus); dann spricht man vom **Pes cavovarus**. Anders als der Knick-Senk-Fuß ist der Hohlfuß seltener und in **etwa 60–70 % der Fälle neurologisch bedingt** — am häufigsten durch die **Charcot-Marie-Tooth-Erkrankung (CMT)**. Ein **neu aufgetretener oder fortschreitender** Hohlfuß, besonders einseitig, muss daher immer **neurologisch abgeklärt** werden.",
+   "bilder": []
+  },
+  "kb_cavo_ursachen": {
+   "titel": "Ursachen & Beschwerden",
+   "text": "In vielen Fällen liegt eine **neurologische Ursache** zugrunde — am häufigsten die **Charcot-Marie-Tooth-Erkrankung** (hereditäre Neuropathie), daneben Zerebralparese, Friedreich-Ataxie oder Rückenmarksläsionen; ein Teil ist idiopathisch oder posttraumatisch. Durch das Muskelungleichgewicht kippt die Ferse in den Varus und das Gewölbe wird überhöht.\n\nBeschwerden entstehen v. a. durch die **Überlastung des äußeren Fußrandes**: Schwielen unter dem Kleinzehenballen/Basis des 5. Mittelfußknochens, **Stressfrakturen des 5. Mittelfußknochens**, wiederkehrende **Umknickverletzungen/Bandinstabilität** am Sprunggelenk sowie **Krallenzehen**.",
+   "bilder": []
+  },
+  "kb_cavo_diagnostik": {
+   "titel": "Beschwerden & Diagnostik",
+   "text": "**Beschwerden** entstehen v. a. durch die **Überlastung des äußeren Fußrandes**: Schwielen und Schmerzen unter dem Kleinzehenballen und der Basis des 5. Mittelfußknochens, **Stressfrakturen des 5. Mittelfußknochens**, wiederkehrende **Umknickverletzungen und laterale Sprunggelenksinstabilität** (durch Fersen-Varus, verkürzte Plantarfaszie, Schwäche des Musculus peroneus brevis bei Überwiegen des Peroneus longus), **Krallenzehen**, Metatarsalgie und eine begleitende **Peronealsehnen-Reizung**. Bei neurologischer Ursache kommen Fußheberschwäche und Gangunsicherheit hinzu.\n\n**Diagnostik:** vollständige **neurologische Untersuchung** (bei Verdacht EMG/Nervenleitung und humangenetische Abklärung auf CMT), Beurteilung von Gewölbehöhe, Rückfuß-Varus, Zehenstellung und Beschwielung. **Belastete Röntgenaufnahmen** dienen der Vermessung (u. a. Meary-Winkel, Kalkaneus-Pitch). Zentral ist der **Coleman-Block-Test**: Steht der Patient mit einem Klotz unter Ferse und äußerem Fußrand, während der erste Strahl frei herabhängt, zeigt sich, ob der **Rückfuß-Varus flexibel** ist (er gleicht sich aus → die Fehlstellung wird vom Vorfuß angetrieben) oder **fixiert** bleibt. Dieses Ergebnis bestimmt maßgeblich, welche Operation sinnvoll ist.",
+   "bilder": []
+  },
+  "kb_cavo_behandlung": {
+   "titel": "Behandlung",
+   "text": "Bei **milder, nicht fortschreitender** Fehlstellung ist die Behandlung **nicht-operativ**: angepasste **Einlagen/Orthesen** (Abstützung des äußeren Fußrandes, Weichbettung, Fersen-Varus-Ausgleich), Physiotherapie und ggf. eine Sprunggelenks-Orthese bei Instabilität; die Versorgung dient auch dem Schutz vor Druckstellen (v. a. bei Neuropathie).\n\nDie **operative** Behandlung richtet sich nach **Flexibilität (Coleman-Block-Test)** und Alter und kombiniert meist **Weichteileingriffe** (Release, Sehnentransfers zum Ausgleich des Muskelungleichgewichts) mit **Osteotomien** (z. B. Aufrichtungs-Osteotomie des ersten Strahls, Fersenbein-Osteotomie zur Varus-Korrektur); bei fixierten, arthrotischen Rückfüßen kann eine Versteifung nötig sein. Nach der Operation sichern gut angepasste Einlagen die Korrektur und beugen Druckschäden vor.",
+   "bilder": []
+  },
+  "kb_cavo_quellen": {
+   "titel": "Quellen",
+   "text": "[1] StatPearls: Pes Cavus. NCBI Bookshelf, 2023.\n[2] Burns J, Landorf KB, et al. / Physiopedia: Pes Cavus — classification (cavovarus, calcaneocavus, pure), aetiology.\n[3] Coleman SS, Chesnut WJ. A simple test for hindfoot flexibility in the cavovarus foot. Clin Orthop Relat Res. 1977;(123):60–2.\n[4] Younger AS, Hansen ST. Surgical management of pes cavus / Surgical Management and Treatment Algorithm for the Subtle Cavovarus Foot.\n[5] Lateralizing calcaneal osteotomy and first metatarsal dorsiflexion osteotomy for cavovarus foot; peroneus longus-to-brevis transfer. 2022/2023.\n[6] Evidence-Based Management Strategies for Pediatric Pes Cavus. J Pediatr Orthop Soc North Am. 2024.\n[7] Cavovarus foot in Charcot-Marie-Tooth: first ray dorsiflexion osteotomy with soft tissue surgery — outcome study.\n[8] Posterior tibial tendon transfer for foot drop in Charcot-Marie-Tooth disease — case report and literature review.",
+   "bilder": []
+  },
+  "kb_k1_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **Morbus Köhler I** ist eine **aseptische (nicht bakterielle) Knochennekrose des Kahnbeins (Os naviculare)** — der Knochen wird vorübergehend schlecht durchblutet und baut sich um. Er tritt vor allem **im Kindesalter** auf und verläuft meist **selbstlimitierend** (heilt von selbst aus). Betroffen sind vor allem Kinder von **3–9 Jahren** (Altersgipfel 5 Jahre), **Jungen etwa 4-mal häufiger** als Mädchen; ein beidseitiges Auftreten besteht in 20–30 %. (ICD-10: M92.6)",
+   "bilder": []
+  },
+  "kb_k1_ursachen": {
+   "titel": "Ursachen, Diagnostik & Verlauf",
+   "text": "Der Morbus Köhler I (Erstbeschreibung durch Köhler 1908) zählt zu den aseptischen Osteonekrosen; eine eindeutige Ursache ist nicht bekannt — diskutiert wird ein Zusammenspiel aus mechanischer Belastung des sich noch entwickelnden Knochenkerns (Ossifikation ab dem 2. Lebensjahr) und einer vorübergehenden Durchblutungsstörung.\n\nDie Diagnose beruht auf Anamnese, klinischer Untersuchung und **Röntgen in 3 Ebenen**; charakteristisch ist eine zeitliche Verzögerung zwischen Beschwerdebeginn und sichtbaren Röntgenveränderungen. Die **Prognose ist gut**: Der Verlauf ist fast immer selbstlimitierend mit Ausheilung nach 6–36 Monaten; nur selten (ca. 2,5 %) entsteht eine bleibende Verformung.",
+   "bilder": []
+  },
+  "kb_k1_behandlung": {
+   "titel": "Behandlung",
+   "text": "Die Therapie richtet sich nach den Beschwerden. **Asymptomatische Zufallsbefunde** können zunächst nur beobachtet werden. In der akuten Phase werden **Ruhigstellung, Kühlung, Schonung und Sportkarenz** für auslösende Sportarten empfohlen; ergänzend eine **Einlagenversorgung** zur Entlastung → [Einlagen](?massnahme=einlagen). In ausgeprägten Fällen kann kurzzeitig ein Unterschenkelcast eingesetzt werden.\n\nFür die Erkrankung selbst bestehen **keine operativen Techniken**. Nur falls es im weiteren Leben zu einer beschwerdeauslösenden Arthrose kommt, kann später eine Versteifung (Arthrodese) infrage kommen.",
+   "bilder": []
+  },
+  "kb_k1_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Köhler A. Erstbeschreibung der Naviculare-Osteonekrose. 1908.\n[2] DiGiovanni CW, et al. Osteochondroses of the foot. (Übersicht).\n[3] Aktuelle Übersichten zum selbstlimitierenden Verlauf des Morbus Köhler I.",
+   "bilder": []
+  },
+  "kb_frb_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **Morbus Köhler-Freiberg (Morbus Köhler II)** ist eine **aseptische Knochennekrose eines Mittelfußkopfes** — am häufigsten des **2., seltener des 3.** Mittelfußkopfes (der 4./5. Strahl ist eine Rarität). Ein beidseitiges Vorkommen wird in 10–30 % beschrieben; valide Häufigkeitsdaten fehlen. Betroffen sind bevorzugt Jugendliche, Mädchen häufiger als Jungen. (ICD-10: M92.7)",
+   "bilder": []
+  },
+  "kb_frb_ursachen": {
+   "titel": "Ursachen & Verlauf",
+   "text": "Die Ursache ist multifaktoriell (mechanische Überlastung auf dem Boden einer Durchblutungsstörung). Der **hyaline Gelenkknorpel ist zunächst nicht betroffen**; erst wenn der subchondrale Knochen einbricht, wird der Knorpel geschädigt. Im Verlauf zeigt sich fast immer eine **Verformung des oberen (dorsalen) Köpfchenanteils**, während der plantare Knochen und Knorpel erhalten bleiben.\n\nBei noch nicht eingetretener Verformung ist eine **Ausheilung mit Remodelling** möglich, besonders bei früher Behandlung. Über Jahre kommt es aber häufig zu Verformung und Arthrose des betroffenen Gelenks.",
+   "bilder": []
+  },
+  "kb_frb_behandlung": {
+   "titel": "Behandlung",
+   "text": "Auch als Zufallsbefund und bei bestehenden Symptomen ist immer zunächst ein **konservativer Therapieversuch** empfehlenswert: entzündungshemmende Schmerzmittel, **Schuhzurichtungen, Sportmodifikation** und **Einlagen mit Weichbettung des betroffenen Mittelfußkopfes** (retrokapitale Pelotte/Abrollhilfe) → [Einlagen](?massnahme=einlagen).\n\n**Operativ** — bei ausbleibender Besserung, bereits eingetretener symptomatischer Verformung/Arthrose oder freien Gelenkkörpern — kommen je nach Befund ein Gelenkdébridement, die Entfernung freier Gelenkkörper oder eine **aufrichtende (dorsale) Osteotomie des Mittelfußkopfes** infrage.",
+   "bilder": []
+  },
+  "kb_frb_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Freiberg AH. Infraction of the second metatarsal bone. (Erstbeschreibung).\n[2] Übersichtsarbeiten zum Morbus Köhler-Freiberg (Stadien nach Smillie).\n[3] Aktuelle Serien zur dorsalen Aufrichtungsosteotomie.",
+   "bilder": []
+  },
+  "kb_ren_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **Morbus Renander** ist eine **aseptische Knochennekrose eines oder beider Sesambeine** unterhalb des Großzehengrundgelenks (MTP I). Die beiden Sesambeine liegen in der Sehne des kurzen Großzehenbeugers und tragen erhebliche Last beim Abrollen. Die Erkrankung ist selten (Prävalenz um 1 %, vermutlich mit hoher Dunkelziffer); die Diagnose ist wegen zahlreicher Normvarianten der Sesambeine erschwert. (ICD-10: M86.8)",
+   "bilder": []
+  },
+  "kb_ren_ursachen": {
+   "titel": "Ursachen & Diagnostik",
+   "text": "Ursache und Entstehung sind nicht abschließend geklärt; wie bei anderen Osteonekrosen wird ein Zusammenspiel aus **mechanischer Belastung und Durchblutungsstörung** angenommen. Der Verdacht ergibt sich aus Anamnese, klinischer Untersuchung (Druckschmerz unter dem MTP I) und Röntgen; erschwert wird die Beurteilung durch **Normvarianten** (z. B. zweigeteiltes Sesambein/Os bipartitum). Bei konsequenter Entlastung ist meist eine zufriedenstellende Heilung möglich.",
+   "bilder": []
+  },
+  "kb_ren_behandlung": {
+   "titel": "Behandlung",
+   "text": "Als klarer Standard gilt die **konservative Therapie** — vor jeder Operation sollte ein **mindestens 6-monatiger** konsequenter Versuch erfolgen. Basismaßnahmen sind Kühlung, Schonung und **Sportkarenz** für die auslösende Sportart, in der akuten Phase auch eine schmerzadaptierte Teilbelastung sowie eine **entlastende Einlagenversorgung** (Weichbettung/Aussparung des Sesambeinbereichs) → [Einlagen](?massnahme=einlagen).\n\n**Operativ** — erst nach mehrmonatig erfolgloser Therapie: Vor Eingriffen an den Sesambeinen selbst sollten auslösende Faktoren (z. B. ein plantarflektierter erster Strahl/Fehlstellung) korrigiert werden; als letzte Option kommt die (Teil-)Entfernung des betroffenen Sesambeins infrage.",
+   "bilder": []
+  },
+  "kb_ren_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Barral X, et al. Sesamoid osteonecrosis (Renander): prevalence and imaging. 2014.\n[2] Übersichtsarbeiten zur Sesambein-Pathologie und zum Morbus Renander.",
+   "bilder": []
+  },
+  "kb_sev_ueberblick": {
+   "titel": "Überblick",
+   "text": "Der **Morbus Sever (Sever-Haglund)** ist eine meist **selbstlimitierende** juvenile **Osteochondrose der Fersenbein-Apophyse** (Wachstumsfuge am Fersenbein) — eine überlastungsbedingte Reizung der Wachstumszone, an der die Achillessehne ansetzt. Betroffen sind **Kinder von 5–15 Jahren** (vor allem Jungen); im Alter von **8–12 Jahren ist der Morbus Sever die häufigste Ursache für kindlichen Fersenschmerz**. Die Inzidenz liegt bei etwa 3,7 pro 1.000 Kindern (6–17 Jahre) in ambulanter Versorgung. (ICD-10: M92.9)",
+   "bilder": []
+  },
+  "kb_sev_ursachen": {
+   "titel": "Ursachen & Diagnostik",
+   "text": "Das Fersenbein entwickelt sich aus zwei Knochenkernen; der Apophysenkern bildet sich mit 7–9 Jahren und verschmilzt mit Wachstumsabschluss (meist 16.–17. Lebensjahr) mit dem Fersenbein. Ursächlich ist eine **mechanische Überlastung der Wachstumszone**, oft bei sportlich aktiven Kindern und verkürzter Wadenmuskulatur. Die Diagnose erfolgt **klinisch** (typischer Druck-/Kompressionsschmerz an der Ferse) — weitere Untersuchungen dienen dem Ausschluss anderer Ursachen; ein Röntgen ist nicht zwingend erforderlich.",
+   "bilder": []
+  },
+  "kb_sev_behandlung": {
+   "titel": "Behandlung",
+   "text": "Die **konservative Therapie ist Standard** und führt fast immer zur Ausheilung. Erstmaßnahmen sind **Kühlung, entzündungshemmende Schmerzmittel bei Bedarf, vorübergehender Sportstopp und weites Schuhwerk** sowie eine **Belastungsreduktion**. Sehr hilfreich sind ein **Fersenkeil/eine Einlage mit Fersenerhöhung** und die konsequente **Dehnung der Wadenmuskulatur**:\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung) · [Einlagen](?massnahme=einlagen)\n\nIn ausgeprägten Fällen kann der Fuß kurzzeitig (wenige Tage) in einem Unterschenkelcast ruhiggestellt werden. **Operative Verfahren sind nicht etabliert.** Die Beschwerden halten meist nur wenige Wochen an; bei klinischer Besserung ist eine schmerzadaptierte Rückkehr zum Sport möglich.",
+   "bilder": []
+  },
+  "kb_sev_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Sever JW. Apophysitis of the os calcis. (Erstbeschreibung).\n[2] Aktuelle Übersichten/Serien zur Inzidenz und Behandlung des Morbus Sever (kindlicher Fersenschmerz).",
+   "bilder": []
+  },
+  "kb_pac_ueberblick": {
+   "titel": "Überblick",
+   "text": "Eine **Fraktur des Processus anterior calcanei** ist ein Bruch des **vorderen Vorsprungs des Fersenbeins**. Dieser Vorsprung bildet einen Teil des Kalkaneokuboidgelenks und des vorderen Subtalargelenks und ist der Ursprung des **Ligamentum bifurcatum**, das für die Stabilität des Chopart-Gelenks wichtig ist. Die Verletzung galt lange als selten, wird aber vermutlich häufig übersehen, da sie leicht mit einer **Sprunggelenksdistorsion (Umknicken)** verwechselt wird. (ICD-10: S92.0)",
+   "bilder": []
+  },
+  "kb_pac_ursachen": {
+   "titel": "Ursachen & Diagnostik",
+   "text": "Die Fraktur entsteht meist durch ein **Umknicktrauma** (Inversion) mit Zug am Ligamentum bifurcatum (Abrissfraktur) oder durch Kompression. Wichtig ist, bei jeder scheinbaren „Bänderverletzung\" mit Druckschmerz vor dem äußeren Fußrand an diese Fraktur zu denken.\n\nBei Distorsion des oberen Sprunggelenks sollte ein **Röntgen des OSG in 2 Ebenen** und bei Verdacht auf eine Fußwurzelverletzung zusätzlich ein **Röntgen des Fußes in 3 Ebenen** (a.p., streng seitlich, schräg) erfolgen. Wegen Überlagerungen oder undislozierter Frakturen wird der Bruch im konventionellen Röntgen leicht übersehen — im Zweifel ist ein **CT** zur sicheren Beurteilung sinnvoll.",
+   "bilder": []
+  },
+  "kb_pac_behandlung": {
+   "titel": "Behandlung",
+   "text": "Eine einheitliche, in Studien validierte Empfehlung besteht nicht (nur kleine retrospektive Serien). In den **meisten Fällen wird konservativ** behandelt — die Ruhigstellung reicht in der Literatur von kompletter Entlastung im Gips für 2–8 Wochen bis zur frühfunktionellen Belastung; bei kleinen, nicht verschobenen Fragmenten und stabilem Chopart-Gelenk ist eine funktionelle Behandlung meist ausreichend.\n\n**Operativ** (ebenfalls ohne evidenzbasierten Standard): bei größeren Fragmenten die **Schraubenrefixation** (Osteosynthese, z. B. Typ Degan 3) oder die **Exzision** kleinerer, störender Fragmente. Ziel ist ein stabiles, schmerzfreies Chopart-Gelenk.",
+   "bilder": []
+  },
+  "kb_pac_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Dachtler HW / Christopher F. Erstbeschreibungen der Proc.-anterior-calcanei-Fraktur.\n[2] Degan TJ, et al. Fractures of the anterior calcaneal process. J Bone Joint Surg Am. 1982.\n[3] Aktuelle retrospektive Serien zur Therapie der Proc.-anterior-calcanei-Fraktur.",
+   "bilder": []
+  },
+  "kb_mfk5_ueberblick": {
+   "titel": "Überblick",
+   "text": "Die **proximale Fraktur des 5. Mittelfußknochens** ist ein Bruch des körpernahen Anteils des äußeren Mittelfußknochens — eine der häufigsten Fußfrakturen überhaupt. Mittelfußfrakturen haben eine Inzidenz von etwa 6,7 pro 100.000; der **5. Mittelfußknochen macht 47 %** aus, davon **64 % am proximalen Anteil**. Nach Lage unterscheidet man drei Zonen: **Zone I 58 %, Zone II 26 %, Zone III 15 %** (Polzer et al. 2021). Ein erhöhtes Risiko besteht bei **Hohlfüßen** durch die typische Außenrand-Überlastung. (Historisch: Sir Robert Jones, 1902.)",
+   "bilder": []
+  },
+  "kb_mfk5_ursachen": {
+   "titel": "Diagnostik & Zonen",
+   "text": "Die Diagnose erfolgt über ein **Röntgen des Fußes in 3 Ebenen**, auf dem die Fraktur meist sichtbar ist. Ein **CT** ist bei verzögerter/fraglicher Heilung zur OP-Planung und Verlaufsbeurteilung sinnvoll, ein **MRT** v. a. bei Stressfrakturen.\n\nDie **Zoneneinteilung** ist entscheidend für die Behandlung: **Zone I** (Basis/Tuberositas, Abrissfraktur), **Zone II** (Metaphysen-Diaphysen-Übergang, „echte\" Jones-Fraktur mit schlechterer Durchblutung) und **Zone III** (proximale Schaftfraktur, oft Stressfraktur). Zone II und III neigen eher zu verzögerter Heilung.",
+   "bilder": []
+  },
+  "kb_mfk5_behandlung": {
+   "titel": "Behandlung",
+   "text": "**Zone I** kann in den meisten Fällen **konservativ** behandelt werden und sollte es auch: schmerzadaptierte **Vollbelastung im Walker-Stiefel**, wobei eine **frühe Mobilisierung bessere Ergebnisse** bringt (Zenios et al. 2005) und eine Ruhigstellung in der Gipsschiene die Rate an Fehlverheilungen um das ~1,5-Fache erhöht (Pituckanotai et al. 2018). Bei hohem Anspruch kann Zone I auch operativ versorgt werden — die Literatur zeigt mittelfristig **vergleichbare Zufriedenheit** von operativer und konservativer Therapie, unabhängig von Gelenkstufe und Dislokation (Wu et al. 2018, Lee et al. 2016).\n\n**Zone II/III** (Jones-/Stressfrakturen) heilen schlechter; hier wird — besonders bei Sportlern — häufiger eine **operative Versorgung (intramedulläre Schraube)** empfohlen, um Pseudarthrosen zu vermeiden. Die konkrete Wahl erfolgt individuell.",
+   "bilder": []
+  },
+  "kb_mfk5_quellen": {
+   "titel": "Quellen",
+   "text": "[1] Polzer H, et al. Proximal fifth metatarsal fractures: epidemiology and zone distribution. 2021.\n[2] Zenios M, et al. The role of weightbearing in fifth metatarsal base fractures. 2005.\n[3] Pituckanotai K, et al. Cast vs. functional treatment for proximal fifth metatarsal fractures: meta-analysis. 2018.\n[4] Wu GB, et al.; Lee KT, et al. Operative vs. nonoperative treatment of zone I fifth metatarsal fractures. 2016/2018.",
+   "bilder": []
+  },
+  "kb_ost_ueberblick": {
+   "titel": "Überblick",
+   "text": "**Osteoporose** ist eine **systemische Knochenerkrankung mit verminderter Knochenmasse und gestörter Knochenstruktur** und dadurch erhöhter Bruchneigung; die **Osteopenie** ist die mildere Vorstufe mit verminderter Knochendichte. Die häufigsten osteoporotischen Brüche betreffen Wirbelkörper, Unterarm/Handgelenk und Hüfte. Für Fuß und Sprunggelenk ist die Osteoporose vor allem deshalb wichtig, weil sie die **Knochenheilung** (z. B. nach Frakturen oder Versteifungen) beeinträchtigt.",
+   "bilder": []
+  },
+  "kb_ost_ursachen": {
+   "titel": "Ursachen & Diagnostik",
+   "text": "Man unterscheidet die **primäre** Osteoporose (v. a. nach den Wechseljahren und im Alter) von der **sekundären** Form, die durch andere Erkrankungen oder Medikamente gefördert wird (u. a. Hormonstörungen, rheumatische, neurologische oder Magen-Darm-Erkrankungen, Kortison-Langzeittherapie). Daneben bestehen zahlreiche Risikofaktoren (Alter, Untergewicht, Rauchen, Bewegungsmangel, familiäre Belastung).\n\nDie Diagnostik setzt idealerweise **vor dem ersten Bruch** an: Mit dem **DVO-Score** wird das 10-Jahres-Risiko für einen osteoporotischen Bruch abgeschätzt; bei einem Risiko über **20 %** oder auffälliger **Knochendichtemessung (DXA)** wird eine spezifische Therapie eingeleitet.",
+   "bilder": []
+  },
+  "kb_ost_behandlung": {
+   "titel": "Behandlung",
+   "text": "**Basis** sind Stärkung von Muskelkraft und Koordination, regelmäßige körperliche Aktivität zum Erhalt der Mobilität und **Sturzprophylaxe** (barrierefreies Wohnumfeld, Beseitigung von Stolperfallen, ggf. Hüftprotektoren). Wichtig ist eine ausreichende Versorgung mit **Vitamin D und Kalzium** sowie eine knochengesunde Ernährung:\n- [Vitamin-D3-Therapie](?massnahme=vitamin_d3) · [Ernährung bei Erkrankungen des Bewegungsapparates](?massnahme=ernaehrung_bewegung) · [Nahrungsergänzungsmittel](?massnahme=nahrungsergaenzung)\n\nBei entsprechendem Risiko kommt eine **medikamentöse Therapie** hinzu (z. B. Bisphosphonate; Einstellung durch die behandelnden Ärztinnen und Ärzte). Eine spezifische operative Therapie der Osteoporose gibt es nicht; bei eingetretener Fraktur wird die Versorgung aber häufig an die reduzierte Knochenqualität angepasst. Rund um Fuß-/Sprunggelenkseingriffe sollte eine bekannte Osteoporose berücksichtigt und optimal eingestellt werden, da sie die Heilung beeinträchtigt.",
+   "bilder": []
+  },
+  "kb_ost_quellen": {
+   "titel": "Quellen",
+   "text": "[1] DVO-Leitlinie Osteoporose (Dachverband Osteologie), aktuelle Fassung.\n[2] Übersichten zum Einfluss von Osteoporose auf die Frakturheilung und Fuß-/Sprunggelenkschirurgie.",
+   "bilder": []
+  },
+  "kb_gicht_konservativ": {
+   "titel": "Konservative & medikamentöse Therapie",
+   "text": "Die Behandlung der Gicht ist in erster Linie **medikamentös** und die Grundlage jeder Therapie:\n- **Akuter Anfall:** entzündungshemmende Medikamente (NSAR), Colchicin oder Kortison; Ruhigstellung und Kühlung des Gelenks.\n- **Langfristig / vorbeugend:** dauerhafte **Senkung des Harnsäurespiegels** mit harnsäuresenkenden Medikamenten (z. B. Allopurinol) — dies ist entscheidend, um Anfälle, Tophi und Gelenkzerstörung zu verhindern.\n- **Ernährung und Lebensstil:** purinbewusste Ernährung als wichtiger Baustein → [Ernährung bei Gicht](?massnahme=ernaehrung_gicht).\n- Bei begleitender Arthrose des Großzehengrundgelenks helfen zusätzlich die allgemeinen Verschleiß-Maßnahmen (Abrollhilfe, Einlagen) → [Allgemeine Maßnahmen bei Verschleiß](?massnahme=allg_verschleiss) · [Einlagen](?massnahme=einlagen).\n\nWichtig: Eine gute **Einstellung des Harnsäurespiegels** ist auch die Voraussetzung dafür, dass eine eventuelle Operation erfolgreich ist und Rückfälle vermieden werden.",
+   "bilder": []
+  },
+  "kb_gicht_operativ": {
+   "titel": "Operative Therapie am Fuß",
+   "text": "Eine Operation ist bei Gicht **die Ausnahme** und der medikamentösen Therapie nachgeordnet. Sie kommt in Betracht bei **chronischer tophöser Gicht mit Gelenkzerstörung, großen oder aufgebrochenen/ulzerierenden Tophi, erheblicher Funktionseinschränkung, Druck-/Wundproblemen** oder wenn die konservative Therapie versagt.\n\n**Verfahren am Großzehengrundgelenk (MTP I):**\n- **Tophus-Entfernung (Débridement/Exzision):** Ausräumung der Kristallmassen, ggf. mit Wiederherstellung der Weichteile. Bei erhaltenem Gelenk und kleineren Tophi eine Option, häufig aber mit Restbeschwerden.\n- **Exzision + Versteifung (Arthrodese) des MTP I:** Bei zerstörter Gelenkfläche. Vergleichsstudien zeigen der alleinigen Exzision **überlegene Ergebnisse** (bessere Schmerz-/AOFAS-Werte und Zufriedenheit) für die Kombination aus Tophus-Entfernung und Arthrodese (Kumar et al.; Serie mit 9 vs. 7 Patienten).\n- **Verkürzende Scarf-Osteotomie** des ersten Mittelfußknochens in Kombination mit vollständiger Tophus-Entfernung als gelenkerhaltende Alternative in geeigneten Fällen.\n- **Rekonstruktion bei massiven Defekten:** z. B. Auffüllung/Überbrückung mit körpereigenem Knochen (Fibula-Span); in Fallserien gute Heilung ohne Wundprobleme.\n- **Arthroskopisches Débridement** (am MTP I bzw. am Sprunggelenk): gezielte Entfernung der MSU-Kristalle; beschrieben sind **geringere Rückfallraten und bessere Funktion** als unter alleiniger Medikation — technisch anspruchsvoll wegen Tophi und Entzündung.\n- Bei sehr ausgedehnter Zerstörung mit Riesen-Tophus in Einzelfällen bis zur Teilamputation (Rarität).\n\n**Besonderheiten & Risiken:** Die chirurgische Behandlung der tophösen Gicht ist **komplikationsträchtig**. Verkalkte Tophi wirken wie ein **Fremdkörper** und schädigen das Wundbett; die entzündliche Grunderkrankung erhöht das Risiko für **Wundheilungsstörungen und Infektionen**. Deshalb sind eine schonende Weichteilbehandlung, eine gute perioperative Harnsäure-Einstellung und eine sorgfältige Patientenauswahl entscheidend.",
+   "bilder": []
+  },
+  "kb_cavo_formen": {
+   "titel": "Formen & Ursachen",
+   "text": "Man unterscheidet klassisch **drei Grundformen**, die sich nach Ursache, klinischem Bild und Röntgen unterscheiden:\n\n- **Pes cavovarus** (häufigste Form): Fersen-Varus, plantarflektierter erster Mittelfußknochen und Krallenzehen; der Vorfuß ist relativ zum Rückfuß plantarflektiert. Meist **neuromuskulär** (v. a. CMT) oder — bei unbekannter Ursache — „idiopathisch\".\n- **Pes calcaneocavus**: Die Ferse steht in **Dorsalextension** (nach oben gekippt), der Vorfuß plantarflektiert; typischerweise nach **Lähmung der Wadenmuskulatur** (z. B. nach Poliomyelitis). Radiologisch großer talokalkanearer Winkel.\n- **„Reiner\" Pes cavus**: Die Ferse ist weder nach oben gekippt noch im Varus; der Hohlfuß entsteht allein durch den plantarflektierten Vorfuß.\n\nZusätzlich gibt es **Mischformen**, die als **flexibel oder rigide** eingeteilt werden, sowie die Unterscheidung **vorfuß-getrieben** (die Fehlstellung geht vom ersten Strahl aus) vs. **rückfuß-getrieben** (vom Fersen-Varus). Eine wichtige, oft übersehene frühe Variante ist der **subtile Cavovarus** (dezenter Hohlfuß), der sich hinter „nur\" wiederkehrenden Umknickverletzungen verbergen kann.\n\n**Ursachen:** neurologisch (CMT am häufigsten, ferner Zerebralparese, Friedreich-Ataxie, Rückenmarks-/Nervenläsionen, Reste eines Klumpfußes), posttraumatisch oder idiopathisch. Bei neurologischer Grunderkrankung ist die Fehlstellung meist **fortschreitend**.",
+   "bilder": []
+  },
+  "kb_cavo_konservativ": {
+   "titel": "Konservative Therapie",
+   "text": "Bei **milder, nicht fortschreitender** Fehlstellung steht die nicht-operative Behandlung im Vordergrund; sie zielt darauf, den Druck umzuverteilen und die Instabilität zu verringern:\n- **Maßangefertigte Einlagen/Orthesen** — anders aufgebaut als beim Plattfuß: **laterale Fersen- und Vorfußkeile** entlasten den äußeren Fußrand und mindern die Supination, **Mittelfußpelotten** und weichbettende, aussparende Elemente entlasten die überlasteten Mittelfußköpfchen → [Einlagen](?massnahme=einlagen).\n- **Gedämpftes Schuhwerk und Abrollsohle** (Rocker) zur Entlastung des steifen Fußes.\n- **Sprunggelenks-Orthese/Bandage** bei Instabilität oder Peronealschwäche.\n- **Physiotherapie** (Kräftigung der Peronealmuskulatur, Dehnung von Plantarfaszie und Wade, Gleichgewichtstraining) → [Wadenmuskeldehnung](?massnahme=waden_dehnung) · [Neuromuskuläres Training nach Außenbandverletzung](?massnahme=neuromuskulaer_aussenband).\n- Bei Neuropathie ist der **Schutz vor Druckstellen** besonders wichtig.\n\nDie konservative Therapie ist v. a. jungen Patienten und milden Deformitäten vorbehalten; bei wiederkehrenden Umknickverletzungen und lateraler Instabilität wird eine Operation empfohlen.",
+   "bilder": []
+  },
+  "kb_cavo_operativ": {
+   "titel": "Operative Therapie",
+   "text": "Die Operation wird **individuell** nach Lage der Fehlstellung (Apex), **Flexibilität (Coleman-Block-Test)**, Alter und Grunderkrankung zusammengestellt; einen einheitlichen Standard gibt es nicht. In der Regel werden **Weichteil- und Knocheneingriffe kombiniert**, meist in einer typischen **Reihenfolge (zuerst Vorfuß, dann Rückfuß)**:\n\n- **Plantarfaszien-Release:** Lösen der verkürzten Plantarfaszie, um die Aufrichtung des ersten Strahls zu ermöglichen (oft erster Schritt).\n- **Vorfuß-getrieben (flexibler Rückfuß-Varus im Coleman-Test):** **Aufrichtungs-(Dorsalextensions-)Osteotomie des ersten Mittelfußknochens**, meist kombiniert mit **Sehnentransfer** (z. B. **Peroneus-longus- auf Peroneus-brevis-Transfer**, um den überstarken Longus-Zug zu neutralisieren und den Brevis zu stärken).\n- **Rückfuß-getrieben (fixierter Varus):** **valgisierende/lateralisierende Fersenbein-Osteotomie (Dwyer)**, um die physiologische Fersenstellung und den Zug der Wade wiederherzustellen.\n- **Sehnenbalancierung bei Lähmung:** z. B. **Transfer der Tibialis-posterior-Sehne** nach vorne bei Fußheberschwäche (Fußheberersatz).\n- **Krallenzehen-Korrektur** und ggf. **Cole-/Mittelfuß-Osteotomie** bei Deformität im Mittelfuß.\n- **Laterale Bandrekonstruktion** bei chronischer Sprunggelenksinstabilität.\n- **Schwere, fixierte oder arthrotische Fehlstellungen:** knöcherne Korrektur über **Mittelfuß-/Rückfuß-Osteotomien** und in Endstadien eine **Triple-Arthrodese** (Versteifung von Subtalar-, Talonavikular- und Kalkaneokuboidgelenk) → [Triple-/Diple-Arthrodese](?op=triple&modus=aufklaerung).\n\nBei fortschreitender neurologischer Grunderkrankung (z. B. CMT) besteht ein **erhöhtes Rückfallrisiko**; gelenkerhaltende, ausbalancierende Verfahren werden bei flexiblen Deformitäten bevorzugt, Versteifungen bleiben schweren, fixierten Fällen vorbehalten. Nach der Operation sichern gut angepasste **Einlagen** die Korrektur und beugen erneuten Druckschäden vor.",
    "bilder": []
   }
  }

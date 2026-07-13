@@ -2,8 +2,7 @@
  "meta": {
   "version": "1.0",
   "erstellt": "2026-06-17",
-  "beschreibung": "Infomaterial-Einträge als Referenzlisten auf bausteine.json.",
-  "stand": "2026-07-13b (Per-Abschnitt-Tabs, Fließtext, Suche/Sortierung, Nachsorge-Verweis, USG-Arthrose+Umschalter, Double-Arthrodese, PPV)"
+  "beschreibung": "Infomaterial-Einträge als Referenzlisten auf bausteine.json."
  },
  "INFOMATERIAL": {
   "osg_arthrose": {
@@ -929,18 +928,330 @@
   },
   "ppv_ksf": {
    "infoKategorie": "krankheitsbild",
-   "infoTitel": "Knick-Senk-Fuß (Pes planovalgus)",
-   "titel": "Knick-Senk-Fuß / Pes planovalgus",
+   "infoTitel": "Knick-Senk-Fuß (Pes planovalgus) des Erwachsenen",
+   "titel": "Knick-Senk-Fuß / Pes planovalgus (Erwachsene)",
    "untertitel": "Abgesunkenes Längsgewölbe mit Rückfußvalgus — flexible und fixierte Formen",
    "betrifft_eingriffe": [],
    "slides": [
     "ppv_krankheitsbild",
+    "ppv_diagnostik",
     "ppv_behandlung",
     "ppv_quellen"
    ],
    "_review": true,
    "_entwurf": true,
    "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen"
+  },
+  "plantarfasziitis_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Plantarfasziitis (Fersensporn)",
+   "titel": "Plantarfasziitis (Fersensporn)",
+   "untertitel": "Reizung der Sehnenplatte an der Fußsohle — häufigste Ursache von Fersenschmerz",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_pf_ueberblick",
+    "kb_pf_ursachen",
+    "kb_pf_beschwerden",
+    "kb_pf_diagnostik",
+    "kb_pf_behandlung",
+    "kb_pf_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "achillodynie_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Achillodynie (Achillessehnenschmerz)",
+   "titel": "Achillodynie (Achillessehnenschmerz)",
+   "untertitel": "Sammelbegriff für Schmerzen der Achillessehne — Formen, Ursachen und Behandlungsüberblick",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_achillo_ueberblick",
+    "kb_achillo_ursachen",
+    "kb_achillo_behandlung",
+    "kb_achillo_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "achilles_midportion_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Achillessehne — Mid-Portion-Tendinopathie",
+   "titel": "Achillessehne — Mid-Portion-Tendinopathie",
+   "untertitel": "Überlastungsschaden im mittleren Sehnenabschnitt — häufigste Form des Achillessehnenschmerzes",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_amid_ueberblick",
+    "kb_amid_beschwerden",
+    "kb_amid_behandlung",
+    "kb_amid_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "achilles_insertional_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Achillessehne — insertionsnahe Tendinopathie",
+   "titel": "Achillessehne — insertionsnahe Tendinopathie",
+   "untertitel": "Reizung/Verschleiß am Sehnenansatz, oft mit Haglund-Exostose",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_ains_ueberblick",
+    "kb_ains_ursachen",
+    "kb_ains_diagnostik",
+    "kb_ains_behandlung",
+    "kb_ains_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "achilles_riss_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Achillessehnenriss (akute Ruptur)",
+   "titel": "Achillessehnenriss (akute Ruptur)",
+   "untertitel": "Akuter Riss der Achillessehne — Diagnose (Thompson-Test) und Behandlung",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_asr_ueberblick",
+    "kb_asr_ursachen",
+    "kb_asr_diagnostik",
+    "kb_asr_behandlung",
+    "kb_asr_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "achilles_insuffizienz_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Achillessehneninsuffizienz",
+   "titel": "Achillessehneninsuffizienz",
+   "untertitel": "Chronischer Kraftverlust der Achillessehne durch Degeneration/alten Riss",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_asi_ueberblick",
+    "kb_asi_ursachen",
+    "kb_asi_diagnostik",
+    "kb_asi_behandlung",
+    "kb_asi_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "tibialis_ant_ruptur_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Tibialis-anterior-Sehnenruptur",
+   "titel": "Tibialis-anterior-Sehnenruptur",
+   "untertitel": "Riss der Fußheber-Sehne — akut vs. chronisch, oft anfangs übersehen",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_tar_ueberblick",
+    "kb_tar_ursachen",
+    "kb_tar_diagnostik",
+    "kb_tar_behandlung",
+    "kb_tar_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "plantarer_fersenschmerz_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Plantarer Fersenschmerz",
+   "titel": "Plantarer Fersenschmerz",
+   "untertitel": "Sammelbegriff für Schmerzen an der Fußsohlen-Ferse — Ursachen und Zuordnung",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_pfs_ueberblick",
+    "kb_pfs_ursachen",
+    "kb_pfs_behandlung",
+    "kb_pfs_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "gicht_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Gicht (am Fuß / Podagra)",
+   "titel": "Gicht (am Fuß / Podagra)",
+   "untertitel": "Harnsäurekristall-Erkrankung mit Vorliebe für das Großzehengrundgelenk — inkl. operativer Optionen am Fuß",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_gicht_ueberblick",
+    "kb_gicht_ursachen",
+    "kb_gicht_diagnostik",
+    "kb_gicht_konservativ",
+    "kb_gicht_operativ",
+    "kb_gicht_quellen"
+   ],
+   "_review": true,
+   "stand": "Recherche-basiert 07/2026 (kein mediq-Fachtext, intensiv recherchiert) — ärztlich zu prüfen"
+  },
+  "unguis_incarnatus_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Unguis incarnatus (eingewachsener Nagel)",
+   "titel": "Unguis incarnatus (eingewachsener Nagel)",
+   "untertitel": "Häufigste Nagelerkrankung — konservative und operative Behandlung",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_ung_ueberblick",
+    "kb_ung_ursachen",
+    "kb_ung_behandlung",
+    "kb_ung_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "juveniler_hv_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Kindlicher/juveniler Hallux valgus",
+   "titel": "Kindlicher/juveniler Hallux valgus",
+   "untertitel": "Großzehen-Fehlstellung im Wachstumsalter — hohe genetische Komponente",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_jhv_ueberblick",
+    "kb_jhv_ursachen",
+    "kb_jhv_behandlung",
+    "kb_jhv_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "kindl_ppv_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Kindlicher Knick-Senk-Fuß (Pes planovalgus)",
+   "titel": "Kindlicher Knick-Senk-Fuß (Pes planovalgus)",
+   "untertitel": "Meist physiologisch bis 6 Jahre — Abklärung und altersabhängige Behandlung",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_kppv_ueberblick",
+    "kb_kppv_ursachen",
+    "kb_kppv_diagnostik",
+    "kb_kppv_behandlung",
+    "kb_kppv_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "hohlfuss_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Hohlfuß (Pes cavovarus)",
+   "titel": "Hohlfuß (Pes cavovarus)",
+   "untertitel": "Überhöhtes Längsgewölbe — Formen (cavovarus/calcaneocavus/rein), oft neurologisch; Coleman-Test-gesteuerte Behandlung",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_cavo_ueberblick",
+    "kb_cavo_formen",
+    "kb_cavo_diagnostik",
+    "kb_cavo_konservativ",
+    "kb_cavo_operativ",
+    "kb_cavo_quellen"
+   ],
+   "_review": true,
+   "stand": "Recherche-basiert 07/2026 (kein mediq-Fachtext, intensiv recherchiert) — ärztlich zu prüfen"
+  },
+  "koehler1_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Morbus Köhler I (Kahnbein-Osteonekrose)",
+   "titel": "Morbus Köhler I (Kahnbein-Osteonekrose)",
+   "untertitel": "Aseptische Osteonekrose des Kahnbeins beim Kind — meist selbstheilend",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_k1_ueberblick",
+    "kb_k1_ursachen",
+    "kb_k1_behandlung",
+    "kb_k1_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "freiberg_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Morbus Köhler-Freiberg (Mittelfußkopf-Osteonekrose)",
+   "titel": "Morbus Köhler-Freiberg (Mittelfußkopf-Osteonekrose)",
+   "untertitel": "Osteonekrose meist des 2. Mittelfußkopfes — Weichbettung, ggf. Osteotomie",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_frb_ueberblick",
+    "kb_frb_ursachen",
+    "kb_frb_behandlung",
+    "kb_frb_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "renander_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Morbus Renander (Sesambein-Osteonekrose)",
+   "titel": "Morbus Renander (Sesambein-Osteonekrose)",
+   "untertitel": "Osteonekrose der Großzehen-Sesambeine — konservativ, selten operativ",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_ren_ueberblick",
+    "kb_ren_ursachen",
+    "kb_ren_behandlung",
+    "kb_ren_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "sever_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Morbus Sever (Fersen-Apophysitis)",
+   "titel": "Morbus Sever (Fersen-Apophysitis)",
+   "untertitel": "Häufigste Ursache von Fersenschmerz bei 8–12-Jährigen — konservativ, selbstheilend",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_sev_ueberblick",
+    "kb_sev_ursachen",
+    "kb_sev_behandlung",
+    "kb_sev_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "proc_ant_calc_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Fraktur des Processus anterior calcanei",
+   "titel": "Fraktur des Processus anterior calcanei",
+   "untertitel": "Oft als „Bänderverletzung\" verkannter Bruch am vorderen Fersenbein",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_pac_ueberblick",
+    "kb_pac_ursachen",
+    "kb_pac_behandlung",
+    "kb_pac_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "mfk5_fraktur_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Proximale Fraktur des 5. Mittelfußknochens",
+   "titel": "Proximale Fraktur des 5. Mittelfußknochens",
+   "untertitel": "Häufige Fußfraktur — Behandlung nach Zone (I/II/III)",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_mfk5_ueberblick",
+    "kb_mfk5_ursachen",
+    "kb_mfk5_behandlung",
+    "kb_mfk5_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
+  },
+  "osteoporose_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Osteoporose und Osteopenie",
+   "titel": "Osteoporose und Osteopenie",
+   "untertitel": "Verminderte Knochenmasse mit erhöhter Bruchgefahr — relevant für die Knochenheilung am Fuß",
+   "betrifft_eingriffe": [],
+   "slides": [
+    "kb_ost_ueberblick",
+    "kb_ost_ursachen",
+    "kb_ost_behandlung",
+    "kb_ost_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen"
   }
  },
  "NONOP_MASSNAHMEN": {
