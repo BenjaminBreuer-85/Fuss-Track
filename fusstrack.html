@@ -1633,11 +1633,41 @@ function LandingView({ initialKbKey, initialMassnahme }) {
       const mSteps = [{ key: "info", label: "Info", wide: true }].concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1) }; }));
       const mZurueck = function(){ setMassnahmeKey(null); setMassnahmeSeite(0); };
 
+      // ===== Dynamische Quellen für Maßnahmen (opt-in via mInfo.quellen) =====
+      const mQuellen = mInfo.quellen; // [{ id, text }] oder undefined
+      const mRefOrder = (function () {
+        if (!mQuellen) return null;
+        var seen = [];
+        function scan(t) { if (!t) return; var re = /\[\[([a-zA-Z0-9_]+)\]\]/g, m; while ((m = re.exec(t)) !== null) { if (seen.indexOf(m[1]) < 0) seen.push(m[1]); } }
+        scan(mInfo.kurz);
+        mAbschnitte.forEach(function (a) { if (a.titel !== "Quellen") scan(a.text); });
+        return seen;
+      })();
+      var mRefNum = {};
+      if (mRefOrder) mRefOrder.forEach(function (id, i) { mRefNum[id] = i + 1; });
+      function mProcessRefs(t) {
+        if (!mRefOrder || !t) return t;
+        return t.replace(/\[\[([a-zA-Z0-9_]+)\]\]/g, function (_, id) { return mRefNum[id] ? "[" + mRefNum[id] + "]" : ""; });
+      }
+      function mQuellenText() {
+        var all = mQuellen || [], byId = {};
+        all.forEach(function (q) { byId[q.id] = q.text; });
+        var cited = mRefOrder || [];
+        var citedPart = cited.map(function (id, i) { return "[" + (i + 1) + "] " + (byId[id] || "(Quelle fehlt: " + id + ")"); }).join("\n\n");
+        var uncited = all.filter(function (q) { return cited.indexOf(q.id) < 0; });
+        var uncitedPart = "";
+        if (uncited.length > 0) {
+          var body = uncited.map(function (q) { return "• " + q.text; }).join("\n");
+          uncitedPart = cited.length > 0 ? "Weiterführende Literatur:\n\n" + body : body;
+        }
+        return [citedPart, uncitedPart].filter(Boolean).join("\n\n") || "Keine Quellen hinterlegt.";
+      }
+
       let mInhalt;
       if (mIdx === 0) {
         mInhalt = (
           <div>
-            {mInfo.kurz && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{mInfo.kurz}</div>}
+            {mInfo.kurz && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{mProcessRefs(mInfo.kurz)}</div>}
             <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
               <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {mAbschnitte.length} Abschnitte</div>
               {mAbschnitte.map(function(a, i){
@@ -1655,10 +1685,13 @@ function LandingView({ initialKbKey, initialMassnahme }) {
         );
       } else {
         const a = mAbschnitte[mIdx - 1] || {};
+        const istMQuellen = !!mQuellen && a.titel === "Quellen";
         mInhalt = (
           <div>
             {a.titel && <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>{a.titel}</div>}
-            {a.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{a.text}</div>}
+            {istMQuellen
+              ? <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{mQuellenText()}</div>
+              : (a.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{mProcessRefs(a.text)}</div>)}
           </div>
         );
       }
@@ -2048,6 +2081,52 @@ function AufklaerungsView({ opKey, kbOrigin }) {
   const total = slides.length;
   const current = slides[step];
 
+  // ===== Dynamische Quellen-Nummerierung (opt-in: nur wenn aufkl.quellen vorhanden) =====
+  // Referenzen werden im Text als [[id]] gesetzt; hier werden sie nach erster
+  // Erwähnung über alle Slides durchnummeriert und der Quellen-Tab automatisch erzeugt.
+  const quellenDaten = aufkl.quellen; // Array [{ id, text }] oder undefined
+  const refOrder = React.useMemo(function () {
+    if (!quellenDaten) return null;
+    var seen = [];
+    function scan(t) {
+      if (!t) return;
+      var re = /\[\[([a-zA-Z0-9_]+)\]\]/g, m;
+      while ((m = re.exec(t)) !== null) { if (seen.indexOf(m[1]) < 0) seen.push(m[1]); }
+    }
+    slides.forEach(function (s) {
+      scan(s.text);
+      if (s.toggle && s.toggle.options) s.toggle.options.forEach(function (o) { scan(o.text); });
+    });
+    return seen;
+  }, [aufkl]);
+  var refNum = {};
+  if (refOrder) refOrder.forEach(function (id, i) { refNum[id] = i + 1; });
+  function processRefs(t) {
+    if (!refOrder || !t) return t;
+    return t.replace(/\[\[([a-zA-Z0-9_]+)\]\]/g, function (_, id) {
+      return refNum[id] ? "[" + refNum[id] + "]" : "";
+    });
+  }
+  function quellenMarkdown() {
+    var all = quellenDaten || [];
+    var byId = {};
+    all.forEach(function (q) { byId[q.id] = q.text; });
+    var cited = refOrder || [];
+    if (cited.length === 0 && all.length === 0) return "_Keine Quellen hinterlegt._";
+    var citedPart = cited.map(function (id, i) {
+      return "[" + (i + 1) + "] " + (byId[id] || "(Quelle fehlt: " + id + ")");
+    }).join("\n\n");
+    var uncited = all.filter(function (q) { return cited.indexOf(q.id) < 0; });
+    var uncitedPart = "";
+    if (uncited.length > 0) {
+      var body = uncited.map(function (q) { return "- " + q.text; }).join("\n");
+      // Überschrift nur, wenn es zitierte Quellen darüber gibt
+      uncitedPart = cited.length > 0 ? "## Weiterführende Literatur\n\n" + body : body;
+    }
+    return [citedPart, uncitedPart].filter(Boolean).join("\n\n");
+  }
+  const istQuellenSlide = !!quellenDaten && current && current.titel === "Quellen";
+
   return (
     <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px", minWidth: 0 }}>
       <ZurueckLink />
@@ -2127,7 +2206,9 @@ function AufklaerungsView({ opKey, kbOrigin }) {
             {current.untertitel}
           </div>
         )}
-        {current.text && <MarkdownView source={current.text} />}
+        {istQuellenSlide
+          ? <MarkdownView source={quellenMarkdown()} />
+          : (current.text && <MarkdownView source={processRefs(current.text)} />)}
         {current.toggle && Array.isArray(current.toggle.options) && current.toggle.options.length > 0 && (function(){
           const opts = current.toggle.options;
           const sel = Math.max(0, Math.min(opts.length - 1, toggleSel));
@@ -2147,7 +2228,7 @@ function AufklaerungsView({ opKey, kbOrigin }) {
                   );
                 })}
               </div>
-              {opts[sel] && opts[sel].text && <MarkdownView source={opts[sel].text} />}
+              {opts[sel] && opts[sel].text && <MarkdownView source={processRefs(opts[sel].text)} />}
             </div>
           );
         })()}
@@ -2285,13 +2366,14 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
    *  - Selected: marineblaues Punktraster (über pattern-fill)
    */
   function fillFor(rid) {
+    // Nur die ausgewählte Region wird angezeigt (blaues Punktraster).
+    // Bewusst KEIN Hover-Zustand: auf Touchgeräten (iOS) bleibt der Hover sonst
+    // „kleben" und lässt eine zweite Region umrandet erscheinen.
     if (isSelected(rid)) return "url(#dotPattern)";
-    if (isHovered(rid))  return "rgba(255, 255, 255, 0.35)";
     return "transparent";
   }
   function strokeFor(rid) {
     if (isSelected(rid)) return "rgba(44, 79, 124, 0.85)";
-    if (isHovered(rid))  return "rgba(44, 79, 124, 0.55)";
     return "transparent";
   }
 
