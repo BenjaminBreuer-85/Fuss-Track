@@ -111,10 +111,16 @@
     "lapidus"
    ],
    "slides": [
-    "hv_krankheitsbild",
-    "hv_behandlung",
-    "hv_op_lapidus"
-   ]
+    "lapidus_ueberblick",
+    "lapidus_ablauf",
+    "lapidus_ergebnisse",
+    "lapidus_nachbehandlung",
+    "lapidus_komplikationen",
+    "lapidus_alternativen",
+    "lapidus_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema"
   },
   "dmmo": {
    "infoKategorie": "op_technik",
@@ -125,10 +131,16 @@
     "dmmo"
    ],
    "slides": [
-    "hv_krankheitsbild",
-    "hv_behandlung",
-    "hv_op_dmmo"
-   ]
+    "dmmo_ueberblick",
+    "dmmo_ablauf",
+    "dmmo_ergebnisse",
+    "dmmo_nachbehandlung",
+    "dmmo_komplikationen",
+    "dmmo_alternativen",
+    "dmmo_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema"
   },
   "kleinzehen_pip": {
    "infoKategorie": "op_technik",
