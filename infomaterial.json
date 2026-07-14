@@ -71,17 +71,22 @@
   "chevron_akin": {
    "infoKategorie": "op_technik",
    "infoTitel": "Chevron-Akin-Osteotomie (Hallux-valgus-Korrektur)",
-   "titel": "Hallux valgus",
-   "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+   "titel": "Chevron-/Akin-Osteotomie",
+   "untertitel": "Gelenkerhaltende Korrektur bei Hallux valgus",
    "betrifft_eingriffe": [
     "chevron_akin"
    ],
    "slides": [
-    "hv_krankheitsbild",
-    "hv_behandlung",
-    "hv_op_chevron",
-    "hv_op_akin"
-   ]
+    "chevron_ueberblick",
+    "chevron_ablauf",
+    "chevron_ergebnisse",
+    "chevron_nachbehandlung",
+    "chevron_komplikationen",
+    "chevron_alternativen",
+    "chevron_quellen"
+   ],
+   "_review": true,
+   "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema"
   },
   "scarf": {
    "infoKategorie": "op_technik",
