@@ -390,7 +390,6 @@
       "kurz": "Nervenkompression hinter dem Innenknöchel mit Ausstrahlung in die Sohle",
       "haeufigkeit": "selten",
       "regionen": [
-        "ferse_plantar",
         "sg_innen_hinter"
       ]
     },
@@ -497,7 +496,6 @@
       "kurz": "Reizung der Fußsohlensehnenplatte (oft mit Fersensporn)",
       "haeufigkeit": "haeufig",
       "regionen": [
-        "ferse_plantar",
         "fusssohle",
         "plantarfaszie_ansatz"
       ],
@@ -509,20 +507,9 @@
       "kurz": "Ermüdungsbruch des Fersenbeins",
       "haeufigkeit": "selten",
       "regionen": [
-        "ferse_plantar",
         "ferse_plantar_tuber",
         "rueckfuss_medial_tief"
       ]
-    },
-    {
-      "id": "fersenkissen_atrophie",
-      "titel": "Fersenkissen-Atrophie",
-      "kurz": "Schwund des Fettpolsters unter der Ferse",
-      "haeufigkeit": "selten",
-      "regionen": [
-        "ferse_plantar"
-      ],
-      "info_ref": "plantarer_fersenschmerz_kb"
     },
     {
       "id": "polyneuropathie",
@@ -530,7 +517,6 @@
       "kurz": "Schädigung peripherer Nerven (oft beidseits, brennend)",
       "haeufigkeit": "mittel",
       "regionen": [
-        "ferse_plantar",
         "fusssohle",
         "vorfuss_plantar"
       ]
@@ -641,7 +627,6 @@
       "kurz": "Nervenengpass an der Innenseite der Ferse, oft mit chronischem Fersenschmerz",
       "haeufigkeit": "selten",
       "regionen": [
-        "ferse_plantar",
         "rueckfuss_medial_tief"
       ],
       "info_ref": "plantarer_fersenschmerz_kb"
@@ -2738,168 +2723,6 @@
               "punkte": {
                 "retrocalcaneare_bursitis": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "ferse_plantar",
-      "titel": "Ferse — Fußsohle",
-      "ansichten": [
-        "innen",
-        "unten"
-      ],
-      "fragen": [
-        {
-          "id": "lokalisation",
-          "frage": "Wo genau in der Ferse?",
-          "multi": true,
-          "antworten": [
-            {
-              "label": "Vorderer Anteil, Übergang zur Fußsohle",
-              "punkte": {
-                "plantarfasziitis": 2
-              }
-            },
-            {
-              "label": "Mitte der Ferse, blauer-Fleck-Gefühl",
-              "punkte": {
-                "stressfraktur_calcaneus": 1,
-                "fersenkissen_atrophie": 1
-              }
-            },
-            {
-              "label": "Brennen / Kribbeln, schwer lokalisierbar",
-              "punkte": {
-                "polyneuropathie": 1,
-                "tarsaltunnel_syndrom": 1
-              }
-            }
-          ]
-        },
-        {
-          "id": "anlauf",
-          "frage": "Anlaufschmerz?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Klassisch",
-              "punkte": {
-                "plantarfasziitis": 2
-              }
-            },
-            {
-              "label": "Nein",
-              "punkte": {
-                "stressfraktur_calcaneus": 1,
-                "fersenkissen_atrophie": 1
-              }
-            },
-            {
-              "label": "Eher abends / nachts",
-              "punkte": {
-                "polyneuropathie": 1,
-                "tarsaltunnel_syndrom": 1
-              }
-            }
-          ]
-        },
-        {
-          "id": "ruhe",
-          "frage": "Schmerz beim Auftreten oder in Ruhe?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Nur beim Auftreten",
-              "punkte": {
-                "plantarfasziitis": 1,
-                "fersenkissen_atrophie": 1
-              }
-            },
-            {
-              "label": "Auch in Ruhe / nachts",
-              "punkte": {
-                "polyneuropathie": 1,
-                "tarsaltunnel_syndrom": 1,
-                "stressfraktur_calcaneus": 1
-              }
-            }
-          ]
-        },
-        {
-          "id": "ausloeser",
-          "frage": "Auslöser?",
-          "multi": true,
-          "antworten": [
-            {
-              "label": "Schleichend nach Belastungsschub",
-              "punkte": {
-                "plantarfasziitis": 1
-              }
-            },
-            {
-              "label": "Nach Sport (Laufen / Springen)",
-              "punkte": {
-                "stressfraktur_calcaneus": 1
-              }
-            },
-            {
-              "label": "Bei Diabetes-Erkrankung",
-              "punkte": {
-                "polyneuropathie": 2
-              }
-            },
-            {
-              "label": "Seit Jahren langsam zunehmend",
-              "punkte": {
-                "fersenkissen_atrophie": 1,
-                "polyneuropathie": 1
-              }
-            }
-          ]
-        },
-        {
-          "id": "hilfe",
-          "frage": "Was hilft?",
-          "multi": true,
-          "antworten": [
-            {
-              "label": "Weichere Schuhe / Polsterung",
-              "punkte": {
-                "plantarfasziitis": 1,
-                "fersenkissen_atrophie": 1
-              }
-            },
-            {
-              "label": "Schonung / Entlastung",
-              "punkte": {
-                "stressfraktur_calcaneus": 1
-              }
-            },
-            {
-              "label": "Wenig hilft",
-              "punkte": {
-                "polyneuropathie": 1,
-                "tarsaltunnel_syndrom": 1
-              }
-            }
-          ]
-        },
-        {
-          "id": "schmerzcharakter",
-          "frage": "Wie fühlt sich der Schmerz an?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Chronischer Fersenschmerz mit Brennen an der Innenseite, auch in Ruhe",
-              "punkte": {
-                "baxter_neuropathie": 2
-              }
-            },
-            {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
-              "punkte": {}
             }
           ]
         }
