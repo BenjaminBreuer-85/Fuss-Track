@@ -1388,6 +1388,7 @@ function NonOpView({ onBack }) {
             <div style={{ height: "100%", width: Math.min(wocheAktuell / 52 * 100, 100) + "%", background: "var(--c-main)" }}></div>
           </div>
           <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8 }}>Unfalltag: {formatDateGerman(unfallDatum)} · Das Programm begleitet Sie über das erste Jahr.</div>
+          <div onClick={reset} style={{ marginTop: 12, textAlign: "center", padding: "9px 12px", border: "1px solid var(--c-main)", borderRadius: 8, fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", cursor: "pointer", background: "#fff" }}>↻ Programm neu starten / anderes Thema</div>
         </div>
 
         {tagesfokus.length > 0 && (
