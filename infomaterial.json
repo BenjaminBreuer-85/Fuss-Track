@@ -2267,6 +2267,14 @@
         {
           "id": "gicht_kb_q10",
           "text": "Stewart S, Maxwell H, Dalbeth N. Prevalence and discrimination of OMERACT-defined elementary ultrasound lesions of gout in people with asymptomatic hyperuricaemia: a systematic review and meta-analysis. Semin Arthritis Rheum. 2019;49(1):62–73. doi:10.1016/j.semarthrit.2019.01.004"
+        },
+        {
+          "id": "gicht_kb_q11",
+          "text": "Terkeltaub RA, Furst DE, Bennett K, et al. High versus low dosing of oral colchicine for early acute gout flare (AGREE study). Arthritis Rheum. 2010;62(4):1060–1068. doi:10.1002/art.27327"
+        },
+        {
+          "id": "gicht_kb_q12",
+          "text": "Boyadzhieva Z, Ruffer N, Krusche M. Colchicin: altes Medikament mit neuem Nutzen. Einsatz in der Rheumatologie und darüber hinaus. Z Rheumatol. 2021;80(7):647–657. doi:10.1007/s00393-021-01017-z"
         }
       ]
     },
@@ -2364,8 +2372,8 @@
     },
     "hohlfuss_kb": {
       "infoKategorie": "krankheitsbild",
-      "infoTitel": "Hohlfuß (Pes cavovarus)",
-      "titel": "Hohlfuß (Pes cavovarus)",
+      "infoTitel": "Hohlfuß (Pes cavus)",
+      "titel": "Hohlfuß (Pes cavus)",
       "untertitel": "Überhöhtes Längsgewölbe — Formen (cavovarus/calcaneocavus/rein), oft neurologisch; Coleman-Test-gesteuerte Behandlung",
       "betrifft_eingriffe": [],
       "slides": [
@@ -2381,35 +2389,39 @@
       "quellen": [
         {
           "id": "hohlfuss_kb_q1",
-          "text": "StatPearls: Pes Cavus. NCBI Bookshelf, 2023."
+          "text": "Statler TK, Tullis BL. Pes cavus. J Am Podiatr Med Assoc. 2005;95(1):42–52. doi:10.7547/0950042"
         },
         {
           "id": "hohlfuss_kb_q2",
-          "text": "Burns J, Landorf KB, et al. / Physiopedia: Pes Cavus — classification (cavovarus, calcaneocavus, pure), aetiology."
+          "text": "Sanpera I, Villafranca-Solano S, Muñoz-Lopez C, Sanpera-Iglesias J. How to manage pes cavus in children and adolescents? EFORT Open Rev. 2021;6(6):510–517. doi:10.1302/2058-5241.6.210021"
         },
         {
           "id": "hohlfuss_kb_q3",
-          "text": "Coleman SS, Chesnut WJ. A simple test for hindfoot flexibility in the cavovarus foot. Clin Orthop Relat Res. 1977;(123):60–2."
+          "text": "Piazza S, Ricci G, Caldarazzo Ienco E, et al. Pes cavus and hereditary neuropathies: when a relationship should be suspected. J Orthop Traumatol. 2010;11(4):195–201. doi:10.1007/s10195-010-0114-y"
         },
         {
           "id": "hohlfuss_kb_q4",
-          "text": "Younger AS, Hansen ST. Surgical management of pes cavus / Surgical Management and Treatment Algorithm for the Subtle Cavovarus Foot."
+          "text": "Manoli A 2nd, Graham B. The subtle cavus foot (the underpronator). Foot Ankle Int. 2005;26(3):256–263. doi:10.1177/107110070502600313"
         },
         {
           "id": "hohlfuss_kb_q5",
-          "text": "Lateralizing calcaneal osteotomy and first metatarsal dorsiflexion osteotomy for cavovarus foot; peroneus longus-to-brevis transfer. 2022/2023."
+          "text": "Coleman SS, Chesnut WJ. A simple test for hindfoot flexibility in the cavovarus foot. Clin Orthop Relat Res. 1977;(123):60–62. PMID 837597"
         },
         {
           "id": "hohlfuss_kb_q6",
-          "text": "Evidence-Based Management Strategies for Pediatric Pes Cavus. J Pediatr Orthop Soc North Am. 2024."
+          "text": "Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. Cochrane Database Syst Rev. 2007;(4):CD006154. doi:10.1002/14651858.CD006154.pub2"
         },
         {
           "id": "hohlfuss_kb_q7",
-          "text": "Cavovarus foot in Charcot-Marie-Tooth: first ray dorsiflexion osteotomy with soft tissue surgery — outcome study."
+          "text": "Dreher T, Beckmann NA, Wenz W. Surgical treatment of severe cavovarus foot deformity in Charcot-Marie-Tooth disease. JBJS Essent Surg Tech. 2015;5(2):e11. doi:10.2106/JBJS.ST.N.00005"
         },
         {
           "id": "hohlfuss_kb_q8",
-          "text": "Posterior tibial tendon transfer for foot drop in Charcot-Marie-Tooth disease — case report and literature review."
+          "text": "Pfeffer GB, Haupt ET. The surgical correction of cavovarus deformity in Charcot-Marie-Tooth disease. J Am Acad Orthop Surg. 2023;31(21):e930–e939. doi:10.5435/JAAOS-D-23-00056"
+        },
+        {
+          "id": "hohlfuss_kb_q9",
+          "text": "Haupt ET, Porter GM, Blough C, Michalski MP, Pfeffer GB. Outcomes of Charcot-Marie-Tooth disease cavovarus surgical reconstruction. Foot Ankle Int. 2024;45(11):1175–1183. doi:10.1177/10711007241271283"
         }
       ]
     },
