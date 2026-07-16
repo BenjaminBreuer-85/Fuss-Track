@@ -2102,23 +2102,47 @@
       "quellen": [
         {
           "id": "achilles_riss_kb_q1",
-          "text": "Noback PC, et al. Epidemiology of Achilles tendon rupture. 2017."
+          "text": "Rodio LA, Burkhart RJ, Sanghvi P, et al. Epidemiology and complications of 18,061 Achilles tendon rupture repairs in the United States, 2015–2024 (TriNetX). J Foot Ankle Surg. 2026;65(3):91.e1–91.e7. doi:10.1053/j.jfas.2025.12.013"
         },
         {
           "id": "achilles_riss_kb_q2",
-          "text": "Ochen Y, et al. Operative vs nonoperative treatment of acute Achilles tendon rupture: systematic review and meta-analysis. BMJ. 2019;364:k5120."
+          "text": "Krahe MA, Berlet GC. Achilles tendon ruptures, re-rupture with revision surgery, tendinosis, and insertional disease. Foot Ankle Clin. 2009;14(2):247–275. doi:10.1016/j.fcl.2009.02.001"
         },
         {
           "id": "achilles_riss_kb_q3",
-          "text": "Krahe MA, Berlet GC. Achilles tendon ruptures, re-rupture with revision surgery, tendinosis, and insertional disease. Foot Ankle Clin. 2009;14(2):247–75."
+          "text": "Ochen Y, Beks RB, van Heijl M, et al. Operative treatment versus nonoperative treatment of Achilles tendon ruptures: systematic review and meta-analysis. BMJ. 2019;364:k5120. doi:10.1136/bmj.k5120"
         },
         {
           "id": "achilles_riss_kb_q4",
-          "text": "AOFAS Position Statement: Acute Achilles Tendon Ruptures. Nov 2024."
+          "text": "Myhrvold SB, Brouwer EF, Andresen TKM, et al. Nonoperative or surgical treatment of acute Achilles' tendon rupture. N Engl J Med. 2022;386(15):1409–1420. doi:10.1056/NEJMoa2108447"
         },
         {
           "id": "achilles_riss_kb_q5",
-          "text": "Meta-analysis of RCTs on acute Achilles rupture management. J Foot Ankle / Foot Ankle Orthop. 2025."
+          "text": "American Orthopaedic Foot & Ankle Society (AOFAS). Position Statement: Acute Achilles Tendon Ruptures. 2024."
+        },
+        {
+          "id": "achilles_riss_kb_q6",
+          "text": "Alves C, Mendes D, Marques FB. Fluoroquinolones and the risk of tendon injury: a systematic review and meta-analysis. Eur J Clin Pharmacol. 2019;75(10):1431–1443. doi:10.1007/s00228-019-02713-1"
+        },
+        {
+          "id": "achilles_riss_kb_q7",
+          "text": "Fenech M, Ajjikuttira A, Edwards H. Ultrasound assessment of acute Achilles tendon rupture and measurement of the tendon gap. Australas J Ultrasound Med. 2024;27(2):106–119. doi:10.1002/ajum.12384"
+        },
+        {
+          "id": "achilles_riss_kb_q8",
+          "text": "Zellers JA, Christensen M, Kjær IL, Rathleff MS, Silbernagel KG. Defining components of early functional rehabilitation for acute Achilles tendon rupture: a systematic review. Orthop J Sports Med. 2019;7(11):2325967119884071. doi:10.1177/2325967119884071"
+        },
+        {
+          "id": "achilles_riss_kb_q9",
+          "text": "Gould HP, Bano JM, Akman JL, Fillar AL. Postoperative rehabilitation following Achilles tendon repair: a systematic review. Sports Med Arthrosc Rev. 2021;29(2):130–145. doi:10.1097/JSA.0000000000000309"
+        },
+        {
+          "id": "achilles_riss_kb_q10",
+          "text": "Yang Z, Ge Z, Zheng J, Zhang L, Yang Z. Surgical treatment versus conservative management for acute Achilles tendon rupture: a systematic review and meta-analysis. J Orthop Surg Res. 2025;20(1):626. doi:10.1186/s13018-025-05990-y"
+        },
+        {
+          "id": "achilles_riss_kb_q11",
+          "text": "LaPrade CM, Chona DV, Cinque ME, et al. Return-to-play and performance after operative treatment of Achilles tendon rupture in elite male athletes: a scoping review. Br J Sports Med. 2022;56(9):515–520. doi:10.1136/bjsports-2021-104835"
         }
       ]
     },
