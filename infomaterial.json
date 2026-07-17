@@ -2068,19 +2068,47 @@
       "quellen": [
         {
           "id": "achilles_insertional_kb_q1",
-          "text": "Kujala UM, Sarna S, Kaprio J. Cumulative incidence of Achilles tendon rupture and tendinopathy in male former elite athletes. Clin J Sport Med. 2005;15(3):133–5."
+          "text": "Ramelli L, Docter S, Kim C, Sheth U, Park SS. Single-row repair versus double-row repair in the surgical management of Achilles insertional tendinopathy: a systematic review. Orthop J Sports Med. 2024;12(8):23259671241262772. doi:10.1177/23259671241262772"
         },
         {
           "id": "achilles_insertional_kb_q2",
-          "text": "Cook JL, Purdam CR. Is tendon pathology a continuum? Br J Sports Med. 2009;43(6):409–16."
+          "text": "Jarin IJ, Bäcker HC, Vosseller JT. Functional outcomes of insertional Achilles tendinopathy treatment: a systematic review. JBJS Rev. 2021;9(6):e20.00110. doi:10.2106/JBJS.RVW.20.00110"
         },
         {
           "id": "achilles_insertional_kb_q3",
-          "text": "Magnusson SP, Kjaer M. Eccentric training in Achilles tendinopathy. 2009."
+          "text": "Zhi X, Liu X, Han J, et al. Nonoperative treatment of insertional Achilles tendinopathy: a systematic review. J Orthop Surg Res. 2021;16(1):233. doi:10.1186/s13018-021-02370-0"
         },
         {
           "id": "achilles_insertional_kb_q4",
-          "text": "Aktuelle Serien zum zentralen Sehnensplit mit Double-Row-Refixation bei insertioneller Tendinopathie (gute Ergebnisse, geringe Komplikationen), 2023."
+          "text": "Ko VM, Cao M, Qiu J, et al. Comparative short-term effectiveness of non-surgical treatments for insertional Achilles tendinopathy: a systematic review and network meta-analysis. BMC Musculoskelet Disord. 2023;24(1):102. doi:10.1186/s12891-023-06170-x"
+        },
+        {
+          "id": "achilles_insertional_kb_q5",
+          "text": "Thompson JM, Nguyen K, Ahluwalia J, et al. Surgical takedown approaches to insertional Achilles tendinopathy: a systematic review. J Foot Ankle Surg. 2021;60(6):1217–1221. doi:10.1053/j.jfas.2021.04.015"
+        },
+        {
+          "id": "achilles_insertional_kb_q6",
+          "text": "Black AT, So E, Combs A, Logan D. The Zadek osteotomy for surgical management of insertional Achilles tendinopathy: a systematic review. Foot Ankle Spec. 2023;16(4):437–445. doi:10.1177/19386400231162411"
+        },
+        {
+          "id": "achilles_insertional_kb_q7",
+          "text": "Arbab D, Bouillon B, Lüring C, Gutteck N, Lipphaus A, Lichte P. Treatment of Achilles insertional calcific tendinosis using a longitudinal midline incision approach/central tendon splitting approach. Oper Orthop Traumatol. 2022;34(6):405–418. doi:10.1007/s00064-022-00793-4"
+        },
+        {
+          "id": "achilles_insertional_kb_q8",
+          "text": "Matsui T, Tanaka Y. Pathophysiology and healing of insertional Achilles tendinopathy: current concepts. J ISAKOS. 2025;12:100867. doi:10.1016/j.jisako.2025.100867"
+        },
+        {
+          "id": "achilles_insertional_kb_q9",
+          "text": "von Rickenbach KJ, Borgstrom H, Tenforde A, Borg-Stein J, McInnis KC. Achilles tendinopathy: evaluation, rehabilitation, and prevention. Curr Sports Med Rep. 2021;20(6):327–334. doi:10.1249/JSR.0000000000000855"
+        },
+        {
+          "id": "achilles_insertional_kb_q10",
+          "text": "Lausé GE, Egbert RA, Ryan PM. Insertional Achilles tendinopathy: occupational outcomes in the military. Foot Ankle Spec. 2021;16(4):342–348. doi:10.1177/19386400211029121"
+        },
+        {
+          "id": "achilles_insertional_kb_q11",
+          "text": "Sivrika AP, Papadamou E, Kypraios G, Lamnisos D, Georgoudis G, Stasinopoulos D. Comparability of the effectiveness of different types of exercise in the treatment of Achilles tendinopathy: a systematic review. Healthcare (Basel). 2023;11(16):2268. doi:10.3390/healthcare11162268"
         }
       ]
     },
