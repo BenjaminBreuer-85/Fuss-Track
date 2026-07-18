@@ -3305,6 +3305,135 @@
         "kb_crps_operativ",
         "kb_crps_quellen"
       ]
+    },
+    "clai_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Chronische laterale Instabilität des oberen Sprunggelenks",
+      "titel": "Chronische OSG-Instabilität",
+      "untertitel": "Chronische laterale Bandinstabilität",
+      "quellen": [
+        {
+          "id": "clai_kb_vega2020",
+          "text": "Vega J, Malagelada F, Manzanares Céspedes MC, Dalmau-Pastor M. The lateral fibulotalocalcaneal ligament complex: an ankle stabilizing isometric structure. Knee Surg Sports Traumatol Arthrosc. 2020;28(1):8–17. doi:10.1007/s00167-018-5188-8"
+        },
+        {
+          "id": "clai_kb_vega2016",
+          "text": "Vega J, Peña F, Golanó P. Minor or occult ankle instability as a cause of anterolateral pain after ankle sprain. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1116–1123. doi:10.1007/s00167-014-2969-6"
+        },
+        {
+          "id": "clai_kb_vega2021",
+          "text": "Vega J, Malagelada F, Dalmau-Pastor M. Ankle microinstability: arthroscopic findings reveal four types of lesion to the anterior talofibular ligament's superior fascicle. Knee Surg Sports Traumatol Arthrosc. 2021;29(4):1294–1303. doi:10.1007/s00167-020-06134-x"
+        },
+        {
+          "id": "clai_kb_caputo",
+          "text": "Caputo AM, Lee JY, Spritzer CE, Easley ME, DeOrio JK, Nunley JA 2nd, DeFrate LE. In vivo kinematics of the tibiotalar joint after lateral ankle instability. Am J Sports Med. 2009;37(11):2241–2248. doi:10.1177/0363546509337578"
+        },
+        {
+          "id": "clai_kb_lentell",
+          "text": "Lentell G, Baas B, Lopez D, McGuire L, Sarrels M, Snyder P. The contributions of proprioceptive deficits, muscle function, and anatomic laxity to functional instability of the ankle. J Orthop Sports Phys Ther. 1995;21(4):206–215. doi:10.2519/jospt.1995.21.4.206"
+        },
+        {
+          "id": "clai_kb_liu",
+          "text": "Liu SH, Baker CL. Comparison of lateral ankle ligamentous reconstruction procedures. Am J Sports Med. 1994;22(3):313–317. doi:10.1177/036354659402200303"
+        },
+        {
+          "id": "clai_kb_bahr",
+          "text": "Bahr R, Pena F, Shine J, Lew WD, Tyrdal S, Engebretsen L. Biomechanics of ankle ligament reconstruction. An in vitro comparison of the Broström repair, Watson-Jones reconstruction, and a new anatomic reconstruction technique. Am J Sports Med. 1997;25(4):424–432. doi:10.1177/036354659702500402"
+        },
+        {
+          "id": "clai_kb_schenck",
+          "text": "Schenck RC Jr, Coughlin MJ. Lateral ankle instability and revision surgery alternatives in the athlete. Foot Ankle Clin. 2009;14(2):205–214. doi:10.1016/j.fcl.2009.01.003"
+        },
+        {
+          "id": "clai_kb_cortereal",
+          "text": "Corte-Real NM, Moreira RM. Arthroscopic repair of chronic lateral ankle instability. Foot Ankle Int. 2009;30(3):213–217. doi:10.3113/FAI.2009.0213"
+        },
+        {
+          "id": "clai_kb_acevedo",
+          "text": "Acevedo JI, Ortiz C, Golanó P, Nery C. ArthroBroström lateral ankle stabilization technique: an anatomic study. Am J Sports Med. 2015;43(10):2564–2571. doi:10.1177/0363546515597464"
+        },
+        {
+          "id": "clai_kb_kim",
+          "text": "Kim ES, Lee KT, Park JS, Lee YK. Arthroscopic anterior talofibular ligament repair for chronic ankle instability with a suture anchor technique. Orthopedics. 2011;34(4). doi:10.3928/01477447-20110228-04"
+        },
+        {
+          "id": "clai_kb_guelfi",
+          "text": "Guelfi M, Nunes GA, Malagelada F, Cordier G, Dalmau-Pastor M, Vega J. Arthroscopic-assisted versus all-arthroscopic ankle stabilization technique. Foot Ankle Int. 2020;41(11):1360–1367. doi:10.1177/1071100720938672"
+        },
+        {
+          "id": "clai_kb_hintermann",
+          "text": "Hintermann B, Boss A, Schäfer D. Arthroscopic findings in patients with chronic ankle instability. Am J Sports Med. 2002;30(3):402–409. doi:10.1177/03635465020300031601"
+        },
+        {
+          "id": "clai_kb_ziai",
+          "text": "Ziai P, Benca E, von Skrbensky G, Wenzel F, Auffarth A, Krpo S, Windhager R, Buchhorn T. The role of the medial ligaments in lateral stabilization of the ankle joint: an in vitro study. Knee Surg Sports Traumatol Arthrosc. 2015;23(7):1900–1906. doi:10.1007/s00167-013-2708-4"
+        },
+        {
+          "id": "clai_kb_jain",
+          "text": "Jain NP, Ayyaswamy B, Griffiths A, Alderton E, Kostusiak M, Limaye RV. Is internal brace augmentation a gold standard treatment compared to isolated modified Brostrom Gould repair for chronic lateral ligament ankle instability? Foot (Edinb). 2022;50:101865. doi:10.1016/j.foot.2021.101865"
+        },
+        {
+          "id": "clai_kb_pope",
+          "text": "Pope R, Herbert R, Kirwan J. Effects of ankle dorsiflexion range and pre-exercise calf muscle stretching on injury risk in Army recruits. Aust J Physiother. 1998;44(3):165–172. doi:10.1016/s0004-9514(14)60376-7"
+        },
+        {
+          "id": "clai_kb_powers",
+          "text": "Powers CM, Ghoddosi N, Straub RK, Khayambashi K. Hip strength as a predictor of ankle sprains in male soccer players: a prospective study. J Athl Train. 2017;52(11):1048–1055. doi:10.4085/1062-6050-52.11.18"
+        },
+        {
+          "id": "clai_kb_gribble",
+          "text": "Gribble PA, Hertel J, Plisky P. Using the Star Excursion Balance Test to assess dynamic postural-control deficits and outcomes in lower extremity injury: a literature and systematic review. J Athl Train. 2012;47(3):339–357. doi:10.4085/1062-6050-47.3.08"
+        },
+        {
+          "id": "clai_kb_zhang",
+          "text": "Zhang C, Luo Z, Wu D, Fei J, Xie T, Su M. Effectiveness of exercise therapy on chronic ankle instability: a meta-analysis. Sci Rep. 2025;15(1):11709. doi:10.1038/s41598-025-95896-w"
+        },
+        {
+          "id": "clai_kb_guo",
+          "text": "Guo Y, Cheng T, Yang Z, Huang Y, Li M, Wang T. A systematic review and meta-analysis of balance training in patients with chronic ankle instability. Syst Rev. 2024;13(1):64. doi:10.1186/s13643-024-02455-x"
+        },
+        {
+          "id": "clai_kb_fakontis",
+          "text": "Fakontis C, Iakovidis P, Kasimis K, Lytras D, Koutras G, Fetlis A, Algiounidis I. Efficacy of resistance training with elastic bands compared to proprioceptive training on balance and self-report measures in patients with chronic ankle instability: a systematic review and meta-analysis. Phys Ther Sport. 2023;64:74–84. doi:10.1016/j.ptsp.2023.09.009"
+        },
+        {
+          "id": "clai_kb_biz",
+          "text": "Biz C, Nicoletti P, Tomasin M, Bragazzi NL, Di Rubbo G, Ruggieri P. Is Kinesio Taping effective for sport performance and ankle function of athletes with chronic ankle instability (CAI)? A systematic review and meta-analysis. Medicina (Kaunas). 2022;58(5):620. doi:10.3390/medicina58050620"
+        },
+        {
+          "id": "clai_kb_lopes",
+          "text": "Lopes R, Hong CC, Calder J, Kerkhoffs GMMJ. Risk factors for the recurrence of instability after operative treatment of chronic lateral ankle instability: a systematic review. J Exp Orthop. 2025;12(1):e70214. doi:10.1002/jeo2.70214"
+        },
+        {
+          "id": "clai_kb_li2024",
+          "text": "Li Y, Su T, Hu Y, Jiao C, Guo Q, Jiang Y, Jiang D. Return to sport after anatomic lateral ankle stabilization surgery for chronic ankle instability: a systematic review and meta-analysis. Am J Sports Med. 2024;52(2):555–566. doi:10.1177/03635465231170699"
+        },
+        {
+          "id": "clai_kb_wittig",
+          "text": "Wittig U, Hohenberger G, Ornig M, Schuh R, Reinbacher P, Leithner A, Holweg P. Improved outcome and earlier return to activity after suture tape augmentation versus Broström repair for chronic lateral ankle instability? A systematic review. Arthroscopy. 2022;38(2):597–608. doi:10.1016/j.arthro.2021.06.028"
+        },
+        {
+          "id": "clai_kb_li2026",
+          "text": "Li X, Wei Z, Cao Y, Cui Z, Pan XN, Si G, Lv Y. Internal brace augmentation versus modified Broström-Gould procedure for chronic lateral ankle instability: a systematic review and meta-analysis of functional and radiographic outcomes. J Orthop Surg Res. 2026. doi:10.1186/s13018-026-07113-7"
+        },
+        {
+          "id": "clai_kb_yang",
+          "text": "Yang Q, Liu J, Liu C, Zhou P, Zhu D. Modified Brostrom-Gould surgical procedure for chronic lateral ankle instability compared with other operations: a systematic review and meta-analysis. BMC Musculoskelet Disord. 2022;23(1):981. doi:10.1186/s12891-022-05957-8"
+        },
+        {
+          "id": "clai_kb_michels",
+          "text": "Michels F, Dewyn T, Bogaerts K, De Waele C, Hamers D. The evolution of patient-reported outcome measures after a first lateral ankle sprain: a prospective study. Foot Ankle Surg. 2024;30(7):568–575. doi:10.1016/j.fas.2024.04.012"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_clai_ueberblick",
+        "kb_clai_ursachen",
+        "kb_clai_diagnostik",
+        "kb_clai_konservativ",
+        "kb_clai_operativ",
+        "kb_clai_quellen"
+      ]
     }
   },
   "NONOP_MASSNAHMEN": {
