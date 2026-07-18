@@ -420,7 +420,8 @@
       "regionen": [
         "sg_aussen_vor",
         "syndesmose_distale_tibia"
-      ]
+      ],
+      "info_ref": "clai_kb"
     },
     {
       "id": "ocl",
@@ -731,7 +732,8 @@
       "regionen": [
         "medialer_fussrand_tief",
         "rueckfuss_medial_tief"
-      ]
+      ],
+      "info_ref": "coalitio_kb"
     },
     {
       "id": "kalkaneuszyste",
@@ -772,7 +774,8 @@
         "lateraler_fussrand",
         "sg_aussen_hinter",
         "tn_gelenk"
-      ]
+      ],
+      "info_ref": "coalitio_kb"
     },
     {
       "id": "mueller_weiss",

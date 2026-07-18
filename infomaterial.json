@@ -3434,6 +3434,59 @@
         "kb_clai_operativ",
         "kb_clai_quellen"
       ]
+    },
+    "coalitio_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Coalitio (angeborene Fußwurzelverbindung)",
+      "titel": "Coalitio",
+      "untertitel": "Angeborene Fußwurzelverbindung",
+      "quellen": [
+        {
+          "id": "coalitio_kb_mosca",
+          "text": "Mosca VS. Subtalar coalition in pediatrics. Foot Ankle Clin. 2015;20(2):265–281. doi:10.1016/j.fcl.2015.02.005"
+        },
+        {
+          "id": "coalitio_kb_murphy",
+          "text": "Murphy JS, Mubarak SJ. Talocalcaneal coalitions. Foot Ankle Clin. 2015;20(4):681–691. doi:10.1016/j.fcl.2015.07.009"
+        },
+        {
+          "id": "coalitio_kb_stormont",
+          "text": "Stormont DM, Peterson HA. The relative incidence of tarsal coalition. Clin Orthop Relat Res. 1983;(181):28–36. PMID 6641062"
+        },
+        {
+          "id": "coalitio_kb_nalaboff",
+          "text": "Nalaboff KM, Schweitzer ME. MRI of tarsal coalition: frequency, distribution, and innovative signs. Bull NYU Hosp Jt Dis. 2008;66(1):14–21. PMID 18333823"
+        },
+        {
+          "id": "coalitio_kb_kawashima",
+          "text": "Kawashima T, Uhthoff HK. The development of the ankle and foot. In: The Embryology of the Human Locomotor System. Berlin: Springer; 1990:141–153."
+        },
+        {
+          "id": "coalitio_kb_dermanis",
+          "text": "Dermanis AA, Elmajee M, Duffaydar H, Aljawadi A, Hussain S, Pillai A. Talocalcaneal coalition resection in the adult population: a systematic review. Cureus. 2022;14(10):e30581. doi:10.7759/cureus.30581"
+        },
+        {
+          "id": "coalitio_kb_rozansky",
+          "text": "Rozansky A, Varley E, Moor M, Wenger DR, Mubarak SJ. A radiologic classification of talocalcaneal coalitions based on 3D reconstruction. J Child Orthop. 2010;4(2):129–135. doi:10.1007/s11832-009-0224-3"
+        },
+        {
+          "id": "coalitio_kb_mehdi",
+          "text": "Mehdi N, Bernasconi A, Lintz F. Tarsal coalition in adults. Orthop Traumatol Surg Res. 2024;110(1S):103761. doi:10.1016/j.otsr.2023.103761"
+        },
+        {
+          "id": "coalitio_kb_soni",
+          "text": "Soni JF, Valenza W, Matsunaga C. Tarsal coalition. Curr Opin Pediatr. 2020;32(1):93–99. doi:10.1097/MOP.0000000000000858"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_coalitio_ueberblick",
+        "kb_coalitio_ursachen",
+        "kb_coalitio_diagnostik",
+        "kb_coalitio_konservativ",
+        "kb_coalitio_operativ",
+        "kb_coalitio_quellen"
+      ]
     }
   },
   "NONOP_MASSNAHMEN": {
