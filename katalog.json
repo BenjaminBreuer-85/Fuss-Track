@@ -409,7 +409,8 @@
       "haeufigkeit": "haeufig",
       "regionen": [
         "sg_aussen_vor"
-      ]
+      ],
+      "info_ref": "aussenbandruptur_kb"
     },
     {
       "id": "chron_sg_instabilitaet",
@@ -542,7 +543,8 @@
       "titel": "CRPS",
       "kurz": "Komplexes regionales Schmerzsyndrom, oft nach OP oder Verletzung",
       "haeufigkeit": "selten",
-      "regionen": []
+      "regionen": [],
+      "info_ref": "crps_kb"
     },
     {
       "id": "ip_arthrose_d1",
@@ -619,7 +621,8 @@
       "regionen": [
         "fusssohle",
         "vorfuss_plantar"
-      ]
+      ],
+      "info_ref": "jogger_kb"
     },
     {
       "id": "baxter_neuropathie",
@@ -629,7 +632,7 @@
       "regionen": [
         "rueckfuss_medial_tief"
       ],
-      "info_ref": "plantarer_fersenschmerz_kb"
+      "info_ref": "baxter_kb"
     },
     {
       "id": "n_suralis_kompression",

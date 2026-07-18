@@ -64,8 +64,67 @@
         "hallux_valgus"
       ],
       "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung"
+        "hv_ueberblick",
+        "hv_ursachen",
+        "hv_diagnostik",
+        "hv_konservativ",
+        "hv_operativ",
+        "hv_quellen"
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "hallux_valgus_q1",
+          "text": "Cai Y, Song Y, He M, et al. Global prevalence and incidence of hallux valgus: a systematic review and meta-analysis. J Foot Ankle Res. 2023;16(1):63. doi:10.1186/s13047-023-00661-9"
+        },
+        {
+          "id": "hallux_valgus_q2",
+          "text": "Ettinger S, Spindler FT, Marschall U, Polzer H, Stukenborg-Colsman C, Baumbach SF. Hallux valgus: prevalence and treatment options. Dtsch Arztebl Int. 2025;122(11):308–314. doi:10.3238/arztebl.m2025.0068"
+        },
+        {
+          "id": "hallux_valgus_q3",
+          "text": "Perera AM, Mason L, Stephens MM. The pathogenesis of hallux valgus. J Bone Joint Surg Am. 2011;93(17):1650–1661. doi:10.2106/JBJS.H.01630"
+        },
+        {
+          "id": "hallux_valgus_q4",
+          "text": "Rosemberg DL, Gustafson JA, Bordignon G, Bohl DD, Leporace G, Metsavaht L. Biokinetic evaluation of hallux valgus during gait: a systematic review. Foot Ankle Int. 2023;44(8):763–777. doi:10.1177/10711007231166667"
+        },
+        {
+          "id": "hallux_valgus_q5",
+          "text": "Munteanu SE, Menz HB, Wark JD, et al. Hallux valgus, by nature or nurture? A twin study. Arthritis Care Res (Hoboken). 2017;69(9):1421–1428. doi:10.1002/acr.23154"
+        },
+        {
+          "id": "hallux_valgus_q6",
+          "text": "Sun N, Wang X, Xu X, et al. Assessing the AIR classification reliability for estimating pronation of the first metatarsal. BMC Musculoskelet Disord. 2024;25(1):1034. doi:10.1186/s12891-024-08158-7"
+        },
+        {
+          "id": "hallux_valgus_q7",
+          "text": "Ying J, Xu Y, István B, Ren F. Adjusted indirect and mixed comparisons of conservative treatments for hallux valgus: a systematic review and network meta-analysis. Int J Environ Res Public Health. 2021;18(7):3841. doi:10.3390/ijerph18073841"
+        },
+        {
+          "id": "hallux_valgus_q8",
+          "text": "Colò G, Leigheb M, Surace MF, Fusini F. The efficacy of shoe modification and orthotics in hallux valgus deformity: a comprehensive review of the literature. Musculoskelet Surg. 2024;108(4):395–402. doi:10.1007/s12306-024-00839-9"
+        },
+        {
+          "id": "hallux_valgus_q9",
+          "text": "Fukushi JI, Tanaka H, Nishiyama T, et al. Comparison of outcomes of different osteotomy sites for hallux valgus: a systematic review and meta-analysis. J Orthop Surg (Hong Kong). 2022;30(2):10225536221110473. doi:10.1177/10225536221110473"
+        },
+        {
+          "id": "hallux_valgus_q10",
+          "text": "Waehner M, Klos K, Polzer H, et al. Lapidus arthrodesis for correction of hallux valgus deformity: a systematic review and meta-analysis. Foot Ankle Spec. 2024;19(1):58–69. doi:10.1177/19386400241233832"
+        },
+        {
+          "id": "hallux_valgus_q11",
+          "text": "Choi JY, Song TH, Suh JS. Outcome comparison of minimally invasive proximal and distal chevron Akin osteotomies in patients with severe hallux valgus deformity: a randomized prospective study. Int Orthop. 2024;48(8):2153–2163. doi:10.1007/s00264-024-06204-6"
+        },
+        {
+          "id": "hallux_valgus_q12",
+          "text": "Ezzatvar Y, López-Bueno L, Fuentes-Aparicio L, Dueñas L. Prevalence and predisposing factors for recurrence after hallux valgus surgery: a systematic review and meta-analysis. J Clin Med. 2021;10(24):5753. doi:10.3390/jcm10245753"
+        },
+        {
+          "id": "hallux_valgus_q13",
+          "text": "Menz HB, Lord SR. Gait instability in older people with hallux valgus. Foot Ankle Int. 2005;26(6):483–489. doi:10.1177/107110070502600610"
+        }
       ]
     },
     "chevron_akin": {
@@ -339,8 +398,59 @@
         "hallux_rigidus"
       ],
       "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung"
+        "hr_ueberblick",
+        "hr_ursachen",
+        "hr_diagnostik",
+        "hr_konservativ",
+        "hr_operativ",
+        "hr_quellen"
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "hallux_rigidus_q1",
+          "text": "Coughlin MJ, Shurnas PS. Hallux rigidus. Grading and long-term results of operative treatment. J Bone Joint Surg Am. 2003;85(11):2072–2088. PMID 14630834"
+        },
+        {
+          "id": "hallux_rigidus_q2",
+          "text": "Nixon DC, Lorbeer KF, McCormick JJ, Klein SE, Johnson JE. Hallux rigidus grade does not correlate with Foot and Ankle Ability Measure score. J Am Acad Orthop Surg. 2017;25(9):648–653. doi:10.5435/JAAOS-D-16-00878"
+        },
+        {
+          "id": "hallux_rigidus_q3",
+          "text": "Acker A, Fischer B, Kaufmann G, Dammerer D. Hallux rigidus: update on conservative management. Foot Ankle Clin. 2024;29(3):405–415. doi:10.1016/j.fcl.2023.09.010"
+        },
+        {
+          "id": "hallux_rigidus_q4",
+          "text": "Capell Morera M, Rodríguez Sanz D, Losa Iglesias ME, et al. Good short- and mid-term outcome after cross-linked hyaluronic acid infiltration for hallux rigidus: a case report. Clin Med Insights Arthritis Musculoskelet Disord. 2024;17:11795441241270120. doi:10.1177/11795441241270120"
+        },
+        {
+          "id": "hallux_rigidus_q5",
+          "text": "Arceri A, Mazzotti A, Zielli SO, et al. Reviewing evidence and patient outcomes of cheilectomy for hallux rigidus: a systematic review and meta-analysis. J Clin Med. 2024;13(23):7299. doi:10.3390/jcm13237299"
+        },
+        {
+          "id": "hallux_rigidus_q6",
+          "text": "Issa K, Palmer DB, Aggarwal A, et al. Moberg and Moberg-Akin osteotomies for hallux rigidus. Foot Ankle Clin. 2024;29(3):425–442. doi:10.1016/j.fcl.2024.02.007"
+        },
+        {
+          "id": "hallux_rigidus_q7",
+          "text": "Sánchez Guzmán N, Reina Fernández J, Vilá y Rico J. Arthrodesis versus arthroplasty for moderate and severe hallux rigidus: a systematic review. Foot Ankle Surg. 2024;30(3):174–180. doi:10.1016/j.fas.2023.12.002"
+        },
+        {
+          "id": "hallux_rigidus_q8",
+          "text": "Butler JJ, Rizla MR, Rowe HM, et al. Interpositional arthroplasty in the treatment of hallux rigidus: a systematic review. J Foot Ankle Surg. 2022;61(3):657–662. doi:10.1053/j.jfas.2021.11.024"
+        },
+        {
+          "id": "hallux_rigidus_q9",
+          "text": "Butler JJ, Mercer NP, Hurley ET, et al. Polyvinyl alcohol hydrogel implant for the treatment of hallux rigidus is associated with a high complication rate and moderate failure rate at short-term follow-up: a systematic review. Eur J Orthop Surg Traumatol. 2024;34(4):1765–1778. doi:10.1007/s00590-024-03895-w"
+        },
+        {
+          "id": "hallux_rigidus_q10",
+          "text": "Joo PY, Baumhauer JF, et al. Physical function and pain interference levels of hallux rigidus patients before and after synthetic cartilage implant versus arthrodesis surgery. Foot Ankle Int. 2021;42(10):1277–1286. doi:10.1177/10711007211007843"
+        },
+        {
+          "id": "hallux_rigidus_q11",
+          "text": "Stumpner T, et al. Return to sport after arthrodesis and implant arthroplasty for hallux rigidus: a systematic review. Arch Orthop Trauma Surg. 2025;145(1):471. doi:10.1007/s00402-025-06082-6"
+        }
       ]
     },
     "cheilektomie": {
@@ -1985,7 +2095,8 @@
       "slides": [
         "kb_achillo_ueberblick",
         "kb_achillo_ursachen",
-        "kb_achillo_behandlung",
+        "kb_achillo_konservativ",
+        "kb_achillo_operativ",
         "kb_achillo_quellen"
       ],
       "_review": true,
@@ -1993,23 +2104,51 @@
       "quellen": [
         {
           "id": "achillodynie_kb_q1",
-          "text": "Hirschmüller A, Weisskopf L. Epidemiologie der Achillessehnenbeschwerden. Sportverletz Sportschaden. 2018."
+          "text": "van der Vlist AC, Breda SJ, Oei EHG, Verhaar JAN, de Vos RJ. Clinical risk factors for Achilles tendinopathy: a systematic review. Br J Sports Med. 2019;53(21):1352–1361. doi:10.1136/bjsports-2018-099991"
         },
         {
           "id": "achillodynie_kb_q2",
-          "text": "Jozsa L, et al. The role of blood type in Achilles tendon rupture. J Sports Med. 1989."
+          "text": "De Luca P, Grieco G, Bargeri S, et al. The interplay between metabolic disorders and tendinopathies: systematic review and meta-analysis. J Exp Orthop. 2025;12(3):e70429. doi:10.1002/jeo2.70429"
         },
         {
           "id": "achillodynie_kb_q3",
-          "text": "van der Vlist AC, et al. Which risk factors are associated with Achilles tendinopathy? A systematic review. Br J Sports Med. 2019;53(21):1352–1361."
+          "text": "Millar NL, Silbernagel KG, Thorborg K, et al. Tendinopathy. Nat Rev Dis Primers. 2021;7(1):1. doi:10.1038/s41572-020-00234-1"
         },
         {
           "id": "achillodynie_kb_q4",
-          "text": "Chen TM, et al. The arterial anatomy of the Achilles tendon: anatomical study and clinical implications. Clin Anat. 2009;22(3):377–85."
+          "text": "Knapik JJ, Pope R. Achilles tendinopathy: pathophysiology, epidemiology, diagnosis, treatment, prevention, and screening. J Spec Oper Med. 2020;20(1):125–140. doi:10.55460/QXTX-A72P"
         },
         {
           "id": "achillodynie_kb_q5",
-          "text": "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409–16."
+          "text": "Kakouris N, Yener N, Fong DTP. A systematic review of running-related musculoskeletal injuries in runners. J Sport Health Sci. 2021;10(5):513–522. doi:10.1016/j.jshs.2021.04.001"
+        },
+        {
+          "id": "achillodynie_kb_q6",
+          "text": "Quarmby A, Mönnig J, Mugele H, et al. Biomechanics and lower limb function are altered in athletes and runners with Achilles tendinopathy compared with healthy controls: a systematic review. Front Sports Act Living. 2023;4:1012471. doi:10.3389/fspor.2022.1012471"
+        },
+        {
+          "id": "achillodynie_kb_q7",
+          "text": "Rasmussen PV, Strange JE, Holt A. Oral fluoroquinolones and the risk of Achilles tendon rupture. J Sport Health Sci. 2024;13(6):749–750. doi:10.1016/j.jshs.2024.04.001"
+        },
+        {
+          "id": "achillodynie_kb_q8",
+          "text": "Cooper K, Alexander L, Brandie D, et al. Exercise therapy for tendinopathy: a mixed-methods evidence synthesis exploring feasibility, acceptability and effectiveness. Health Technol Assess. 2023;27(24):1–389. doi:10.3310/TFWS2748"
+        },
+        {
+          "id": "achillodynie_kb_q9",
+          "text": "Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles pain, stiffness, and muscle power deficits: midportion Achilles tendinopathy revision 2024 (clinical practice guideline). J Orthop Sports Phys Ther. 2024;54(12):CPG1–CPG32. doi:10.2519/jospt.2024.0302"
+        },
+        {
+          "id": "achillodynie_kb_q10",
+          "text": "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409–416. doi:10.1136/bjsm.2008.051193"
+        },
+        {
+          "id": "achillodynie_kb_q11",
+          "text": "Chen TM, Rozen WM, Pan WR, Ashton MW, Richardson MD, Taylor GI. The arterial anatomy of the Achilles tendon: anatomical study and clinical implications. Clin Anat. 2009;22(3):377–385. doi:10.1002/ca.20758"
+        },
+        {
+          "id": "achillodynie_kb_q12",
+          "text": "Józsa L, Balint JB, Kannus P, Reffy A, Barzo M. Distribution of blood groups in patients with tendon rupture. An analysis of 832 cases. J Bone Joint Surg Br. 1989;71(2):272–274. doi:10.1302/0301-620X.71B2.2494187"
         }
       ]
     },
@@ -2021,8 +2160,10 @@
       "betrifft_eingriffe": [],
       "slides": [
         "kb_amid_ueberblick",
-        "kb_amid_beschwerden",
-        "kb_amid_behandlung",
+        "kb_amid_ursachen",
+        "kb_amid_diagnostik",
+        "kb_amid_konservativ",
+        "kb_amid_operativ",
         "kb_amid_quellen"
       ],
       "_review": true,
@@ -2030,23 +2171,31 @@
       "quellen": [
         {
           "id": "achilles_midportion_kb_q1",
-          "text": "Nyström B, et al. Incidence of Achilles tendon rupture and mid-portion tendinopathy. 2008."
+          "text": "Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles pain, stiffness, and muscle power deficits: midportion Achilles tendinopathy revision 2024 (clinical practice guideline). J Orthop Sports Phys Ther. 2024;54(12):CPG1–CPG32. doi:10.2519/jospt.2024.0302"
         },
         {
           "id": "achilles_midportion_kb_q2",
-          "text": "Lysholm J, Wiklander J. Injuries in runners. Am J Sports Med. 1987;15(2):168–71."
+          "text": "Prudêncio DA, Maffulli N, Migliorini F, et al. Eccentric exercise is more effective than other exercises in the treatment of mid-portion Achilles tendinopathy: systematic review and meta-analysis. BMC Sports Sci Med Rehabil. 2023;15(1):9. doi:10.1186/s13102-023-00618-2"
         },
         {
           "id": "achilles_midportion_kb_q3",
-          "text": "Janssen I, et al. Achilles tendinopathy in athletes. 2018."
+          "text": "Maetz R, Dubé MO, Tougas A, Prudhomme F, Dubois B, Roy JS. Systematic review and meta-analyses of RCTs comparing exercise loading protocols with passive treatment modalities or other loading protocols for midportion Achilles tendinopathy. Orthop J Sports Med. 2023;11(5):23259671231171178. doi:10.1177/23259671231171178"
         },
         {
           "id": "achilles_midportion_kb_q4",
-          "text": "Magnusson SP, Kjaer M. The impact of loading on tendon: eccentric training in Achilles tendinopathy. 2009."
+          "text": "Feeney KM. The effectiveness of extracorporeal shockwave therapy for midportion Achilles tendinopathy: a systematic review. Cureus. 2022;14(7):e26960. doi:10.7759/cureus.26960"
         },
         {
           "id": "achilles_midportion_kb_q5",
-          "text": "Cook JL, Purdam CR. Is tendon pathology a continuum? Br J Sports Med. 2009;43(6):409–16."
+          "text": "Olewnik Ł, Landfald IC, Gonera B, et al. Does the anatomical type of the plantaris tendon influence the management of midportion Achilles tendinopathy? J Clin Med. 2025;14(15):5478. doi:10.3390/jcm14155478"
+        },
+        {
+          "id": "achilles_midportion_kb_q6",
+          "text": "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409–416. doi:10.1136/bjsm.2008.051193"
+        },
+        {
+          "id": "achilles_midportion_kb_q7",
+          "text": "Cook JL, Rio E, Purdam CR, Docking SI. Revisiting the continuum model of tendon pathology: what is its merit in clinical practice and research? Br J Sports Med. 2016;50(19):1187–1191. doi:10.1136/bjsports-2015-095422"
         }
       ]
     },
@@ -2184,7 +2333,8 @@
         "kb_asi_ueberblick",
         "kb_asi_ursachen",
         "kb_asi_diagnostik",
-        "kb_asi_behandlung",
+        "kb_asi_konservativ",
+        "kb_asi_operativ",
         "kb_asi_quellen"
       ],
       "_review": true,
@@ -2192,15 +2342,79 @@
       "quellen": [
         {
           "id": "achilles_insuffizienz_kb_q1",
-          "text": "Krahe MA, Berlet GC. Achilles tendon ruptures, re-rupture, tendinosis and insertional disease. Foot Ankle Clin. 2009;14(2):247–75."
+          "text": "Bullock M, Pierson Z. Achilles tendon rupture. Clin Podiatr Med Surg. 2024;41(3):535–549. doi:10.1016/j.cpm.2024.01.009"
         },
         {
           "id": "achilles_insuffizienz_kb_q2",
-          "text": "Maffulli N, et al. Chronic Achilles tendon disorders: tendinopathy and chronic rupture. Clin Sports Med. 2015."
+          "text": "King CM, Vartivarian M. Achilles tendon rupture repair: simple to complex. Clin Podiatr Med Surg. 2023;40(1):75–96. doi:10.1016/j.cpm.2022.07.006"
         },
         {
           "id": "achilles_insuffizienz_kb_q3",
-          "text": "Übersichtsarbeiten zu Sehnentransfers (FHL) bei chronischer Achillessehneninsuffizienz."
+          "text": "Maffulli N, Bartoli A, Sammaria G, Migliorini F, Karlsson J, Oliva F. Free tendon grafts for surgical management of chronic tears of the main body of the Achilles tendon: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2023;31(10):4526–4538. doi:10.1007/s00167-023-07446-4"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q4",
+          "text": "Khair YJ, Milchem H, Adra M, et al. Isolated flexor hallucis longus tendon transfer for chronic Achilles tendon rupture: systematic review and meta-analysis. Healthcare (Basel). 2025;13(21):2751. doi:10.3390/healthcare13212751"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q5",
+          "text": "Karaismailoglu B, Ghandour S, Hendriks J, et al. Systematic review and meta-analysis comparing open FHL tendon transfer, hamstring transfer, and turndown flaps to treat chronic Achilles tendon ruptures. Foot Ankle Int. 2025;46(7):784–793. doi:10.1177/10711007251330287"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q6",
+          "text": "Roebke LJ, Alvarez PM, Curatolo C, Palumbo R, Martin KD. Chronic Achilles tendon avulsion repair: central third fascia slide technique with flexor hallucis longus transfer. JBJS Essent Surg Tech. 2024;14(1):e22.00036. doi:10.2106/JBJS.ST.22.00036"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q7",
+          "text": "Friederichsen P, Zwicky S, Stephan A, Stadelmann VA, Rippstein P. Transosseous flexor hallucis longus tendon transfer for large Achilles tendon defects: surgery technique and outcome. Foot Ankle Int. 2025;46(2):159–167. doi:10.1177/10711007241303745"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q8",
+          "text": "Xu Y, Li C, Liu T, et al. Long-term outcome of flexor hallucis longus tendon transfer for chronic Achilles tendon rupture with large defect: a retrospective series. Medicine (Baltimore). 2023;102(39):e35302. doi:10.1097/MD.0000000000035302"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q9",
+          "text": "Jiménez-Carrasco C, Ammari-Sánchez-Villanueva F, Prada-Chamorro E, García-Guirao AJ, Tejero S. Allograft and autologous reconstruction techniques for neglected Achilles tendon rupture: a mid-long-term follow-up analysis. J Clin Med. 2023;12(3):1135. doi:10.3390/jcm12031135"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q10",
+          "text": "Gatz M, Spang C, Alfredson H. Partial Achilles tendon rupture — a neglected entity: a narrative literature review on diagnostics and treatment options. J Clin Med. 2020;9(10):3380. doi:10.3390/jcm9103380"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q11",
+          "text": "Rashid RH, Ali R, Zahid M, Ali M, Ahmad T. Flexor hallucis longus transfer and V-Y plasty: an effective treatment modality for chronic Achilles rupture — a case series. Malays Orthop J. 2023;17(3):59–65. doi:10.5704/MOJ.2311.009"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q12",
+          "text": "Myerson MS. Klassifikation der chronischen Achillessehnenruptur nach Defektgröße (Typ I <2 cm, II 2–5 cm, III >5 cm)."
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q13",
+          "text": "Den Hartog BD. Flexor hallucis longus transfer for chronic Achilles tendonosis. Foot Ankle Int. 2003;24(3):233–237."
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q14",
+          "text": "Amlang MH, Rosenow M, Rammelt S, Heineck J, Zwipp H. Der Flexor-hallucis-longus-Transfer zum Ersatz der Achillessehne: Indikation, Technik und Ergebnisse. Unfallchirurg. 2008;111(7):499–506."
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q15",
+          "text": "Vega J, Vilá J, Batista J, Malagelada F, Dalmau-Pastor M. Endoscopic flexor hallucis longus transfer for chronic noninsertional Achilles tendon rupture. Foot Ankle Int. 2018;39(12):1464–1472."
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q16",
+          "text": "Gerstner G, Winson I, Campo J, et al. Endoscopic flexor hallucis longus transfer for Achilles noninsertional tendinopathy: description of surgical technique and functional outcomes. Foot Ankle Spec. 2021;14(1):46–54."
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q17",
+          "text": "Chen TM, Rozen WM, Pan WR, Ashton MW, Richardson MD, Taylor GI. The arterial anatomy of the Achilles tendon: anatomical study and clinical implications. Clin Anat. 2009;22(3):377–385. doi:10.1002/ca.20758"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q18",
+          "text": "Maffulli N, Ziello S, Maisto G, Migliorini F, Oliva F. Local tendon transfers for chronic ruptures of the Achilles tendon: a systematic review. J Clin Med. 2023;12(2):707. doi:10.3390/jcm12020707"
+        },
+        {
+          "id": "achilles_insuffizienz_kb_q19",
+          "text": "Maffulli N, Oliva F, Maffulli GD, Del Buono A, Gougoulias N. Surgical management of chronic Achilles tendon ruptures using less invasive techniques. Foot Ankle Surg. 2018;24(2):164–170. doi:10.1016/j.fas.2017.01.008"
         }
       ]
     },
@@ -2402,7 +2616,8 @@
         "kb_kppv_ueberblick",
         "kb_kppv_ursachen",
         "kb_kppv_diagnostik",
-        "kb_kppv_behandlung",
+        "kb_kppv_konservativ",
+        "kb_kppv_operativ",
         "kb_kppv_quellen"
       ],
       "_review": true,
@@ -2410,15 +2625,51 @@
       "quellen": [
         {
           "id": "kindl_ppv_kb_q1",
-          "text": "S2k-Leitlinie „Kindlicher Knick-Senk-Fuß\" (AWMF)."
+          "text": "Sharula, Zhao F, Wu T, et al. Treatment of pediatric flatfoot: a systematic review-based consensus and guidelines by CPAM-LRC. Front Pediatr. 2026;14:1825355. doi:10.3389/fped.2026.1825355"
         },
         {
           "id": "kindl_ppv_kb_q2",
-          "text": "Rao UB, Joseph B. The influence of footwear on the prevalence of flat foot. A survey of 2300 children. J Bone Joint Surg Br. 1992;74(4):525–7."
+          "text": "Pfeiffer M, Kotz R, Ledl T, Hauser G, Sluga M. Prevalence of flat foot in preschool-aged children. Pediatrics. 2006;118(2):634–639. doi:10.1542/peds.2005-2126"
         },
         {
           "id": "kindl_ppv_kb_q3",
-          "text": "Reviews zum Einfluss von Übergewicht auf die kindliche Fußentwicklung (Metaanalyse, >15.000 Kinder)."
+          "text": "Berkeley R, Tennant S, Saifuddin A. Multimodality imaging of the paediatric flatfoot. Skeletal Radiol. 2021;50(11):2133–2149. doi:10.1007/s00256-021-03806-8"
+        },
+        {
+          "id": "kindl_ppv_kb_q4",
+          "text": "Molina-García C, Banwell G, Rodríguez-Blanque R, et al. Efficacy of plantar orthoses in paediatric flexible flatfoot: a five-year systematic review. Children (Basel). 2023;10(2):371. doi:10.3390/children10020371"
+        },
+        {
+          "id": "kindl_ppv_kb_q5",
+          "text": "Molina-García C, Banwell G, Álvarez-Salvago F, et al. Efficacy of functional re-education as a treatment for infantile flexible flatfoot: a systematic review. Children (Basel). 2024;12(1):8. doi:10.3390/children12010008"
+        },
+        {
+          "id": "kindl_ppv_kb_q6",
+          "text": "Lin LY, Lin AC, Lai PC, et al. Effects of non-surgical interventions on standing posture and pain in children with flexible flatfoot: a network meta-analysis of randomized controlled trials. Phys Ther. 2026;106(5):pzag033. doi:10.1093/ptj/pzag033"
+        },
+        {
+          "id": "kindl_ppv_kb_q7",
+          "text": "Rao UB, Joseph B. The influence of footwear on the prevalence of flat foot. A survey of 2300 children. J Bone Joint Surg Br. 1992;74(4):525–527. PMID 1624506"
+        },
+        {
+          "id": "kindl_ppv_kb_q8",
+          "text": "De Pellegrin M, Moharamzadeh D. Subtalar arthroereisis for surgical treatment of flexible flatfoot. Foot Ankle Clin. 2021;26(4):765–805. doi:10.1016/j.fcl.2021.07.007"
+        },
+        {
+          "id": "kindl_ppv_kb_q9",
+          "text": "Marletta DA, Giuca G, Sanzarello I, Nanni M, Zampogna B, Leonetti D. Outcomes of subtalar arthroereisis for pediatric and adolescent flexible flatfoot: a systematic review comparing metallic versus bioabsorbable implants. Foot (Edinb). 2026;67:102235. doi:10.1016/j.foot.2026.102235"
+        },
+        {
+          "id": "kindl_ppv_kb_q10",
+          "text": "Malden S, Gillespie J, Hughes A, et al. Obesity in young children and its relationship with diagnosis of asthma, vitamin D deficiency, iron deficiency, specific allergies and flat-footedness: a systematic review and meta-analysis. Obes Rev. 2020;22(3):e13129. doi:10.1111/obr.13129"
+        },
+        {
+          "id": "kindl_ppv_kb_q11",
+          "text": "Bouchard M, Ross TD. Bony procedures for correction of the flexible pediatric flatfoot deformity. Foot Ankle Clin. 2021;26(4):915–939. doi:10.1016/j.fcl.2021.09.001"
+        },
+        {
+          "id": "kindl_ppv_kb_q12",
+          "text": "Zairi M, Msakni A, Mohseni AA, et al. Calcaneal lengthening osteotomy in the management of idiopathic flatfoot in children: case series of twenty-one feet. Int J Surg Case Rep. 2022;99:107634. doi:10.1016/j.ijscr.2022.107634"
         }
       ]
     },
@@ -2594,7 +2845,8 @@
       "slides": [
         "kb_pac_ueberblick",
         "kb_pac_ursachen",
-        "kb_pac_behandlung",
+        "kb_pac_konservativ",
+        "kb_pac_operativ",
         "kb_pac_quellen"
       ],
       "_review": true,
@@ -2602,15 +2854,47 @@
       "quellen": [
         {
           "id": "proc_ant_calc_kb_q1",
-          "text": "Dachtler HW / Christopher F. Erstbeschreibungen der Proc.-anterior-calcanei-Fraktur."
+          "text": "Degan TJ, Morrey BF, Braun DP. Surgical excision for anterior process fractures of the calcaneus. J Bone Joint Surg Am. 1982;64(4):519–524. PMID 7068694"
         },
         {
           "id": "proc_ant_calc_kb_q2",
-          "text": "Degan TJ, et al. Fractures of the anterior calcaneal process. J Bone Joint Surg Am. 1982."
+          "text": "Cibura C, Lülsdorff R, Ramczykowski T, Schildhauer TA, Kruppa C. Introduction of a modified Degan classification to specify treatment algorithms in fractures of the anterior process of the calcaneus. BMC Musculoskelet Disord. 2022;23(1):942. doi:10.1186/s12891-022-05903-8"
         },
         {
           "id": "proc_ant_calc_kb_q3",
-          "text": "Aktuelle retrospektive Serien zur Therapie der Proc.-anterior-calcanei-Fraktur."
+          "text": "Massen FK, Baumbach SF, Herterich V, Böcker W, Waizy H, Polzer H. Fractures to the anterior process of the calcaneus — clinical results following functional treatment. Injury. 2019;50(10):1781–1786. doi:10.1016/j.injury.2019.06.008"
+        },
+        {
+          "id": "proc_ant_calc_kb_q4",
+          "text": "Xiao W, Jin X, Wang X, et al. Factors influencing functional outcome of fractures of the anterior process of the calcaneus. Orthop Traumatol Surg Res. 2023;110(1):103572. doi:10.1016/j.otsr.2023.103572"
+        },
+        {
+          "id": "proc_ant_calc_kb_q5",
+          "text": "Hirschmann A, Walter WR, Alaia EF, Garwood E, Amsler F, Rosenberg ZS. Acute fracture of the anterior process of calcaneus: does it herald a more advanced injury to Chopart joint? AJR Am J Roentgenol. 2018;210(5):1123–1130. doi:10.2214/AJR.17.18678"
+        },
+        {
+          "id": "proc_ant_calc_kb_q6",
+          "text": "Morris O, Layzell J, Menon S, Hickey BA. Open excision of the anterior process of the calcaneus for Degan classification type II fracture non-union: a retrospective analysis of patient-reported outcomes. Foot (Edinb). 2026;67:102255. doi:10.1016/j.foot.2026.102255"
+        },
+        {
+          "id": "proc_ant_calc_kb_q7",
+          "text": "Jiang JZ, Zhang MR, Huang PK, Huang LS. CT imaging features and misdiagnosis analysis of occult anterior calcaneal process fracture. Zhongguo Gu Shang. 2019;32(11):1057–1062. doi:10.3969/j.issn.1003-0034.2019.11.016"
+        },
+        {
+          "id": "proc_ant_calc_kb_q8",
+          "text": "Harburn TE, Ross HE. Avulsion fracture of the anterior calcaneal process. Phys Sportsmed. 1987;15(4):73–80. doi:10.1080/00913847.1987.11709329"
+        },
+        {
+          "id": "proc_ant_calc_kb_q9",
+          "text": "Batou Y, El Farhaoui A, Abdeljaouad N, Yacoubi H. Os calcaneus secundarius mimicking anterior process fracture: diagnostic pitfall in acute ankle trauma. Radiol Case Rep. 2026;21(8):3210–3213. doi:10.1016/j.radcr.2026.04.041"
+        },
+        {
+          "id": "proc_ant_calc_kb_q10",
+          "text": "Cullen SE, Khan A, Park C, Allardice G. Open reduction and internal fixation of a calcaneal anterior process fracture using a locking plate. Cureus. 2021;13(10):e18519. doi:10.7759/cureus.18519"
+        },
+        {
+          "id": "proc_ant_calc_kb_q11",
+          "text": "Vosoughi AR, Borazjani R, Ghasemi N, Fathi S, Mashhadiagha A, Hoveidaei AH. Different types and epidemiological patterns of calcaneal fractures based on reviewing CT images of 957 fractures. Foot Ankle Surg. 2021;28(1):88–92. doi:10.1016/j.fas.2021.02.002"
         }
       ]
     },
@@ -2670,6 +2954,356 @@
           "id": "osteoporose_kb_q2",
           "text": "Übersichten zum Einfluss von Osteoporose auf die Frakturheilung und Fuß-/Sprunggelenkschirurgie."
         }
+      ]
+    },
+    "aussenbandruptur_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Frische Außenbandruptur (oberes Sprunggelenk)",
+      "titel": "Frische Außenbandruptur des OSG",
+      "untertitel": "",
+      "slides": [
+        "kb_ablr_ueberblick",
+        "kb_ablr_ursachen",
+        "kb_ablr_diagnostik",
+        "kb_ablr_konservativ",
+        "kb_ablr_operativ",
+        "kb_ablr_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "aussenbandruptur_kb_awmf",
+          "text": "AWMF-S2k-Leitlinie „Frische Außenbandruptur des oberen Sprunggelenkes\". Registernummer 187-025. 2017."
+        },
+        {
+          "id": "aussenbandruptur_kb_hoelmer",
+          "text": "Hølmer P, Søndergaard L, Konradsen L, Nielsen PT, Jørgensen LN. Epidemiology of sprains in the lateral ankle and foot. Foot Ankle Int. 1994;15(2):72–74."
+        },
+        {
+          "id": "aussenbandruptur_kb_fong",
+          "text": "Fong DT, Hong Y, Chan LK, Yung PS, Chan KM. A systematic review on ankle injury and ankle sprain in sports. Sports Med. 2007;37(1):73–94."
+        },
+        {
+          "id": "aussenbandruptur_kb_kerktol",
+          "text": "Kerkhoffs GM, Tol JL. A twist on the athlete's ankle twist: some ankles are more equal than others. Br J Sports Med. 2012;46(12):835–836."
+        },
+        {
+          "id": "aussenbandruptur_kb_doherty",
+          "text": "Doherty C, Bleakley C, Delahunt E, Holden S. Treatment and prevention of acute and recurrent ankle sprain: an overview of systematic reviews with meta-analysis. Br J Sports Med. 2017;51(2):113–125."
+        },
+        {
+          "id": "aussenbandruptur_kb_michels",
+          "text": "Michels F, Wastyn H, Pottel H, Stockmans F, Vereecke E, Matricali G. The presence of persistent symptoms 12 months following a first lateral ankle sprain: a systematic review and meta-analysis. Foot Ankle Surg. 2022;28(7):817–826."
+        },
+        {
+          "id": "aussenbandruptur_kb_digiovanni",
+          "text": "DiGiovanni BF, Partal G, Baumhauer JF. Acute ankle injury and chronic lateral instability in the athlete. Clin Sports Med. 2004;23(1):1–19."
+        },
+        {
+          "id": "aussenbandruptur_kb_wu",
+          "text": "Wu V, Padilla CA, Smith NA. Management of acute ankle sprains: common questions and answers. Am Fam Physician. 2025;112(6):609–617. PMID 41533404"
+        },
+        {
+          "id": "aussenbandruptur_kb_frey",
+          "text": "Frey C, Bell J, Teresi L, Kerr R, Feder K. A comparison of MRI and clinical examination of acute lateral ankle sprains. Foot Ankle Int. 1996;17(9):533–537."
+        },
+        {
+          "id": "aussenbandruptur_kb_gaulrapp",
+          "text": "Gaulrapp H, Lins S, Walther M. Möglichkeiten der funktionellen sonografischen Diagnostik bei der Primärbehandlung fibularer Kapsel-Band-Verletzungen des Sprunggelenks. Fuß Sprunggelenk. 2016;14(3):137–145."
+        },
+        {
+          "id": "aussenbandruptur_kb_malliaropoulos",
+          "text": "Malliaropoulos N, Papacostas E, Papalada A, Maffulli N. Acute lateral ankle sprains in track and field athletes: an expanded classification. Foot Ankle Clin. 2006;11(3):497–507."
+        },
+        {
+          "id": "aussenbandruptur_kb_kerk07",
+          "text": "Kerkhoffs GMMJ, Handoll HHG, de Bie R, Rowe BH, Struijs PAA. Surgical versus conservative treatment for acute injuries of the lateral ligament complex of the ankle in adults. Cochrane Database Syst Rev. 2007;(2):CD000380. doi:10.1002/14651858.CD000380.pub2"
+        },
+        {
+          "id": "aussenbandruptur_kb_altomare",
+          "text": "Altomare D, Fusco G, Bertolino E, et al. Evidence-based treatment choices for acute lateral ankle sprain: a comprehensive systematic review. Eur Rev Med Pharmacol Sci. 2022;26(6):1876–1884. doi:10.26355/eurrev_202203_28333"
+        },
+        {
+          "id": "aussenbandruptur_kb_lamb",
+          "text": "Lamb SE, Marsh JL, Hutton JL, Nakash R, Cooke MW; CAST Group. Mechanical supports for acute, severe ankle sprain: a pragmatic, multicentre, randomised controlled trial. Lancet. 2009;373(9663):575–581."
+        },
+        {
+          "id": "aussenbandruptur_kb_prado",
+          "text": "Prado MP, Mendes AA, Amodio DT, Camanho GL, Smyth NA, Fernandes TD. A comparative, prospective, and randomized study of two conservative treatment protocols for first-episode lateral ankle ligament injuries. Foot Ankle Int. 2014;35(3):201–206."
+        },
+        {
+          "id": "aussenbandruptur_kb_kerk03",
+          "text": "Kerkhoffs GM, Struijs PA, Marti RK, Blankevoort L, Assendelft WJ, van Dijk CN. Functional treatments for acute ruptures of the lateral ankle ligament: a systematic review. Acta Orthop Scand. 2003;74(1):69–77."
+        },
+        {
+          "id": "aussenbandruptur_kb_verhagen",
+          "text": "Verhagen E, van der Beek A, Twisk J, Bouter L, Bahr R, van Mechelen W. The effect of a proprioceptive balance board training programme for the prevention of ankle sprains. Am J Sports Med. 2004;32(6):1385–1393."
+        },
+        {
+          "id": "aussenbandruptur_kb_maduka",
+          "text": "Maduka GC, Jakusonoka R, Maduka DC, Yusuf N. Conservative management of acute lateral ligaments of the ankle injuries: an analytical literature review. Cureus. 2023;15(10):e47709. doi:10.7759/cureus.47709"
+        },
+        {
+          "id": "aussenbandruptur_kb_cleland",
+          "text": "Cleland JA, Mintken P, McDevitt A, et al. Manual physical therapy and exercise versus supervised home exercise in the management of patients with inversion ankle sprain: a multicenter randomized clinical trial. J Orthop Sports Phys Ther. 2013;43(7):443–455."
+        },
+        {
+          "id": "aussenbandruptur_kb_vuurberg",
+          "text": "Vuurberg G, Hoorntje A, Wink LM, et al. Diagnosis, treatment and prevention of ankle sprains: update of an evidence-based clinical guideline. Br J Sports Med. 2018;52(15):956."
+        },
+        {
+          "id": "aussenbandruptur_kb_pihl",
+          "text": "Pihlajamäki H, Hietaniemi K, Paavola M, Visuri T, Mattila VM. Surgical versus functional treatment for acute ruptures of the lateral ligament complex of the ankle in young men: a randomized controlled trial. J Bone Joint Surg Am. 2010;92(14):2367–2374."
+        },
+        {
+          "id": "aussenbandruptur_kb_rammelt",
+          "text": "Rammelt S, Schneiders W, Grass R, Rein S, Zwipp H. Bandverletzungen am oberen Sprunggelenk. Z Orthop Unfall. 2011;149(1):e45–e67."
+        },
+        {
+          "id": "aussenbandruptur_kb_fallat",
+          "text": "Fallat L, Grimm DJ, Saracco JA. Sprained ankle syndrome: prevalence and analysis of 639 acute injuries. J Foot Ankle Surg. 1998;37(4):280–285."
+        },
+        {
+          "id": "aussenbandruptur_kb_roemer",
+          "text": "Roemer FW, Jomaah N, Niu J, et al. Ligamentous injuries and the risk of associated tissue damage in acute ankle sprains in athletes: a cross-sectional MRI study. Am J Sports Med. 2014;42(7):1549–1557."
+        },
+        {
+          "id": "aussenbandruptur_kb_khor",
+          "text": "Khor YP, Tan KJ. The anatomic pattern of injuries in acute inversion ankle sprains: a magnetic resonance imaging study. Orthop J Sports Med. 2013;1(7):2325967113517078."
+        }
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "_review": true
+    },
+    "baxter_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Baxter-Neuropathie (Nervenengpass an der Ferse)",
+      "titel": "Baxter-Neuropathie",
+      "untertitel": "",
+      "slides": [
+        "kb_baxter_ueberblick",
+        "kb_baxter_ursachen",
+        "kb_baxter_diagnostik",
+        "kb_baxter_konservativ",
+        "kb_baxter_operativ",
+        "kb_baxter_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "baxter_kb_elsner",
+          "text": "Elsner A, Filler T, Barg A, Andermahr J. Nervenengpasssyndrome des Ramus calcanearis lateralis (Baxter-Nerv) und Nervus plantaris medialis (Jogger-Nerv). Fuß Sprunggelenk. 2015;13(4):237–244. doi:10.1016/j.fuspru.2015.08.003"
+        },
+        {
+          "id": "baxter_kb_tedeschi",
+          "text": "Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurol Sci. 2025;46(9):4685–4689. doi:10.1007/s10072-025-08253-0"
+        },
+        {
+          "id": "baxter_kb_chen",
+          "text": "Chen JSC, Abbott M, Landorf KB. Association of Baxter's neuropathy and fatty infiltration of the abductor digiti minimi muscle on magnetic resonance imaging: a systematic review. J Foot Ankle Res. 2025;18(3):e70075. doi:10.1002/jfa2.70075"
+        },
+        {
+          "id": "baxter_kb_jaring",
+          "text": "Jaring MRF, Khan AZ, Livingstone JA, Chakraverty J. A case of bilateral Baxter's neuropathy secondary to plantar fasciitis. J Foot Ankle Surg. 2019;58(4):771–774. doi:10.1053/j.jfas.2018.11.010"
+        },
+        {
+          "id": "baxter_kb_dirim",
+          "text": "Dirim B, Resnick D, Ozenler NK. Bilateral Baxter's neuropathy secondary to plantar fasciitis. Med Sci Monit. 2010;16(4):CS50–CS53. PMID 20357723"
+        },
+        {
+          "id": "baxter_kb_ong",
+          "text": "Ong CYG, Chin TY. Clinics in diagnostic imaging (205). Baxter's neuropathy. Singapore Med J. 2020;61(4):176–180. doi:10.11622/smedj.2020055"
+        },
+        {
+          "id": "baxter_kb_ngo",
+          "text": "Ngo KT, Del Toro DR. Electrodiagnostic findings and surgical outcome in isolated first branch lateral plantar neuropathy: a case series with literature review. Arch Phys Med Rehabil. 2010;91(12):1948–1951. doi:10.1016/j.apmr.2010.08.022"
+        },
+        {
+          "id": "baxter_kb_arbab",
+          "text": "Arbab D, Bouillon B, Lüring C, Störmann S, Gutteck N. Plantarfaszien-Release und Dekompression des ersten Astes des Nervus plantaris lateralis (Baxter-Nerv). Oper Orthop Traumatol. 2021;33(6):517–524. doi:10.1007/s00064-021-00720-z"
+        },
+        {
+          "id": "baxter_kb_lui",
+          "text": "Lui TH. Endoscopic decompression of the first branch of the lateral plantar nerve. Arch Orthop Trauma Surg. 2007;127(9):859–861. doi:10.1007/s00402-007-0380-1"
+        },
+        {
+          "id": "baxter_kb_fortier",
+          "text": "Fortier LM, Leethy KN, Smith M, et al. An update on posterior tarsal tunnel syndrome. Orthop Rev (Pavia). 2022;14(4):35444. doi:10.52965/001c.35444"
+        }
+      ],
+      "stand": "Recherche 07/2026 (Elsner 2015, Tedeschi 2025 u. a.) — ärztlich zu prüfen",
+      "_review": true
+    },
+    "jogger_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Jogger's Foot (Nervenengpass am inneren Fußgewölbe)",
+      "titel": "Jogger's Foot",
+      "untertitel": "Engpasssyndrom des Nervus plantaris medialis",
+      "quellen": [
+        {
+          "id": "jogger_kb_elsner",
+          "text": "Elsner A, Filler T, Barg A, Andermahr J. Nervenengpasssyndrome des Ramus calcanearis lateralis (Baxter-Nerv) und Nervus plantaris medialis (Jogger-Nerv). Fuß Sprunggelenk. 2015;13(4):237–244. doi:10.1016/j.fuspru.2015.08.003"
+        },
+        {
+          "id": "jogger_kb_rask",
+          "text": "Rask MR. Medial plantar neurapraxia (jogger's foot): report of 3 cases. Clin Orthop Relat Res. 1978;(134):193–195. PMID 729244"
+        },
+        {
+          "id": "jogger_kb_ferkel",
+          "text": "Ferkel E, Davis WH, Ellington JK. Entrapment neuropathies of the foot and ankle. Clin Sports Med. 2015;34(4):791–801. doi:10.1016/j.csm.2015.06.002"
+        },
+        {
+          "id": "jogger_kb_kumar",
+          "text": "Kumar S, Mangi MD, Zadow S, Lim W. Nerve entrapment syndromes of the lower limb: a pictorial review. Insights Imaging. 2023;14(1):166. doi:10.1186/s13244-023-01514-6"
+        },
+        {
+          "id": "jogger_kb_wu",
+          "text": "Wu WT, Özçakar L, Chang KV. Dynamic ultrasound assessment and guided medial plantar nerve hydrodissection for Master Knot of Henry syndrome. Diagnostics (Basel). 2024;14(20):2266. doi:10.3390/diagnostics14202266"
+        },
+        {
+          "id": "jogger_kb_beltran",
+          "text": "Beltran LS, Bencardino J, Ghazikhanian V, Beltran J. Entrapment neuropathies III: lower limb. Semin Musculoskelet Radiol. 2010;14(5):501–511. doi:10.1055/s-0030-1268070"
+        },
+        {
+          "id": "jogger_kb_szewczyk",
+          "text": "Szewczyk J, Szuciak A, Mozga K, et al. Tarsal tunnel syndrome in runners: diagnosis and return to physical activity – a review. Wiad Lek. 2025;78(3):584–590. doi:10.36740/WLek/202447"
+        },
+        {
+          "id": "jogger_kb_tedeschi",
+          "text": "Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurol Sci. 2025;46(9):4685–4689. doi:10.1007/s10072-025-08253-0"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_jogger_ueberblick",
+        "kb_jogger_ursachen",
+        "kb_jogger_diagnostik",
+        "kb_jogger_konservativ",
+        "kb_jogger_operativ",
+        "kb_jogger_quellen"
+      ]
+    },
+    "crps_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "CRPS am Fuß (Komplexes regionales Schmerzsyndrom, Morbus Sudeck)",
+      "titel": "CRPS am Fuß",
+      "untertitel": "Komplexes regionales Schmerzsyndrom",
+      "quellen": [
+        {
+          "id": "crps_kb_dgn",
+          "text": "Deutsche Gesellschaft für Neurologie. S1-Leitlinie Diagnostik und Therapie komplexer regionaler Schmerzsyndrome (CRPS). AWMF-Registernummer 030-116. 2018 (aktuell in Überarbeitung)"
+        },
+        {
+          "id": "crps_kb_ferraro24",
+          "text": "Ferraro MC, O'Connell NE, Sommer C, Goebel A, Bultitude JH, Cashin AG, Moseley GL, McAuley JH. Complex regional pain syndrome: advances in epidemiology, pathophysiology, diagnosis, and treatment. Lancet Neurol. 2024;23(5):522–533. doi:10.1016/S1474-4422(24)00076-0"
+        },
+        {
+          "id": "crps_kb_vanderspek",
+          "text": "van der Spek DPC, Dirckx M, Mangnus TJP, Cohen SP, Huygen FJPM. 10. Complex regional pain syndrome. Pain Pract. 2024;25(1):e13413. doi:10.1111/papr.13413"
+        },
+        {
+          "id": "crps_kb_abdelsayed",
+          "text": "Abd-Elsayed A, Stark CW, Topoluk N, Isaamullah M, Uzodinma P, Viswanath O, Gyorfi MJ, Fattouh O, Schlidt KC, Dyara O. A brief review of complex regional pain syndrome and current management. Ann Med. 2024;56(1):2334398. doi:10.1080/07853890.2024.2334398"
+        },
+        {
+          "id": "crps_kb_gharibo",
+          "text": "Gharibo C, Day M, Aydin SM, Kaye AD, Abdi S, Diwan S, et al. Diagnostic guidance for chronic complex regional pain syndrome type I and type II from the American Society of Interventional Pain Physicians (ASIPP). Pain Physician. 2025;28(4):E287–E327. PMID 40773629"
+        },
+        {
+          "id": "crps_kb_ferraro25",
+          "text": "Ferraro MC, O'Connell NE, Goebel A, Hill R, Curtis F, Wilkinson J, Center JR, Gustin SM, Cashin AG, McAuley JH. Efficacy and safety of bisphosphonates for complex regional pain syndrome: a systematic review and meta-analysis. Ann Intern Med. 2025;179(2):256–269. doi:10.7326/ANNALS-25-03693"
+        },
+        {
+          "id": "crps_kb_saed",
+          "text": "Saed A, Neal-Smith G, Fernquest S, Bourget-Murray J, Wood A. Management of complex regional pain syndrome in trauma and orthopaedic surgery – a systematic review. Br Med Bull. 2023;146(1):27–42. doi:10.1093/bmb/ldac034"
+        },
+        {
+          "id": "crps_kb_ranjbar",
+          "text": "Ranjbar Moghaddam M, Nasiri-Formi E, Merajikhah A. Efficacy of vitamin C supplementation in preventing and treating complex regional pain syndrome type I (CRPS-I) in orthopedic patients: a systematic review and meta-analysis. Int J Orthop Trauma Nurs. 2024;55:101140. doi:10.1016/j.ijotn.2024.101140"
+        },
+        {
+          "id": "crps_kb_azevedo",
+          "text": "Azevedo Filho FAS, Blunck RM, Ali AY, Fucs PMMB, Cotias RB. Vitamin C in complex regional pain syndrome in patients with distal radius fracture. Rev Bras Ortop (Sao Paulo). 2025;60(3):s00451810402. doi:10.1055/s-0045-1810402"
+        },
+        {
+          "id": "crps_kb_alshehri",
+          "text": "Alshehri FS. The complex regional pain syndrome: diagnosis and management strategies. Neurosciences (Riyadh). 2023;28(4):211–219. doi:10.17712/nsj.2023.4.20230034"
+        },
+        {
+          "id": "crps_kb_harden",
+          "text": "Harden RN, Bruehl S, Perez RSGM, Birklein F, Marinus J, Maihöfner C, et al. Validation of proposed diagnostic criteria (the „Budapest Criteria“) for complex regional pain syndrome. Pain. 2010;150(2):268–274. doi:10.1016/j.pain.2010.04.030"
+        },
+        {
+          "id": "crps_kb_beerthuizen",
+          "text": "Beerthuizen A, Stronks DL, Van't Spijker A, Yaksh A, Hanraets BM, Klein J, Huygen FJPM. Demographic and medical parameters in the development of complex regional pain syndrome type 1 (CRPS1): prospective study on 596 patients with a fracture. Pain. 2012;153(6):1187–1192. doi:10.1016/j.pain.2012.01.026"
+        },
+        {
+          "id": "crps_kb_sandroni",
+          "text": "Sandroni P, Benrud-Larson LM, McClelland RL, Low PA. Complex regional pain syndrome type I: incidence and prevalence in Olmsted county, a population-based study. Pain. 2003;103(1–2):199–207. doi:10.1016/s0304-3959(03)00065-4"
+        },
+        {
+          "id": "crps_kb_demos",
+          "text": "de Mos M, de Bruijn AGJ, Huygen FJPM, Dieleman JP, Stricker BHC, Sturkenboom MCJM. The incidence of complex regional pain syndrome: a population-based study. Pain. 2007;129(1–2):12–20. doi:10.1016/j.pain.2006.09.008"
+        },
+        {
+          "id": "crps_kb_bean2016",
+          "text": "Bean DJ, Johnson MH, Heiss-Dunlop W, Kydd RR. Extent of recovery in the first 12 months of complex regional pain syndrome type-1: a prospective study. Eur J Pain. 2016;20(6):884–894. doi:10.1002/ejp.813"
+        },
+        {
+          "id": "crps_kb_bean2015",
+          "text": "Bean DJ, Johnson MH, Heiss-Dunlop W, Lee AC, Kydd RR. Do psychological factors influence recovery from complex regional pain syndrome type 1? A prospective study. Pain. 2015;156(11):2310–2318. doi:10.1097/j.pain.0000000000000282"
+        },
+        {
+          "id": "crps_kb_speck",
+          "text": "Speck V, Schlereth T, Birklein F, Maihöfner C. Increased prevalence of posttraumatic stress disorder in CRPS. Eur J Pain. 2017;21(3):466–473. doi:10.1002/ejp.940"
+        },
+        {
+          "id": "crps_kb_vaneker",
+          "text": "Vaneker M, Wilder-Smith OHG, Schrombges P, de Man-Hermsen I, Oerlemans HM. Patients initially diagnosed as „warm“ or „cold“ CRPS 1 show differences in central sensory processing some eight years after diagnosis: a quantitative sensory testing study. Pain. 2005;115(1–2):204–211. doi:10.1016/j.pain.2005.02.031"
+        },
+        {
+          "id": "crps_kb_wuppenhorst",
+          "text": "Wuppenhorst N, Maier C, Frettlöh J, Pennekamp W, Nicolas V. Sensitivity and specificity of 3-phase bone scintigraphy in the diagnosis of complex regional pain syndrome of the upper extremity. Clin J Pain. 2010;26(3):182–189. doi:10.1097/AJP.0b013e3181c20207"
+        },
+        {
+          "id": "crps_kb_kraemer",
+          "text": "Krämer HH, Hofbauer LC, Szalay G, Breimhorst M, Eberle T, Zieschang K, et al. Osteoprotegerin: a new biomarker for impaired bone metabolism in complex regional pain syndrome? Pain. 2014;155(5):889–895. doi:10.1016/j.pain.2014.01.014"
+        },
+        {
+          "id": "crps_kb_kollmann",
+          "text": "Kollmann G, Wertli MM, Dudli S, Distler O, Brunner F. The role of the bone in complex regional pain syndrome 1 – a systematic review. Eur J Pain. 2023;27(7):794–804. doi:10.1002/ejp.2113"
+        },
+        {
+          "id": "crps_kb_gradl",
+          "text": "Gradl G, Steinborn M, Wizgall I, Mittlmeier T, Schürmann M. Das akute CRPS I (Morbus Sudeck) nach distaler Radiusfraktur – Methoden der Frühdiagnostik. Zentralbl Chir. 2003;128(12):1020–1026. doi:10.1055/s-2003-44850"
+        },
+        {
+          "id": "crps_kb_varenna",
+          "text": "Varenna M, Adami S, Rossini M, Gatti D, Idolazzi L, Zucchi F, Malavolta N, Sinigaglia L. Treatment of complex regional pain syndrome type I with neridronate: a randomized, double-blind, placebo-controlled study. Rheumatology (Oxford). 2013;52(3):534–542. doi:10.1093/rheumatology/kes312"
+        },
+        {
+          "id": "crps_kb_sigtermans",
+          "text": "Sigtermans MJ, van Hilten JJ, Bauer MCR, Arbous MS, Marinus J, Sarton EY, Dahan A. Ketamine produces effective and long-term pain relief in patients with complex regional pain syndrome type 1. Pain. 2009;145(3):304–311. doi:10.1016/j.pain.2009.06.023"
+        },
+        {
+          "id": "crps_kb_zuurmond",
+          "text": "Zuurmond WWA, Langendijk PNJ, Bezemer PD, Brink HEJ, de Lange JJ, van Loenen AC. Treatment of acute reflex sympathetic dystrophy with DMSO 50% in a fatty cream. Acta Anaesthesiol Scand. 1996;40(3):364–367. doi:10.1111/j.1399-6576.1996.tb04446.x"
+        },
+        {
+          "id": "crps_kb_mccabe",
+          "text": "McCabe CS, Haigh RC, Ring EFJ, Halligan PW, Wall PD, Blake DR. A controlled pilot study of the utility of mirror visual feedback in the treatment of complex regional pain syndrome (type 1). Rheumatology (Oxford). 2003;42(1):97–101. doi:10.1093/rheumatology/keg041"
+        },
+        {
+          "id": "crps_kb_vandevusse",
+          "text": "van de Vusse AC, Stomp-van den Berg SGM, Kessels AHF, Weber WEJ. Randomised controlled trial of gabapentin in complex regional pain syndrome type 1. BMC Neurol. 2004;4:13. doi:10.1186/1471-2377-4-13"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_crps_ueberblick",
+        "kb_crps_ursachen",
+        "kb_crps_diagnostik",
+        "kb_crps_konservativ",
+        "kb_crps_operativ",
+        "kb_crps_quellen"
       ]
     }
   },
