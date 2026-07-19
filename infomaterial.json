@@ -3893,6 +3893,22 @@
         {
           "id": "metatarsalgie_kb_harrasser22",
           "text": "Harrasser N, Toepfer A. Minimalinvasive Vorfußchirurgie: Konzept und Techniken. Orthopädie (Heidelb). 2023;52(1):69–81. doi:10.1007/s00132-022-04334-6"
+        },
+        {
+          "id": "metatarsalgie_kb_vernois24",
+          "text": "Vernois J, Redfern D. Minimally invasive alternatives for the treatment of lesser toe deformities. Foot Ankle Clin. 2024;29(4):671–679. doi:10.1016/j.fcl.2024.03.004"
+        },
+        {
+          "id": "metatarsalgie_kb_dejesus24",
+          "text": "de Jesús Mayagoitia-Vázquez J, López-López D, Miguel-Andrés I, Becerro-de-Bengoa-Vallejo R, Losa-Iglesias M, Gómez-Salgado J, Ortiz-Lango LÁ. A systematic review of the claw toe deformity: what is known and what is needed apart from surgical procedures. Int Wound J. 2024;21(10):e70073. doi:10.1111/iwj.70073"
+        },
+        {
+          "id": "metatarsalgie_kb_bastias21",
+          "text": "Bastías GF, Sage K, Orapin J, Schon L. Diaphyseal proximal phalangeal shortening osteotomy for correction of hammertoe deformity: operative technique and radiological outcomes. Foot Ankle Spec. 2024;17(1):29–38. doi:10.1177/19386400211012800"
+        },
+        {
+          "id": "metatarsalgie_kb_loder26",
+          "text": "Loder BG, Aljumail A, Cherry DA. Percutaneous hammertoe correction using extra-articular osteotomies: a retrospective study of patient-reported outcomes and complications. J Foot Ankle Surg. 2026;65(4):115.e1–115.e6. doi:10.1053/j.jfas.2026.01.019"
         }
       ],
       "stand": "2026-07",
@@ -3903,6 +3919,91 @@
         "kb_metatarsalgie_konservativ",
         "kb_metatarsalgie_operativ",
         "kb_metatarsalgie_quellen"
+      ]
+    },
+    "mpe_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Metatarsus primus elevatus",
+      "titel": "Metatarsus primus elevatus",
+      "untertitel": "Anhebung des ersten Mittelfußknochens",
+      "quellen": [
+        {
+          "id": "mpe_kb_lambrinudi38",
+          "text": "Lambrinudi C. Metatarsus primus elevatus. Proc R Soc Med. 1938;31(11):1273."
+        },
+        {
+          "id": "mpe_kb_horton99",
+          "text": "Horton GA, Park YW, Myerson MS. Role of metatarsus primus elevatus in the pathogenesis of hallux rigidus. Foot Ankle Int. 1999;20(12):777–780. doi:10.1177/107110079902001204"
+        },
+        {
+          "id": "mpe_kb_coughlin03",
+          "text": "Coughlin MJ, Shurnas PS. Hallux rigidus: demographics, etiology, and radiographic assessment. Foot Ankle Int. 2003;24(10):731–743. doi:10.1177/107110070302401002"
+        },
+        {
+          "id": "mpe_kb_roukis05",
+          "text": "Roukis TS. Metatarsus primus elevatus in hallux rigidus: fact or fiction? J Am Podiatr Med Assoc. 2005;95(3):221–228. doi:10.7547/0950221"
+        },
+        {
+          "id": "mpe_kb_bouaicha10",
+          "text": "Bouaicha S, Ehrmann C, Moor BK, Maquieira GJ, Espinosa N. Radiographic analysis of metatarsus primus elevatus and hallux rigidus. Foot Ankle Int. 2010;31(9):807–814. doi:10.3113/FAI.2010.0807"
+        },
+        {
+          "id": "mpe_kb_roukis10",
+          "text": "Roukis TS. Clinical outcomes after isolated periarticular osteotomies of the first metatarsal for hallux rigidus: a systematic review. J Foot Ankle Surg. 2010;49(6):553–560. doi:10.1053/j.jfas.2010.08.014"
+        },
+        {
+          "id": "mpe_kb_cheung18",
+          "text": "Cheung ZB, Myerson MS, Tracey J, Vulcano E. Weightbearing CT scan assessment of foot alignment in patients with hallux rigidus. Foot Ankle Int. 2018;39(1):67–74. doi:10.1177/1071100717732549"
+        },
+        {
+          "id": "mpe_kb_ohara19",
+          "text": "Ohara K, Tanaka Y, Taniguchi A, Kurokawa H, Kumai T, Yamada H. Is metatarsus primus elevatus truly observed in hallux rigidus? Radiographic study using mapping methods. J Orthop Sci. 2019;24(2):312–319. doi:10.1016/j.jos.2018.09.005"
+        },
+        {
+          "id": "mpe_kb_jones19",
+          "text": "Jones MT, Sanders AE, DaCunha RJ, Cody EA, Sofka CM, Nguyen J, Deland JT, Ellis SJ. Assessment of various measurement methods to assess first metatarsal elevation in hallux rigidus. Foot Ankle Orthop. 2019;4(3):2473011419875686. doi:10.1177/2473011419875686"
+        },
+        {
+          "id": "mpe_kb_anwander22",
+          "text": "Anwander H, Alkhatatba M, Lerch T, Schmaranzer F, Krause FG. Evaluation of radiographic features including metatarsus primus elevatus in hallux rigidus. J Foot Ankle Surg. 2022;61(4):831–835. doi:10.1053/j.jfas.2021.11.027"
+        },
+        {
+          "id": "mpe_kb_lee23",
+          "text": "Lee HY, Mansur NS, Lalevee M, Maly C, Iehl CJ, Hembree WC, Godoy-Santos A, de Cesar Netto C. Does metatarsus primus elevatus really exist in hallux rigidus? A weightbearing CT case-control study. Arch Orthop Trauma Surg. 2023;143(2):755–761. doi:10.1007/s00402-021-04168-5"
+        },
+        {
+          "id": "mpe_kb_fukushima25",
+          "text": "Fukushima H, Kubota M, Kimura T, Kihara T, Saito M. Investigating the relationship between metatarsal primus elevatus and hallux rigidus using weight-bearing computed tomography: a retrospective comparison study. Cureus. 2025;17(8):e91139. doi:10.7759/cureus.91139"
+        },
+        {
+          "id": "mpe_kb_kihara25",
+          "text": "Kihara T, Kimura T, Suzuki N, Hattori A, Saito M, Kubota M. Dysfunction of the windlass mechanism is associated with hallux rigidus: a case-control study. J Bone Joint Surg Am. 2025;107(6):558–564. doi:10.2106/JBJS.24.00437"
+        },
+        {
+          "id": "mpe_kb_camasta96",
+          "text": "Camasta CA. Hallux limitus and hallux rigidus. Clinical examination, radiographic findings, and natural history. Clin Podiatr Med Surg. 1996;13(3):423–448."
+        },
+        {
+          "id": "mpe_kb_youngswick82",
+          "text": "Youngswick FD. Modifications of the Austin bunionectomy for treatment of metatarsus primus elevatus associated with hallux limitus. J Foot Surg. 1982;21(2):114–116."
+        },
+        {
+          "id": "mpe_kb_simons21",
+          "text": "Simons P, Roth KE, Klos K. Lapidusarthrodese in Kombination mit einer osteochondralen Autotransplantation in das Metatarsale-I-Köpfchen zur Behandlung der fortgeschrittenen Arthrose des Großzehengrundgelenkes. Oper Orthop Traumatol. 2021;33(6):495–502."
+        },
+        {
+          "id": "mpe_kb_seiberg94",
+          "text": "Seiberg M, Felson S, Colson JP, Barth AH, Green RM, Green DR. Closing base wedge versus Austin bunionectomies for metatarsus primus adductus. J Am Podiatr Med Assoc. 1994;84(11):548–563."
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_mpe_ueberblick",
+        "kb_mpe_bedeutung",
+        "kb_mpe_diagnostik",
+        "kb_mpe_konservativ",
+        "kb_mpe_operativ",
+        "kb_mpe_quellen"
       ]
     }
   },

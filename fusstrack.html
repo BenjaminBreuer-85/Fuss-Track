@@ -1006,8 +1006,9 @@ function NonOpView({ onBack }) {
           {kbListe.map(function(k) {
             var kb = NONOP_KB[k];
             return (
-              <div key={k} onClick={function(){ setKbKey(k); setSeite(0); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{kb.label}</div>
+              <div key={k} onClick={function(){ setKbKey(k); setSeite(0); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+                <div style={{ flex: 1, fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{kb.label}</div>
+                <div style={{ fontSize: 28, lineHeight: 1, color: "var(--c-main)", fontWeight: 700, flexShrink: 0, paddingLeft: 6 }}>›</div>
               </div>
             );
           })}
@@ -1560,6 +1561,21 @@ function LandingView({ initialKbKey, initialMassnahme }) {
   };
   function cardHoverOn(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }
   function cardHoverOff(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }
+  // Menü-Karten der Startseite: klar als anklickbare Auswahloption erkennbar (Chevron + Schatten)
+  const menuCardStyle = {
+    padding: "18px 18px",
+    border: "1px solid rgba(0,0,0,.14)",
+    background: "#fff",
+    borderRadius: 10,
+    cursor: "pointer",
+    transition: "all .15s",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 12,
+    boxShadow: "0 1px 3px rgba(0,0,0,.06)"
+  };
+  const menuChevron = <div style={{ fontSize: 28, lineHeight: 1, color: "var(--c-main)", fontWeight: 700, flexShrink: 0, paddingLeft: 6 }}>›</div>;
 
   function goAufklaerung(kb) {
     // Direkt zur Aufklärung springen — verwendet den AUFKLAERUNG_OP_MAP-Key des Krankheitsbilds
@@ -1583,28 +1599,37 @@ function LandingView({ initialKbKey, initialMassnahme }) {
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {/* 1. Begleiter */}
           <div onClick={function() { setBereich("begleiter"); setBegleiterTyp(null); }}
-               style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Begleiter</div>
-            <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Persönliche Begleitung vor und nach Ihrer Behandlung — mit Phasenkalender und Erinnerungen.
+               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Begleiter</div>
+              <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                Schritt-für-Schritt-Begleitung mit Informationen und Erinnerungen vor und nach Ihrer Behandlung.
+              </div>
             </div>
+            {menuChevron}
           </div>
           {/* 2. Infomaterial */}
           <div onClick={function() { setBereich("info"); setInfoKat(null); }}
-               style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                        <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Infomaterial</div>
-            <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Verständliche Informationen zu Eingriffen und Erkrankungen rund um Fuß und Sprunggelenk.
+               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Infomaterial</div>
+              <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                Verständliche Informationen zu Erkrankungen und Behandlung rund um das Fuß- und Sprunggelenk.
+              </div>
             </div>
+            {menuChevron}
           </div>
           {/* 3. Diagnose-Helfer */}
           {KATALOG && (
             <div onClick={function() { window.location.href = buildUrl({ finder: "1" }); }}
-                 style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                            <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Diagnose-Helfer</div>
-              <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-                Grenzen Sie mögliche Ursachen Ihrer Beschwerden ein und finden Sie die passende Sprechstunde.
+                 style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Diagnose-Helfer</div>
+                <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                  Grenzen Sie mögliche Ursachen länger bestehender Beschwerden ein.
+                </div>
               </div>
+              {menuChevron}
             </div>
           )}
         </div>
@@ -1630,10 +1655,19 @@ function LandingView({ initialKbKey, initialMassnahme }) {
     if (massnahmeKey) {
       const mInfo = NONOP_MASSNAHMEN[massnahmeKey] || {};
       const mAbschnitte = mInfo.abschnitte || [];
-      const mGesamt = mAbschnitte.length + 1;
+      // Single-Source: Übungsschritte kommen aus dem Nicht-OP-Begleiter (opt-in via _begleiterRef).
+      // So werden Übungen nur einmal gepflegt (nonop.json) und in beiden Bereichen identisch gezeigt.
+      const mUebungen = (function(){
+        if (!mInfo._begleiterRef || typeof NONOP_KB === "undefined") return [];
+        var kbRef = NONOP_KB[mInfo._begleiterRef]; if (!kbRef) return [];
+        return (typeof NONOP_STUFEN !== "undefined" && NONOP_STUFEN[kbRef.uebungen]) || [];
+      })();
+      const mGesamt = mAbschnitte.length + mUebungen.length + 1;
       const mIdx = Math.max(0, Math.min(mGesamt - 1, massnahmeSeite));
       const mGeheZu = function(n){ setMassnahmeSeite(Math.max(0, Math.min(mGesamt - 1, n))); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); };
-      const mSteps = [{ key: "info", label: "Info", wide: true }].concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1) }; }));
+      const mSteps = [{ key: "info", label: "Info", wide: true }]
+        .concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1) }; }))
+        .concat(mUebungen.map(function(u){ return { key: "u" + u.id, label: "Ü" + u.nr }; }));
       const mZurueck = function(){ setMassnahmeKey(null); setMassnahmeSeite(0); };
 
       // ===== Dynamische Quellen für Maßnahmen (opt-in via mInfo.quellen) =====
@@ -1660,10 +1694,10 @@ function LandingView({ initialKbKey, initialMassnahme }) {
         var uncited = all.filter(function (q) { return cited.indexOf(q.id) < 0; });
         var uncitedPart = "";
         if (uncited.length > 0) {
-          var body = uncited.map(function (q) { return "• " + q.text; }).join("\n");
-          uncitedPart = cited.length > 0 ? "Weiterführende Literatur:\n\n" + body : body;
+          var body = uncited.map(function (q) { return "- " + q.text; }).join("\n");
+          uncitedPart = cited.length > 0 ? "## Weiterführende Literatur\n\n" + body : body;
         }
-        return [citedPart, uncitedPart].filter(Boolean).join("\n\n") || "Keine Quellen hinterlegt.";
+        return [citedPart, uncitedPart].filter(Boolean).join("\n\n") || "_Keine Quellen hinterlegt._";
       }
 
       let mInhalt;
@@ -1682,19 +1716,74 @@ function LandingView({ initialKbKey, initialMassnahme }) {
                 );
               })}
             </div>
+            {mUebungen.length > 0 && (
+              <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginTop: 8 }}>
+                <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Die Übungen: {mUebungen.length}</div>
+                {mUebungen.map(function(u, i){
+                  return (
+                    <div key={u.id} onClick={function(){ mGeheZu(mAbschnitte.length + 1 + i); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mUebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                      <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{u.nr}.</strong> {u.titel}</div>
+                      <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
+                    </div>
+                  );
+                })}
+                <div style={{ marginTop: 10, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5 }}>Dieselben Übungen wie im Nicht-OP-Begleiter (gemeinsame Quelle).</div>
+              </div>
+            )}
             {mInfo.stand && <div style={{ marginTop: 12, fontSize: 11, color: "var(--c-text-muted)" }}>Stand: {mInfo.stand}</div>}
             <div style={{ marginTop: 12, fontSize: 11, color: "var(--c-text-muted)", lineHeight: 1.5, textAlign: "center" }}>Allgemeine Information. Ob diese Maßnahme in Ihrem Fall sinnvoll ist, klärt Ihre Ärztin oder Ihr Arzt.</div>
           </div>
         );
-      } else {
+      } else if (mIdx <= mAbschnitte.length) {
         const a = mAbschnitte[mIdx - 1] || {};
         const istMQuellen = !!mQuellen && a.titel === "Quellen";
         mInhalt = (
           <div>
             {a.titel && <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>{a.titel}</div>}
             {istMQuellen
-              ? <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{mQuellenText()}</div>
-              : (a.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line" }}>{mProcessRefs(a.text)}</div>)}
+              ? <MarkdownView source={mQuellenText()} />
+              : (a.text && <MarkdownView source={mProcessRefs(a.text)} />)}
+          </div>
+        );
+      } else {
+        // Übungs-Seite: Inhalt kommt aus dem Nicht-OP-Begleiter (nonop.json) — Single-Source.
+        const u = mUebungen[mIdx - 1 - mAbschnitte.length] || {};
+        const c = (typeof NONOP_INHALTE !== "undefined" && NONOP_INHALTE[u.inhalt]) || {};
+        mInhalt = (
+          <div>
+            <div style={{ marginBottom: 14 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5 }}>Übung {u.nr} von {mUebungen.length}</div>
+              <div style={{ fontSize: 19, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.25 }}>{u.titel}</div>
+            </div>
+            {c.ziel && (
+              <div style={{ marginBottom: 16, padding: "14px 16px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Ziel</div>
+                <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.ziel}</div>
+              </div>
+            )}
+            {c.schritte && c.schritte.length > 0 && (
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 12 }}>So geht's</div>
+                {c.schritte.map(function(st, i){
+                  return (
+                    <div key={i} style={{ marginBottom: 18 }}>
+                      <div style={{ display: "flex", gap: 12, marginBottom: 8 }}>
+                        <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
+                        <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
+            {c.dosis && (
+              <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+                <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
+              </div>
+            )}
+            {c.hinweis && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, fontStyle: "italic" }}>{c.hinweis}</div>}
           </div>
         );
       }
@@ -1741,10 +1830,13 @@ function LandingView({ initialKbKey, initialMassnahme }) {
             {INFO_KATEGORIEN.map(function(kat) {
               return (
                 <div key={kat.key} onClick={function() { setInfoKat(kat.key); }}
-                     style={cardClickStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                  <div style={{ fontSize: 30, marginBottom: 6 }}>{kat.icon}</div>
-                  <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kat.label}</div>
-                  <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>{kat.sub}</div>
+                     style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 30, marginBottom: 6 }}>{kat.icon}</div>
+                    <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kat.label}</div>
+                    <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>{kat.sub}</div>
+                  </div>
+                  {menuChevron}
                 </div>
               );
             })}
@@ -1803,19 +1895,14 @@ function LandingView({ initialKbKey, initialMassnahme }) {
               return (
                 <div key={e.key}
                      onClick={function() { if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung" }); } }}
-                     style={{ padding: 16, border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", gap: 12, alignItems: "flex-start" }}
+                     style={{ padding: 16, border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", gap: 12, alignItems: "center", boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}
                      onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-                  <div style={{ fontSize: 20, lineHeight: 1, marginTop: 2 }}>{aktiveKat.icon}</div>
+                  <div style={{ fontSize: 20, lineHeight: 1 }}>{aktiveKat.icon}</div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 3 }}>{titel}</div>
-                    {e.daten.untertitel && infoKat !== "op_technik" && infoKat !== "nichtoperativ" && (
-                      <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45 }}>{e.daten.untertitel}</div>
-                    )}
-                    {infoKat === "nichtoperativ" && e.daten.kurz && (
-                      <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.45 }}>{e.daten.kurz}</div>
-                    )}
+                    {/* Untertitel in der Liste entfernt – Inhalt steht in den Tabs der Detailseite */}
                   </div>
-                  <div style={{ marginLeft: "auto", color: "var(--c-text-muted)", fontSize: 18, alignSelf: "center" }}>›</div>
+                  {menuChevron}
                 </div>
               );
             })}
@@ -1836,23 +1923,27 @@ function LandingView({ initialKbKey, initialMassnahme }) {
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {/* OP-Begleiter (aktiv) */}
           <div onClick={function() { setBegleiterTyp("op"); setSelectedKb(null); setModus(null); }}
-               style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }}
-               onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>OP-Begleiter</div>
-            <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Begleitung rund um einen geplanten oder durchgeführten Eingriff — vor und nach der Operation.
+               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>OP-Begleiter</div>
+              <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                Begleitung rund um einen geplanten oder durchgeführten Eingriff — vor und nach der Operation.
+              </div>
             </div>
+            {menuChevron}
           </div>
           {/* Non-OP-Begleiter (aktiv) */}
           <div onClick={function() { setBegleiterTyp("nonop"); setSelectedKb(null); setModus(null); }}
-               style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }}
-               onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>
-              Non-OP-Begleiter
+               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>
+                Non-OP-Begleiter
+              </div>
+              <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                Begleitung bei konservativer Behandlung — z.&nbsp;B. nach Außenbandverletzung. Mit Belastungsstufen und Übungen ab dem Unfalltag.
+              </div>
             </div>
-            <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-              Begleitung bei konservativer Behandlung — z.&nbsp;B. nach Außenbandverletzung. Mit Belastungsstufen und Übungen ab dem Unfalltag.
-            </div>
+            {menuChevron}
           </div>
         </div>
       </div>
@@ -1878,18 +1969,13 @@ function LandingView({ initialKbKey, initialMassnahme }) {
             return (
               <div key={kb.key}
                    onClick={function() { setSelectedKb(kb); setModus("begleitung"); }}
-                   style={{
-                     padding: "20px 18px",
-                     border: "1px solid rgba(0,0,0,.12)",
-                     background: "#fff",
-                     borderRadius: 10,
-                     cursor: "pointer",
-                     transition: "all .15s"
-                   }}
-                   onMouseEnter={function(e) { e.currentTarget.style.border = "1px solid var(--c-main)"; e.currentTarget.style.background = "var(--c-bg)"; }}
-                   onMouseLeave={function(e) { e.currentTarget.style.border = "1px solid rgba(0,0,0,.12)"; e.currentTarget.style.background = "#fff"; }}>
-                                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kb.label}</div>
-                <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>{kb.untertitel}</div>
+                   style={menuCardStyle}
+                   onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{kb.label}</div>
+                  <div style={{ fontSize: 12, color: "var(--c-text-muted)" }}>{kb.untertitel}</div>
+                </div>
+                {menuChevron}
               </div>
             );
           })}
@@ -2145,11 +2231,6 @@ function AufklaerungsView({ opKey, kbOrigin }) {
         <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.2 }}>
           {aufkl.titel}
         </div>
-        {aufkl.untertitel && (
-          <div style={{ fontSize: 12, color: "var(--c-text-muted)", marginTop: 2 }}>
-            {aufkl.untertitel}
-          </div>
-        )}
       </div>
 
       {/* Mini-Tabs zum direkten Springen */}
@@ -2193,11 +2274,7 @@ function AufklaerungsView({ opKey, kbOrigin }) {
 
       <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
                     padding: "20px 18px", minHeight: 240, overflow: "hidden", wordWrap: "break-word" }}>
-        {current.titel && (
-          <h2 style={{ margin: "0 0 12px", fontSize: 18, color: "var(--c-main)", lineHeight: 1.3 }}>
-            {current.titel}
-          </h2>
-        )}
+        {/* Slide-Titel entfernt – steht bereits in den Tabs */}
         {current.untertitel && (
           <div style={{ fontSize: 14, fontWeight: 500, color: "var(--c-text)", marginBottom: 12 }}>
             {current.untertitel}
