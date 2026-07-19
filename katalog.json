@@ -79,7 +79,8 @@
       "regionen": [
         "grosszehe",
         "mtp1_dorsal"
-      ]
+      ],
+      "info_ref": "hallux_limitus_kb"
     },
     {
       "id": "sesamoidopathie",
@@ -161,7 +162,8 @@
         "mtp5_lateral",
         "mtp_region",
         "vorfuss_plantar"
-      ]
+      ],
+      "info_ref": "metatarsalgie_kb"
     },
     {
       "id": "stressfraktur_mt",
@@ -171,7 +173,8 @@
       "regionen": [
         "mtp_region",
         "vorfuss_plantar"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "freiberg_koehler",
@@ -215,7 +218,8 @@
       "regionen": [
         "medialer_fussrand",
         "tn_gelenk"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "os_tibiale_externum",
@@ -511,7 +515,8 @@
       "regionen": [
         "ferse_plantar_tuber",
         "rueckfuss_medial_tief"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "polyneuropathie",
@@ -582,7 +587,8 @@
       "haeufigkeit": "mittel",
       "regionen": [
         "mittelfuss_zentral"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "tarsaler_hoecker",
@@ -693,7 +699,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "mtp1_plantar"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "fettkoerperatrophie_ferse",
@@ -802,7 +809,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "syndesmose_distale_tibia"
-      ]
+      ],
+      "info_ref": "stressfraktur_kmoe_kb"
     },
     {
       "id": "laterale_ueberlastung",

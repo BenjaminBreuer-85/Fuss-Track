@@ -69,61 +69,102 @@
         "hv_diagnostik",
         "hv_konservativ",
         "hv_operativ",
+        "hv_komplikationen",
         "hv_quellen"
       ],
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "2026-07",
       "quellen": [
         {
-          "id": "hallux_valgus_q1",
-          "text": "Cai Y, Song Y, He M, et al. Global prevalence and incidence of hallux valgus: a systematic review and meta-analysis. J Foot Ankle Res. 2023;16(1):63. doi:10.1186/s13047-023-00661-9"
+          "id": "hv_ll",
+          "text": "Deutsche Assoziation für Fuß und Sprunggelenk (D.A.F.) der DGOU. S2e-Leitlinie Hallux valgus. AWMF-Registernummer 187-051. Version 5.x, Stand 2024. https://register.awmf.org/de/leitlinien/detail/187-051"
         },
         {
-          "id": "hallux_valgus_q2",
+          "id": "hv_ettinger24",
+          "text": "Ettinger S, Spindler FT, Savli M, Baumbach SF. Correction potential and outcome of various surgical procedures for hallux valgus surgery: a living systematic review and meta-analysis. Arch Orthop Trauma Surg. 2024;144(11):4725–4736. doi:10.1007/s00402-024-05521-0"
+        },
+        {
+          "id": "hv_ettinger25",
           "text": "Ettinger S, Spindler FT, Marschall U, Polzer H, Stukenborg-Colsman C, Baumbach SF. Hallux valgus: prevalence and treatment options. Dtsch Arztebl Int. 2025;122(11):308–314. doi:10.3238/arztebl.m2025.0068"
         },
         {
-          "id": "hallux_valgus_q3",
+          "id": "hv_hurn",
+          "text": "Hurn SE, Matthews BG, Munteanu SE, Menz HB. Effectiveness of nonsurgical interventions for hallux valgus: a systematic review and meta-analysis. Arthritis Care Res (Hoboken). 2022;74(10):1676–1688. doi:10.1002/acr.24603"
+        },
+        {
+          "id": "hv_barg",
+          "text": "Barg A, Harmer JR, Presson AP, Zhang C, Lackey M, Saltzman CL. Unfavorable outcomes following surgical treatment of hallux valgus deformity: a systematic literature review. J Bone Joint Surg Am. 2018;100(18):1563–1573. doi:10.2106/JBJS.17.00975"
+        },
+        {
+          "id": "hv_cai",
+          "text": "Cai Y, Song Y, He M, et al. Global prevalence and incidence of hallux valgus: a systematic review and meta-analysis. J Foot Ankle Res. 2023;16(1):63. doi:10.1186/s13047-023-00661-9"
+        },
+        {
+          "id": "hv_roddy",
+          "text": "Roddy E, Zhang W, Doherty M. Prevalence and associations of hallux valgus in a primary care population. Arthritis Rheum. 2008;59(6):857–862. doi:10.1002/art.23709"
+        },
+        {
+          "id": "hv_perera",
           "text": "Perera AM, Mason L, Stephens MM. The pathogenesis of hallux valgus. J Bone Joint Surg Am. 2011;93(17):1650–1661. doi:10.2106/JBJS.H.01630"
         },
         {
-          "id": "hallux_valgus_q4",
-          "text": "Rosemberg DL, Gustafson JA, Bordignon G, Bohl DD, Leporace G, Metsavaht L. Biokinetic evaluation of hallux valgus during gait: a systematic review. Foot Ankle Int. 2023;44(8):763–777. doi:10.1177/10711007231166667"
-        },
-        {
-          "id": "hallux_valgus_q5",
+          "id": "hv_munteanu",
           "text": "Munteanu SE, Menz HB, Wark JD, et al. Hallux valgus, by nature or nurture? A twin study. Arthritis Care Res (Hoboken). 2017;69(9):1421–1428. doi:10.1002/acr.23154"
         },
         {
-          "id": "hallux_valgus_q6",
-          "text": "Sun N, Wang X, Xu X, et al. Assessing the AIR classification reliability for estimating pronation of the first metatarsal. BMC Musculoskelet Disord. 2024;25(1):1034. doi:10.1186/s12891-024-08158-7"
+          "id": "hv_menz",
+          "text": "Menz HB, Lord SR. Gait instability in older people with hallux valgus. Foot Ankle Int. 2005;26(6):483–489. doi:10.1177/107110070502600610"
         },
         {
-          "id": "hallux_valgus_q7",
-          "text": "Ying J, Xu Y, István B, Ren F. Adjusted indirect and mixed comparisons of conservative treatments for hallux valgus: a systematic review and network meta-analysis. Int J Environ Res Public Health. 2021;18(7):3841. doi:10.3390/ijerph18073841"
+          "id": "hv_coughlin01",
+          "text": "Coughlin MJ, Freund E. The reliability of angular measurements in hallux valgus deformities. Foot Ankle Int. 2001;22(5):369–379. doi:10.1177/107110070102200503"
         },
         {
-          "id": "hallux_valgus_q8",
-          "text": "Colò G, Leigheb M, Surace MF, Fusini F. The efficacy of shoe modification and orthotics in hallux valgus deformity: a comprehensive review of the literature. Musculoskelet Surg. 2024;108(4):395–402. doi:10.1007/s12306-024-00839-9"
+          "id": "hv_hardy",
+          "text": "Hardy RH, Clapham JCR. Observations on hallux valgus. J Bone Joint Surg Br. 1951;33-B(3):376–391. doi:10.1302/0301-620X.33B3.376"
         },
         {
-          "id": "hallux_valgus_q9",
-          "text": "Fukushi JI, Tanaka H, Nishiyama T, et al. Comparison of outcomes of different osteotomy sites for hallux valgus: a systematic review and meta-analysis. J Orthop Surg (Hong Kong). 2022;30(2):10225536221110473. doi:10.1177/10225536221110473"
+          "id": "hv_laporta",
+          "text": "LaPorta G, Melillo T, Olinsky D. X-ray evaluation of hallux abducto valgus deformity. J Am Podiatry Assoc. 1974;64(8):544–566."
         },
         {
-          "id": "hallux_valgus_q10",
-          "text": "Waehner M, Klos K, Polzer H, et al. Lapidus arthrodesis for correction of hallux valgus deformity: a systematic review and meta-analysis. Foot Ankle Spec. 2024;19(1):58–69. doi:10.1177/19386400241233832"
+          "id": "hv_wagner",
+          "text": "Wagner P, Wagner E. Is the rotational deformity important in our decision-making process for correction of hallux valgus deformity? Foot Ankle Clin. 2018;23(2):205–217. doi:10.1016/j.fcl.2018.01.009"
         },
         {
-          "id": "hallux_valgus_q11",
-          "text": "Choi JY, Song TH, Suh JS. Outcome comparison of minimally invasive proximal and distal chevron Akin osteotomies in patients with severe hallux valgus deformity: a randomized prospective study. Int Orthop. 2024;48(8):2153–2163. doi:10.1007/s00264-024-06204-6"
+          "id": "hv_okuda",
+          "text": "Okuda R, Kinoshita M, Yasuda T, Jotoku T, Kitano N, Shima H. The shape of the lateral edge of the first metatarsal head as a risk factor for recurrence of hallux valgus. J Bone Joint Surg Am. 2007;89(10):2163–2172. doi:10.2106/JBJS.F.01455"
         },
         {
-          "id": "hallux_valgus_q12",
+          "id": "hv_pentikainen",
+          "text": "Pentikäinen I, Ojala R, Ohtonen P, Piippo J, Leppilahti J. Preoperative radiological factors correlated to long-term recurrence of hallux valgus following distal chevron osteotomy. Foot Ankle Int. 2014;35(12):1262–1267. doi:10.1177/1071100714548703"
+        },
+        {
+          "id": "hv_ezzatvar",
           "text": "Ezzatvar Y, López-Bueno L, Fuentes-Aparicio L, Dueñas L. Prevalence and predisposing factors for recurrence after hallux valgus surgery: a systematic review and meta-analysis. J Clin Med. 2021;10(24):5753. doi:10.3390/jcm10245753"
         },
         {
-          "id": "hallux_valgus_q13",
-          "text": "Menz HB, Lord SR. Gait instability in older people with hallux valgus. Foot Ankle Int. 2005;26(6):483–489. doi:10.1177/107110070502600610"
+          "id": "hv_ying",
+          "text": "Ying J, Xu Y, István B, Ren F. Adjusted indirect and mixed comparisons of conservative treatments for hallux valgus: a systematic review and network meta-analysis. Int J Environ Res Public Health. 2021;18(7):3841. doi:10.3390/ijerph18073841"
+        },
+        {
+          "id": "hv_tehraninasr",
+          "text": "Tehraninasr A, Saeedi H, Forogh B, Bahramizadeh M, Keyhani MR. Effects of insole with toe-separator and night splint on patients with painful hallux valgus: a comparative study. Prosthet Orthot Int. 2008;32(1):79–83. doi:10.1080/03093640701669074"
+        },
+        {
+          "id": "hv_nakagawa",
+          "text": "Nakagawa R, Yamaguchi S, Akagi R, et al. Clinical and radiographic outcomes of foot orthosis for hallux valgus: a prospective one-year follow-up study. Foot Ankle Orthop. 2016;1(1). doi:10.1177/2473011416S00104"
+        },
+        {
+          "id": "hv_colo",
+          "text": "Colò G, Leigheb M, Surace MF, Fusini F. The efficacy of shoe modification and orthotics in hallux valgus deformity: a comprehensive review of the literature. Musculoskelet Surg. 2024;108(4):395–402. doi:10.1007/s12306-024-00839-9"
+        },
+        {
+          "id": "hv_fukushi",
+          "text": "Fukushi JI, Tanaka H, Nishiyama T, et al. Comparison of outcomes of different osteotomy sites for hallux valgus: a systematic review and meta-analysis. J Orthop Surg (Hong Kong). 2022;30(2):10225536221110473. doi:10.1177/10225536221110473"
+        },
+        {
+          "id": "hv_waehner",
+          "text": "Waehner M, Klos K, Polzer H, et al. Lapidus arthrodesis for correction of hallux valgus deformity: a systematic review and meta-analysis. Foot Ankle Spec. 2024;19(1):58–69. doi:10.1177/19386400241233832"
         }
       ]
     },
@@ -450,6 +491,38 @@
         {
           "id": "hallux_rigidus_q11",
           "text": "Stumpner T, et al. Return to sport after arthrodesis and implant arthroplasty for hallux rigidus: a systematic review. Arch Orthop Trauma Surg. 2025;145(1):471. doi:10.1007/s00402-025-06082-6"
+        },
+        {
+          "id": "hallux_rigidus_q12",
+          "text": "Suh YM, Tennant JN. Classification and radiology. Foot Ankle Clin. 2023;29(3):389–404. doi:10.1016/j.fcl.2023.09.009"
+        },
+        {
+          "id": "hallux_rigidus_q13",
+          "text": "Di Caprio F, Mosca M, Ceccarelli F, Caravelli S, Vocale E, Zaffagnini S, Ponziani L. Hallux rigidus: current concepts review and treatment algorithm with special focus on interposition arthroplasty. Acta Biomed. 2022;93(5):e2022218. doi:10.23750/abm.v93i5.12811"
+        },
+        {
+          "id": "hallux_rigidus_q14",
+          "text": "Lunati M, Mahmoud K, Kadakia R, Coleman M, Bariteau J. Complications associated with the surgical management of hallux rigidus. Orthop Clin North Am. 2021;52(3):291–296. doi:10.1016/j.ocl.2021.03.003"
+        },
+        {
+          "id": "hallux_rigidus_q15",
+          "text": "Jeremic A, Abussa R. Cartiva or fusion for hallux rigidus? A systematic review and meta-analysis. J Foot Ankle Surg. 2026;65(4):138.e1–138.e6. doi:10.1053/j.jfas.2026.03.003"
+        },
+        {
+          "id": "hallux_rigidus_q16",
+          "text": "Anderson MR, Ho BS, Baumhauer JF. Current concepts review: hallux rigidus. Foot Ankle Orthop. 2023;8(3):24730114231188123. doi:10.1177/24730114231188123"
+        },
+        {
+          "id": "hallux_rigidus_q17",
+          "text": "Bhimani R, Labib SA. Metatarsophalangeal arthroplasty in hallux rigidus. Foot Ankle Clin. 2024;29(3):495–505. doi:10.1016/j.fcl.2023.12.003"
+        },
+        {
+          "id": "hallux_rigidus_q18",
+          "text": "Rajan RA, Shrestha J, Upadhyay V, Ananda-Rajan D, Sarhan I. Long-term survival of the TOEFIT Plus first-metatarsophalangeal joint replacement for end-stage hallux rigidus. Foot Ankle Int. 2025;46(12):1370–1376. doi:10.1177/10711007251372891"
+        },
+        {
+          "id": "hallux_rigidus_q19",
+          "text": "de Bot RTAL, Veldman HD, Eurlings R, Stevens J, Hermus JPS, Witlox AM. Metallic hemiarthroplasty or arthrodesis of the first metatarsophalangeal joint as treatment for hallux rigidus: a systematic review and meta-analysis. Foot Ankle Surg. 2021;28(2):139–152. doi:10.1016/j.fas.2021.03.004"
         }
       ]
     },
@@ -1996,34 +2069,56 @@
       "untertitel": "Abgesunkenes Längsgewölbe mit Rückfußvalgus — flexible und fixierte Formen",
       "betrifft_eingriffe": [],
       "slides": [
-        "ppv_krankheitsbild",
+        "ppv_ueberblick",
+        "ppv_ursachen",
         "ppv_diagnostik",
-        "ppv_behandlung",
+        "ppv_konservativ",
+        "ppv_operativ",
         "ppv_quellen"
       ],
       "_review": true,
       "_entwurf": true,
-      "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen",
+      "stand": "2026-07",
       "quellen": [
         {
-          "id": "ppv_ksf_q1",
-          "text": "Röhm J, et al. Double versus triple arthrodesis for adult-acquired flatfoot deformity due to stage III PTTD: prospective comparative study. (PMC8494666)"
+          "id": "ppv_ksf_myerson2020",
+          "text": "Myerson MS, Thordarson DB, Johnson JE, Hintermann B, Sangeorzan BJ, Deland JT, Schon LC, Ellis SJ, de Cesar Netto C. Classification and nomenclature: progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1271–1276. doi:10.1177/1071100720950722"
         },
         {
-          "id": "ppv_ksf_q2",
-          "text": "Jennison T, et al. Subtalar Arthrodesis Union Rates With and Without Adjacent Ankle Arthrodesis. Foot Ankle Int. 2022."
+          "id": "ppv_ksf_deland",
+          "text": "Deland JT. Adult-acquired flatfoot deformity. J Am Acad Orthop Surg. 2008;16(7):399–406. doi:10.5435/00124635-200807000-00005"
         },
         {
-          "id": "ppv_ksf_q3",
-          "text": "Radiographic Outcomes of Talonavicular Joint Arthrodesis in Stage III AAFD Reconstruction. J Foot Ankle Surg. 2021."
+          "id": "ppv_ksf_polichetti",
+          "text": "Polichetti C, Borruto MI, Lauriero F, Caravelli S, Mosca M, Maccauro G, Greco T, Perisano C. Adult acquired flatfoot deformity: a narrative review about imaging findings. Diagnostics (Basel). 2023;13(2):225. doi:10.3390/diagnostics13020225"
         },
         {
-          "id": "ppv_ksf_q4",
-          "text": "S2k-Leitlinie „Kindlicher Knick-Senk-Fuß\" (AWMF) — Definition und Stadien."
+          "id": "ppv_ksf_orr",
+          "text": "Orr JD, Nunley JA 2nd. Isolated spring ligament failure as a cause of adult-acquired flatfoot deformity. Foot Ankle Int. 2013;34(6):818–823. doi:10.1177/1071100713483099"
         },
         {
-          "id": "ppv_ksf_q5",
-          "text": "Übersichten zur adulten erworbenen Plattfußdeformität (Tibialis-posterior-Insuffizienz) und zum Einfluss von Übergewicht."
+          "id": "ppv_ksf_myerson1989",
+          "text": "Myerson M, Solomon G, Shereff M. Posterior tibial tendon dysfunction: its association with seronegative inflammatory disease. Foot Ankle. 1989;9(5):219–225. doi:10.1177/107110078900900503"
+        },
+        {
+          "id": "ppv_ksf_greisberg",
+          "text": "Greisberg J, Assal M, Hansen ST Jr, Sangeorzan BJ. Isolated medial column stabilization improves alignment in adult-acquired flatfoot. Clin Orthop Relat Res. 2005;(435):197–202. doi:10.1097/01.blo.0000157658.17056.46"
+        },
+        {
+          "id": "ppv_ksf_thordarson",
+          "text": "Thordarson DB, Schmotzer H, Chon J, Peters J. Dynamic support of the human longitudinal arch: a biomechanical evaluation. Clin Orthop Relat Res. 1995;(316):165–172. PMID 7634700"
+        },
+        {
+          "id": "ppv_ksf_saltzman",
+          "text": "Saltzman CL, el-Khoury GY. The hindfoot alignment view. Foot Ankle Int. 1995;16(9):572–576. doi:10.1177/107110079501600911"
+        },
+        {
+          "id": "ppv_ksf_moraleda",
+          "text": "Moraleda L, Mubarak SJ. Flexible flatfoot: differences in the relative alignment of each segment of the foot between symptomatic and asymptomatic patients. J Pediatr Orthop. 2011;31(4):421–428. doi:10.1097/BPO.0b013e31821723ce"
+        },
+        {
+          "id": "ppv_ksf_evans",
+          "text": "Evans AM, Rome K, Carroll M, Hawke F. Foot orthoses for treating paediatric flat feet. Cochrane Database Syst Rev. 2022;1(1):CD006311. doi:10.1002/14651858.CD006311.pub4"
         }
       ]
     },
@@ -2209,7 +2304,8 @@
         "kb_ains_ueberblick",
         "kb_ains_ursachen",
         "kb_ains_diagnostik",
-        "kb_ains_behandlung",
+        "kb_ains_konservativ",
+        "kb_ains_operativ",
         "kb_ains_quellen"
       ],
       "_review": true,
@@ -2258,6 +2354,42 @@
         {
           "id": "achilles_insertional_kb_q11",
           "text": "Sivrika AP, Papadamou E, Kypraios G, Lamnisos D, Georgoudis G, Stasinopoulos D. Comparability of the effectiveness of different types of exercise in the treatment of Achilles tendinopathy: a systematic review. Healthcare (Basel). 2023;11(16):2268. doi:10.3390/healthcare11162268"
+        },
+        {
+          "id": "achilles_insertional_kb_q12",
+          "text": "Nicholson CW, Berlet GC, Lee TH. Prediction of the success of nonoperative treatment of insertional Achilles tendinosis based on MRI. Foot Ankle Int. 2007;28(4):472–477. doi:10.3113/FAI.2007.0472"
+        },
+        {
+          "id": "achilles_insertional_kb_q13",
+          "text": "Rompe JD, Furia J, Maffulli N. Eccentric loading compared with shock wave treatment for chronic insertional Achilles tendinopathy: a randomized, controlled trial. J Bone Joint Surg Am. 2008;90(1):52–61. doi:10.2106/JBJS.F.01494"
+        },
+        {
+          "id": "achilles_insertional_kb_q14",
+          "text": "Coombes BK, Bisset L, Vicenzino B. Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials. Lancet. 2010;376(9754):1751–1767. doi:10.1016/S0140-6736(10)61160-9"
+        },
+        {
+          "id": "achilles_insertional_kb_q15",
+          "text": "Komi PV, Fukashiro S, Järvinen M. Biomechanical loading of Achilles tendon during normal locomotion. Clin Sports Med. 1992;11(3):521–531. PMID 1638640"
+        },
+        {
+          "id": "achilles_insertional_kb_q16",
+          "text": "Maffulli N, Papalia R, D'Adamio S, Diaz Balzani L, Denaro V. Pharmacological interventions for the treatment of Achilles tendinopathy: a systematic review of randomized controlled trials. Br Med Bull. 2015;113(1):101–115. doi:10.1093/bmb/ldu040"
+        },
+        {
+          "id": "achilles_insertional_kb_q17",
+          "text": "Muto T, Kokubu T, Mifune Y, et al. Temporary inductions of matrix metalloprotease-3 and tissue injury after corticosteroid injection in rat Achilles tendon. Int J Mol Sci. 2014;15(11):20918–20932. doi:10.3390/ijms151120918"
+        },
+        {
+          "id": "achilles_insertional_kb_q18",
+          "text": "Kaux JF, Emonds-Alt T. The use of platelet-rich plasma to treat chronic tendinopathies: a technical analysis. Platelets. 2018;29(3):213–227. doi:10.1080/09537104.2017.1336211"
+        },
+        {
+          "id": "achilles_insertional_kb_q19",
+          "text": "Lynen N, De Vroey T, Spiegel I, et al. Comparison of peritendinous hyaluronan injections versus extracorporeal shock wave therapy in the treatment of painful Achilles' tendinopathy: a randomized clinical efficacy and safety study. Arch Phys Med Rehabil. 2017;98(1):64–71. doi:10.1016/j.apmr.2016.08.470"
+        },
+        {
+          "id": "achilles_insertional_kb_q20",
+          "text": "Praet SFE, Purdam CR, Welvaert M, et al. Oral supplementation of specific collagen peptides combined with calf-strengthening exercises enhances function and reduces pain in Achilles tendinopathy patients. Nutrients. 2019;11(1):76. doi:10.3390/nu11010076"
         }
       ]
     },
@@ -2582,27 +2714,77 @@
       "slides": [
         "kb_jhv_ueberblick",
         "kb_jhv_ursachen",
-        "kb_jhv_behandlung",
+        "kb_jhv_diagnostik",
+        "kb_jhv_konservativ",
+        "kb_jhv_operativ",
         "kb_jhv_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026, PubMed-verifiziert — ärztlich zu prüfen",
       "quellen": [
         {
-          "id": "juveniler_hv_kb_q1",
-          "text": "Cole WH. (Prävalenz des juvenilen Hallux valgus). 1959."
+          "id": "juveniler_hv_kb_cole1959",
+          "text": "Cole WH. Foot inspection of the school child. J Am Podiatry Assoc. 1959;49:446-454."
         },
         {
-          "id": "juveniler_hv_kb_q2",
-          "text": "Piquet-Vidal, et al. Genetische Komponente des juvenilen Hallux valgus. 2007."
+          "id": "juveniler_hv_kb_piquevidal2007",
+          "text": "Piqué-Vidal C, Solé MT, Antich J. Hallux valgus inheritance: pedigree research in 350 patients with bunion deformity. J Foot Ankle Surg. 2007;46(3):149-154. doi:10.1053/j.jfas.2006.10.011"
         },
         {
-          "id": "juveniler_hv_kb_q3",
-          "text": "Maier E, et al. Zeitpunkt des Wachstumsabschlusses am Fuß. 2003."
+          "id": "juveniler_hv_kb_seidenstein2021",
+          "text": "Seidenstein AH, Torrez TW, Andrews NA, Patch DA, Conklin MJ, Shah A. Pediatric hallux valgus: an overview of history, examination, conservative, and surgical management. Paediatr Child Health. 2021;27(2):75-81. doi:10.1093/pch/pxab074"
         },
         {
-          "id": "juveniler_hv_kb_q4",
-          "text": "Seidenstein A, et al. Pediatric hallux valgus: evaluation and management. 2021."
+          "id": "juveniler_hv_kb_mccluney2006",
+          "text": "McCluney JG, Tinley P. Radiographic measurements of patients with juvenile hallux valgus compared with age-matched controls: a cohort investigation. J Foot Ankle Surg. 2006;45(3):161-167. doi:10.1053/j.jfas.2006.02.002"
+        },
+        {
+          "id": "juveniler_hv_kb_cheng1997",
+          "text": "Cheng JC, Leung SS, Leung AK, Guo X, Sher A, Mak AF. Change of foot size with weightbearing. A study of 2829 children 3 to 18 years of age. Clin Orthop Relat Res. 1997;(342):123-131. PMID 9308534."
+        },
+        {
+          "id": "juveniler_hv_kb_barouk2014",
+          "text": "Barouk LS. The effect of gastrocnemius tightness on the pathogenesis of juvenile hallux valgus: a preliminary study. Foot Ankle Clin. 2014;19(4):807-822. doi:10.1016/j.fcl.2014.08.005"
+        },
+        {
+          "id": "juveniler_hv_kb_groiso1992",
+          "text": "Groiso JA. Juvenile hallux valgus. A conservative approach to treatment. J Bone Joint Surg Am. 1992;74(9):1367-1374. PMID 1429792."
+        },
+        {
+          "id": "juveniler_hv_kb_maier2003",
+          "text": "Maier E, Killmann M. Kinderfuß und Kinderschuh. München: Neuer Merkur; 2003."
+        },
+        {
+          "id": "juveniler_hv_kb_agrawal2015",
+          "text": "Agrawal Y, Bajaj SK, Flowers MJ. Scarf-Akin osteotomy for hallux valgus in juvenile and adolescent patients. J Pediatr Orthop B. 2015;24(6):535-540. doi:10.1097/BPB.0000000000000215"
+        },
+        {
+          "id": "juveniler_hv_kb_coughlin1995",
+          "text": "Coughlin MJ. Juvenile hallux valgus: etiology and treatment. Foot Ankle Int. 1995;16(11):682-697. doi:10.1177/107110079501601104"
+        },
+        {
+          "id": "juveniler_hv_kb_helal1981",
+          "text": "Helal B. Surgery for adolescent hallux valgus. Clin Orthop Relat Res. 1981;(157):50-63. PMID 7271961."
+        },
+        {
+          "id": "juveniler_hv_kb_scranton1984",
+          "text": "Scranton PE Jr, Zuckerman JD. Bunion surgery in adolescents: results of surgical treatment. J Pediatr Orthop. 1984;4(1):39-43. doi:10.1097/01241398-198401000-00009"
+        },
+        {
+          "id": "juveniler_hv_kb_drennan1990",
+          "text": "Drennan JC. The child's foot. American Academy of Orthopaedic Surgeons, Instructional Course Lectures; 1990."
+        },
+        {
+          "id": "juveniler_hv_kb_schlickewei2018",
+          "text": "Schlickewei C, Ridderbusch K, Breyer S, Spiro A, Stücker R, Rupprecht M. Temporary screw epiphyseodesis of the first metatarsal for correction of juvenile hallux valgus. J Child Orthop. 2018;12(4):375-382. doi:10.1302/1863-2548.12.170208"
+        },
+        {
+          "id": "juveniler_hv_kb_chiang2019",
+          "text": "Chiang MH, Wang TM, Kuo KN, Huang SC, Wu KW. Management of juvenile hallux valgus deformity: the role of combined hemiepiphysiodesis. BMC Musculoskelet Disord. 2019;20(1):472. doi:10.1186/s12891-019-2867-7"
+        },
+        {
+          "id": "juveniler_hv_kb_davids2010",
+          "text": "Davids JR. The foot and ankle in cerebral palsy. Orthop Clin North Am. 2010;41(4):579-593. doi:10.1016/j.ocl.2010.06.002"
         }
       ]
     },
@@ -2670,6 +2852,42 @@
         {
           "id": "kindl_ppv_kb_q12",
           "text": "Zairi M, Msakni A, Mohseni AA, et al. Calcaneal lengthening osteotomy in the management of idiopathic flatfoot in children: case series of twenty-one feet. Int J Surg Case Rep. 2022;99:107634. doi:10.1016/j.ijscr.2022.107634"
+        },
+        {
+          "id": "kindl_ppv_kb_q13",
+          "text": "Dare DM, Dodwell ER. Pediatric flatfoot: cause, epidemiology, assessment, and treatment. Curr Opin Pediatr. 2014;26(1):93–100. doi:10.1097/MOP.0000000000000039"
+        },
+        {
+          "id": "kindl_ppv_kb_q14",
+          "text": "Moraleda L, Mubarak SJ. Flexible flatfoot: differences in the relative alignment of each segment of the foot between symptomatic and asymptomatic patients. J Pediatr Orthop. 2011;31(4):421–428. doi:10.1097/BPO.0b013e31821723ce"
+        },
+        {
+          "id": "kindl_ppv_kb_q15",
+          "text": "Harris EJ, Vanore JV, Thomas JL, et al. Diagnosis and treatment of pediatric flatfoot. J Foot Ankle Surg. 2004;43(6):341–373. doi:10.1053/j.jfas.2004.09.013"
+        },
+        {
+          "id": "kindl_ppv_kb_q16",
+          "text": "Evans AM, Rome K, Carroll M, Hawke F. Foot orthoses for treating paediatric flat feet. Cochrane Database Syst Rev. 2022;1(1):CD006311. doi:10.1002/14651858.CD006311.pub4"
+        },
+        {
+          "id": "kindl_ppv_kb_q17",
+          "text": "Xu L, Gu H, Zhang Y, Sun T, Yu J. Risk factors of flatfoot in children: a systematic review and meta-analysis. Int J Environ Res Public Health. 2022;19(14):8247. doi:10.3390/ijerph19148247"
+        },
+        {
+          "id": "kindl_ppv_kb_q18",
+          "text": "Hamel J, Hörterer H, Harrasser N. Is it possible to define reference values for radiographic parameters evaluating juvenile flatfoot deformity? A case-control study. BMC Musculoskelet Disord. 2020;21(1):838. doi:10.1186/s12891-020-03854-6"
+        },
+        {
+          "id": "kindl_ppv_kb_q19",
+          "text": "Hamel J. Radiologisch dokumentierte Korrektureffekte beim kindlichen Pes planovalgus mit der Calcaneostop-Arthrorise und der Calcaneus-Verlängerungsosteotomie. Fuß & Sprunggelenk. 2010;8(1):43–47."
+        },
+        {
+          "id": "kindl_ppv_kb_q20",
+          "text": "Hamel J, Nell M, Kalpen A. Das Konzept der tarsalen Triple-Osteotomie (TTO). Fuß & Sprunggelenk. 2014;12(3):160–169."
+        },
+        {
+          "id": "kindl_ppv_kb_q21",
+          "text": "Deutsche Gesellschaft für Orthopädie und Unfallchirurgie e.V. Kindlicher Knick-Senkfuß. S2k-Leitlinie, AWMF-Registernummer 033-020, Version 4.0 (2022). https://register.awmf.org/de/leitlinien/detail/033-020"
         }
       ]
     },
@@ -3486,6 +3704,205 @@
         "kb_coalitio_konservativ",
         "kb_coalitio_operativ",
         "kb_coalitio_quellen"
+      ]
+    },
+    "hallux_limitus_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Hallux limitus (belastungsabhängige Bewegungseinschränkung der Großzehe)",
+      "titel": "Hallux limitus",
+      "untertitel": "Belastungsabhängige Bewegungseinschränkung des Großzehengrundgelenks",
+      "quellen": [
+        {
+          "id": "hallux_limitus_kb_gould",
+          "text": "Gould N, Schneider W, Ashikaga T. Epidemiological survey of foot problems in the continental United States: 1978–1979. Foot Ankle. 1980;1(1):8–10. doi:10.1177/107110078000100104"
+        },
+        {
+          "id": "hallux_limitus_kb_weber",
+          "text": "Weber C, Waizy H. Distale plantarisierende Osteotomie des Os metatarsale I zur Behandlung des Hallux limitus bei Metatarsus primus elevatus. Oper Orthop Traumatol. 2021;33(6):487–494. doi:10.1007/s00064-021-00744-5"
+        },
+        {
+          "id": "hallux_limitus_kb_durrant",
+          "text": "Durrant B, Chockalingam N. Functional hallux limitus: a review. J Am Podiatr Med Assoc. 2009;99(3):236–243. doi:10.7547/0980236"
+        },
+        {
+          "id": "hallux_limitus_kb_viehoefer",
+          "text": "Viehöfer AF, Vich M, Wirth SH, Espinosa N, Camenzind RS. The role of plantar fascia tightness in hallux limitus: a biomechanical analysis. J Foot Ankle Surg. 2019;58(3):465–469. doi:10.1053/j.jfas.2018.09.019"
+        },
+        {
+          "id": "hallux_limitus_kb_maceira",
+          "text": "Maceira E, Monteagudo M. Functional hallux rigidus and the Achilles-calcaneus-plantar system. Foot Ankle Clin. 2014;19(4):669–699. doi:10.1016/j.fcl.2014.08.006"
+        },
+        {
+          "id": "hallux_limitus_kb_vallotton",
+          "text": "Vallotton J, Echeverri S, Dobbelaere-Nicolas V. Functional hallux limitus or rigidus caused by a tenodesis effect at the retrotalar pulley: description of the functional stretch test and the simple Hoover cord maneuver that releases this tenodesis. J Am Podiatr Med Assoc. 2010;100(3):220–229. doi:10.7547/1000220"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_hlimitus_ueberblick",
+        "kb_hlimitus_ursachen",
+        "kb_hlimitus_diagnostik",
+        "kb_hlimitus_konservativ",
+        "kb_hlimitus_operativ",
+        "kb_hlimitus_quellen"
+      ]
+    },
+    "stressfraktur_kmoe_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Stressfraktur und Knochenmarködem",
+      "titel": "Stressfraktur & Knochenmarködem",
+      "untertitel": "Ermüdungs- und Insuffizienzfraktur, Knochenmarködem",
+      "quellen": [
+        {
+          "id": "stressfraktur_kmoe_kb_baumbach20",
+          "text": "Baumbach SF, Pfahler V, Bechtold-Dalla Pozza S, Feist-Pagenstert I, Fürmetz J, Baur-Melnyk A, Stumpf UC, Saller MM, Straube A, Schmidmaier R, Leipe J. How we manage bone marrow edema-an interdisciplinary approach. J Clin Med. 2020;9(2):551. doi:10.3390/jcm9020551"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_barrack14",
+          "text": "Barrack MT, Gibbs JC, De Souza MJ, Williams NI, Nichols JF, Rauh MJ, Nattiv A. Higher incidence of bone stress injuries with increasing female athlete triad-related risk factors: a prospective multisite study of exercising girls and women. Am J Sports Med. 2014;42(4):949–958. doi:10.1177/0363546513520295"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_cleek05",
+          "text": "Cleek TM, Whalen RT. Effect of activity and age on long bones using a new densitometric technique. Med Sci Sports Exerc. 2005;37(10):1806–1813. doi:10.1249/01.mss.0000181836.81494.58"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_garrett87",
+          "text": "Garrett WE Jr, Safran MR, Seaber AV, Glisson RR, Ribbeck BM. Biomechanical comparison of stimulated and nonstimulated skeletal muscle pulled to failure. Am J Sports Med. 1987;15(5):448–454. doi:10.1177/036354658701500504"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_lappe08",
+          "text": "Lappe J, Cullen D, Haynatzki G, Recker R, Ahlf R, Thompson K. Calcium and vitamin D supplementation decreases incidence of stress fractures in female navy recruits. J Bone Miner Res. 2008;23(5):741–749. doi:10.1359/jbmr.080102"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_kaeding13",
+          "text": "Kaeding CC, Miller T. The comprehensive description of stress fractures: a new classification system. J Bone Joint Surg Am. 2013;95(13):1214–1220. doi:10.2106/JBJS.L.00890"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_kaeding04",
+          "text": "Kaeding CC, Spindler KP, Amendola A. Management of troublesome stress fractures. Instr Course Lect. 2004;53:455–469. PMID: 15116634"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_baier13",
+          "text": "Baier C, Schaumburger J, Götz J, Heers G, Schmidt T, Grifka J, Beckmann J. Bisphosphonates or prostacyclin in the treatment of bone-marrow oedema syndrome of the knee and foot. Rheumatol Int. 2013;33(6):1397–1402. doi:10.1007/s00296-012-2584-0"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_horterer18",
+          "text": "Hörterer H, Baumbach SF, Gregersen J, Kriegelstein S, Gottschalk O, Szeimies U, Walther M. Treatment of bone marrow edema of the foot and ankle with the prostacyclin analog iloprost. Foot Ankle Int. 2018;39(10):1183–1191. doi:10.1177/1071100718778557"
+        },
+        {
+          "id": "stressfraktur_kmoe_kb_rohner14",
+          "text": "Röhner E, Zippelius T, Steindl D, Fussi J, Perka C. Effects of intravenous iloprost therapy in patients with bone marrow oedema of the foot and ankle. Eur J Orthop Surg Traumatol. 2014;24(8):1609–1616. doi:10.1007/s00590-013-1320-0"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_stressfx_ueberblick",
+        "kb_stressfx_ursachen",
+        "kb_stressfx_diagnostik",
+        "kb_stressfx_konservativ",
+        "kb_stressfx_operativ",
+        "kb_stressfx_quellen"
+      ]
+    },
+    "metatarsalgie_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Metatarsalgie",
+      "titel": "Metatarsalgie",
+      "untertitel": "Schmerzsyndrom unter dem mittleren Vorfuß",
+      "quellen": [
+        {
+          "id": "metatarsalgie_kb_besse17",
+          "text": "Besse JL. Metatarsalgia. Orthop Traumatol Surg Res. 2017;103(1S):S29–S39. doi:10.1016/j.otsr.2016.06.020"
+        },
+        {
+          "id": "metatarsalgie_kb_fuhrmann05",
+          "text": "Fuhrmann RA, Roth A, Venbrocks RA. Metatarsalgie. Differenzialdiagnose und Therapie. Orthopade. 2005;34(8):767–775. doi:10.1007/s00132-005-0831-8"
+        },
+        {
+          "id": "metatarsalgie_kb_espinosa08",
+          "text": "Espinosa N, Maceira E, Myerson MS. Current concept review: metatarsalgia. Foot Ankle Int. 2008;29(8):871–879. doi:10.3113/FAI.2008.0000X"
+        },
+        {
+          "id": "metatarsalgie_kb_chong22",
+          "text": "Chong XL, Drittenbass L, Dubois-Ferriere V, Assal M. Iatrogenic transfer metatarsalgia after hallux valgus surgery: a comprehensive treatment algorithm. EFORT Open Rev. 2022;7(9):618–627. doi:10.1530/EOR-22-0043"
+        },
+        {
+          "id": "metatarsalgie_kb_palka25",
+          "text": "Palka O, Guillin R, Lecigne R, Combes D. Radiological approach to metatarsalgia in current practice: an educational review. Insights Imaging. 2025;16(1):94. doi:10.1186/s13244-025-01945-3"
+        },
+        {
+          "id": "metatarsalgie_kb_borne10",
+          "text": "Borne J, Bordet B, Fantino O, Bousquet JC, Coillard JY, Pialat JB. Échographie de la plaque plantaire et syndrome du 2e rayon. J Radiol. 2010;91(5 Pt 1):543–548."
+        },
+        {
+          "id": "metatarsalgie_kb_ruizramos24",
+          "text": "Ruiz-Ramos M, Orejana-García ÁM, García-Oreja S, Calvo-Wright MDM, Lázaro-Martínez JL, Molines-Barroso RJ. Effectiveness of bespoke or customised orthotic treatment in plantar pressure reduction of the central metatarsals: a systematic review and meta-analysis. J Orthop. 2024;59:111–118. doi:10.1016/j.jor.2023.12.006"
+        },
+        {
+          "id": "metatarsalgie_kb_hastings07",
+          "text": "Hastings MK, Mueller MJ, Pilgram TK, Lott DJ, Commean PK, Johnson JE. Effect of metatarsal pad placement on plantar pressure in people with diabetes mellitus and peripheral neuropathy. Foot Ankle Int. 2007;28(1):84–88. doi:10.3113/FAI.2007.0015"
+        },
+        {
+          "id": "metatarsalgie_kb_rose92",
+          "text": "Rose NE, Feiwell LA, Cracchiolo A 3rd. A method for measuring foot pressures using a high resolution, computerized insole sensor: the effect of heel wedges on plantar pressure distribution and center of force. Foot Ankle. 1992;13(5):263–270."
+        },
+        {
+          "id": "metatarsalgie_kb_greitemann12",
+          "text": "Greitemann B, Niemeyer C, Sprekelmeyer T, Eger T, Ullrich M. Wirken Einlagen bei der Metatarsalgie? Eine randomisierte Kontrollgruppenstudie. Fuß & Sprunggelenk. 2012;10(4):257–264."
+        },
+        {
+          "id": "metatarsalgie_kb_colo24",
+          "text": "Colò G, Fusini F, Melato M, De Tullio V, Logrieco G, Leigheb M, Surace MF. The effectiveness of shoe modifications and foot orthoses in conservative treatment of lesser toe deformities: a review of literature. Musculoskelet Surg. 2025;109(3):225–232. doi:10.1007/s12306-024-00871-9"
+        },
+        {
+          "id": "metatarsalgie_kb_maskill10",
+          "text": "Maskill JD, Bohay DR, Anderson JG. Gastrocnemius recession to treat isolated foot pain. Foot Ankle Int. 2010;31(1):19–23. doi:10.3113/FAI.2010.0019"
+        },
+        {
+          "id": "metatarsalgie_kb_barouk14",
+          "text": "Barouk P. Technique, indications, and results of proximal medial gastrocnemius lengthening. Foot Ankle Clin. 2014;19(4):795–806. doi:10.1016/j.fcl.2014.08.012"
+        },
+        {
+          "id": "metatarsalgie_kb_calori26",
+          "text": "Calori S, Giuliani A, Bocchino G, Forconi F, Maccauro G, Vitiello R. Gastrocnemius recession in the treatment of isolated metatarsalgia: a systematic review of surgical outcomes and complications. J Orthop Surg (Hong Kong). 2026;34(1):10225536251350416. doi:10.1177/10225536251350416"
+        },
+        {
+          "id": "metatarsalgie_kb_mcgroarty26",
+          "text": "McGroarty NK, Anastasio AT, Nunley JA. Is it necessary to repair the plantar plate in the management of metatarsophalangeal joint instability? Clin Podiatr Med Surg. 2026;43(3):499–510. doi:10.1016/j.cpm.2026.02.015"
+        },
+        {
+          "id": "metatarsalgie_kb_haddad99",
+          "text": "Haddad SL, Sabbagh RC, Resch S, Myerson B, Myerson MS. Results of flexor-to-extensor and extensor brevis tendon transfer for correction of the crossover second toe deformity. Foot Ankle Int. 1999;20(12):781–788."
+        },
+        {
+          "id": "metatarsalgie_kb_thompson93",
+          "text": "Thompson FM, Deland JT. Flexor tendon transfer for metatarsophalangeal instability of the second toe. Foot Ankle. 1993;14(7):385–388."
+        },
+        {
+          "id": "metatarsalgie_kb_maestro03",
+          "text": "Maestro M, Besse JL, Ragusa M, Berthonnaud E. Forefoot morphotype study and planning method for forefoot osteotomy. Foot Ankle Clin. 2003;8(4):695–710."
+        },
+        {
+          "id": "metatarsalgie_kb_viladot91",
+          "text": "Viladot A. The metatarsals. In: Jahss MH, ed. Disorders of the Foot and Ankle. Philadelphia: Saunders; 1991:1229–1268."
+        },
+        {
+          "id": "metatarsalgie_kb_rivero18",
+          "text": "Rivero-Santana A, Perestelo-Pérez L, Garcés G, Álvarez-Pérez Y, Escobar A, Serrano-Aguilar P. Clinical effectiveness and safety of Weil's osteotomy and distal metatarsal mini-invasive osteotomy (DMMO) in the treatment of metatarsalgia: a systematic review. Foot Ankle Surg. 2019;25(5):565–570. doi:10.1016/j.fas.2018.06.004"
+        },
+        {
+          "id": "metatarsalgie_kb_harrasser22",
+          "text": "Harrasser N, Toepfer A. Minimalinvasive Vorfußchirurgie: Konzept und Techniken. Orthopädie (Heidelb). 2023;52(1):69–81. doi:10.1007/s00132-022-04334-6"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_metatarsalgie_ueberblick",
+        "kb_metatarsalgie_ursachen",
+        "kb_metatarsalgie_diagnostik",
+        "kb_metatarsalgie_konservativ",
+        "kb_metatarsalgie_operativ",
+        "kb_metatarsalgie_quellen"
       ]
     }
   },
