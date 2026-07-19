@@ -790,8 +790,10 @@
       "kurz": "Verformung und Verschleiß des Kahnbeins (Os naviculare) beim Erwachsenen mit Schmerz am inneren/mittleren Fußrücken.",
       "haeufigkeit": "selten",
       "regionen": [
+        "medialer_fussrand",
         "tn_gelenk"
-      ]
+      ],
+      "info_ref": "mueller_weiss_kb"
     },
     {
       "id": "shin_splints",
@@ -832,6 +834,17 @@
         "lateraler_fussrand",
         "sg_aussen_hinter"
       ]
+    },
+    {
+      "id": "morbus_koehler_1",
+      "titel": "Morbus Köhler I",
+      "kurz": "Aseptische Kahnbein-Osteonekrose beim Kind — meist selbstheilend",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "medialer_fussrand",
+        "tn_gelenk"
+      ],
+      "info_ref": "koehler1_kb"
     }
   ],
   "regionen": [
@@ -1304,7 +1317,8 @@
               "label": "Über der Mitte des Fußrückens",
               "punkte": {
                 "tmt_arthrose": 1,
-                "naviculare_stressfx": 1
+                "naviculare_stressfx": 1,
+                "morbus_koehler_1": 1
               }
             },
             {
@@ -1371,7 +1385,8 @@
               "punkte": {
                 "tpsd": 1,
                 "tmt_arthrose": 1,
-                "naviculare_stressfx": 1
+                "naviculare_stressfx": 1,
+                "morbus_koehler_1": 1
               }
             },
             {
@@ -1399,7 +1414,8 @@
               "punkte": {
                 "tpsd": 1,
                 "tmt_arthrose": 1,
-                "talo_naviculare_arthrose": 1
+                "talo_naviculare_arthrose": 1,
+                "morbus_koehler_1": 1
               }
             },
             {
