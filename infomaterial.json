@@ -2133,51 +2133,180 @@
         "kb_pf_ursachen",
         "kb_pf_beschwerden",
         "kb_pf_diagnostik",
-        "kb_pf_behandlung",
+        "kb_pf_konservativ",
+        "kb_pf_operativ",
         "kb_pf_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "plantarfasziitis_kb_q1",
-          "text": "Riddle DL, Schappert SM. Volume of ambulatory care visits and patterns of care for plantar fasciitis: a national study. Foot Ankle Int. 2004;25(5):303–10."
+          "text": "Riddle DL, Schappert SM. Volume of ambulatory care visits and patterns of care for patients diagnosed with plantar fasciitis: a national study of medical doctors. Foot Ankle Int. 2004;25(5):303-10. doi: [10.1177/107110070402500505](https://doi.org/10.1177/107110070402500505)"
         },
         {
           "id": "plantarfasziitis_kb_q2",
-          "text": "Lopes AD, Hespanhol Júnior LC, Yeung SS, Costa LO. What are the main running-related musculoskeletal injuries? A systematic review. Sports Med. 2012;42(10):891–905."
+          "text": "Lopes AD, Hespanhol Júnior LC, Yeung SS, Costa LO. What are the main running-related musculoskeletal injuries? A systematic review. Sports Med. 2012;42(10):891-905. doi: [10.1007/BF03262301](https://doi.org/10.1007/BF03262301)"
         },
         {
           "id": "plantarfasziitis_kb_q3",
-          "text": "van Leeuwen KD, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy: systematic review and meta-analysis. Br J Sports Med. 2016;50(16):972–81."
+          "text": "Rhim HC, Kwon J, Park J, Borg-Stein J, Tenforde AS. A systematic review of systematic reviews on the epidemiology, evaluation, and treatment of plantar fasciitis. Life (Basel). 2021;11(12):1287. doi: [10.3390/life11121287](https://doi.org/10.3390/life11121287)"
         },
         {
           "id": "plantarfasziitis_kb_q4",
-          "text": "Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot Ankle Int. 2011;32(1):5–8."
+          "text": "Agyekum EK, Ma K. Heel pain: a systematic review. Chin J Traumatol. 2015;18(3):164-9. doi: [10.1016/j.cjtee.2015.03.002](https://doi.org/10.1016/j.cjtee.2015.03.002)"
         },
         {
           "id": "plantarfasziitis_kb_q5",
-          "text": "Mohseni-Bandpei MA, et al. Application of ultrasound in the assessment of plantar fascia in patients with plantar fasciitis: a systematic review. Ultrasound Med Biol. 2014;40(8):1737–54."
+          "text": "Butterworth PA, Landorf KB, Smith SE, Menz HB. The association between body mass index and musculoskeletal foot disorders: a systematic review. Obes Rev. 2012;13(7):630-42. doi: [10.1111/j.1467-789X.2012.00996.x](https://doi.org/10.1111/j.1467-789X.2012.00996.x)"
         },
         {
           "id": "plantarfasziitis_kb_q6",
-          "text": "Ahmad J, Karim A, Daniel JN. Relationship and Classification of Plantar Heel Spurs in Patients With Plantar Fasciitis. Foot Ankle Int. 2016;37(9):994–1000."
+          "text": "Hamstra-Wright KL, Huxel Bliven KC, Bay RC, Aydemir B. Risk factors for plantar fasciitis in physically active individuals: a systematic review and meta-analysis. Sports Health. 2021;13(3):296-303. doi: [10.1177/1941738120970976](https://doi.org/10.1177/1941738120970976)"
         },
         {
           "id": "plantarfasziitis_kb_q7",
-          "text": "Thomas JL, et al. The diagnosis and treatment of heel pain: a clinical practice guideline–revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1–19."
+          "text": "van Leeuwen KDB, Rogers J, Winzenberg T, van Middelkoop M. Higher body mass index is associated with plantar fasciopathy: systematic review and meta-analysis. Br J Sports Med. 2016;50(16):972-81. doi: [10.1136/bjsports-2015-094695](https://doi.org/10.1136/bjsports-2015-094695)"
         },
         {
           "id": "plantarfasziitis_kb_q8",
-          "text": "Koc TA Jr, et al. Heel Pain–Plantar Fasciitis: Clinical Practice Guideline 2023. J Orthop Sports Phys Ther. 2023;53(12):CPG1–CPG39."
+          "text": "Osborne JWA, Menz HB, Whittaker GA, Landorf KB. Muscle function and muscle size differences in people with and without plantar heel pain: a systematic review. J Orthop Sports Phys Ther. 2019;49(12):925-933. doi: [10.2519/jospt.2019.8588](https://doi.org/10.2519/jospt.2019.8588)"
         },
         {
           "id": "plantarfasziitis_kb_q9",
-          "text": "Daher M, Covarrubias O, Herber A, et al. Platelet-Rich Plasma vs Extracorporeal Shock Wave Therapy in Plantar Fasciitis at 3–6 Months: systematic review and meta-analysis of RCTs. Foot Ankle Int. 2024."
+          "text": "Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot Ankle Int. 2011;32(1):5-8. doi: [10.3113/FAI.2011.0005](https://doi.org/10.3113/FAI.2011.0005)"
         },
         {
           "id": "plantarfasziitis_kb_q10",
-          "text": "Systematic review and meta-analysis: ESWT vs. corticosteroid injections on pain, plantar fascia thickness and foot function in plantar fasciitis. 2024 (PMID 38738305)."
+          "text": "Mohseni-Bandpei MA, Nakhaee M, Mousavi ME, Shakourirad A, Safari MR, Vahab Kashani R. Application of ultrasound in the assessment of plantar fascia in patients with plantar fasciitis: a systematic review. Ultrasound Med Biol. 2014;40(8):1737-54. doi: [10.1016/j.ultrasmedbio.2014.03.001](https://doi.org/10.1016/j.ultrasmedbio.2014.03.001)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q11",
+          "text": "Tseng WC, Chen YC, Lee TM, Chen WS. Plantar fasciitis: an updated review. J Med Ultrasound. 2023;31(4):268-274. doi: [10.4103/jmu.jmu_2_23](https://doi.org/10.4103/jmu.jmu_2_23)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q12",
+          "text": "Ahmad J, Karim A, Daniel JN. Relationship and classification of plantar heel spurs in patients with plantar fasciitis. Foot Ankle Int. 2016;37(9):994-1000. doi: [10.1177/1071100716649925](https://doi.org/10.1177/1071100716649925)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q13",
+          "text": "Thomas JL, Christensen JC, Kravitz SR, Mendicino RW, Schuberth JM, Vanore JV, et al. The diagnosis and treatment of heel pain: a clinical practice guideline-revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1-19. doi: [10.1053/j.jfas.2010.01.001](https://doi.org/10.1053/j.jfas.2010.01.001)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q14",
+          "text": "Koc TA Jr, Bise CG, Neville C, Carreira D, Martin RL, McDonough CM. Heel pain - plantar fasciitis: revision 2023. J Orthop Sports Phys Ther. 2023;53(12):CPG1-CPG39. doi: [10.2519/jospt.2023.0303](https://doi.org/10.2519/jospt.2023.0303)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q15",
+          "text": "Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific stretching for plantar fasciitis: a systematic review and meta-analysis. J Bodyw Mov Ther. 2020;24(4):222-232. doi: [10.1016/j.jbmt.2020.06.013](https://doi.org/10.1016/j.jbmt.2020.06.013)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q16",
+          "text": "Sweeting D, Parish B, Hooper L, Chester R. The effectiveness of manual stretching in the treatment of plantar heel pain: a systematic review. J Foot Ankle Res. 2011;4:19. doi: [10.1186/1757-1146-4-19](https://doi.org/10.1186/1757-1146-4-19)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q17",
+          "text": "Schuitema D, Greve C, Postema K, Dekker R, Hijmans JM. Effectiveness of mechanical treatment for plantar fasciitis: a systematic review. J Sport Rehabil. 2019;29(5):657-674. doi: [10.1123/jsr.2019-0036](https://doi.org/10.1123/jsr.2019-0036)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q18",
+          "text": "Lee SY, McKeon P, Hertel J. Does the use of orthoses improve self-reported pain and function measures in patients with plantar fasciitis? A meta-analysis. Phys Ther Sport. 2009;10(1):12-8. doi: [10.1016/j.ptsp.2008.09.002](https://doi.org/10.1016/j.ptsp.2008.09.002)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q19",
+          "text": "Li X, Zhang L, Gu S, Sun J, Qin Z, Yue J, et al. Comparative effectiveness of extracorporeal shock wave, ultrasound, low-level laser therapy, noninvasive interactive neurostimulation, and pulsed radiofrequency treatment for treating plantar fasciitis: a systematic review and network meta-analysis. Medicine (Baltimore). 2018;97(43):e12819. doi: [10.1097/MD.0000000000012819](https://doi.org/10.1097/MD.0000000000012819)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q20",
+          "text": "Sun J, Gao F, Wang Y, Sun W, Jiang B, Li Z. Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: a meta-analysis of RCTs. Medicine (Baltimore). 2017;96(15):e6621. doi: [10.1097/MD.0000000000006621](https://doi.org/10.1097/MD.0000000000006621)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q21",
+          "text": "Li H, Xiong Y, Zhou W, Liu Y, Liu J, Xue H, et al. Shock-wave therapy improved outcome with plantar fasciitis: a meta-analysis of randomized controlled trials. Arch Orthop Trauma Surg. 2019;139(12):1763-1770. doi: [10.1007/s00402-019-03262-z](https://doi.org/10.1007/s00402-019-03262-z)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q22",
+          "text": "Babatunde OO, Legha A, Littlewood C, Chesterton LS, Thomas MJ, Menz HB, et al. Comparative effectiveness of treatment options for plantar heel pain: a systematic review with network meta-analysis. Br J Sports Med. 2019;53(3):182-194. doi: [10.1136/bjsports-2017-098998](https://doi.org/10.1136/bjsports-2017-098998)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q23",
+          "text": "Speed C. A systematic review of shockwave therapies in soft tissue conditions: focusing on the evidence. Br J Sports Med. 2014;48(21):1538-42. doi: [10.1136/bjsports-2012-091961](https://doi.org/10.1136/bjsports-2012-091961)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q24",
+          "text": "Podolsky R, Kalichman L. Taping for plantar fasciitis. J Back Musculoskelet Rehabil. 2015;28(1):1-6. doi: [10.3233/BMR-140485](https://doi.org/10.3233/BMR-140485)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q25",
+          "text": "Ling Y, Wang S. Effects of platelet-rich plasma in the treatment of plantar fasciitis: a meta-analysis of randomized controlled trials. Medicine (Baltimore). 2018;97(37):e12110. doi: [10.1097/MD.0000000000012110](https://doi.org/10.1097/MD.0000000000012110)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q26",
+          "text": "Hsiao MY, Hung CY, Chang KV, Chien KL, Tu YK, Wang TG. Comparative effectiveness of autologous blood-derived products, shock-wave therapy and corticosteroids for treatment of plantar fasciitis: a network meta-analysis. Rheumatology (Oxford). 2015;54(9):1735-43. doi: [10.1093/rheumatology/kev010](https://doi.org/10.1093/rheumatology/kev010)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q27",
+          "text": "Hurley ET, Shimozono Y, Hannon CP, Smyth NA, Murawski CD, Kennedy JG. Platelet-rich plasma versus corticosteroids for plantar fasciitis: a systematic review of randomized controlled trials. Orthop J Sports Med. 2020;8(4):2325967120915704. doi: [10.1177/2325967120915704](https://doi.org/10.1177/2325967120915704)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q28",
+          "text": "Daher M, Covarrubias O, Herber A, Oh I, Gianakos AL. Platelet-rich plasma vs extracorporeal shock wave therapy in the treatment of plantar fasciitis at 3-6 months: a systematic review and meta-analysis of randomized controlled trials. Foot Ankle Int. 2024;45(7):796-803. doi: [10.1177/10711007241231959](https://doi.org/10.1177/10711007241231959)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q29",
+          "text": "Cortés-Pérez I, Moreno-Montilla L, Ibáñez-Vera AJ, Díaz-Fernández Á, Obrero-Gaitán E, Lomas-Vega R. Efficacy of extracorporeal shockwave therapy, compared to corticosteroid injections, on pain, plantar fascia thickness and foot function in patients with plantar fasciitis: a systematic review and meta-analysis. Clin Rehabil. 2024;38(8):1023-1043. doi: [10.1177/02692155241253779](https://doi.org/10.1177/02692155241253779)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q30",
+          "text": "Clar C, Tsertsvadze A, Court R, Hundt GL, Clarke A, Sutcliffe P. Clinical effectiveness of manual therapy for the management of musculoskeletal and non-musculoskeletal conditions: systematic review and update of UK evidence report. Chiropr Man Therap. 2014;22(1):12. doi: [10.1186/2045-709X-22-12](https://doi.org/10.1186/2045-709X-22-12)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q31",
+          "text": "Piper S, Shearer HM, Côté P, Wong JJ, Yu H, Varatharajan S, et al. The effectiveness of soft-tissue therapy for the management of musculoskeletal disorders and injuries of the upper and lower extremities: a systematic review (OPTIMa). Man Ther. 2016;21:18-34. doi: [10.1016/j.math.2015.08.011](https://doi.org/10.1016/j.math.2015.08.011)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q32",
+          "text": "Boob MA, Phansopkar P, Somaiya KJ. Physiotherapeutic interventions for individuals suffering from plantar fasciitis: a systematic review. Cureus. 2023;15(7):e42740. doi: [10.7759/cureus.42740](https://doi.org/10.7759/cureus.42740)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q33",
+          "text": "Clark RJ, Tighe M. The effectiveness of acupuncture for plantar heel pain: a systematic review. Acupunct Med. 2012;30(4):298-306. doi: [10.1136/acupmed-2012-010183](https://doi.org/10.1136/acupmed-2012-010183)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q34",
+          "text": "Thiagarajah AG. How effective is acupuncture for reducing pain due to plantar fasciitis? Singapore Med J. 2017;58(2):92-97. doi: [10.11622/smedj.2016143](https://doi.org/10.11622/smedj.2016143)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q35",
+          "text": "He C, Ma H. Effectiveness of trigger point dry needling for plantar heel pain: a meta-analysis of seven randomized controlled trials. J Pain Res. 2017;10:1933-1942. doi: [10.2147/JPR.S141607](https://doi.org/10.2147/JPR.S141607)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q36",
+          "text": "Hawke F, Burns J, Radford JA, du Toit V. Custom-made foot orthoses for the treatment of foot pain. Cochrane Database Syst Rev. 2008;(3):CD006801. doi: [10.1002/14651858.CD006801.pub2](https://doi.org/10.1002/14651858.CD006801.pub2)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q37",
+          "text": "Dos Santos SA, Sampaio LM, Caires JR, Fernandes GHC, Marsico A, Serra AJ, et al. Parameters and effects of photobiomodulation in plantar fasciitis: a meta-analysis and systematic review. Photobiomodul Photomed Laser Surg. 2019;37(6):327-335. doi: [10.1089/photob.2018.4588](https://doi.org/10.1089/photob.2018.4588)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q38",
+          "text": "Wang W, Jiang W, Tang C, Zhang X, Xiang J. Clinical efficacy of low-level laser therapy in plantar fasciitis: a systematic review and meta-analysis. Medicine (Baltimore). 2019;98(3):e14088. doi: [10.1097/MD.0000000000014088](https://doi.org/10.1097/MD.0000000000014088)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q39",
+          "text": "Babcock MS, Foster L, Pasquina P, Jabbari B. Treatment of pain attributed to plantar fasciitis with botulinum toxin A: a short-term, randomized, placebo-controlled, double-blind study. Am J Phys Med Rehabil. 2005;84(9):649-54. doi: [10.1097/01.phm.0000176339.73591.d7](https://doi.org/10.1097/01.phm.0000176339.73591.d7)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q40",
+          "text": "Ahmad J, Ahmad SH, Jones K. Treatment of plantar fasciitis with botulinum toxin. Foot Ankle Int. 2017;38(1):1-7. doi: [10.1177/1071100716666364](https://doi.org/10.1177/1071100716666364)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q41",
+          "text": "Gogna P, Gaba S, Mukhopadhyay R, Gupta R, Rohilla R, Yadav L. Plantar fasciitis: a randomized comparative study of platelet rich plasma and low dose radiation in sportspersons. Foot (Edinb). 2016;28:16-19. doi: [10.1016/j.foot.2016.08.002](https://doi.org/10.1016/j.foot.2016.08.002)"
+        },
+        {
+          "id": "plantarfasziitis_kb_q42",
+          "text": "S2E-Leitlinie Strahlentherapie gutartiger Erkrankungen, DEGRO (Deutsche Gesellschaft für Radioonkologie), 2013."
         }
       ]
     },
@@ -3113,28 +3242,46 @@
       "infoKategorie": "krankheitsbild",
       "infoTitel": "Morbus Köhler-Freiberg (Mittelfußkopf-Osteonekrose)",
       "titel": "Morbus Köhler-Freiberg (Mittelfußkopf-Osteonekrose)",
-      "untertitel": "Osteonekrose meist des 2. Mittelfußkopfes — Weichbettung, ggf. Osteotomie",
+      "untertitel": "Aseptische Osteonekrose eines Mittelfußkopfes (meist des 2.) — meist bei jungen Frauen",
       "betrifft_eingriffe": [],
       "slides": [
         "kb_frb_ueberblick",
         "kb_frb_ursachen",
-        "kb_frb_behandlung",
+        "kb_frb_diagnostik",
+        "kb_frb_konservativ",
+        "kb_frb_operativ",
         "kb_frb_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "2026-07",
       "quellen": [
         {
-          "id": "freiberg_kb_q1",
-          "text": "Freiberg AH. Infraction of the second metatarsal bone. (Erstbeschreibung)."
+          "id": "freiberg_kb_freiberg1914",
+          "text": "Freiberg AH. Infraction of the second metatarsal bone: a typical injury. Surg Gynecol Obstet. 1914;19:191–193."
         },
         {
-          "id": "freiberg_kb_q2",
-          "text": "Übersichtsarbeiten zum Morbus Köhler-Freiberg (Stadien nach Smillie)."
+          "id": "freiberg_kb_carmont09",
+          "text": "Carmont MR, Rees RJ, Blundell CM. Current concepts review: Freiberg's disease. Foot Ankle Int. 2009;30(2):167–176. doi:10.3113/FAI-2009-0167"
         },
         {
-          "id": "freiberg_kb_q3",
-          "text": "Aktuelle Serien zur dorsalen Aufrichtungsosteotomie."
+          "id": "freiberg_kb_schade15",
+          "text": "Schade VL. Surgical management of Freiberg's infraction: a systematic review. Foot Ankle Spec. 2015;8(6):498–519. doi:10.1177/1938640015585966"
+        },
+        {
+          "id": "freiberg_kb_mutlu22",
+          "text": "Mutlu T, Eke I, Akcal MA, Iret H. Metatarsal head restoration versus dorsal closing-wedge osteotomy in the treatment of advanced-stage Freiberg's disease. Eur J Orthop Surg Traumatol. 2023;33(5):2075–2080. doi:10.1007/s00590-022-03403-y"
+        },
+        {
+          "id": "freiberg_kb_kooner22",
+          "text": "Kooner S, Lee JM, Jamal B, David-West K, Daniels TR, Halai M. Successful treatment of advanced Freiberg's disease with a modified Weil osteotomy, 5-year follow up. Foot (Edinb). 2023;57:101952. doi:10.1016/j.foot.2022.101952"
+        },
+        {
+          "id": "freiberg_kb_rehm25",
+          "text": "Rehm A, Seah M, Chase HE, et al. Freiberg's disease: variation of surgeries, outcomes, and first population-based incidence. J Pediatr Orthop B. 2025;34(5):488–497. doi:10.1097/BPB.0000000000001243"
+        },
+        {
+          "id": "freiberg_kb_tham25",
+          "text": "Tham A, Rubin J, Lowton E, et al. Autologous osteochondral transplantation versus dorsiflexion closing wedge metatarsal osteotomy for Freiberg's disease: a systematic review and meta-analysis. Foot Ankle Surg. 2025;32(4):333–342. doi:10.1016/j.fas.2025.12.008"
         }
       ]
     },
@@ -3142,24 +3289,90 @@
       "infoKategorie": "krankheitsbild",
       "infoTitel": "Morbus Renander (Sesambein-Osteonekrose)",
       "titel": "Morbus Renander (Sesambein-Osteonekrose)",
-      "untertitel": "Osteonekrose der Großzehen-Sesambeine — konservativ, selten operativ",
+      "untertitel": "Aseptische Osteonekrose eines Großzehen-Sesambeins — meist junge Frauen, konservativ, selten operativ",
       "betrifft_eingriffe": [],
       "slides": [
         "kb_ren_ueberblick",
         "kb_ren_ursachen",
-        "kb_ren_behandlung",
+        "kb_ren_diagnostik",
+        "kb_ren_konservativ",
+        "kb_ren_operativ",
         "kb_ren_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "2026-07",
       "quellen": [
         {
-          "id": "renander_kb_q1",
-          "text": "Barral X, et al. Sesamoid osteonecrosis (Renander): prevalence and imaging. 2014."
+          "id": "renander_kb_kalweit03",
+          "text": "Kalweit M, Frank D. Die aseptische Nekrose des Sesambeines am Metatarsale I (Morbus Renander). Fuß & Sprunggelenk. 2003;1:148–151."
         },
         {
-          "id": "renander_kb_q2",
-          "text": "Übersichtsarbeiten zur Sesambein-Pathologie und zum Morbus Renander."
+          "id": "renander_kb_stokes79",
+          "text": "Stokes IAF, Hutton WC, Stott JRR, Lowe LW. Forces under the hallux valgus foot before and after surgery. Clin Orthop Relat Res. 1979;(142):64–72."
+        },
+        {
+          "id": "renander_kb_sobel92",
+          "text": "Sobel M, Hashimoto J, Arnoczky SP, Bohne WHO. The microvasculature of the sesamoid complex: its clinical significance. Foot Ankle. 1992;13(6):359–363. doi:10.1177/107110079201300613"
+        },
+        {
+          "id": "renander_kb_waizy08",
+          "text": "Waizy H, Jäger M, Abbara-Czardybon M, Schmidt TG, Frank D. Surgical treatment of AVN of the fibular (lateral) sesamoid. Foot Ankle Int. 2008;29(2):231–236. doi:10.3113/FAI.2008.0231"
+        },
+        {
+          "id": "renander_kb_rodrigues10",
+          "text": "Rodrigues-Pinto R, Freitas D, Massada M, Gonçalves I, Muras J. Hallux sesamoid osteonecrosis associated to ballet: literature review. Port J Orthop Traumatol. 2010;18:429–437."
+        },
+        {
+          "id": "renander_kb_barral12",
+          "text": "Barral CM, Félix AM, Magalhães LN, Carvalho LA, Machado FS. The bone scintigraphy as a complementary exam in the diagnosis of the avascular necrosis of the sesamoid. Rev Bras Ortop. 2012;47(2):241–245. doi:10.1016/S2255-4971(15)30093-8"
+        },
+        {
+          "id": "renander_kb_cohen09",
+          "text": "Cohen BE. Hallux sesamoid disorders. Foot Ankle Clin. 2009;14(1):91–104. doi:10.1016/j.fcl.2008.11.003"
+        },
+        {
+          "id": "renander_kb_casillas01",
+          "text": "Allen MA, Casillas MM. The passive axial compression (PAC) test: a new adjunctive provocative maneuver for the clinical diagnosis of hallucal sesamoiditis. Foot Ankle Int. 2001;22(4):345–346. doi:10.1177/107110070102200414"
+        },
+        {
+          "id": "renander_kb_bartosiak19",
+          "text": "Bartosiak K, McCormick JJ. Avascular necrosis of the sesamoids. Foot Ankle Clin. 2019;24(1):57–67. doi:10.1016/j.fcl.2018.09.004"
+        },
+        {
+          "id": "renander_kb_coughlin99",
+          "text": "Coughlin MJ, Mann RA. Surgery of the Foot and Ankle. 7th ed. St. Louis: Mosby; 1999."
+        },
+        {
+          "id": "renander_kb_rosenfield00",
+          "text": "Rosenfield JS, Trepman E. Treatment of sesamoid disorders with a rocker sole shoe modification. Foot Ankle Int. 2000;21(11):914–915. doi:10.1177/107110070002101104"
+        },
+        {
+          "id": "renander_kb_aronow06",
+          "text": "Aronow MS, Diaz-Doran V, Sullivan RJ, Adams DJ. The effect of triceps surae contracture force on plantar foot pressure distribution. Foot Ankle Int. 2006;27(1):43–52. doi:10.1177/107110070602700108"
+        },
+        {
+          "id": "renander_kb_callahan24",
+          "text": "Callahan EA, Peyser K, Espiritu-McKay T. Leukocyte-rich platelet-rich plasma for osteonecrosis of sesamoid in a performing artist: a case report. J Dance Med Sci. 2024;29(1):61–63. doi:10.1177/1089313X241265424"
+        },
+        {
+          "id": "renander_kb_thompson17",
+          "text": "Thompson D, Malliaropoulos N, Padhiar N. Sesamoid osteonecrosis treated with radial extracorporeal shock wave therapy. BMJ Case Rep. 2017;2017:bcr2017219191. doi:10.1136/bcr-2017-219191"
+        },
+        {
+          "id": "renander_kb_tenforde24",
+          "text": "Tenforde AS, Schon J, Gureck A, Rhim HC, Malik G. Treatment of chronic hallux sesamoid injuries with focused extracorporeal shockwave and physical therapy in an athletic population: a retrospective case series. Dtsch Z Sportmed. 2024;75:142–148. doi:10.5960/dzsm.2024.600"
+        },
+        {
+          "id": "renander_kb_taylor14",
+          "text": "Taylor CF, Butler M, Parsons SW. Problems associated with the excision of the hallux sesamoids. Foot Ankle Clin. 2014;19(3):425–436. doi:10.1016/j.fcl.2014.06.014"
+        },
+        {
+          "id": "renander_kb_bichara12",
+          "text": "Bichara DA, Henn RF 3rd, Theodore GH. Sesamoidectomy for hallux sesamoid fractures. Foot Ankle Int. 2012;33(9):704–706. doi:10.3113/FAI.2012.0704"
+        },
+        {
+          "id": "renander_kb_saxena03",
+          "text": "Saxena A, Krisdakumtorn T. Return to activity after sesamoidectomy in athletically active individuals. Foot Ankle Int. 2003;24(5):415–419. doi:10.1177/107110070302400507"
         }
       ]
     },
@@ -3167,24 +3380,42 @@
       "infoKategorie": "krankheitsbild",
       "infoTitel": "Morbus Sever (Fersen-Apophysitis)",
       "titel": "Morbus Sever (Fersen-Apophysitis)",
-      "untertitel": "Häufigste Ursache von Fersenschmerz bei 8–12-Jährigen — konservativ, selbstheilend",
+      "untertitel": "Häufigste Ursache von Fersenschmerz bei 8–12-Jährigen — konservativ, selbstheilend mit dem Wachstum",
       "betrifft_eingriffe": [],
       "slides": [
         "kb_sev_ueberblick",
         "kb_sev_ursachen",
-        "kb_sev_behandlung",
+        "kb_sev_diagnostik",
+        "kb_sev_konservativ",
+        "kb_sev_verlauf",
         "kb_sev_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "2026-07",
       "quellen": [
         {
-          "id": "sever_kb_q1",
-          "text": "Sever JW. Apophysitis of the os calcis. (Erstbeschreibung)."
+          "id": "sever_kb_sever1912",
+          "text": "Sever JW. Apophysitis of the os calcis. NY Med J. 1912;95:1025–1029."
         },
         {
-          "id": "sever_kb_q2",
-          "text": "Aktuelle Übersichten/Serien zur Inzidenz und Behandlung des Morbus Sever (kindlicher Fersenschmerz)."
+          "id": "sever_kb_achar19",
+          "text": "Achar S, Yamanaka J. Apophysitis and osteochondrosis: common causes of pain in growing bones. Am Fam Physician. 2019;99(10):610–618."
+        },
+        {
+          "id": "sever_kb_wiegerinck13",
+          "text": "Wiegerinck JI, Yntema C, Brouwer HJ, Struijs PAA. Incidence of calcaneal apophysitis in the general population. Eur J Pediatr. 2014;173(5):677–679. doi:10.1007/s00431-013-2219-9"
+        },
+        {
+          "id": "sever_kb_rachel11",
+          "text": "Rachel JN, Williams JB, Sawyer JR, Warner WC, Kelly DM. Is radiographic evaluation necessary in children with a clinical diagnosis of calcaneal apophysitis (Sever disease)? J Pediatr Orthop. 2011;31(5):548–550. doi:10.1097/BPO.0b013e318219905c"
+        },
+        {
+          "id": "sever_kb_james13",
+          "text": "James AM, Williams CM, Haines TP. Effectiveness of interventions in reducing pain and maintaining physical activity in children and adolescents with calcaneal apophysitis (Sever's disease): a systematic review. J Foot Ankle Res. 2013;6(1):16. doi:10.1186/1757-1146-6-16"
+        },
+        {
+          "id": "sever_kb_nweke25",
+          "text": "Nweke TC. Conservative management of Sever's disease (calcaneal apophysitis): a comprehensive review of treatment efficacy. Cureus. 2025;17(7):e88779. doi:10.7759/cureus.88779"
         }
       ]
     },
@@ -4195,6 +4426,605 @@
         "kb_mw_konservativ",
         "kb_mw_operativ",
         "kb_mw_quellen"
+      ]
+    },
+    "ledderhose_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Morbus Ledderhose (plantare Fibromatose)",
+      "titel": "Morbus Ledderhose",
+      "untertitel": "Gutartige Bindegewebsknoten in der Fußsohle — schwer behandelbar, hohe Rückfallneigung",
+      "quellen": [
+        {
+          "id": "ledderhose_kb_ledderhose1894",
+          "text": "Ledderhose G. Über Zerreißungen der Plantarfascie. Arch Klin Chir. 1894;48:853–856."
+        },
+        {
+          "id": "ledderhose_kb_young18",
+          "text": "Young JR, Sternbach S, Willinger M, Hutchinson ID, Rosenbaum AJ. The etiology, evaluation, and management of plantar fibromatosis. Orthop Res Rev. 2018;11:1–7. doi:10.2147/ORR.S154289"
+        },
+        {
+          "id": "ledderhose_kb_carroll18",
+          "text": "Carroll P, Henshaw RM, Garwood C, Raspovic K, Kumar D. Plantar fibromatosis: pathophysiology, surgical and nonsurgical therapies: an evidence-based review. Foot Ankle Spec. 2018;11(2):168–176. doi:10.1177/1938640017751184"
+        },
+        {
+          "id": "ledderhose_kb_kim18",
+          "text": "Kim SK, Ioannidis JPA, Ahmed MA, Avins AL, Kleimeyer JP, Fredericson M, Dragoo JL. Two genetic variants associated with plantar fascial disorders. Int J Sports Med. 2018;39(4):314–321. doi:10.1055/s-0044-100280"
+        },
+        {
+          "id": "ledderhose_kb_debree04",
+          "text": "de Bree E, Zoetmulder FAN, Keus RB, Peterse HL, van Coevorden F. Incidence and treatment of recurrent plantar fibromatosis by surgery and postoperative radiotherapy. Am J Surg. 2004;187(1):33–38. doi:10.1016/j.amjsurg.2002.11.002"
+        },
+        {
+          "id": "ledderhose_kb_omor15",
+          "text": "Omor Y, Dhaene B, Grijseels S, Alard S. Ledderhose disease: clinical, radiological (ultrasound and MRI), and anatomopathological findings. Case Rep Orthop. 2015;2015:741461. doi:10.1155/2015/741461"
+        },
+        {
+          "id": "ledderhose_kb_sammarco00",
+          "text": "Sammarco GJ, Mangone PG. Classification and treatment of plantar fibromatosis. Foot Ankle Int. 2000;21(7):563–569. doi:10.1177/107110070002100706"
+        },
+        {
+          "id": "ledderhose_kb_knobloch12",
+          "text": "Knobloch K, Vogt PM. High-energy focussed extracorporeal shockwave therapy reduces pain in plantar fibromatosis (Ledderhose's disease). BMC Res Notes. 2012;5:542. doi:10.1186/1756-0500-5-542"
+        },
+        {
+          "id": "ledderhose_kb_pentland85",
+          "text": "Pentland AP, Anderson TF. Plantar fibromatosis responds to intralesional steroids. J Am Acad Dermatol. 1985;12(1 Pt 2):212–214. doi:10.1016/s0190-9622(85)80020-7"
+        },
+        {
+          "id": "ledderhose_kb_flanagan21",
+          "text": "Flanagan G, Burt N, Reilly IN. Intralesional fenestration and corticosteroid injection for symptomatic Ledderhose disease of the foot: two case reports. SAGE Open Med Case Rep. 2021;9:2050313X211011813. doi:10.1177/2050313X211011813"
+        },
+        {
+          "id": "ledderhose_kb_jordan14",
+          "text": "Jordan GH, Carson CC, Lipshultz LI. Minimally invasive treatment of Peyronie's disease: evidence-based progress. BJU Int. 2014;114(1):16–24. doi:10.1111/bju.12634"
+        },
+        {
+          "id": "ledderhose_kb_amer18",
+          "text": "Amer KM, Mohamed S, Amer R, Chaudhry A, Winters B, Abraham JA. Effect of Mitomycin C on recurrence of plantar fibromas. J Orthop Res. 2018;36(9):2554–2561. doi:10.1002/jor.23902"
+        },
+        {
+          "id": "ledderhose_kb_hammoudeh14",
+          "text": "Hammoudeh ZS. Collagenase Clostridium histolyticum injection for plantar fibromatosis (Ledderhose disease). Plast Reconstr Surg. 2014;134(3):497e–499e. doi:10.1097/PRS.0000000000000433"
+        },
+        {
+          "id": "ledderhose_kb_grenfell14",
+          "text": "Grenfell S, Borg M. Radiotherapy in fascial fibromatosis: a case series, literature review and considerations for treatment of early-stage disease. J Med Imaging Radiat Oncol. 2014;58(5):641–647. doi:10.1111/1754-9485.12178"
+        },
+        {
+          "id": "ledderhose_kb_degro",
+          "text": "Deutsche Gesellschaft für Radioonkologie (DEGRO). S2e-Leitlinie Strahlentherapie gutartiger Erkrankungen (abgelaufen)."
+        },
+        {
+          "id": "ledderhose_kb_seegenschmiedt03",
+          "text": "Seegenschmiedt MH, Attassi M. Strahlentherapie beim Morbus Ledderhose – Indikation und klinische Ergebnisse. Strahlenther Onkol. 2003;179(12):847–853. doi:10.1007/s00066-003-0994-3"
+        },
+        {
+          "id": "ledderhose_kb_heyd10",
+          "text": "Heyd R, Dorn AP, Herkströter M, Rödel C, Müller-Schimpfle M, Fraunholz I. Radiation therapy for early stages of morbus Ledderhose. Strahlenther Onkol. 2010;186(1):24–29. doi:10.1007/s00066-009-2049-x"
+        },
+        {
+          "id": "ledderhose_kb_vanderveer08",
+          "text": "van der Veer WM, Hamburg SM, de Gast A, Niessen FB. Recurrence of plantar fibromatosis after plantar fasciectomy: single-center long-term results. Plast Reconstr Surg. 2008;122(2):486–491. doi:10.1097/PRS.0b013e31817d61ab"
+        },
+        {
+          "id": "ledderhose_kb_aluisio96",
+          "text": "Aluisio FV, Mair SD, Hall RL. Plantar fibromatosis: treatment of primary and recurrent lesions and factors associated with recurrence. Foot Ankle Int. 1996;17(11):672–678. doi:10.1177/107110079601701105"
+        },
+        {
+          "id": "ledderhose_kb_fetsch05",
+          "text": "Fetsch JF, Laskin WB, Miettinen M. Palmar-plantar fibromatosis in children and preadolescents: a clinicopathologic study of 56 cases with newly recognized demographics and extended follow-up information. Am J Surg Pathol. 2005;29(8):1095–1105."
+        },
+        {
+          "id": "ledderhose_kb_wapner95",
+          "text": "Wapner KL, Ververeli PA, Moore JH, Hecht PJ, Becker CE, Lackman RD. Plantar fibromatosis: a review of primary and recurrent surgical treatment. Foot Ankle Int. 1995;16(9):548–551. doi:10.1177/107110079501600906"
+        },
+        {
+          "id": "ledderhose_kb_degreef11",
+          "text": "Degreef I, De Smet L. Risk factors in Dupuytren's diathesis: is recurrence after surgery predictable? Acta Orthop Belg. 2011;77(1):27–32."
+        },
+        {
+          "id": "ledderhose_kb_beckmann04",
+          "text": "Beckmann J, Kalteis T, Baer W, Grifka J, Lerch K. Plantarfibromatose: Therapie mit totaler Plantarfasziektomie. Zentralbl Chir. 2004;129(1):53–57. doi:10.1055/s-2004-816231"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_ledder_ueberblick",
+        "kb_ledder_ursachen",
+        "kb_ledder_diagnostik",
+        "kb_ledder_konservativ",
+        "kb_ledder_operativ",
+        "kb_ledder_quellen"
+      ]
+    },
+    "morton_neurom_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Morton-Neurom (interdigitale Neuralgie)",
+      "titel": "Morton-Neurom",
+      "untertitel": "Schmerzhafte narbige Verdickung eines Zehennervs am Vorfuß — konservativ, bei Versagen Entfernung",
+      "quellen": [
+        {
+          "id": "morton_neurom_kb_mahadevan15",
+          "text": "Mahadevan D, Venkatesan M, Bhatt R, Bhatia M. Diagnostic accuracy of clinical tests for Morton's neuroma compared with ultrasonography. J Foot Ankle Surg. 2015;54(4):549–553. doi:10.1053/j.jfas.2014.09.021"
+        },
+        {
+          "id": "morton_neurom_kb_mahadevan16",
+          "text": "Mahadevan D, Attwal M, Bhatt R, Bhatia M. Corticosteroid injection for Morton's neuroma with or without ultrasound guidance: a randomised controlled trial. Bone Joint J. 2016;98-B(4):498–503. doi:10.1302/0301-620X.98B4.36880"
+        },
+        {
+          "id": "morton_neurom_kb_morscher00",
+          "text": "Morscher E, Ulrich J, Dick W. Morton's intermetatarsal neuroma: morphology and histological substrate. Foot Ankle Int. 2000;21(7):558–562. doi:10.1177/107110070002100705"
+        },
+        {
+          "id": "morton_neurom_kb_levitsky93",
+          "text": "Levitsky KA, Alman BA, Jevsevar DS, Morehead J. Digital nerves of the foot: anatomic variations and implications regarding the pathogenesis of interdigital neuroma. Foot Ankle. 1993;14(4):208–214. doi:10.1177/107110079301400406"
+        },
+        {
+          "id": "morton_neurom_kb_raouf19",
+          "text": "Raouf T, Rogero R, McDonald E, Fuchs D, Shakked RJ, Winters BS, Daniel JN, Pedowitz DI, Raikin SM. Value of preoperative imaging and intraoperative histopathology in Morton's neuroma. Foot Ankle Int. 2019;40(9):1032–1036. doi:10.1177/1071100719851121"
+        },
+        {
+          "id": "morton_neurom_kb_bencardino00",
+          "text": "Bencardino J, Rosenberg ZS, Beltran J, Liu X, Marty-Delfaut E. Morton's neuroma: is it always symptomatic? AJR Am J Roentgenol. 2000;175(3):649–653. doi:10.2214/ajr.175.3.1750649"
+        },
+        {
+          "id": "morton_neurom_kb_symeonidis12",
+          "text": "Symeonidis PD, Iselin LD, Simmons N, Fowler S, Dracopoulos G, Stavrou P. Prevalence of interdigital nerve enlargements in an asymptomatic population. Foot Ankle Int. 2012;33(7):543–547. doi:10.3113/FAI.2012.0543"
+        },
+        {
+          "id": "morton_neurom_kb_xu15",
+          "text": "Xu Z, Duan X, Yu X, Wang H, Dong X, Xiang Z. The accuracy of ultrasonography and magnetic resonance imaging for the diagnosis of Morton's neuroma: a systematic review. Clin Radiol. 2015;70(4):351–358. doi:10.1016/j.crad.2014.10.017"
+        },
+        {
+          "id": "morton_neurom_kb_sharp03",
+          "text": "Sharp RJ, Wade CM, Hennessy MS, Saxby TS. The role of MRI and ultrasound imaging in Morton's neuroma and the effect of size of lesion on symptoms. J Bone Joint Surg Br. 2003;85(7):999–1005. doi:10.1302/0301-620x.85b7.12633"
+        },
+        {
+          "id": "morton_neurom_kb_bennett95",
+          "text": "Bennett GL, Graham CE, Mauldin DM. Morton's interdigital neuroma: a comprehensive treatment protocol. Foot Ankle Int. 1995;16(12):760–763. doi:10.1177/107110079501601204"
+        },
+        {
+          "id": "morton_neurom_kb_valisena18",
+          "text": "Valisena S, Petri GJ, Ferrero A. Treatment of Morton's neuroma: a systematic review. Foot Ankle Surg. 2018;24(4):271–281. doi:10.1016/j.fas.2017.03.010"
+        },
+        {
+          "id": "morton_neurom_kb_colo20",
+          "text": "Colò G, Rava A, Samaila EM, et al. The effectiveness of shoe modifications and orthotics in the conservative treatment of Civinini-Morton syndrome: state of art. Acta Biomed. 2020;91(4-S):60–68. doi:10.23750/abm.v91i4-S.9713"
+        },
+        {
+          "id": "morton_neurom_kb_kilmartin94",
+          "text": "Kilmartin TE, Wallace WA. Effect of pronation and supination orthosis on Morton's neuroma and lower extremity function. Foot Ankle Int. 1994;15(5):256–262. doi:10.1177/107110079401500505"
+        },
+        {
+          "id": "morton_neurom_kb_thomson13",
+          "text": "Thomson CE, Beggs I, Martin DJ, McMillan D, Edwards RT, Russell D, Yeo ST, Russell IT, Gibson JNA. Methylprednisolone injections for the treatment of Morton neuroma: a patient-blinded randomized trial. J Bone Joint Surg Am. 2013;95(9):790–798. doi:10.2106/JBJS.I.01780"
+        },
+        {
+          "id": "morton_neurom_kb_saygi05",
+          "text": "Saygi B, Yildirim Y, Saygi EK, Kara H, Esemenli T. Morton neuroma: comparative results of two conservative methods. Foot Ankle Int. 2005;26(7):556–559. doi:10.1177/107110070502600711"
+        },
+        {
+          "id": "morton_neurom_kb_markovic08",
+          "text": "Markovic M, Crichton K, Read JW, Lam P, Slater HK. Effectiveness of ultrasound-guided corticosteroid injection in the treatment of Morton's neuroma. Foot Ankle Int. 2008;29(5):483–487. doi:10.3113/FAI-2008-0483"
+        },
+        {
+          "id": "morton_neurom_kb_choi21",
+          "text": "Choi JY, Lee HI, Hong WH, Suh JS, Hur JW. Corticosteroid injection for Morton's interdigital neuroma: a systematic review. Clin Orthop Surg. 2021;13(2):266–277. doi:10.4055/cios20256"
+        },
+        {
+          "id": "morton_neurom_kb_gurdezi13",
+          "text": "Gurdezi S, White T, Ramesh P. Alcohol injection for Morton's neuroma: a five-year follow-up. Foot Ankle Int. 2013;34(8):1064–1067. doi:10.1177/1071100713489555"
+        },
+        {
+          "id": "morton_neurom_kb_lee18",
+          "text": "Lee K, Hwang IY, Ryu CH, Lee JW, Kang SW. Ultrasound-guided hyaluronic acid injection for the management of Morton's neuroma. Foot Ankle Int. 2018;39(2):201–204. doi:10.1177/1071100717739578"
+        },
+        {
+          "id": "morton_neurom_kb_campbell16",
+          "text": "Campbell CM, Diamond E, Schmidt WK, et al. A randomized, double-blind, placebo-controlled trial of injected capsaicin for pain in Morton's neuroma. Pain. 2016;157(6):1297–1304. doi:10.1097/j.pain.0000000000000544"
+        },
+        {
+          "id": "morton_neurom_kb_millansilva24",
+          "text": "Millán-Silva MO, Munuera-Martínez PV, Távara-Vidalón P. Infiltrative treatment of Morton's neuroma: a systematic review. Pain Manag Nurs. 2024;25(6):628–637. doi:10.1016/j.pmn.2024.06.005"
+        },
+        {
+          "id": "morton_neurom_kb_lorenzon21",
+          "text": "Lorenzon P, Rettore C, Scalvi A. Infiltrative therapy of Morton's neuroma. Acta Biomed. 2022;92(S3):e2021556. doi:10.23750/abm.v92iS3.12545"
+        },
+        {
+          "id": "morton_neurom_kb_matthews19",
+          "text": "Matthews BG, Hurn SE, Harding MP, Henry RA, Ware RS. The effectiveness of non-surgical interventions for common plantar digital compressive neuropathy (Morton's neuroma): a systematic review and meta-analysis. J Foot Ankle Res. 2019;12:12. doi:10.1186/s13047-019-0320-7"
+        },
+        {
+          "id": "morton_neurom_kb_muhamad23",
+          "text": "Muhamad R, Akrivaki A, Papagiannopoulou G, Zavridis P, Zis P. The role of vitamin B6 in peripheral neuropathy: a systematic review. Nutrients. 2023;15(13):2823. doi:10.3390/nu15132823"
+        },
+        {
+          "id": "morton_neurom_kb_thomson04",
+          "text": "Thomson CE, Gibson JNA, Martin D. Interventions for the treatment of Morton's neuroma. Cochrane Database Syst Rev. 2004;(3):CD003118. doi:10.1002/14651858.CD003118.pub2"
+        },
+        {
+          "id": "morton_neurom_kb_coughlin01",
+          "text": "Coughlin MJ, Pinsonneault T. Operative treatment of interdigital neuroma: a long-term follow-up study. J Bone Joint Surg Am. 2001;83(9):1321–1328."
+        },
+        {
+          "id": "morton_neurom_kb_womack08",
+          "text": "Womack JW, Richardson DR, Murphy GA, Richardson EG, Ishikawa SN. Long-term evaluation of interdigital neuroma treated by surgical excision. Foot Ankle Int. 2008;29(6):574–577. doi:10.3113/FAI.2008.0574"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_mn_ueberblick",
+        "kb_mn_ursachen",
+        "kb_mn_diagnostik",
+        "kb_mn_konservativ",
+        "kb_mn_operativ",
+        "kb_mn_quellen"
+      ]
+    },
+    "ote_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Os tibiale externum (akzessorisches Kahnbein)",
+      "titel": "Os tibiale externum",
+      "untertitel": "Zusätzlicher Knochen am inneren Fußrand im Ansatz der Tibialis-posterior-Sehne",
+      "quellen": [
+        {
+          "id": "ote_kb_kelescelik17",
+          "text": "Keles-Celik N, Kose O, Sekerci R, Aytac G, Turan A, Güler F. Accessory ossicles of the foot and ankle: disorders and a review of the literature. Cureus. 2017;9(11):e1881. doi:10.7759/cureus.1881"
+        },
+        {
+          "id": "ote_kb_coughlin06",
+          "text": "Coughlin MJ. Sesamoid and accessory bones of the foot. In: Coughlin MJ, ed. Mann's Surgery of the Foot and Ankle. Philadelphia: Saunders/Elsevier; 2006:438–494."
+        },
+        {
+          "id": "ote_kb_lawson84",
+          "text": "Lawson JP, Ogden JA, Sella E, Barwick KW. The painful accessory navicular. Skeletal Radiol. 1984;12(4):250–262. doi:10.1007/BF00349506"
+        },
+        {
+          "id": "ote_kb_golano04",
+          "text": "Golanó P, Fariñas O, Sáenz I. The anatomy of the navicular and periarticular structures. Foot Ankle Clin. 2004;9(1):1–23. doi:10.1016/S1083-7515(03)00155-4"
+        },
+        {
+          "id": "ote_kb_bernaerts04",
+          "text": "Bernaerts A, Vanhoenacker FM, Van de Perre S, De Schepper AM, Parizel PM. Accessory navicular bone: not such a normal variant. JBR-BTR. 2004;87(5):250–252."
+        },
+        {
+          "id": "ote_kb_jegal16",
+          "text": "Jegal H, Park YU, Kim JS, Choo HS, Seo YU, Lee KT. Accessory navicular syndrome in athlete vs general population. Foot Ankle Int. 2016;37(8):862–867. doi:10.1177/1071100716644791"
+        },
+        {
+          "id": "ote_kb_wariach22",
+          "text": "Wariach S, Karim K, Sarraj M, Gaber K, Singh A, Kishta W. Assessing the outcomes associated with accessory navicular bone surgery — a systematic review. Curr Rev Musculoskelet Med. 2022;15(5):377–384. doi:10.1007/s12178-022-09772-5"
+        },
+        {
+          "id": "ote_kb_mosel04",
+          "text": "Mosel LD, Kat E, Voyvodic F. Imaging of the symptomatic type II accessory navicular bone. Australas Radiol. 2004;48(2):267–271. doi:10.1111/j.1440-1673.2004.01286.x"
+        },
+        {
+          "id": "ote_kb_wynn19",
+          "text": "Wynn M, Brady C, Cola K, Rice-Denning J. Effectiveness of nonoperative treatment of the symptomatic accessory navicular in pediatric patients. Iowa Orthop J. 2019;39(1):45–49."
+        },
+        {
+          "id": "ote_kb_knapik19",
+          "text": "Knapik DM, Archibald HD, Xie KK, Liu RW. A retrospective study on factors predictive of operative intervention in symptomatic accessory navicular. J Child Orthop. 2019;13(1):107–113. doi:10.1302/1863-2548.13.180168"
+        },
+        {
+          "id": "ote_kb_nakayama05",
+          "text": "Nakayama S, Sugimoto K, Takakura Y, Tanaka Y, Kasanami R. Percutaneous drilling of symptomatic accessory navicular in young athletes. Am J Sports Med. 2005;33(4):531–535. doi:10.1177/0363546504270564"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_ote_ueberblick",
+        "kb_ote_ursachen",
+        "kb_ote_diagnostik",
+        "kb_ote_konservativ",
+        "kb_ote_operativ",
+        "kb_ote_quellen"
+      ]
+    },
+    "olt_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Osteochondrale Läsion / Osteochondrosis dissecans des Talus",
+      "titel": "Osteochondrale Läsion des Talus",
+      "untertitel": "Umschriebener Knorpel-Knochen-Schaden am Sprungbein — unfallbedingt oder als Osteochondrosis dissecans",
+      "quellen": [
+        {
+          "id": "olt_kb_bruns21",
+          "text": "Bruns J, Habermann C, Werner M. Osteochondral lesions of the talus: a review on talus osteochondral injuries, including osteochondritis dissecans. Cartilage. 2021;13(1_suppl):1380S–1401S. doi:10.1177/1947603520985182"
+        },
+        {
+          "id": "olt_kb_mckinley08",
+          "text": "McKinley TO, Tochigi Y, Rudert MJ, Brown TD. Instability-associated changes in contact stress and contact stress rates near a step-off incongruity. J Bone Joint Surg Am. 2008;90(2):375–383. doi:10.2106/JBJS.G.00127"
+        },
+        {
+          "id": "olt_kb_sugimoto09",
+          "text": "Sugimoto K, Takakura Y, Okahashi K, Samoto N, Kawate K, Iwai M. Chondral injuries of the ankle with recurrent lateral instability: an arthroscopic study. J Bone Joint Surg Am. 2009;91(1):99–106. doi:10.2106/JBJS.G.00087"
+        },
+        {
+          "id": "olt_kb_procter82",
+          "text": "Procter P, Paul JP. Ankle joint biomechanics. J Biomech. 1982;15(9):627–634. doi:10.1016/0021-9290(82)90017-3"
+        },
+        {
+          "id": "olt_kb_kessler14",
+          "text": "Kessler JI, Weiss JM, Nikizad H, Gyurdzhyan S, Jacobs JC, Bebchuk JD, Shea KG. Osteochondritis dissecans of the ankle in children and adolescents: demographics and epidemiology. Am J Sports Med. 2014;42(9):2165–2171. doi:10.1177/0363546514538406"
+        },
+        {
+          "id": "olt_kb_zwingmann12",
+          "text": "Zwingmann J, Südkamp NP, Schmal H, Niemeyer P. Surgical treatment of osteochondritis dissecans of the talus: a systematic review. Arch Orthop Trauma Surg. 2012;132(9):1241–1250. doi:10.1007/s00402-012-1544-1"
+        },
+        {
+          "id": "olt_kb_dombrowski18",
+          "text": "Dombrowski ME, Yasui Y, Murawski CD, et al. Conservative management and biological treatment strategies: proceedings of the International Consensus Meeting on Cartilage Repair of the Ankle. Foot Ankle Int. 2018;39(1_suppl):9S–15S. doi:10.1177/1071100718779390"
+        },
+        {
+          "id": "olt_kb_mcgahan10",
+          "text": "McGahan PJ, Pinney SJ. Current concept review: osteochondral lesions of the talus. Foot Ankle Int. 2010;31(1):90–101. doi:10.3113/FAI.2010.0090"
+        },
+        {
+          "id": "olt_kb_steele23",
+          "text": "Steele JR, Dekker TJ, Federer AE, Liles JL, Adams SB, Easley ME. Osteochondral lesions of the talus: current concepts in diagnosis and treatment. Foot Ankle Orthop. 2023;8(3):24730114231192961. doi:10.1177/24730114231192961"
+        },
+        {
+          "id": "olt_kb_buck23",
+          "text": "Buck TMF, Lauf K, Dahmen J, Altink JN, Stufkens SAS, Kerkhoffs GMMJ. Non-operative management for osteochondral lesions of the talus: a systematic review of treatment modalities, clinical- and radiological outcomes. Knee Surg Sports Traumatol Arthrosc. 2023;31(8):3517–3527. doi:10.1007/s00167-023-07408-w"
+        },
+        {
+          "id": "olt_kb_weigelt20",
+          "text": "Weigelt L, Laux CJ, Urbanschitz L, Espinosa N, Klammer G, Götschi T, Wirth SH. Long-term prognosis after successful nonoperative treatment of osteochondral lesions of the talus: an observational 14-year follow-up study. Orthop J Sports Med. 2020;8(6):2325967120924183. doi:10.1177/2325967120924183"
+        },
+        {
+          "id": "olt_kb_walther24",
+          "text": "Walther M, Gottschalk O, Aurich M. Operative management of osteochondral lesions of the talus: 2024 recommendations of the working group 'clinical tissue regeneration' of the German Society of Orthopedics and Traumatology (DGOU). EFORT Open Rev. 2024;9(3):217–234. doi:10.1530/EOR-23-0075"
+        },
+        {
+          "id": "olt_kb_flury23",
+          "text": "Flury A, Hodel S, Ongini E, Trache T, Hasler J, Wirth SH, Viehöfer AF, Imhoff FB. The unloading effect of supramalleolar versus sliding calcaneal osteotomy for treatment of osteochondral lesions of the medial talus: a biomechanical study. Orthop J Sports Med. 2023;11(10):23259671231176295. doi:10.1177/23259671231176295"
+        },
+        {
+          "id": "olt_kb_knupp17",
+          "text": "Knupp M. The use of osteotomies in the treatment of asymmetric ankle joint arthritis. Foot Ankle Int. 2017;38(2):220–229. doi:10.1177/1071100716679190"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_olt_ueberblick",
+        "kb_olt_ursachen",
+        "kb_olt_diagnostik",
+        "kb_olt_konservativ",
+        "kb_olt_operativ",
+        "kb_olt_quellen"
+      ]
+    },
+    "pops_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Painful Os Peroneum Syndrome (POPS)",
+      "titel": "Os peroneum / POPS",
+      "untertitel": "Schmerzen durch einen Zusatzknochen (Os peroneum) in der langen Wadenbeinsehne am äußeren Mittelfuß",
+      "quellen": [
+        {
+          "id": "pops_kb_sobel94",
+          "text": "Sobel M, Pavlov H, Geppert MJ, Thompson FM, DiCarlo EF, Davis WH. Painful os peroneum syndrome: a spectrum of conditions responsible for plantar lateral foot pain. Foot Ankle Int. 1994;15(3):112–124. doi:10.1177/107110079401500306"
+        },
+        {
+          "id": "pops_kb_selmani06",
+          "text": "Selmani E, Gjata V, Gjika E. Current concepts review: peroneal tendon disorders. Foot Ankle Int. 2006;27(3):221–228. doi:10.1177/107110070602700314"
+        },
+        {
+          "id": "pops_kb_chagas16",
+          "text": "Chagas-Neto FA, de Souza BN, Nogueira-Barbosa MH. Painful os peroneum syndrome: underdiagnosed condition in the lateral midfoot pain. Case Rep Radiol. 2016;2016:8739362. doi:10.1155/2016/8739362"
+        },
+        {
+          "id": "pops_kb_oh12",
+          "text": "Oh SJ, Kim YH, Kim SK, Kim MW. Painful os peroneum syndrome presenting as lateral plantar foot pain. Ann Rehabil Med. 2012;36(1):163–166. doi:10.5535/arm.2012.36.1.163"
+        },
+        {
+          "id": "pops_kb_nwawka13",
+          "text": "Nwawka OK, Hayashi D, Diaz LE, Goud AR, Arndt WF, Roemer FW, Malguria N, Guermazi A. Sesamoids and accessory ossicles of the foot: anatomical variability and related pathology. Insights Imaging. 2013;4(5):581–593. doi:10.1007/s13244-013-0277-1"
+        },
+        {
+          "id": "pops_kb_peacock86",
+          "text": "Peacock KC, Resnick EJ, Thoder JJ. Fracture of the os peroneum with rupture of the peroneus longus tendon: a case report with review of the literature. Clin Orthop Relat Res. 1986;(202):223–226."
+        },
+        {
+          "id": "pops_kb_bianchi17",
+          "text": "Bianchi S, Bortolotto C, Draghi F. Os peroneum imaging: normal appearance and pathological findings. Insights Imaging. 2017;8(1):59–68. doi:10.1007/s13244-016-0540-3"
+        },
+        {
+          "id": "pops_kb_davda17",
+          "text": "Davda K, Malhotra K, O'Donnell P, Singh D, Cullen N. Peroneal tendon disorders. EFORT Open Rev. 2017;2(6):281–292. doi:10.1302/2058-5241.2.160047"
+        },
+        {
+          "id": "pops_kb_stockton14",
+          "text": "Stockton KG, Brodsky JW. Peroneus longus tears associated with pathology of the os peroneum. Foot Ankle Int. 2014;35(4):346–352. doi:10.1177/1071100714522026"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_pops_ueberblick",
+        "kb_pops_ursachen",
+        "kb_pops_diagnostik",
+        "kb_pops_konservativ",
+        "kb_pops_operativ",
+        "kb_pops_quellen"
+      ]
+    },
+    "peroneal_luxation_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Peronealsehnen-Instabilität und -Luxation",
+      "titel": "Peronealsehnen-Luxation",
+      "untertitel": "Springen der Wadenbeinsehnen aus der Rinne hinter dem Außenknöchel — oft nach Umknicktrauma",
+      "quellen": [
+        {
+          "id": "plux_kb_raikin08",
+          "text": "Raikin SM, Elias I, Nazarian LN. Intrasheath subluxation of the peroneal tendons. J Bone Joint Surg Am. 2008;90(5):992–999. doi:10.2106/JBJS.G.00801"
+        },
+        {
+          "id": "plux_kb_willegger21",
+          "text": "Willegger M, Hirtler L, Schwarz GM, Windhager RH, Chiari C. Peronealsehnenpathologien: von der Diagnose bis zur Behandlung. Orthopade. 2021;50(7):589–604. doi:10.1007/s00132-021-04116-6"
+        },
+        {
+          "id": "plux_kb_davis94",
+          "text": "Davis WH, Sobel M, Deland J, Bohne WH, Patel MB. The superior peroneal retinaculum: an anatomic study. Foot Ankle Int. 1994;15(5):271–275. doi:10.1177/107110079401500507"
+        },
+        {
+          "id": "plux_kb_edwards28",
+          "text": "Edwards ME. The relations of the peroneal tendons to the fibula, calcaneus, and cuboideum. Am J Anat. 1928;42(1):213–253."
+        },
+        {
+          "id": "plux_kb_adachi09",
+          "text": "Adachi N, Fukuhara K, Kobayashi T, Nakasa T, Ochi M. Morphologic variations of the fibular malleolar groove with recurrent dislocation of the peroneal tendons. Foot Ankle Int. 2009;30(6):540–544. doi:10.3113/FAI.2009.0540"
+        },
+        {
+          "id": "plux_kb_kumai03",
+          "text": "Kumai T, Benjamin M. The histological structure of the malleolar groove of the fibula in man: its direct bearing on the displacement of peroneal tendons and their surgical repair. J Anat. 2003;203(2):257–262. doi:10.1046/j.1469-7580.2003.00209.x"
+        },
+        {
+          "id": "plux_kb_saupe07",
+          "text": "Saupe N, Mengiardi B, Pfirrmann CWA, Vienne P, Seifert B, Zanetti M. Anatomic variants associated with peroneal tendon disorders: MR imaging findings in volunteers with asymptomatic ankles. Radiology. 2007;242(2):509–517. doi:10.1148/radiol.2422051993"
+        },
+        {
+          "id": "plux_kb_freccero06",
+          "text": "Freccero DM, Berkowitz MJ. The relationship between tears of the peroneus brevis tendon and the distal extent of its muscle belly: an MRI study. Foot Ankle Int. 2006;27(4):236–239. doi:10.1177/107110070602700402"
+        },
+        {
+          "id": "plux_kb_mirmiran15",
+          "text": "Mirmiran R, Squire C, Wassell D. Prevalence and role of a low-lying peroneus brevis muscle belly in patients with peroneal tendon pathologic features: a potential source of tendon subluxation. J Foot Ankle Surg. 2015;54(5):872–875. doi:10.1053/j.jfas.2015.02.012"
+        },
+        {
+          "id": "plux_kb_neustadter04",
+          "text": "Neustadter J, Raikin SM, Nazarian LN. Dynamic sonographic evaluation of peroneal tendon subluxation. AJR Am J Roentgenol. 2004;183(4):985–988. doi:10.2214/ajr.183.4.1830985"
+        },
+        {
+          "id": "plux_kb_cerrato09",
+          "text": "Cerrato RA, Myerson MS. Peroneal tendon tears, surgical management and its complications. Foot Ankle Clin. 2009;14(2):299–312. doi:10.1016/j.fcl.2009.01.004"
+        },
+        {
+          "id": "plux_kb_mengiardi06",
+          "text": "Mengiardi B, Pfirrmann CWA, Schöttle PB, Bode B, Hodler J, Vienne P, Zanetti M. Magic angle effect in MR imaging of ankle tendons: influence of foot positioning on prevalence and site in asymptomatic subjects and cadaveric tendons. Eur Radiol. 2006;16(10):2197–2206. doi:10.1007/s00330-006-0164-y"
+        },
+        {
+          "id": "plux_kb_redfern04",
+          "text": "Redfern D, Myerson M. The management of concomitant tears of the peroneus longus and brevis tendons. Foot Ankle Int. 2004;25(10):695–707. doi:10.1177/107110070402501002"
+        },
+        {
+          "id": "plux_kb_eckert76",
+          "text": "Eckert WR, Davis EA. Acute rupture of the peroneal retinaculum. J Bone Joint Surg Am. 1976;58(5):670–672."
+        },
+        {
+          "id": "plux_kb_mclennan80",
+          "text": "McLennan JG. Treatment of acute and chronic luxations of the peroneal tendons. Am J Sports Med. 1980;8(6):432–436. doi:10.1177/036354658000800609"
+        },
+        {
+          "id": "plux_kb_vandijk18",
+          "text": "van Dijk PA, Miller D, Calder J, DiGiovanni CW, Kennedy JG, Kerkhoffs GM, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096–3107. doi:10.1007/s00167-018-4971-x"
+        },
+        {
+          "id": "plux_kb_vandijk16",
+          "text": "van Dijk PAD, Gianakos AL, Kerkhoffs GMMJ, Kennedy JG. Return to sports and clinical outcomes in patients treated for peroneal tendon dislocation: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1155–1164. doi:10.1007/s00167-015-3833-z"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_plux_ueberblick",
+        "kb_plux_ursachen",
+        "kb_plux_diagnostik",
+        "kb_plux_konservativ",
+        "kb_plux_operativ",
+        "kb_plux_quellen"
+      ]
+    },
+    "ptr_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Ruptur der Peronealsehnen (Wadenbeinsehnen-Riss)",
+      "titel": "Peronealsehnen-Riss",
+      "untertitel": "Teil- oder Komplettriss der Wadenbeinsehnen am äußeren Fußrand — oft verschleißbedingt, häufig mit Außenbandinstabilität",
+      "quellen": [
+        {
+          "id": "ptr_kb_hyer05",
+          "text": "Hyer CF, Dawson JM, Philbin TM, Berlet GC, Lee TH. The peroneal tubercle: description, classification, and relevance to peroneus longus tendon pathology. Foot Ankle Int. 2005;26(11):947–950. doi:10.1177/107110070502601109"
+        },
+        {
+          "id": "ptr_kb_sobel92",
+          "text": "Sobel M, Geppert MJ, Hannafin JA, Bohne WH, Arnoczky SP. Microvascular anatomy of the peroneal tendons. Foot Ankle. 1992;13(8):469–472. doi:10.1177/107110079201300807"
+        },
+        {
+          "id": "ptr_kb_petersen00",
+          "text": "Petersen W, Bobka T, Stein V, Tillmann B. Blood supply of the peroneal tendons: injection and immunohistochemical studies of cadaver tendons. Acta Orthop Scand. 2000;71(2):168–174. doi:10.1080/000164700317413148"
+        },
+        {
+          "id": "ptr_kb_abraham79",
+          "text": "Abraham E, Stirnaman JE. Neglected rupture of the peroneal tendons causing recurrent sprains of the ankle: case report. J Bone Joint Surg Am. 1979;61(8):1247–1248."
+        },
+        {
+          "id": "ptr_kb_digiovanni00",
+          "text": "DiGiovanni BF, Fraga CJ, Cohen BE, Shereff MJ. Associated injuries found in chronic lateral ankle instability. Foot Ankle Int. 2000;21(10):809–815. doi:10.1177/107110070002101003"
+        },
+        {
+          "id": "ptr_kb_redfern04",
+          "text": "Redfern D, Myerson M. The management of concomitant tears of the peroneus longus and brevis tendons. Foot Ankle Int. 2004;25(10):695–707. doi:10.1177/107110070402501002"
+        },
+        {
+          "id": "ptr_kb_saupe07",
+          "text": "Saupe N, Mengiardi B, Pfirrmann CWA, Vienne P, Seifert B, Zanetti M. Anatomic variants associated with peroneal tendon disorders: MR imaging findings in volunteers with asymptomatic ankles. Radiology. 2007;242(2):509–517. doi:10.1148/radiol.2422051993"
+        },
+        {
+          "id": "ptr_kb_freccero06",
+          "text": "Freccero DM, Berkowitz MJ. The relationship between tears of the peroneus brevis tendon and the distal extent of its muscle belly: an MRI study. Foot Ankle Int. 2006;27(4):236–239. doi:10.1177/107110070602700402"
+        },
+        {
+          "id": "ptr_kb_dombek03",
+          "text": "Dombek MF, Lamm BM, Saltrick K, Mendicino RW, Catanzariti AR. Peroneal tendon tears: a retrospective review. J Foot Ankle Surg. 2003;42(5):250–258. doi:10.1016/s1067-2516(03)00314-4"
+        },
+        {
+          "id": "ptr_kb_sarrafian11",
+          "text": "Sarrafian SK, Kelikian AS. Sarrafian's Anatomy of the Foot and Ankle. 3rd ed. Philadelphia: Lippincott Williams & Wilkins; 2011."
+        },
+        {
+          "id": "ptr_kb_grant05",
+          "text": "Grant TH, Kelikian AS, Jereb SE, McCarthy RJ. Ultrasound diagnosis of peroneal tendon tears: a surgical correlation. J Bone Joint Surg Am. 2005;87(8):1788–1794. doi:10.2106/JBJS.D.02450"
+        },
+        {
+          "id": "ptr_kb_brandes00",
+          "text": "Brandes CB, Smith RW. Characterization of patients with primary peroneus longus tendinopathy: a review of twenty-two cases. Foot Ankle Int. 2000;21(6):462–468. doi:10.1177/107110070002100602"
+        },
+        {
+          "id": "ptr_kb_lamm04",
+          "text": "Lamm BM, Myers DT, Dombek M, Mendicino RW, Catanzariti AR, Saltrick K. Magnetic resonance imaging and surgical correlation of peroneus brevis tears. J Foot Ankle Surg. 2004;43(1):30–36. doi:10.1053/j.jfas.2003.11.002"
+        },
+        {
+          "id": "ptr_kb_willegger21",
+          "text": "Willegger M, Hirtler L, Schwarz GM, Windhager RH, Chiari C. Peronealsehnenpathologien: von der Diagnose bis zur Behandlung. Orthopade. 2021;50(7):589–604. doi:10.1007/s00132-021-04116-6"
+        },
+        {
+          "id": "ptr_kb_vandijk18",
+          "text": "van Dijk PA, Miller D, Calder J, DiGiovanni CW, Kennedy JG, Kerkhoffs GM, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096–3107. doi:10.1007/s00167-018-4971-x"
+        },
+        {
+          "id": "ptr_kb_manibabu15",
+          "text": "Mani-Babu S, Morrissey D, Waugh C, Screen H, Barton C. The effectiveness of extracorporeal shock wave therapy in lower limb tendinopathy: a systematic review. Am J Sports Med. 2015;43(3):752–761. doi:10.1177/0363546514531911"
+        },
+        {
+          "id": "ptr_kb_dallaudiere14",
+          "text": "Dallaudière B, Pesquer L, Meyer P, et al. Intratendinous injection of platelet-rich plasma under US guidance to treat tendinopathy: a long-term pilot study. J Vasc Interv Radiol. 2014;25(5):717–723. doi:10.1016/j.jvir.2014.01.026"
+        },
+        {
+          "id": "ptr_kb_heckman08",
+          "text": "Heckman DS, Reddy S, Pedowitz D, Wapner KL, Parekh SG. Operative treatment for peroneal tendon disorders. J Bone Joint Surg Am. 2008;90(2):404–418. doi:10.2106/JBJS.G.00965"
+        },
+        {
+          "id": "ptr_kb_vandijk98",
+          "text": "van Dijk CN, Kort N. Tendoscopy of the peroneal tendons. Arthroscopy. 1998;14(5):471–478. doi:10.1016/s0749-8063(98)70074-x"
+        }
+      ],
+      "stand": "2026-07",
+      "slides": [
+        "kb_ptr_ueberblick",
+        "kb_ptr_ursachen",
+        "kb_ptr_diagnostik",
+        "kb_ptr_konservativ",
+        "kb_ptr_operativ",
+        "kb_ptr_quellen"
       ]
     }
   },
