@@ -3490,27 +3490,94 @@
       "slides": [
         "kb_mfk5_ueberblick",
         "kb_mfk5_ursachen",
-        "kb_mfk5_behandlung",
+        "kb_mfk5_beschwerden",
+        "kb_mfk5_diagnostik",
+        "kb_mfk5_konservativ",
+        "kb_mfk5_operativ",
         "kb_mfk5_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "mfk5_fraktur_kb_q1",
-          "text": "Polzer H, et al. Proximal fifth metatarsal fractures: epidemiology and zone distribution. 2021."
+          "text": "Jones R. Fracture of the base of the fifth metatarsal bone by indirect violence. Ann Surg. 1902;35(6):697-700. PMID: [17861128](https://pubmed.ncbi.nlm.nih.gov/17861128/)"
         },
         {
           "id": "mfk5_fraktur_kb_q2",
-          "text": "Zenios M, et al. The role of weightbearing in fifth metatarsal base fractures. 2005."
+          "text": "Petrisor BA, Ekrol I, Court-Brown C. The epidemiology of metatarsal fractures. Foot Ankle Int. 2006;27(3):172-4. doi: [10.1177/107110070602700303](https://doi.org/10.1177/107110070602700303)"
         },
         {
           "id": "mfk5_fraktur_kb_q3",
-          "text": "Pituckanotai K, et al. Cast vs. functional treatment for proximal fifth metatarsal fractures: meta-analysis. 2018."
+          "text": "Herterich V, Baumbach SF, Kaiser A, Böcker W, Polzer H. Fifth metatarsal fracture — a systematic review of the treatment of fractures of the base of the fifth metatarsal bone. Dtsch Arztebl Int. 2021;118(35-36):587-94. doi: [10.3238/arztebl.m2021.0231](https://doi.org/10.3238/arztebl.m2021.0231)"
         },
         {
           "id": "mfk5_fraktur_kb_q4",
-          "text": "Wu GB, et al.; Lee KT, et al. Operative vs. nonoperative treatment of zone I fifth metatarsal fractures. 2016/2018."
+          "text": "Fujitaka K, Tanaka Y, Taniguchi A, Ogawa M, Isomoto S, Otuki S, Okubo M. Pathoanatomy of the Jones fracture in male university soccer players. Am J Sports Med. 2020;48(2):424-31. doi: [10.1177/0363546519893365](https://doi.org/10.1177/0363546519893365)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q5",
+          "text": "Rath B, Notermans HP, Franzen J, Knifka J, Walpert J, Frank D, Koebke J. The microvascular anatomy of the metatarsal bones: a plastination study. Surg Radiol Anat. 2009;31(4):271-7. doi: [10.1007/s00276-008-0441-3](https://doi.org/10.1007/s00276-008-0441-3)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q6",
+          "text": "Lawrence SJ, Botte MJ. Jones' fractures and related fractures of the proximal fifth metatarsal. Foot Ankle. 1993;14(6):358-65. doi: [10.1177/107110079301400610](https://doi.org/10.1177/107110079301400610)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q7",
+          "text": "Torg JS, Balduini FC, Zelko RR, Pavlov H, Peff TC, Das M. Fractures of the base of the fifth metatarsal distal to the tuberosity. Classification and guidelines for non-surgical and surgical management. J Bone Joint Surg Am. 1984;66(2):209-14. PMID: [6693447](https://pubmed.ncbi.nlm.nih.gov/6693447/)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q8",
+          "text": "Carp L. Fracture of the fifth metatarsal bone: with special reference to delayed union. Ann Surg. 1927;86(2):308-20. doi: [10.1097/00000658-192708000-00020](https://doi.org/10.1097/00000658-192708000-00020)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q9",
+          "text": "Granata JD, Berlet GC, Philbin TM, Jones G, Kaeding CC, Peterson KS. Failed surgical management of acute proximal fifth metatarsal (Jones) fractures: a retrospective case series and literature review. Foot Ankle Spec. 2015;8(6):454-9. doi: [10.1177/1938640015592836](https://doi.org/10.1177/1938640015592836)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q10",
+          "text": "Zenios M, Kim WY, Sampath J, Muddu BN. Functional treatment of acute metatarsal fractures: a prospective randomised comparison of management in a cast versus elasticated support bandage. Injury. 2005;36(7):832-5. doi: [10.1016/j.injury.2004.12.001](https://doi.org/10.1016/j.injury.2004.12.001)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q11",
+          "text": "Pituckanotai K, Arirachakaran A, Piyapittayanun P, Tuchinda H, Peradhammanon E, Kongtharvonskul J. Comparative outcomes of cast and removable support in fracture fifth metatarsal bone: systematic review and meta-analysis. J Foot Ankle Surg. 2018;57(5):982-6. doi: [10.1053/j.jfas.2018.03.018](https://doi.org/10.1053/j.jfas.2018.03.018)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q12",
+          "text": "Bayram S, Kendirci AŞ, Kıral D, Şahinkaya T, Ekinci M, Batıbay SG, Akgül T. Isokinetic strength comparison of tuberosity fractures of the proximal fifth metatarsal treated with elastic bandage vs cast. Foot Ankle Int. 2020;41(6):674-82. doi: [10.1177/1071100720916429](https://doi.org/10.1177/1071100720916429)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q13",
+          "text": "Baumbach SF, Prall WC, Kramer M, Braunstein M, Böcker W, Polzer H. Functional treatment for fractures to the base of the 5th metatarsal — influence of fracture location and fracture characteristics. BMC Musculoskelet Disord. 2017;18(1):534. doi: [10.1186/s12891-017-1893-6](https://doi.org/10.1186/s12891-017-1893-6)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q14",
+          "text": "Van Aaken J, Berli MC, Noger M, Gambirasio R, Fritschy D. Symptomatic treatment of non-displaced avulsion and Jones fractures of the fifth metatarsal: a prospective study. Rev Med Suisse. 2007;3(120):1792-4. PMID: [17850008](https://pubmed.ncbi.nlm.nih.gov/17850008/)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q15",
+          "text": "Clutton J, Perera A. Vitamin D insufficiency and deficiency in patients with fractures of the fifth metatarsal. Foot (Edinb). 2016;27:50-2. doi: [10.1016/j.foot.2015.08.005](https://doi.org/10.1016/j.foot.2015.08.005)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q16",
+          "text": "Wu GB, Li B, Yang YF. Comparative study of surgical and conservative treatments for fifth metatarsal base avulsion fractures (type I) in young adults or athletes. J Orthop Surg (Hong Kong). 2018;26(1):2309499017747128. doi: [10.1177/2309499017747128](https://doi.org/10.1177/2309499017747128)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q17",
+          "text": "Lee TH, Lee JH, Chay SW, Jang KS, Kim HJ. Comparison of clinical and radiologic outcomes between non-operative and operative treatment in 5th metatarsal base fractures (Zone 1). Injury. 2016;47(8):1789-93. doi: [10.1016/j.injury.2016.05.016](https://doi.org/10.1016/j.injury.2016.05.016)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q18",
+          "text": "Roche AJ, Calder JD. Treatment and return to sport following a Jones fracture of the fifth metatarsal: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2013;21(6):1307-15. doi: [10.1007/s00167-012-2138-8](https://doi.org/10.1007/s00167-012-2138-8)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q19",
+          "text": "Sides SD, Fetter NL, Glisson R, Nunley JA. Bending stiffness and pull-out strength of tapered, variable pitch screws, and 6.5-mm cancellous screws in acute Jones fractures. Foot Ankle Int. 2006;27(10):821-5. doi: [10.1177/107110070602701012](https://doi.org/10.1177/107110070602701012)"
+        },
+        {
+          "id": "mfk5_fraktur_kb_q20",
+          "text": "Larson CM, Almekinders LC, Taft TN, Garrett WE. Intramedullary screw fixation of Jones fractures. Analysis of failure. Am J Sports Med. 2002;30(1):55-60. doi: [10.1177/03635465020300012301](https://doi.org/10.1177/03635465020300012301)"
         }
       ]
     },
@@ -5025,6 +5092,246 @@
         "kb_ptr_konservativ",
         "kb_ptr_operativ",
         "kb_ptr_quellen"
+      ]
+    },
+    "tmt1_instabilitaet_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "TMT-I-Instabilität (erster Strahl)",
+      "titel": "TMT-I-Instabilität (erster Strahl)",
+      "untertitel": "Instabilität des inneren Fußwurzel-Mittelfuß-Gelenks — meist im Kontext von Hallux valgus oder Knick-Senk-Fuß",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "kb_tmt1_ueberblick",
+        "kb_tmt1_ursachen",
+        "kb_tmt1_klinik",
+        "kb_tmt1_bildgebung",
+        "kb_tmt1_konservativ",
+        "kb_tmt1_operativ",
+        "kb_tmt1_quellen"
+      ],
+      "_review": false,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "tmt1_instabilitaet_kb_q1",
+          "text": "Myerson MS, Badekas A. Hypermobility of the first ray. Foot Ankle Clin. 2000;5(3):469-84. PMID: [11232392](https://pubmed.ncbi.nlm.nih.gov/11232392/)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q2",
+          "text": "Claassen L, Venjakob E, Yao D, Lerch M, Plaass C, Stukenborg-Colsman C, Ettinger S. The computed tomography-based anatomy of the ossa cuneiformia. Orthop Rev (Pavia). 2019;11(2):7876. doi: [10.4081/or.2019.7876](https://doi.org/10.4081/or.2019.7876)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q3",
+          "text": "Mizel MS. The role of the plantar first metatarsal first cuneiform ligament in weightbearing on the first metatarsal. Foot Ankle. 1993;14(2):82-4. doi: [10.1177/107110079301400205](https://doi.org/10.1177/107110079301400205)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q4",
+          "text": "Doty JF, Coughlin MJ, Hirose C, et al. First metatarsocuneiform joint mobility: radiographic, anatomic, and clinical characteristics of the articular surface. Foot Ankle Int. 2014;35(5):504-11. doi: [10.1177/1071100714524556](https://doi.org/10.1177/1071100714524556)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q5",
+          "text": "Mason LW, Tanaka H. The first tarsometatarsal joint and its association with hallux valgus. Bone Joint Res. 2012;1(6):99-103. doi: [10.1302/2046-3758.16.2000077](https://doi.org/10.1302/2046-3758.16.2000077)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q6",
+          "text": "Cowie S, Parsons S, Scammell B, McKenzie J. Hypermobility of the first ray in patients with planovalgus feet and tarsometatarsal osteoarthritis. Foot Ankle Surg. 2012;18(4):237-40. doi: [10.1016/j.fas.2012.01.004](https://doi.org/10.1016/j.fas.2012.01.004)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q7",
+          "text": "Geng X, Wang C, Ma X, et al. Mobility of the first metatarsal-cuneiform joint in patients with and without hallux valgus: in vivo three-dimensional analysis using computerized tomography scan. J Orthop Surg Res. 2015;10:140. doi: [10.1186/s13018-015-0289-2](https://doi.org/10.1186/s13018-015-0289-2)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q8",
+          "text": "Kimura T, Kubota M, Taguchi T, Suzuki N, Hattori A, Marumo K. Evaluation of first-ray mobility in patients with hallux valgus using weight-bearing CT and a 3-D analysis system: a comparison with normal feet. J Bone Joint Surg Am. 2017;99(3):247-255. doi: [10.2106/JBJS.16.00542](https://doi.org/10.2106/JBJS.16.00542)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q9",
+          "text": "Bock P, Kluger R, Kristen KH, Mittlböck M, Schuh R, Trnka HJ. The Scarf osteotomy with minimally invasive lateral release for treatment of hallux valgus deformity: intermediate and long-term results. J Bone Joint Surg Am. 2015;97(15):1238-45. doi: [10.2106/JBJS.N.00971](https://doi.org/10.2106/JBJS.N.00971)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q10",
+          "text": "Pentikainen I, Ojala R, Ohtonen P, Piippo J, Leppilahti J. Preoperative radiological factors correlated to long-term recurrence of hallux valgus following distal chevron osteotomy. Foot Ankle Int. 2014;35(12):1262-7. doi: [10.1177/1071100714548703](https://doi.org/10.1177/1071100714548703)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q11",
+          "text": "Coughlin MJ, Jones CP. Hallux valgus and first ray mobility. A prospective study. J Bone Joint Surg Am. 2007;89(9):1887-98. doi: [10.2106/JBJS.F.01139](https://doi.org/10.2106/JBJS.F.01139)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q12",
+          "text": "Faber FW, Mulder PG, Verhaar JA. Role of first ray hypermobility in the outcome of the Hohmann and the Lapidus procedure. A prospective, randomized trial involving one hundred and one feet. J Bone Joint Surg Am. 2004;86(3):486-95. doi: [10.2106/00004623-200403000-00005](https://doi.org/10.2106/00004623-200403000-00005)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q13",
+          "text": "Kimura T, Kubota M, Suzuki N, Hattori A, Saito M. Weightbearing computed tomography and 3-dimensional analysis of mobility changes of the first ray after proximal oblique osteotomy for hallux valgus. Foot Ankle Int. 2021;42(3):333-339. doi: [10.1177/1071100720962471](https://doi.org/10.1177/1071100720962471)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q14",
+          "text": "Hardy RH, Clapham JC. Observations on hallux valgus; based on a controlled series. J Bone Joint Surg Br. 1951;33-B(3):376-91. doi: [10.1302/0301-620X.33B3.376](https://doi.org/10.1302/0301-620X.33B3.376)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q15",
+          "text": "Klaue K, Hansen ST, Masquelet AC. Clinical, quantitative assessment of first tarsometatarsal mobility in the sagittal plane and its relation to hallux valgus deformity. Foot Ankle Int. 1994;15(1):9-13. doi: [10.1177/107110079401500103](https://doi.org/10.1177/107110079401500103)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q16",
+          "text": "Glasoe WM, Allen MK, Saltzman CL, Ludewig PM, Sublett SH. Comparison of two methods used to assess first-ray mobility. Foot Ankle Int. 2002;23(3):248-52. doi: [10.1177/107110070202300310](https://doi.org/10.1177/107110070202300310)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q17",
+          "text": "Hase M. Die orthopädische Untersuchung des ausgewachsenen Fußes. Orthopädie und Unfallchirurgie up2date. 2015;10(6):505-520."
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q18",
+          "text": "Ornig M, Tschauner S, Holweg PL, Hohenberger GM, Bratschitsch G, Leithner A, Leitner L. A novel method of clinical first tarsometatarsal joint hypermobility testing and radiologic verification. Wien Klin Wochenschr. 2021;133(5-6):209-215. doi: [10.1007/s00508-020-01705-x](https://doi.org/10.1007/s00508-020-01705-x)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q19",
+          "text": "Fleming JJ, Kwaadu KY, Brinkley JC, Ozuzu Y. Intraoperative evaluation of medial intercuneiform instability after Lapidus arthrodesis: intercuneiform hook test. J Foot Ankle Surg. 2015;54(3):464-72. doi: [10.1053/j.jfas.2014.12.019](https://doi.org/10.1053/j.jfas.2014.12.019)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q20",
+          "text": "Talaski GM, Baumann AN, Sleem B, Anastasio AT, Walley KC, O'Neill CN, Adams SB. Weightbearing imaging assessment of midfoot instability in patients with confirmed hallux valgus deformity: a systematic review of the literature. Diagnostics (Basel). 2024;14(2):193. doi: [10.3390/diagnostics14020193](https://doi.org/10.3390/diagnostics14020193)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q21",
+          "text": "Brage ME, Holmes JR, Sangeorzan BJ. The influence of x-ray orientation on the first metatarsocuneiform joint angle. Foot Ankle Int. 1994;15(9):495-7. doi: [10.1177/107110079401500907](https://doi.org/10.1177/107110079401500907)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q22",
+          "text": "Robinson AH, Cullen NP, Chhaya NC, Sri-Ram K, Lynch A. Variation of the distal metatarsal articular angle with axial rotation and inclination of the first metatarsal. Foot Ankle Int. 2006;27(12):1036-40. doi: [10.1177/107110070602701207](https://doi.org/10.1177/107110070602701207)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q23",
+          "text": "Coughlin MJ, Freund E. The reliability of angular measurements in hallux valgus deformities. Foot Ankle Int. 2001;22(5):369-79. doi: [10.1177/107110070102200503](https://doi.org/10.1177/107110070102200503)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q24",
+          "text": "Lee KB, Kim MS, Park KS, Lee GW. Importance of postoperative sesamoid reduction on the outcomes of proximal chevron osteotomy for moderate to severe hallux valgus deformity. Foot Ankle Surg. 2019;25(4):434-440. doi: [10.1016/j.fas.2018.02.006](https://doi.org/10.1016/j.fas.2018.02.006)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q25",
+          "text": "Saltzman CL, Brandser EA, Anderson CM, Berbaum KS, Brown TD. Coronal plane rotation of the first metatarsal. Foot Ankle Int. 1996;17(3):157-61. doi: [10.1177/107110079601700307](https://doi.org/10.1177/107110079601700307)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q26",
+          "text": "Eustace S, Byrne JO, Beausang O, Codd M, Stack J, Stephens MM. Hallux valgus, first metatarsal pronation and collapse of the medial longitudinal arch — a radiological correlation. Skeletal Radiol. 1994;23(3):191-4. doi: [10.1007/BF00197458](https://doi.org/10.1007/BF00197458)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q27",
+          "text": "Ota T, Nagura T, Yamada Y, et al. Effect of natural full weight-bearing during standing on the rotation of the first metatarsal bone. Clin Anat. 2019;32(5):715-721. doi: [10.1002/ca.23385](https://doi.org/10.1002/ca.23385)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q28",
+          "text": "Wagner P, Lescure N, Siddiqui N, Fink J, Wagner E. Validity and reliability of a new radiological method to estimate medial column internal rotation in hallux valgus using foot weight-bearing X-ray. Foot Ankle Spec. 2024;17(1):14-22. doi: [10.1177/19386400211029162](https://doi.org/10.1177/19386400211029162)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q29",
+          "text": "Okuda R, Kinoshita M, Yasuda T, Jotoku T, Kitano N, Shima H. The shape of the lateral edge of the first metatarsal head as a risk factor for recurrence of hallux valgus. J Bone Joint Surg Am. 2007;89(10):2163-72. doi: [10.2106/JBJS.F.01455](https://doi.org/10.2106/JBJS.F.01455)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q30",
+          "text": "Yamaguchi S, Sasho T, Endo J, et al. Shape of the lateral edge of the first metatarsal head changes depending on the rotation and inclination of the first metatarsal. J Orthop Sci. 2015;20(5):868-74. doi: [10.1007/s00776-015-0749-x](https://doi.org/10.1007/s00776-015-0749-x)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q31",
+          "text": "Wagner E, Wagner P. Metatarsal pronation in hallux valgus deformity: a review. J Am Acad Orthop Surg Glob Res Rev. 2020;4(6):e20.00091. doi: [10.5435/JAAOSGlobal-D-20-00091](https://doi.org/10.5435/JAAOSGlobal-D-20-00091)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q32",
+          "text": "Kim Y, Kim JS, Young KW, Naraghi R, Cho HK, Lee SY. A new measure of tibial sesamoid position in hallux valgus in relation to the coronal rotation of the first metatarsal in CT scans. Foot Ankle Int. 2015;36(8):944-52. doi: [10.1177/1071100715576994](https://doi.org/10.1177/1071100715576994)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q33",
+          "text": "Van Beek C, Greisberg J. Mobility of the first ray: review article. Foot Ankle Int. 2011;32(9):917-22. doi: [10.3113/FAI.2011.0917](https://doi.org/10.3113/FAI.2011.0917)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q34",
+          "text": "Dietze A, Bahlke U, Martin H, Mittlmeier T. First ray instability in hallux valgus deformity: a radiokinematic and pedobarographic analysis. Foot Ankle Int. 2013;34(1):124-30. doi: [10.1177/1071100712460217](https://doi.org/10.1177/1071100712460217)"
+        },
+        {
+          "id": "tmt1_instabilitaet_kb_q35",
+          "text": "Coughlin MJ, Jones CP, Viladot R, et al. Hallux valgus and first ray mobility: a cadaveric study. Foot Ankle Int. 2004;25(8):537-44. doi: [10.1177/107110070402500805](https://doi.org/10.1177/107110070402500805)"
+        }
+      ]
+    },
+    "tarsaltunnelsyndrom_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Tarsaltunnelsyndrom",
+      "titel": "Tarsaltunnelsyndrom",
+      "untertitel": "Nervenengpass des Schienbeinnervs an der Innenseite des Sprunggelenks",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "kb_tts_ueberblick",
+        "kb_tts_anatomie",
+        "kb_tts_beschwerden",
+        "kb_tts_diagnostik",
+        "kb_tts_konservativ",
+        "kb_tts_operativ",
+        "kb_tts_quellen"
+      ],
+      "_review": false,
+      "stand": "Recherche 07/2026 (eigene PubMed-Recherche, DOI-verifiziert) — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "tarsaltunnelsyndrom_kb_q1",
+          "text": "Sha I. Tarsal tunnel syndrome — a comprehensive review. Iowa Orthop J. 2024;44(2):32-36. PMID: [39811161](https://pubmed.ncbi.nlm.nih.gov/39811161/)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q2",
+          "text": "Yoshida H, Kim K, Tajiri T, Fujihara F, Matsumoto J, Abe H, Isu T. Tarsal tunnel syndrome: a clinical review. J Nippon Med Sch. 2025;92(2):132-137. doi: [10.1272/jnms.JNMS.2025_92-206](https://doi.org/10.1272/jnms.JNMS.2025_92-206)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q3",
+          "text": "Rodríguez-Merchán EC, Moracia-Ochagavía I. Tarsal tunnel syndrome: current rationale, indications and results. EFORT Open Rev. 2021;6(12):1140-1147. doi: [10.1302/2058-5241.6.210031](https://doi.org/10.1302/2058-5241.6.210031)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q4",
+          "text": "Fortier LM, Leethy KN, Smith M, McCarron MM, Lee C, Sherman WF, Varrassi G, Kaye AD. An update on posterior tarsal tunnel syndrome. Orthop Rev (Pavia). 2022;14(4):35444. doi: [10.52965/001c.35444](https://doi.org/10.52965/001c.35444)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q5",
+          "text": "Mattos I, Ubillus HA, Campos G, Soares S, Azam MT, Oliva XM, Kennedy JG. Anatomy of the tibial nerve in relation to the tarsal tunnel: a cadaveric study. Foot Ankle Surg. 2022;28(8):1415-1420. doi: [10.1016/j.fas.2022.07.011](https://doi.org/10.1016/j.fas.2022.07.011)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q6",
+          "text": "De Prado M, Cuervas-Mons M, Golanó P, Rabat E, Vaquero J. The tarsal tunnel syndrome. Fuß Sprunggelenk. 2015;13(4):227-236. doi: [10.1016/j.fuspru.2015.09.001](https://doi.org/10.1016/j.fuspru.2015.09.001)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q7",
+          "text": "de Souza Reis Soares O, Duarte ML, Brasseur JL. Tarsal tunnel syndrome: an ultrasound pictorial review. J Ultrasound Med. 2022;41(5):1247-1272. doi: [10.1002/jum.15793](https://doi.org/10.1002/jum.15793)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q8",
+          "text": "Yammine K, Daher JC, Tannoury EH, Assi C. Tarsal tunnel syndrome secondary to accessory or variant muscles: a clinical and anatomical systematic review. Surg Radiol Anat. 2022;44(5):645-657. doi: [10.1007/s00276-022-02932-9](https://doi.org/10.1007/s00276-022-02932-9)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q9",
+          "text": "Brilhault J. Calcaneal osteotomy for hindfoot deformity. Orthop Traumatol Surg Res. 2021;108(1S):103121. doi: [10.1016/j.otsr.2021.103121](https://doi.org/10.1016/j.otsr.2021.103121)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q10",
+          "text": "Nelson SC. Tarsal tunnel syndrome. Clin Podiatr Med Surg. 2021;38(2):131-141. doi: [10.1016/j.cpm.2020.12.001](https://doi.org/10.1016/j.cpm.2020.12.001)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q11",
+          "text": "Abouelela AAKH, Zohiery AK. The triple compression stress test for diagnosis of tarsal tunnel syndrome. Foot (Edinb). 2012;22(3):146-149. doi: [10.1016/j.foot.2012.02.002](https://doi.org/10.1016/j.foot.2012.02.002)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q12",
+          "text": "Debs P, Fayad LM, Ahlawat S. Magnetic resonance neurography of the foot and ankle. Clin Podiatr Med Surg. 2024;41(4):723-743. doi: [10.1016/j.cpm.2024.04.006](https://doi.org/10.1016/j.cpm.2024.04.006)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q13",
+          "text": "Patel AT, Gaines K, Malamut R, Park TA, Del Toro DR, Holland N. Usefulness of electrodiagnostic techniques in the evaluation of suspected tarsal tunnel syndrome: an evidence-based review. Muscle Nerve. 2005;32(2):236-240. doi: [10.1002/mus.20393](https://doi.org/10.1002/mus.20393)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q14",
+          "text": "Haq II, Banerjee AA, Arshad Z, Iqbal AM, Bhatia M. The management of tarsal tunnel syndrome: a scoping review. J Clin Orthop Trauma. 2024;54:102489. doi: [10.1016/j.jcot.2024.102489](https://doi.org/10.1016/j.jcot.2024.102489)"
+        },
+        {
+          "id": "tarsaltunnelsyndrom_kb_q15",
+          "text": "Ong CYG, Chin TY. Clinics in diagnostic imaging (205): Baxter's neuropathy. Singapore Med J. 2020;61(4):176-180. doi: [10.11622/smedj.2020055](https://doi.org/10.11622/smedj.2020055)"
+        }
       ]
     }
   },
