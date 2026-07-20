@@ -1665,10 +1665,18 @@ function LandingView({ initialKbKey, initialMassnahme }) {
       const mGesamt = mAbschnitte.length + mUebungen.length + 1;
       const mIdx = Math.max(0, Math.min(mGesamt - 1, massnahmeSeite));
       const mGeheZu = function(n){ setMassnahmeSeite(Math.max(0, Math.min(mGesamt - 1, n))); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); };
-      const mSteps = [{ key: "info", label: "Info", wide: true }]
-        .concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1) }; }))
-        .concat(mUebungen.map(function(u){ return { key: "u" + u.id, label: "Ü" + u.nr }; }));
-      const mZurueck = function(){ setMassnahmeKey(null); setMassnahmeSeite(0); };
+      const mSteps = [{ key: "info", label: "Info", wide: true, tab: "Übersicht" }]
+        .concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1), tab: (a.titel || ("Abschnitt " + (i + 1))) }; }))
+        .concat(mUebungen.map(function(u){ return { key: "u" + u.id, label: "Ü" + u.nr, tab: ("Übung " + u.nr) }; }));
+      const mZurueck = function(){
+        // Per Link geöffnet (z. B. aus einem Krankheitsbild) → über den Browser-Verlauf
+        // zurück zur Herkunftsseite. Sonst (aus der Infomaterial-Liste heraus) zurück zur Liste.
+        if (massnahmeDeepLink && typeof window !== "undefined" && window.history && window.history.length > 1) {
+          window.history.back();
+          return;
+        }
+        setMassnahmeKey(null); setMassnahmeSeite(0);
+      };
 
       // ===== Dynamische Quellen für Maßnahmen (opt-in via mInfo.quellen) =====
       const mQuellen = mInfo.quellen; // [{ id, text }] oder undefined
@@ -1789,30 +1797,71 @@ function LandingView({ initialKbKey, initialMassnahme }) {
       }
 
       return (
-        <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-          <ZurueckLeiste onBack={mZurueck} titel={mInfo.titel || "Maßnahme"} />
+        <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px", minWidth: 0 }}>
+          {/* Zurück zur Auswahl / Herkunftsseite */}
+          <div style={{ marginBottom: 8 }}>
+            <div onClick={mZurueck}
+                 style={{ display: "inline-flex", alignItems: "center", gap: 4, padding: "6px 12px",
+                          background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)",
+                          fontWeight: 600, cursor: "pointer" }}>
+              ← Zurück zur Auswahl
+            </div>
+          </div>
+
+          {/* Persistenter Header — wie bei Krankheitsbildern/OP-Techniken */}
+          <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
+                        padding: "12px 16px", marginBottom: 8, borderLeft: "4px solid var(--c-main)" }}>
+            <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.2 }}>
+              {mInfo.titel || "Maßnahme"}
+            </div>
+          </div>
+
+          {/* Mini-Tabs zum direkten Springen (Titel statt Nummern) */}
           {mSteps.length > 0 && (
-            <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 0 12px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
+            <div style={{ display: "flex", gap: 4, marginBottom: 10, overflowX: "auto", WebkitOverflowScrolling: "touch", padding: "4px 0" }}>
               {mSteps.map(function(it, i){
                 var aktiv = i === mIdx;
+                var lbl = it.tab || it.label;
                 return (
-                  <div key={it.key} onClick={function(){ mGeheZu(i); }}
-                       style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1,
-                                background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
-                    {it.label}
-                  </div>
+                  <button key={it.key} onClick={function(){ mGeheZu(i); }} title={lbl}
+                          style={{ flexShrink: 0, padding: "6px 10px", borderRadius: 6,
+                                   border: aktiv ? "1px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)",
+                                   background: aktiv ? "var(--c-main)" : "var(--c-card)",
+                                   color: aktiv ? "#fff" : "var(--c-text-muted)", fontSize: 11,
+                                   fontWeight: aktiv ? 700 : 500, cursor: "pointer", whiteSpace: "nowrap",
+                                   maxWidth: 160, textOverflow: "ellipsis", overflow: "hidden" }}>
+                    {(i + 1) + ". " + (lbl.length > 18 ? lbl.substring(0, 17) + "…" : lbl)}
+                  </button>
                 );
               })}
             </div>
           )}
-          <div>{mInhalt}</div>
-          <div style={{ marginTop: 20 }}>
-            {mIdx < mGesamt - 1 && (
-              <div onClick={function(){ mGeheZu(mIdx + 1); }} style={{ textAlign: "center", padding: "14px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 15, fontWeight: 700, cursor: "pointer" }}>Weiter →</div>
-            )}
-            {mIdx > 0 && (
-              <div onClick={function(){ mGeheZu(mIdx - 1); }} style={{ textAlign: "center", padding: "10px", marginTop: 8, color: "var(--c-text-muted)", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>← Zurück</div>
-            )}
+
+          {/* Inhalts-Card */}
+          <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
+                        padding: "20px 18px", minHeight: 240, overflow: "hidden", wordWrap: "break-word" }}>
+            {mInhalt}
+          </div>
+
+          {/* Pagination ← x/y → */}
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12, gap: 8, flexWrap: "wrap" }}>
+            <button onClick={function(){ mGeheZu(mIdx - 1); }} disabled={mIdx === 0}
+                    style={{ padding: "10px 18px", borderRadius: 6, border: "1px solid rgba(0,0,0,.12)",
+                             background: mIdx === 0 ? "rgba(0,0,0,.04)" : "var(--c-card)",
+                             color: mIdx === 0 ? "var(--c-text-muted)" : "var(--c-main)",
+                             fontSize: 14, fontWeight: 600, cursor: mIdx === 0 ? "not-allowed" : "pointer", flex: "0 0 auto" }}>
+              ← Zurück
+            </button>
+            <div style={{ fontSize: 11, color: "var(--c-text-muted)", flex: "1 1 auto", textAlign: "center" }}>
+              {mIdx + 1} / {mGesamt}
+            </div>
+            <button onClick={function(){ mGeheZu(mIdx + 1); }} disabled={mIdx === mGesamt - 1}
+                    style={{ padding: "10px 18px", borderRadius: 6, border: "none",
+                             background: mIdx === mGesamt - 1 ? "rgba(0,0,0,.04)" : "var(--c-main)",
+                             color: mIdx === mGesamt - 1 ? "var(--c-text-muted)" : "#fff",
+                             fontSize: 14, fontWeight: 600, cursor: mIdx === mGesamt - 1 ? "not-allowed" : "pointer", flex: "0 0 auto" }}>
+              Weiter →
+            </button>
           </div>
         </div>
       );
@@ -2076,6 +2125,16 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
     // Zur Startseite (LandingView) — Hash-Marker verhindert Auto-Restore der Session
     window.location.href = window.location.pathname + "?home=1";
   }
+  function goBack() {
+    // Zur vorherigen Ansicht über den Browser-Verlauf (z. B. Krankheitsbild → Einlagen → zurück).
+    // Alle Querlinks sind volle Seitenwechsel, daher landet man exakt auf der vorigen Seite.
+    // Fällt auf das Hauptmenü zurück, wenn kein Verlauf existiert (z. B. Direkteinstieg per QR).
+    if (typeof window !== "undefined" && window.history && window.history.length > 1) {
+      window.history.back();
+    } else {
+      goHauptmenue();
+    }
+  }
   return (
     <div className="app-header">
       <h1>Fuß-Track</h1>
@@ -2084,6 +2143,14 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       )}
       {(showSwitcher || showHauptmenue) && (
         <div style={{ marginTop: 10, textAlign: "center", display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
+          {showHauptmenue && (
+            <button onClick={goBack}
+                    style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-text-muted)",
+                             background: "transparent", color: "var(--c-text-muted)", fontSize: 12, fontWeight: 600,
+                             cursor: "pointer" }}>
+              ← Zurück
+            </button>
+          )}
           {showHauptmenue && (
             <button onClick={goHauptmenue}
                     style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-text-muted)",
