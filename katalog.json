@@ -151,7 +151,8 @@
         "fusssohle",
         "mtp_region",
         "vorfuss_plantar"
-      ]
+      ],
+      "info_ref": "morton_neurom_kb"
     },
     {
       "id": "metatarsalgie",
@@ -230,7 +231,8 @@
         "medialer_fussrand",
         "medialer_fussrand_tief",
         "tn_gelenk"
-      ]
+      ],
+      "info_ref": "ote_kb"
     },
     {
       "id": "tmt_arthrose",
@@ -269,7 +271,8 @@
       "haeufigkeit": "selten",
       "regionen": [
         "sg_aussen_hinter"
-      ]
+      ],
+      "info_ref": "peroneal_luxation_kb"
     },
     {
       "id": "sinus_tarsi_syndrom",
@@ -436,7 +439,8 @@
         "sg_aussen_vor",
         "sg_vorne",
         "syndesmose_distale_tibia"
-      ]
+      ],
+      "info_ref": "olt_kb"
     },
     {
       "id": "posteriores_impingement",
@@ -770,7 +774,8 @@
       "regionen": [
         "ferse_plantar_tuber",
         "lateraler_fussrand"
-      ]
+      ],
+      "info_ref": "pops_kb"
     },
     {
       "id": "cn_coalitio",
@@ -833,7 +838,8 @@
       "regionen": [
         "lateraler_fussrand",
         "sg_aussen_hinter"
-      ]
+      ],
+      "info_ref": "ptr_kb"
     },
     {
       "id": "morbus_koehler_1",
@@ -845,6 +851,27 @@
         "tn_gelenk"
       ],
       "info_ref": "koehler1_kb"
+    },
+    {
+      "id": "morbus_ledderhose",
+      "titel": "Morbus Ledderhose (plantare Fibromatose)",
+      "kurz": "Gutartige derbe Bindegewebsknoten in der Fußsohle",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "fusssohle"
+      ],
+      "info_ref": "ledderhose_kb"
+    },
+    {
+      "id": "morbus_renander",
+      "titel": "Morbus Renander",
+      "kurz": "Aseptische Osteonekrose eines Großzehen-Sesambeins",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "mtp1_plantar",
+        "grosszehe"
+      ],
+      "info_ref": "renander_kb"
     }
   ],
   "regionen": [
@@ -2773,7 +2800,8 @@
             {
               "label": "Vom Fersenansatz bis zur Mitte",
               "punkte": {
-                "plantarfasziitis": 2
+                "plantarfasziitis": 2,
+                "morbus_ledderhose": 1
               }
             },
             {
@@ -2818,6 +2846,12 @@
               "label": "Lokal druckempfindlich",
               "punkte": {
                 "plantar_plate_ruptur": 1
+              }
+            },
+            {
+              "label": "Tastbarer derber Knoten oder Strang in der Fußsohle",
+              "punkte": {
+                "morbus_ledderhose": 2
               }
             }
           ]
@@ -3398,7 +3432,8 @@
               "label": "Beim Abrollen / im Zehenstand",
               "punkte": {
                 "sesamoiditis": 2,
-                "sesamoidopathie": 1
+                "sesamoidopathie": 1,
+                "morbus_renander": 2
               }
             },
             {
@@ -3425,7 +3460,8 @@
               "label": "Schleichend über Wochen",
               "punkte": {
                 "sesamoiditis": 2,
-                "sesamoidopathie": 1
+                "sesamoidopathie": 1,
+                "morbus_renander": 2
               }
             },
             {
