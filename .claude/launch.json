@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fusstrack",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/benjaminbreuer/Desktop/GitHub/Fuss-Track/dev-server.py"],
+      "port": 8081
+    }
+  ]
+}

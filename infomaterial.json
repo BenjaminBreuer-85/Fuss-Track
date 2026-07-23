@@ -1701,7 +1701,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Knorpelchirurgie am OSG",
       "titel": "Knorpelchirurgie am OSG",
-      "untertitel": "",
+      "untertitel": "Verfahren bei umschriebenen Knorpelschäden (osteochondralen Läsionen), vor allem am Sprungbein (Talus)",
       "betrifft_eingriffe": [],
       "slides": [
         "op_knorpel_osg_ueberblick",
@@ -1712,22 +1712,79 @@
         "op_knorpel_osg_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
           "id": "knorpel_osg_q1",
-          "text": "Walther M, et al. Operative management of osteochondral lesions of the talus: 2024 recommendations of the DGOU working group 'clinical tissue regeneration'. EFORT Open Rev. 2024;9(3)."
+          "text": "Walther M, Gottschalk O, Aurich M. Operative management of osteochondral lesions of the talus: 2024 recommendations of the working group 'clinical tissue regeneration' of the German Society of Orthopedics and Traumatology (DGOU). EFORT Open Rev. 2024;9(3):217-234. doi: [10.1530/EOR-23-0075](https://doi.org/10.1530/EOR-23-0075)"
         },
         {
           "id": "knorpel_osg_q2",
-          "text": "Kerkhoffs GMMJ, et al. Fixation of osteochondral talar lesions. 2016."
+          "text": "Kerkhoffs GM, Reilingh ML, Gerards RM, de Leeuw PA. Lift, drill, fill and fix (LDFF): a new arthroscopic treatment for talar osteochondral defects. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1265-1271. doi: [10.1007/s00167-014-3057-7](https://doi.org/10.1007/s00167-014-3057-7)"
         },
         {
           "id": "knorpel_osg_q3",
-          "text": "Reilingh ML, et al. Osteochondral talar lesions in children/adolescents; role of medial malleolar osteotomy. 2016."
+          "text": "Reilingh ML, Kerkhoffs GM, Telkamp CJ, Struijs PA, van Dijk CN. Treatment of osteochondral defects of the talus in children. Knee Surg Sports Traumatol Arthrosc. 2014;22(9):2243-2249. doi: [10.1007/s00167-013-2685-7](https://doi.org/10.1007/s00167-013-2685-7)"
+        },
+        {
+          "id": "knorpel_osg_q4",
+          "text": "Kennedy JG, Suero EM, O'Loughlin PF, Brief A, Bohne WH. Clinical tips: retrograde drilling of talar osteochondral defects. Foot Ankle Int. 2008;29(6):616-619. doi: [10.3113/FAI.2008.0616](https://doi.org/10.3113/FAI.2008.0616)"
+        },
+        {
+          "id": "knorpel_osg_q5",
+          "text": "Zengerink M, Struijs PA, Tol JL, van Dijk CN. Treatment of osteochondral lesions of the talus: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2010;18(2):238-246. doi: [10.1007/s00167-009-0942-6](https://doi.org/10.1007/s00167-009-0942-6)"
+        },
+        {
+          "id": "knorpel_osg_q6",
+          "text": "Gottschalk O, Altenberger S, Baumbach S, Kriegelstein S, Dreyer F, Mehlhorn A, Hörterer H, Töpfer A, Röser A, Walther M. Functional medium-term results after autologous matrix-induced chondrogenesis for osteochondral lesions of the talus: a 5-year prospective cohort study. J Foot Ankle Surg. 2017;56(5):930-936. doi: [10.1053/j.jfas.2017.05.002](https://doi.org/10.1053/j.jfas.2017.05.002)"
+        },
+        {
+          "id": "knorpel_osg_q7",
+          "text": "Walther M, Valderrabano V, Wiewiorski M, Usuelli FG, Richter M, Baumfeld TS, Kubosch J, Gottschalk O, Wittmann U. Is there clinical evidence to support autologous matrix-induced chondrogenesis (AMIC) for chondral defects in the talus? A systematic review and meta-analysis. Foot Ankle Surg. 2021;27(3):236-245. doi: [10.1016/j.fas.2020.07.011](https://doi.org/10.1016/j.fas.2020.07.011)"
+        },
+        {
+          "id": "knorpel_osg_q8",
+          "text": "Wen HJ, Zhu SY, Tan HB, Xu YQ. Augmented microfracture technique versus microfracture in talar cartilage restoration: a systematic review and meta-analysis. J Foot Ankle Surg. 2021;60(6):1270-1279. doi: [10.1053/j.jfas.2020.11.013](https://doi.org/10.1053/j.jfas.2020.11.013)"
+        },
+        {
+          "id": "knorpel_osg_q9",
+          "text": "Walther M, Altenberger S, Kriegelstein S, Volkering C, Röser A. Reconstruction of focal cartilage defects in the talus with miniarthrotomy and collagen matrix. Oper Orthop Traumatol. 2014;26(6):603-610. doi: [10.1007/s00064-012-0229-9](https://doi.org/10.1007/s00064-012-0229-9)"
+        },
+        {
+          "id": "knorpel_osg_q10",
+          "text": "Kolker D, Murray M, Wilson M. Osteochondral defects of the talus treated with autologous bone grafting. J Bone Joint Surg Br. 2004;86(4):521-526. (kein DOI, PMID 15174546)"
+        },
+        {
+          "id": "knorpel_osg_q11",
+          "text": "Bull PE, Berlet GC, Canini C, Hyer CF. Rate of malunion following bi-plane chevron medial malleolar osteotomy. Foot Ankle Int. 2016;37(6):620-626. doi: [10.1177/1071100716628912](https://doi.org/10.1177/1071100716628912)"
+        },
+        {
+          "id": "knorpel_osg_q12",
+          "text": "Shimozono Y, Hurley ET, Myerson CL, Kennedy JG. Good clinical and functional outcomes at mid-term following autologous osteochondral transplantation for osteochondral lesions of the talus. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3055-3062. doi: [10.1007/s00167-018-4917-3](https://doi.org/10.1007/s00167-018-4917-3)"
+        },
+        {
+          "id": "knorpel_osg_q13",
+          "text": "DGOU-Empfehlung (Walther et al. 2024): Entnahmemorbidität am Knie nach Knorpel-Knochen-Transplantation etwa 16,9 Prozent. EFORT Open Rev. 2024;9(3):217-234. doi: [10.1530/EOR-23-0075](https://doi.org/10.1530/EOR-23-0075)"
+        },
+        {
+          "id": "knorpel_osg_q14",
+          "text": "Andrade R, Vasta S, Pereira R, Pereira H, Papalia R, Karahan M, Oliveira JM, Reis RL, Espregueira-Mendes J. Knee donor-site morbidity after mosaicplasty - a systematic review. J Exp Orthop. 2016;3(1):31. doi: [10.1186/s40634-016-0066-0](https://doi.org/10.1186/s40634-016-0066-0)"
+        },
+        {
+          "id": "knorpel_osg_q15",
+          "text": "Gobbi A, Francisco RA, Lubowitz JH, Allegra F, Canata G. Osteochondral lesions of the talus: randomized controlled trial comparing chondroplasty, microfracture, and osteochondral autograft transplantation. Arthroscopy. 2006;22(10):1085-1092. doi: [10.1016/j.arthro.2006.05.016](https://doi.org/10.1016/j.arthro.2006.05.016)"
+        },
+        {
+          "id": "knorpel_osg_q16",
+          "text": "Lee DH, Lee KB, Jung ST, Seon JK, Kim MS, Sung IH. Comparison of early versus delayed weightbearing outcomes after microfracture for small to midsized osteochondral lesions of the talus. Am J Sports Med. 2012;40(9):2023-2028. doi: [10.1177/0363546512455316](https://doi.org/10.1177/0363546512455316)"
+        },
+        {
+          "id": "knorpel_osg_q17",
+          "text": "Valderrabano V, Leumann A, Rasch H, Egelhof T, Hintermann B, Pagenstert G. Knee-to-ankle mosaicplasty for the treatment of osteochondral lesions of the ankle joint. Am J Sports Med. 2009;37 Suppl 1:105S-111S. doi: [10.1177/0363546509351481](https://doi.org/10.1177/0363546509351481)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), DGOU-Empfehlung 2024 — ärztlich zu prüfen"
     },
     "arthrorise": {
       "infoKategorie": "op_technik",
