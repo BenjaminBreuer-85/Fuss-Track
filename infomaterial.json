@@ -390,8 +390,8 @@
     },
     "kleinzehen_pip": {
       "infoKategorie": "op_technik",
-      "infoTitel": "Korrektur von Kleinzehenfehlstellungen",
-      "titel": "Korrektur von Kleinzehenfehlstellungen",
+      "infoTitel": "Korrektur bei Fehlstellungen der Kleinzehen",
+      "titel": "Korrektur bei Fehlstellungen der Kleinzehen",
       "untertitel": "Operative Korrektur von Hammer-, Krallen-, Mallet- und Überkreuzzehen — offen oder minimal-invasiv",
       "betrifft_eingriffe": [
         "kleinzehen_pip"
@@ -1782,9 +1782,13 @@
         {
           "id": "knorpel_osg_q17",
           "text": "Valderrabano V, Leumann A, Rasch H, Egelhof T, Hintermann B, Pagenstert G. Knee-to-ankle mosaicplasty for the treatment of osteochondral lesions of the ankle joint. Am J Sports Med. 2009;37 Suppl 1:105S-111S. doi: [10.1177/0363546509351481](https://doi.org/10.1177/0363546509351481)"
+        },
+        {
+          "id": "knorpel_osg_q18",
+          "text": "Walther M, Gottschalk O, Madry H, Müller PE, Steinwachs M, Niemeyer P, et al. Etiology, classification, diagnostics, and conservative management of osteochondral lesions of the talus: 2023 recommendations of the working group 'clinical tissue regeneration' of the German Society of Orthopedics and Traumatology (DGOU). Cartilage. 2023. doi: [10.1177/19476035231161806](https://doi.org/10.1177/19476035231161806)"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), DGOU-Empfehlung 2024 — ärztlich zu prüfen"
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), DGOU-Empfehlungen 2023 (konservativ) und 2024 (operativ) — ärztlich zu prüfen"
     },
     "arthrorise": {
       "infoKategorie": "op_technik",
