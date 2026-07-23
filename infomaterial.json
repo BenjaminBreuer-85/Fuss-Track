@@ -171,7 +171,7 @@
     "chevron_akin": {
       "infoKategorie": "op_technik",
       "infoTitel": "Chevron-Akin-Osteotomie (Hallux-valgus-Korrektur)",
-      "titel": "Chevron-/Akin-Osteotomie",
+      "titel": "Chevron-Akin-Osteotomie (Hallux-valgus-Korrektur)",
       "untertitel": "Gelenkerhaltende Korrektur bei Hallux valgus",
       "betrifft_eingriffe": [
         "chevron_akin"
@@ -185,67 +185,67 @@
         "chevron_alternativen",
         "chevron_quellen"
       ],
-      "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema",
+      "_review": false,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "chevron_akin_q1",
-          "text": "Morais B, Botelho T, Marques N, Ferrão A, Nóbrega J, Teixeira F, Grenho A. Is bilateral hallux valgus chevron osteotomy a safe procedure for ambulatory surgery? Foot (Edinb). 2022 May;51:101891"
+          "text": "Morais B, Botelho T, Marques N, Ferrão A, Nóbrega J, Teixeira F, Grenho A. Is bilateral hallux valgus chevron osteotomy a safe procedure for ambulatory surgery? Foot (Edinb). 2022;51:101891. doi: [10.1016/j.foot.2021.101891](https://doi.org/10.1016/j.foot.2021.101891)"
         },
         {
           "id": "chevron_akin_q2",
-          "text": "Austin DW, Leventen EO. A new osteotomy for hallux valgus: a horizontally directed \"V\" displacement osteotomy of the metatarsal head for hallux valgus and primus varus. Clin Orthop Relat Res. 1981 Jun;(157):25-30"
+          "text": "Austin DW, Leventen EO. A new osteotomy for hallux valgus: a horizontally directed \"V\" displacement osteotomy of the metatarsal head for hallux valgus and primus varus. Clin Orthop Relat Res. 1981;(157):25-30. PMID: [7249456](https://pubmed.ncbi.nlm.nih.gov/7249456/)"
         },
         {
           "id": "chevron_akin_q3",
-          "text": "Hans-Jörg Trnka, Komplikationen der Chevron Osteotomie, Fuß & Sprunggelenk, Volume 18, Issue 2020, Pages 272-280"
+          "text": "Trnka HJ. Komplikationen der Chevron-Osteotomie. Fuß Sprunggelenk. 2020;18(4):272-280."
         },
         {
           "id": "chevron_akin_q4",
-          "text": "van Groningen B, van der Steen MC, Reijman M, Bos J, Hendriks JG. Outcomes in chevron osteotomy for Hallux Valgus in a large cohort. Foot (Edinb). 2016 Dec;29:18-24"
+          "text": "van Groningen B, van der Steen MC, Reijman M, Bos J, Hendriks JG. Outcomes in chevron osteotomy for hallux valgus in a large cohort. Foot (Edinb). 2016;29:18-24. doi: [10.1016/j.foot.2016.09.002](https://doi.org/10.1016/j.foot.2016.09.002)"
         },
         {
           "id": "chevron_akin_q5",
-          "text": "Schneider W, Aigner N, Pinggera O, Knahr K. Chevron osteotomy in hallux valgus. Ten-year results of 112 cases. J Bone Joint Surg Br. 2004 Sep;86(7):1016-20"
+          "text": "Schneider W, Aigner N, Pinggera O, Knahr K. Chevron osteotomy in hallux valgus. Ten-year results of 112 cases. J Bone Joint Surg Br. 2004;86(7):1016-1020. doi: [10.1302/0301-620x.86b7.15108](https://doi.org/10.1302/0301-620x.86b7.15108)"
         },
         {
           "id": "chevron_akin_q6",
-          "text": "Kaufmann G, Dammerer D, Heyenbrock F, Braito M, Moertlbauer L, Liebensteiner M. Minimally invasive versus open chevron osteotomy for hallux valgus correction: a randomized controlled trial. Int Orthop. 2019 Feb;43(2):343-350"
+          "text": "Kaufmann G, Dammerer D, Heyenbrock F, Braito M, Moertlbauer L, Liebensteiner M. Minimally invasive versus open chevron osteotomy for hallux valgus correction: a randomized controlled trial. Int Orthop. 2019;43(2):343-350. doi: [10.1007/s00264-018-4006-8](https://doi.org/10.1007/s00264-018-4006-8)"
         },
         {
           "id": "chevron_akin_q7",
-          "text": "Clemente P, Mariscal G, Barrios C. Distal chevron osteotomy versus different operative procedures for hallux valgus correction: a meta-analysis. J Orthop Surg Res. 2022 Feb 8;17(1):80"
+          "text": "Clemente P, Mariscal G, Barrios C. Distal chevron osteotomy versus different operative procedures for hallux valgus correction: a meta-analysis. J Orthop Surg Res. 2022;17(1):80. doi: [10.1186/s13018-022-02974-0](https://doi.org/10.1186/s13018-022-02974-0)"
         },
         {
           "id": "chevron_akin_q8",
-          "text": "Rothwell M, Pickard J. The chevron osteotomy and avascular necrosis. Foot (Edinb). 2013 Mar;23(1):34-8."
+          "text": "Rothwell M, Pickard J. The chevron osteotomy and avascular necrosis. Foot (Edinb). 2013;23(1):34-38. doi: [10.1016/j.foot.2012.10.001](https://doi.org/10.1016/j.foot.2012.10.001)"
         },
         {
           "id": "chevron_akin_q9",
-          "text": "Douthett SM, Plaskey NK, Fallat LM, Kish J. Retrospective analysis of the Akin osteotomy. J Foot Ankle Surg. 2018;57:38-43."
+          "text": "Douthett SM, Plaskey NK, Fallat LM, Kish J. Retrospective analysis of the Akin osteotomy. J Foot Ankle Surg. 2018;57(1):38-43. doi: [10.1053/j.jfas.2017.06.026](https://doi.org/10.1053/j.jfas.2017.06.026)"
         },
         {
           "id": "chevron_akin_q10",
-          "text": "Shuvendu Prosad Roy, Ken Jin Tan. A modified suture technique for fixation of the Akin osteotomy. J Foot Ankle Surg. 2013 Mar-Apr;52(2):276-8. doi: 10.1053/j.jfas.2012.11.010. Epub 2013 Jan 11."
+          "text": "Roy SP, Tan KJ. A modified suture technique for fixation of the Akin osteotomy. J Foot Ankle Surg. 2013;52(2):276-278. doi: [10.1053/j.jfas.2012.11.010](https://doi.org/10.1053/j.jfas.2012.11.010)"
         },
         {
           "id": "chevron_akin_q11",
-          "text": "Enrique Adrian Testa, Annamaria Porreca, Alberto Ruiz Nasarre, Daniel Poggio Cano, Fernando Alvarez Goenaga, Gerardo Ledermann, Albert Baduell, Pablo Ruiz Riquelme. The Akin osteotomy without fixation in open hallux abducto-valgo correction surgery - A single center retrospective analysis of 286 cases. Foot Ankle Surg. 2023 Apr;29(3):200-207."
+          "text": "Testa EA, Porreca A, Ruiz Nasarre A, Poggio Cano D, Alvarez Goenaga F, Ledermann G, Baduell A, Ruiz Riquelme P. The Akin osteotomy without fixation in open hallux abducto-valgo correction surgery — a single center retrospective analysis of 286 cases. Foot Ankle Surg. 2023;29(3):200-207. doi: [10.1016/j.fas.2023.01.002](https://doi.org/10.1016/j.fas.2023.01.002)"
         },
         {
           "id": "chevron_akin_q12",
-          "text": "Kuliński P, Rutkowski M, Tomczyk Ł, Miękisiak G, Morasiewicz P. Outcomes After Chevron Osteotomy with and Without Additional Akin Osteotomy: A Retrospective Comparative Study. Indian J Orthop. 2023 Mar 1;57(6):907-916."
+          "text": "Kuliński P, Rutkowski M, Tomczyk Ł, Miękisiak G, Morasiewicz P. Outcomes after chevron osteotomy with and without additional Akin osteotomy: a retrospective comparative study. Indian J Orthop. 2023;57(6):907-916. doi: [10.1007/s43465-023-00851-4](https://doi.org/10.1007/s43465-023-00851-4)"
         },
         {
           "id": "chevron_akin_q13",
-          "text": "Kaufmann G, Hofmann M, Braito M, Ulmer H, Brunner A, Dammerer D. Need for concomitant Akin osteotomy in patients undergoing Chevron osteotomy can be determined preoperatively: a retrospective comparative study of 859 cases. J Orthop Surg Res. 2019 Aug 28;14(1):277."
+          "text": "Kaufmann G, Hofmann M, Braito M, Ulmer H, Brunner A, Dammerer D. Need for concomitant Akin osteotomy in patients undergoing chevron osteotomy can be determined preoperatively: a retrospective comparative study of 859 cases. J Orthop Surg Res. 2019;14(1):277. doi: [10.1186/s13018-019-1319-2](https://doi.org/10.1186/s13018-019-1319-2)"
         }
       ]
     },
     "scarf": {
       "infoKategorie": "op_technik",
       "infoTitel": "Scarf-Osteotomie (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
+      "titel": "Scarf-Osteotomie (Hallux-valgus-Korrektur)",
       "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
       "betrifft_eingriffe": [
         "scarf"
@@ -259,7 +259,7 @@
     "lapidus": {
       "infoKategorie": "op_technik",
       "infoTitel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
-      "titel": "Hallux valgus",
+      "titel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
       "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
       "betrifft_eingriffe": [
         "lapidus"
@@ -333,8 +333,8 @@
     "dmmo": {
       "infoKategorie": "op_technik",
       "infoTitel": "DMMO – Mittelfuß-Osteotomie",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+      "titel": "DMMO – Mittelfuß-Osteotomie",
+      "untertitel": "Minimal-invasive Mittelfuß-Osteotomie zur Behandlung der Metatarsalgie",
       "betrifft_eingriffe": [
         "dmmo"
       ],
@@ -347,79 +347,166 @@
         "dmmo_alternativen",
         "dmmo_quellen"
       ],
-      "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema",
+      "_review": false,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "dmmo_q1",
-          "text": "Johansen JK, Jordan M, Thomas M. Clinical and radiological outcomes after Weil osteotomy compared to distal metatarsal metaphyseal osteotomy in the treatment of metatarsalgia-A prospective study. Foot Ankle Surg. 2019 Aug;25(4):488-494"
+          "text": "Johansen JK, Jordan M, Thomas M. Clinical and radiological outcomes after Weil osteotomy compared to distal metatarsal metaphyseal osteotomy in the treatment of metatarsalgia — a prospective study. Foot Ankle Surg. 2019;25(4):488-494. doi: [10.1016/j.fas.2018.03.002](https://doi.org/10.1016/j.fas.2018.03.002)"
         },
         {
           "id": "dmmo_q2",
-          "text": "Prado M, Ripoll PL, Golano P. Minimally invasive foot surgery. About your health publishers, Barcelona 2009"
+          "text": "Prado M, Ripoll PL, Golanó P. Minimally invasive foot surgery. Barcelona: About Your Health Publishers; 2009."
         },
         {
           "id": "dmmo_q3",
-          "text": "Hamel J, Nell M. Minimalinvasiv durchgeführte distale Metatarsale-Schrägosteotomie zur Behandlung der Metatarsalgie. OUP 2014; 3: 118–122. DOI 10.3238/oup.2014.0118–0122"
+          "text": "Hamel J, Nell M. Minimalinvasiv durchgeführte distale Metatarsale-Schrägosteotomie zur Behandlung der Metatarsalgie. OUP. 2014;3:118-122. doi: [10.3238/oup.2014.0118-0122](https://doi.org/10.3238/oup.2014.0118-0122)"
         },
         {
           "id": "dmmo_q4",
-          "text": "Henry J, Besse JL, Fessy MH. Distal osteotomy of the lateral metatarsals: a series of 72 cases comparing the Weil osteotomy and the DMMO percutaneous osteotomy. Orthop Traumatol Surg Res 2011; 97(Suppl 6): 57–65"
+          "text": "Henry J, Besse JL, Fessy MH. Distal osteotomy of the lateral metatarsals: a series of 72 cases comparing the Weil osteotomy and the DMMO percutaneous osteotomy. Orthop Traumatol Surg Res. 2011;97(6 Suppl):S57-65. doi: [10.1016/j.otsr.2011.07.003](https://doi.org/10.1016/j.otsr.2011.07.003)"
         },
         {
           "id": "dmmo_q5",
-          "text": "Thomas M, Jordan M (2018) Minimal-invasive Korrektur von Deformitäten der Kleinzehen und Behandlung der Metatarsalgie. Operative Orthopadie und Traumatologie 30:171-183"
+          "text": "Thomas M, Jordan M. Minimalinvasive Korrektur von Deformitäten der Kleinzehen und Behandlung der Metatarsalgie. Oper Orthop Traumatol. 2018;30(3):171-183. doi: [10.1007/s00064-018-0548-6](https://doi.org/10.1007/s00064-018-0548-6)"
         },
         {
           "id": "dmmo_q6",
-          "text": "Stavrakakis IM, Magarakis GE, Kapsetakis P, Tsatsoulas C, Tsioupros A, Datsis G. Weil's osteotomy versus distal metatarsal metaphyseal osteotomy for the treatment of metatarsalgia. A metaanalysis of outcome and complications. Foot (Edinb). 2024"
+          "text": "Stavrakakis IM, Magarakis GE, Kapsetakis P, Tsatsoulas C, Tsioupros A, Datsis G. Weil's osteotomy versus distal metatarsal metaphyseal osteotomy for the treatment of metatarsalgia: a meta-analysis of outcome and complications. Foot (Edinb). 2024;59:102101. doi: [10.1016/j.foot.2024.102101](https://doi.org/10.1016/j.foot.2024.102101)"
         },
         {
           "id": "dmmo_q7",
-          "text": "Coillard JY, Lalevée M, Tourné Y. Distal Metatarsal Minimally Invasive Osteotomy (DMMO): Surgical technique, variants, indications, and treatment decision-tree. Foot (Edinb). 2021 Jun;47:101801"
+          "text": "Coillard JY, Lalevée M, Tourné Y. Distal metatarsal minimally invasive osteotomy (DMMO): surgical technique, variants, indications, and treatment decision-tree. Foot (Edinb). 2021;47:101801. doi: [10.1016/j.foot.2021.101801](https://doi.org/10.1016/j.foot.2021.101801)"
         },
         {
           "id": "dmmo_q8",
-          "text": "Chomej P, Klos K, Bauer S, Walther M. Lateralising DMMO (MIS) for simultaneous correction of a pes adductus during surgical treatment of a hallux valgus. Foot (Edinb). 2020 Dec;45:101722."
+          "text": "Chomej P, Klos K, Bauer S, Walther M. Lateralising DMMO (MIS) for simultaneous correction of a pes adductus during surgical treatment of a hallux valgus. Foot (Edinb). 2020;45:101722. doi: [10.1016/j.foot.2020.101722](https://doi.org/10.1016/j.foot.2020.101722)"
         },
         {
           "id": "dmmo_q9",
-          "text": "Rivero-Santana A, Perestelo-Pérez L, Garcés G, Álvarez-Pérez Y, Escobar A, Serrano-Aguilar P. Clinical effectiveness and safety of Weil's osteotomy and distal metatarsal mini-invasive osteotomy (DMMO) in the treatment of metatarsalgia: A systematic review. Foot Ankle Surg. 2019 Oct;25(5):565-570. doi: 10.1016/j.fas.2018.06.004"
+          "text": "Rivero-Santana A, Perestelo-Pérez L, Garcés G, Álvarez-Pérez Y, Escobar A, Serrano-Aguilar P. Clinical effectiveness and safety of Weil's osteotomy and distal metatarsal mini-invasive osteotomy (DMMO) in the treatment of metatarsalgia: a systematic review. Foot Ankle Surg. 2019;25(5):565-570. doi: [10.1016/j.fas.2018.06.004](https://doi.org/10.1016/j.fas.2018.06.004)"
         }
       ]
     },
     "kleinzehen_pip": {
       "infoKategorie": "op_technik",
-      "infoTitel": "Korrektur der Kleinzehen",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+      "infoTitel": "Korrektur von Kleinzehenfehlstellungen",
+      "titel": "Korrektur von Kleinzehenfehlstellungen",
+      "untertitel": "Operative Korrektur von Hammer-, Krallen-, Mallet- und Überkreuzzehen — offen oder minimal-invasiv",
       "betrifft_eingriffe": [
         "kleinzehen_pip"
       ],
       "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_kleinzehen"
-      ]
+        "op_kleinzehen_ueberblick",
+        "op_kleinzehen_ablauf",
+        "op_kleinzehen_ergebnisse",
+        "op_kleinzehen_nachbehandlung",
+        "op_kleinzehen_komplikationen",
+        "op_kleinzehen_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "kleinzehen_q1",
+          "text": "Barg A, Courville XF, Nickisch F, Bachus KN, Saltzman CL. Role of collateral ligaments in metatarsophalangeal stability: a cadaver study. Foot Ankle Int. 2012;33(10):877-882. doi: [10.3113/FAI.2012.0877](https://doi.org/10.3113/FAI.2012.0877)"
+        },
+        {
+          "id": "kleinzehen_q2",
+          "text": "Nery C, Baumfeld D. Lesser metatarsophalangeal joint instability: treatment with tendon transfers. Foot Ankle Clin. 2018;23(1):103-126. doi: [10.1016/j.fcl.2017.09.008](https://doi.org/10.1016/j.fcl.2017.09.008)"
+        },
+        {
+          "id": "kleinzehen_q3",
+          "text": "Coughlin MJ, Dorris J, Polk E. Operative repair of the fixed hammertoe deformity. Foot Ankle Int. 2000;21(2):94-104. doi: [10.1177/107110070002100202](https://doi.org/10.1177/107110070002100202)"
+        },
+        {
+          "id": "kleinzehen_q4",
+          "text": "Cordier G, Nunes GA. Minimally invasive advances: lesser toes deformities. Foot Ankle Clin. 2020;25(3):461-478. doi: [10.1016/j.fcl.2020.05.008](https://doi.org/10.1016/j.fcl.2020.05.008)"
+        },
+        {
+          "id": "kleinzehen_q5",
+          "text": "Lintz F, Beldame J, Kerhousse G, Bernasconi A, Brunel H, Darcel V, Helix-Giordanino M, Piclet-Legré B. Intra- and inter-observer reliability of the AFCP classification for sagittal plane deformities of the second toe. Foot Ankle Surg. 2020;26(6):650-656. doi: [10.1016/j.fas.2019.08.011](https://doi.org/10.1016/j.fas.2019.08.011)"
+        },
+        {
+          "id": "kleinzehen_q6",
+          "text": "Yassin M, Garti A, Heller E, Robinson D. Hammertoe correction with K-wire fixation compared with percutaneous correction. Foot Ankle Spec. 2017;10(5):421-427. doi: [10.1177/1938640016681069](https://doi.org/10.1177/1938640016681069)"
+        },
+        {
+          "id": "kleinzehen_q7",
+          "text": "Mueller CM, Boden SA, Boden AL, Maidman SD, Cutler A, Mignemi D, Bariteau J. Complication rates and short-term outcomes after operative hammertoe correction in older patients. Foot Ankle Int. 2018;39(6):681-688. doi: [10.1177/1071100718755472](https://doi.org/10.1177/1071100718755472)"
+        },
+        {
+          "id": "kleinzehen_q8",
+          "text": "Nieto-García E, Ferrer-Torregrosa J, Ramírez-Andrés L, Nieto-González E, Martinez-Nova A, Barrios C. The impact of associated tenotomies on the outcome of incomplete phalangeal osteotomies for lesser toe deformities. J Orthop Surg Res. 2019;14(1):308. doi: [10.1186/s13018-019-1353-0](https://doi.org/10.1186/s13018-019-1353-0)"
+        },
+        {
+          "id": "kleinzehen_q9",
+          "text": "Highlander P, VonHerbulis E, Gonzalez A, Britt J, Buchman J. Complications of the Weil osteotomy. Foot Ankle Spec. 2011;4(3):165-170. doi: [10.1177/1938640011402822](https://doi.org/10.1177/1938640011402822)"
+        },
+        {
+          "id": "kleinzehen_q10",
+          "text": "Migues A, Slullitel G, Bilbao F, Carrasco M, Solari G. Floating-toe deformity as a complication of the Weil osteotomy. Foot Ankle Int. 2004;25(9):609-613. doi: [10.1177/107110070402500902](https://doi.org/10.1177/107110070402500902)"
+        },
+        {
+          "id": "kleinzehen_q11",
+          "text": "Phisitkul P. Managing complications of lesser toe and metatarsophalangeal joint surgery. Foot Ankle Clin. 2018;23(1):145-156. doi: [10.1016/j.fcl.2017.09.010](https://doi.org/10.1016/j.fcl.2017.09.010)"
+        },
+        {
+          "id": "kleinzehen_q12",
+          "text": "Kramer WC, Parman M, Marks RM. Hammertoe correction with K-wire fixation. Foot Ankle Int. 2015;36(5):494-502. doi: [10.1177/1071100714568013](https://doi.org/10.1177/1071100714568013)"
+        },
+        {
+          "id": "kleinzehen_q13",
+          "text": "Ford LA, Collins KB, Christensen JC. Stabilization of the subluxed second metatarsophalangeal joint: flexor tendon transfer versus primary repair of the plantar plate. J Foot Ankle Surg. 1998;37(3):217-222. doi: [10.1016/s1067-2516(98)80114-2](https://doi.org/10.1016/s1067-2516(98)80114-2)"
+        }
+      ],
+      "_review": false,
+      "stand": "Buchkapitel (Sotelano/Villena, Deformity of the Lesser Toes) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "akin": {
       "infoKategorie": "op_technik",
       "infoTitel": "Akin-Osteotomie (Zusatzeingriff)",
-      "titel": "Hallux valgus",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+      "titel": "Akin-Osteotomie (Zusatzeingriff)",
+      "untertitel": "Korrekturschnitt am Grundglied der Großzehe — meist Zusatzeingriff bei Hallux valgus",
       "betrifft_eingriffe": [
         "akin"
       ],
       "slides": [
-        "hv_krankheitsbild",
-        "hv_behandlung",
-        "hv_op_akin"
-      ]
+        "akin_ueberblick",
+        "akin_ablauf",
+        "akin_ergebnisse",
+        "akin_nachbehandlung",
+        "akin_komplikationen",
+        "akin_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "akin_q1",
+          "text": "Douthett SM, Plaskey NK, Fallat LM, Kish J. Retrospective analysis of the Akin osteotomy. J Foot Ankle Surg. 2018;57(1):38-43. doi: [10.1053/j.jfas.2017.06.026](https://doi.org/10.1053/j.jfas.2017.06.026)"
+        },
+        {
+          "id": "akin_q2",
+          "text": "Roy SP, Tan KJ. A modified suture technique for fixation of the Akin osteotomy. J Foot Ankle Surg. 2013;52(2):276-278. doi: [10.1053/j.jfas.2012.11.010](https://doi.org/10.1053/j.jfas.2012.11.010)"
+        },
+        {
+          "id": "akin_q3",
+          "text": "Testa EA, Porreca A, Ruiz Nasarre A, Poggio Cano D, Alvarez Goenaga F, Ledermann G, Baduell A, Ruiz Riquelme P. The Akin osteotomy without fixation in open hallux abducto-valgo correction surgery — a single center retrospective analysis of 286 cases. Foot Ankle Surg. 2023;29(3):200-207. doi: [10.1016/j.fas.2023.01.002](https://doi.org/10.1016/j.fas.2023.01.002)"
+        },
+        {
+          "id": "akin_q4",
+          "text": "Kuliński P, Rutkowski M, Tomczyk Ł, Miękisiak G, Morasiewicz P. Outcomes after chevron osteotomy with and without additional Akin osteotomy: a retrospective comparative study. Indian J Orthop. 2023;57(6):907-916. doi: [10.1007/s43465-023-00851-4](https://doi.org/10.1007/s43465-023-00851-4)"
+        },
+        {
+          "id": "akin_q5",
+          "text": "Kaufmann G, Hofmann M, Braito M, Ulmer H, Brunner A, Dammerer D. Need for concomitant Akin osteotomy in patients undergoing chevron osteotomy can be determined preoperatively: a retrospective comparative study of 859 cases. J Orthop Surg Res. 2019;14(1):277. doi: [10.1186/s13018-019-1319-2](https://doi.org/10.1186/s13018-019-1319-2)"
+        }
+      ],
+      "_review": false,
+      "_entwurf": true,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "mica": {
       "infoKategorie": "op_technik",
       "infoTitel": "Minimal-invasive Korrektur (MICA)",
-      "titel": "Hallux valgus",
+      "titel": "Minimal-invasive Korrektur (MICA)",
       "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
       "betrifft_eingriffe": [
         "mica"
@@ -529,21 +616,66 @@
     "cheilektomie": {
       "infoKategorie": "op_technik",
       "infoTitel": "Cheilektomie (Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+      "titel": "Cheilektomie (Hallux-rigidus-Behandlung)",
+      "untertitel": "Gelenkerhaltende Abtragung der Knochenanbauten am Großzehengrundgelenk bei Hallux rigidus",
       "betrifft_eingriffe": [
         "cheilektomie"
       ],
       "slides": [
-        "hr_krankheitsbild",
-        "hr_behandlung",
-        "hr_op_cheilektomie"
-      ]
+        "cheil_ueberblick",
+        "cheil_ablauf",
+        "cheil_ergebnisse",
+        "cheil_alternativen",
+        "cheil_nachbehandlung",
+        "cheil_komplikationen",
+        "cheil_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "cheil_q1",
+          "text": "Coughlin MJ, Shurnas PS. Hallux rigidus. J Bone Joint Surg Am. 2004;86-A(Suppl 1, Pt 2):119-130. doi: [10.2106/00004623-200409001-00003](https://doi.org/10.2106/00004623-200409001-00003)"
+        },
+        {
+          "id": "cheil_q2",
+          "text": "Arceri A, Di Paola G, Mazzotti A, Zielli SO, Artioli E, Langone L, Sgubbi F, Faldini C. Reviewing evidence and patient outcomes of cheilectomy for hallux rigidus: a systematic review and meta-analysis. J Clin Med. 2024;13(23):7299. doi: [10.3390/jcm13237299](https://doi.org/10.3390/jcm13237299)"
+        },
+        {
+          "id": "cheil_q3",
+          "text": "Fletcher AN, Patel V, Cerrato R. Minimally invasive cheilectomy for hallux rigidus. Foot Ankle Clin. 2024;29(3):471-484. doi: [10.1016/j.fcl.2024.01.003](https://doi.org/10.1016/j.fcl.2024.01.003)"
+        },
+        {
+          "id": "cheil_q4",
+          "text": "Semelsberger SD, Lee MS, Dobson CB, Miller CP, Gianakos AL. Modern treatment of hallux rigidus by cheilectomy: a systematic review of patient-reported outcomes in minimally invasive techniques. Foot Ankle Orthop. 2024;9(4):24730114241303169. doi: [10.1177/24730114241303169](https://doi.org/10.1177/24730114241303169)"
+        },
+        {
+          "id": "cheil_q5",
+          "text": "Cristofaro C, Mercier M, Lameire DL, Halai M, Lau J, Park SS. Outcomes following minimally invasive vs open cheilectomy for hallux rigidus: a systematic review. Foot Ankle Spec. 2025. doi: [10.1177/19386400251345538](https://doi.org/10.1177/19386400251345538)"
+        },
+        {
+          "id": "cheil_q6",
+          "text": "Esser K, Butler JJ, Roof M, Mercer NP, Harrington MC, Samsonov AP, Rosenbaum AJ, Kennedy JG. Outcomes following minimally invasive dorsal cheilectomy for hallux rigidus: a systematic review. World J Orthop. 2024;15(6):585-592. doi: [10.5312/wjo.v15.i6.585](https://doi.org/10.5312/wjo.v15.i6.585)"
+        },
+        {
+          "id": "cheil_q7",
+          "text": "Roukis TS. Outcomes after cheilectomy with phalangeal dorsiflexory osteotomy for hallux rigidus: a systematic review. J Foot Ankle Surg. 2010;49(5):479-487. doi: [10.1053/j.jfas.2010.05.006](https://doi.org/10.1053/j.jfas.2010.05.006)"
+        },
+        {
+          "id": "cheil_q8",
+          "text": "Issa M, O'Neill C, Schweitzer K. Moberg and Moberg-Akin osteotomies for hallux rigidus. Foot Ankle Clin. 2024;29(3):425-442. doi: [10.1016/j.fcl.2024.02.007](https://doi.org/10.1016/j.fcl.2024.02.007)"
+        },
+        {
+          "id": "cheil_q9",
+          "text": "Razik A, Sott AH. Cheilectomy for hallux rigidus. Foot Ankle Clin. 2016;21(3):451-457. doi: [10.1016/j.fcl.2016.04.006](https://doi.org/10.1016/j.fcl.2016.04.006)"
+        }
+      ],
+      "_review": false,
+      "_entwurf": true,
+      "stand": "Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "youngswick": {
       "infoKategorie": "op_technik",
       "infoTitel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
+      "titel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
       "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
       "betrifft_eingriffe": [
         "youngswick"
@@ -557,7 +689,7 @@
     "mtp1_arthrodese": {
       "infoKategorie": "op_technik",
       "infoTitel": "MTP1-Arthrodese (Versteifung, Hallux-rigidus-Behandlung)",
-      "titel": "Hallux rigidus",
+      "titel": "MTP1-Arthrodese (Versteifung, Hallux-rigidus-Behandlung)",
       "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
       "betrifft_eingriffe": [
         "mtp1_arthrodese"
@@ -571,7 +703,7 @@
     "weil": {
       "infoKategorie": "op_technik",
       "infoTitel": "Weil-Osteotomie",
-      "titel": "Metatarsalgie",
+      "titel": "Weil-Osteotomie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -615,7 +747,7 @@
     "cotton": {
       "infoKategorie": "op_technik",
       "infoTitel": "Cotton-Osteotomie",
-      "titel": "Knick-Senk-Fuß (Zusatzeingriff)",
+      "titel": "Cotton-Osteotomie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -627,47 +759,52 @@
         "op_cotton_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "cotton_q1",
-          "text": "de Cesar Netto C, et al. LapiCotton procedure (TMT-I-Arthrodese + Cotton). 2023."
+          "text": "de Cesar Netto C, Ehret A, Walt J, Chinelati RMK, Dibbern K, de Carvalho KAM, Tazegul TE, Lalevee M, Mansur NSB. Early results and complication rate of the LapiCotton procedure in the treatment of medial longitudinal arch collapse: a prospective cohort study. Arch Orthop Trauma Surg. 2023;143(5):2283-2295. doi: [10.1007/s00402-022-04399-0](https://doi.org/10.1007/s00402-022-04399-0)"
         },
         {
           "id": "cotton_q2",
-          "text": "Wei J, et al. Anatomie/Verlauf des medialen dorsalen Hautnervs (MDCN). 2019."
+          "text": "Wei B, Lau BC, Amendola A. Surgical anatomy of the medial cuneiform (Cotton) osteotomy. Foot Ankle Orthop. 2019;4(4):2473011419885344. doi: [10.1177/2473011419885344](https://doi.org/10.1177/2473011419885344)"
         },
         {
           "id": "cotton_q3",
-          "text": "Ellis SJ, et al.; Consensus Statement zur Cotton-Osteotomie / Graft-Größe. 2020."
+          "text": "Ellis SJ, Johnson JE, Day J, de Cesar Netto C, Deland JT, Hintermann B, Myerson MS, Schon LC, Thordarson DB, Sangeorzan BJ. Titrating the amount of bony correction in progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1292-1295. doi: [10.1177/1071100720950741](https://doi.org/10.1177/1071100720950741)"
         },
         {
           "id": "cotton_q4",
-          "text": "Aiyer A, et al. Cotton osteotomy / Längsgewölbe-Korrektur. 2016."
+          "text": "Aiyer A, Dall GF, Shub J, Myerson MS. Radiographic correction following reconstruction of adult acquired flat foot deformity using the Cotton medial cuneiform osteotomy. Foot Ankle Int. 2016;37(5):508-513. doi: [10.1177/1071100715620894](https://doi.org/10.1177/1071100715620894)"
         },
         {
           "id": "cotton_q5",
-          "text": "Kunas GC, et al. Medial cuneiform (Cotton) osteotomy. 2018."
+          "text": "Kunas GC, Do HT, Aiyer A, Deland JT, Ellis SJ. Contribution of medial cuneiform osteotomy to correction of longitudinal arch collapse in stage IIb adult-acquired flatfoot deformity. Foot Ankle Int. 2018;39(8):885-893. doi: [10.1177/1071100718768020](https://doi.org/10.1177/1071100718768020)"
         },
         {
           "id": "cotton_q6",
-          "text": "Abousayed MM, et al. Korrekturverlust über angrenzende Gelenke. 2021."
+          "text": "Abousayed MM, Coleman MM, Wei L, de Cesar Netto C, Schon LC, Guyton GP. Radiographic outcomes of Cotton osteotomy in treatment of adult-acquired flatfoot deformity. Foot Ankle Int. 2021;42(11):1384-1390. doi: [10.1177/10711007211015175](https://doi.org/10.1177/10711007211015175)"
         },
         {
           "id": "cotton_q7",
-          "text": "Conti MS, et al. Patientenzufriedenheit und Plantarflexions-Korrektur. 2019."
+          "text": "Conti MS, Garfinkel JH, Kunas GC, Deland JT, Ellis SJ. Postoperative medial cuneiform position correlation with patient-reported outcomes following Cotton osteotomy for reconstruction of the stage II adult-acquired flatfoot deformity. Foot Ankle Int. 2019;40(5):491-498. doi: [10.1177/1071100718822839](https://doi.org/10.1177/1071100718822839)"
         },
         {
           "id": "cotton_q8",
-          "text": "Johnson JE, et al. Consensus: Lokalisation der Vorfuß-Supination. 2020."
+          "text": "Johnson JE, Sangeorzan BJ, de Cesar Netto C, Deland JT, Ellis SJ, Hintermann B, Schon LC, Thordarson DB, Myerson MS. Consensus on indications for medial cuneiform opening wedge (Cotton) osteotomy in the treatment of progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1289-1291. doi: [10.1177/1071100720950739](https://doi.org/10.1177/1071100720950739)"
+        },
+        {
+          "id": "cotton_q9",
+          "text": "Boffeli TJ, Schnell KR. Cotton osteotomy in flatfoot reconstruction: a review of consecutive cases. J Foot Ankle Surg. 2017;56(5):990-995. doi: [10.1053/j.jfas.2017.04.007](https://doi.org/10.1053/j.jfas.2017.04.007)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "morton": {
       "infoKategorie": "op_technik",
       "infoTitel": "Entfernung Morton-Neurom",
-      "titel": "Morton-Neurom",
-      "untertitel": "",
+      "titel": "Entfernung Morton-Neurom",
+      "untertitel": "Operative Entfernung des schmerzhaften Zehennervs (Neurektomie)",
       "betrifft_eingriffe": [],
       "slides": [
         "op_morton_ueberblick",
@@ -678,63 +815,88 @@
         "op_morton_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
           "id": "morton_q1",
-          "text": "Sharp RJ, et al. Bildgebung/klinische Diagnose Morton-Neurom. 2003."
+          "text": "Sharp RJ, Wade CM, Hennessy MS, Saxby TS. The role of MRI and ultrasound imaging in Morton's neuroma and the effect of size of lesion on symptoms. J Bone Joint Surg Br. 2003;85(7):999-1005. doi: [10.1302/0301-620x.85b7.12633](https://doi.org/10.1302/0301-620x.85b7.12633)"
         },
         {
           "id": "morton_q2",
-          "text": "Bauer T, Gaumetou E, Klouche S, Hardy P, Maffulli N. Metatarsalgia and Morton's Disease: open neurectomy vs. percutaneous osteotomy + ligament release. J Foot Ankle Surg. 2015;54(3):373–377."
+          "text": "Bauer T, Gaumetou E, Klouche S, Hardy P, Maffulli N. Metatarsalgia and Morton's disease: comparison of outcomes between open procedure and neurectomy versus percutaneous metatarsal osteotomies and ligament release with a minimum of 2 years of follow-up. J Foot Ankle Surg. 2015;54(3):373-377. doi: [10.1053/j.jfas.2014.08.009](https://doi.org/10.1053/j.jfas.2014.08.009)"
         },
         {
           "id": "morton_q3",
-          "text": "Dellon AL, Mackinnon SE. Treatment of the painful neuroma by neuroma resection and muscle implantation. Plast Reconstr Surg. 1986;77(3):427–436."
+          "text": "Thomson CE, Gibson JN, Martin D. Interventions for the treatment of Morton's neuroma. Cochrane Database Syst Rev. 2004;(3):CD003118. doi: [10.1002/14651858.CD003118.pub2](https://doi.org/10.1002/14651858.CD003118.pub2)"
         },
         {
           "id": "morton_q4",
-          "text": "Raouf T, et al. Value of Preoperative Imaging and Intraoperative Histopathology in Morton's Neuroma. Foot Ankle Int. 2019;40(9):1032–1036."
+          "text": "Akermark C, Crone H, Skoog A, Weidenhielm L. A prospective randomized controlled trial of plantar versus dorsal incisions for operative treatment of primary Morton's neuroma. Foot Ankle Int. 2013;34(9):1198-1204. doi: [10.1177/1071100713484300](https://doi.org/10.1177/1071100713484300)"
         },
         {
           "id": "morton_q5",
-          "text": "Valisena S, Petri GJ, Ferrero A. Treatment of Morton's neuroma: a systematic review. Foot Ankle Surg. 2018;24(4):271–281."
+          "text": "Dellon AL, Mackinnon SE. Treatment of the painful neuroma by neuroma resection and muscle implantation. Plast Reconstr Surg. 1986;77(3):427-438. doi: [10.1097/00006534-198603000-00016](https://doi.org/10.1097/00006534-198603000-00016)"
         },
         {
           "id": "morton_q6",
-          "text": "Kasparek M, Schneider W. Surgical treatment of Morton's neuroma: clinical results after open excision. Int Orthop. 2013;37(9):1857–1861."
+          "text": "Wolfort SF, Dellon AL. Treatment of recurrent neuroma of the interdigital nerve by implantation of the proximal nerve into muscle in the arch of the foot. J Foot Ankle Surg. 2001;40(6):404-410. doi: [10.1016/s1067-2516(01)80009-0](https://doi.org/10.1016/s1067-2516(01)80009-0)"
         },
         {
           "id": "morton_q7",
-          "text": "Coughlin MJ, Pinsonneault T. Operative treatment of interdigital neuroma. Long-term follow-up. J Bone Joint Surg Am. 2001;83(9):1321–1328."
+          "text": "Raouf T, Rogero R, McDonald E, Fuchs D, Shakked RJ, Winters BS, Daniel JN, Pedowitz DI, Raikin SM. Value of preoperative imaging and intraoperative histopathology in Morton's neuroma. Foot Ankle Int. 2019;40(9):1032-1036. doi: [10.1177/1071100719851121](https://doi.org/10.1177/1071100719851121)"
         },
         {
           "id": "morton_q8",
-          "text": "Akermark C, et al. Plantar vs. dorsal incision — RCT. Foot Ankle Int. 2013;34(9):1198–1204."
+          "text": "Valisena S, Petri GJ, Ferrero A. Treatment of Morton's neuroma: a systematic review. Foot Ankle Surg. 2018;24(4):271-281. doi: [10.1016/j.fas.2017.03.010](https://doi.org/10.1016/j.fas.2017.03.010)"
         },
         {
           "id": "morton_q9",
-          "text": "Zhang J, et al. Effect of surgical approach on Morton's neuroma: systematic review and meta-analysis. J Foot Ankle Res. 2023;16(1):57."
+          "text": "Kasparek M, Schneider W. Surgical treatment of Morton's neuroma: clinical results after open excision. Int Orthop. 2013;37(9):1857-1861. doi: [10.1007/s00264-013-2002-6](https://doi.org/10.1007/s00264-013-2002-6)"
         },
         {
           "id": "morton_q10",
-          "text": "Benedetti RS, Baxter DE, Davis PF. Simultaneous adjacent interdigital neurectomy. Foot Ankle Int. 1996;17(5):264–268."
+          "text": "Coughlin MJ, Pinsonneault T. Operative treatment of interdigital neuroma. A long-term follow-up study. J Bone Joint Surg Am. 2001;83(9):1321-1328. (kein DOI, PMID 11568193)"
         },
         {
           "id": "morton_q11",
-          "text": "Faraj: Restbeschwerden-Rate. 2010."
+          "text": "Womack JW, Richardson DR, Murphy GA, Richardson EG, Ishikawa SN. Long-term evaluation of interdigital neuroma treated by surgical excision. Foot Ankle Int. 2008;29(6):574-577. doi: [10.3113/FAI.2008.0574](https://doi.org/10.3113/FAI.2008.0574)"
         },
         {
           "id": "morton_q12",
-          "text": "Su E, et al. Frequency of Digital Artery Resection in Morton Interdigital Neurectomy. Foot Ankle Int. 2006;27(10):801–803."
+          "text": "Zhang J, Li J, Cai W, Zheng K, Huang X, Rong X, Li Q. Effect of surgical approach on the treatment of Morton's neuroma: a systematic review and meta-analysis. J Foot Ankle Res. 2023;16(1):57. doi: [10.1186/s13047-023-00660-w](https://doi.org/10.1186/s13047-023-00660-w)"
+        },
+        {
+          "id": "morton_q13",
+          "text": "Benedetti RS, Baxter DE, Davis PF. Clinical results of simultaneous adjacent interdigital neurectomy in the foot. Foot Ankle Int. 1996;17(5):264-268. doi: [10.1177/107110079601700505](https://doi.org/10.1177/107110079601700505)"
+        },
+        {
+          "id": "morton_q14",
+          "text": "Faraj AA, Hosur A. The outcome after using two different approaches for excision of Morton's neuroma. Chin Med J (Engl). 2010;123(16):2195-2198. (kein DOI, PMID 20819664)"
+        },
+        {
+          "id": "morton_q15",
+          "text": "Su E, Di Carlo E, O'Malley M, Bohne WHO, Deland JT, Kennedy JG. The frequency of digital artery resection in Morton interdigital neurectomy. Foot Ankle Int. 2006;27(10):801-803. doi: [10.1177/107110070602701008](https://doi.org/10.1177/107110070602701008)"
+        },
+        {
+          "id": "morton_q16",
+          "text": "Akermark C, Crone H, Saartok T, Zuber Z. Plantar versus dorsal incision in the treatment of primary intermetatarsal Morton's neuroma. Foot Ankle Int. 2008;29(2):136-141. doi: [10.3113/FAI.2008.0136](https://doi.org/10.3113/FAI.2008.0136)"
+        },
+        {
+          "id": "morton_q17",
+          "text": "Poppler LH, Parikh RP, Bichanich MJ, Rebehn K, Bettlach CR, Mackinnon SE, Moore AM. Surgical interventions for the treatment of painful neuroma: a comparative meta-analysis. Pain. 2018;159(2):214-223. doi: [10.1097/j.pain.0000000000001101](https://doi.org/10.1097/j.pain.0000000000001101)"
+        },
+        {
+          "id": "morton_q18",
+          "text": "Matthews BG, Thomson CE, Harding MP, McKinley JC, Ware RS. Treatments for Morton's neuroma. Cochrane Database Syst Rev. 2024;2(2):CD014687. doi: [10.1002/14651858.CD014687.pub2](https://doi.org/10.1002/14651858.CD014687.pub2)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "schede": {
       "infoKategorie": "op_technik",
       "infoTitel": "Schede-/McBride-Operation",
-      "titel": "Hallux valgus (leichte Fehlstellung)",
+      "titel": "Schede-/McBride-Operation",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -757,7 +919,7 @@
     "plantarfascie": {
       "infoKategorie": "op_technik",
       "infoTitel": "Plantarfaszien-Release",
-      "titel": "Fersenschmerz / Plantarfasziitis",
+      "titel": "Plantarfaszien-Release",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -808,7 +970,7 @@
     "kidner": {
       "infoKategorie": "op_technik",
       "infoTitel": "Modifizierte Kidner-Prozedur",
-      "titel": "Os tibiale externum",
+      "titel": "Modifizierte Kidner-Prozedur",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -847,20 +1009,110 @@
     "brostrom": {
       "infoKategorie": "op_technik",
       "infoTitel": "Außenbandreparatur nach Broström",
-      "titel": "Außenbandinstabilität Sprunggelenk",
-      "untertitel": "",
+      "titel": "Außenbandreparatur nach Broström",
+      "untertitel": "Reparatur der äußeren Sprunggelenkbänder bei chronischer Instabilität",
       "betrifft_eingriffe": [],
       "slides": [
-        "op_brostrom"
+        "brostrom_ueberblick",
+        "brostrom_ablauf",
+        "brostrom_ergebnisse",
+        "brostrom_alternativen",
+        "brostrom_nachbehandlung",
+        "brostrom_komplikationen",
+        "brostrom_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
-      "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)"
+      "_review": false,
+      "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
+      "quellen": [
+        {
+          "id": "brostrom_q1",
+          "text": "Chiou D, Morris B, Waryasz G. Broström repair review. Foot Ankle Spec. 2024;17(3):277-283. doi: [10.1177/19386400211053946](https://doi.org/10.1177/19386400211053946)"
+        },
+        {
+          "id": "brostrom_q2",
+          "text": "Hunt KJ, Griffith R. Open Broström for lateral ligament stabilization. Curr Rev Musculoskelet Med. 2020;13(6):788-796. doi: [10.1007/s12178-020-09679-z](https://doi.org/10.1007/s12178-020-09679-z)"
+        },
+        {
+          "id": "brostrom_q3",
+          "text": "Yasui Y, Murawski CD, Wollstein A, Kennedy JG. Reoperation rates following ankle ligament procedures performed with and without concomitant arthroscopic procedures. Knee Surg Sports Traumatol Arthrosc. 2017;25(6):1908-1915. doi: [10.1007/s00167-016-4207-x](https://doi.org/10.1007/s00167-016-4207-x)"
+        },
+        {
+          "id": "brostrom_q4",
+          "text": "DiGiovanni BF, Fraga CJ, Cohen BE, Shereff MJ. Associated injuries found in chronic lateral ankle instability. Foot Ankle Int. 2000;21(10):809-815. doi: [10.1177/107110070002101003](https://doi.org/10.1177/107110070002101003)"
+        },
+        {
+          "id": "brostrom_q5",
+          "text": "Schäfer D, Hintermann B. Arthroscopic assessment of the chronic unstable ankle joint. Knee Surg Sports Traumatol Arthrosc. 1996;4(1):48-52. doi: [10.1007/BF01565998](https://doi.org/10.1007/BF01565998)"
+        },
+        {
+          "id": "brostrom_q6",
+          "text": "Bell SJ, Mologne TS, Sitler DF, Cox JS. Twenty-six-year results after Broström procedure for chronic lateral ankle instability. Am J Sports Med. 2006;34(6):975-978. doi: [10.1177/0363546505282616](https://doi.org/10.1177/0363546505282616)"
+        },
+        {
+          "id": "brostrom_q7",
+          "text": "Liu SH, Baker CL. Comparison of lateral ankle ligamentous reconstruction procedures. Am J Sports Med. 1994;22(3):313-317. doi: [10.1177/036354659402200303](https://doi.org/10.1177/036354659402200303)"
+        },
+        {
+          "id": "brostrom_q8",
+          "text": "Bahr R, Pena F, Shine J, Lew WD, Tyrdal S, Engebretsen L. Biomechanics of ankle ligament reconstruction. An in vitro comparison of the Broström repair, Watson-Jones reconstruction, and a new anatomic reconstruction technique. Am J Sports Med. 1997;25(4):424-432. doi: [10.1177/036354659702500402](https://doi.org/10.1177/036354659702500402)"
+        },
+        {
+          "id": "brostrom_q9",
+          "text": "May NR, Driscoll M, Nguyen S, Ferkel RD. Analysis of return to play after modified Broström lateral ankle ligament reconstruction. Orthop J Sports Med. 2022;10(2):23259671211068541. doi: [10.1177/23259671211068541](https://doi.org/10.1177/23259671211068541)"
+        },
+        {
+          "id": "brostrom_q10",
+          "text": "Park SH, Kim T, Lee M, Park Y. Absence of ATFL remnant does not affect the clinical outcomes of the modified Broström operation for chronic ankle instability. Knee Surg Sports Traumatol Arthrosc. 2020;28(1):213-220. doi: [10.1007/s00167-019-05464-9](https://doi.org/10.1007/s00167-019-05464-9)"
+        },
+        {
+          "id": "brostrom_q11",
+          "text": "Kitaoka HB, Lee MD, Morrey BF, Cass JR. Acute repair and delayed reconstruction for lateral ankle instability: twenty-year follow-up study. J Orthop Trauma. 1997;11(7):530-535. doi: [10.1097/00005131-199710000-00012](https://doi.org/10.1097/00005131-199710000-00012)"
+        },
+        {
+          "id": "brostrom_q12",
+          "text": "Acevedo JI, Mangone P. Arthroscopic Broström technique. Foot Ankle Int. 2015;36(4):465-473. doi: [10.1177/1071100715576107](https://doi.org/10.1177/1071100715576107)"
+        },
+        {
+          "id": "brostrom_q13",
+          "text": "Guelfi M, Zamperetti M, Pantalone A, Usuelli FG, Salini V, Oliva XM. Open and arthroscopic lateral ligament repair for treatment of chronic ankle instability: a systematic review. Foot Ankle Surg. 2018;24(1):11-18. doi: [10.1016/j.fas.2016.05.315](https://doi.org/10.1016/j.fas.2016.05.315)"
+        },
+        {
+          "id": "brostrom_q14",
+          "text": "Brown AJ, Shimozono Y, Hurley ET, Kennedy JG. Arthroscopic repair of lateral ankle ligament for chronic lateral ankle instability: a systematic review. Arthroscopy. 2018;34(8):2497-2503. doi: [10.1016/j.arthro.2018.02.034](https://doi.org/10.1016/j.arthro.2018.02.034)"
+        },
+        {
+          "id": "brostrom_q15",
+          "text": "Schuh R, Benca E, Willegger M, Hirtler L, Zandieh S, Holinka J, et al. Comparison of Broström technique, suture anchor repair, and tape augmentation for reconstruction of the anterior talofibular ligament. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1101-1107. doi: [10.1007/s00167-015-3631-7](https://doi.org/10.1007/s00167-015-3631-7)"
+        },
+        {
+          "id": "brostrom_q16",
+          "text": "Piscoya AS, Bedrin MD, Lundy AE, Eckel TT. Modified Broström with and without suture tape augmentation: a systematic review. J Foot Ankle Surg. 2022;61(2):390-395. doi: [10.1053/j.jfas.2021.09.027](https://doi.org/10.1053/j.jfas.2021.09.027)"
+        },
+        {
+          "id": "brostrom_q17",
+          "text": "Lewis TL, Joseph A, Patel A, Ahluwalia R, Ray R. Modified Broström repair with suture tape augmentation for lateral ankle instability: a systematic review. Foot Ankle Surg. 2021;27(3):278-284. doi: [10.1016/j.fas.2020.12.004](https://doi.org/10.1016/j.fas.2020.12.004)"
+        },
+        {
+          "id": "brostrom_q18",
+          "text": "Krause F, Seidel A. Malalignment and lateral ankle instability: causes of failure from the varus tibia to the cavovarus foot. Foot Ankle Clin. 2018;23(4):593-603. doi: [10.1016/j.fcl.2018.07.005](https://doi.org/10.1016/j.fcl.2018.07.005)"
+        },
+        {
+          "id": "brostrom_q19",
+          "text": "Park KH, Lee JW, Suh JW, Shin MH, Choi WJ. Generalized ligamentous laxity is an independent predictor of poor outcomes after the modified Broström procedure for chronic lateral ankle instability. Am J Sports Med. 2016;44(11):2975-2983. doi: [10.1177/0363546516656183](https://doi.org/10.1177/0363546516656183)"
+        },
+        {
+          "id": "brostrom_q20",
+          "text": "Alhaddad A, Gronfula AG, Alsharif TH, Khawjah A, Al Shareef NS, AlThagafi AA, et al. A comparative analysis of complication rates in arthroscopic repair of the lateral ankle ligament and the Brostrom-Gould technique: a systematic review. Cureus. 2023;15(11):e48460. doi: [10.7759/cureus.48460](https://doi.org/10.7759/cureus.48460)"
+        }
+      ],
+      "_entwurf": true,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "lat_stabil": {
       "infoKategorie": "op_technik",
       "infoTitel": "Laterale anatomische Stabilisierung",
-      "titel": "Außenbandinstabilität — Sehnentransplantat",
+      "titel": "Laterale anatomische Stabilisierung",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -903,7 +1155,7 @@
     "peroneal_instab": {
       "infoKategorie": "op_technik",
       "infoTitel": "Peronealsehnen-Instabilität",
-      "titel": "Peronealsehnen — Instabilität/Luxation",
+      "titel": "Peronealsehnen-Instabilität",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -938,7 +1190,7 @@
     "peroneal_riss": {
       "infoKategorie": "op_technik",
       "infoTitel": "Peronealsehnen-Riss",
-      "titel": "Peronealsehnen — Riss/Schaden",
+      "titel": "Peronealsehnen-Riss",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1005,39 +1257,47 @@
     "haglund_split": {
       "infoKategorie": "op_technik",
       "infoTitel": "Haglund-Abtragung mit Achillessehnen-Split und Refixation",
-      "titel": "Hinterer Fersenschmerz (Ansatz)",
-      "untertitel": "",
+      "titel": "Haglund-Abtragung mit Achillessehnen-Split und Refixation",
+      "untertitel": "Abtragung der Haglund-Exostose und Sanierung des Achillessehnenansatzes über eine Längseröffnung der Sehne",
       "betrifft_eingriffe": [],
       "slides": [
         "op_haglund_split_ueberblick",
         "op_haglund_split_ablauf",
         "op_haglund_split_ergebnisse",
         "op_haglund_split_nachbehandlung",
-        "op_haglund_split_wann_nicht_geeignet_erh_",
         "op_haglund_split_komplikationen",
         "op_haglund_split_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "haglund_split_q1",
-          "text": "Nunley JA, et al. Long-term outcomes of insertional Achilles tendinopathy surgery. 2011."
+          "text": "Nunley JA, Ruskin G, Horst F. Long-term clinical outcomes following the central incision technique for insertional Achilles tendinopathy. Foot Ankle Int. 2011;32(9):850-855. doi: [10.3113/FAI.2011.0850](https://doi.org/10.3113/FAI.2011.0850)"
         },
         {
           "id": "haglund_split_q2",
-          "text": "Ettinger S, et al. Surgical treatment of insertional Achilles tendinopathy — single-row vs. double-row. 2016."
+          "text": "Ettinger S, Razzaq R, Waizy H, Claassen L, Daniilidis K, Stukenborg-Colsman C, Plaass C. Operative treatment of the insertional Achilles tendinopathy through a transtendinous approach. Foot Ankle Int. 2016;37(3):288-293. doi: [10.1177/1071100715609921](https://doi.org/10.1177/1071100715609921)"
         },
         {
           "id": "haglund_split_q3",
-          "text": "Yuen WLP, Tan PT, Kon KKC. Surgical treatment of Haglund's deformity: a systematic review and meta-analysis. Cureus. 2022;14(7):e27500."
+          "text": "Yuen WLP, Tan PT, Kon KKC. Surgical treatment of Haglund's deformity: a systematic review and meta-analysis. Cureus. 2022;14(7):e27500. doi: [10.7759/cureus.27500](https://doi.org/10.7759/cureus.27500)"
+        },
+        {
+          "id": "haglund_split_q4",
+          "text": "Hörterer H, Baumbach SF, Oppelt S, Böcker W, Harrasser N, Walther M, Polzer H. Complications associated with midline incision for insertional Achilles tendinopathy. Foot Ankle Int. 2020;41(12):1502-1509. doi: [10.1177/1071100720943836](https://doi.org/10.1177/1071100720943836)"
+        },
+        {
+          "id": "haglund_split_q5",
+          "text": "McAlister JE, Hyer CF. Safety of Achilles detachment and reattachment using a standard midline approach to insertional enthesophytes. J Foot Ankle Surg. 2015;54(2):214-219. doi: [10.1053/j.jfas.2014.12.009](https://doi.org/10.1053/j.jfas.2014.12.009)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "tendoskopie_achilles": {
       "infoKategorie": "op_technik",
       "infoTitel": "Achillessehnen-Tendoskopie",
-      "titel": "Achillessehne — Mid-Portion-Tendinopathie",
+      "titel": "Achillessehnen-Tendoskopie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1081,37 +1341,43 @@
     "achilles_nekrose": {
       "infoKategorie": "op_technik",
       "infoTitel": "Offene Achillessehnen-Sanierung",
-      "titel": "Achillessehne — offene Sanierung (Mid-Portion)",
-      "untertitel": "",
+      "titel": "Offene Achillessehnen-Sanierung",
+      "untertitel": "Offene Entfernung von Sehnennekrosen mit Naht und Tenolyse bei Mid-Portion-Tendinopathie",
       "betrifft_eingriffe": [],
       "slides": [
         "op_achilles_nekrose_ueberblick",
+        "op_achilles_nekrose_ablauf",
         "op_achilles_nekrose_ergebnisse",
         "op_achilles_nekrose_nachbehandlung",
         "op_achilles_nekrose_komplikationen",
         "op_achilles_nekrose_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "achilles_nekrose_q1",
-          "text": "Zwiers R, Wiegerinck JI, van Dijk CN. Treatment of midportion Achilles tendinopathy: an evidence-based overview. Knee Surg Sports Traumatol Arthrosc. 2016;24:2103–2111."
+          "text": "Zwiers R, Wiegerinck JI, van Dijk CN. Treatment of midportion Achilles tendinopathy: an evidence-based overview. Knee Surg Sports Traumatol Arthrosc. 2016;24(7):2103-2111. doi: [10.1007/s00167-014-3407-5](https://doi.org/10.1007/s00167-014-3407-5)"
         },
         {
           "id": "achilles_nekrose_q2",
-          "text": "Lohrer H, David S, Nauck T. Surgical treatment for Achilles tendinopathy — a systematic review. BMC Musculoskelet Disord. 2016;17:207."
+          "text": "Lohrer H, David S, Nauck T. Surgical treatment for Achilles tendinopathy - a systematic review. BMC Musculoskelet Disord. 2016;17:207. doi: [10.1186/s12891-016-1061-4](https://doi.org/10.1186/s12891-016-1061-4)"
         },
         {
           "id": "achilles_nekrose_q3",
-          "text": "Maffulli N, et al. Surgical decompression of chronic central core lesions of the Achilles tendon. Am J Sports Med. 1999;27:747–752."
+          "text": "Maffulli N, Binfield PM, Moore D, King JB. Surgical decompression of chronic central core lesions of the Achilles tendon. Am J Sports Med. 1999;27(6):747-752. doi: [10.1177/03635465990270061101](https://doi.org/10.1177/03635465990270061101)"
+        },
+        {
+          "id": "achilles_nekrose_q4",
+          "text": "Paavola M, Orava S, Leppilahti J, Kannus P, Järvinen M. Chronic Achilles tendon overuse injury: complications after surgical treatment. An analysis of 432 consecutive patients. Am J Sports Med. 2000;28(1):77-82. doi: [10.1177/03635465000280012501](https://doi.org/10.1177/03635465000280012501)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "calc_verlaengerung": {
       "infoKategorie": "op_technik",
       "infoTitel": "Calcaneus-Verlängerungs-Osteotomie",
-      "titel": "Knick-Senk-Fuß (Betonung Abduktion)",
+      "titel": "Calcaneus-Verlängerungs-Osteotomie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1124,54 +1390,83 @@
         "op_calc_verlaengerung_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "calc_verlaengerung_q1",
-          "text": "Thordarson DB, et al. Consensus for the Indication of Lateral Column Lengthening in Progressive Collapsing Foot Deformity. Foot Ankle Int. 2020;41(10):1286–1288."
+          "text": "Thordarson DB, Schon LC, de Cesar Netto C, Deland JT, Ellis SJ, Johnson JE, Myerson MS, Sangeorzan BJ, Hintermann B. Consensus for the indication of lateral column lengthening in the treatment of progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1286-1288. doi: [10.1177/1071100720950732](https://doi.org/10.1177/1071100720950732)"
         },
         {
           "id": "calc_verlaengerung_q2",
-          "text": "Ellis SJ, et al. Titrating the Amount of Bony Correction in Progressive Collapsing Foot Deformity. Foot Ankle Int. 2020;41(10):1292–1295."
+          "text": "Ellis SJ, Johnson JE, Day J, de Cesar Netto C, Deland JT, Hintermann B, Myerson MS, Schon LC, Thordarson DB, Sangeorzan BJ. Titrating the amount of bony correction in progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1292-1295. doi: [10.1177/1071100720950741](https://doi.org/10.1177/1071100720950741)"
         },
         {
           "id": "calc_verlaengerung_q3",
-          "text": "Xia P, et al. Biomechanical analysis of calcaneocuboid joint pressure after sequential lengthening of the lateral column. Foot Ankle Int. 2013;34:261–266."
+          "text": "Xia J, Zhang P, Yang YF, Zhou JQ, Li QM, Yu GR. Biomechanical analysis of the calcaneocuboid joint pressure after sequential lengthening of the lateral column. Foot Ankle Int. 2013;34(2):261-266. doi: [10.1177/1071100712464211](https://doi.org/10.1177/1071100712464211)"
         },
         {
           "id": "calc_verlaengerung_q4",
-          "text": "Oh I, et al. Sensitivity of plantar pressure and talonavicular alignment to lateral column lengthening in flatfoot reconstruction. J Bone Joint Surg Am. 2013;95:1094–1100."
+          "text": "Oh I, Imhauser C, Choi D, Williams B, Ellis S, Deland J. Sensitivity of plantar pressure and talonavicular alignment to lateral column lengthening in flatfoot reconstruction. J Bone Joint Surg Am. 2013;95(12):1094-1100. doi: [10.2106/JBJS.K.01032](https://doi.org/10.2106/JBJS.K.01032)"
         },
         {
           "id": "calc_verlaengerung_q5",
-          "text": "Ettinger S, et al. Outcomes of Evans versus Hintermann calcaneal lengthening osteotomy for flexible flatfoot. Foot Ankle Int. 2019;40(6):661–671."
+          "text": "Ettinger S, Mattinger T, Stukenborg-Colsman C, Yao D, Claassen L, Daniilidis K, Plaass C. Outcomes of Evans versus Hintermann calcaneal lengthening osteotomy for flexible flatfoot. Foot Ankle Int. 2019;40(6):661-671. doi: [10.1177/1071100719835464](https://doi.org/10.1177/1071100719835464)"
         },
         {
           "id": "calc_verlaengerung_q6",
-          "text": "Ettinger S, et al. Comparison of anatomic structures at risk with 2 lateral lengthening calcaneal osteotomies. Foot Ankle Int. 2018;39(12):1481–1486."
+          "text": "Ettinger S, Sibai K, Stukenborg-Colsman C, Yao D, Claassen L, Daniilidis K, Plaass C. Comparison of anatomic structures at risk with 2 lateral lengthening calcaneal osteotomies. Foot Ankle Int. 2018;39(12):1481-1486. doi: [10.1177/1071100718789435](https://doi.org/10.1177/1071100718789435)"
         },
         {
           "id": "calc_verlaengerung_q7",
-          "text": "Döderlein L, et al. Die Behandlung des Knick-Plattfußes mit der Kalkaneusverlängerungsosteotomie. Oper Orthop Traumatol. 1998;10(3):219–231."
+          "text": "Döderlein L, Wenz W, Mau H, Axt M. Die Behandlung des Knick-Plattfußes mit der Kalkaneusverlängerungsosteotomie. Oper Orthop Traumatol. 1998;10(3):219-231."
         },
         {
           "id": "calc_verlaengerung_q8",
-          "text": "Ettl V, et al. Calcaneal lengthening for planovalgus deformity in children with cerebral palsy. Foot Ankle Int. 2009;30(5):398–404."
+          "text": "Ettl V, Wollmerstedt N, Kirschner S, Morrison R, Pasold E, Raab P. Calcaneal lengthening for planovalgus deformity in children with cerebral palsy. Foot Ankle Int. 2009;30(5):398-404. doi: [10.3113/FAI-2009-0398](https://doi.org/10.3113/FAI-2009-0398)"
         },
         {
           "id": "calc_verlaengerung_q9",
-          "text": "Hintermann B, Valderrabano V, Kundert HP. Anteriore Kalkaneus-verlängerungsosteotomie … Orthopäde. 1999;28(9):760–769."
+          "text": "Hintermann B, Valderrabano V, Kundert HP. Lateral column lengthening by calcaneal osteotomy combined with soft tissue reconstruction for treatment of severe posterior tibial tendon dysfunction. Orthopade. 1999;28(9):760-769. PMID: [10525686](https://pubmed.ncbi.nlm.nih.gov/10525686/)"
         },
         {
           "id": "calc_verlaengerung_q10",
-          "text": "Mosca VS. Calcaneal lengthening for valgus deformity of the hindfoot. J Bone Joint Surg Am. 1995;77(4):500–512."
+          "text": "Mosca VS. Calcaneal lengthening for valgus deformity of the hindfoot. Results in children who had severe, symptomatic flatfoot and skewfoot. J Bone Joint Surg Am. 1995;77(4):500-512. doi: [10.2106/00004623-199504000-00002](https://doi.org/10.2106/00004623-199504000-00002)"
+        },
+        {
+          "id": "calc_verlaengerung_q11",
+          "text": "Evans D. Calcaneo-valgus deformity. J Bone Joint Surg Br. 1975;57(3):270-278. PMID: [1171869](https://pubmed.ncbi.nlm.nih.gov/1171869/)"
+        },
+        {
+          "id": "calc_verlaengerung_q12",
+          "text": "Benthien RA, Parks BG, Guyton GP, Schon LC. Lateral column calcaneal lengthening, flexor digitorum longus transfer, and opening wedge medial cuneiform osteotomy for flexible flatfoot: a biomechanical study. Foot Ankle Int. 2007;28(1):70-77. doi: [10.3113/FAI.2007.0013](https://doi.org/10.3113/FAI.2007.0013)"
+        },
+        {
+          "id": "calc_verlaengerung_q13",
+          "text": "Wu J, Liu H, Xu C. The optimal procedure for lateral column lengthening calcaneal osteotomy according to anatomical patterns of the subtalar joint: an anatomical study in the Chinese population. BMC Musculoskelet Disord. 2022;23(1):751. doi: [10.1186/s12891-022-05715-w](https://doi.org/10.1186/s12891-022-05715-w)"
+        },
+        {
+          "id": "calc_verlaengerung_q14",
+          "text": "Kumar S, Sonanis SV. Lateral column lengthening for adolescent idiopathic pes planovalgus deformity: a systematic review. J Orthop. 2017;14(4):571-576. doi: [10.1016/j.jor.2017.07.013](https://doi.org/10.1016/j.jor.2017.07.013)"
+        },
+        {
+          "id": "calc_verlaengerung_q15",
+          "text": "Modha RK, Kilmartin TE. Lateral column lengthening for flexible adult acquired flatfoot: systematic review and meta-analysis. J Foot Ankle Surg. 2021;60(6):1254-1269. doi: [10.1053/j.jfas.2021.02.015](https://doi.org/10.1053/j.jfas.2021.02.015)"
+        },
+        {
+          "id": "calc_verlaengerung_q16",
+          "text": "Vosseller JT, Ellis SJ, O'Malley MJ, et al. Autograft and allograft unite similarly in lateral column lengthening for adult acquired flatfoot deformity. HSS J. 2013;9(1):6-11. doi: [10.1007/s11420-012-9317-5](https://doi.org/10.1007/s11420-012-9317-5)"
+        },
+        {
+          "id": "calc_verlaengerung_q17",
+          "text": "Grier KM, Walling AK. The use of tricortical autograft versus allograft in lateral column lengthening for adult acquired flatfoot deformity. Foot Ankle Int. 2010;31(9):760-769. doi: [10.3113/FAI.2010.0760](https://doi.org/10.3113/FAI.2010.0760)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "calc_medial": {
       "infoKategorie": "op_technik",
       "infoTitel": "Medialisierende Calcaneus-Verschiebe-Osteotomie",
-      "titel": "Knick-Senk-Fuß (Betonung Rückfuß-Valgus)",
+      "titel": "Medialisierende Calcaneus-Verschiebe-Osteotomie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1222,33 +1517,35 @@
     "calcaneoplastie": {
       "infoKategorie": "op_technik",
       "infoTitel": "Calcaneoplastie (endoskopisch oder mini-open)",
-      "titel": "Hinterer Fersenschmerz (Haglund, minimal-invasiv)",
-      "untertitel": "",
+      "titel": "Calcaneoplastie (endoskopisch oder mini-open)",
+      "untertitel": "Endoskopische Abtragung der Haglund-Exostose am Fersenbein",
       "betrifft_eingriffe": [],
       "slides": [
         "op_calcaneoplastie_ueberblick",
-        "op_calcaneoplastie_nachbehandlung",
+        "op_calcaneoplastie_ablauf",
         "op_calcaneoplastie_ergebnisse",
+        "op_calcaneoplastie_nachbehandlung",
         "op_calcaneoplastie_komplikationen",
         "op_calcaneoplastie_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "calcaneoplastie_q1",
-          "text": "Alessio-Mazzola M, et al. Endoscopic calcaneoplasty for Haglund's deformity: better functional outcomes, lower complication rate, shorter recovery than open procedures — a systematic review. Knee Surg Sports Traumatol Arthrosc. 2021;29(8):2462–2484."
+          "text": "Alessio-Mazzola M, Russo A, Capello AG, Lovisolo S, Repetto I, Formica M, Felli L. Endoscopic calcaneoplasty for the treatment of Haglund's deformity provides better clinical functional outcomes, lower complication rate, and shorter recovery time compared to open procedures: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2021;29(8):2462-2484. doi: [10.1007/s00167-020-06362-1](https://doi.org/10.1007/s00167-020-06362-1)"
         },
         {
           "id": "calcaneoplastie_q2",
-          "text": "Yuen WLP, Tan PT, Kon KKC. Surgical treatment of Haglund's deformity: a systematic review and meta-analysis. Cureus. 2022;14(7):e27500."
+          "text": "Yuen WLP, Tan PT, Kon KKC. Surgical treatment of Haglund's deformity: a systematic review and meta-analysis. Cureus. 2022;14(7):e27500. doi: [10.7759/cureus.27500](https://doi.org/10.7759/cureus.27500)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "smot_valgus": {
       "infoKategorie": "op_technik",
       "infoTitel": "Supramalleoläre Osteotomie (Valgus)",
-      "titel": "Fehlstellung oberhalb des Sprunggelenks (Valgus)",
+      "titel": "Supramalleoläre Osteotomie (Valgus)",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1292,7 +1589,7 @@
     "smot_varus": {
       "infoKategorie": "op_technik",
       "infoTitel": "Supramalleoläre Osteotomie (Varus)",
-      "titel": "Fehlstellung oberhalb des Sprunggelenks (Varus)",
+      "titel": "Supramalleoläre Osteotomie (Varus)",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1352,7 +1649,7 @@
     "triple": {
       "infoKategorie": "op_technik",
       "infoTitel": "Triple-/Double-Arthrodese",
-      "titel": "Schwere Rückfußfehlstellung / Rückfuß-Arthrose",
+      "titel": "Triple-/Double-Arthrodese",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1403,7 +1700,7 @@
     "knorpel_osg": {
       "infoKategorie": "op_technik",
       "infoTitel": "Knorpelchirurgie am OSG",
-      "titel": "Knorpelschaden am Sprunggelenk (OCL)",
+      "titel": "Knorpelchirurgie am OSG",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1435,7 +1732,7 @@
     "arthrorise": {
       "infoKategorie": "op_technik",
       "infoTitel": "Arthrorise (Kind)",
-      "titel": "Kindlicher flexibler Knick-Senk-Fuß",
+      "titel": "Arthrorise (Kind)",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1447,31 +1744,64 @@
         "op_arthrorise_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "arthrorise_q1",
-          "text": "De Pellegrin M. Die subtalare Schrauben-Arthrorise beim kindlichen Plattfuß. Orthopäde. 2005;34(9):941–953."
+          "text": "De Pellegrin M. Die subtalare Schrauben-Arthrorise beim kindlichen Plattfuß. Orthopäde. 2005;34(9):941-953. doi: [10.1007/s00132-005-0835-4](https://doi.org/10.1007/s00132-005-0835-4)"
         },
         {
           "id": "arthrorise_q2",
-          "text": "Abbara-Czardybon M, Wingenfeld C, Arbab D, et al. Möglichkeiten und Grenzen der subtalaren Arthrorise im Kindesalter. Orthopäde. 2013;42:12–19."
+          "text": "Abbara-Czardybon M, Wingenfeld C, Arbab D, Frank D. Möglichkeiten und Grenzen der subtalaren Arthrorise im Kindesalter. Orthopäde. 2013;42(1):12-19. doi: [10.1007/s00132-012-1986-8](https://doi.org/10.1007/s00132-012-1986-8)"
         },
         {
           "id": "arthrorise_q3",
-          "text": "Kubo H, et al. Outcomes of subtalar arthroereisis by age. 2020."
+          "text": "Kubo H, Lipp C, Hufeland M, Ruppert M, Westhoff B, Krauspe R, Pilge H. Outcome after subtalar screw arthroereisis in children with flexible flatfoot depends on time of treatment: midterm results of 95 cases. J Orthop Sci. 2020;25(3):497-502. doi: [10.1016/j.jos.2019.06.007](https://doi.org/10.1016/j.jos.2019.06.007)"
         },
         {
           "id": "arthrorise_q4",
-          "text": "Arbab D, et al. Die subtalare Schraubenarthrorise zur Behandlung des symptomatischen, flexiblen Pes planovalgus. Z Orthop Unfall. 2018;156(1):93–99."
+          "text": "Arbab D, Frank D, Bouillon B, Lüring C, Wingenfeld C, Abbara-Czardybon M. Die subtalare Schraubenarthrorise zur Behandlung des symptomatischen, flexiblen Pes planovalgus. Z Orthop Unfall. 2018;156(1):93-99. doi: [10.1055/s-0043-120071](https://doi.org/10.1055/s-0043-120071)"
+        },
+        {
+          "id": "arthrorise_q5",
+          "text": "Metcalfe SA, Bowling FL, Reeves ND. Subtalar joint arthroereisis in the management of pediatric flexible flatfoot: a critical review of the literature. Foot Ankle Int. 2011;32(12):1127-1139. doi: [10.3113/FAI.2011.1127](https://doi.org/10.3113/FAI.2011.1127)"
+        },
+        {
+          "id": "arthrorise_q6",
+          "text": "Kellermann P, Roth S, Gion K, Boda K, Tóth K. Calcaneo-stop procedure for paediatric flexible flatfoot. Arch Orthop Trauma Surg. 2011;131(10):1363-1367. doi: [10.1007/s00402-011-1316-3](https://doi.org/10.1007/s00402-011-1316-3)"
+        },
+        {
+          "id": "arthrorise_q7",
+          "text": "Richter M, Zech S. Arthrorisis with calcaneostop screw in children corrects Talo-1st Metatarsal-Index (TMT-Index). Foot Ankle Surg. 2013;19(2):91-95. doi: [10.1016/j.fas.2012.11.008](https://doi.org/10.1016/j.fas.2012.11.008)"
+        },
+        {
+          "id": "arthrorise_q8",
+          "text": "Vogt B, Toporowski G, Gosheger G, Rölfing JD, Rosenbaum D, Schiedel F, Laufer A, Kleine-Koenig MT, Theil C, Roedl R, Frommer A. Subtalar arthroereisis for flexible flatfoot in children — clinical, radiographic and pedobarographic outcome comparing three different methods. Children (Basel). 2021;8(5):359. doi: [10.3390/children8050359](https://doi.org/10.3390/children8050359)"
+        },
+        {
+          "id": "arthrorise_q9",
+          "text": "Hamel J. Radiologisch-dokumentierte Korrektureffekte beim kindlichen Pes planovalgus mit der Calcaneostop-Arthrorise und der Calcaneus-Verlängerungsosteotomie. Fuß Sprunggelenk. 2010;8(1):43-47."
+        },
+        {
+          "id": "arthrorise_q10",
+          "text": "Smith C, Zaidi R, Bhamra J, Bridgens A, Wek C, Kokkinakis M. Subtalar arthroereisis for the treatment of the symptomatic paediatric flexible pes planus: a systematic review. EFORT Open Rev. 2021;6(2):118-129. doi: [10.1302/2058-5241.6.200076](https://doi.org/10.1302/2058-5241.6.200076)"
+        },
+        {
+          "id": "arthrorise_q11",
+          "text": "De Pellegrin M, Moharamzadeh D. Subtalar arthroereisis for surgical treatment of flexible flatfoot. Foot Ankle Clin. 2021;26(4):765-805. doi: [10.1016/j.fcl.2021.07.007](https://doi.org/10.1016/j.fcl.2021.07.007)"
+        },
+        {
+          "id": "arthrorise_q12",
+          "text": "Suh DH, Park JH, Lee SH, Kim HJ, Park YH, Jang WY, et al. Lateral column lengthening versus subtalar arthroereisis for paediatric flatfeet: a systematic review. Int Orthop. 2019;43(5):1179-1192. doi: [10.1007/s00264-019-04303-3](https://doi.org/10.1007/s00264-019-04303-3)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "coalitio_cn": {
       "infoKategorie": "op_technik",
       "infoTitel": "Coalitio calcaneonavicular — Resektion",
-      "titel": "Coalitio (Fußwurzelverbindung)",
-      "untertitel": "",
+      "titel": "Coalitio calcaneonavicular — Resektion",
+      "untertitel": "Offene Entfernung der schmerzhaften Fußwurzelverbindung zwischen Fersen- und Kahnbein mit Interposition",
       "betrifft_eingriffe": [],
       "slides": [
         "op_coalitio_cn_ueberblick",
@@ -1482,35 +1812,52 @@
         "op_coalitio_cn_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
           "id": "coalitio_cn_q1",
-          "text": "Garg V, et al. Resection of bar in the management of calcaneonavicular coalition: a systematic review. Cureus. 2023;15(5):e39275."
+          "text": "Garg V, Nasim O, Kumar S, Khan MN, Durrani A, Karim A. Resection of bar in the management of calcaneonavicular coalition: a systematic review. Cureus. 2023;15(5):e39275. doi: [10.7759/cureus.39275](https://doi.org/10.7759/cureus.39275)"
         },
         {
           "id": "coalitio_cn_q2",
-          "text": "Polt. Systematisches Review calcaneonaviculare Coalitio (760 Eingriffe). 2023."
+          "text": "Polt M, Graf DA, Brunner S, Helmy N, Tondelli T, Karczewski D, Andronic O. Outcomes of surgical management for tarsal coalitions: a systematic review. Arch Orthop Trauma Surg. 2023;143(12):6993-7008. doi: [10.1007/s00402-023-04982-z](https://doi.org/10.1007/s00402-023-04982-z)"
         },
         {
           "id": "coalitio_cn_q3",
-          "text": "Masquijo J, Allende V, Torres-Gomez A, Dobbs MB. Fat graft and bone wax interposition provides better functional outcomes and lower reossification rates than EDB after calcaneonavicular coalition resection. J Pediatr Orthop. 2017;37(7):e427–e431."
+          "text": "Masquijo J, Allende V, Torres-Gomez A, Dobbs MB. Fat graft and bone wax interposition provides better functional outcomes and lower reossification rates than extensor digitorum brevis after calcaneonavicular coalition resection. J Pediatr Orthop. 2017;37(7):e427-e431. doi: [10.1097/BPO.0000000000001061](https://doi.org/10.1097/BPO.0000000000001061)"
         },
         {
           "id": "coalitio_cn_q4",
-          "text": "Duffaydar. Komplikationsraten Coalitio-Resektion. 2022."
+          "text": "Mubarak SJ, Patel PN, Upasani VV, Moor MA, Wenger DR. Calcaneonavicular coalition: treatment by excision and fat graft. J Pediatr Orthop. 2009;29(5):418-426. doi: [10.1097/BPO.0b013e3181aa24c0](https://doi.org/10.1097/BPO.0b013e3181aa24c0)"
         },
         {
           "id": "coalitio_cn_q5",
-          "text": "Malik-Tabassum K, et al. Post-operative outcomes of arthroscopic tarsal coalition resection: a systematic review. J Orthop. 2020;21:537–543."
+          "text": "Duffaydar H, Elmajee M, Dermanis AA, Hussain S, Pillai A. Post-interventional outcomes in the management of adult calcaneonavicular coalitions: a systematic review. Cureus. 2022;14(11):e31253. doi: [10.7759/cureus.31253](https://doi.org/10.7759/cureus.31253)"
+        },
+        {
+          "id": "coalitio_cn_q6",
+          "text": "Malik-Tabassum K, Wahed K, To C, Maling L, Rose B. Post-operative outcomes of arthroscopic tarsal coalition resection: a systematic review. J Orthop. 2020;21:537-543. doi: [10.1016/j.jor.2020.09.014](https://doi.org/10.1016/j.jor.2020.09.014)"
+        },
+        {
+          "id": "coalitio_cn_q7",
+          "text": "Corin B, Laumonerie P, Zrounba V, Langlais T, De Gauzy JS, Accadbled F. Resection of calcaneonavicular coalition: arthroscopic or open approach? J Child Orthop. 2022;16(2):136-140. doi: [10.1177/18632521221087170](https://doi.org/10.1177/18632521221087170)"
+        },
+        {
+          "id": "coalitio_cn_q8",
+          "text": "Knörr J, Accadbled F, Abid A, Darodes P, Torres A, Cahuzac JP, Sales de Gauzy J. Arthroscopic treatment of calcaneonavicular coalition in children. Orthop Traumatol Surg Res. 2011;97(5):565-568. doi: [10.1016/j.otsr.2011.03.017](https://doi.org/10.1016/j.otsr.2011.03.017)"
+        },
+        {
+          "id": "coalitio_cn_q9",
+          "text": "Khoshbin A, Bouchard M, Wasserstein D, Leroux T, Law PW, Kreder HJ, Daniels TR, Wright JG. Reoperations after tarsal coalition resection: a population-based study. J Foot Ankle Surg. 2015;54(3):306-310. doi: [10.1053/j.jfas.2014.04.027](https://doi.org/10.1053/j.jfas.2014.04.027)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "coalitio_tc": {
       "infoKategorie": "op_technik",
       "infoTitel": "Coalitio talocalcaneare — OP",
-      "titel": "Coalitio (Fußwurzelverbindung)",
+      "titel": "Coalitio talocalcaneare — OP",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1604,34 +1951,35 @@
     "spongiosa": {
       "infoKategorie": "op_technik",
       "infoTitel": "Knochenentnahme (Beckenkamm)",
-      "titel": "Zusatzeingriff bei Knochenoperationen",
-      "untertitel": "",
+      "titel": "Knochenentnahme (Beckenkamm)",
+      "untertitel": "Gewinnung von körpereigenem Knochen (Spongiosa oder Span) am vorderen Beckenkamm",
       "betrifft_eingriffe": [],
       "slides": [
         "op_spongiosa_ueberblick",
         "op_spongiosa_ablauf",
-        "op_spongiosa_ergebnisse_spenderstelle",
-        "op_spongiosa_wie_h_ufig_sind_probleme",
+        "op_spongiosa_nachbehandlung",
+        "op_spongiosa_komplikationen",
         "op_spongiosa_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "spongiosa_q1",
-          "text": "Dimitriou R, Mataliotakis GI, Angoules AG, Kanakaris NK, Giannoudis PV. Complications following autologous bone graft harvesting from the iliac crest and using the RIA: a systematic review. Injury. 2011;42(Suppl 2):S3–S15."
+          "text": "Dimitriou R, Mataliotakis GI, Angoules AG, Kanakaris NK, Giannoudis PV. Complications following autologous bone graft harvesting from the iliac crest and using the RIA: a systematic review. Injury. 2011;42(Suppl 2):S3-S15. doi: [10.1016/j.injury.2011.06.015](https://doi.org/10.1016/j.injury.2011.06.015)"
         },
         {
           "id": "spongiosa_q2",
-          "text": "Kozyra K, Kordasiewicz B, Boszczyk AM. Medium-term donor-site morbidity after tricortical iliac crest graft harvesting for foot and ankle indications. Fuß & Sprunggelenk. 2023;21(4):318–322."
+          "text": "Kozyra K, Kordasiewicz B, Boszczyk AM. Medium term donor-site morbidity after tricortical iliac crest graft harvesting for foot and ankle indications. Fuß Sprunggelenk. 2023;21(4):318-322. doi: [10.1016/j.fuspru.2023.08.003](https://doi.org/10.1016/j.fuspru.2023.08.003)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "innenknoechel": {
       "infoKategorie": "op_technik",
       "infoTitel": "Innenknöchelosteotomie (Zugang)",
-      "titel": "Zugang bei Sprungbein-/Knorpeleingriffen",
-      "untertitel": "",
+      "titel": "Innenknöchelosteotomie (Zugang)",
+      "untertitel": "Gezielte Durchtrennung des Innenknöchels als Zugang zu schwer erreichbaren Bereichen des Sprungbeins",
       "betrifft_eingriffe": [],
       "slides": [
         "op_innenknoechel_ueberblick",
@@ -1642,29 +1990,34 @@
         "op_innenknoechel_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "innenknoechel_q1",
-          "text": "Barg A, Pagenstert G, Leumann A, Valderrabano V. Malleolar osteotomy — osteotomy as approach. Orthopäde. 2013;42."
+          "text": "Klein L, Bode G, Wenning M, Behrens M, Schmal H, Kühle J. Medial malleolar osteotomy in the treatment of osteochondral lesions of the talus - incidence and impact on functional outcome: a retrospective analysis based on data from the German Cartilage Register (KnorpelRegister DGOU). BMC Musculoskelet Disord. 2024;25(1):427. doi: [10.1186/s12891-024-07541-8](https://doi.org/10.1186/s12891-024-07541-8)"
         },
         {
           "id": "innenknoechel_q2",
-          "text": "Klein L, et al. Medial malleolar osteotomy in the treatment of osteochondral lesions of the talus — incidence and impact on functional outcome (KnorpelRegister DGOU). BMC Musculoskelet Disord. 2024;25(1):427."
+          "text": "Barg A, Pagenstert G, Leumann A, Valderrabano V. Malleolenosteotomie - Osteotomie als Zugangsweg. Orthopade. 2013;42(5):309-321. doi: [10.1007/s00132-012-2007-7](https://doi.org/10.1007/s00132-012-2007-7)"
         },
         {
           "id": "innenknoechel_q3",
-          "text": "Bull PE, Berlet GC, Canini C, Hyer CF. Rate of malunion following bi-plane chevron medial malleolar osteotomy. Foot Ankle Int. 2016;37(6):620–626."
+          "text": "Bull PE, Berlet GC, Canini C, Hyer CF. Rate of malunion following bi-plane chevron medial malleolar osteotomy. Foot Ankle Int. 2016;37(6):620-626. doi: [10.1177/1071100716628912](https://doi.org/10.1177/1071100716628912)"
         },
         {
           "id": "innenknoechel_q4",
-          "text": "Meisterhans M, Valderrabano V, Wiewiorski M. Medial oblique malleolar osteotomy for approach of medial osteochondral lesion of the talus. Arch Orthop Trauma Surg. 2023;143(7):3767–3778."
+          "text": "Meisterhans M, Valderrabano V, Wiewiorski M. Medial oblique malleolar osteotomy for approach of medial osteochondral lesion of the talus. Arch Orthop Trauma Surg. 2023;143(7):3767-3778. doi: [10.1007/s00402-022-04598-9](https://doi.org/10.1007/s00402-022-04598-9)"
         },
         {
           "id": "innenknoechel_q5",
-          "text": "Leumann A, et al. Medial malleolar osteotomy for talar osteochondral lesions: anatomical and morbidity considerations. Knee Surg Sports Traumatol Arthrosc. 2016;24:2133–2139."
+          "text": "Donahue J, Shofoluwe A, Krautmann K, Grau-Cruz E, Becher S, Bruggers J. Quantification and comparison of talar exposure utilizing a posteromedial approach and medial malleolar osteotomy. Foot Ankle Orthop. 2021;6(2):24730114211012691. doi: [10.1177/24730114211012691](https://doi.org/10.1177/24730114211012691)"
+        },
+        {
+          "id": "innenknoechel_q6",
+          "text": "Leumann A, Horisberger M, Buettner O, Mueller-Gerbl M, Valderrabano V. Medial malleolar osteotomy for the treatment of talar osteochondral lesions: anatomical and morbidity considerations. Knee Surg Sports Traumatol Arthrosc. 2016;24(7):2133-2139. doi: [10.1007/s00167-015-3591-y](https://doi.org/10.1007/s00167-015-3591-y)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "pin_pflege": {
       "infoKategorie": "allgemein",
@@ -1684,7 +2037,7 @@
     "teilprothese_talus": {
       "infoKategorie": "op_technik",
       "infoTitel": "Teilprothese des Talus",
-      "titel": "Knorpelschaden am Sprungbein (Rückzugsoption)",
+      "titel": "Teilprothese des Talus",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1715,30 +2068,84 @@
     "fhl": {
       "infoKategorie": "op_technik",
       "infoTitel": "FHL-Sehnentransfer",
-      "titel": "Achillessehne — chronischer Schaden",
-      "untertitel": "",
+      "titel": "FHL-Sehnentransfer",
+      "untertitel": "Verlagerung der Großzehenbeuger-Sehne zum Ersatz oder zur Verstärkung der Achillessehne — offen oder arthroskopisch",
       "betrifft_eingriffe": [],
       "slides": [
         "op_fhl_ueberblick",
+        "op_fhl_ablauf",
         "op_fhl_ergebnisse",
         "op_fhl_nachbehandlung",
         "op_fhl_komplikationen",
         "op_fhl_quellen"
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
-      "_review": true,
+      "_review": false,
       "_entwurf": true,
       "quellen": [
         {
           "id": "fhl_q1",
-          "text": "Literatur zum FHL-Transfer bei chronischer Achillessehnen-Insuffizienz/Nekrose (Ergebnisse, Großzehenfunktion)."
+          "text": "Walther M, Dorfer B, Ishak B, Dreyer F, Mayer B, Röser A. Die Rekonstruktion von langstreckigen Achillessehnendefekten durch einen Transfer des Musculus flexor hallucis longus. Oper Orthop Traumatol. 2011;23(4):328-336. doi: [10.1007/s00064-010-0009-3](https://doi.org/10.1007/s00064-010-0009-3)"
+        },
+        {
+          "id": "fhl_q2",
+          "text": "Galla M. Arthroskopischer Transfer der Flexor-hallucis-longus-Sehne zum Ersatz der Achillessehne. Arthroskopie. 2019;32(5):367-372. doi: [10.1007/s00142-019-0297-z](https://doi.org/10.1007/s00142-019-0297-z) (nicht in PubMed indexiert)"
+        },
+        {
+          "id": "fhl_q3",
+          "text": "Vega J, Vilá J, Batista J, Malagelada F, Dalmau-Pastor M. Endoscopic flexor hallucis longus transfer for chronic noninsertional Achilles tendon rupture. Foot Ankle Int. 2018;39(12):1464-1472. doi: [10.1177/1071100718793172](https://doi.org/10.1177/1071100718793172)"
+        },
+        {
+          "id": "fhl_q4",
+          "text": "Khair YJ, Milchem H, Adra M, et al. Isolated flexor hallucis longus tendon transfer for chronic Achilles tendon rupture: systematic review and meta-analysis. Healthcare (Basel). 2025;13(21):2751. doi: [10.3390/healthcare13212751](https://doi.org/10.3390/healthcare13212751)"
+        },
+        {
+          "id": "fhl_q5",
+          "text": "Gerstner Garces JB, Winson I, Campo J, et al. Endoscopic flexor hallucis longus transfer for Achilles noninsertional tendinopathy: description of surgical technique and functional outcomes. Foot Ankle Spec. 2021;14(1):46-54. doi: [10.1177/1938640019895919](https://doi.org/10.1177/1938640019895919)"
+        },
+        {
+          "id": "fhl_q6",
+          "text": "Coull R, Flavin R, Stephens MM. Flexor hallucis longus tendon transfer: evaluation of postoperative morbidity. Foot Ankle Int. 2003;24(12):931-934. doi: [10.1177/107110070302401211](https://doi.org/10.1177/107110070302401211)"
+        },
+        {
+          "id": "fhl_q7",
+          "text": "Elias I, Besser M, Nazarian LN, Raikin SM. Reconstruction for missed or neglected Achilles tendon rupture with V-Y lengthening and flexor hallucis longus tendon transfer through one incision. Foot Ankle Int. 2007;28(12):1238-1248. doi: [10.3113/FAI.2007.1238](https://doi.org/10.3113/FAI.2007.1238)"
+        },
+        {
+          "id": "fhl_q8",
+          "text": "Karaismailoglu B, Ghandour S, Hendriks J, et al. Systematic review and meta-analysis comparing open FHL tendon transfer, hamstring transfer, and turndown flaps to treat chronic Achilles tendon ruptures. Foot Ankle Int. 2025;46(7):784-793. doi: [10.1177/10711007251330287](https://doi.org/10.1177/10711007251330287)"
+        },
+        {
+          "id": "fhl_q9",
+          "text": "Mulier T, Rummens E, Dereymaeker G. Risk of neurovascular injuries in flexor hallucis longus tendon transfers: an anatomic cadaver study. Foot Ankle Int. 2007;28(8):910-915. doi: [10.3113/FAI.2007.0910](https://doi.org/10.3113/FAI.2007.0910)"
+        },
+        {
+          "id": "fhl_q10",
+          "text": "Cottom JM, Hyer CF, Berlet GC, Lee TH. Flexor hallucis longus tendon transfer with an interference screw for chronic Achilles tendinosis: a report of 62 cases. Foot Ankle Spec. 2008;1(5):280-287. doi: [10.1177/1938640008322690](https://doi.org/10.1177/1938640008322690)"
+        },
+        {
+          "id": "fhl_q11",
+          "text": "Husebye EE, Molund M, Hvaal KH, Stødle AH. Endoscopic transfer of flexor hallucis longus tendon for chronic Achilles tendon rupture: technical aspects and short-time experiences. Foot Ankle Spec. 2018;11(5):461-466. doi: [10.1177/1938640017754234](https://doi.org/10.1177/1938640017754234)"
+        },
+        {
+          "id": "fhl_q12",
+          "text": "Batista JP, Abdelatif NMN, Del Vecchio JJ, Diniz P, Pereira H. Endoscopic flexor hallucis longus transfer for the management of acute Achilles tendon ruptures. J Foot Ankle Surg. 2020;59(5):927-937. doi: [10.1053/j.jfas.2019.12.008](https://doi.org/10.1053/j.jfas.2019.12.008)"
+        },
+        {
+          "id": "fhl_q13",
+          "text": "Abdelatif NMN, Batista JP. Outcomes of percutaneous Achilles repair compared with endoscopic flexor hallucis longus tendon transfer to treat Achilles tendon ruptures. Foot Ankle Int. 2022;43(9):1174-1184. doi: [10.1177/10711007221096674](https://doi.org/10.1177/10711007221096674)"
+        },
+        {
+          "id": "fhl_q14",
+          "text": "Apinun J, Jenvorapoj S, Arirachakaran A, Kongtharvonskul J. Clinical outcomes of chronic Achilles tendon rupture treated with flexor hallucis longus grafting and flexor hallucis longus grafting plus additional augmentation: a meta-analysis. Foot Ankle Surg. 2020;26(7):717-722. doi: [10.1016/j.fas.2019.09.006](https://doi.org/10.1016/j.fas.2019.09.006)"
         }
-      ]
+      ],
+      "stand": "Recherche 07/2026 (DOI-verifiziert) + Galla 2019 / Walther 2011 — Reha-Schema vorläufig, ärztlich zu prüfen"
     },
     "moberg": {
       "infoKategorie": "op_technik",
       "infoTitel": "Moberg-Osteotomie",
-      "titel": "Hallux rigidus",
+      "titel": "Moberg-Osteotomie",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1761,7 +2168,7 @@
     "achilles_naht": {
       "infoKategorie": "op_technik",
       "infoTitel": "Achillessehnen-Naht (offen)",
-      "titel": "Achillessehnenriss",
+      "titel": "Achillessehnen-Naht (offen)",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1793,7 +2200,7 @@
     "achilles_perkutan": {
       "infoKategorie": "op_technik",
       "infoTitel": "Perkutane Achillessehnen-Naht",
-      "titel": "Achillessehnenriss (minimal-invasiv)",
+      "titel": "Perkutane Achillessehnen-Naht",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1821,7 +2228,7 @@
     "subtalar": {
       "infoKategorie": "op_technik",
       "infoTitel": "Subtalararthrodese",
-      "titel": "Unteres Sprunggelenk — Arthrose/Fehlstellung",
+      "titel": "Subtalararthrodese",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1845,7 +2252,7 @@
     "tmt": {
       "infoKategorie": "op_technik",
       "infoTitel": "TMT-Arthrodese",
-      "titel": "Mittelfuß (Lisfranc) — Arthrose/Instabilität",
+      "titel": "TMT-Arthrodese",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1868,7 +2275,7 @@
     "tn": {
       "infoKategorie": "op_technik",
       "infoTitel": "TN-Arthrodese",
-      "titel": "Talonavikulargelenk — Arthrose/Fehlstellung",
+      "titel": "TN-Arthrodese",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1895,7 +2302,7 @@
     "tarsaltunnel": {
       "infoKategorie": "op_technik",
       "infoTitel": "Tarsaltunnel-Dekompression",
-      "titel": "Nervenengpass Innenknöchel (Tarsaltunnelsyndrom)",
+      "titel": "Tarsaltunnel-Dekompression",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1919,7 +2326,7 @@
     "ttc": {
       "infoKategorie": "op_technik",
       "infoTitel": "Tibio-talo-calcaneare Arthrodese",
-      "titel": "Sprunggelenk + unteres Sprunggelenk — schwere Arthrose",
+      "titel": "Tibio-talo-calcaneare Arthrodese",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1943,7 +2350,7 @@
     "gastroc": {
       "infoKategorie": "op_technik",
       "infoTitel": "Wadenmuskel-Verlängerung",
-      "titel": "Verkürzte Wadenmuskulatur",
+      "titel": "Wadenmuskel-Verlängerung",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1968,7 +2375,7 @@
     "osg_arthroskopie": {
       "infoKategorie": "op_technik",
       "infoTitel": "Arthroskopie des OSG",
-      "titel": "Sprunggelenk — Gelenkspiegelung",
+      "titel": "Arthroskopie des OSG",
       "untertitel": "",
       "betrifft_eingriffe": [],
       "slides": [
@@ -1991,7 +2398,7 @@
     "double_arthrodese": {
       "infoKategorie": "op_technik",
       "infoTitel": "Double-Arthrodese",
-      "titel": "Double-Arthrodese (TN + Subtalar)",
+      "titel": "Double-Arthrodese",
       "untertitel": "Kombinierte Versteifung von unterem Sprunggelenk und Talonavikulargelenk",
       "betrifft_eingriffe": [],
       "slides": [
@@ -2796,24 +3203,62 @@
       "slides": [
         "kb_tar_ueberblick",
         "kb_tar_ursachen",
+        "kb_tar_beschwerden",
         "kb_tar_diagnostik",
-        "kb_tar_behandlung",
+        "kb_tar_konservativ",
+        "kb_tar_operativ",
         "kb_tar_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "tibialis_ant_ruptur_kb_q1",
-          "text": "Markarian GG, et al. Anterior tibial tendon ruptures: an outcome analysis of operative versus nonoperative treatment. Foot Ankle Int. 1998;19(12):792–802."
+          "text": "Sammarco VJ, Sammarco GJ, Henning C, Chaim S. Surgical repair of acute and chronic tibialis anterior tendon rupture. J Bone Joint Surg Am. 2009;91(2):325-332. doi: [10.2106/JBJS.G.01386](https://doi.org/10.2106/JBJS.G.01386)"
         },
         {
           "id": "tibialis_ant_ruptur_kb_q2",
-          "text": "Sammarco VJ, et al. Diagnosis and treatment of anterior tibial tendon rupture. J Am Acad Orthop Surg. 2009."
+          "text": "Tickner A, Thorng S, Martin M, Marmolejo V. Management of isolated anterior tibial tendon rupture: a systematic review and meta-analysis. J Foot Ankle Surg. 2019;58(2):213-220. doi: [10.1053/j.jfas.2018.08.001](https://doi.org/10.1053/j.jfas.2018.08.001)"
         },
         {
           "id": "tibialis_ant_ruptur_kb_q3",
-          "text": "Übersichtsarbeiten zu akuter vs. chronischer Tibialis-anterior-Ruptur."
+          "text": "Chen J, Kadakia R, Akoh CC, Schweitzer KM Jr. Management of anterior tibialis tendon ruptures. J Am Acad Orthop Surg. 2021;29(16):691-701. doi: [10.5435/JAAOS-D-20-00802](https://doi.org/10.5435/JAAOS-D-20-00802)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q4",
+          "text": "Pagenstert G, Leumann A, Frigg A, Valderrabano V. Achillessehnenrupturen und Tibialis-anterior-Sehnenrupturen. Orthopäde. 2010;39(12):1135-1147. doi: [10.1007/s00132-010-1691-4](https://doi.org/10.1007/s00132-010-1691-4)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q5",
+          "text": "Grundy JRB, O'Sullivan RM, Beischer AD. Operative management of distal tibialis anterior tendinopathy. Foot Ankle Int. 2010;31(3):212-219. doi: [10.3113/FAI.2010.0212](https://doi.org/10.3113/FAI.2010.0212)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q6",
+          "text": "Goutallier D, Postel JM, Bernageau J, Lavau L, Voisin MC. Fatty muscle degeneration in cuff ruptures. Pre- and postoperative evaluation by CT scan. Clin Orthop Relat Res. 1994;(304):78-83. PMID: [8020238](https://pubmed.ncbi.nlm.nih.gov/8020238/)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q7",
+          "text": "Markarian GG, Kelikian AS, Brage M, Trainor T, Dias L. Anterior tibialis tendon ruptures: an outcome analysis of operative versus nonoperative treatment. Foot Ankle Int. 1998;19(12):792-802. doi: [10.1177/107110079801901202](https://doi.org/10.1177/107110079801901202)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q8",
+          "text": "Zajonz D, Köhler L, Pretzsch M, Lingscheidt T, Moche M, Heyde CE, Scholz R. Operative Therapie der Tibialis-anterior-Sehnenruptur. Orthopäde. 2015;44(4):303-313. doi: [10.1007/s00132-015-3090-3](https://doi.org/10.1007/s00132-015-3090-3)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q9",
+          "text": "Johansen JK, Jordan M, Thomas M, Walther M, Simatira AM, Waizy H. Surgical treatment of tibialis anterior tendon rupture. Foot Ankle Surg. 2021;27(5):515-520. doi: [10.1016/j.fas.2020.06.011](https://doi.org/10.1016/j.fas.2020.06.011)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q10",
+          "text": "Huh J, Boyette DM, Parekh SG, Nunley JA 2nd. Allograft reconstruction of chronic tibialis anterior tendon ruptures. Foot Ankle Int. 2015;36(10):1180-1189. doi: [10.1177/1071100715589006](https://doi.org/10.1177/1071100715589006)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q11",
+          "text": "Andronic O, Unterfrauner I, Jud L, Fritz B, Viehöfer AF, Fröhlich S, Imhoff FB, Wirth SH. Outcomes of tibialis anterior tendon reconstruction with autograft or allograft. Foot Ankle Int. 2022;43(1):2-11. doi: [10.1177/10711007211029956](https://doi.org/10.1177/10711007211029956)"
+        },
+        {
+          "id": "tibialis_ant_ruptur_kb_q12",
+          "text": "Fraissler L, Horas K, Bölch S, Raab P, Rudert M, Walcher M. Extensor hallucis longus-transfer for tibialis anterior tendon rupture repair. Oper Orthop Traumatol. 2019;31(2):143-148. doi: [10.1007/s00064-018-0571-7](https://doi.org/10.1007/s00064-018-0571-7)"
         }
       ]
     },
@@ -2922,23 +3367,74 @@
       "slides": [
         "kb_ung_ueberblick",
         "kb_ung_ursachen",
-        "kb_ung_behandlung",
+        "kb_ung_beschwerden",
+        "kb_ung_diagnostik",
+        "kb_ung_konservativ",
+        "kb_ung_operativ",
         "kb_ung_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "unguis_incarnatus_kb_q1",
-          "text": "Levy L, et al. Prävalenz des Unguis incarnatus. 1992."
+          "text": "Levy LA. Prevalence of chronic podiatric conditions in the US. National Health Survey 1990. J Am Podiatr Med Assoc. 1992;82(4):221-223. doi: [10.7547/87507315-82-4-221](https://doi.org/10.7547/87507315-82-4-221)"
         },
         {
           "id": "unguis_incarnatus_kb_q2",
-          "text": "Mozena JD. The Mozena classification system for ingrown nails. J Am Podiatr Med Assoc. 2002."
+          "text": "Mayeaux EJ Jr, Carter C, Murphy TE. Ingrown toenail management. Am Fam Physician. 2019;100(3):158-164. PMID: [31361106](https://pubmed.ncbi.nlm.nih.gov/31361106/)"
         },
         {
           "id": "unguis_incarnatus_kb_q3",
-          "text": "Eekhof JA, Van Wijk B, Knuistingh Neven A, van der Wouden JC. Interventions for ingrowing toenails. Cochrane Database Syst Rev. 2012;(4):CD001541."
+          "text": "Mozena JD. The Mozena Classification System and treatment algorithm for ingrown hallux nails. J Am Podiatr Med Assoc. 2002;92(3):131-135. doi: [10.7547/87507315-92-3-131](https://doi.org/10.7547/87507315-92-3-131)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q4",
+          "text": "Martínez-Nova A, Sánchez-Rodríguez R, Alonso-Peña D. A new onychocryptosis classification and treatment plan. J Am Podiatr Med Assoc. 2007;97(5):389-393. doi: [10.7547/0970389](https://doi.org/10.7547/0970389)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q5",
+          "text": "Ezekian B, Englum BR, Gilmore BF, Kim J, Leraas HJ, Rice HE. Onychocryptosis in the pediatric patient. Clin Pediatr (Phila). 2017;56(2):109-114. doi: [10.1177/0009922816678180](https://doi.org/10.1177/0009922816678180)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q6",
+          "text": "Nishioka K, Katayama I, Kobayashi Y, Takijiri C, Nishioka K. Taping for embedded toenails. Br J Dermatol. 1985;113(2):246-247. doi: [10.1111/j.1365-2133.1985.tb02072.x](https://doi.org/10.1111/j.1365-2133.1985.tb02072.x)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q7",
+          "text": "Reyzelman AM, Trombello KA, Vayser DJ, Armstrong DG, Harkless LB. Are antibiotics necessary in the treatment of locally infected ingrown toenails? Arch Fam Med. 2000;9(9):930-932. doi: [10.1001/archfami.9.9.930](https://doi.org/10.1001/archfami.9.9.930)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q8",
+          "text": "Chiriac A, Solovan C, Brzezinski P. Ingrown toenails (unguis incarnatus): nail braces/bracing treatment. Proc (Bayl Univ Med Cent). 2014;27(2):145. doi: [10.1080/08998280.2014.11929093](https://doi.org/10.1080/08998280.2014.11929093)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q9",
+          "text": "Palmer BV, Jones A. Ingrowing toenails: the results of treatment. Br J Surg. 1979;66(8):575-576. doi: [10.1002/bjs.1800660818](https://doi.org/10.1002/bjs.1800660818)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q10",
+          "text": "Kim YJ, Ko JH, Choi KC, Lee CG, Lim KJ. Nail-splinting technique for ingrown nails: the therapeutic effects and the proper removal time of the splint. Dermatol Surg. 2003;29(7):745-748. doi: [10.1046/j.1524-4725.2003.29182.x](https://doi.org/10.1046/j.1524-4725.2003.29182.x)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q11",
+          "text": "Rounding C, Bloomfield S. Surgical treatments for ingrowing toenails. Cochrane Database Syst Rev. 2005;(2):CD001541. doi: [10.1002/14651858.CD001541.pub2](https://doi.org/10.1002/14651858.CD001541.pub2)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q12",
+          "text": "Eekhof JAH, Van Wijk B, Knuistingh Neven A, van der Wouden JC. Interventions for ingrowing toenails. Cochrane Database Syst Rev. 2012;(4):CD001541. doi: [10.1002/14651858.CD001541.pub3](https://doi.org/10.1002/14651858.CD001541.pub3)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q13",
+          "text": "Bostanci S, Ekmekçi P, Gürgey E. Chemical matricectomy with phenol for the treatment of ingrowing toenail: a review of the literature and follow-up of 172 treated patients. Acta Derm Venereol. 2001;81(3):181-183. doi: [10.1080/000155501750376267](https://doi.org/10.1080/000155501750376267)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q14",
+          "text": "Haneke E. Nail surgery. Clin Dermatol. 2013;31(5):516-525. doi: [10.1016/j.clindermatol.2013.06.012](https://doi.org/10.1016/j.clindermatol.2013.06.012)"
+        },
+        {
+          "id": "unguis_incarnatus_kb_q15",
+          "text": "Di Chiacchio N, Di Chiacchio NG. Best way to treat an ingrown toenail. Dermatol Clin. 2015;33(2):277-282. doi: [10.1016/j.det.2014.12.009](https://doi.org/10.1016/j.det.2014.12.009)"
         }
       ]
     },
@@ -5331,6 +5827,54 @@
         {
           "id": "tarsaltunnelsyndrom_kb_q15",
           "text": "Ong CYG, Chin TY. Clinics in diagnostic imaging (205): Baxter's neuropathy. Singapore Med J. 2020;61(4):176-180. doi: [10.11622/smedj.2020055](https://doi.org/10.11622/smedj.2020055)"
+        }
+      ]
+    },
+    "turf_toe_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Turf Toe (Großzehengrundgelenk-Verletzung)",
+      "titel": "Turf Toe (Großzehengrundgelenk-Verletzung)",
+      "untertitel": "Überstreckungsverletzung des plantaren Plattenkomplexes am Großzehengrundgelenk — häufige Sportverletzung",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "kb_turf_ueberblick",
+        "kb_turf_ursachen",
+        "kb_turf_beschwerden",
+        "kb_turf_diagnostik",
+        "kb_turf_konservativ",
+        "kb_turf_operativ",
+        "kb_turf_quellen"
+      ],
+      "_review": false,
+      "stand": "Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "turf_toe_kb_q1",
+          "text": "Aran F, Ponnarasu S, Scott AT. Turf Toe. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023. PMID: [29939587](https://pubmed.ncbi.nlm.nih.gov/29939587/)"
+        },
+        {
+          "id": "turf_toe_kb_q2",
+          "text": "Bowers KD Jr, Martin RB. Turf-toe: a shoe-surface related football injury. Med Sci Sports. 1976;8(2):81-83. PMID: [957935](https://pubmed.ncbi.nlm.nih.gov/957935/)"
+        },
+        {
+          "id": "turf_toe_kb_q3",
+          "text": "Lievers WB, Goggins KA, Adamic P. Epidemiology of foot injuries using National Collegiate Athletic Association data from the 2009-2010 through 2014-2015 seasons. J Athl Train. 2020;55(2):181-187. doi: [10.4085/1062-6050-560-18](https://doi.org/10.4085/1062-6050-560-18)"
+        },
+        {
+          "id": "turf_toe_kb_q4",
+          "text": "Gupta A, Singh PK, Xu AL, Bronheim RS, McDaniel CM, Aiyer AA. Turf toe injuries in the athlete: an updated review of treatment options, rehabilitation protocols, and return-to-play outcomes. Curr Rev Musculoskelet Med. 2023;16(11):563-574. doi: [10.1007/s12178-023-09870-y](https://doi.org/10.1007/s12178-023-09870-y)"
+        },
+        {
+          "id": "turf_toe_kb_q5",
+          "text": "McCormick JJ, Anderson RB. Turf toe: anatomy, diagnosis, and treatment. Sports Health. 2010;2(6):487-494. doi: [10.1177/1941738110386681](https://doi.org/10.1177/1941738110386681)"
+        },
+        {
+          "id": "turf_toe_kb_q6",
+          "text": "Chiou D, Stupay KL, Waryasz G. Turf toe review. Foot Ankle Spec. 2020;13(2):161-168. doi: [10.1177/1938640019857794](https://doi.org/10.1177/1938640019857794)"
+        },
+        {
+          "id": "turf_toe_kb_q7",
+          "text": "Vopat ML, Hassan M, Poppe T, Tarakemeh A, Zackula R, Mulcahey MK, Mullen S, Burkholder R, Schroeppel JP, Vopat BG. Return to sport after turf toe injuries: a systematic review and meta-analysis. Orthop J Sports Med. 2019;7(10):2325967119875133. doi: [10.1177/2325967119875133](https://doi.org/10.1177/2325967119875133)"
         }
       ]
     }
