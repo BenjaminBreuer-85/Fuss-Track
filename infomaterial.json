@@ -260,7 +260,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
       "titel": "Lapidus-Arthrodese (Hallux-valgus-Korrektur)",
-      "untertitel": "Information zur Hallux-valgus-Erkrankung und den Behandlungsmöglichkeiten",
+      "untertitel": "Korrigierende Versteifung des TMT-I-Gelenks bei schwererem Hallux valgus",
       "betrifft_eingriffe": [
         "lapidus"
       ],
@@ -273,60 +273,60 @@
         "lapidus_alternativen",
         "lapidus_quellen"
       ],
-      "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — neues OP-Technik-Schema",
+      "_review": false,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
       "quellen": [
         {
           "id": "lapidus_q1",
-          "text": "Kimura T, Kubota M, Suzuki N, Hattori A, Marumo K. Comparison of intercuneiform 1-2 joint mobility between hallux valgus and Normal feet using weightbearing computed tomog- raphy and 3-dimensional analysis. Foot Ankle Int. 2018;39(3):355–60."
+          "text": "Kimura T, Kubota M, Suzuki N, Hattori A, Marumo K. Comparison of intercuneiform 1-2 joint mobility between hallux valgus and normal feet using weightbearing computed tomography and 3-dimensional analysis. Foot Ankle Int. 2018;39(3):355-360. doi: [10.1177/1071100717744174](https://doi.org/10.1177/1071100717744174)"
         },
         {
           "id": "lapidus_q2",
-          "text": "Doty JF, Coughlin MJ, Hirose C, Stevens F, Schutt S, Kennedy M, Grebing B, Smith B, Cooper T, Golanó P, Viladot R, Remington R. First metatarsocuneiform joint mobility: radiographic, anatomic, and clinical characteristics of the articular surface. Foot Ankle Int. 2014 May;35(5):504-11."
+          "text": "Doty JF, Coughlin MJ, Hirose C, Stevens F, Schutt S, Kennedy M, et al. First metatarsocuneiform joint mobility: radiographic, anatomic, and clinical characteristics of the articular surface. Foot Ankle Int. 2014;35(5):504-511. doi: [10.1177/1071100714524556](https://doi.org/10.1177/1071100714524556)"
         },
         {
           "id": "lapidus_q3",
-          "text": "Mason LW, Tanaka H. The first tarsometatarsal joint and its association with hallux valgus. Bone Joint Res. 2012 Jun 1;1(6):99-103"
+          "text": "Mason LW, Tanaka H. The first tarsometatarsal joint and its association with hallux valgus. Bone Joint Res. 2012;1(6):99-103. doi: [10.1302/2046-3758.16.2000077](https://doi.org/10.1302/2046-3758.16.2000077)"
         },
         {
           "id": "lapidus_q4",
-          "text": "Myerson MS, Badekas A. Hypermobility of the first ray. Foot Ankle Clin. 2000 Sep;5(3):469-84. PMID: 11232392."
+          "text": "Myerson MS, Badekas A. Hypermobility of the first ray. Foot Ankle Clin. 2000;5(3):469-484. (kein DOI, PMID 11232392)"
         },
         {
           "id": "lapidus_q5",
-          "text": "Coughlin MJ, Jones CP. Hallux valgus and first ray mobility. A prospective study. J Bone Joint Surg Am. 2007 Sep;89(9):1887-98. doi: 10.2106/JBJS.F.01139. PMID: 17768183."
+          "text": "Coughlin MJ, Jones CP. Hallux valgus and first ray mobility. A prospective study. J Bone Joint Surg Am. 2007;89(9):1887-1898. doi: [10.2106/JBJS.F.01139](https://doi.org/10.2106/JBJS.F.01139)"
         },
         {
           "id": "lapidus_q6",
-          "text": "Fleming JJ, Kwaadu KY, Brinkley JC, Ozuzu Y. Intraoperative evaluation of medial intercuneiform instability after Lapidus arthrodesis: intercuneiform hook test. J Foot Ankle Surg. 2015 May-Jun;54(3):464-72."
+          "text": "Fleming JJ, Kwaadu KY, Brinkley JC, Ozuzu Y. Intraoperative evaluation of medial intercuneiform instability after Lapidus arthrodesis: intercuneiform hook test. J Foot Ankle Surg. 2015;54(3):464-472. doi: [10.1053/j.jfas.2014.12.019](https://doi.org/10.1053/j.jfas.2014.12.019)"
         },
         {
           "id": "lapidus_q7",
-          "text": "Okuda R, Kinoshita M, Yasuda T, Jotoku T, Kitano N, Shima H. The shape of the lateral edge of the first metatarsal head as a risk factor for recurrence of hallux valgus. J Bone Joint Surg Am. 2007 Oct;89(10):2163-72."
+          "text": "Okuda R, Kinoshita M, Yasuda T, Jotoku T, Kitano N, Shima H. The shape of the lateral edge of the first metatarsal head as a risk factor for recurrence of hallux valgus. J Bone Joint Surg Am. 2007;89(10):2163-2172. doi: [10.2106/JBJS.F.01455](https://doi.org/10.2106/JBJS.F.01455)"
         },
         {
           "id": "lapidus_q8",
-          "text": "Robinson AH, Cullen NP, Chhaya NC, Sri-Ram K, Lynch A. Variation of the distal metatarsal articular angle with axial rotation and inclination of the first metatarsal. Foot Ankle Int. 2006 Dec;27(12):1036-40."
+          "text": "Robinson AH, Cullen NP, Chhaya NC, Sri-Ram K, Lynch A. Variation of the distal metatarsal articular angle with axial rotation and inclination of the first metatarsal. Foot Ankle Int. 2006;27(12):1036-1040. doi: [10.1177/107110070602701207](https://doi.org/10.1177/107110070602701207)"
         },
         {
           "id": "lapidus_q9",
-          "text": "Klos K, Simons P, Hajduk AS, Hoffmeier KL, Gras F, Fröber R, Hofmann GO, Mückley T. Plantar versus dorsomedial locked plating for Lapidus arthrodesis: a biomechanical comparison. Foot Ankle Int. 2011 Nov;32(11):1081-5."
+          "text": "Klos K, Simons P, Hajduk AS, Hoffmeier KL, Gras F, Fröber R, Hofmann GO, Mückley T. Plantar versus dorsomedial locked plating for Lapidus arthrodesis: a biomechanical comparison. Foot Ankle Int. 2011;32(11):1081-1085. doi: [10.3113/FAI.2011.1081](https://doi.org/10.3113/FAI.2011.1081)"
         },
         {
           "id": "lapidus_q10",
-          "text": "PatelS,FordLA,EtcheverryJ,RushSM,Hamilton GA (2004) Modified lapidus arthrodesis: rate of nonunion in 227 cases. J Foot Ankle Surg 43: 37– 42"
+          "text": "Patel S, Ford LA, Etcheverry J, Rush SM, Hamilton GA. Modified Lapidus arthrodesis: rate of nonunion in 227 cases. J Foot Ankle Surg. 2004;43(1):37-42. doi: [10.1053/j.jfas.2003.11.009](https://doi.org/10.1053/j.jfas.2003.11.009)"
         },
         {
           "id": "lapidus_q11",
-          "text": "Feilmeier M, Dayton P, Kauwe M, Cifaldi A, Roberts B, Johnk H, Reimer R. Comparison of Transverse and Coronal Plane Stability at the First Tarsal- Metatarsal Joint With Multiple Screw Orientations. Foot Ankle Spec. 2017 Apr;10(2):104-108."
+          "text": "Feilmeier M, Dayton P, Kauwe M, Cifaldi A, Roberts B, Johnk H, Reimer R. Comparison of transverse and coronal plane stability at the first tarsal-metatarsal joint with multiple screw orientations. Foot Ankle Spec. 2017;10(2):104-108. doi: [10.1177/1938640016666920](https://doi.org/10.1177/1938640016666920)"
         },
         {
           "id": "lapidus_q12",
-          "text": "Schmid T, Krause F. The modified Lapidus fusion. Foot Ankle Clin. 2014 Jun;19(2):223-33. doi: 10.1016/j.fcl.2014.02.005. Epub 2014 Mar 21. PMID: 24878411."
+          "text": "Schmid T, Krause F. The modified Lapidus fusion. Foot Ankle Clin. 2014;19(2):223-233. doi: [10.1016/j.fcl.2014.02.005](https://doi.org/10.1016/j.fcl.2014.02.005)"
         },
         {
           "id": "lapidus_q13",
-          "text": "MacMahon A, Karbassi J, Burket JC, Elliott AJ, Levine DS, Roberts MM, Deland JT, O'Malley MJ, Yu J, Mancuso CA, Ellis SJ. Return to Sports and Physical Activities After the Modified Lapidus Procedure for Hallux Valgus in Young Patients. Foot Ankle Int. 2016 Apr;37(4):378-85."
+          "text": "MacMahon A, Karbassi J, Burket JC, Elliott AJ, Levine DS, Roberts MM, Deland JT, O'Malley MJ, Yu J, Mancuso CA, Ellis SJ. Return to sports and physical activities after the modified Lapidus procedure for hallux valgus in young patients. Foot Ankle Int. 2016;37(4):378-385. doi: [10.1177/1071100715617750](https://doi.org/10.1177/1071100715617750)"
         }
       ]
     },
