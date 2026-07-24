@@ -66,7 +66,7 @@
         },
         {
           "id": "osg_tep_schwarz",
-          "text": "Schwarz T, Greimel F, Grifka J, Leiß F. Update: Endoprothetik am oberen Sprunggelenk. Die Orthopädie. 2023;52(2). (deutschsprachiger Übersichtsartikel)"
+          "text": "Schwarz T, Greimel F, Grifka J, Leiß F. Update: Endoprothetik am oberen Sprunggelenk. Orthopädie (Heidelb). 2023;52(2):165-176. doi: [10.1007/s00132-022-04344-4](https://doi.org/10.1007/s00132-022-04344-4)"
         },
         {
           "id": "osg_tep_bern",
@@ -183,11 +183,63 @@
         {
           "id": "osg_tep_basques",
           "text": "Basques BA, Bitterman A, Campbell KJ, Haughom BD, Lin J, Lee S. Influence of surgeon volume on inpatient complications, cost, and length of stay following total ankle arthroplasty. Foot Ankle Int. 2016;37(10):1046-1051. doi: [10.1177/1071100716664871](https://doi.org/10.1177/1071100716664871)"
+        },
+        {
+          "id": "osg_tep_walcher",
+          "text": "Walcher MG, Paul J. Arthrodese vs. Prothese bei endgradiger Arthrose am oberen Sprunggelenk. Ein Streitgespräch. Unfallchirurg. 2022;125(3):205-210. doi: [10.1007/s00113-022-01145-4](https://doi.org/10.1007/s00113-022-01145-4)"
+        },
+        {
+          "id": "osg_tep_perry",
+          "text": "Perry TA, Silman A, Culliford D, Gates L, Arden N, Bowen C. Survival of primary ankle replacements: data from global joint registries. J Foot Ankle Res. 2022;15(1):33. doi: [10.1186/s13047-022-00539-2](https://doi.org/10.1186/s13047-022-00539-2)"
+        },
+        {
+          "id": "osg_tep_unden",
+          "text": "Undén A, Jehpsson L, Kamrad I, Carlsson Å, Henricson A, Karlsson MK, Rosengren BE. Better implant survival with modern ankle prosthetic designs: 1226 total ankle prostheses followed for up to 20 years in the Swedish Ankle Registry. Acta Orthop. 2020;91(2):191-196. doi: [10.1080/17453674.2019.1709312](https://doi.org/10.1080/17453674.2019.1709312)"
+        },
+        {
+          "id": "osg_tep_henr11",
+          "text": "Henricson A, Nilsson JÅ, Carlsson A. 10-year survival of total ankle arthroplasties: a report on 780 cases from the Swedish Ankle Register. Acta Orthop. 2011;82(6):655-659. doi: [10.3109/17453674.2011.636678](https://doi.org/10.3109/17453674.2011.636678)"
+        },
+        {
+          "id": "osg_tep_henr15",
+          "text": "Henricson A, Carlsson Å. Survival analysis of the single- and double-coated STAR ankle up to 20 years: long-term follow-up of 324 cases from the Swedish Ankle Registry. Foot Ankle Int. 2015;36(10):1156-1160. doi: [10.1177/1071100715579863](https://doi.org/10.1177/1071100715579863)"
+        },
+        {
+          "id": "osg_tep_fevang",
+          "text": "Fevang BT, Lie SA, Havelin LI, Brun JG, Skredderstuen A, Furnes O. 257 ankle arthroplasties performed in Norway between 1994 and 2005. Acta Orthop. 2007;78(5):575-583. doi: [10.1080/17453670710014257](https://doi.org/10.1080/17453670710014257)"
+        },
+        {
+          "id": "osg_tep_dagneaux",
+          "text": "Dagneaux L, Nogue E, Mathieu J, Demoulin D, Canovas F, Molinari N. Survivorship of 4748 contemporary total ankle replacements from the French Discharge Records Database. J Bone Joint Surg Am. 2022;104(8):684-692. doi: [10.2106/JBJS.21.00746](https://doi.org/10.2106/JBJS.21.00746)"
+        },
+        {
+          "id": "osg_tep_mckenna",
+          "text": "McKenna BJ, Cook J, Cook EA, Crafton J, Knabel M, Swenson E, et al. Total ankle arthroplasty survivorship: a meta-analysis. J Foot Ankle Surg. 2020;59(5):1040-1048. doi: [10.1053/j.jfas.2019.10.011](https://doi.org/10.1053/j.jfas.2019.10.011)"
+        },
+        {
+          "id": "osg_tep_gonzalez",
+          "text": "González-Alonso M, Trapote-Cubillas AR, Madera-González FJ, Fernández-Hernández Ó, Sánchez-Lázaro JA. Fixed-bearing versus mobile-bearing total ankle replacement survivorship: a meta-analysis. Foot Ankle Surg. 2024;30(4):275-284. doi: [10.1016/j.fas.2024.02.001](https://doi.org/10.1016/j.fas.2024.02.001)"
+        },
+        {
+          "id": "osg_tep_comisi",
+          "text": "Comisi C, De Mauro D, Greco T, Mascio A, Cinelli V, Capece G, et al. Fixed-bearing versus mobile-bearing prostheses in total ankle arthroplasty: a systematic review and meta-analysis. J Clin Med. 2025;14(17):6178. doi: [10.3390/jcm14176178](https://doi.org/10.3390/jcm14176178)"
+        },
+        {
+          "id": "osg_tep_palanca",
+          "text": "Palanca A, Mann RA, Mann JA, Haskell A. Scandinavian total ankle replacement: 15-year follow-up. Foot Ankle Int. 2018;39(2):135-142. doi: [10.1177/1071100717738747](https://doi.org/10.1177/1071100717738747)"
+        },
+        {
+          "id": "osg_tep_tarva",
+          "text": "Goldberg AJ, Chowdhury K, Bordea E, et al. Total ankle replacement versus arthrodesis for end-stage ankle osteoarthritis: a randomized controlled trial (TARVA). Ann Intern Med. 2022;175(12):1648-1657. doi: [10.7326/M22-2058](https://doi.org/10.7326/M22-2058)"
+        },
+        {
+          "id": "osg_tep_veljkovic",
+          "text": "Veljkovic AN, Daniels TR, Glazebrook MA, Dryden PJ, Penner MJ, Wing KJ, Younger ASE. Outcomes of total ankle replacement, arthroscopic ankle arthrodesis, and open ankle arthrodesis for isolated non-deformed end-stage ankle arthritis. J Bone Joint Surg Am. 2019;101(17):1523-1529. doi: [10.2106/JBJS.18.01012](https://doi.org/10.2106/JBJS.18.01012)"
         }
       ],
       "_review": false,
       "_entwurf": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), inkl. Register-/Standzeit-/Modelldaten & TARVA — ärztlich zu prüfen"
     },
     "hallux_valgus": {
       "infoKategorie": "krankheitsbild",
@@ -1054,7 +1106,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Plantarfaszien-Release",
       "titel": "Plantarfaszien-Release",
-      "untertitel": "",
+      "untertitel": "Teilweise Durchtrennung der Sehnenplatte an der Fußsohle bei therapieresistenter Plantarfasziitis",
       "betrifft_eingriffe": [],
       "slides": [
         "op_plantarfascie_ueberblick",
@@ -1065,41 +1117,50 @@
         "op_plantarfascie_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "plantarfascie_q1",
-          "text": "Thomas JL, et al.; ACFAS Heel Pain Committee. The diagnosis and treatment of heel pain: clinical practice guideline — revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1–19."
+          "text": "Thomas JL, Christensen JC, Kravitz SR, Mendicino RW, Schuberth JM, Vanore JV, et al. The diagnosis and treatment of heel pain: a clinical practice guideline-revision 2010. J Foot Ankle Surg. 2010;49(3 Suppl):S1-19. doi: [10.1053/j.jfas.2010.01.001](https://doi.org/10.1053/j.jfas.2010.01.001)"
         },
         {
           "id": "plantarfascie_q2",
-          "text": "Malahias MA, Cantiller EB, Kadu VV, Müller S. The clinical outcome of endoscopic plantar fascia release: a current concept review. Foot Ankle Surg. 2020;26:19–24."
+          "text": "Malahias MA, Cantiller EB, Kadu VV, Müller S. The clinical outcome of endoscopic plantar fascia release: a current concept review. Foot Ankle Surg. 2020;26(1):19-24. doi: [10.1016/j.fas.2018.12.006](https://doi.org/10.1016/j.fas.2018.12.006)"
         },
         {
           "id": "plantarfascie_q3",
-          "text": "Arbab D, et al. Plantarfaszienrelease und Dekompression des Baxter-Nervs. Oper Orthop Traumatol. 2021;33(6):517–524."
+          "text": "Arbab D, Bouillon B, Lüring C, Störmann S, Gutteck N. Plantarfaszienrelease und Dekompression des ersten kalkanearen Astes des Nervus plantaris lateralis (Baxter-Nerv). Oper Orthop Traumatol. 2021;33(6):517-524. doi: [10.1007/s00064-021-00720-z](https://doi.org/10.1007/s00064-021-00720-z)"
         },
         {
           "id": "plantarfascie_q4",
-          "text": "Brown JN, Roberts S, Taylor M, Paterson RS. Plantar fascia release through a transverse plantar incision. Foot Ankle Int. 1999."
+          "text": "Brown JN, Roberts S, Taylor M, Paterson RS. Plantar fascia release through a transverse plantar incision. Foot Ankle Int. 1999;20(6):364-367. doi: [10.1177/107110079902000604](https://doi.org/10.1177/107110079902000604)"
         },
         {
           "id": "plantarfascie_q5",
-          "text": "MacInnes A, Roberts SC, Kimpton J, Pillai A. Long-term outcome of open plantar fascia release. Foot Ankle Int. 2016;37(1):17–23."
+          "text": "MacInnes A, Roberts SC, Kimpton J, Pillai A. Long-term outcome of open plantar fascia release. Foot Ankle Int. 2016;37(1):17-23. doi: [10.1177/1071100715603189](https://doi.org/10.1177/1071100715603189)"
         },
         {
           "id": "plantarfascie_q6",
-          "text": "Bader L, Park K, Gu Y, O'Malley MJ. Functional outcome of endoscopic plantar fasciotomy. Foot Ankle Int. 2012;33(1):37–43."
+          "text": "Bader L, Park K, Gu Y, O'Malley MJ. Functional outcome of endoscopic plantar fasciotomy. Foot Ankle Int. 2012;33(1):37-43. doi: [10.3113/FAI.2012.0037](https://doi.org/10.3113/FAI.2012.0037)"
         },
         {
           "id": "plantarfascie_q7",
-          "text": "Ward L, et al. Outcomes of endoscopic treatment for plantar fasciitis: a systematic review. Foot Ankle Spec. 2022."
+          "text": "Ward L, Mercer NP, Azam MT, Hoberman A, Hurley ET, Butler JJ, et al. Outcomes of endoscopic treatment for plantar fasciitis: a systematic review. Foot Ankle Spec. 2025;18(2):193-201. doi: [10.1177/19386400221129167](https://doi.org/10.1177/19386400221129167)"
         },
         {
           "id": "plantarfascie_q8",
-          "text": "Davies MS, Weiss GA, Saxby TS. Plantar fasciitis: how successful is surgical intervention? Foot Ankle Int. 1999;20(12):803–807."
+          "text": "Davies MS, Weiss GA, Saxby TS. Plantar fasciitis: how successful is surgical intervention? Foot Ankle Int. 1999;20(12):803-807. doi: [10.1177/107110079902001209](https://doi.org/10.1177/107110079902001209)"
+        },
+        {
+          "id": "plantarfascie_q9",
+          "text": "Mao DW, Chandrakumara D, Zheng Q, Kam C, Kon Kam King C. Endoscopic plantar fasciotomy for plantar fasciitis: a systematic review and network meta-analysis of the English literature. Foot (Edinb). 2019;41:63-73. doi: [10.1016/j.foot.2019.08.001](https://doi.org/10.1016/j.foot.2019.08.001)"
+        },
+        {
+          "id": "plantarfascie_q10",
+          "text": "Gibbons R, Mackie KE, Beveridge T, Hince D, Ammon P. Evaluation of long-term outcomes following plantar fasciotomy. Foot Ankle Int. 2018;39(11):1312-1319. doi: [10.1177/1071100718788546](https://doi.org/10.1177/1071100718788546)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "kidner": {
       "infoKategorie": "op_technik",
@@ -1312,7 +1373,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Peronealsehnen-Instabilität",
       "titel": "Peronealsehnen-Instabilität",
-      "untertitel": "",
+      "untertitel": "Stabilisierung der Wadenbeinsehnen hinter dem Außenknöchel (Retinakulum-Naht, Rinnenvertiefung)",
       "betrifft_eingriffe": [],
       "slides": [
         "op_peroneal_instab_ueberblick",
@@ -1323,31 +1384,56 @@
         "op_peroneal_instab_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "peroneal_instab_q1",
-          "text": "van Dijk PA, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096–3107."
+          "text": "van Dijk PA, Miller D, Calder J, DiGiovanni CW, Kennedy JG, Kerkhoffs GM, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096-3107. doi: [10.1007/s00167-018-4971-x](https://doi.org/10.1007/s00167-018-4971-x)"
         },
         {
           "id": "peroneal_instab_q2",
-          "text": "Willegger M, Hirtler L, Schwarz GM, Windhager RH, Chiari C. Peronealsehnenpathologien: Von der Diagnose bis zur Behandlung. Orthopäde. 2021;50(7):589–604."
+          "text": "Willegger M, Hirtler L, Schwarz GM, Windhager RH, Chiari C. Peronealsehnenpathologien: von der Diagnose bis zur Behandlung. Orthopade. 2021;50(7):589-604. doi: [10.1007/s00132-021-04116-6](https://doi.org/10.1007/s00132-021-04116-6)"
         },
         {
           "id": "peroneal_instab_q3",
-          "text": "Cho J, et al. Groove-deepening vs. non-deepening for recurrent peroneal tendon dislocation. 2014."
+          "text": "Cho J, Kim JY, Song DG, Lee WC. Comparison of outcome after retinaculum repair with and without fibular groove deepening for recurrent dislocation of the peroneal tendons. Foot Ankle Int. 2014;35(7):683-689. doi: [10.1177/1071100714531233](https://doi.org/10.1177/1071100714531233)"
         },
         {
           "id": "peroneal_instab_q4",
-          "text": "van Dijk PA, Gianakos AL, Kerkhoffs GM, Kennedy JG. Return to sports and clinical outcomes in patients treated for peroneal tendon dislocation: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1155–1164."
+          "text": "Ogawa BK, Thordarson DB. Current concepts review: peroneal tendon subluxation and dislocation. Foot Ankle Int. 2007;28(9):1034-1040. doi: [10.3113/FAI.2007.1034](https://doi.org/10.3113/FAI.2007.1034)"
+        },
+        {
+          "id": "peroneal_instab_q5",
+          "text": "Klos K, Knobe M, Randt T, Simons P, Mückley T. Verletzungen der Peronealsehnen: häufig übersehen. Unfallchirurg. 2017;120(12):1020-1030. doi: [10.1007/s00113-017-0398-y](https://doi.org/10.1007/s00113-017-0398-y)"
+        },
+        {
+          "id": "peroneal_instab_q6",
+          "text": "Redfern D, Myerson M. The management of concomitant tears of the peroneus longus and brevis tendons. Foot Ankle Int. 2004;25(10):695-707. doi: [10.1177/107110070402501002](https://doi.org/10.1177/107110070402501002)"
+        },
+        {
+          "id": "peroneal_instab_q7",
+          "text": "Cerrato RA, Myerson MS. Peroneal tendon tears, surgical management and its complications. Foot Ankle Clin. 2009;14(2):299-312. doi: [10.1016/j.fcl.2009.01.004](https://doi.org/10.1016/j.fcl.2009.01.004)"
+        },
+        {
+          "id": "peroneal_instab_q8",
+          "text": "Arrowsmith SR, Fleming LL, Allman FL. Traumatic dislocations of the peroneal tendons. Am J Sports Med. 1983;11(3):142-146. doi: [10.1177/036354658301100306](https://doi.org/10.1177/036354658301100306)"
+        },
+        {
+          "id": "peroneal_instab_q9",
+          "text": "van Dijk PA, Gianakos AL, Kerkhoffs GM, Kennedy JG. Return to sports and clinical outcomes in patients treated for peroneal tendon dislocation: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1155-1164. doi: [10.1007/s00167-015-3833-z](https://doi.org/10.1007/s00167-015-3833-z)"
+        },
+        {
+          "id": "peroneal_instab_q10",
+          "text": "McLennan JG. Treatment of acute and chronic luxations of the peroneal tendons. Am J Sports Med. 1980;8(6):432-436. doi: [10.1177/036354658000800609](https://doi.org/10.1177/036354658000800609)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "peroneal_riss": {
       "infoKategorie": "op_technik",
       "infoTitel": "Peronealsehnen-Riss",
       "titel": "Peronealsehnen-Riss",
-      "untertitel": "",
+      "untertitel": "Versorgung eines Risses der Wadenbeinsehnen: Naht, Koppelung (Tenodese), Sehnentransplantat oder Transfer",
       "betrifft_eingriffe": [],
       "slides": [
         "op_peroneal_riss_ueberblick",
@@ -1358,57 +1444,78 @@
         "op_peroneal_riss_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "peroneal_riss_q1",
-          "text": "van Dijk PA, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096–3107."
+          "text": "van Dijk PA, Miller D, Calder J, DiGiovanni CW, Kennedy JG, Kerkhoffs GM, et al. The ESSKA-AFAS international consensus statement on peroneal tendon pathologies. Knee Surg Sports Traumatol Arthrosc. 2018;26(10):3096-3107. doi: [10.1007/s00167-018-4971-x](https://doi.org/10.1007/s00167-018-4971-x)"
         },
         {
           "id": "peroneal_riss_q2",
-          "text": "Krause JO, Brodsky JW. Peroneus brevis tendon tears: pathophysiology, surgical reconstruction, and clinical results. Foot Ankle Int. 1998;19(5):271–279."
+          "text": "Krause JO, Brodsky JW. Peroneus brevis tendon tears: pathophysiology, surgical reconstruction, and clinical results. Foot Ankle Int. 1998;19(5):271-279. doi: [10.1177/107110079801900502](https://doi.org/10.1177/107110079801900502)"
         },
         {
           "id": "peroneal_riss_q3",
-          "text": "Redfern D, Myerson M. The management of concomitant tears of the peroneus longus and brevis tendons. Foot Ankle Int. 2004;25(10):695–707."
+          "text": "Redfern D, Myerson M. The management of concomitant tears of the peroneus longus and brevis tendons. Foot Ankle Int. 2004;25(10):695-707. doi: [10.1177/107110070402501002](https://doi.org/10.1177/107110070402501002)"
         },
         {
           "id": "peroneal_riss_q4",
-          "text": "Pellegrini MJ, et al. Effectiveness of allograft reconstruction vs tenodesis for irreparable peroneus brevis tears: a cadaveric model. Foot Ankle Int. 2016;37(8):803–808."
+          "text": "Pellegrini MJ, Glisson RR, Matsumoto T, Schiff A, Laver L, Easley ME, et al. Effectiveness of allograft reconstruction vs tenodesis for irreparable peroneus brevis tears: a cadaveric model. Foot Ankle Int. 2016;37(8):803-808. doi: [10.1177/1071100716658469](https://doi.org/10.1177/1071100716658469)"
         },
         {
           "id": "peroneal_riss_q5",
-          "text": "Seybold JD, et al. Outcome of lateral transfer of the FHL or FDL for concomitant peroneal tendon tears. Foot Ankle Int. 2016;37(6):576–581."
+          "text": "Seybold JD, Campbell JT, Jeng CL, Short KW, Myerson MS. Outcome of lateral transfer of the FHL or FDL for concomitant peroneal tendon tears. Foot Ankle Int. 2016;37(6):576-581. doi: [10.1177/1071100716634762](https://doi.org/10.1177/1071100716634762)"
         },
         {
           "id": "peroneal_riss_q6",
-          "text": "Steel MW, DeOrio JK. Peroneal tendon tears: return to sports after operative treatment. Foot Ankle Int. 2007;28(1):49–54."
+          "text": "Steel MW, DeOrio JK. Peroneal tendon tears: return to sports after operative treatment. Foot Ankle Int. 2007;28(1):49-54. doi: [10.3113/FAI.2007.0009](https://doi.org/10.3113/FAI.2007.0009)"
         },
         {
           "id": "peroneal_riss_q7",
-          "text": "Roster B, Michelier P, Giza E. Peroneal tendon disorders. Clin Sports Med. 2015;34:625–641."
+          "text": "Roster B, Michelier P, Giza E. Peroneal tendon disorders. Clin Sports Med. 2015;34(4):625-641. doi: [10.1016/j.csm.2015.06.003](https://doi.org/10.1016/j.csm.2015.06.003)"
         },
         {
           "id": "peroneal_riss_q8",
-          "text": "Steginsky B, et al. Patient-reported outcomes and return to activity after peroneus brevis repair. Foot Ankle Int. 2016;37(2):178–185."
+          "text": "Steginsky B, Riley A, Lucas DE, Philbin TM, Berlet GC. Patient-reported outcomes and return to activity after peroneus brevis repair. Foot Ankle Int. 2016;37(2):178-185. doi: [10.1177/1071100715611960](https://doi.org/10.1177/1071100715611960)"
         },
         {
           "id": "peroneal_riss_q9",
-          "text": "Stockton KG, Brodsky JW. Peroneus longus tears associated with pathology of the os peroneum. Foot Ankle Int. 2014;35(4):346–352."
+          "text": "Stockton KG, Brodsky JW. Peroneus longus tears associated with pathology of the os peroneum. Foot Ankle Int. 2014;35(4):346-352. doi: [10.1177/1071100714522026](https://doi.org/10.1177/1071100714522026)"
         },
         {
           "id": "peroneal_riss_q10",
-          "text": "Burkhard MD, et al. Clinical and functional outcomes of peroneus longus to brevis tendon transfer. Foot Ankle Int. 2021;42(6):699–705."
+          "text": "Burkhard MD, Wirth SH, Andronic O, Viehöfer AF, Imhoff FB, Fröhlich S. Clinical and functional outcomes of peroneus longus to brevis tendon transfer. Foot Ankle Int. 2021;42(6):699-705. doi: [10.1177/1071100720982592](https://doi.org/10.1177/1071100720982592)"
         },
         {
           "id": "peroneal_riss_q11",
-          "text": "Mook WR, Parekh SG, Nunley JA. Allograft reconstruction of peroneal tendons: operative technique and clinical outcomes. Foot Ankle Int. 2013;34(9):1212–1220."
+          "text": "Mook WR, Parekh SG, Nunley JA. Allograft reconstruction of peroneal tendons: operative technique and clinical outcomes. Foot Ankle Int. 2013;34(9):1212-1220. doi: [10.1177/1071100713487527](https://doi.org/10.1177/1071100713487527)"
         },
         {
           "id": "peroneal_riss_q12",
-          "text": "Steel MW, DeOrio JK. Peroneal tendon tears: return to sports after operative treatment. Foot Ankle Int. 2007;28(1):49–54."
+          "text": "Wagner E, Ortiz C, Wagner P, Guzman R, Ahumada X, Maffulli N. Biomechanical evaluation of various suture configurations in side-to-side tenorrhaphy. J Bone Joint Surg Am. 2014;96(3):232-236. doi: [10.2106/JBJS.L.01552](https://doi.org/10.2106/JBJS.L.01552)"
+        },
+        {
+          "id": "peroneal_riss_q13",
+          "text": "Sherman TI, Koury K, Orapin J, Schon LC. Lateral transfer of the flexor digitorum longus for peroneal tendinopathy. Foot Ankle Int. 2019;40(9):1012-1017. doi: [10.1177/1071100719853297](https://doi.org/10.1177/1071100719853297)"
+        },
+        {
+          "id": "peroneal_riss_q14",
+          "text": "Saxena A, Cassidy A. Peroneal tendon injuries: an evaluation of 49 tears in 41 patients. J Foot Ankle Surg. 2003;42(4):215-220. doi: [10.1016/s1067-2516(03)70031-3](https://doi.org/10.1016/s1067-2516(03)70031-3)"
+        },
+        {
+          "id": "peroneal_riss_q15",
+          "text": "Wapner KL, Taras JS, Lin SS, Chao W. Staged reconstruction for chronic rupture of both peroneal tendons using Hunter rod and flexor hallucis longus tendon transfer: a long-term follow-up study. Foot Ankle Int. 2006;27(8):591-597. doi: [10.1177/107110070602700805](https://doi.org/10.1177/107110070602700805)"
+        },
+        {
+          "id": "peroneal_riss_q16",
+          "text": "van Dijk PA, Lubberts B, Verheul C, DiGiovanni CW, Kerkhoffs GM. Rehabilitation after surgical treatment of peroneal tendon tears and ruptures. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1165-1174. doi: [10.1007/s00167-015-3944-6](https://doi.org/10.1007/s00167-015-3944-6)"
+        },
+        {
+          "id": "peroneal_riss_q17",
+          "text": "Strickland SM, MacGillivray JD, Warren RF. Anterior cruciate ligament reconstruction with allograft tendons. Orthop Clin North Am. 2003;34(1):41-47. doi: [10.1016/s0030-5898(02)00060-3](https://doi.org/10.1016/s0030-5898(02)00060-3)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "haglund_split": {
       "infoKategorie": "op_technik",
@@ -1699,9 +1806,37 @@
         {
           "id": "calc_medial_q16",
           "text": "Waizy H, Jowett C, Andric V. Minimally invasive versus open calcaneal osteotomies - comparing the intraoperative parameters. Foot (Edinb). 2018;37:113-118. doi: [10.1016/j.foot.2018.06.005](https://doi.org/10.1016/j.foot.2018.06.005)"
+        },
+        {
+          "id": "calc_medial_q17",
+          "text": "Walther M, Kriegelstein S, Altenberger S, Röser A. Die perkutane Kalkaneusverschiebeosteotomie. Oper Orthop Traumatol. 2016;28(4):309-320. doi: [10.1007/s00064-016-0459-3](https://doi.org/10.1007/s00064-016-0459-3)"
+        },
+        {
+          "id": "calc_medial_q18",
+          "text": "Chadwick C, Whitehouse SL, Saxby TS. Long-term follow-up of flexor digitorum longus transfer and calcaneal osteotomy for stage II posterior tibial tendon dysfunction. Bone Joint J. 2015;97-B(3):346-352. doi: [10.1302/0301-620X.97B3.34386](https://doi.org/10.1302/0301-620X.97B3.34386)"
+        },
+        {
+          "id": "calc_medial_q19",
+          "text": "Wacker JT, Hennessy MS, Saxby TS. Calcaneal osteotomy and transfer of the tendon of flexor digitorum longus for stage-II dysfunction of tibialis posterior. Three- to five-year results. J Bone Joint Surg Br. 2002;84(1):54-58. doi: [10.1302/0301-620x.84b1.11847](https://doi.org/10.1302/0301-620x.84b1.11847)"
+        },
+        {
+          "id": "calc_medial_q20",
+          "text": "Guyton GP, Jeng C, Krieger LE, Mann RA. Flexor digitorum longus transfer and medial displacement calcaneal osteotomy for posterior tibial tendon dysfunction: a middle-term clinical follow-up. Foot Ankle Int. 2001;22(8):627-632. doi: [10.1177/107110070102200802](https://doi.org/10.1177/107110070102200802)"
+        },
+        {
+          "id": "calc_medial_q21",
+          "text": "Veljkovic A, Symes M, Younger A, et al. Neurovascular and clinical outcomes of the percutaneous endoscopically assisted calcaneal osteotomy (PECO) technique. Foot Ankle Int. 2019;40(2):178-184. doi: [10.1177/1071100718800983](https://doi.org/10.1177/1071100718800983)"
+        },
+        {
+          "id": "calc_medial_q22",
+          "text": "Hakeem S, Elbardecy H, Alnajjar R, et al. Types of sliding calcaneal osteotomy fixation: a systematic review and meta-analysis. Cureus. 2022;14(12):e32795. doi: [10.7759/cureus.32795](https://doi.org/10.7759/cureus.32795)"
+        },
+        {
+          "id": "calc_medial_q23",
+          "text": "Stichnoth M, Lüders KA, Hell AK, Stinus H. Comparative study of subtalar arthroereisis, medializing calcaneal osteotomy, and the combination for symptomatic adult flatfeet. Foot Ankle Surg. 2025;31(3):239-246. doi: [10.1016/j.fas.2024.10.006](https://doi.org/10.1016/j.fas.2024.10.006)"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), inkl. klinischer Ergebnisdaten — ärztlich zu prüfen"
     },
     "calcaneoplastie": {
       "infoKategorie": "op_technik",
@@ -2108,7 +2243,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Coalitio talocalcaneare — OP",
       "titel": "Coalitio talocalcaneare — OP",
-      "untertitel": "",
+      "untertitel": "Entfernung der Fußwurzelverbindung zwischen Sprung- und Fersenbein oder Versteifung des unteren Sprunggelenks",
       "betrifft_eingriffe": [],
       "slides": [
         "op_coalitio_tc_ueberblick",
@@ -2119,29 +2254,62 @@
         "op_coalitio_tc_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "coalitio_tc_q1",
-          "text": "Mosca VS. Subtalar coalition in pediatrics. Foot Ankle Clin. 2015;20(2):265–281."
+          "text": "Mosca VS. Subtalar coalition in pediatrics. Foot Ankle Clin. 2015;20(2):265-281. doi: [10.1016/j.fcl.2015.02.005](https://doi.org/10.1016/j.fcl.2015.02.005)"
         },
         {
           "id": "coalitio_tc_q2",
-          "text": "Hamel J, Nell M, Rist C. Operative Behandlung der Coalitio talocalcanearis: Erfahrungen aus 80 Fällen. Orthopäde. 2016;45(12):1058–1065."
+          "text": "Hamel J. Die Resektion der talokalkanearen Coalitio im Kindes- und Adoleszentenalter ohne und mit Stellungskorrektur. Oper Orthop Traumatol. 2009;21(2):180-192. doi: [10.1007/s00064-009-1706-7](https://doi.org/10.1007/s00064-009-1706-7)"
         },
         {
           "id": "coalitio_tc_q3",
-          "text": "Wilde PH, Torode IP, Dickens DR, Cole WG. Resection for symptomatic talocalcaneal coalition. J Bone Joint Surg Br. 1994;76(5):797–801."
+          "text": "Wilde PH, Torode IP, Dickens DR, Cole WG. Resection for symptomatic talocalcaneal coalition. J Bone Joint Surg Br. 1994;76(5):797-801. (kein DOI, PMID 8083272)"
         },
         {
           "id": "coalitio_tc_q4",
-          "text": "Khoshbin A, et al. Long-term functional outcomes of resected tarsal coalitions. Foot Ankle Int. 2013;34(10):1370–1375."
+          "text": "Khoshbin A, Law PW, Caspi L, Wright JG. Long-term functional outcomes of resected tarsal coalitions. Foot Ankle Int. 2013;34(10):1370-1375. doi: [10.1177/1071100713489122](https://doi.org/10.1177/1071100713489122)"
         },
         {
           "id": "coalitio_tc_q5",
-          "text": "Myerson MS, et al. Talocalcaneal coalition classifications: a critical analysis review and suggested new classification system. Foot Ankle Surg. 2024;30(6):450–456."
+          "text": "Mahan ST, Spencer SA, Vezeridis PS, Kasser JR. Patient-reported outcomes of tarsal coalitions treated with surgical excision. J Pediatr Orthop. 2015;35(6):583-588. doi: [10.1097/BPO.0000000000000334](https://doi.org/10.1097/BPO.0000000000000334)"
+        },
+        {
+          "id": "coalitio_tc_q6",
+          "text": "Gantsoudes GD, Roocroft JH, Mubarak SJ. Treatment of talocalcaneal coalitions. J Pediatr Orthop. 2012;32(3):301-307. doi: [10.1097/BPO.0b013e318247c76e](https://doi.org/10.1097/BPO.0b013e318247c76e)"
+        },
+        {
+          "id": "coalitio_tc_q7",
+          "text": "Hamel J, Nell M, Rist C. Operative Behandlung der Coalitio talocalcanearis: Erfahrungen aus 80 Fällen kindlich-jugendlicher Patienten. Orthopade. 2016;45(12):1058-1065. doi: [10.1007/s00132-016-3299-9](https://doi.org/10.1007/s00132-016-3299-9)"
+        },
+        {
+          "id": "coalitio_tc_q8",
+          "text": "Malik-Tabassum K, Wahed K, To C, Maling L, Rose B. Post-operative outcomes of arthroscopic tarsal coalition resection: a systematic review. J Orthop. 2020;21:537-543. doi: [10.1016/j.jor.2020.09.014](https://doi.org/10.1016/j.jor.2020.09.014)"
+        },
+        {
+          "id": "coalitio_tc_q9",
+          "text": "Bonasia DE, Phisitkul P, Amendola A. Endoscopic coalition resection. Foot Ankle Clin. 2015;20(1):81-91. doi: [10.1016/j.fcl.2014.10.006](https://doi.org/10.1016/j.fcl.2014.10.006)"
+        },
+        {
+          "id": "coalitio_tc_q10",
+          "text": "Dermanis AA, Elmajee M, Duffaydar H, Aljawadi A, Hussain S, Pillai A. Talocalcaneal coalition resection in the adult population: a systematic review. Cureus. 2022;14(10):e30581. doi: [10.7759/cureus.30581](https://doi.org/10.7759/cureus.30581)"
+        },
+        {
+          "id": "coalitio_tc_q11",
+          "text": "Khoshbin A, Bouchard M, Wasserstein D, Leroux T, Law PW, Kreder HJ, Daniels TR, Wright JG. Reoperations after tarsal coalition resection: a population-based study. J Foot Ankle Surg. 2015;54(3):306-310. doi: [10.1053/j.jfas.2014.04.027](https://doi.org/10.1053/j.jfas.2014.04.027)"
+        },
+        {
+          "id": "coalitio_tc_q12",
+          "text": "Myerson MS, Fernández-Rojas E, Monteagudo M, Araya-Bonilla V, Barra-Dinamarca E, Elgueta-Grillo J. Talocalcaneal coalition classifications: a critical analysis review and suggested new classification system with implications for treatment. Foot Ankle Surg. 2024;30(6):450-456. doi: [10.1016/j.fas.2024.03.010](https://doi.org/10.1016/j.fas.2024.03.010)"
+        },
+        {
+          "id": "coalitio_tc_q13",
+          "text": "Stormont DM, Peterson HA. The relative incidence of tarsal coalition. Clin Orthop Relat Res. 1983;(181):28-36. (kein DOI, PMID 6641062)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "metallallergie": {
       "infoKategorie": "allgemein",
