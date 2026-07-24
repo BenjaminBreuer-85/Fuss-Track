@@ -46,14 +46,148 @@
       "infoKategorie": "op_technik",
       "infoTitel": "OSG-Prothese (Endoprothese)",
       "titel": "OSG-Prothese (Endoprothese)",
-      "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
+      "untertitel": "Künstliches oberes Sprunggelenk bei fortgeschrittener OSG-Arthrose",
       "betrifft_eingriffe": [
         "osg_tep"
       ],
       "slides": [
-        "osg_op_tep",
-        "osg_vergleich"
-      ]
+        "osg_tep_ueberblick",
+        "osg_tep_ablauf",
+        "osg_tep_ergebnisse",
+        "osg_tep_nachbehandlung",
+        "osg_tep_komplikationen",
+        "osg_vergleich",
+        "osg_tep_quellen"
+      ],
+      "quellen": [
+        {
+          "id": "osg_tep_stauffer",
+          "text": "Stauffer RN, Chao EY, Brewster RC. Force and motion analysis of the normal, diseased, and prosthetic ankle joint. Clin Orthop Relat Res. 1977;(127):189-196. (kein DOI, PMID 912978)"
+        },
+        {
+          "id": "osg_tep_schwarz",
+          "text": "Schwarz T, Greimel F, Grifka J, Leiß F. Update: Endoprothetik am oberen Sprunggelenk. Die Orthopädie. 2023;52(2). (deutschsprachiger Übersichtsartikel)"
+        },
+        {
+          "id": "osg_tep_bern",
+          "text": "Bernasconi A, Najefi AA, Goldberg AJ. Comparison of mechanical axis of the limb versus anatomical axis of the tibia for assessment of tibiotalar alignment in end-stage ankle arthritis. Foot Ankle Int. 2021;42(5):616-623. doi: [10.1177/1071100720972664](https://doi.org/10.1177/1071100720972664)"
+        },
+        {
+          "id": "osg_tep_najefiax",
+          "text": "Najefi AA, Malhotra K, Goldberg A. Mechanical and anatomical axis of the lower limb in total ankle arthroplasty. Foot (Edinb). 2020;44:101666. doi: [10.1016/j.foot.2020.101666](https://doi.org/10.1016/j.foot.2020.101666)"
+        },
+        {
+          "id": "osg_tep_najefirot",
+          "text": "Najefi AA, Ghani Y, Goldberg A. Role of rotation in total ankle replacement. Foot Ankle Int. 2019;40(12):1358-1367. doi: [10.1177/1071100719867068](https://doi.org/10.1177/1071100719867068)"
+        },
+        {
+          "id": "osg_tep_barg",
+          "text": "Barg A, Wimmer MD, Wiewiorski M, Wirtz DC, Pagenstert GI, Valderrabano V. Total ankle replacement. Dtsch Arztebl Int. 2015;112(11):177-184. doi: [10.3238/arztebl.2015.0177](https://doi.org/10.3238/arztebl.2015.0177)"
+        },
+        {
+          "id": "osg_tep_zaidi",
+          "text": "Zaidi R, Cro S, Gurusamy K, Siva N, Macgregor A, Henricson A, et al. The outcome of total ankle replacement: a systematic review and meta-analysis. Bone Joint J. 2013;95-B(11):1500-1507. doi: [10.1302/0301-620X.95B11.31633](https://doi.org/10.1302/0301-620X.95B11.31633)"
+        },
+        {
+          "id": "osg_tep_johns",
+          "text": "Johns WL, Sowers CB, Walley KC, Ross D, Thordarson DB, Jackson JB, et al. Return to sports and activity after total ankle arthroplasty and arthrodesis: a systematic review. Foot Ankle Int. 2020;41(8):916-929. doi: [10.1177/1071100720927706](https://doi.org/10.1177/1071100720927706)"
+        },
+        {
+          "id": "osg_tep_neumann",
+          "text": "Neumann HW. AE-Manual der Endoprothetik: Sprunggelenk und Fuß. Berlin: Springer; 2011. (Fachbuch)"
+        },
+        {
+          "id": "osg_tep_lee",
+          "text": "Lee GW, Seon JK, Kim NS, Lee KB. Comparison of intermediate-term outcomes of total ankle arthroplasty in patients younger and older than 55 years. Foot Ankle Int. 2019;40(7):762-768. doi: [10.1177/1071100719840816](https://doi.org/10.1177/1071100719840816)"
+        },
+        {
+          "id": "osg_tep_zhao",
+          "text": "Zhao D, Huang D, Zhang G, Wang X, Zhang T, Ma X. Positive and negative factors for the treatment outcomes following total ankle arthroplasty? A systematic review. Foot Ankle Surg. 2020;26(1):1-13. doi: [10.1016/j.fas.2018.12.003](https://doi.org/10.1016/j.fas.2018.12.003)"
+        },
+        {
+          "id": "osg_tep_codybone",
+          "text": "Cody EA, Lachman JR, Gausden EB, Nunley JA 2nd, Easley ME. Lower bone density on preoperative computed tomography predicts periprosthetic fracture risk in total ankle arthroplasty. Foot Ankle Int. 2019;40(1):1-8. doi: [10.1177/1071100718799102](https://doi.org/10.1177/1071100718799102)"
+        },
+        {
+          "id": "osg_tep_coetzee",
+          "text": "Coetzee JC. Management of varus or valgus ankle deformity with ankle replacement. Foot Ankle Clin. 2008;13(3):509-520. doi: [10.1016/j.fcl.2008.04.004](https://doi.org/10.1016/j.fcl.2008.04.004)"
+        },
+        {
+          "id": "osg_tep_hobson",
+          "text": "Hobson SA, Karantana A, Dhar S. Total ankle replacement in patients with significant pre-operative deformity of the hindfoot. J Bone Joint Surg Br. 2009;91(4):481-486. doi: [10.1302/0301-620X.91B4.20855](https://doi.org/10.1302/0301-620X.91B4.20855)"
+        },
+        {
+          "id": "osg_tep_trajkovski",
+          "text": "Trajkovski T, Pinsker E, Cadden A, Daniels T. Outcomes of ankle arthroplasty with preoperative coronal-plane varus deformity of 10 degrees or greater. J Bone Joint Surg Am. 2013;95(15):1382-1388. doi: [10.2106/JBJS.L.00797](https://doi.org/10.2106/JBJS.L.00797)"
+        },
+        {
+          "id": "osg_tep_queen",
+          "text": "Queen RM, Adams SB Jr, Viens NA, Friend JK, Easley ME, DeOrio JK, et al. Differences in outcomes following total ankle replacement in patients with neutral alignment compared with tibiotalar joint malalignment. J Bone Joint Surg Am. 2013;95(21):1927-1934. doi: [10.2106/JBJS.L.00404](https://doi.org/10.2106/JBJS.L.00404)"
+        },
+        {
+          "id": "osg_tep_lampley",
+          "text": "Lampley A, Gross CE, Green CL, DeOrio JK, Easley M, Adams S, et al. Association of cigarette use and complication rates and outcomes following total ankle arthroplasty. Foot Ankle Int. 2016;37(10):1052-1059. doi: [10.1177/1071100716655435](https://doi.org/10.1177/1071100716655435)"
+        },
+        {
+          "id": "osg_tep_codyrisk",
+          "text": "Cody EA, Bejarano-Pineda L, Lachman JR, Taylor MA, Gausden EB, DeOrio JK, et al. Risk factors for failure of total ankle arthroplasty with a minimum five years of follow-up. Foot Ankle Int. 2019;40(3):249-258. doi: [10.1177/1071100718806474](https://doi.org/10.1177/1071100718806474)"
+        },
+        {
+          "id": "osg_tep_cottom",
+          "text": "Cottom JM, Plemmons BS, Douthett SM. Relationship between body mass index and complications in total ankle arthroplasty: a single surgeon's experience in ninety-seven replacements. J Foot Ankle Surg. 2019;58(4):687-691. doi: [10.1053/j.jfas.2018.11.015](https://doi.org/10.1053/j.jfas.2018.11.015)"
+        },
+        {
+          "id": "osg_tep_suh",
+          "text": "Suh DH, Han K, Lee JW, Kim HJ, Kim B, Koo BM, et al. Risk factors associated with failure of total ankle arthroplasty: a nationwide cohort study. Sci Rep. 2021;11(1):2878. doi: [10.1038/s41598-021-82674-7](https://doi.org/10.1038/s41598-021-82674-7)"
+        },
+        {
+          "id": "osg_tep_sadoghi",
+          "text": "Sadoghi P, Liebensteiner M, Agreiter M, Leithner A, Böhler N, Labek G. Revision surgery after total joint arthroplasty: a complication-based analysis using worldwide arthroplasty registers. J Arthroplasty. 2013;28(8):1329-1332. doi: [10.1016/j.arth.2013.01.012](https://doi.org/10.1016/j.arth.2013.01.012)"
+        },
+        {
+          "id": "osg_tep_harrasser",
+          "text": "Harrasser N, von Eisenhart-Rothe R, Pohlig F, Waizy H, Toepfer A, Gerdesmeyer L, et al. Arthrose des oberen Sprunggelenks. Orthopade. 2017;46(7):625-638. doi: [10.1007/s00132-017-3435-1](https://doi.org/10.1007/s00132-017-3435-1)"
+        },
+        {
+          "id": "osg_tep_gross",
+          "text": "Gross CE, Lewis JS, Adams SB, Easley M, DeOrio JK, Nunley JA 2nd. Secondary arthrodesis after total ankle arthroplasty. Foot Ankle Int. 2016;37(7):709-714. doi: [10.1177/1071100716641729](https://doi.org/10.1177/1071100716641729)"
+        },
+        {
+          "id": "osg_tep_kamrad",
+          "text": "Kamrad I, Henricson A, Magnusson H, Carlsson Å, Rosengren BE. Outcome after salvage arthrodesis for failed total ankle replacement. Foot Ankle Int. 2016;37(3):255-261. doi: [10.1177/1071100715617508](https://doi.org/10.1177/1071100715617508)"
+        },
+        {
+          "id": "osg_tep_goldberg",
+          "text": "Goldberg AJ, Chowdhury K, Bordea E, Blackstone J, Brooking D, Deane EL, et al. Total ankle replacement versus ankle arthrodesis for patients aged 50-85 years with end-stage ankle osteoarthritis: the TARVA RCT. Health Technol Assess. 2023;27(5):1-80. doi: [10.3310/PTYJ1146](https://doi.org/10.3310/PTYJ1146)"
+        },
+        {
+          "id": "osg_tep_kessler",
+          "text": "Kessler B, Knupp M, Graber P, Zwicky L, Hintermann B, Zimmerli W, Sendi P. The treatment and outcome of peri-prosthetic infection of the ankle: a single cohort-centre experience of 34 cases. Bone Joint J. 2014;96-B(6):772-777. doi: [10.1302/0301-620X.96B6.33298](https://doi.org/10.1302/0301-620X.96B6.33298)"
+        },
+        {
+          "id": "osg_tep_daniels",
+          "text": "Daniels TR, Younger AS, Penner M, Wing K, Dryden PJ, Wong H, et al. Intermediate-term results of total ankle replacement and ankle arthrodesis: a COFAS multicenter study. J Bone Joint Surg Am. 2014;96(2):135-142. doi: [10.2106/JBJS.L.01597](https://doi.org/10.2106/JBJS.L.01597)"
+        },
+        {
+          "id": "osg_tep_singer",
+          "text": "Singer S, Klejman S, Pinsker E, Houck J, Daniels T. Ankle arthroplasty and ankle arthrodesis: gait analysis compared with normal controls. J Bone Joint Surg Am. 2013;95(24):e191. doi: [10.2106/JBJS.L.00465](https://doi.org/10.2106/JBJS.L.00465)"
+        },
+        {
+          "id": "osg_tep_brodsky",
+          "text": "Brodsky JW, Kane JM, Coleman S, Bariteau J, Tenenbaum S. Abnormalities of gait caused by ankle arthritis are improved by ankle arthrodesis. Bone Joint J. 2016;98-B(10):1369-1375. doi: [10.1302/0301-620X.98B10.37614](https://doi.org/10.1302/0301-620X.98B10.37614)"
+        },
+        {
+          "id": "osg_tep_townshend",
+          "text": "Townshend DN, Bing AJF, Clough TM, Sharpe IT, Goldberg A. Early experience and patient-reported outcomes of 503 INFINITY total ankle arthroplasties. Bone Joint J. 2021;103-B(7):1270-1276. doi: [10.1302/0301-620X.103B7.BJJ-2020-2058.R2](https://doi.org/10.1302/0301-620X.103B7.BJJ-2020-2058.R2)"
+        },
+        {
+          "id": "osg_tep_basques",
+          "text": "Basques BA, Bitterman A, Campbell KJ, Haughom BD, Lin J, Lee S. Influence of surgeon volume on inpatient complications, cost, and length of stay following total ankle arthroplasty. Foot Ankle Int. 2016;37(10):1046-1051. doi: [10.1177/1071100716664871](https://doi.org/10.1177/1071100716664871)"
+        }
+      ],
+      "_review": false,
+      "_entwurf": true,
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "hallux_valgus": {
       "infoKategorie": "krankheitsbild",
