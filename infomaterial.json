@@ -971,7 +971,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Modifizierte Kidner-Prozedur",
       "titel": "Modifizierte Kidner-Prozedur",
-      "untertitel": "",
+      "untertitel": "Entfernung des Os tibiale externum mit Refixation der Tibialis-posterior-Sehne",
       "betrifft_eingriffe": [],
       "slides": [
         "op_kidner_ueberblick",
@@ -982,29 +982,30 @@
         "op_kidner_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "kidner_q1",
-          "text": "Wariach S, et al. Assessing the Outcomes Associated with Accessory Navicular Bone Surgery — a Systematic Review. Curr Rev Musculoskelet Med. 2022;15(5):377–384."
+          "text": "Wariach S, Karim K, Sarraj M, Gaber K, Singh A, Kishta W. Assessing the outcomes associated with accessory navicular bone surgery - a systematic review. Curr Rev Musculoskelet Med. 2022;15(5):377-384. doi: [10.1007/s12178-022-09772-5](https://doi.org/10.1007/s12178-022-09772-5)"
         },
         {
           "id": "kidner_q2",
-          "text": "Kiter E, Günal I, Turgut A, Köse N. Evaluation of simple excision in symptomatic accessory navicular associated with flat feet. J Orthop Sci. 2000;5(4):333–335."
+          "text": "Kiter E, Günal I, Turgut A, Köse N. Evaluation of simple excision in the treatment of symptomatic accessory navicular associated with flat feet. J Orthop Sci. 2000;5(4):333-335. doi: [10.1007/s007760070039](https://doi.org/10.1007/s007760070039)"
         },
         {
           "id": "kidner_q3",
-          "text": "Gong H, et al. A modified method for reconstruction of posterior tibial tendon after resection of type II accessory navicular. J Orthop Surg Res. 2023;18(1):912."
+          "text": "Gong H, Xie Y, Song Z, Tang Z, Wen J, Xiao S. A modified method for reconstruction of posterior tibial tendon after resection of juvenile painful type II accessory navicular. J Orthop Surg Res. 2023;18(1):912. doi: [10.1186/s13018-023-04383-3](https://doi.org/10.1186/s13018-023-04383-3)"
         },
         {
           "id": "kidner_q4",
-          "text": "Knapik DM, et al. Factors predictive of operative intervention in symptomatic accessory navicular. J Child Orthop. 2019;13(1):107–113."
+          "text": "Knapik DM, Archibald HD, Xie KK, Liu RW. A retrospective study on factors predictive of operative intervention in symptomatic accessory navicular. J Child Orthop. 2019;13(1):107-113. doi: [10.1302/1863-2548.13.180168](https://doi.org/10.1302/1863-2548.13.180168)"
         },
         {
           "id": "kidner_q5",
-          "text": "Shi C, et al. Subtalar arthroereisis combined with medial soft tissue reconstruction in pediatric flexible flatfoot with accessory navicular. J Orthop Surg Res. 2023;18(1):55."
+          "text": "Shi C, Li M, Zeng Q, Wen X, Tian F, Li Y. Subtalar arthroereisis combined with medial soft tissue reconstruction in treating pediatric flexible flatfoot with accessory navicular. J Orthop Surg Res. 2023;18(1):55. doi: [10.1186/s13018-023-03542-w](https://doi.org/10.1186/s13018-023-03542-w)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "brostrom": {
       "infoKategorie": "op_technik",
@@ -1113,7 +1114,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Laterale anatomische Stabilisierung",
       "titel": "Laterale anatomische Stabilisierung",
-      "untertitel": "",
+      "untertitel": "Anatomische Rekonstruktion des Außenbandapparats mit körpereigenem Sehnentransplantat",
       "betrifft_eingriffe": [],
       "slides": [
         "op_lat_stabil_ueberblick",
@@ -1124,33 +1125,54 @@
         "op_lat_stabil_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "lat_stabil_q1",
-          "text": "Guelfi M, et al. Open and arthroscopic lateral ligament repair for chronic ankle instability: a systematic review. Foot Ankle Surg. 2018;24(1):11–18."
+          "text": "Guelfi M, Zamperetti M, Pantalone A, Usuelli FG, Salini V, Oliva XM. Open and arthroscopic lateral ligament repair for treatment of chronic ankle instability: a systematic review. Foot Ankle Surg. 2018;24(1):11-18. doi: [10.1016/j.fas.2016.05.315](https://doi.org/10.1016/j.fas.2016.05.315)"
         },
         {
           "id": "lat_stabil_q2",
-          "text": "Hulet C, et al. The use of allograft tendons in primary ACL reconstruction. Knee Surg Sports Traumatol Arthrosc. 2019;27:1754–1770."
+          "text": "Hulet C, Sonnery-Cottet B, Stevenson C, Samuelsson K, Laver L, Zdanowicz U, et al. The use of allograft tendons in primary ACL reconstruction. Knee Surg Sports Traumatol Arthrosc. 2019;27(6):1754-1770. doi: [10.1007/s00167-019-05440-3](https://doi.org/10.1007/s00167-019-05440-3)"
         },
         {
           "id": "lat_stabil_q3",
-          "text": "Krips R, et al. Long-term outcome of anatomical reconstruction versus tenodesis for chronic anterolateral instability of the ankle joint: a multicenter study. Foot Ankle Int. 2001;22(5):415–421."
+          "text": "Hamel J. Anatomischer Außenbandersatz mit Semitendinosussehnentransplantat am oberen Sprunggelenk. Oper Orthop Traumatol. 2019;31(3):211-220. doi: [10.1007/s00064-018-0584-2](https://doi.org/10.1007/s00064-018-0584-2)"
         },
         {
           "id": "lat_stabil_q4",
-          "text": "Hollis JM, et al. Biomechanical comparison of reconstruction techniques in simulated lateral ankle ligament injury. Am J Sports Med. 1995;23(6):678–682."
+          "text": "Krips R, van Dijk CN, Halasi T, Lehtonen H, Moyen B, Lanzetta A, Farkas T, Karlsson J. Anatomical reconstruction versus tenodesis for the treatment of chronic anterolateral instability of the ankle joint: a 2- to 10-year follow-up, multicenter study. Knee Surg Sports Traumatol Arthrosc. 2000;8(3):173-179. doi: [10.1007/s001670050210](https://doi.org/10.1007/s001670050210)"
         },
         {
           "id": "lat_stabil_q5",
-          "text": "Spennacchio P, et al. Anatomic reconstruction of lateral ankle ligaments: is there an optimal graft option? Knee Surg Sports Traumatol Arthrosc. 2022;30(12):4214–4224."
+          "text": "Krips R, van Dijk CN, Halasi PT, Lehtonen H, Corradini C, Moyen B, Karlsson J. Long-term outcome of anatomical reconstruction versus tenodesis for the treatment of chronic anterolateral instability of the ankle joint: a multicenter study. Foot Ankle Int. 2001;22(5):415-421. doi: [10.1177/107110070102200510](https://doi.org/10.1177/107110070102200510)"
         },
         {
           "id": "lat_stabil_q6",
-          "text": "Jung HG, et al. Anatomical reconstruction of lateral ankle ligaments using free tendon allografts and biotenodesis screws. Foot Ankle Int. 2015;36(9):1064–1071."
+          "text": "Hollis JM, Blasier RD, Flahiff CM, Hofmann OE. Biomechanical comparison of reconstruction techniques in simulated lateral ankle ligament injury. Am J Sports Med. 1995;23(6):678-682. doi: [10.1177/036354659502300607](https://doi.org/10.1177/036354659502300607)"
+        },
+        {
+          "id": "lat_stabil_q7",
+          "text": "Kitaoka HB, Lee MD, Morrey BF, Cass JR. Acute repair and delayed reconstruction for lateral ankle instability: twenty-year follow-up study. J Orthop Trauma. 1997;11(7):530-535. doi: [10.1097/00005131-199710000-00012](https://doi.org/10.1097/00005131-199710000-00012)"
+        },
+        {
+          "id": "lat_stabil_q8",
+          "text": "Hua Y, Chen S, Jin Y, Zhang B, Li Y, Li H. Anatomical reconstruction of the lateral ligaments of the ankle with semitendinosus allograft. Int Orthop. 2012;36(10):2027-2031. doi: [10.1007/s00264-012-1577-7](https://doi.org/10.1007/s00264-012-1577-7)"
+        },
+        {
+          "id": "lat_stabil_q9",
+          "text": "Coughlin MJ, Schenck RC Jr, Grebing BR, Treme G. Comprehensive reconstruction of the lateral ankle for chronic instability using a free gracilis graft. Foot Ankle Int. 2004;25(4):231-241. doi: [10.1177/107110070402500407](https://doi.org/10.1177/107110070402500407)"
+        },
+        {
+          "id": "lat_stabil_q10",
+          "text": "Spennacchio P, Seil R, Mouton C, Scheidt S, Cucchi D. Anatomic reconstruction of lateral ankle ligaments: is there an optimal graft option? Knee Surg Sports Traumatol Arthrosc. 2022;30(12):4214-4224. doi: [10.1007/s00167-022-07071-7](https://doi.org/10.1007/s00167-022-07071-7)"
+        },
+        {
+          "id": "lat_stabil_q11",
+          "text": "Jung HG, Shin MH, Park JT, Eom JS, Lee DO, Lee SH. Anatomical reconstruction of lateral ankle ligaments using free tendon allografts and biotenodesis screws. Foot Ankle Int. 2015;36(9):1064-1071. doi: [10.1177/1071100715584848](https://doi.org/10.1177/1071100715584848)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "peroneal_instab": {
       "infoKategorie": "op_technik",
@@ -1467,7 +1489,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Medialisierende Calcaneus-Verschiebe-Osteotomie",
       "titel": "Medialisierende Calcaneus-Verschiebe-Osteotomie",
-      "untertitel": "",
+      "untertitel": "Gelenkerhaltende Verschiebung des Fersenbeinhöckers nach innen zur Korrektur des Rückfuß-Valgus",
       "betrifft_eingriffe": [],
       "slides": [
         "op_calc_medial_ueberblick",
@@ -1478,41 +1500,74 @@
         "op_calc_medial_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true,
+      "_review": false,
       "quellen": [
         {
           "id": "calc_medial_q1",
-          "text": "Ellis SJ, et al. Titrating the Amount of Bony Correction in Progressive Collapsing Foot Deformity. Foot Ankle Int. 2020;41(10):1292–1295."
+          "text": "Schon LC, de Cesar Netto C, Day J, Deland JT, Hintermann B, Johnson JE, et al. Consensus for the indication of a medializing displacement calcaneal osteotomy in the treatment of progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1282-1285. doi: [10.1177/1071100720950747](https://doi.org/10.1177/1071100720950747)"
         },
         {
           "id": "calc_medial_q2",
-          "text": "Chan JY, et al. The contribution of medializing calcaneal osteotomy on hindfoot alignment in stage II adult acquired flatfoot. Foot Ankle Int. 2013;34(2):159–166."
+          "text": "Ellis SJ, Johnson JE, Day J, de Cesar Netto C, Deland JT, Hintermann B, et al. Titrating the amount of bony correction in progressive collapsing foot deformity. Foot Ankle Int. 2020;41(10):1292-1295. doi: [10.1177/1071100720950741](https://doi.org/10.1177/1071100720950741)"
         },
         {
           "id": "calc_medial_q3",
-          "text": "Talusan PG, et al. Safe Zone for Neural Structures in Medial Displacement Calcaneal Osteotomy. Foot Ankle Int. 2015;36(12):1493–1498."
+          "text": "Chan JY, Williams BR, Nair P, Young E, Sofka C, Deland JT, et al. The contribution of medializing calcaneal osteotomy on hindfoot alignment in the reconstruction of the stage II adult acquired flatfoot deformity. Foot Ankle Int. 2013;34(2):159-166. doi: [10.1177/1071100712460225](https://doi.org/10.1177/1071100712460225)"
         },
         {
           "id": "calc_medial_q4",
-          "text": "Smyth NA, et al. Surgical approaches to the calcaneus and the sural nerve: there is no safe zone. Foot Ankle Surg. 2018;24(6):517–520."
+          "text": "Talusan PG, Cata E, Tan EW, Parks BG, Guyton GP. Safe zone for neural structures in medial displacement calcaneal osteotomy: a cadaveric and radiographic investigation. Foot Ankle Int. 2015;36(12):1493-1498. doi: [10.1177/1071100715595696](https://doi.org/10.1177/1071100715595696)"
         },
         {
           "id": "calc_medial_q5",
-          "text": "Sayres SC, et al. Comparison of rates of union and hardware removal between large and small cannulated screws for calcaneal osteotomy. Foot Ankle Int. 2015;36(1):32–36."
+          "text": "Smyth NA, Zachwieja EC, Buller LT, Miranda AD, Steinlauf SD. Surgical approaches to the calcaneus and the sural nerve: there is no safe zone. Foot Ankle Surg. 2018;24(6):517-520. doi: [10.1016/j.fas.2017.06.005](https://doi.org/10.1016/j.fas.2017.06.005)"
         },
         {
           "id": "calc_medial_q6",
-          "text": "Vaggi S, et al. Minimally invasive surgery in MDCO for acquired flatfoot deformity: a systematic review. Arch Orthop Trauma Surg. 2024;144(3):1139–1147."
+          "text": "Sayres SC, Gu Y, Kiernan S, DeSandis BA, Elliott AJ, O'Malley MJ. Comparison of rates of union and hardware removal between large and small cannulated screws for calcaneal osteotomy. Foot Ankle Int. 2015;36(1):32-36. doi: [10.1177/1071100714549191](https://doi.org/10.1177/1071100714549191)"
         },
         {
           "id": "calc_medial_q7",
-          "text": "Mueller G, et al. Impact of the MDCO on foot biomechanics: a systematic literature review. Arch Orthop Trauma Surg. 2024;144(5):1955–1967."
+          "text": "Coetzee JC, Castro MD. The indications and biomechanical rationale for various hindfoot procedures in the treatment of posterior tibialis tendon dysfunction. Foot Ankle Clin. 2003;8(3):453-459. doi: [10.1016/s1083-7515(03)00038-x](https://doi.org/10.1016/s1083-7515(03)00038-x)"
         },
         {
           "id": "calc_medial_q8",
-          "text": "Kim J, et al. Incidence of lateral prominence pain following open MDCO and the efficacy of crushplasty. Foot Ankle Int. 2022;43(10):1300–1307."
+          "text": "Rodriguez RP. Medial displacement calcaneal tuberosity osteotomy in the treatment of posterior tibial insufficiency. Foot Ankle Clin. 2001;6(3):545-567. doi: [10.1016/s1083-7515(03)00113-x](https://doi.org/10.1016/s1083-7515(03)00113-x)"
+        },
+        {
+          "id": "calc_medial_q9",
+          "text": "Vaggi S, Vitali F, Zanirato A, Quarto E, Colò G, Formica M. Minimally invasive surgery in medial displacement calcaneal osteotomy for acquired flatfoot deformity: a systematic review of the literature. Arch Orthop Trauma Surg. 2024;144(3):1139-1147. doi: [10.1007/s00402-023-05188-z](https://doi.org/10.1007/s00402-023-05188-z)"
+        },
+        {
+          "id": "calc_medial_q10",
+          "text": "Mueller G, Frosch KH, Barg A, Schlickewei C, Weel H, Krähenbühl N, et al. Impact of the medial displacement calcaneal osteotomy on foot biomechanics: a systematic literature review. Arch Orthop Trauma Surg. 2024;144(5):1955-1967. doi: [10.1007/s00402-024-05267-9](https://doi.org/10.1007/s00402-024-05267-9)"
+        },
+        {
+          "id": "calc_medial_q11",
+          "text": "Kendal AR, Khalid A, Ball T, Rogers M, Cooke P, Sharp R. Complications of minimally invasive calcaneal osteotomy versus open osteotomy. Foot Ankle Int. 2015;36(6):685-690. doi: [10.1177/1071100715571438](https://doi.org/10.1177/1071100715571438)"
+        },
+        {
+          "id": "calc_medial_q12",
+          "text": "Kim J, Kim CH, Day J, Seilern Und Aspang J, Rajan L, Kumar P. Incidence of lateral prominence pain following open medial displacement calcaneal osteotomy and the efficacy of crushplasty as a preventive technique. Foot Ankle Int. 2022;43(10):1300-1307. doi: [10.1177/10711007221108098](https://doi.org/10.1177/10711007221108098)"
+        },
+        {
+          "id": "calc_medial_q13",
+          "text": "Brilhault J. Calcaneal osteotomy for hindfoot deformity. Orthop Traumatol Surg Res. 2022;108(1S):103121. doi: [10.1016/j.otsr.2021.103121](https://doi.org/10.1016/j.otsr.2021.103121)"
+        },
+        {
+          "id": "calc_medial_q14",
+          "text": "Abbasian A, Zaidi R, Guha A, Goldberg A, Cullen N, Singh D. Comparison of three different fixation methods of calcaneal osteotomies. Foot Ankle Int. 2013;34(3):420-425. doi: [10.1177/1071100712473742](https://doi.org/10.1177/1071100712473742)"
+        },
+        {
+          "id": "calc_medial_q15",
+          "text": "Schlickewei C, Barg A. Calcaneal osteotomies in the treatment of progressive collapsing foot deformity: what are the restrictions for the holy grail? Foot Ankle Clin. 2021;26(3):473-505. doi: [10.1016/j.fcl.2021.05.003](https://doi.org/10.1016/j.fcl.2021.05.003)"
+        },
+        {
+          "id": "calc_medial_q16",
+          "text": "Waizy H, Jowett C, Andric V. Minimally invasive versus open calcaneal osteotomies - comparing the intraoperative parameters. Foot (Edinb). 2018;37:113-118. doi: [10.1016/j.foot.2018.06.005](https://doi.org/10.1016/j.foot.2018.06.005)"
         }
-      ]
+      ],
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "calcaneoplastie": {
       "infoKategorie": "op_technik",
