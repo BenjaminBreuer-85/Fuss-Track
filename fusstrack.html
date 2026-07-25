@@ -1635,6 +1635,17 @@ function LandingView({ initialKbKey, initialMassnahme }) {
               {menuChevron}
             </div>
           )}
+          {/* 4. Unterstützen (Ko-fi, extern) */}
+          <div onClick={function() { window.open("https://ko-fi.com/fusstrack", "_blank", "noopener"); }}
+               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>♡ Unterstützen</div>
+              <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
+                Die App bleibt für alle kostenlos und werbefrei — wer mag, kann sie mit einem kleinen freiwilligen Beitrag unterstützen.
+              </div>
+            </div>
+            {menuChevron}
+          </div>
         </div>
         <div style={{ marginTop: 18, padding: 12, background: "var(--c-bg)", borderRadius: 6, fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
           <strong>Hinweis:</strong> Wenn Sie von Ihrem Behandler einen QR-Code erhalten haben, scannen Sie diesen direkt — Sie landen dann sofort am richtigen Punkt.
@@ -1866,6 +1877,9 @@ function LandingView({ initialKbKey, initialMassnahme }) {
               Weiter →
             </button>
           </div>
+
+          {/* Unterstützen-Karte am Ende des Maßnahmen-Artikels (nur letzte Seite) */}
+          {mIdx === mGesamt - 1 && <SupportCard />}
         </div>
       );
     }
@@ -2444,6 +2458,26 @@ function AufklaerungsView({ opKey, kbOrigin }) {
           </div>
         </div>
       )}
+
+      {/* Unterstützen-Karte am Ende jedes Artikels (nur letzte Slide) */}
+      {step === total - 1 && <SupportCard />}
+    </div>
+  );
+}
+
+/* Kontext-Karte „Freiwillig unterstützen" — BRAND.md: Petrol-Tint, kein Bernstein, keine Animation */
+function SupportCard() {
+  return (
+    <div style={{ marginTop: 16, background: "#E6F0F1", borderRadius: 12, padding: "18px 20px" }}>
+      <div style={{ fontSize: 15, fontWeight: 700, color: "#10535B", marginBottom: 6 }}>Hat Ihnen Fuss-Track geholfen?</div>
+      <p style={{ margin: "0 0 12px", fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>
+        Die App bleibt für alle kostenlos und werbefrei — wer mag, kann sie mit einem kleinen freiwilligen Beitrag unterstützen.
+      </p>
+      <a href="https://ko-fi.com/fusstrack" target="_blank" rel="noopener"
+         style={{ display: "inline-block", background: "#10535B", color: "#fff", textDecoration: "none",
+                  padding: "9px 16px", borderRadius: 8, fontSize: 13, fontWeight: 600 }}>
+        Freiwillig unterstützen
+      </a>
     </div>
   );
 }
@@ -3444,6 +3478,9 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
           onNext={() => setSelectedPhaseIdx(selectedPhaseIdx + 1)}
         />
       )}
+
+      {/* Unterstützen-Karte am Ende der Phasenübersicht */}
+      <SupportCard />
 
       {/* Reset-Button */}
       <div style={{ textAlign: "center", marginTop: 24 }}>
