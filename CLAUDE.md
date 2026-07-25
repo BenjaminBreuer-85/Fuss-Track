@@ -17,6 +17,12 @@ erarbeitet, geprüft und freigegeben**. In diesem Repository werden sie nur
 - Rein technische Korrekturen (JSON-Syntax, kaputte Referenzen, Encoding)
   sind erlaubt, dürfen aber den Wortlaut nicht verändern.
 
+## Markenrichtlinie (BRAND.md)
+
+Verbindlich: Alle Änderungen an Oberfläche, Texten oder Grafiken müssen
+[BRAND.md](BRAND.md) entsprechen. Bei Konflikten BRAND.md folgen und mich
+(den Autor) auf den Konflikt hinweisen.
+
 ## Aufbau der App
 
 `fusstrack.html` ist eine React-18-Single-File-App (JSX via Babel im Browser,

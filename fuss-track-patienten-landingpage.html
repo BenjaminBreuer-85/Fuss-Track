@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuss-Track — Fuß und Sprunggelenk verstehen</title>
+<meta name="description" content="Fuss-Track erklärt Erkrankungen, Behandlungen und Operationen an Fuß und Sprunggelenk — verständlich, werbefrei und von einem Facharzt geschrieben. Ohne Eingabe persönlicher Daten.">
+<meta property="og:title" content="Fuss-Track — Ihren Fuß verstehen.">
+<meta property="og:description" content="Erkrankungen, Behandlungen und Operationen an Fuß und Sprunggelenk — verständlich erklärt, werbefrei, von einem Facharzt. Mit OP-Begleiter für die Zeit vor und nach der Operation.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310535B'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='bold' fill='%23FAFAF7' text-anchor='middle'%3EFT%3C/text%3E%3C/svg%3E">
+<!-- Schriften: bewusst keine externen Font-Server (DSGVO). Beim Livegang werden die Hausschriften als lokale Dateien mitgeliefert. -->
+<style>
+  :root{
+    --op:#10535B;
+    --op-dark:#0B3E45;
+    --op-tint:#E6F0F1;
+    --paper:#FAFAF7;
+    --ink:#1D2421;
+    --muted:#5C6660;
+    --line:#D6E2E3;
+    --amber:#8A5A00;
+    --amber-bg:#FBF3DF;
+    --radius:12px;
+    --maxw:1000px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,'Segoe UI',system-ui,sans-serif;
+    background:var(--paper);color:var(--ink);
+    line-height:1.65;font-size:17px;
+  }
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.18;font-weight:700}
+  a{color:var(--op)}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .wordmark{font-family:Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+  .wordmark span{color:var(--op)}
+  .btn{display:inline-block;background:var(--op);color:#fff;text-decoration:none;padding:.7em 1.5em;border-radius:9px;font-weight:600;font-size:.95rem;border:1.5px solid var(--op);transition:background .15s}
+  .btn:hover{background:var(--op-dark)}
+  .btn.big{font-size:1.05rem;padding:.85em 1.9em}
+
+  .hero{padding:64px 0 56px;border-bottom:1px solid var(--line)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+  .eyebrow{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:var(--op);font-weight:600;margin-bottom:16px}
+  .hero h1{font-size:clamp(2rem,4.4vw,2.9rem);margin-bottom:18px}
+  .hero .sub{font-size:1.12rem;color:var(--muted);margin-bottom:26px;max-width:32em}
+  .cta-note{margin-top:12px;font-size:.85rem;color:var(--muted)}
+
+  /* Themen-Karte als Hero-Illustration */
+  .topics{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 18px 40px -24px rgba(16,83,91,.35);overflow:hidden}
+  .topics-head{padding:12px 18px;background:var(--op);color:#fff;font-size:.85rem;font-weight:600}
+  .topics ul{list-style:none;padding:8px 0}
+  .topics li{display:flex;align-items:center;gap:12px;padding:11px 18px;border-top:1px solid var(--op-tint);font-size:.95rem}
+  .topics li:first-child{border-top:none}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--op);flex:none}
+  .topics li small{color:var(--muted);margin-left:auto;font-size:.78rem}
+
+  .features{padding:64px 0}
+  .features h2{font-size:1.9rem;margin-bottom:8px}
+  .features .lead{color:var(--muted);margin-bottom:40px;max-width:38em}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .card h3{font-size:1.15rem;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:.97rem}
+  .card .tag{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--op);background:var(--op-tint);padding:.25em .7em;border-radius:4px;margin-bottom:12px;font-weight:600}
+
+  .trust{background:var(--op);color:#fff;padding:56px 0}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+  .trust h3{font-size:1.15rem;margin-bottom:8px;color:#fff}
+  .trust p{color:#D7E3DC;font-size:.94rem}
+
+  .author{padding:64px 0;border-bottom:1px solid var(--line)}
+  .author .wrap{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:center}
+  .portrait{aspect-ratio:3/3.4;border-radius:var(--radius);border:1px solid var(--line);background:var(--op-tint);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center;padding:12px}
+  .author h2{font-size:1.6rem;margin-bottom:10px}
+  .author p{color:var(--muted);max-width:44em}
+  .author p + p{margin-top:12px}
+
+  .pricing{padding:64px 0;background:var(--op-tint)}
+  .price-card{max-width:440px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;text-align:center;box-shadow:0 18px 40px -28px rgba(16,83,91,.4)}
+  .price-card h2{font-size:1.4rem;margin-bottom:4px}
+  .price{font-family:Georgia,serif;font-size:2.5rem;color:var(--op);margin:12px 0 2px}
+  .price small{font-size:1rem;color:var(--muted);font-family:-apple-system,'Segoe UI',system-ui,sans-serif}
+  .price-note{font-size:.82rem;color:var(--muted);margin-bottom:16px}
+  .perks{list-style:none;text-align:left;margin:0 0 24px}
+  .perks li{padding:9px 0 9px 26px;position:relative;font-size:.95rem;border-bottom:1px solid var(--op-tint)}
+  .perks li::before{content:"✓";position:absolute;left:0;color:var(--op);font-weight:700}
+
+  .faq{padding:64px 0;border-bottom:1px solid var(--line)}
+  .faq h2{font-size:1.9rem;margin-bottom:28px}
+  .faq details{border-top:1px solid var(--line)}
+  .faq details:last-of-type{border-bottom:1px solid var(--line)}
+  .faq summary{cursor:pointer;padding:17px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  .faq summary::after{content:"+";color:var(--op);font-size:1.3rem;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{padding:0 0 17px;color:var(--muted);max-width:46em}
+
+  .final{padding:72px 0;text-align:center}
+  .final h2{font-size:1.9rem;margin-bottom:10px}
+  .final p{color:var(--muted);margin-bottom:26px}
+
+  footer{border-top:1px solid var(--line);padding:26px 0;background:#fff}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--muted)}
+  footer nav{display:flex;flex-wrap:wrap;gap:18px}
+  footer a{color:var(--muted);text-decoration:none}
+  footer a:hover{color:var(--op)}
+
+  @media (max-width:840px){
+    .hero .wrap,.author .wrap{grid-template-columns:1fr;gap:32px}
+    .grid{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr;gap:28px}
+    .hero{padding:44px 0}
+    .portrait{max-width:220px}
+    .topbar .btn{font-size:.82rem;padding:.55em .9em}
+    .wordmark{font-size:1.02rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="wordmark" href="#top">Fuss-<span>Track</span></a>
+    <a class="btn" href="#zugang">Zur App</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Für Patientinnen und Patienten</div>
+        <h1>Ihren Fuß verstehen.</h1>
+        <p class="sub">Fuss-Track erklärt Erkrankungen, Behandlungen und Operationen an Fuß und Sprunggelenk — in verständlicher Sprache, werbefrei und von einem Facharzt geschrieben. Damit Sie gut informiert in jedes Gespräch mit Ihrer Ärztin oder Ihrem Arzt gehen.</p>
+        <a class="btn big" href="#zugang">Zur App</a>
+        <p class="cta-note">Ohne Eingabe persönlicher Daten · Läuft im Browser auf jedem Gerät</p>
+      </div>
+
+      <div class="topics" aria-label="Beispiele für Inhalte der App">
+        <div class="topics-head">Themen in Fuss-Track — eine Auswahl</div>
+        <ul>
+          <li><span class="dot"></span> Hallux valgus („Ballenzeh")<small>Krankheitsbild</small></li>
+          <li><span class="dot"></span> Arthrose des Großzehengrundgelenks<small>Krankheitsbild</small></li>
+          <li><span class="dot"></span> Versteifung — wann und warum?<small>OP-Technik</small></li>
+          <li><span class="dot"></span> Einlagen, Schuhe &amp; Übungen<small>Konservativ</small></li>
+          <li><span class="dot"></span> Nach der OP: Was kommt wann?<small>OP-Begleiter</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="wrap">
+      <h2>Was Fuss-Track für Sie bereithält</h2>
+      <p class="lead">Alle Inhalte sind von einem Fußchirurgen verfasst und beruhen auf wissenschaftlichen Quellen — geschrieben für Menschen, nicht für Fachleute.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="tag">Verstehen</span>
+          <h3>Krankheitsbilder verständlich erklärt</h3>
+          <p>Was passiert bei einem Hallux valgus, einer Arthrose oder einem Fersensporn? Ursachen, Beschwerden und Verlauf — ohne Fachchinesisch.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Behandeln</span>
+          <h3>Von der Einlage bis zur Operation</h3>
+          <p>Welche konservativen Maßnahmen gibt es, wann kommt eine Operation infrage — und wie läuft sie ab? Fuss-Track erklärt die gängigen Verfahren Schritt für Schritt.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Begleiten</span>
+          <h3>Der OP-Begleiter</h3>
+          <p>Vor und nach einer Operation begleitet Sie die App durch die einzelnen Phasen: Was Sie erwartet, worauf Sie achten sollten und wann welcher Schritt der Erholung ansteht.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Finden</span>
+          <h3>Der Beschwerde-Wegweiser</h3>
+          <p>Ein paar einfache Fragen führen Sie zu den Informationen, die zu Ihren Beschwerden passen. Der Wegweiser hilft beim Finden der richtigen Inhalte — eine Untersuchung bei Ihrer Ärztin oder Ihrem Arzt ersetzt er nicht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <div>
+        <h3>Ersetzt keinen Arztbesuch.</h3>
+        <p>Fuss-Track informiert und begleitet — Diagnose und Behandlung gehören in ärztliche Hände. Gut informierte Patientinnen und Patienten führen bessere Gespräche: Genau dafür ist diese App gemacht.</p>
+      </div>
+      <div>
+        <h3>Keine persönlichen Daten.</h3>
+        <p>Sie nutzen Fuss-Track ohne Konto, ohne Namen, ohne Gesundheitsdaten. Nichts wird über Sie gespeichert.</p>
+      </div>
+      <div>
+        <h3>Werbefrei und unabhängig.</h3>
+        <p>Keine Anzeigen, kein Sponsoring, keine Produktempfehlungen von Herstellern. Die Inhalte folgen allein dem fachlichen Stand.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="author">
+    <div class="wrap">
+      <div class="portrait">Porträtfoto<br>Dr. med. Benjamin Breuer<br>(wird ergänzt)</div>
+      <div>
+        <h2>Wer hinter Fuss-Track steht</h2>
+        <p>Fuss-Track wird geschrieben und gepflegt von Dr. med. Benjamin Breuer, Facharzt für Orthopädie und Unfallchirurgie. Er leitet das Department für Spezielle Fuß- und Sprunggelenkchirurgie am Florence-Nightingale-Krankenhaus in Düsseldorf-Kaiserswerth — einem zertifizierten Zentrum der Maximalversorgung für Fuß- und Sprunggelenkchirurgie.</p>
+        <p>Die Erklärungen in der App entsprechen dem, was er Patientinnen und Patienten täglich in der Sprechstunde erläutert — nur in Ruhe nachlesbar, so oft Sie möchten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="zugang">
+    <div class="wrap">
+      <div class="price-card">
+        <h2>Fuss-Track</h2>
+        <div class="price">Kostenlos</div>
+        <p class="price-note">für alle — werbefrei und ohne Konto</p>
+        <ul class="perks">
+          <li>Alle Krankheitsbilder, Behandlungen und OP-Erklärungen</li>
+          <li>OP-Begleiter für die Zeit vor und nach der Operation</li>
+          <li>Werbefrei, ohne Konto, ohne Datensammeln</li>
+          <li>Läuft im Browser — Handy, Tablet oder Computer</li>
+        </ul>
+        <a class="btn big" href="#">App öffnen</a>
+        <p class="price-note" style="margin-top:22px;padding-top:18px;border-top:1px solid var(--op-tint)"><strong>Fuss-Track unterstützen:</strong> Wenn Ihnen die App geholfen hat, freuen wir uns über einen kleinen freiwilligen Beitrag — er hält Fuss-Track werbefrei und unabhängig.</p>
+        <a class="btn" style="background:transparent;color:var(--op)" href="#">Freiwillig unterstützen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <h2>Häufige Fragen</h2>
+      <details>
+        <summary>Ersetzt Fuss-Track den Besuch bei einer Ärztin oder einem Arzt?</summary>
+        <p>Nein. Fuss-Track erklärt und informiert — es stellt keine Diagnosen und empfiehlt keine Behandlung für Ihren Einzelfall. Bei Beschwerden gehört Ihr Fuß in ärztliche Hände. Die App hilft Ihnen, das Gespräch dort besser zu verstehen und die richtigen Fragen zu stellen.</p>
+      </details>
+      <details>
+        <summary>Muss ich persönliche Daten eingeben?</summary>
+        <p>Nein. Fuss-Track funktioniert ohne Namen, ohne Gesundheitsdaten und ohne Bewegungsprofil. Es wird nichts über Sie gespeichert.</p>
+      </details>
+      <details>
+        <summary>Woher stammen die Inhalte?</summary>
+        <p>Alle Texte schreibt ein Facharzt für Orthopädie und Unfallchirurgie mit Spezialisierung auf Fuß- und Sprunggelenkchirurgie. Wo sinnvoll, sind wissenschaftliche Quellen hinterlegt.</p>
+      </details>
+      <details>
+        <summary>Für wen ist die App gedacht?</summary>
+        <p>Für alle, die Beschwerden an Fuß oder Sprunggelenk haben, vor einer Behandlungsentscheidung stehen oder sich auf eine Operation vorbereiten — und für Angehörige, die verstehen möchten, was ansteht.</p>
+      </details>
+      <details>
+        <summary>Was kostet Fuss-Track?</summary>
+        <p>Nichts — die App ist kostenlos, werbefrei und ohne Konto nutzbar. Wer möchte, kann Fuss-Track mit einem kleinen freiwilligen Beitrag unterstützen; er deckt die Betriebskosten und hält die App unabhängig von Werbung und Sponsoring. Eine Gegenleistung ist damit nicht verbunden, und es entsteht kein Zugang zu zusätzlichen Inhalten — alle sehen alles.</p>
+      </details>
+      <details>
+        <summary>Auf welchen Geräten läuft Fuss-Track?</summary>
+        <p>Auf jedem Gerät mit Internet-Browser — Smartphone, Tablet oder Computer. Es muss nichts installiert werden; auf Wunsch lässt sich die App wie eine normale App auf den Startbildschirm legen.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Verstehen, was mit Ihrem Fuß los ist.</h2>
+      <p>Verständlich erklärt, werbefrei, von einem Facharzt — wann immer Sie es nachlesen möchten.</p>
+      <a class="btn big" href="#zugang">Zur App</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Fuss-Track · Für Ärztinnen und Ärzte: <a href="#">Fuss-Track Clinic</a></span>
+    <nav>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+      <a href="#">Widerruf &amp; Erstattung</a>
+      <a href="mailto:kontakt@fuss-track.de">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
