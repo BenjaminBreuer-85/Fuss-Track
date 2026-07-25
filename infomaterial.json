@@ -1870,7 +1870,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Supramalleoläre Osteotomie (Valgus)",
       "titel": "Supramalleoläre Osteotomie (Valgus)",
-      "untertitel": "",
+      "untertitel": "Knöcherne Achskorrektur oberhalb des Sprunggelenks zur Lastverschiebung bei Valgus-Fehlstellung und asymmetrischer Arthrose",
       "betrifft_eingriffe": [],
       "slides": [
         "op_smot_valgus_ueberblick",
@@ -1886,27 +1886,27 @@
       "quellen": [
         {
           "id": "smot_valgus_q1",
-          "text": "Valderrabano V, et al. Joint-preserving surgery of valgus ankle osteoarthritis. Foot Ankle Clin. 2013;18(3):481–502."
+          "text": "Valderrabano V, Paul J, Horisberger M, Pagenstert GI, Henninger HB, Barg A. Joint-preserving surgery of valgus ankle osteoarthritis. Foot Ankle Clin. 2013;18(3):481-502. doi:10.1016/j.fcl.2013.06.008"
         },
         {
           "id": "smot_valgus_q2",
-          "text": "Krähenbühl N, et al. Mid- to long-term results of supramalleolar osteotomy. Foot Ankle Int. 2017;38(2):124–132."
+          "text": "Krähenbühl N, Zwicky L, Bolliger L, Schädelin S, Hintermann B, Knupp M. Mid- to long-term results of supramalleolar osteotomy. Foot Ankle Int. 2017;38(2):124-132. doi:10.1177/1071100716673416"
         },
         {
           "id": "smot_valgus_q3",
-          "text": "Nüesch C, et al. Mid- to long-term clinical outcome and gait biomechanics after realignment surgery in asymmetric ankle osteoarthritis. Foot Ankle Int. 2015;36(8):908–918."
+          "text": "Nüesch C, Huber C, Paul J, Henninger HB, Pagenstert G, Valderrabano V, Barg A. Mid- to long-term clinical outcome and gait biomechanics after realignment surgery in asymmetric ankle osteoarthritis. Foot Ankle Int. 2015;36(8):908-918. doi:10.1177/1071100715577371"
         },
         {
           "id": "smot_valgus_q4",
-          "text": "Barg A, Saltzman CL. Joint-preserving procedures in patients with varus deformity: role of supramalleolar osteotomies. Foot Ankle Clin. 2019;24(2):239–264."
+          "text": "Barg A, Saltzman CL. Joint-preserving procedures in patients with varus deformity: role of supramalleolar osteotomies. Foot Ankle Clin. 2019;24(2):239-264. doi:10.1016/j.fcl.2019.02.004"
         },
         {
           "id": "smot_valgus_q5",
-          "text": "Kim YS, Kim YB, Koh YG. Prognostic factors affecting correction angle changes after supramalleolar osteotomy for varus ankle osteoarthritis. J Foot Ankle Surg. 2019;58(3):417–422."
+          "text": "Kim YS, Kim YB, Koh YG. Prognostic factors affecting correction angle changes after supramalleolar osteotomy using an opening wedge plate for varus ankle osteoarthritis. J Foot Ankle Surg. 2019;58(3):417-422. doi:10.1053/j.jfas.2018.09.003"
         },
         {
           "id": "smot_valgus_q6",
-          "text": "Knupp M, et al. Effect of supramalleolar varus and valgus deformities on the tibiotalar joint: a cadaveric study. Foot Ankle Int. 2011;32(6):609–615."
+          "text": "Knupp M, Stufkens SA, van Bergen CJ, Blankevoort L, Bolliger L, van Dijk CN, Hintermann B. Effect of supramalleolar varus and valgus deformities on the tibiotalar joint: a cadaveric study. Foot Ankle Int. 2011;32(6):609-615. doi:10.3113/FAI.2011.0609"
         }
       ]
     },
@@ -1914,7 +1914,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Supramalleoläre Osteotomie (Varus)",
       "titel": "Supramalleoläre Osteotomie (Varus)",
-      "untertitel": "",
+      "untertitel": "Knöcherne Achskorrektur oberhalb des Sprunggelenks zur Lastverschiebung bei Varus-Fehlstellung und asymmetrischer Arthrose",
       "betrifft_eingriffe": [],
       "slides": [
         "op_smot_varus_ueberblick",
@@ -1930,43 +1930,47 @@
       "quellen": [
         {
           "id": "smot_varus_q1",
-          "text": "Haraguchi N, et al. Weight-bearing-line analysis in supramalleolar osteotomy for varus-type ankle OA. J Bone Joint Surg Am. 2015;97(4):333–339."
+          "text": "Haraguchi N, Ota K, Tsunoda N, Seike K, Kanetake Y, Tsutaya A. Weight-bearing-line analysis in supramalleolar osteotomy for varus-type osteoarthritis of the ankle. J Bone Joint Surg Am. 2015;97(4):333-339. doi:10.2106/JBJS.M.01327"
         },
         {
           "id": "smot_varus_q2",
-          "text": "Myerson MS, Zide JR. Management of varus ankle osteoarthritis with joint-preserving osteotomy. Foot Ankle Clin. 2013;18(3):471–480."
+          "text": "Myerson MS, Zide JR. Management of varus ankle osteoarthritis with joint-preserving osteotomy. Foot Ankle Clin. 2013;18(3):471-480. doi:10.1016/j.fcl.2013.06.006"
         },
         {
           "id": "smot_varus_q3",
-          "text": "Zhao HM, et al. Supramalleolar osteotomy with medial distraction arthroplasty for ankle OA with talar tilt. J Orthop Surg Res. 2019;14(1):120."
+          "text": "Zhao HM, Wen XD, Zhang Y, Liang JQ, Liu PL, Li Y, Lu J, Liang XJ. Supramalleolar osteotomy with medial distraction arthroplasty for ankle osteoarthritis with talar tilt. J Orthop Surg Res. 2019;14(1):120. doi:10.1186/s13018-019-1168-z"
         },
         {
           "id": "smot_varus_q4",
-          "text": "Knupp M, et al. Effect of supramalleolar varus and valgus deformities on the tibiotalar joint: a cadaveric study. Foot Ankle Int. 2011;32(6):609–615."
+          "text": "Knupp M, Stufkens SA, van Bergen CJ, Blankevoort L, Bolliger L, van Dijk CN, Hintermann B. Effect of supramalleolar varus and valgus deformities on the tibiotalar joint: a cadaveric study. Foot Ankle Int. 2011;32(6):609-615. doi:10.3113/FAI.2011.0609"
         },
         {
           "id": "smot_varus_q5",
-          "text": "Liang J, et al. Effectiveness and risk factors of supramalleolar osteotomy in varus-type ankle arthritis. 2023;37(7):788–795."
+          "text": "Liang J, Yang X, Yue Y, Feng H, Liu L, Zhang Y, Liu P, Zhao H. Effectiveness and risk factors of supramalleolar osteotomy in treatment of varus-type ankle arthritis. Zhongguo Xiu Fu Chong Jian Wai Ke Za Zhi. 2023;37(7):788-795. doi:10.7507/1002-1892.202303008"
         },
         {
           "id": "smot_varus_q6",
-          "text": "Mulhern JL, et al. Supramalleolar osteotomy: indications and surgical techniques. Clin Podiatr Med Surg. 2015;32(3):445–461."
+          "text": "Mulhern JL, Protzman NM, Brigido SA, Deol PP. Supramalleolar osteotomy: indications and surgical techniques. Clin Podiatr Med Surg. 2015;32(3):445-461. doi:10.1016/j.cpm.2015.03.006"
         },
         {
           "id": "smot_varus_q7",
-          "text": "Tanaka Y. The concept of ankle joint preserving surgery. Foot Ankle Clin. 2012;17:545–553."
+          "text": "Tanaka Y. The concept of ankle joint preserving surgery: why does supramalleolar osteotomy work and how to decide when to do an osteotomy or joint replacement. Foot Ankle Clin. 2012;17(4):545-553. doi:10.1016/j.fcl.2012.08.003"
         },
         {
           "id": "smot_varus_q8",
-          "text": "Krähenbühl N, et al. Extraarticular supramalleolar osteotomy in asymmetric varus ankle OA. Foot Ankle Int. 2019;40(8):936–947."
+          "text": "Krähenbühl N, Akkaya M, Deforth M, Zwicky L, Barg A, Hintermann B. Extraarticular supramalleolar osteotomy in asymmetric varus ankle osteoarthritis. Foot Ankle Int. 2019;40(8):936-947. doi:10.1177/1071100719845928"
         },
         {
           "id": "smot_varus_q9",
-          "text": "Barg A, Saltzman CL. Joint-preserving procedures in patients with varus deformity. Foot Ankle Clin. 2019;24(2):239–264."
+          "text": "Barg A, Saltzman CL. Joint-preserving procedures in patients with varus deformity: role of supramalleolar osteotomies. Foot Ankle Clin. 2019;24(2):239-264. doi:10.1016/j.fcl.2019.02.004"
         },
         {
           "id": "smot_varus_q10",
-          "text": "Liang J, et al. (Wundheilungs-/Infektrate). 2023."
+          "text": "Kim YS, Kim YB, Koh YG. Prognostic factors affecting correction angle changes after supramalleolar osteotomy using an opening wedge plate for varus ankle osteoarthritis. J Foot Ankle Surg. 2019;58(3):417-422. doi:10.1053/j.jfas.2018.09.003"
+        },
+        {
+          "id": "smot_varus_q11",
+          "text": "Nüesch C, Huber C, Paul J, Henninger HB, Pagenstert G, Valderrabano V, Barg A. Mid- to long-term clinical outcome and gait biomechanics after realignment surgery in asymmetric ankle osteoarthritis. Foot Ankle Int. 2015;36(8):908-918. doi:10.1177/1071100715577371"
         }
       ]
     },
@@ -2647,10 +2651,11 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Subtalararthrodese",
       "titel": "Subtalararthrodese",
-      "untertitel": "",
+      "untertitel": "Versteifung des unteren Sprunggelenks bei Arthrose, Fehlstellung oder Coalitio, offen oder arthroskopisch",
       "betrifft_eingriffe": [],
       "slides": [
         "op_subtalar_ueberblick",
+        "op_subtalar_ablauf",
         "op_subtalar_ergebnisse",
         "op_subtalar_nachbehandlung",
         "op_subtalar_komplikationen",
@@ -2663,9 +2668,54 @@
       "quellen": [
         {
           "id": "subtalar_q1",
-          "text": "Systematische Übersichten zur isolierten Subtalararthrodese (Fusionsrate ~95 %, Reoperation/Materialentfernung ~17 %); u. a. Ziegler P, et al. und weitere Fallserien."
+          "text": "Lalevée M, et al. Open versus arthroscopic subtalar arthrodesis: a systematic review and meta-analysis. EFORT Open Rev. 2026;11(6):446-455. doi:10.1530/EOR-2025-0059"
+        },
+        {
+          "id": "subtalar_q2",
+          "text": "Encinas R, et al. Open versus arthroscopic subtalar arthrodesis: a systematic review. J Am Acad Orthop Surg. 2025;34(14):e1992-e1999. doi:10.5435/JAAOS-D-25-00920"
+        },
+        {
+          "id": "subtalar_q3",
+          "text": "Oshba H, et al. Arthroscopic subtalar arthrodesis: a topical review. Foot Ankle Int. 2022;43(1):131-145. doi:10.1177/10711007211035397"
+        },
+        {
+          "id": "subtalar_q4",
+          "text": "Banerjee S, et al. Arthroscopic subtalar arthrodesis: a systematic review. J Foot Ankle Surg. 2021;60(5):1023-1028. doi:10.1053/j.jfas.2021.04.006"
+        },
+        {
+          "id": "subtalar_q5",
+          "text": "Ziegler P, et al. Union rates and complications of subtalar arthrodesis: risk factors in a prospective cohort. Int Orthop. 2017;41(7):1387-1393. doi:10.1007/s00264-017-3493-3"
+        },
+        {
+          "id": "subtalar_q6",
+          "text": "Kang SW, et al. Risk factors for nonunion of subtalar arthrodesis in post-traumatic osteoarthritis. Foot Ankle Surg. 2023;29(3):188-194. doi:10.1016/j.fas.2022.12.005"
+        },
+        {
+          "id": "subtalar_q7",
+          "text": "Wirth SH, et al. How many screws are necessary for subtalar fusion? Foot Ankle Surg. 2020;26(6):699-702. doi:10.1016/j.fas.2019.08.017"
+        },
+        {
+          "id": "subtalar_q8",
+          "text": "Jastifer JR, et al. Subtalar arthrodesis screw fixation: a biomechanical study. Foot Ankle Int. 2016;37(4):419-426. doi:10.1177/1071100715619680"
+        },
+        {
+          "id": "subtalar_q9",
+          "text": "Radnay CS, et al. Subtalar fusion after displaced intra-articular calcaneal fractures: ORIF versus nonoperative treatment. J Bone Joint Surg Am. 2009;91(3):541-546. doi:10.2106/JBJS.G.01445"
+        },
+        {
+          "id": "subtalar_q10",
+          "text": "Giuliani A, et al. Primary subtalar arthrodesis for displaced intra-articular calcaneal fractures: a systematic review. Musculoskelet Surg. 2025;110(1):11-20. doi:10.1007/s12306-025-00901-0"
+        },
+        {
+          "id": "subtalar_q11",
+          "text": "Muñoz MA, et al. Isolated talocalcaneal arthrodesis. Orthop Traumatol Surg Res. 2012;98(6 Suppl):S85-S90. doi:10.1016/j.otsr.2012.06.006"
+        },
+        {
+          "id": "subtalar_q12",
+          "text": "Raykov D, et al. Fixation techniques and outcomes in subtalar arthrodesis: a review. Medicina (Kaunas). 2024;60(6):844. doi:10.3390/medicina60060844"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "tmt": {
       "infoKategorie": "op_technik",
@@ -2694,10 +2744,11 @@
       "infoKategorie": "op_technik",
       "infoTitel": "TN-Arthrodese",
       "titel": "TN-Arthrodese",
-      "untertitel": "",
+      "untertitel": "Versteifung des Talonavikulargelenks, des Schlüsselgelenks des Rückfußes, bei Arthrose oder Fehlstellung",
       "betrifft_eingriffe": [],
       "slides": [
         "op_tn_ueberblick",
+        "op_tn_ablauf",
         "op_tn_ergebnisse",
         "op_tn_nachbehandlung",
         "op_tn_komplikationen",
@@ -2709,13 +2760,54 @@
       "quellen": [
         {
           "id": "tn_q1",
-          "text": "Astion DJ, et al. Motion of the hindfoot after simulated arthrodesis (TN-Fusion → CC-Beweglichkeit ~2 %). J Bone Joint Surg Am. 1997;79(2):241–246."
+          "text": "Astion DJ, Deland JT, Otis JC, Kenneally S. Motion of the hindfoot after simulated arthrodesis. J Bone Joint Surg Am. 1997;79(2):241-246. doi:10.2106/00004623-199702000-00012"
         },
         {
           "id": "tn_q2",
-          "text": "Weitere Literatur zur isolierten TN-Arthrodese (Fusionsraten)."
+          "text": "O'Malley MJ, Deland JT, Lee KT. Selective hindfoot arthrodesis for the treatment of adult acquired flatfoot deformity: an in vitro study. Foot Ankle Int. 1995;16(7):411-417. doi:10.1177/107110079501600706"
+        },
+        {
+          "id": "tn_q3",
+          "text": "Arumugam V, et al. Talonavicular joint arthrodesis: a systematic review of fixation methods and union rates. Foot (Edinb). 2023;54:101966. doi:10.1016/j.foot.2023.101966"
+        },
+        {
+          "id": "tn_q4",
+          "text": "Harper MC. Talonavicular arthrodesis for the acquired flatfoot. Clin Orthop Relat Res. 1999;(365):65-68. doi:10.1097/00003086-199908000-00008"
+        },
+        {
+          "id": "tn_q5",
+          "text": "Chen CH, Huang PJ, Chen TB, et al. Isolated talonavicular arthrodesis. Foot Ankle Int. 2001;22(8):633-636. doi:10.1177/107110070102200803"
+        },
+        {
+          "id": "tn_q6",
+          "text": "Lechler P, Graf S, Köck FX, et al. Talonavicular joint arthrodesis using an angle-stable mini-plate. Int Orthop. 2012;36(12):2491-2494. doi:10.1007/s00264-012-1670-y"
+        },
+        {
+          "id": "tn_q7",
+          "text": "Harnroongroj T, Chuckpaiwong B. Talonavicular arthrodesis for Müller-Weiss disease. J Foot Ankle Surg. 2018;57(5):1014-1019. doi:10.1053/j.jfas.2018.01.008"
+        },
+        {
+          "id": "tn_q8",
+          "text": "Carranza-Bencano A, Tejero S, Del Castillo-Blanco G, et al. Isolated talonavicular arthrodesis through minimal incision surgery. Foot Ankle Surg. 2015;21(3):171-177. doi:10.1016/j.fas.2014.11.003"
+        },
+        {
+          "id": "tn_q9",
+          "text": "Granata JD, Berlet GC, Philbin TM, et al. Talonavicular joint fixation: a biomechanical comparison of locking compression plates and lag screws. Foot Ankle Spec. 2014;7(1):20-31. doi:10.1177/1938640013516791"
+        },
+        {
+          "id": "tn_q10",
+          "text": "Jarrell SE, Owen JR, Wayne JS, Adelaar RS. Biomechanical comparison of screw versus plate/screw construct for talonavicular fusion. Foot Ankle Int. 2009;30(2):150-156. doi:10.3113/FAI-2009-0150"
+        },
+        {
+          "id": "tn_q11",
+          "text": "Lee SR, Nickisch F, Shah A, et al. Percutaneous talonavicular screw placement: a cadaveric study of neurovascular and tendinous structures at risk. Foot Ankle Int. 2018;39(12):1502-1508. doi:10.1177/1071100718790489"
+        },
+        {
+          "id": "tn_q12",
+          "text": "Malik A, Grant E, Rhodenizer J, et al. The effect of medial calcaneal displacement osteotomy on talonavicular joint reactive forces: a cadaveric study. J Foot Ankle Surg. 2020;59(1):91-94. doi:10.1053/j.jfas.2018.10.007"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "tarsaltunnel": {
       "infoKategorie": "op_technik",
