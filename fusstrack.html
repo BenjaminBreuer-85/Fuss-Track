@@ -3048,7 +3048,7 @@ function FinderView() {
 
           {triggeredSonderfall && (
             <div className="card warning" style={{ marginTop: 16 }}>
-              <strong>{triggeredSonderfall.kb ? triggeredSonderfall.kb.titel + "-Verdacht" : "Dringender Verdacht auf eine ernste Verletzung"}</strong>
+              <strong>{triggeredSonderfall.kb ? "Wichtiger Hinweis: Bitte zeitnah ärztlich abklären lassen" : "Bitte lassen Sie diese Beschwerden umgehend ärztlich abklären"}</strong>
               <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
               <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
                 <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>
@@ -3129,29 +3129,29 @@ function FinderView() {
     return (
       <div>
         <div className="card">
-          <div className="card-label">Schritt 4 von 4 — Ihre mögliche Diagnose</div>
+          <div className="card-label">Schritt 4 von 4 — Passende Informationen für Sie</div>
           <h2 style={{ marginTop: 0 }}>
-            {top.length === 0 ? "Keine eindeutige Zuordnung möglich" :
-             istEindeutig ? "Sehr wahrscheinlich" : "Mögliche Ursachen"}
+            {top.length === 0 ? "Zu Ihren Angaben haben wir kein passendes Thema gefunden" :
+             "Diese Themen passen zu Ihren Angaben"}
           </h2>
           {selectedRegions.length > 1 && (
             <p style={{ color: "var(--c-text-muted)", fontSize: 13, marginTop: 4 }}>
-              Auswertung kombiniert Ihre Angaben aus beiden Regionen: <strong>{selectedRegions.map(function(rid) { return getRegion(rid).titel; }).join(" + ")}</strong>
+              Ihre Angaben betreffen zwei Bereiche — hier finden Sie Informationen zu beiden: <strong>{selectedRegions.map(function(rid) { return getRegion(rid).titel; }).join(" + ")}</strong>
             </p>
           )}
         </div>
 
         {top.length === 0 && (
           <div className="card warning">
-            <p>Anhand Ihrer Antworten konnte keine eindeutige Eingrenzung erfolgen. Bitte vereinbaren Sie einen Termin in unserer Sprechstunde — wir helfen Ihnen gerne weiter.</p>
+            <p>Das kommt vor und sagt nichts über die Ursache Ihrer Beschwerden aus. Bitte lassen Sie Ihre Beschwerden ärztlich abklären — wir helfen Ihnen in unserer Sprechstunde gerne weiter.</p>
           </div>
         )}
 
         {top1 && (
           <div className="card success">
             <div className="card-label">
-              {istEindeutig ? "Sehr wahrscheinlich" : "Wahrscheinlichste Ursache"}
-              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "häufig" : top1.kb.haeufigkeit === "mittel" ? "mittelhäufig" : "selten"}
+              Am besten passendes Thema
+              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "insgesamt häufiges Krankheitsbild" : top1.kb.haeufigkeit === "mittel" ? "insgesamt mittelhäufiges Krankheitsbild" : "insgesamt seltenes Krankheitsbild"}
             </div>
             <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
             <p>{top1.kb.kurz}</p>
@@ -3167,8 +3167,8 @@ function FinderView() {
           return (
             <div key={e.kbId} className="card" style={{ borderLeft: "3px solid #9CA3AF" }}>
               <div className="card-label">
-                Möglich auch
-                {" · "}{e.kb.haeufigkeit === "haeufig" ? "häufig" : e.kb.haeufigkeit === "mittel" ? "mittelhäufig" : "selten"}
+                Ebenfalls passende Themen
+                {" · "}{e.kb.haeufigkeit === "haeufig" ? "insgesamt häufiges Krankheitsbild" : e.kb.haeufigkeit === "mittel" ? "insgesamt mittelhäufiges Krankheitsbild" : "insgesamt seltenes Krankheitsbild"}
               </div>
               <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
               <p style={{ marginBottom: e.kb.info_ref ? 10 : 0 }}>{e.kb.kurz}</p>
@@ -3189,15 +3189,17 @@ function FinderView() {
           <button className="btn btn-secondary" onClick={resetFinder}>Erneut starten</button>
         </div>
 
-        {/* Diagnose-Hilfe (nur in Entwicklung): Score-Übersicht */}
-        <details style={{ marginTop: 24, fontSize: 11, color: "#9CA3AF" }}>
-          <summary style={{ cursor: "pointer" }}>Score-Details (zur Prüfung)</summary>
-          <pre style={{ fontSize: 11, background: "#F9FAFB", padding: 8, borderRadius: 4, overflow: "auto" }}>
-            {ranked.map(function(e) {
-              return e.kb.titel + ": " + e.score.toFixed(1) + " (Antwort: " + (e.score - e.haeufBonus).toFixed(1) + " + Häufigkeit: " + e.haeufBonus.toFixed(1) + ")";
-            }).join("\n")}
-          </pre>
-        </details>
+        {/* Score-Übersicht: nur für Entwicklung, sichtbar ausschließlich mit ?debug=1 */}
+        {new URLSearchParams(window.location.search).get("debug") === "1" && (
+          <details style={{ marginTop: 24, fontSize: 11, color: "#9CA3AF" }}>
+            <summary style={{ cursor: "pointer" }}>Score-Details (zur Prüfung)</summary>
+            <pre style={{ fontSize: 11, background: "#F9FAFB", padding: 8, borderRadius: 4, overflow: "auto" }}>
+              {ranked.map(function(e) {
+                return e.kb.titel + ": " + e.score.toFixed(1) + " (Antwort: " + (e.score - e.haeufBonus).toFixed(1) + " + Häufigkeit: " + e.haeufBonus.toFixed(1) + ")";
+              }).join("\n")}
+            </pre>
+          </details>
+        )}
       </div>
     );
   }

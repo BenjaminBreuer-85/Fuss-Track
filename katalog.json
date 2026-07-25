@@ -32,7 +32,7 @@
     "top1_min_abstand": 1.5,
     "top2_min_score": 1.0,
     "max_top_eintraege": 3,
-    "disclaimer": "Diese Auswertung ist keine ärztliche Diagnose. Eine genaue Abklärung erfolgt in der Sprechstunde."
+    "disclaimer": "Der Beschwerde-Wegweiser schlägt Ihnen passende Informationsthemen vor. Er stellt keine Diagnose und ersetzt keine ärztliche Untersuchung. Bitte lassen Sie Beschwerden immer ärztlich abklären."
   },
   "akut_bypass": {
     "frage": "Sind Ihre Beschwerden plötzlich aufgetreten — z.B. nach einem Sturz, Umknicken oder einer Verletzung?",
@@ -1056,7 +1056,7 @@
         "antwort_index": 0,
         "kb_verdacht": "gichtanfall",
         "schwere": "moderat",
-        "empfehlung": "Plötzliche Rötung und Wärme am Gelenk kann auf einen akuten Gichtanfall hinweisen. Bitte kontaktieren Sie kurzfristig Ihren Hausarzt."
+        "empfehlung": "Plötzliche, sehr starke Schmerzen mit Rötung und Schwellung sollten zeitnah ärztlich abgeklärt werden. Passendes Informationsthema: Gichtarthritis."
       }
     },
     {
@@ -1319,7 +1319,7 @@
         "antwort_index": 1,
         "kb_verdacht": "stressfraktur_mt",
         "schwere": "moderat",
-        "empfehlung": "Ein lokal-punktueller Belastungsschmerz nach starker Aktivität kann eine Stressfraktur bedeuten. Bildgebung wird empfohlen — bitte Sprechstunden-Termin vereinbaren."
+        "empfehlung": "Belastungsabhängige Schmerzen, die über Wochen zunehmen, gehören in ärztliche Abklärung. Passendes Informationsthema: Stressreaktionen des Knochens."
       }
     },
     {
@@ -2661,7 +2661,7 @@
         "antwort_index": 0,
         "kb_verdacht": "achillesruptur_akut",
         "schwere": "akut",
-        "empfehlung": "Ein Tritt in die Wade beim Sport mit Kraftverlust ist hochverdächtig auf einen Achillessehnenriss. Bitte umgehend Notaufnahme oder unfallchirurgische Sprechstunde aufsuchen."
+        "empfehlung": "Ein plötzlicher Schlag oder Knall an der Ferse mit anschließender Kraftlosigkeit sollte noch am selben Tag ärztlich abgeklärt werden — bitte suchen Sie umgehend eine Praxis oder Notaufnahme auf."
       }
     },
     {
