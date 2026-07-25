@@ -10,8 +10,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310535B'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='bold' fill='%23FAFAF7' text-anchor='middle'%3EFT%3C/text%3E%3C/svg%3E">
-<!-- Schriften: bewusst keine externen Font-Server (DSGVO). Beim Livegang werden die Hausschriften als lokale Dateien mitgeliefert. -->
+<!-- Schriften: lokal gehostet (fonts/), bewusst keine externen Font-Server (DSGVO). -->
 <style>
+  @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/source-serif-4-600.woff2') format('woff2')}
+  @font-face{font-family:'Source Serif 4';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/source-serif-4-700.woff2') format('woff2')}
+  @font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/ibm-plex-sans-400.woff2') format('woff2')}
+  @font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/ibm-plex-sans-500.woff2') format('woff2')}
+  @font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/ibm-plex-sans-600.woff2') format('woff2')}
+  @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/ibm-plex-mono-400.woff2') format('woff2')}
+  @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/ibm-plex-mono-500.woff2') format('woff2')}
   :root{
     --op:#10535B;
     --op-dark:#0B3E45;
@@ -28,18 +35,18 @@
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
-    font-family:-apple-system,'Segoe UI',system-ui,sans-serif;
+    font-family:'IBM Plex Sans',system-ui,sans-serif;
     background:var(--paper);color:var(--ink);
     line-height:1.65;font-size:17px;
   }
-  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.18;font-weight:700}
+  h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;line-height:1.18;font-weight:700}
   a{color:var(--op)}
   :focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 
   .topbar{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-  .wordmark{font-family:Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
+  .wordmark{font-family:'Source Serif 4',Georgia,serif;font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}
   .wordmark span{color:var(--op)}
   .btn{display:inline-block;background:var(--op);color:#fff;text-decoration:none;padding:.7em 1.5em;border-radius:9px;font-weight:600;font-size:.95rem;border:1.5px solid var(--op);transition:background .15s}
   .btn:hover{background:var(--op-dark)}
@@ -85,8 +92,8 @@
   .pricing{padding:64px 0;background:var(--op-tint)}
   .price-card{max-width:440px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px;text-align:center;box-shadow:0 18px 40px -28px rgba(16,83,91,.4)}
   .price-card h2{font-size:1.4rem;margin-bottom:4px}
-  .price{font-family:Georgia,serif;font-size:2.5rem;color:var(--op);margin:12px 0 2px}
-  .price small{font-size:1rem;color:var(--muted);font-family:-apple-system,'Segoe UI',system-ui,sans-serif}
+  .price{font-family:'Source Serif 4',Georgia,serif;font-size:2.5rem;color:var(--op);margin:12px 0 2px}
+  .price small{font-size:1rem;color:var(--muted);font-family:'IBM Plex Sans',system-ui,sans-serif}
   .price-note{font-size:.82rem;color:var(--muted);margin-bottom:16px}
   .perks{list-style:none;text-align:left;margin:0 0 24px}
   .perks li{padding:9px 0 9px 26px;position:relative;font-size:.95rem;border-bottom:1px solid var(--op-tint)}
@@ -127,7 +134,7 @@
 <header class="topbar">
   <div class="wrap">
     <a class="wordmark" href="#top">Fuss-<span>Track</span></a>
-    <a class="btn" href="#zugang">Zur App</a>
+    <a class="btn" href="fusstrack.html">Zur App</a>
   </div>
 </header>
 
@@ -139,7 +146,7 @@
         <div class="eyebrow">Für Patientinnen und Patienten</div>
         <h1>Ihren Fuß verstehen.</h1>
         <p class="sub">Fuss-Track erklärt Erkrankungen, Behandlungen und Operationen an Fuß und Sprunggelenk — in verständlicher Sprache, werbefrei und von einem Facharzt geschrieben. Damit Sie gut informiert in jedes Gespräch mit Ihrer Ärztin oder Ihrem Arzt gehen.</p>
-        <a class="btn big" href="#zugang">Zur App</a>
+        <a class="btn big" href="fusstrack.html">Zur App</a>
         <p class="cta-note">Ohne Eingabe persönlicher Daten · Läuft im Browser auf jedem Gerät</p>
       </div>
 
@@ -225,7 +232,7 @@
           <li>Werbefrei, ohne Konto, ohne Datensammeln</li>
           <li>Läuft im Browser — Handy, Tablet oder Computer</li>
         </ul>
-        <a class="btn big" href="#">App öffnen</a>
+        <a class="btn big" href="fusstrack.html">App öffnen</a>
         <p class="price-note" style="margin-top:22px;padding-top:18px;border-top:1px solid var(--op-tint)"><strong>Fuss-Track unterstützen:</strong> Wenn Ihnen die App geholfen hat, freuen wir uns über einen kleinen freiwilligen Beitrag — er hält Fuss-Track werbefrei und unabhängig.</p>
         <a class="btn" style="background:transparent;color:var(--op)" href="#">Freiwillig unterstützen</a>
       </div>
@@ -266,7 +273,7 @@
     <div class="wrap">
       <h2>Verstehen, was mit Ihrem Fuß los ist.</h2>
       <p>Verständlich erklärt, werbefrei, von einem Facharzt — wann immer Sie es nachlesen möchten.</p>
-      <a class="btn big" href="#zugang">Zur App</a>
+      <a class="btn big" href="fusstrack.html">Zur App</a>
     </div>
   </section>
 
@@ -274,12 +281,12 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Fuss-Track · Für Ärztinnen und Ärzte: <a href="#">Fuss-Track Clinic</a></span>
+    <span>© 2026 Fuss-Track · Für Ärztinnen und Ärzte: <a href="https://fuss-track.de">Fuss-Track Clinic</a></span>
     <nav>
-      <a href="#">Impressum</a>
-      <a href="#">Datenschutz</a>
-      <a href="#">AGB</a>
-      <a href="#">Widerruf &amp; Erstattung</a>
+      <a href="https://fuss-track.de/impressum.html">Impressum</a>
+      <a href="https://fuss-track.de/datenschutz.html">Datenschutz</a>
+      <a href="https://fuss-track.de/agb.html">AGB</a>
+      <a href="https://fuss-track.de/widerruf.html">Widerruf &amp; Erstattung</a>
       <a href="mailto:kontakt@fuss-track.de">Kontakt</a>
     </nav>
   </div>

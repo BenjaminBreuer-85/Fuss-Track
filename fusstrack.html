@@ -7,7 +7,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Fuß-Track · Ihr Begleiter rund um die OP</title>
+<title>Fuss-Track · Ihr Begleiter rund um die OP</title>
 <script src="./lib/react.production.min.js"></script>
 <script src="./lib/react-dom.production.min.js"></script>
 <script src="./lib/babel.min.js"></script>
@@ -366,7 +366,7 @@ let NONOP_STUFEN = {};   // Non-OP-Begleiter: Stufenlisten je Krankheitsbild
 let NONOP_INHALTE = {};  // Non-OP-Begleiter: Inhaltsbausteine
 let NONOP_AMPEL = {};    // Non-OP-Begleiter: Ampel-Bausteine (stufenloses Modell)
 let NONOP_MASSNAHMEN = {}; // Non-OP-Begleiter: allgemeine nicht-operative Maßnahmen (aus infomaterial.json)
-let KATALOG = null;   // Daten aus katalog.json (Diagnose-Helfer) — null bevor geladen
+let KATALOG = null;   // Daten aus katalog.json (Beschwerde-Wegweiser) — null bevor geladen
 
 // Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey]
 function getPhasenForVariant(opKey, variantKey) {
@@ -440,7 +440,7 @@ async function loadAufklaerungData() {
   }
 }
 
-// Lädt die Diagnose-Helfer-Daten (KB-Universum, Regionen, Fragen).
+// Lädt die Beschwerde-Wegweiser-Daten (KB-Universum, Regionen, Fragen).
 // Wird zusätzlich zum Begleit-Modus geladen. Bei Fehlern wird die Anwendung
 // NICHT abgebrochen — der Finder ist dann nicht verfügbar, alle anderen Modi
 // funktionieren weiterhin.
@@ -532,7 +532,7 @@ function getUrlParams() {
     modus: params.get("modus"), // "aufklaerung" für Aufklärungs-Modus, sonst Begleit-Modus
     wissen: params.get("wissen"), // "KEY" für direkte Wissens-Einzelansicht
     kb: params.get("kb"), // "hallux_valgus" / "osg_arthrose" — Landing-Page-Vorauswahl
-    finder: params.get("finder"), // "1" für Diagnose-Helfer-Modus
+    finder: params.get("finder"), // "1" für Beschwerde-Wegweiser-Modus
     home: params.get("home"), // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
     ctx: params.get("ctx"), // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
     massnahme: params.get("massnahme") // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
@@ -670,9 +670,9 @@ function App() {
   useEffect(() => {
     if (hasSession) {
       const eingriff = EINGRIFFE[session.eingriff];
-      document.title = "Fuß-Track · " + (eingriff.kurzlabel || eingriff.label);
+      document.title = "Fuss-Track · " + (eingriff.kurzlabel || eingriff.label);
     } else {
-      document.title = "Fuß-Track · Ihr Begleiter rund um die OP";
+      document.title = "Fuss-Track · Ihr Begleiter rund um die OP";
     }
   }, [hasSession, session && session.eingriff]);
 
@@ -705,7 +705,7 @@ function App() {
     );
   }
 
-  // 0a. Diagnose-Helfer-Modus: ?finder=1
+  // 0a. Beschwerde-Wegweiser-Modus: ?finder=1
   if (urlParams.finder === "1" || urlParams.finder === "true") {
     if (!KATALOG) {
       // Katalog-Daten nicht geladen — Finder ist nicht verfügbar
@@ -1592,7 +1592,7 @@ function LandingView({ initialKbKey, initialMassnahme }) {
     return (
       <React.Fragment>
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuß-Track</h2>
+        <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuss-Track</h2>
         <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk.<br /><br />Wählen Sie einen Bereich aus.
         </p>
@@ -1619,12 +1619,12 @@ function LandingView({ initialKbKey, initialMassnahme }) {
             </div>
             {menuChevron}
           </div>
-          {/* 3. Diagnose-Helfer */}
+          {/* 3. Beschwerde-Wegweiser */}
           {KATALOG && (
             <div onClick={function() { window.location.href = buildUrl({ finder: "1" }); }}
                  style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
               <div style={{ flex: 1 }}>
-                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Diagnose-Helfer</div>
+                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Beschwerde-Wegweiser</div>
                 <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
                   Grenzen Sie mögliche Ursachen länger bestehender Beschwerden ein.
                 </div>
@@ -2137,7 +2137,7 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
   }
   return (
     <div className="app-header">
-      <h1>Fuß-Track</h1>
+      <h1>Fuss-Track</h1>
       {!hideSubtitle && (
         <div className="subtitle">Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk</div>
       )}
@@ -2457,7 +2457,7 @@ function ErrorPage() {
         </svg>
         <h2>Bitte verwenden Sie den QR-Code aus Ihrem Arztbrief</h2>
         <p>
-          Fuß-Track ist Ihr persönlicher Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk.
+          Fuss-Track ist Ihr persönlicher Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk.
           Der Zugang erfolgt ausschließlich über den QR-Code, den Sie in Ihrem Arztbrief finden.
         </p>
         <p>
@@ -2712,7 +2712,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
 }
 
 /* ============================================================
- * FinderView — Diagnose-Helfer (Patient ohne Diagnose)
+ * FinderView — Beschwerde-Wegweiser (Patient ohne Diagnose)
  * ============================================================
  * Datenquelle: KATALOG (aus katalog.json, geladen via loadKatalogData)
  *
@@ -2826,7 +2826,7 @@ function FinderView() {
                 </li>
               </ul>
               <p style={{ marginTop: 12, fontSize: 13, color: "var(--c-text-muted)" }}>
-                Der Diagnose-Helfer ist ausschließlich für länger bestehende, schleichend entstandene
+                Der Beschwerde-Wegweiser ist ausschließlich für länger bestehende, schleichend entstandene
                 Beschwerden gedacht — nicht für frische Verletzungen.
               </p>
               <div style={{ marginTop: 16 }}>
@@ -3207,7 +3207,7 @@ function FinderView() {
     return (
       <div style={{ padding: 16 }}>
         <div className="card warning">
-          <strong>Diagnose-Helfer noch nicht verfügbar</strong>
+          <strong>Beschwerde-Wegweiser noch nicht verfügbar</strong>
           <p>Die Daten konnten nicht geladen werden. Bitte versuchen Sie es später erneut.</p>
         </div>
       </div>
@@ -3217,7 +3217,7 @@ function FinderView() {
   return (
     <div className="finder-view" style={{ maxWidth: 720, margin: "0 auto" }}>
       <div style={{ fontSize: 11, color: "#9CA3AF", marginBottom: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
-        Diagnose-Helfer
+        Beschwerde-Wegweiser
       </div>
       {step === "akut" && renderAkut()}
       {step === "regionen" && renderRegionen()}
@@ -3838,7 +3838,7 @@ function MarkdownView({ source }) {
 function WissenDirektView({ wissenKey }) {
   const wissen = WISSEN[wissenKey];
   useEffect(() => {
-    if (wissen) document.title = "Fuß-Track · " + wissen.titel;
+    if (wissen) document.title = "Fuss-Track · " + wissen.titel;
   }, [wissenKey]);
   if (!wissen) return null;
   const kategorie = WISSEN_KATEGORIEN[wissen.kategorie] || { label: wissen.kategorie, emoji: "" };
@@ -4051,7 +4051,7 @@ loadPhasenData()
 
     <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Zweck dieser Anwendung</h3>
     <p style="margin:4px 0;">
-      Fuß-Track ist ein digitaler Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk. Die Anwendung bietet phasengerechte Informationen vor und nach der Operation.
+      Fuss-Track ist ein digitaler Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk. Die Anwendung bietet phasengerechte Informationen vor und nach der Operation.
     </p>
 
     <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Keine medizinische Beratung</h3>
@@ -4090,13 +4090,13 @@ loadPhasenData()
     </p>
 
     <div style="margin-top:20px; padding-top:12px; border-top:1px solid rgba(0,0,0,.10); font-size:11px; color:#718096;">
-      Fuß-Track &middot; &copy; 2026 Dr. med. Benjamin Breuer
+      Fuss-Track &middot; &copy; 2026 Dr. med. Benjamin Breuer
     </div>
   </div>
 </div>
 
 <div style="text-align:center; padding:14px 0 24px; font-size:11px; color:#a0aec0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  Fuß-Track &middot; Dr. med. Benjamin Breuer
+  Fuss-Track &middot; Dr. med. Benjamin Breuer
 </div>
 
 <script>

@@ -1,4 +1,4 @@
-# Fuß-Track (Patienten-App)
+# Fuss-Track (Patienten-App)
 
 Patienten-App des Fußzentrums: Information und OP-Begleitung rund um Fuß- und
 Sprunggelenkserkrankungen. Eine einzige HTML-Datei (`fusstrack.html`) lädt alle
@@ -22,6 +22,25 @@ erarbeitet, geprüft und freigegeben**. In diesem Repository werden sie nur
 Verbindlich: Alle Änderungen an Oberfläche, Texten oder Grafiken müssen
 [BRAND.md](BRAND.md) entsprechen. Bei Konflikten BRAND.md folgen und mich
 (den Autor) auf den Konflikt hinweisen.
+
+BRAND.md existiert identisch in beiden Fuss-Track-Repos (Toolbox und
+Fußtrack). Nach jeder Änderung an BRAND.md den Nutzer erinnern, die Kopie
+im jeweils anderen Repo zu aktualisieren.
+
+Schreibweise der Marke in allen Texten einheitlich „Fuss-Track" (Doppel-s).
+
+Der Bestand wird NICHT automatisch an BRAND.md angeglichen — nur künftige
+Änderungen werden dagegen geprüft; Abweichungen im Bestand nur auflisten,
+nicht eigenmächtig ändern.
+
+## Öffentliche Startseite und Domain
+
+`index.html` ist die Patienten-Landingpage (statisches HTML, Schriften lokal
+aus `fonts/` per @font-face — keine externen Font-Server, DSGVO). Ihre
+Buttons „Zur App"/„App öffnen" führen zu `fusstrack.html`; der Footer-Link
+„Fuss-Track Clinic" führt zu https://fuss-track.de. Die `CNAME`-Datei setzt
+die GitHub-Pages-Domain **patienten.fuss-track.de**. Die Patienten-App
+selbst bleibt `fusstrack.html`.
 
 ## Aufbau der App
 
@@ -60,7 +79,7 @@ Deep-Link-Parameter (URLSearchParams): `?op=<key>` (+ `&modus=aufklaerung`),
 
 ## Entwicklungsserver (Live-Reload, Port 8081)
 
-Die Toolbox belegt Port 8080, Fuß-Track nutzt daher **8081**.
+Die Toolbox belegt Port 8080, Fuss-Track nutzt daher **8081**.
 
 ```bash
 python3 dev-server.py
