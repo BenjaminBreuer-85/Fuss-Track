@@ -402,6 +402,16 @@
       "info_ref": "tarsaltunnelsyndrom_kb"
     },
     {
+      "id": "vorderes_tarsaltunnel_syndrom",
+      "titel": "Vorderes Tarsaltunnel-Syndrom",
+      "kurz": "Nervenkompression am Fußrücken mit Ausstrahlung in den Zwischenraum der ersten und zweiten Zehe",
+      "haeufigkeit": "selten",
+      "regionen": [
+        "sg_vorne"
+      ],
+      "info_ref": "vorderes_tts_kb"
+    },
+    {
       "id": "fhl_tendinopathie",
       "titel": "FHL-Tendinopathie",
       "kurz": "Reizung der Großzehen-Beugesehne hinter dem Innenknöchel",

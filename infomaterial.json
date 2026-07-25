@@ -2863,10 +2863,11 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Tarsaltunnel-Dekompression",
       "titel": "Tarsaltunnel-Dekompression",
-      "untertitel": "",
+      "untertitel": "Operative Entlastung des Schienbeinnervs im Tarsaltunnel bei therapieresistentem Tarsaltunnelsyndrom",
       "betrifft_eingriffe": [],
       "slides": [
         "op_tarsaltunnel_ueberblick",
+        "op_tarsaltunnel_ablauf",
         "op_tarsaltunnel_ergebnisse",
         "op_tarsaltunnel_nachbehandlung",
         "op_tarsaltunnel_komplikationen",
@@ -2879,9 +2880,50 @@
       "quellen": [
         {
           "id": "tarsaltunnel_q1",
-          "text": "Scoping/Systematic Review zum operativen Tarsaltunnel-Release (gute/exzellente Ergebnisse ~75 %, Prognosefaktoren Ursache/Adipositas/Diabetes/EDX). 2024."
+          "text": "Haq II, Banerjee AA, Arshad Z, Iqbal AM, Bhatia M. The management of tarsal tunnel syndrome: a scoping review. J Clin Orthop Trauma. 2024;54:102489. doi:10.1016/j.jcot.2024.102489"
+        },
+        {
+          "id": "tarsaltunnel_q2",
+          "text": "Rodríguez-Merchán EC, Moracia-Ochagavía I. Tarsal tunnel syndrome: current rationale, indications and results. EFORT Open Rev. 2021;6(12):1140-1147. doi:10.1302/2058-5241.6.210031"
+        },
+        {
+          "id": "tarsaltunnel_q3",
+          "text": "Sammarco GJ, Chang L. Outcome of surgical treatment of tarsal tunnel syndrome. Foot Ankle Int. 2003;24(2):125-131. doi:10.1177/107110070302400205"
+        },
+        {
+          "id": "tarsaltunnel_q4",
+          "text": "Pfeiffer WH, Cracchiolo A. Clinical results after tarsal tunnel decompression. J Bone Joint Surg Am. 1994;76(8):1222-1230. doi:10.2106/00004623-199408000-00012"
+        },
+        {
+          "id": "tarsaltunnel_q5",
+          "text": "Ngiam HKE, et al. Minimally invasive versus open tarsal tunnel release: a comparative cohort study. Plast Reconstr Surg Glob Open. 2025;13(4):e6719. doi:10.1097/GOX.0000000000006719"
+        },
+        {
+          "id": "tarsaltunnel_q6",
+          "text": "Krishnan KG, Pinzer T, Schackert G. A novel endoscopic technique in treating single nerve entrapment syndromes: tarsal tunnel release. Neurosurgery. 2006;59(1 Suppl 1):ONS89-ONS100. doi:10.1227/01.NEU.0000219979.23067.5C"
+        },
+        {
+          "id": "tarsaltunnel_q7",
+          "text": "Baxter DE, Pfeffer GB. Treatment of chronic heel pain by surgical release of the first branch of the lateral plantar nerve. Clin Orthop Relat Res. 1992;(279):229-236. PMID:1600660"
+        },
+        {
+          "id": "tarsaltunnel_q8",
+          "text": "Skalley TC, Schon LC, Hinton RY, Myerson MS. Clinical results following revision tibial nerve release. Foot Ankle Int. 1994;15(7):360-367. doi:10.1177/107110079401500703"
+        },
+        {
+          "id": "tarsaltunnel_q9",
+          "text": "Raikin SM, Minnich JM. Failed tarsal tunnel syndrome surgery. Foot Ankle Clin. 2003;8(1):159-174. doi:10.1016/s1083-7515(02)00161-4"
+        },
+        {
+          "id": "tarsaltunnel_q10",
+          "text": "Zeiss J, Fenton P, Ebraheim N, Coombs RJ. Magnetic resonance imaging for ineffectual tarsal tunnel surgical treatment. Clin Orthop Relat Res. 1991;(264):264-266. PMID:1997244"
+        },
+        {
+          "id": "tarsaltunnel_q11",
+          "text": "De Prado M, Cuervas-Mons M, Golanó P, Rabat E, Vaquero J. The tarsal tunnel syndrome. Fuß Sprunggelenk. 2015;13(4):227-236. doi:10.1016/j.fuspru.2015.09.001"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "ttc": {
       "infoKategorie": "op_technik",
@@ -6439,6 +6481,66 @@
         {
           "id": "turf_toe_kb_q7",
           "text": "Vopat ML, Hassan M, Poppe T, Tarakemeh A, Zackula R, Mulcahey MK, Mullen S, Burkholder R, Schroeppel JP, Vopat BG. Return to sport after turf toe injuries: a systematic review and meta-analysis. Orthop J Sports Med. 2019;7(10):2325967119875133. doi: [10.1177/2325967119875133](https://doi.org/10.1177/2325967119875133)"
+        }
+      ]
+    },
+    "vorderes_tts_kb": {
+      "infoKategorie": "krankheitsbild",
+      "infoTitel": "Vorderes Tarsaltunnelsyndrom",
+      "titel": "Vorderes Tarsaltunnelsyndrom",
+      "untertitel": "Nervenengpass des tiefen Wadenbeinnervs an der Vorderseite des Sprunggelenks",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "kb_vtts_ueberblick",
+        "kb_vtts_anatomie",
+        "kb_vtts_beschwerden",
+        "kb_vtts_diagnostik",
+        "kb_vtts_konservativ",
+        "kb_vtts_operativ",
+        "kb_vtts_quellen"
+      ],
+      "_review": true,
+      "stand": "Recherche 07/2026 (eigene PubMed-Recherche, DOI-verifiziert) — ärztlich zu prüfen",
+      "quellen": [
+        {
+          "id": "vtts_q1",
+          "text": "DiDomenico LA, Masternick EB. Anterior tarsal tunnel syndrome. Clin Podiatr Med Surg. 2006;23(3):611-620. doi:10.1016/j.cpm.2006.04.007"
+        },
+        {
+          "id": "vtts_q2",
+          "text": "Andresen BL, Wertsch JJ, Stewart WA. Anterior tarsal tunnel syndrome. Arch Phys Med Rehabil. 1992;73(11):1112-1117. PMID:1444780"
+        },
+        {
+          "id": "vtts_q3",
+          "text": "Liu Z, Zhou J, Zhao L. Anterior tarsal tunnel syndrome. J Bone Joint Surg Br. 1991;73(3):470-473. doi:10.1302/0301-620X.73B3.1670452"
+        },
+        {
+          "id": "vtts_q4",
+          "text": "Dellon AL. Deep peroneal nerve entrapment on the dorsum of the foot. Foot Ankle. 1990;11(2):73-80. doi:10.1177/107110079001100203"
+        },
+        {
+          "id": "vtts_q5",
+          "text": "Ferkel E, Davis WH, Ellington JK. Entrapment neuropathies of the foot and ankle. Clin Sports Med. 2015;34(4):791-801. doi:10.1016/j.csm.2015.06.002"
+        },
+        {
+          "id": "vtts_q6",
+          "text": "Bojovic N, et al. Nerve entrapment syndromes of the foot and ankle: a review. Int Orthop. 2025;49(4):853-862. doi:10.1007/s00264-025-06469-5"
+        },
+        {
+          "id": "vtts_q7",
+          "text": "Lui TH. Endoscopic anterior tarsal tunnel release. J Foot Ankle Surg. 2014;53(2):186-188. doi:10.1053/j.jfas.2013.12.005"
+        },
+        {
+          "id": "vtts_q8",
+          "text": "Masciocchi C, et al. Anterior tarsal tunnel syndrome: imaging with US and MRI. Eur J Radiol. 1998;27(Suppl 1):S70-S73. doi:10.1016/s0720-048x(98)00045-x"
+        },
+        {
+          "id": "vtts_q9",
+          "text": "Akyüz G, et al. Anterior tarsal tunnel syndrome. Electromyogr Clin Neurophysiol. 2000;40(2):123-128. PMID:10746190"
+        },
+        {
+          "id": "vtts_q10",
+          "text": "Kennedy JG, Baxter DE. Nerve disorders in dancers. Clin Sports Med. 2008;27(2):329-334. doi:10.1016/j.csm.2008.01.001"
         }
       ]
     }
