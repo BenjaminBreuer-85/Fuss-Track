@@ -2721,10 +2721,11 @@
       "infoKategorie": "op_technik",
       "infoTitel": "TMT-Arthrodese",
       "titel": "TMT-Arthrodese",
-      "untertitel": "",
+      "untertitel": "Versteifung der Tarsometatarsalgelenke (Lisfranc-Reihe) bei Arthrose oder Fehlstellung des Mittelfußes",
       "betrifft_eingriffe": [],
       "slides": [
         "op_tmt_ueberblick",
+        "op_tmt_ablauf",
         "op_tmt_ergebnisse",
         "op_tmt_nachbehandlung",
         "op_tmt_komplikationen",
@@ -2736,9 +2737,58 @@
       "quellen": [
         {
           "id": "tmt_q1",
-          "text": "Aktuelle Literatur zur TMT-/Lisfranc-Arthrodese (primäre Arthrodese vs. ORIF; Fusionsraten)."
+          "text": "Mann RA, Prieskorn D, Sobel M. Midtarsal and tarsometatarsal arthrodesis for primary degenerative osteoarthrosis or osteoarthrosis after trauma. J Bone Joint Surg Am. 1996;78(9):1376-1385. doi:10.2106/00004623-199609000-00013"
+        },
+        {
+          "id": "tmt_q2",
+          "text": "Sangeorzan BJ, Veith RG, Hansen ST. Salvage of Lisfranc's tarsometatarsal joint by arthrodesis. Foot Ankle. 1990;10(4):193-200. doi:10.1177/107110079001000401"
+        },
+        {
+          "id": "tmt_q3",
+          "text": "Johnson JE, Johnson KA. Dowel arthrodesis for degenerative arthritis of the tarsometatarsal (Lisfranc) joints. Foot Ankle. 1986;6(5):243-253. doi:10.1177/107110078600600505"
+        },
+        {
+          "id": "tmt_q4",
+          "text": "Fraser TW, Doty JF, et al. Plantar plating for midfoot arthrodesis: union rates and risk factors. Foot Ankle Orthop. 2021;6(3):24730114211027115. doi:10.1177/24730114211027115"
+        },
+        {
+          "id": "tmt_q5",
+          "text": "Crowell A, Meyr AJ. Nonunion of first tarsometatarsal joint arthrodesis: a systematic review. J Foot Ankle Surg. 2018;57(6):1204-1206. doi:10.1053/j.jfas.2018.06.011"
+        },
+        {
+          "id": "tmt_q6",
+          "text": "Gougoulias N, Lampridis V. Midfoot arthrodesis. Foot Ankle Surg. 2016;22(1):17-25. doi:10.1016/j.fas.2015.04.004"
+        },
+        {
+          "id": "tmt_q7",
+          "text": "Cohen DA, Parks BG, Schon LC. Screw fixation compared to H-locking plate fixation for first metatarsocuneiform arthrodesis: a biomechanical study. Foot Ankle Int. 2005;26(11):984-989. doi:10.1177/107110070502601114"
+        },
+        {
+          "id": "tmt_q8",
+          "text": "Baxter JR, Ellis SJ, et al. Crossed-screw fixation resists plantar gapping better than dorsomedial plating in first tarsometatarsal arthrodesis. Foot Ankle Spec. 2015;8(2):95-100. doi:10.1177/1938640014543358"
+        },
+        {
+          "id": "tmt_q9",
+          "text": "Waehner M, et al. Fixation techniques in midfoot arthrodesis: a systematic review and meta-analysis. Foot Ankle Spec. 2024;19(1):58-69. doi:10.1177/19386400241233832"
+        },
+        {
+          "id": "tmt_q10",
+          "text": "Keiserman LS, Cassandra J, Amis JA. The piano key test: a clinical sign for the identification of subtle tarsometatarsal pathology. Foot Ankle Int. 2003;24(5):437-438. doi:10.1177/107110070302400511"
+        },
+        {
+          "id": "tmt_q11",
+          "text": "Raikin SM, Schon LC. Arthrodesis of the fourth and fifth tarsometatarsal joints of the midfoot. Foot Ankle Int. 2003;24(8):584-590. doi:10.1177/107110070302400803"
+        },
+        {
+          "id": "tmt_q12",
+          "text": "Berlet GC, Anderson RB, Davis WH. Chronic lateral column pain: fourth and fifth metatarsal base resection arthroplasty with tendon interposition. Foot Ankle Int. 2002;23(5):440-446. doi:10.1177/107110070202300512"
+        },
+        {
+          "id": "tmt_q13",
+          "text": "Mansur NSB, de Cesar Netto C, et al. Structural bone-block first tarsometatarsal arthrodesis: outcomes and union. Foot Ankle Int. 2025;46(11):1248-1258. doi:10.1177/10711007251363926"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "tn": {
       "infoKategorie": "op_technik",
