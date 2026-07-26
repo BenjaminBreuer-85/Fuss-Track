@@ -1635,17 +1635,6 @@ function LandingView({ initialKbKey, initialMassnahme }) {
               {menuChevron}
             </div>
           )}
-          {/* 4. Unterstützen (Ko-fi, extern) */}
-          <div onClick={function() { window.open("https://ko-fi.com/fusstrack", "_blank", "noopener"); }}
-               style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
-            <div style={{ flex: 1 }}>
-              <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>♡ Unterstützen</div>
-              <div style={{ fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
-                Die App bleibt für alle kostenlos und werbefrei — wer mag, kann sie mit einem kleinen freiwilligen Beitrag unterstützen.
-              </div>
-            </div>
-            {menuChevron}
-          </div>
         </div>
         <div style={{ marginTop: 18, padding: 12, background: "var(--c-bg)", borderRadius: 6, fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5 }}>
           <strong>Hinweis:</strong> Wenn Sie von Ihrem Behandler einen QR-Code erhalten haben, scannen Sie diesen direkt — Sie landen dann sofort am richtigen Punkt.
@@ -2473,7 +2462,7 @@ function SupportCard() {
       <p style={{ margin: "0 0 12px", fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>
         Die App bleibt für alle kostenlos und werbefrei — wer mag, kann sie mit einem kleinen freiwilligen Beitrag unterstützen.
       </p>
-      <a href="https://ko-fi.com/fusstrack" target="_blank" rel="noopener"
+      <a href="unterstuetzen.html" target="_blank" rel="noopener"
          style={{ display: "inline-block", background: "#10535B", color: "#fff", textDecoration: "none",
                   padding: "9px 16px", borderRadius: 8, fontSize: 13, fontWeight: 600 }}>
         Freiwillig unterstützen
@@ -3979,7 +3968,7 @@ function FooterLinks() {
       ·
       <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
       <div style={{ marginTop: 6 }}>
-        <a href="https://ko-fi.com/fusstrack" target="_blank" rel="noopener">Fuss-Track ist kostenlos und werbefrei — freiwillig unterstützen</a>
+        <a href="unterstuetzen.html" target="_blank" rel="noopener">Fuss-Track ist kostenlos und werbefrei — freiwillig unterstützen</a>
       </div>
       <div style={{ marginTop: 6, fontSize: 9, color: "#A0AEC0" }}>v3.9 · Juli 2026</div>
     </div>
