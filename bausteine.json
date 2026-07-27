@@ -800,17 +800,17 @@
     },
     "op_teilprothese_talus_ueberblick": {
       "titel": "Überblick",
-      "text": "Bei **osteochondraler Läsion des Talus** ohne Aussicht auf biologische Heilung — z. B. nach gescheiterten Eingriffen mit **BMS oder OATS** — kann ein **metallisches Implantat als Teilprothese** verwendet werden: Ein Teil des Talus wird durch eine kleine Metallkappe mit Dübel oder Schraube ersetzt. Für die klassische Läsion an der **posteromedialen Talusschulter** ist immer eine **Innenknöchelosteotomie** als Zugang nötig.",
+      "text": "Bei einer **osteochondralen Läsion des Talus** (Sprungbein) ohne Aussicht auf biologische Heilung, etwa nach gescheiterten Eingriffen mit Anbohrung (BMS) oder Knorpel-Knochen-Transfer (OATS), kann ein **metallisches Implantat als Teilprothese** eingesetzt werden. Dabei wird ein Teil der Gelenkfläche des Talus durch eine kleine Metallkappe mit Dübel oder Schraube ersetzt.\n\nFür die klassische Läsion an der **hinteren inneren Schulter des Talus** ist als Zugang immer eine **Innenknöchelosteotomie** nötig, also ein gezielter Durchtrennen und späteres Wiederfixieren des Innenknöchels.\n\nEs handelt sich um einen Rückzugseingriff bei bereits geschädigtem Knorpel. Ziel ist nicht die Wiederherstellung eines gesunden Gelenks, sondern eine Verbesserung von Schmerz und Funktion, um eine Versteifung oder Vollprothese hinauszuzögern.\n\n[Mehr zur osteochondralen Läsion des Talus](?op=olt_kb&modus=aufklaerung)",
       "bilder": []
     },
     "op_teilprothese_talus_ablauf": {
       "titel": "Ablauf",
-      "text": "Zugang über eine Innenknöchelosteotomie; Überfräsen des Defekts (ggf. mit patientenindividuellen, nach CT geplanten Ausrichtinstrumenten); Einbringen der Teilprothese **knapp unter dem Niveau des umgebenden Knorpels**.",
+      "text": "Der Zugang erfolgt über eine **Innenknöchelosteotomie**. Der Innenknöchel wird gezielt durchtrennt und weggeklappt, um die hintere innere Schulter des Talus frei einsehen zu können. Am Ende der Operation wird er wieder in seine ursprüngliche Stellung gebracht und verschraubt.\n\n[Mehr zur Innenknöchelosteotomie als Zugang](?op=innenknoechel&modus=aufklaerung)\n\nAnschließend wird der geschädigte Bereich passgenau überfräst. Dabei können Ausrichtinstrumente zum Einsatz kommen, die patientenindividuell nach einer Computertomografie angefertigt werden.\n\nNach dem Ausfräsen wird mit Probeimplantaten die richtige Tiefe eingestellt. Anschließend wird die endgültige Teilprothese so eingebracht, dass sie **knapp unter dem Niveau des umgebenden Knorpels** liegt, um den gegenüberliegenden Knorpel zu schonen.",
       "bilder": []
     },
     "op_teilprothese_talus_ergebnisse": {
       "titel": "Ergebnisse",
-      "text": "Der Eingriff wird selten durchgeführt, meist bei bereits gescheiterten Knorpeloperationen, wenn eine Versteifung oder Vollprothese hinausgezögert werden soll. Die meisten Studien betreffen das **HemiCap/Arthrosurface**-Implantat (seit 2007); alternativ ein patientenindividuelles Implantat (Episealer/Episurf) [[teilprothese_talus_q3]]. Die Arbeiten haben geringe Fallzahlen und **uneinheitliche Ergebnisse**: eine Serie mit 11 Patienten zeigte **Revisionsraten bis 70 %** in den ersten 4 Jahren [[teilprothese_talus_q1]], eine andere mit 31 Patienten über >4 Jahre **keine** Folgeeingriffe [[teilprothese_talus_q2]]. Insgesamt werden meist höhere Revisionsraten beschrieben, als als zufriedenstellend gilt; es besteht eine gewisse Befundbesserung bei verbliebenen Restbeschwerden. Der Eingriff ist als **Therapieversuch mit unklarer Standzeit** zu verstehen.",
+      "text": "Der Eingriff wird insgesamt selten durchgeführt. In der Regel betrifft er Patienten mit bereits gescheiterten Knorpeloperationen, die eine Versteifung oder Vollprothese noch hinauszögern möchten. Die meisten Studien beziehen sich auf das **HemiCap- beziehungsweise Arthrosurface-Implantat**, das 2007 auf den Markt kam. Alternativ steht ein patientenindividuelles Implantat (Episealer beziehungsweise Episurf) zur Verfügung [[teilprothese_talus_q3]].\n\nDie vorliegenden Arbeiten haben alle recht geringe Fallzahlen und berichten uneinheitliche Ergebnisse. Eine Studie mit 11 Patienten beschrieb Revisionsraten von bis zu 70 Prozent in den ersten vier Jahren [[teilprothese_talus_q1]], während eine andere Arbeit mit 31 Patienten über mehr als vier Jahre keine Folgeeingriffe verzeichnete [[teilprothese_talus_q2]]. Insgesamt werden in den meisten Erfahrungsberichten höhere Revisionsraten beschrieben, als gemeinhin als zufriedenstellend gilt.\n\nIn allen Arbeiten zeigte sich eine gewisse Befundbesserung bei verbliebenen Restbeschwerden. Der Eingriff ist somit als Therapieversuch nach fehlgeschlagenen anderen Knorpeleingriffen und bei Wunsch nach Vermeidung einer Versteifung oder Vollprothese zu verstehen, mit unklarem Ausmaß von Standzeit und Ergebnis.",
       "bilder": []
     },
     "op_teilprothese_talus_nachbehandlung": {
@@ -820,7 +820,7 @@
     },
     "op_teilprothese_talus_komplikationen": {
       "titel": "Komplikationen",
-      "text": "- Hohe **Revisionsrate** (bis zu 70 % in einzelnen Serien) mit möglichem Übergang zu Versteifung/Vollprothese\n- Restbeschwerden\n- zusätzlich die Risiken der Innenknöchelosteotomie",
+      "text": "Da die Datenlage begrenzt ist und der Eingriff meist bei bereits geschädigtem Gelenk erfolgt, ist das Ergebnis weniger sicher vorhersehbar als bei anderen Operationen. Die folgenden Punkte sind zu beachten.\n\n- **Hohe Revisionsrate** — in einzelnen Serien bis zu 70 Prozent, mit möglichem Übergang zu Versteifung oder Vollprothese [[teilprothese_talus_q1]]\n- **Restbeschwerden** — trotz gewisser Besserung bleibt häufig ein Restschmerz\n- **Fortschreiten des Gelenkverschleißes**\n- **Risiken der Innenknöchelosteotomie** — dazu zählen eine ausbleibende Heilung des Knöchels, Materialirritation und Nervenreizung",
       "bilder": []
     },
     "op_teilprothese_talus_quellen": {

@@ -2460,7 +2460,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Teilprothese des Talus",
       "titel": "Teilprothese des Talus",
-      "untertitel": "",
+      "untertitel": "Metallische Teilprothese des Sprungbeins als Rückzugseingriff bei fehlgeschlagener Knorpelbehandlung",
       "betrifft_eingriffe": [],
       "slides": [
         "op_teilprothese_talus_ueberblick",
@@ -2475,17 +2475,18 @@
       "quellen": [
         {
           "id": "teilprothese_talus_q1",
-          "text": "Ettinger S, et al. Results of HemiCAP implantation as a salvage procedure for osteochondral lesions of the talus. J Foot Ankle Surg. 2017;56(4):788–792."
+          "text": "Ettinger S, Stukenborg-Colsman C, Waizy H, Becher C, Yao D, Claassen L, Noll Y, Plaass C. Results of HemiCAP implantation as a salvage procedure for osteochondral lesions of the talus. J Foot Ankle Surg. 2017;56(4):788-792. doi:10.1053/j.jfas.2017.04.001"
         },
         {
           "id": "teilprothese_talus_q2",
-          "text": "Ebskov LB, et al. Mid-term results after treatment of complex talus osteochondral defects with HemiCAP implantation. Foot Ankle Surg. 2020;26(4):384–390."
+          "text": "Ebskov LB, Hegnet Andersen K, Bro Rasmussen P, Johansen JK, Benyahia M. Mid-term results after treatment of complex talus osteochondral defects with HemiCAP implantation. Foot Ankle Surg. 2020;26(4):384-390. doi:10.1016/j.fas.2019.05.003"
         },
         {
           "id": "teilprothese_talus_q3",
-          "text": "Mosca M, et al. Surgical technique of an innovative patient-specific metal implant for talar osteochondral lesions. J Exp Orthop. 2025;12(2):e70085."
+          "text": "Mosca M, Caravelli S, Di Ponte M, Gardini G, Vocale E, van Dijk NC, Zaffagnini S. Surgical technique of an innovative patient-specific metal implant for talar osteochondral lesions. J Exp Orthop. 2025;12(2):e70085. doi:10.1002/jeo2.70085"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "fhl": {
       "infoKategorie": "op_technik",

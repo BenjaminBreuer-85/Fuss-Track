@@ -3949,24 +3949,20 @@ function Branding() {
       <div className="branding-label">Inhalt und Bewertung</div>
       <div><span className="branding-name">Dr. med. Benjamin Breuer D.O. DAAO</span></div>
       <div>Spezialist für Fuß- und Sprunggelenkchirurgie</div>
-      <div className="branding-klinik">Florence Nightingale Krankenhaus, Düsseldorf Kaiserswerth</div>
+      <div className="branding-klinik">Fuß und Sprunggelenk verstehen</div>
     </div>
   );
 }
 
 function FooterLinks() {
   function openImpressum() {
-    var ov = document.getElementById("impressum-overlay");
-    if (ov) {
-      ov.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
+    window.open("https://fuss-track.de/impressum.html", "_blank", "noopener");
   }
   return (
     <div className="footer-links">
-      <a href="#datenschutz" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Datenschutz</a>
+      <a href="https://fuss-track.de/datenschutz.html" target="_blank" rel="noopener">Datenschutz</a>
       ·
-      <a href="#impressum" onClick={(e) => { e.preventDefault(); openImpressum(); }}>Impressum</a>
+      <a href="https://fuss-track.de/impressum.html" target="_blank" rel="noopener">Impressum</a>
       <div style={{ marginTop: 6 }}>
         <a href="unterstuetzen.html" target="_blank" rel="noopener">Fuss-Track ist kostenlos und werbefrei — freiwillig unterstützen</a>
       </div>
@@ -3987,7 +3983,7 @@ function PrivacyBanner({ onAccept }) {
         </p>
         <div className="privacy-banner-actions">
           <button className="btn btn-primary btn-small" onClick={onAccept}>Einverstanden</button>
-          <a href="#datenschutz" onClick={(e) => { e.preventDefault(); document.getElementById("impressum-overlay").style.display = "flex"; document.body.style.overflow = "hidden"; }}
+          <a href="https://fuss-track.de/datenschutz.html" target="_blank" rel="noopener"
              className="btn btn-secondary btn-small" style={{ textDecoration: "none" }}>
             Mehr erfahren
           </a>
@@ -4049,102 +4045,16 @@ loadPhasenData()
   });
 </script>
 
-<!-- Impressum & Datenschutz Modal-Overlay -->
-<div id="impressum-overlay" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.55); z-index:9999; padding:20px; align-items:center; justify-content:center;" onclick="if(event.target===this){this.style.display='none';document.body.style.overflow='';}">
-  <div style="max-width:680px; width:100%; max-height:calc(100vh - 40px); overflow-y:auto; -webkit-overflow-scrolling:touch; background:#fff; border-radius:12px; padding:24px; color:#1A202C; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; font-size:14px; line-height:1.6;">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(0,0,0,.10); position:sticky; top:-24px; background:#fff; padding-top:8px; margin-top:-8px; z-index:1;">
-      <h2 style="margin:0; font-size:18px; color:#006B6F;">Impressum &amp; Datenschutz</h2>
-      <span style="cursor:pointer; font-size:22px; color:#718096; line-height:1; padding:4px 8px;" onclick="document.getElementById('impressum-overlay').style.display='none';document.body.style.overflow='';">&#10005;</span>
-    </div>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Angaben gemäß § 5 DDG</h3>
-    <p style="margin:4px 0;">
-      Dr. med. Benjamin Breuer<br>
-      Departmentleiter Spezielle Fußchirurgie<br><br>
-      Berufliche Erreichbarkeit:<br>
-      Florence-Nightingale-Krankenhaus<br>
-      Kaiserswerther Diakonie<br>
-      Kreuzbergstraße 79<br>
-      40489 Düsseldorf
-    </p>
-    <p style="margin:8px 0; font-size:12px; color:#718096; font-style:italic;">
-      Privat betriebene Anwendung von Dr. med. Benjamin Breuer. Kein offizielles Angebot der Kaiserswerther Diakonie oder des Florence-Nightingale-Krankenhauses.
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Kontakt</h3>
-    <p style="margin:4px 0;">
-      Telefon: 0211 409-5000
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Berufsbezeichnung</h3>
-    <p style="margin:4px 0;">
-      Arzt / Facharzt für Orthopädie und Unfallchirurgie<br>
-      Verliehen in der Bundesrepublik Deutschland<br>
-      Zuständige Kammer: Ärztekammer Nordrhein
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Zweck dieser Anwendung</h3>
-    <p style="margin:4px 0;">
-      Fuss-Track ist ein digitaler Begleiter rund um einen geplanten Eingriff am Fuß oder Sprunggelenk. Die Anwendung bietet phasengerechte Informationen vor und nach der Operation.
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Keine medizinische Beratung</h3>
-    <p style="margin:4px 0;">
-      Die Inhalte dieser Anwendung dienen ausschließlich der ergänzenden Information. Sie ersetzen <strong>nicht</strong> das ärztliche Aufklärungsgespräch, die individuelle Untersuchung oder die fachliche Beratung durch Ihren behandelnden Arzt. Bei Beschwerden, Unsicherheiten oder Komplikationen wenden Sie sich bitte direkt an Ihre behandelnden Ärzte oder im Notfall an die Notaufnahme. Die Anwendung trifft keine individuellen medizinischen Empfehlungen.
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Datenschutz</h3>
-    <p style="margin:4px 0;">
-      <strong>Lokale Speicherung im Browser:</strong> Diese Anwendung läuft vollständig im Browser Ihres Geräts. Die Anwendung speichert folgende Angaben ausschließlich lokal in Ihrem Browser (über <em>localStorage</em>): die Auswahl des Eingriffs und der Variante (über die Aufruf-URL festgelegt), das eingegebene OP-Datum sowie die Bestätigung des Datenschutzhinweises. Diese Daten verbleiben auf Ihrem Gerät und werden zu keinem Zeitpunkt an einen Server übertragen.
-    </p>
-    <p style="margin:8px 0 4px;">
-      <strong>Keine Cookies, kein Tracking:</strong> Es werden keine Cookies gesetzt. Es findet keine Analyse Ihres Nutzungsverhaltens statt. Es werden keine Tracking- oder Analysedienste eingebunden.
-    </p>
-    <p style="margin:8px 0 4px;">
-      <strong>Eingesetzte Bibliotheken:</strong> Diese Anwendung verwendet zur Darstellung technische Bibliotheken (u. a. zur Oberflächendarstellung und zur Erzeugung von QR-Codes). Diese Bibliotheken werden vollständig vom selben Server bereitgestellt, von dem auch diese Anwendung ausgeliefert wird. Es findet <strong>keine</strong> Einbindung von Inhalten externer Anbieter (Content Delivery Networks, Analyse-Dienste o. Ä.) statt.
-    </p>
-    <p style="margin:8px 0 4px;">
-      <strong>Hosting:</strong> Diese Anwendung wird über GitHub Pages (GitHub Inc., USA) ausgeliefert. Beim Aufruf werden technisch bedingt Server-Logfiles (u. a. IP-Adresse, Zeitpunkt) durch den Hosting-Anbieter verarbeitet. Wir haben hierauf keinen Einfluss. Die Datenschutzbestimmungen von GitHub sind unter <em>https://docs.github.com/site-policy/privacy-policies</em> einsehbar.
-    </p>
-    <p style="margin:8px 0 4px;">
-      <strong>Ihre Rechte:</strong> Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten sowie auf Widerspruch und Datenübertragbarkeit. Da diese Anwendung keine personenbezogenen Daten auf Servern speichert, betreffen die genannten Rechte im Wesentlichen die in Ihrem Browser gespeicherten Angaben. Diese können Sie jederzeit selbst löschen, indem Sie die Speicherung Ihres Browsers für diese Seite zurücksetzen oder die Funktion „Verlauf zurücksetzen" in der Anwendung nutzen.
-    </p>
-    <p style="margin:8px 0 4px;">
-      <strong>Beschwerderecht:</strong> Sie können sich mit einer Beschwerde an die für Sie zuständige Datenschutzaufsichtsbehörde wenden. Für den Anbieter zuständig: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen, Kavalleriestraße 2–4, 40213 Düsseldorf.
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Haftungsausschluss</h3>
-    <p style="margin:4px 0;">
-      Die Inhalte dieser Anwendung wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Eine Haftung für Schäden, die durch die Nutzung oder Nichtnutzung der angebotenen Informationen entstehen, ist ausgeschlossen, soweit gesetzlich zulässig. Die Anwendung ersetzt nicht das ärztliche Aufklärungsgespräch.
-    </p>
-
-    <h3 style="color:#006B6F; font-size:15px; margin:16px 0 8px;">Urheberrecht</h3>
-    <p style="margin:4px 0;">
-      Die Inhalte und Werke auf dieser Seite unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors.
-    </p>
-
-    <div style="margin-top:20px; padding-top:12px; border-top:1px solid rgba(0,0,0,.10); font-size:11px; color:#718096;">
-      Fuss-Track &middot; &copy; 2026 Dr. med. Benjamin Breuer
-    </div>
-  </div>
-</div>
 
 <div style="text-align:center; padding:14px 0 24px; font-size:11px; color:#a0aec0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  Fuss-Track &middot; Dr. med. Benjamin Breuer
+  Fuss-Track &middot; Dr. med. Benjamin Breuer<br>
+  <span style="display:inline-block; max-width:640px; margin-top:6px; line-height:1.6;">Privat betriebenes Angebot von Dr. med. Benjamin Breuer — kein offizielles Angebot des Florence-Nightingale-Krankenhauses oder der Kaiserswerther Diakonie.</span><br>
+  <span style="display:inline-block; margin-top:6px;">
+    <a href="https://fuss-track.de/impressum.html" target="_blank" rel="noopener" style="color:#10535B;">Impressum</a> &middot;
+    <a href="https://fuss-track.de/datenschutz.html" target="_blank" rel="noopener" style="color:#10535B;">Datenschutz</a>
+  </span>
 </div>
 
-<script>
-// ESC schließt Impressum-Modal und stellt Body-Scroll wieder her
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    var ov = document.getElementById("impressum-overlay");
-    if (ov && ov.style.display === "flex") {
-      ov.style.display = "none";
-      document.body.style.overflow = "";
-    }
-  }
-});
-</script>
 
 </body>
 </html>
