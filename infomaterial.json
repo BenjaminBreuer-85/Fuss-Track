@@ -1561,7 +1561,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Achillessehnen-Tendoskopie",
       "titel": "Achillessehnen-Tendoskopie",
-      "untertitel": "",
+      "untertitel": "Minimalinvasives Lösen von Verklebungen an der Achillessehne bei Mid-Portion-Tendinopathie",
       "betrifft_eingriffe": [],
       "slides": [
         "op_tendoskopie_achilles_ueberblick",
@@ -1577,29 +1577,30 @@
       "quellen": [
         {
           "id": "tendoskopie_achilles_q1",
-          "text": "Vega J, et al. Endoscopic Achilles tendon treatment. 2008."
+          "text": "Vega J, Cabestany JM, Golanó P, Pérez-Carro L. Endoscopic treatment for chronic Achilles tendinopathy. Foot Ankle Surg. 2008;14(4):204-210. doi:10.1016/j.fas.2008.02.005"
         },
         {
           "id": "tendoskopie_achilles_q2",
-          "text": "Pearce CJ, et al. Achilles tendoscopy. 2012."
+          "text": "Pearce CJ, Carmichael J, Calder JD. Achilles tendinoscopy and plantaris tendon release and division in the treatment of non-insertional Achilles tendinopathy. Foot Ankle Surg. 2012;18(2):124-127. doi:10.1016/j.fas.2011.04.008"
         },
         {
           "id": "tendoskopie_achilles_q3",
-          "text": "Steenstra F, van Dijk CN. Achilles tendoscopy. Foot Ankle Clin. 2006."
+          "text": "Steenstra F, van Dijk CN. Achilles tendoscopy. Foot Ankle Clin. 2006;11(2):429-438. doi:10.1016/j.fcl.2006.02.001"
         },
         {
           "id": "tendoskopie_achilles_q4",
-          "text": "Maquirriain J. Achilles tendoscopy. 2013."
+          "text": "Maquirriain J. Surgical treatment of chronic Achilles tendinopathy: long-term results of the endoscopic technique. J Foot Ankle Surg. 2013;52(4):451-455. doi:10.1053/j.jfas.2013.03.031"
         },
         {
           "id": "tendoskopie_achilles_q5",
-          "text": "Wagner P, et al. Endoscopic treatment of Achilles mid-portion tendinopathy. 2020."
+          "text": "Wagner P, Wagner E, Ortiz C, et al. Achilles tendoscopy for non-insertional Achilles tendinopathy: a case series study. Foot Ankle Surg. 2020;26(4):421-424. doi:10.1016/j.fas.2019.05.008"
         },
         {
           "id": "tendoskopie_achilles_q6",
-          "text": "Thermann H, et al. MRT-Verlauf nach tendoskopischem Debridement der Achillessehne. 2023."
+          "text": "Thermann H, Fischer R, Gougoulias N, Cipollaro L, Maffulli N. Endoscopic debridement for non-insertional Achilles tendinopathy with and without platelet-rich plasma. J Sport Health Sci. 2023;12(2):275-280. doi:10.1016/j.jshs.2020.06.012"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "achilles_nekrose": {
       "infoKategorie": "op_technik",
