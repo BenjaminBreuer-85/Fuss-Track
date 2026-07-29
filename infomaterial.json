@@ -2449,7 +2449,7 @@
       "infoKategorie": "allgemein",
       "infoTitel": "Metallallergie und Implantate",
       "titel": "Allgemeine Information",
-      "untertitel": "",
+      "untertitel": "Allergie gegen Implantatbestandteile wie Nickel und ihre Bedeutung bei Operationen am Fuß und Sprunggelenk",
       "betrifft_eingriffe": [],
       "slides": [
         "op_metallallergie_ueberblick",
@@ -2464,41 +2464,42 @@
       "quellen": [
         {
           "id": "metallallergie_q1",
-          "text": "Basko-Plluska JL, Thyssen JP, Schalock PC. Cutaneous and systemic hypersensitivity reactions to metallic implants. Dermatitis. 2011;22(2):65–79."
+          "text": "Basko-Plluska JL, Thyssen JP, Schalock PC. Cutaneous and systemic hypersensitivity reactions to metallic implants. Dermatitis. 2011;22(2):65-79. PMID:21504692"
         },
         {
           "id": "metallallergie_q2",
-          "text": "Schalock PC, et al. Hypersensitivity reactions to metallic implants — diagnostic algorithm and suggested patch test series. Contact Dermatitis. 2012;66(1):4–19."
+          "text": "Schalock PC, Menné T, Johansen JD, et al. Hypersensitivity reactions to metallic implants: diagnostic algorithm and suggested patch test series for clinical use. Contact Dermatitis. 2012;66(1):4-19. doi:10.1111/j.1600-0536.2011.01971.x"
         },
         {
           "id": "metallallergie_q3",
-          "text": "Granchi D, et al. Sensitivity to implant materials in patients with total knee arthroplasties. Biomaterials. 2008;29(10):1494–1500."
+          "text": "Granchi D, Cenni E, Tigani D, Trisolino G, Baldini N, Giunti A. Sensitivity to implant materials in patients with total knee arthroplasties. Biomaterials. 2008;29(10):1494-1500. doi:10.1016/j.biomaterials.2007.11.038"
         },
         {
           "id": "metallallergie_q4",
-          "text": "Hallab N, Merritt K, Jacobs JJ. Metal sensitivity in patients with orthopaedic implants. J Bone Joint Surg Am. 2001;83(3):428–436."
+          "text": "Hallab N, Merritt K, Jacobs JJ. Metal sensitivity in patients with orthopaedic implants. J Bone Joint Surg Am. 2001;83(3):428-436. doi:10.2106/00004623-200103000-00017"
         },
         {
           "id": "metallallergie_q5",
-          "text": "Anastasio AT, et al. Metal hypersensitivity following total ankle arthroplasty: case series and literature review. Foot Ankle Spec. 2023."
+          "text": "Anastasio AT, Balu AR, Johnson L, Crook B, Parekh SG. Metal hypersensitivity following total ankle arthroplasty: case series and literature review. Foot Ankle Spec. 2023;18(5):453-463. doi:10.1177/19386400231162419"
         },
         {
           "id": "metallallergie_q6",
-          "text": "Cristofaro C, et al. Metal hypersensitivity in foot & ankle orthopaedic surgery: a systematic review. J Clin Orthop Trauma. 2023;44:102249."
+          "text": "Cristofaro C, Pinsker EB, Halai F, Wolfstadt J, Daniels TR, Halai M. Metal hypersensitivity in foot & ankle orthopaedic surgery: a systematic review. J Clin Orthop Trauma. 2023;44:102249. doi:10.1016/j.jcot.2023.102249"
         },
         {
           "id": "metallallergie_q7",
-          "text": "Saccomanno MF, et al. Allergy in total knee replacement surgery: is it a real problem? World J Orthop. 2019;10(2):63–70."
+          "text": "Saccomanno MF, Sircana G, Masci G, et al. Allergy in total knee replacement surgery: is it a real problem? World J Orthop. 2019;10(2):63-70. doi:10.5312/wjo.v10.i2.63"
         },
         {
           "id": "metallallergie_q8",
-          "text": "Teo WZW, Schalock PC. Metal hypersensitivity reactions to orthopedic implants. Dermatol Ther (Heidelb). 2017;7(1):53–64."
+          "text": "Teo WZW, Schalock PC. Metal hypersensitivity reactions to orthopedic implants. Dermatol Ther (Heidelb). 2017;7(1):53-64. doi:10.1007/s13555-016-0162-1"
         },
         {
           "id": "metallallergie_q9",
-          "text": "Gaston TE, et al. Morbidity after metal allergy to a total ankle implant. Foot Ankle Spec. 2020;13(6):502–507."
+          "text": "Gaston TE, Kwan S, Skibicki HE, Cheesman QT, Daniel JN. Morbidity after metal allergy to a total ankle implant. Foot Ankle Spec. 2020;13(6):502-507. doi:10.1177/1938640020950119"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "spongiosa": {
       "infoKategorie": "op_technik",
