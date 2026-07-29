@@ -3085,7 +3085,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Wadenmuskel-Verlängerung",
       "titel": "Wadenmuskel-Verlängerung",
-      "untertitel": "",
+      "untertitel": "Operative Verlängerung der verkürzten Wadenmuskulatur bei Überlastung von Ferse, Vor- oder Mittelfuß",
       "betrifft_eingriffe": [],
       "slides": [
         "op_gastroc_ueberblick",
@@ -3102,9 +3102,66 @@
       "quellen": [
         {
           "id": "gastroc_q1",
-          "text": "Übersichten/RCT zur Gastrocnemius-Rezession (Strayer; Silfverskiöld-Test; Dorsalextensionsgewinn ~10–13°; Plantarfasziitis, Achillestendinopathie, Vorfußbeschwerden)."
+          "text": "Molund M, Husebye EE, Hellesnes J, Nilsen F, Hvaal K. Validation of a new device for measuring isolated gastrocnemius contracture and evaluation of the reliability of the Silfverskiöld test. Foot Ankle Int. 2018;39(8):960-965. doi:10.1177/1071100718770386"
+        },
+        {
+          "id": "gastroc_q2",
+          "text": "Firth GB, McMullan M, Chin T, Ma F, Selber P, Eizenberg N, Wolfe R, Graham HK. Lengthening of the gastrocnemius-soleus complex: an anatomical and biomechanical study in human cadavers. J Bone Joint Surg Am. 2013;95(16):1489-1496. doi:10.2106/JBJS.K.01638"
+        },
+        {
+          "id": "gastroc_q3",
+          "text": "Rong K, Ge WT, Li XC, Xu XY. Mid-term results of intramuscular lengthening of gastrocnemius and/or soleus to correct equinus deformity in flatfoot. Int Orthop. 2016;40(2):417-423. doi:10.1007/s00264-015-2860-1"
+        },
+        {
+          "id": "gastroc_q4",
+          "text": "Herzenberg JE, Lamm BM, Corwin C, Sekel J. Isolated recession of the gastrocnemius muscle: the Baumann procedure. Foot Ankle Int. 2007;28(11):1154-1159. doi:10.3113/FAI.2007.1154"
+        },
+        {
+          "id": "gastroc_q5",
+          "text": "Rong K, Li XC, Ge WT, Xu XY. Mid-term results of Baumann procedure for gastrocnemius contracture. Foot Ankle Int. 2015;36(10):1223-1228. doi:10.1177/1071100715588994"
+        },
+        {
+          "id": "gastroc_q6",
+          "text": "Saxena A, Widtfeldt A. Endoscopic gastrocnemius recession: preliminary report on 18 cases. J Foot Ankle Surg. 2004;43(5):302-306. doi:10.1053/j.jfas.2004.07.001"
+        },
+        {
+          "id": "gastroc_q7",
+          "text": "Brandão RA, Larson EE, Weber JS, et al. Endoscopic gastrocnemius recession: a systematic review. Foot Ankle Spec. 2021;14(1):55-63. doi:10.1177/1938640019892767"
+        },
+        {
+          "id": "gastroc_q8",
+          "text": "Gianakos AL, Ross KA, Hannon CP, Duke GL, Prado MP, Kennedy JG. Functional outcomes of gastrocnemius recession for chronic conditions of the foot and ankle: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1355-1364. doi:10.1007/s00167-015-3939-3"
+        },
+        {
+          "id": "gastroc_q9",
+          "text": "Cychosz CC, Phisitkul P, Belatti DA, Glazebrook MA, DiGiovanni CW. Gastrocnemius recession for foot and ankle conditions in adults: evidence-based recommendations. Foot Ankle Surg. 2015;21(2):77-85. doi:10.1016/j.fas.2015.02.001"
+        },
+        {
+          "id": "gastroc_q10",
+          "text": "Mueller MJ, Sinacore DR, Hastings MK, Strube MJ, Johnson JE. Effect of Achilles tendon lengthening on neuropathic plantar ulcers: a randomized clinical trial. J Bone Joint Surg Am. 2003;85(8):1436-1445. PMID:12925622"
+        },
+        {
+          "id": "gastroc_q11",
+          "text": "Pérez González A, et al. Gastrocnemius recession for chronic plantar fasciitis: a systematic review and meta-analysis of randomized controlled trials. J Clin Med. 2026;15(2):616. doi:10.3390/jcm15020616"
+        },
+        {
+          "id": "gastroc_q12",
+          "text": "Arshad Z, Aslam A, Iqbal AM, Bhatia M. Gastrocnemius release in the management of chronic Achilles tendinopathy: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2022;30(12):4189-4197. doi:10.1007/s00167-022-07039-7"
+        },
+        {
+          "id": "gastroc_q13",
+          "text": "Vinagre G, Cruz F, Alkhelaifi K, D'Hooghe P. Isolated gastrocnemius release for the treatment of refractory metatarsalgia. Int Orthop. 2017;41(11):2281-2287. doi:10.1007/s00264-017-3621-0"
+        },
+        {
+          "id": "gastroc_q14",
+          "text": "Gemini G, et al. Gastrocnemius recession for foot and ankle pathology: a systematic review of outcomes. J Funct Morphol Kinesiol. 2026;11(1):122. doi:10.3390/jfmk11010122"
+        },
+        {
+          "id": "gastroc_q15",
+          "text": "Arshad Z, Aslam A, Iqbal AM, Bhatia M. Gastrocnemius release for the treatment of chronic plantar fasciitis: a systematic review. Foot Ankle Int. 2022;43(4):568-575. doi:10.1177/10711007211052290"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "osg_arthroskopie": {
       "infoKategorie": "op_technik",
