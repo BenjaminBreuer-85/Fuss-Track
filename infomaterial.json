@@ -33,13 +33,125 @@
       "infoKategorie": "op_technik",
       "infoTitel": "OSG-Versteifung (Arthrodese)",
       "titel": "OSG-Versteifung (Arthrodese)",
-      "untertitel": "Information zur fortgeschrittenen OSG-Arthrose und den Behandlungsmöglichkeiten",
+      "untertitel": "Dauerhafte Versteifung des oberen Sprunggelenks bei fortgeschrittener Arthrose, offen oder arthroskopisch assistiert",
       "betrifft_eingriffe": [
         "osg_arthrodese"
       ],
       "slides": [
-        "osg_op_arthrodese",
-        "osg_vergleich"
+        "osg_arthrodese_ueberblick",
+        "osg_arthrodese_ablauf",
+        "osg_arthrodese_ergebnisse",
+        "osg_arthrodese_nachbehandlung",
+        "osg_arthrodese_komplikationen",
+        "osg_vergleich",
+        "osg_arthrodese_quellen"
+      ],
+      "stand": "Juli 2026",
+      "quellen": [
+        {
+          "id": "osg_arth_q1",
+          "text": "Harrasser N, von Eisenhart-Rothe R, Pohlig F, et al. Arthrose des oberen Sprunggelenks. Orthopäde. 2017;46(7):625-638. doi:10.1007/s00132-017-3435-1"
+        },
+        {
+          "id": "osg_arth_q2",
+          "text": "Smith JT, Chiodo CP, Singh SK, Wilson MG. Open ankle arthrodesis with a fibular-sparing technique. Foot Ankle Int. 2013;34(4):557-562. doi:10.1177/1071100713477617"
+        },
+        {
+          "id": "osg_arth_q3",
+          "text": "Coester LM, Saltzman CL, Leupold J, Pontarelli W. Long-term results following ankle arthrodesis for post-traumatic arthritis. J Bone Joint Surg Am. 2001;83(2):219-228. doi:10.2106/00004623-200102000-00009"
+        },
+        {
+          "id": "osg_arth_q4",
+          "text": "Nihal A, Gellman RE, Embil JM, Trepman E. Ankle arthrodesis. Foot Ankle Surg. 2008;14(1):1-10. doi:10.1016/j.fas.2007.08.004"
+        },
+        {
+          "id": "osg_arth_q5",
+          "text": "Fuentes-Sanz A, Moya-Angeler J, López-Oliva F, Forriol F. Clinical outcome and gait analysis of ankle arthrodesis. Foot Ankle Int. 2012;33(10):819-827. doi:10.3113/FAI.2012.0819"
+        },
+        {
+          "id": "osg_arth_q6",
+          "text": "Thomas R, Daniels TR, Parker K. Gait analysis and functional outcomes following ankle arthrodesis for isolated ankle arthritis. J Bone Joint Surg Am. 2006;88(3):526-535. doi:10.2106/JBJS.E.00521"
+        },
+        {
+          "id": "osg_arth_q7",
+          "text": "Schwienbacher S, Aghayev E, Hofmann UK, et al. Driving and emergency braking may be impaired after tibiotalar joint arthrodesis. Int Orthop. 2015;39(7):1335-1341. doi:10.1007/s00264-015-2789-4"
+        },
+        {
+          "id": "osg_arth_q8",
+          "text": "Brodsky JW, Kane JM, Coleman S, Bariteau J, Tenenbaum S. Abnormalities of gait caused by ankle arthritis are improved by ankle arthrodesis. Bone Joint J. 2016;98-B(10):1369-1375. doi:10.1302/0301-620X.98B10.37614"
+        },
+        {
+          "id": "osg_arth_q9",
+          "text": "Ling JS, Smyth NA, Fraser EJ, et al. Investigating the relationship between ankle arthrodesis and adjacent-joint arthritis in the hindfoot: a systematic review. J Bone Joint Surg Am. 2015;97(6):513-520. doi:10.2106/JBJS.N.00426"
+        },
+        {
+          "id": "osg_arth_q10",
+          "text": "Kim JG, Ha DJ, Gwak HC, et al. Ankle arthrodesis: a comparison of anterior approach and transfibular approach. Clin Orthop Surg. 2018;10(3):368-373. doi:10.4055/cios.2018.10.3.368"
+        },
+        {
+          "id": "osg_arth_q11",
+          "text": "Mok TN, He Q, Panneerselavam S, et al. Open versus arthroscopic ankle arthrodesis: a systematic review and meta-analysis. J Orthop Surg Res. 2020;15(1):187. doi:10.1186/s13018-020-01708-4"
+        },
+        {
+          "id": "osg_arth_q12",
+          "text": "Townshend D, Di Silvestro M, Krause F, et al. Arthroscopic versus open ankle arthrodesis: a multicenter comparative case series. J Bone Joint Surg Am. 2013;95(2):98-102. doi:10.2106/JBJS.K.01240"
+        },
+        {
+          "id": "osg_arth_q13",
+          "text": "Ogilvie-Harris DJ, Lieberman I, Fitsialos D. Arthroscopically assisted arthrodesis for osteoarthrotic ankles. J Bone Joint Surg Am. 1993;75(8):1167-1174. doi:10.2106/00004623-199308000-00006"
+        },
+        {
+          "id": "osg_arth_q14",
+          "text": "Elmlund AO, Winson IG. Arthroscopic ankle arthrodesis. Foot Ankle Clin. 2015;20(1):71-80. doi:10.1016/j.fcl.2014.10.008"
+        },
+        {
+          "id": "osg_arth_q15",
+          "text": "Endres T, Grass R, Rammelt S, Zwipp H. Ankle arthrodesis with four cancellous lag screws. Oper Orthop Traumatol. 2005;17(4-5):345-360. doi:10.1007/s00064-005-1147-x"
+        },
+        {
+          "id": "osg_arth_q16",
+          "text": "Jastifer JR. Topical review: locking plate technology in foot and ankle surgery. Foot Ankle Int. 2014;35(5):512-518. doi:10.1177/1071100714523274"
+        },
+        {
+          "id": "osg_arth_q18",
+          "text": "Prissel MA, Simpson GA, Sutphen SA, Hyer CF, Berlet GC. Ankle arthrodesis: a retrospective analysis comparing single column, locked anterior plating to crossed lag screw technique. J Foot Ankle Surg. 2017;56(3):453-456. doi:10.1053/j.jfas.2017.01.007"
+        },
+        {
+          "id": "osg_arth_q19",
+          "text": "Betz M, Benninger E, Favre P, et al. Primary stability and stiffness in ankle arthrodesis: crossed screws versus anterior plating. Foot Ankle Surg. 2013;19(3):168-172. doi:10.1016/j.fas.2013.04.006"
+        },
+        {
+          "id": "osg_arth_q20",
+          "text": "So E, Brandão RA, Bull PE. A comparison of talar surface area occupied by 2- versus 3-screw fixation for ankle arthrodesis. Foot Ankle Spec. 2020;13(1):50-53. doi:10.1177/1938640019832359"
+        },
+        {
+          "id": "osg_arth_q21",
+          "text": "Bernasconi A, Izzo A, D'Agostino M, et al. Role of fibular autograft in ankle arthrodesis fixed using cannulated screws: a proportional meta-analysis and systematic review. Sci Rep. 2023;13(1):18614. doi:10.1038/s41598-023-46034-x"
+        },
+        {
+          "id": "osg_arth_q22",
+          "text": "Perlman MH, Thordarson DB. Ankle fusion in a high risk population: an assessment of nonunion risk factors. Foot Ankle Int. 1999;20(8):491-496. doi:10.1177/107110079902000805"
+        },
+        {
+          "id": "osg_arth_q23",
+          "text": "Chalayon O, Wang B, Blankenhorn B, et al. Factors affecting the outcomes of uncomplicated primary open ankle arthrodesis. Foot Ankle Int. 2015;36(10):1170-1179. doi:10.1177/1071100715587045"
+        },
+        {
+          "id": "osg_arth_q24",
+          "text": "Izzo A, Sgadari A, Santagata S, et al. Irritation from metalwork after ankle arthrodesis fixed using screws: a proportional meta-analysis and systematic review. Arch Orthop Trauma Surg. 2023;143(8):4861-4870. doi:10.1007/s00402-023-04813-1"
+        },
+        {
+          "id": "osg_arth_q25",
+          "text": "Ferkel RD, Hewitt M. Long-term results of arthroscopic ankle arthrodesis. Foot Ankle Int. 2005;26(4):275-280. doi:10.1177/107110070502600402"
+        },
+        {
+          "id": "osg_arth_q26",
+          "text": "Goldberg AJ, Chowdhury K, Bordea E, et al. Total ankle replacement versus ankle arthrodesis for patients aged 50-85 years with end-stage ankle osteoarthritis: the TARVA RCT. Health Technol Assess. 2023;27(5):1-80. doi:10.3310/PTYJ1146"
+        },
+        {
+          "id": "osg_arth_q17",
+          "text": "Kakarala G, Rajan DT. Comparative study of ankle arthrodesis using cross screw fixation versus anterior contoured plate plus cross screw fixation. Acta Orthop Belg. 2006;72(6):716-721. PMID:17260609"
+        }
       ]
     },
     "osg_tep_op": {
@@ -1979,7 +2091,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Triple-/Double-Arthrodese",
       "titel": "Triple-/Double-Arthrodese",
-      "untertitel": "",
+      "untertitel": "Dreidimensionale Versteifung von zwei oder drei Rückfußgelenken bei schwerer Fehlstellung oder Arthrose",
       "betrifft_eingriffe": [],
       "slides": [
         "op_triple_ueberblick",
@@ -1994,37 +2106,54 @@
       "quellen": [
         {
           "id": "triple_q1",
-          "text": "Galli MM, et al. Structures at risk with medial double hindfoot fusion: a cadaveric study. J Foot Ankle Surg. 2014;53(5):598–600."
+          "text": "Galli MM, Scott RT, Bussewitz B, Hatic S 2nd, Hyer CF. Structures at risk with medial double hindfoot fusion: a cadaveric study. J Foot Ankle Surg. 2014;53(5):598-600. doi:10.1053/j.jfas.2014.03.001"
         },
         {
           "id": "triple_q2",
-          "text": "Pell RF, Myerson MS, Schon LC. Clinical outcome after primary triple arthrodesis. J Bone Joint Surg Am. 2000;82(1):47–57."
+          "text": "Pell RF 4th, Myerson MS, Schon LC. Clinical outcome after primary triple arthrodesis. J Bone Joint Surg Am. 2000;82(1):47-57. doi:10.2106/00004623-200001000-00006"
         },
         {
           "id": "triple_q3",
-          "text": "Mäenpää H, Lehto MU, Belt EA. What went wrong in triple arthrodesis? An analysis of failures in 21 patients. Clin Orthop Relat Res. 2001;(391):218–223."
+          "text": "Mäenpää H, Lehto MU, Belt EA. What went wrong in triple arthrodesis? An analysis of failures in 21 patients. Clin Orthop Relat Res. 2001;(391):218-223. PMID:11603672"
         },
         {
           "id": "triple_q4",
-          "text": "Astion DJ, et al. Motion of the hindfoot after simulated arthrodesis. J Bone Joint Surg Am. 1997;79(2):241–246."
+          "text": "Astion DJ, Deland JT, Otis JC, Kenneally S. Motion of the hindfoot after simulated arthrodesis. J Bone Joint Surg Am. 1997;79(2):241-246. doi:10.2106/00004623-199702000-00012"
         },
         {
           "id": "triple_q5",
-          "text": "Cates NK, et al. Double versus triple arthrodesis fusion rates: a systematic review. J Foot Ankle Surg. 2022;61(4):907–913."
+          "text": "Cates NK, Mayer A, Tenley J, Wynes J, Tefera E, Steinberg JS, Kim PJ, Weinraub GM. Double versus triple arthrodesis fusion rates: a systematic review. J Foot Ankle Surg. 2022;61(4):907-913. doi:10.1053/j.jfas.2022.01.012"
         },
         {
           "id": "triple_q6",
-          "text": "Angus PD, Cowell HR. Triple arthrodesis. A critical long-term review. J Bone Joint Surg Br. 1986;68(2):260–265."
+          "text": "Angus PD, Cowell HR. Triple arthrodesis: a critical long-term review. J Bone Joint Surg Br. 1986;68(2):260-265. doi:10.1302/0301-620X.68B2.3958012"
         },
         {
           "id": "triple_q7",
-          "text": "de Heus JA, et al. The influence of subtalar and triple arthrodesis on the tibiotalar joint. J Bone Joint Surg Br. 1997;79(4):644–647."
+          "text": "de Heus JA, Marti RK, Besselaar PP, Albers GH. The influence of subtalar and triple arthrodesis on the tibiotalar joint: a long-term follow-up study. J Bone Joint Surg Br. 1997;79(4):644-647. doi:10.1302/0301-620X.79B4.7194"
         },
         {
           "id": "triple_q8",
-          "text": "Knupp M, et al. Subtalar and talonavicular arthrodesis through a single medial approach for severe planovalgus deformity. J Bone Joint Surg Br. 2009;91(5):612–615."
+          "text": "Knupp M, Schuh R, Stufkens SA, Bolliger L, Hintermann B. Subtalar and talonavicular arthrodesis through a single medial approach for the correction of severe planovalgus deformity. J Bone Joint Surg Br. 2009;91(5):612-615. doi:10.1302/0301-620X.91B5.21727"
+        },
+        {
+          "id": "triple_q9",
+          "text": "Haritidis JH, Kirkos JM, Provellegios SM, Zachos AD. Long-term results of triple arthrodesis: 42 cases followed for 25 years. Foot Ankle Int. 1994;15(10):548-551. doi:10.1177/107110079401501005"
+        },
+        {
+          "id": "triple_q10",
+          "text": "Sammarco VJ, Magur EG, Sammarco GJ, Bagwe MR. Arthrodesis of the subtalar and talonavicular joints for correction of symptomatic hindfoot malalignment. Foot Ankle Int. 2006;27(9):661-666. doi:10.1177/107110070602700901"
+        },
+        {
+          "id": "triple_q11",
+          "text": "Schuh R, Salzberger F, Wanivenhaus AH, Funovics PT, Windhager R, Trnka HJ. Kinematic changes in patients with double arthrodesis of the hindfoot for realignment of planovalgus deformity. J Orthop Res. 2013;31(4):517-524. doi:10.1002/jor.22269"
+        },
+        {
+          "id": "triple_q12",
+          "text": "So E, Reb CW, Larson DR, Hyer CF. Medial double arthrodesis: technique guide and tips. J Foot Ankle Surg. 2018;57(2):364-369. doi:10.1053/j.jfas.2017.10.017"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "knorpel_osg": {
       "infoKategorie": "op_technik",

@@ -2379,15 +2379,18 @@ function AufklaerungsView({ opKey, kbOrigin }) {
             </div>
           );
         })()}
-        {current.video && current.video.vimeo && (
-          <div style={{ position: "relative", paddingTop: "56.25%", marginTop: 14,
-                        borderRadius: 8, overflow: "hidden", background: "#000" }}>
-            <iframe
-              src={"https://player.vimeo.com/video/" + current.video.vimeo}
-              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title="Video zum Eingriff" />
+        {/* Video wird direkt abgespielt — Quelle ist entweder ein Pfad im Repo
+            (z. B. "video/chevron.mp4") oder eine vollständige URL. Bewusst kein
+            iframe: fremde Anbieter werden nicht eingebettet. Ohne Quelle wird
+            kein Videobereich gerendert. */}
+        {current.video && (current.video.quelle || current.video.datei) && (
+          <div style={{ marginTop: 14, borderRadius: 8, overflow: "hidden", background: "#000" }}>
+            <video
+              src={current.video.quelle || current.video.datei}
+              controls
+              preload="metadata"
+              playsInline
+              style={{ display: "block", width: "100%", height: "auto" }} />
           </div>
         )}
       </div>
@@ -3955,9 +3958,6 @@ function Branding() {
 }
 
 function FooterLinks() {
-  function openImpressum() {
-    window.open("https://fuss-track.de/impressum.html", "_blank", "noopener");
-  }
   return (
     <div className="footer-links">
       <a href="https://fuss-track.de/datenschutz.html" target="_blank" rel="noopener">Datenschutz</a>
@@ -4047,12 +4047,7 @@ loadPhasenData()
 
 
 <div style="text-align:center; padding:14px 0 24px; font-size:11px; color:#a0aec0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  Fuss-Track &middot; Dr. med. Benjamin Breuer<br>
-  <span style="display:inline-block; max-width:640px; margin-top:6px; line-height:1.6;">Privat betriebenes Angebot von Dr. med. Benjamin Breuer — kein offizielles Angebot des Florence-Nightingale-Krankenhauses oder der Kaiserswerther Diakonie.</span><br>
-  <span style="display:inline-block; margin-top:6px;">
-    <a href="https://fuss-track.de/impressum.html" target="_blank" rel="noopener" style="color:#10535B;">Impressum</a> &middot;
-    <a href="https://fuss-track.de/datenschutz.html" target="_blank" rel="noopener" style="color:#10535B;">Datenschutz</a>
-  </span>
+  Fuss-Track &middot; Dr. med. Benjamin Breuer
 </div>
 
 
