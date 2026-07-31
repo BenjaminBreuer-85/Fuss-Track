@@ -17,6 +17,20 @@ erarbeitet, geprüft und freigegeben**. In diesem Repository werden sie nur
 - Rein technische Korrekturen (JSON-Syntax, kaputte Referenzen, Encoding)
   sind erlaubt, dürfen aber den Wortlaut nicht verändern.
 
+## Autorenregeln für Patiententexte
+
+**Keine Aufzählungslisten in Patiententexten.** Inhalte werden als Fließtext in
+ganzen Sätzen formuliert, nicht als Spiegelstrich- oder Nummernlisten. Das gilt
+für alle patientenseitigen Texte in `bausteine.json`, `aufklaerung.json`,
+`phasen.json` und `nonop.json`.
+
+Ausgenommen sind Strukturen, die keine Prosa sind: Quellenverzeichnisse,
+nummerierte Übungsschritte und Tabellen.
+
+Beim Umformulieren bleibt der Inhalt identisch — es ändert sich ausschließlich
+die Form. Der Bestand wird schrittweise umgestellt; bei jeder Bearbeitung eines
+Textes werden dessen Listen mit umgeformt.
+
 ## Markenrichtlinie (BRAND.md)
 
 Verbindlich: Alle Änderungen an Oberfläche, Texten oder Grafiken müssen
