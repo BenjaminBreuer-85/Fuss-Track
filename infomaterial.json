@@ -974,14 +974,57 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
       "titel": "Youngswick-Osteotomie (Hallux-rigidus-Behandlung)",
-      "untertitel": "Information zur Hallux-rigidus-Erkrankung und den Behandlungsmöglichkeiten",
+      "untertitel": "Gelenkerhaltende Tieferstellungs-Osteotomie des ersten Mittelfußknochens bei Hallux limitus und beginnendem Hallux rigidus",
       "betrifft_eingriffe": [
         "youngswick"
       ],
       "slides": [
         "hr_krankheitsbild",
         "hr_behandlung",
-        "hr_op_youngswick"
+        "op_youngswick_ueberblick",
+        "op_youngswick_ablauf",
+        "op_youngswick_ergebnisse",
+        "op_youngswick_komplikationen",
+        "op_youngswick_quellen"
+      ],
+      "stand": "Juli 2026",
+      "quellen": [
+        {
+          "id": "yw_q1",
+          "text": "Youngswick FD. Modifications of the Austin bunionectomy for treatment of metatarsus primus elevatus associated with hallux limitus. J Foot Surg. 1982;21(2):114-116. PMID:7096906"
+        },
+        {
+          "id": "yw_q2",
+          "text": "Roukis TS. Clinical outcomes after isolated periarticular osteotomies of the first metatarsal for hallux rigidus: a systematic review. J Foot Ankle Surg. 2010;49(6):553-560. doi:10.1053/j.jfas.2010.08.014"
+        },
+        {
+          "id": "yw_q3",
+          "text": "Weber C, Waizy H. Distale plantarisierende Osteotomie des Os metatarsale I zur Behandlung des Hallux limitus bei Metatarsus primus elevatus. Oper Orthop Traumatol. 2021;33(6):487-494. doi:10.1007/s00064-021-00744-5"
+        },
+        {
+          "id": "yw_q5",
+          "text": "Slullitel G, López V, Seletti M, Calvi JP, Bartolucci C, Pinton G. Joint preserving procedure for moderate hallux rigidus: does the metatarsal index really matter? J Foot Ankle Surg. 2016;55(6):1143-1147. doi:10.1053/j.jfas.2016.06.003"
+        },
+        {
+          "id": "yw_q6",
+          "text": "Cöster ME, Montgomery F, Cöster MC. Patient-reported outcomes of joint-preserving surgery for moderate hallux rigidus: a 1-year follow-up of 296 patients from Swefoot. Acta Orthop. 2021;92(1):109-113. doi:10.1080/17453674.2020.1824762"
+        },
+        {
+          "id": "yw_q7",
+          "text": "LaMar L, Deroy AR, Sinnot MT, Haut R, Squire M, Wertheimer S. Mechanical comparison of the Youngswick, sagittal V, and modified Weil osteotomies for hallux rigidus in a sawbone model. J Foot Ankle Surg. 2006;45(2):70-75. doi:10.1053/j.jfas.2005.12.007"
+        },
+        {
+          "id": "yw_q8",
+          "text": "Viladot A, Sodano L, Marcellini L, Zamperetti M, Hernandez ES, Perice RV. Youngswick-Austin versus distal oblique osteotomy for the treatment of hallux rigidus. Foot (Edinb). 2017;32:53-58. doi:10.1016/j.foot.2017.09.001"
+        },
+        {
+          "id": "yw_q9",
+          "text": "Shields J, Gambhir N, Alben M, Kogan A, Greenberg P, Delmonte R. Cheilectomy with decompression osteotomy for treatment of hallux limitus and rigidus: a retrospective study with 5-year outcomes. J Foot Ankle Surg. 2023;62(2):282-285. doi:10.1053/j.jfas.2022.07.008"
+        },
+        {
+          "id": "yw_q10",
+          "text": "Roukis TS. The need for surgical revision after isolated cheilectomy for hallux rigidus: a systematic review. J Foot Ankle Surg. 2010;49(5):465-470. doi:10.1053/j.jfas.2010.06.013"
+        }
       ]
     },
     "mtp1_arthrodese": {
@@ -1002,7 +1045,7 @@
       "infoKategorie": "op_technik",
       "infoTitel": "Weil-Osteotomie",
       "titel": "Weil-Osteotomie",
-      "untertitel": "",
+      "untertitel": "Intraartikuläre Verkürzungs- und Hebungsosteotomie des Mittelfußkopfes bei Metatarsalgie",
       "betrifft_eingriffe": [],
       "slides": [
         "op_weil_ueberblick",
@@ -1018,29 +1061,30 @@
       "quellen": [
         {
           "id": "weil_q1",
-          "text": "Barouk LS. Weil's metatarsal osteotomy in the treatment of metatarsalgia. Orthopade. 1996;25:338–344."
+          "text": "Barouk LS. Weil's metatarsal osteotomy in the treatment of metatarsalgia. Orthopade. 1996;25(4):338-344. doi:10.1007/s001320050034"
         },
         {
           "id": "weil_q2",
-          "text": "De Prado M, et al. Minimally invasive foot surgery (zur Weil-/Vorfußchirurgie). 2009."
+          "text": "De Prado M, Ripoll PL, Golanó P. Minimally invasive foot surgery. Barcelona: About Your Health Publishers; 2009. (Lehrbuch)"
         },
         {
           "id": "weil_q3",
-          "text": "Trnka H-J, Mühlbauer M, Zettl R, Myerson MS, Ritschl P. Comparison of the Results of the Weil and Helal Osteotomies for the Treatment of Metatarsalgia Secondary to Dislocation of the Lesser MTP Joints. Foot Ankle Int. 1999;20(2):72–79."
+          "text": "Trnka HJ, Mühlbauer M, Zettl R, Myerson MS, Ritschl P. Comparison of the results of the Weil and Helal osteotomies for the treatment of metatarsalgia secondary to dislocation of the lesser metatarsophalangeal joints. Foot Ankle Int. 1999;20(2):72-79. doi:10.1177/107110079902000202"
         },
         {
           "id": "weil_q4",
-          "text": "Khurana S, Kadamabande S, James S, Tanaka H, Hariharan K. Weil osteotomy: assessment of medium term results and predictive factors in recurrent metatarsalgia. Foot Ankle Surg. 2011;17(3):150–157."
+          "text": "Khurana A, Kadamabande S, James S, Tanaka H, Hariharan K. Weil osteotomy: assessment of medium term results and predictive factors in recurrent metatarsalgias. Foot Ankle Surg. 2011;17(3):150-157. doi:10.1016/j.fas.2010.04.003"
         },
         {
           "id": "weil_q5",
-          "text": "Stavrakakis IM, Magarakis GE, Kapsetakis P, Tsatsoulas C, Tsioupros A, Datsis G. Weil's osteotomy versus distal metatarsal metaphyseal osteotomy for metatarsalgia. A meta-analysis of outcome and complications. Foot (Edinb). 2024."
+          "text": "Stavrakakis IM, Magarakis GE, Kapsetakis P, Tsatsoulas C, Tsioupros A, Datsis G. Weil's osteotomy versus distal metatarsal metaphyseal osteotomy for the treatment of metatarsalgia: a meta-analysis of outcome and complications. Foot (Edinb). 2024;60:102101. doi:10.1016/j.foot.2024.102101"
         },
         {
           "id": "weil_q6",
-          "text": "Henry J, Besse JL, Fessy MH. Distal osteotomy of the lateral metatarsals: a series of 72 cases comparing the Weil osteotomy and the DMMO percutaneous osteotomy. Orthop Traumatol Surg Res. 2011;97(Suppl 6):57–65."
+          "text": "Henry J, Besse JL, Fessy MH. Distal osteotomy of the lateral metatarsals: a series of 72 cases comparing the Weil osteotomy and the DMMO percutaneous osteotomy. Orthop Traumatol Surg Res. 2011;97(6 Suppl):S57-S65. doi:10.1016/j.otsr.2011.07.003"
         }
-      ]
+      ],
+      "stand": "Juli 2026"
     },
     "cotton": {
       "infoKategorie": "op_technik",
