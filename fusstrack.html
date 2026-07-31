@@ -755,12 +755,14 @@ function App() {
   const aufklaerungAvailable = !!(aufklObj && Array.isArray(aufklObj.slides) && aufklObj.slides.length > 0);
 
   if (isAufklaerungsModus) {
-    if (!urlParams.op || !aufklObj) {
-      // Kein gültiges Krankheitsbild für die Aufklärung → Landing zeigen
+    // Unbekannter Schlüssel, fehlender Eintrag oder ein Eintrag ohne Inhalte:
+    // in allen drei Fällen die Auffangseite. Früher landete man hier in der
+    // vollen App beziehungsweise in einer leeren Ansicht.
+    if (!urlParams.op || !aufklObj || !aufklaerungAvailable) {
       return (
         <div className="app">
           <Header showSwitcher={false} hideSubtitle={true} />
-          <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} />
+          <AuffangSeite />
           <FooterLinks />
           {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
         </div>
@@ -783,7 +785,9 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={true} hideSubtitle={true} />
+        <FokusKopf />
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} />
+        <FokusFuss />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -2195,6 +2199,77 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
  * Inhalte kommen aus AUFKLAERUNG[mapped key].slides
  * Wenn Slides leer (z.B. noch nicht migriert) → freundlicher Hinweis.
  * ============================================================ */
+
+// ============================================================================
+// FOKUS-ANSICHT (Clinic-QR)
+// Wer über einen QR-Code aus dem Sprechstundenbrief kommt, soll genau ein
+// Thema sehen — nicht die ganze App. Diese Bausteine rahmen den bestehenden
+// Aufklärungs-Modus ein; an dessen Inhalten ändert sich nichts.
+// ============================================================================
+
+// Freundliche Auffangseite. Ersetzt sowohl die frühere Weiterleitung in die
+// volle App (bei unbekanntem Schlüssel) als auch jede leere Ansicht.
+function AuffangSeite({ titel, text }) {
+  return (
+    <div style={{ maxWidth: 620, margin: "40px auto", padding: "0 16px" }}>
+      <div style={{ background: "var(--c-card)", borderRadius: 12, padding: "28px 24px",
+                    boxShadow: "var(--c-shadow)", textAlign: "center" }}>
+        <div style={{ fontSize: 34, marginBottom: 10 }}>🦶</div>
+        <h2 style={{ margin: "0 0 10px", fontSize: 19, color: "var(--c-main)" }}>
+          {titel || "Dieses Thema ist noch nicht verfügbar"}
+        </h2>
+        <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 20 }}>
+          {text || "Zu dem Eingriff, auf den dieser Code verweist, liegen noch keine Informationen bereit. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an — maßgeblich sind ohnehin die Angaben im Brief, den Sie erhalten haben."}
+        </div>
+        <a href={buildUrl({})}
+           style={{ display: "inline-block", padding: "10px 20px", borderRadius: 8,
+                    background: "var(--c-main)", color: "#fff", fontSize: 14,
+                    fontWeight: 600, textDecoration: "none" }}>
+          Zur Startseite
+        </a>
+      </div>
+    </div>
+  );
+}
+
+// Kopfzeile der Fokus-Ansicht: sagt, warum diese Seite gezeigt wird, und was
+// im Zweifel gilt.
+function FokusKopf() {
+  return (
+    <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
+      <div style={{ background: "var(--c-bg)", borderRadius: 10, padding: "12px 14px" }}>
+        <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", marginBottom: 4 }}>
+          Diese Information wurde für Sie von Ihrer Ärztin oder Ihrem Arzt ausgewählt
+        </div>
+        <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.6 }}>
+          Sie ergänzt das Gespräch, ersetzt es aber nicht. Maßgeblich sind die
+          persönlichen Vorgaben Ihrer Operateurin oder Ihres Operateurs und der
+          Brief, den Sie ausgehändigt bekommen haben.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Abgesetzter Hinweis am Seitenende auf die vollständige App.
+function FokusFuss() {
+  return (
+    <div style={{ maxWidth: 680, margin: "28px auto 0", padding: "0 16px" }}>
+      <div style={{ borderTop: "1px solid var(--c-border, rgba(0,0,0,.1))", paddingTop: 14,
+                    textAlign: "center" }}>
+        <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.6, marginBottom: 8 }}>
+          Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern
+          und einen Begleiter für die Zeit nach der Operation.
+        </div>
+        <a href={buildUrl({})}
+           style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 600 }}>
+          Zur vollständigen App
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function AufklaerungsView({ opKey, kbOrigin }) {
   const aufkl = getAufklaerungFor(opKey);
   if (!aufkl) return <ErrorPage />;
