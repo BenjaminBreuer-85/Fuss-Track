@@ -429,7 +429,12 @@ async function loadAufklaerungData() {
         const eintrag = INFO[key];
         const slides = (eintrag.slides || []).map(function(s) {
           // String = Baustein-Referenz; Objekt = bereits inline (Abwärtskompatibilität).
-          if (typeof s === "string") return BAUSTEINE[s] || null;
+          // Der Baustein-Schlüssel wird mitgeführt, damit einzelne Abschnitte über
+          // ?thema=<key> stabil adressierbar sind.
+          if (typeof s === "string") {
+            const bs = BAUSTEINE[s];
+            return bs ? Object.assign({ key: s }, bs) : null;
+          }
           return s;
         }).filter(Boolean);
         aufgeloest[key] = Object.assign({}, eintrag, { slides: slides });
@@ -2280,7 +2285,12 @@ function AufklaerungsView({ opKey, kbOrigin }) {
   const aufkl = getAufklaerungFor(opKey);
   if (!aufkl) return <ErrorPage />;
   const slides = aufkl.slides || [];
-  const [step, setStep] = useState(0);
+  // Stabiler Anker: ?thema=<bausteinKey> öffnet den Artikel direkt auf diesem Slide.
+  // Erlaubt es, einzelne Abschnitte (z. B. thema=osg_vergleich) zu verlinken und
+  // per QR-Kurzlink anzusteuern, ohne den Inhalt zu duplizieren.
+  const themaKey = new URLSearchParams(window.location.search).get("thema");
+  const themaIdx = themaKey ? slides.findIndex(function(s) { return s && s.key === themaKey; }) : -1;
+  const [step, setStep] = useState(themaIdx >= 0 ? themaIdx : 0);
   const [toggleSel, setToggleSel] = useState(0); // aktive Option eines Umschalter-Slides
 
   // Zurück-Link: nur anzeigen, wenn der Patient aus einer KB-Auswahl kam (kb-URL-Param da)
