@@ -784,7 +784,10 @@ function App() {
     };
     return (
       <div className="app">
-        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={true} hideSubtitle={true} />
+        {/* showHauptmenue={false}: aus der Fokus-Ansicht fuehrt kein Knopf
+            direkt in die App. Der Weg nach draussen geht ueber den Hinweis am
+            Seitenende auf die Landingpage. */}
+        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
         <FokusKopf />
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} />
         <FokusFuss />
@@ -2221,7 +2224,10 @@ function AuffangSeite({ titel, text }) {
         <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 20 }}>
           {text || "Zu dem Eingriff, auf den dieser Code verweist, liegen noch keine Informationen bereit. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an — maßgeblich sind ohnehin die Angaben im Brief, den Sie erhalten haben."}
         </div>
-        <a href={buildUrl({})}
+        {/* Bewusst "/" (index.html) statt buildUrl({}) — letzteres fuehrt nach
+            fusstrack.html, also direkt in die App. Aus der Fokus-Ansicht soll
+            der Weg auf die Landingpage gehen, nicht in die Anwendung. */}
+        <a href="/"
            style={{ display: "inline-block", padding: "10px 20px", borderRadius: 8,
                     background: "var(--c-main)", color: "#fff", fontSize: 14,
                     fontWeight: 600, textDecoration: "none" }}>
@@ -2261,9 +2267,9 @@ function FokusFuss() {
           Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern
           und einen Begleiter für die Zeit nach der Operation.
         </div>
-        <a href={buildUrl({})}
+        <a href="/"
            style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 600 }}>
-          Zur vollständigen App
+          Mehr über Fuss-Track
         </a>
       </div>
     </div>
