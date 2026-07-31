@@ -19,17 +19,20 @@ erarbeitet, geprüft und freigegeben**. In diesem Repository werden sie nur
 
 ## Autorenregeln für Patiententexte
 
-**Keine Aufzählungslisten in Patiententexten.** Inhalte werden als Fließtext in
-ganzen Sätzen formuliert, nicht als Spiegelstrich- oder Nummernlisten. Das gilt
-für alle patientenseitigen Texte in `bausteine.json`, `aufklaerung.json`,
-`phasen.json` und `nonop.json`.
+**Aufzählungen sind erlaubt, aber nur als eigenständige Liste.** Eine Liste steht
+als abgesetzter Block, eingeleitet durch einen Satz oder eine Zwischenüberschrift.
+Innerhalb eines laufenden Absatzes werden keine Spiegelstriche gesetzt —
+Aufzählungen mitten im Fließtext werden ausformuliert.
 
-Ausgenommen sind Strukturen, die keine Prosa sind: Quellenverzeichnisse,
-nummerierte Übungsschritte und Tabellen.
+**Ein einziges Listenzeichen im gesamten Bestand: der Spiegelstrich `- `.**
+Keine `*`, `+`, `•` und keine nummerierten Listen (`1.`), auch nicht vereinzelt.
+Das gilt für `bausteine.json`, `aufklaerung.json`, `phasen.json` und `nonop.json`.
+
+Nicht betroffen sind Strukturen, die keine Markdown-Listen sind:
+Quellenverzeichnisse, die aus Daten erzeugten Übungsschritte und Tabellen.
 
 Beim Umformulieren bleibt der Inhalt identisch — es ändert sich ausschließlich
-die Form. Der Bestand wird schrittweise umgestellt; bei jeder Bearbeitung eines
-Textes werden dessen Listen mit umgeformt.
+die Form.
 
 ## Markenrichtlinie (BRAND.md)
 
