@@ -46,6 +46,25 @@
   h1, h2, h3, h4 {
     font-family: 'Source Serif 4', Georgia, "Times New Roman", serif;
   }
+  /* Kopfzeile der Unteransichten. Lange Titel dürfen die Buttons nicht überlaufen;
+     auf schmalen Bildschirmen rutscht der Titel auf eine eigene volle Zeile. */
+  .zurueck-leiste {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 14px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+  }
+  .zl-btn {
+    cursor: pointer; padding: 5px 12px; background: var(--c-bg); border-radius: 4px;
+    font-size: 12px; color: var(--c-text); font-weight: 600; flex-shrink: 0; white-space: nowrap;
+  }
+  .zl-titel {
+    font-size: 17px; font-weight: 700; color: var(--c-main);
+    flex: 1; min-width: 0; overflow-wrap: anywhere; hyphens: auto; line-height: 1.3;
+  }
+  @media (max-width: 520px) {
+    .zurueck-leiste { flex-wrap: wrap; }
+    .zl-titel { flex: 1 1 100%; order: 3; font-size: 16px; }
+  }
   .app { max-width: 720px; margin: 0 auto; padding: 16px; min-height: 100vh; }
   .app-header {
     text-align: center; padding: 16px 0 8px;
@@ -573,10 +592,10 @@ function buildUrl(params) {
 // Einheitliche Kopfzeile aller Unteransichten: zurück + Titel + Start (Hauptmenü erzwingen)
 function ZurueckLeiste({ onBack, titel }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-      <div onClick={onBack} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600, flexShrink: 0 }}>← zurück</div>
-      <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)", flex: 1, minWidth: 0 }}>{titel}</div>
-      <div onClick={function(){ window.location.href = buildUrl({ home: "1" }); }} title="Zur Startseite" style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600, flexShrink: 0 }}>⌂ Start</div>
+    <div className="zurueck-leiste">
+      <div onClick={onBack} className="zl-btn">← zurück</div>
+      <div className="zl-titel">{titel}</div>
+      <div onClick={function(){ window.location.href = buildUrl({ home: "1" }); }} title="Zur Startseite" className="zl-btn">⌂ Start</div>
     </div>
   );
 }
@@ -1687,6 +1706,10 @@ function LandingView({ initialKbKey, initialMassnahme }) {
         return (typeof NONOP_STUFEN !== "undefined" && NONOP_STUFEN[kbRef.uebungen]) || [];
       })();
       const mGesamt = mAbschnitte.length + mUebungen.length + 1;
+      // Letzte Seite mit echtem Text — die Quellen-Seite bleibt bewusst ausgenommen.
+      const mQuellenSeite = mAbschnitte.findIndex(function(a) { return a && a.titel === "Quellen"; });
+      const mLetzteTextSeite = (mQuellenSeite >= 0 && mQuellenSeite + 1 === mGesamt - 1)
+        ? mGesamt - 2 : mGesamt - 1;
       const mIdx = Math.max(0, Math.min(mGesamt - 1, massnahmeSeite));
       const mGeheZu = function(n){ setMassnahmeSeite(Math.max(0, Math.min(mGesamt - 1, n))); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); };
       const mSteps = [{ key: "info", label: "Info", wide: true, tab: "Übersicht" }]
@@ -1889,7 +1912,7 @@ function LandingView({ initialKbKey, initialMassnahme }) {
           </div>
 
           {/* Unterstützen-Karte am Ende des Maßnahmen-Artikels (nur letzte Seite) */}
-          {mIdx === mGesamt - 1 && <SupportCard />}
+          {mIdx === mLetzteTextSeite && <SupportCard />}
         </div>
       );
     }
@@ -2192,7 +2215,7 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
                              background: "transparent", color: "var(--c-main)", fontSize: 12, fontWeight: 600,
                              cursor: "pointer" }}>
               {switcherTarget === "aufklaerung"
-                ? "ⓘ Aufklärung zum Krankheitsbild ansehen"
+                ? "ⓘ Infomaterial zum Krankheitsbild ansehen"
                 : "→ Zum Patientenbegleiter"}
             </button>
           )}
@@ -2291,6 +2314,13 @@ function AufklaerungsView({ opKey, kbOrigin }) {
   const themaKey = new URLSearchParams(window.location.search).get("thema");
   const themaIdx = themaKey ? slides.findIndex(function(s) { return s && s.key === themaKey; }) : -1;
   const [step, setStep] = useState(themaIdx >= 0 ? themaIdx : 0);
+  // Letzter Slide, der echten Text trägt (die Quellen zählen nicht dazu).
+  const letzterTextSlide = (function() {
+    for (var i = slides.length - 1; i >= 0; i--) {
+      if (slides[i] && slides[i].titel !== "Quellen") return i;
+    }
+    return slides.length - 1;
+  })();
   const [toggleSel, setToggleSel] = useState(0); // aktive Option eines Umschalter-Slides
 
   // Zurück-Link: nur anzeigen, wenn der Patient aus einer KB-Auswahl kam (kb-URL-Param da)
@@ -2330,9 +2360,9 @@ function AufklaerungsView({ opKey, kbOrigin }) {
         </div>
         <div style={{ padding: 14, background: "rgba(0,0,0,.03)", borderRadius: 8,
                       fontSize: 13, color: "var(--c-text)", lineHeight: 1.5 }}>
-          Die Aufklärungs-Inhalte zu diesem Krankheitsbild werden derzeit in den Patientenbegleiter integriert.
-          Bitte sprechen Sie Ihren behandelnden Arzt auf die Aufklärung an oder nutzen Sie die separat
-          bereitgestellten Materialien.
+          Das Infomaterial zu diesem Krankheitsbild wird derzeit in den Patientenbegleiter integriert.
+          Bitte sprechen Sie Ihren behandelnden Arzt auf das Aufklärungsgespräch an oder nutzen Sie die
+          separat bereitgestellten Materialien.
         </div>
         </div>
       </div>
@@ -2551,8 +2581,9 @@ function AufklaerungsView({ opKey, kbOrigin }) {
         </div>
       )}
 
-      {/* Unterstützen-Karte am Ende jedes Artikels (nur letzte Slide) */}
-      {step === total - 1 && <SupportCard />}
+      {/* Unterstützen-Karte am Ende des letzten Text-Slides — bewusst NICHT unter
+          den Quellen, die von Patientinnen und Patienten kaum gelesen werden. */}
+      {step === letzterTextSlide && <SupportCard />}
     </div>
   );
 }
