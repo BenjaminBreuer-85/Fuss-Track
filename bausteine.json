@@ -1719,7 +1719,7 @@
     },
     "chevron_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- In der Regel ist eine **Vollbelastung in einem Verbandschuh** möglich\n- die genauen Vorgaben richten sich nach dem Operationsbefund\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::"
+      "text": "- In der Regel ist eine **Vollbelastung in einem Verbandschuh** möglich\n- die genauen Vorgaben richten sich nach dem Operationsbefund\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=chevron&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen."
     },
     "chevron_komplikationen": {
       "titel": "Komplikationen",
@@ -2896,7 +2896,7 @@
     },
     "osg_tep_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- Die Nachbehandlung richtet sich meist nach den Zusatzeingriffen\n- bei einer OSG-Prothese ohne weitere Maßnahmen wird in der Regel für 6 Wochen in einem Walkerstiefel an zwei Unterarmgehstützen mobilisiert\n- nach Ermessen der Operateurin oder des Operateurs ist bereits vorher eine schmerzadaptierte Vollbelastung möglich\n- Thromboseschutz (TVT-Prophylaxe) für die Zeit der verminderten Mobilität\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- Die Nachbehandlung richtet sich meist nach den Zusatzeingriffen\n- bei einer OSG-Prothese ohne weitere Maßnahmen wird in der Regel für 6 Wochen in einem Walkerstiefel an zwei Unterarmgehstützen mobilisiert\n- nach Ermessen der Operateurin oder des Operateurs ist bereits vorher eine schmerzadaptierte Vollbelastung möglich\n- Thromboseschutz (TVT-Prophylaxe) für die Zeit der verminderten Mobilität\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=osg_tep&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "osg_tep_komplikationen": {
@@ -2981,7 +2981,7 @@
     },
     "osg_arthrodese_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- Entlastung meist über etwa 8 Wochen, je nach Weichteilsituation entweder mit 15 kg Teilbelastung im Walker-Stiefel oder mit vollständiger Entlastung im Gips\n- Kontrolle der knöchernen Heilung nach etwa 8 Wochen, in der Regel mit einer Computertomografie\n- danach schrittweise Steigerung der Belastung, Vollbelastung je nach Heilung nach etwa 2 bis 3 Monaten\n- vollständige knöcherne Durchbauung nach etwa 4 bis 6 Monaten\n- Physiotherapie zur Gangschulung und zum Ausgleich des Beweglichkeitsverlusts\n- Thromboseschutz während der Entlastungsphase\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- Entlastung meist über etwa 8 Wochen, je nach Weichteilsituation entweder mit 15 kg Teilbelastung im Walker-Stiefel oder mit vollständiger Entlastung im Gips\n- Kontrolle der knöchernen Heilung nach etwa 8 Wochen, in der Regel mit einer Computertomografie\n- danach schrittweise Steigerung der Belastung, Vollbelastung je nach Heilung nach etwa 2 bis 3 Monaten\n- vollständige knöcherne Durchbauung nach etwa 4 bis 6 Monaten\n- Physiotherapie zur Gangschulung und zum Ausgleich des Beweglichkeitsverlusts\n- Thromboseschutz während der Entlastungsphase\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=osg_arthrodese&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "osg_arthrodese_komplikationen": {

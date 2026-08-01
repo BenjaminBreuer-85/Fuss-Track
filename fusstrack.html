@@ -807,6 +807,12 @@ function App() {
       var: urlParams.var || null,
       ctx: urlParams.ctx === "begleiter" ? "begleiter" : null
     };
+    // Adresse des Nachbehandlungs-Begleiters für den sichtbaren Übergang am
+    // Ende der Slides. Nutzt die mitgegebene Variante, sonst den ctx-Marker.
+    const begleiterUrl = begleitVerfuegbar
+      ? (urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var })
+                       : buildUrl({ op: urlParams.op, ctx: "begleiter" }))
+      : null;
     return (
       <div className="app">
         {/* showHauptmenue={false}: aus der Fokus-Ansicht fuehrt kein Knopf
@@ -814,7 +820,7 @@ function App() {
             Seitenende auf die Landingpage. */}
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
         <FokusKopf />
-        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} />
+        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} begleiterUrl={begleiterUrl} />
         <FokusFuss />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -2412,7 +2418,7 @@ function FokusFuss() {
   );
 }
 
-function AufklaerungsView({ opKey, kbOrigin }) {
+function AufklaerungsView({ opKey, kbOrigin, begleiterUrl }) {
   const aufkl = getAufklaerungFor(opKey);
   if (!aufkl) return <ErrorPage />;
   const slides = aufkl.slides || [];
@@ -2687,6 +2693,19 @@ function AufklaerungsView({ opKey, kbOrigin }) {
             })}
           </div>
         </div>
+      )}
+
+      {/* Übergang in den Nachbehandlungs-Begleiter — bewusst als großer Knopf
+          am Ende der Slides, der schmale Umschalter oben genügt nicht. */}
+      {begleiterUrl && step === letzterTextSlide && (
+        <a href={begleiterUrl}
+           style={{ display: "block", marginTop: 16, padding: "16px 18px", borderRadius: 10,
+                    background: "var(--c-main)", color: "#fff", textDecoration: "none", textAlign: "center" }}>
+          <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3 }}>Nachbehandlung Schritt für Schritt — zum Begleiter</div>
+          <div style={{ fontSize: 12.5, opacity: .9, marginTop: 4, lineHeight: 1.45 }}>
+            Was in welcher Woche ansteht, mit Erinnerungen und Übungen.
+          </div>
+        </a>
       )}
 
       {/* Unterstützen-Karte am Ende des letzten Text-Slides — bewusst NICHT unter
