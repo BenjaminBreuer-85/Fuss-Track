@@ -114,7 +114,9 @@
    "modell": "uebungspaket",
    "einleitung": "sgi_einleitung",
    "uebungen": "sgi_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "neuromuskulaer_aussenband" }
+   ]
   },
   "hallux_rigidus": {
    "label": "Hallux rigidus (Frühstadium)",
