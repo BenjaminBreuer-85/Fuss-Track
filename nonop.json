@@ -14,9 +14,7 @@
    "stufen": "aussenband_stufen",
    "abklaerung": "aussenband_abklaerung",
    "modell": "zeitanker",
-   "weitereMassnahmen": [
-    { "ref": "neuromuskulaer_aussenband" }
-   ]
+   "weitereMassnahmen": []
   },
   "achillodynie_midportion": {
    "label": "Achillodynie nicht-insertional",
@@ -116,9 +114,7 @@
    "modell": "uebungspaket",
    "einleitung": "sgi_einleitung",
    "uebungen": "sgi_uebungen",
-   "weitereMassnahmen": [
-    { "ref": "neuromuskulaer_aussenband" }
-   ]
+   "weitereMassnahmen": []
   },
   "hallux_rigidus": {
    "label": "Hallux rigidus (Frühstadium)",

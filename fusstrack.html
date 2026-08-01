@@ -571,7 +571,8 @@ function getUrlParams() {
     finder: params.get("finder"), // "1" für Beschwerde-Wegweiser-Modus
     home: params.get("home"), // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
     ctx: params.get("ctx"), // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
-    massnahme: params.get("massnahme") // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
+    massnahme: params.get("massnahme"), // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
+    nonop: params.get("nonop") // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
   };
 }
 
@@ -734,7 +735,7 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
-        <LandingView initialKbKey={null} initialMassnahme={urlParams.massnahme} />
+        <LandingView initialKbKey={null} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -828,7 +829,7 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
-        <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} />
+        <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -872,9 +873,9 @@ function nonopClear() {
   try { localStorage.removeItem(NONOP_STORAGE_KEY); } catch (e) {}
 }
 
-function NonOpView({ onBack }) {
+function NonOpView({ onBack, startKb }) {
   var persisted = nonopLoad();
-  var [kbKey, setKbKey] = useState(persisted ? persisted.kbKey : null);
+  var [kbKey, setKbKey] = useState(startKb || (persisted ? persisted.kbKey : null));
   var [unfallDatum, setUnfallDatum] = useState(persisted ? persisted.unfallDatum : null);
   var [tempDatum, setTempDatum] = useState(todayIso());
   var [zeigeSportler, setZeigeSportler] = useState(persisted ? !!persisted.zeigeSportler : false);
@@ -1614,7 +1615,7 @@ function NonOpView({ onBack }) {
   );
 }
 
-function LandingView({ initialKbKey, initialMassnahme }) {
+function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   // Navigationsebenen:
   //   bereich: null (Hauptmenü) | "begleiter" | "info"
   //   begleiterTyp: null (OP/Non-OP-Auswahl) | "op" | "nonop"
@@ -1622,8 +1623,10 @@ function LandingView({ initialKbKey, initialMassnahme }) {
   // Wenn initialKbKey gesetzt (Deep-Link): direkt in Begleiter→OP→Stufe 2
   // Deep-Link auf eine Nicht-OP-Maßnahme (?massnahme=…): direkt Info → Nicht-operative Maßnahmen → Maßnahme öffnen
   const massnahmeDeepLink = (initialMassnahme && typeof NONOP_MASSNAHMEN !== "undefined" && NONOP_MASSNAHMEN[initialMassnahme]) ? initialMassnahme : null;
-  const [bereich, setBereich] = useState(initialKbKey ? "begleiter" : (massnahmeDeepLink ? "info" : null));
-  const [begleiterTyp, setBegleiterTyp] = useState(initialKbKey ? "op" : null);
+  // Deep-Link in den Nicht-OP-Begleiter (?nonop=<kb>): direkt in das Programm springen.
+  const nonopDeepLink = (initialNonop && typeof NONOP_KB !== "undefined" && NONOP_KB[initialNonop]) ? initialNonop : null;
+  const [bereich, setBereich] = useState(initialKbKey || nonopDeepLink ? "begleiter" : (massnahmeDeepLink ? "info" : null));
+  const [begleiterTyp, setBegleiterTyp] = useState(initialKbKey ? "op" : (nonopDeepLink ? "nonop" : null));
   const [selectedKb, setSelectedKb] = useState(
     initialKbKey ? (KRANKHEITSBILDER.find(k => k.key === initialKbKey) || null) : null
   );
@@ -2091,7 +2094,7 @@ function LandingView({ initialKbKey, initialMassnahme }) {
 
   // ===== Non-OP-Begleiter =====
   if (bereich === "begleiter" && begleiterTyp === "nonop") {
-    return <NonOpView onBack={function() { setBegleiterTyp(null); }} />;
+    return <NonOpView onBack={function() { setBegleiterTyp(null); }} startKb={nonopDeepLink} />;
   }
 
   // === Stufe 1: Krankheitsbild wählen (nur Begleiter → OP) ===
