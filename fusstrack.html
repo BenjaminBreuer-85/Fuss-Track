@@ -1533,14 +1533,13 @@ function NonOpView({ onBack, startKb }) {
   var cAkt = NONOP_INHALTE[sAkt.inhalt] || {};
   var faelligAkt = sAkt.tagOffset <= tageSeitUnfall;
   var istAktuellAkt = sAkt.stufe === aktuelleStufe;
-  var stepItems = [{ key: "ueb", label: "Übersicht", wide: true }].concat(sichtbareStufen.map(function(s){ return { key: s.id, label: String(s.stufe) }; }));
   var hatUebungen = cAkt.uebungen && cAkt.uebungen.length;
   var stufenMedien = (cAkt.medien && cAkt.medien.length) ? cAkt.medien : (hatUebungen ? [] : [{}]);
 
+  // Bewusst ohne Sprung-Tabs: Die Stufe wurde in der Übersicht gezielt gewählt,
+  // der Ablauf ist zeitgebunden. Zurück geht es über die Kopfzeile oder unten.
   return (
     <BlaetterRahmen titel={kb.label} onBack={function(){ setSeite(0); window.scrollTo(0, 0); }}
-      items={stepItems} activeIdx={seite}
-      onJump={function(i){ setSeite(i); window.scrollTo(0, 0); }}
       onPrev={function(){ setSeite(seite - 1); window.scrollTo(0, 0); }}
       onNext={function(){ setSeite(Math.min(sichtbareStufen.length, seite + 1)); window.scrollTo(0, 0); }}
       canPrev={true} canNext={seite < sichtbareStufen.length}
