@@ -154,7 +154,8 @@
     "Wagemans et al. 2022",
     "Hubbard & Hicks-Little 2008",
     "Hultman et al. 2010"
-   ]
+   ],
+    "evidenz": "Die frühfunktionelle Behandlung in einer semirigiden Orthese mit anschließendem neuromuskulärem Training ist gut untersucht; eine vollständige Ruhigstellung oder Entlastung ist nicht nötig. Dem neuromuskulären Training kommt dabei eine zentrale Rolle zu: Die Bandverletzung schädigt Mechanorezeptoren und stört die Tiefenwahrnehmung. Ein propriozeptives Training, auch als Heimprogramm, senkt die Rate erneuter Verletzungen und ist in hochwertigen Studien belegt."
   },
   "aussenband_stufe1": {
    "ziel": "Reduktion von Schwellung und Schmerz.",
@@ -380,7 +381,8 @@
      "Prudêncio DA et al. 2023",
      "Maetz R et al. 2023",
      "Praet SFE et al. 2019"
-    ]
+    ],
+    "evidenz": "Das dosierte Belastungstraining der Sehne gehört bei der mittleren Form zu den am besten untersuchten Maßnahmen. Systematische Übersichtsarbeiten zeigen, dass exzentrisches Training anderen Übungsformen überlegen ist (Prudêncio et al. 2023) und dass Belastungsprotokolle besser abschneiden als passive Behandlungen (Maetz et al. 2023). Die Leitlinie der amerikanischen Physiotherapie-Fachgesellschaft empfiehlt Belastungstraining als zentrale Maßnahme (Martin et al. 2018, aktualisiert Chimenti et al. 2024). Zu Dauer und genauer Dosierung gibt es keine einheitliche Empfehlung."
   },
   "achillo_ins_einleitung": {
    "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
@@ -390,7 +392,8 @@
      "Jarin IJ et al. 2021",
      "Zhi X et al. 2021",
      "von Rickenbach KJ et al. 2021"
-    ]
+    ],
+    "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
   },
   "achillo_mid_s1": {
    "was": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung halten, ohne Bewegung.",
@@ -450,7 +453,8 @@
     "Elsayed et al. 2023",
     "Jia et al. 2024"
    ],
-   "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden. Dieses Programm eignet sich für den flexiblen Knick-Senk-Fuß; die ärztliche Diagnose sollte vorliegen."
+   "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden. Dieses Programm eignet sich für den flexiblen Knick-Senk-Fuß; die ärztliche Diagnose sollte vorliegen.",
+    "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
   },
   "ksf_u1": {
    "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
