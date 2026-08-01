@@ -173,6 +173,10 @@
      "text": "Isometrisch bedeutet Anspannung ohne Bewegung (=der Muskel arbeitet, das Gelenk bleibt still). Die Unterschenkelmuskulatur wird angespannt und wieder gelöst, ohne das Sprunggelenk zu bewegen. So bleibt die Muskulatur aktiv, ohne den verletzten Bandapparat zu belasten."
     },
     {
+     "titel": "Verzicht auf Inversion",
+     "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
+    },
+    {
      "titel": "Medikamente",
      "bild": false,
      "text": "Medikamente unterstützen die Behandlung, sie ersetzen sie nicht. Entzündungshemmende Schmerzmittel (NSAR wie Ibuprofen) zählen in der Frühphase zu den am besten untersuchten Maßnahmen (van den Bekerom et al. 2015). Für Enzympräparate mit Bromelain oder Papain, etwa Wobenzym, ist eine entzündungshemmende Wirkung bislang nur im Labor belegt (Onken 2008); bei vollständiger Blutverdünnung sollten sie wegen ihrer fibrinolytischen Wirkung nicht eingenommen werden."
@@ -186,20 +190,44 @@
   },
   "aussenband_stufe2": {
    "ziel": "Wiedergewinnung von Beweglichkeit und Stabilität zur kontrollierten Ausübung grundsätzlicher Bewegungsmuster.",
-   "ruhigstellung": "Semirigide Orthese Tag und Nacht. Eine konsequent getragene Orthese (=Schiene) gehört zu den am besten belegten Maßnahmen, um erneute Umknickverletzungen zu vermeiden.",
-   "text": "Eine frühe, kontrollierte Bewegung (=funktionelle Behandlung) und entzündungshemmende Medikamente zählen in der Frühphase zu den am besten untersuchten Maßnahmen. Bei Grad-1–2-Läsionen weist eine zügige funktionelle Nachbehandlung bessere Ergebnisse auf (Bleakley et al. 2010). Wackelbrett- und Balancetraining sowie Mobilisierungsübungen des OSG in die Extension können bereits nach einer Woche aufgenommen werden. Dies führte in zwei Studien zu schnellerer Rehabilitation ohne erhöhte Rate an Re-Verletzungen (Wester et al. 1996, Holme et al. 1999). Zu beachten ist, dass die Patienten im Studiensetting professionell durch Ärzte und Physiotherapeuten eng betreut und angeleitet wurden.",
+   "ruhigstellung": "Tragen einer semirigiden Orthese Tag und Nacht.",
+   "wissenschaft": "Eine konsequent getragene Orthese (=Schiene) gehört zu den am besten belegten Maßnahmen, um erneute Umknickverletzungen zu vermeiden.\n\nEine frühe, kontrollierte Bewegung (=funktionelle Behandlung) und entzündungshemmende Medikamente zählen in der Frühphase zu den am besten untersuchten Maßnahmen. Bei Grad-1–2-Läsionen weist eine zügige funktionelle Nachbehandlung bessere Ergebnisse auf (Bleakley et al. 2010). Wackelbrett- und Balancetraining sowie Mobilisierungsübungen des OSG in die Extension können bereits nach einer Woche aufgenommen werden. Dies führte in zwei Studien zu schnellerer Rehabilitation ohne erhöhte Rate an Re-Verletzungen (Wester et al. 1996, Holme et al. 1999). Zu beachten ist, dass die Patienten im Studiensetting professionell durch Ärzte und Physiotherapeuten eng betreut und angeleitet wurden.",
    "massnahmen": [
-    "Isometrische Eversion gegen Widerstand (Theraband)",
-    "Konsequenter Verzicht auf jegliche Inversion",
-    "Gangschule geradeaus in Orthese"
+    {
+     "titel": "Isometrische Eversion gegen Widerstand",
+     "text": "Wie schon in Stufe 1 wird der Muskel angespannt, ohne das Gelenk zu bewegen. Hier arbeitet der Fuß gegen den Zug eines Therabands nach außen (=Eversion, Auswärtskippen) — also in die Gegenrichtung des Umknickens. Das kräftigt genau die Muskeln, die das Sprunggelenk vor einem erneuten Umknicken schützen."
+    },
+    {
+     "titel": "Verzicht auf Inversion",
+     "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
+    },
+    {
+     "titel": "Gangschule geradeaus in der Orthese",
+     "text": "Gangschule bedeutet das bewusste Wiedererlernen eines gleichmäßigen Gangbilds. In dieser Stufe wird ausschließlich geradeaus gegangen, in der Orthese und ohne Richtungswechsel. Ziel ist ein flüssiges Abrollen mit gleich langen Schritten, ohne Schonhinken."
+    }
    ],
    "massnahmen_erweitert_titel": "Weitere Maßnahmen bei Schmerzfreiheit im Alltag und abgeschwollenen Weichteilen:",
    "massnahmen_erweitert": [
-    "Gangschule mit Richtungswechseln",
-    "Stabilitätstraining unter Protektion mit Orthese (erst einbeinig, dann beidbeinig; erst auf dem Boden, dann auf wackeligem Untergrund/Balance-Board)",
-    "Ergometertraining in der Orthese",
-    "Kraftübungen in geschlossener Kette mit Orthese (Hamstring Curls, Beinpresse)",
-    "Passive Mobilisierung mit Theraband in die Extension"
+    {
+     "titel": "Gangschule mit Richtungswechseln",
+     "text": "Sobald das Geradeausgehen sicher gelingt, kommen Kurven, Wenden und Ausweichschritte dazu. Richtungswechsel belasten das Außenband stärker als geradeaus gehen, deshalb folgen sie erst später und weiterhin in der Orthese."
+    },
+    {
+     "titel": "Stabilitätstraining unter Schutz der Orthese",
+     "text": "Trainiert wird die Tiefenwahrnehmung (=Propriozeption), also das Gespür für die Stellung des Gelenks. Der Aufbau erfolgt schrittweise: erst beidbeinig, dann einbeinig, erst auf festem Boden, später auf wackeligem Untergrund oder einem Balance-Board."
+    },
+    {
+     "titel": "Ergometertraining in der Orthese",
+     "text": "Radfahren auf dem Ergometer bringt das Sprunggelenk in gleichmäßige Bewegung, ohne dass das volle Körpergewicht darauf lastet. Es hält Kreislauf und Beinmuskulatur in Schwung, während stoßbelastende Sportarten noch nicht möglich sind."
+    },
+    {
+     "titel": "Kraftübungen in geschlossener Kette",
+     "text": "Geschlossene Kette bedeutet, dass der Fuß dabei festen Kontakt zum Boden oder zu einem Gerät hat, etwa bei der Beinpresse oder bei Beinbeugern (Hamstring Curls). Die Belastung verteilt sich dadurch über das ganze Bein, und das Sprunggelenk wird weniger einzeln beansprucht."
+    },
+    {
+     "titel": "Passive Mobilisierung in die Streckung",
+     "text": "Mit einem Theraband wird der Fuß behutsam in Richtung Hochziehen bewegt (=Dorsalextension). Diese Beweglichkeit geht nach einer Verletzung häufig zuerst verloren und wird für ein normales Abrollen wieder gebraucht. Bewegt wird nur so weit, wie es nicht schmerzt."
+    }
    ],
    "steigerung": "Fortführung in der nächsten Stufe, wenn der Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund (Huber, Posturomed, MFT Training Disc) über 10 Sekunden sicher möglich ist.",
    "kriterien": [
