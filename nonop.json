@@ -373,11 +373,24 @@
   },
   "achillo_mid_einleitung": {
    "intro": "Bei der mittleren Form sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
-   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+    "quellen": [
+     "Martin RL et al. 2018 (JOSPT Clinical Practice Guideline)",
+     "Chimenti RL et al. 2024",
+     "Prudêncio DA et al. 2023",
+     "Maetz R et al. 2023",
+     "Praet SFE et al. 2019"
+    ]
   },
   "achillo_ins_einleitung": {
    "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
-   "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten."
+   "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+    "quellen": [
+     "Sivrika AP et al. 2023",
+     "Jarin IJ et al. 2021",
+     "Zhi X et al. 2021",
+     "von Rickenbach KJ et al. 2021"
+    ]
   },
   "achillo_mid_s1": {
    "was": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung halten, ohne Bewegung.",

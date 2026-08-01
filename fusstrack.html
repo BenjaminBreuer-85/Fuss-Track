@@ -954,6 +954,30 @@ function NonOpView({ onBack }) {
   }
 
   // Kachel "Weitere sinnvolle Maßnahmen" (in den Programmen), verlinkt auf allgemeine Maßnahmen-Seiten
+  // Studienlage: bewusst eingeklappt. Der Begleiter soll die Übungen anleiten;
+  // informiert wird im Infomaterial. Nimmt zugeklappt nur eine Zeile ein.
+  function EvidenzBlock({ text }) {
+    const [offen, setOffen] = useState(false);
+    if (!text) return null;
+    return (
+      <div style={{ marginBottom: 16, border: "1px solid rgba(44,79,124,.20)", borderRadius: 8, overflow: "hidden" }}>
+        <div onClick={function(){ setOffen(!offen); }}
+             style={{ padding: "9px 12px", background: "rgba(44,79,124,.05)", cursor: "pointer",
+                      display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, flex: 1 }}>
+            Was die Studienlage zeigt
+          </span>
+          <span style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 700 }}>{offen ? "−" : "+"}</span>
+        </div>
+        {offen && (
+          <div style={{ padding: "10px 12px 12px", fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>
+            {text}
+          </div>
+        )}
+      </div>
+    );
+  }
+
   // Quellenangaben einer Einleitung. Bis dahin lagen sie ungenutzt in den Daten.
   function QuellenBlock({ liste }) {
     if (!liste || liste.length === 0) return null;
@@ -1134,6 +1158,7 @@ function NonOpView({ onBack }) {
           <div style={{ marginBottom: 14 }}>
             {einleitung.intro && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 6 }}>{einleitung.intro}</div>}
             {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, whiteSpace: "pre-line" }}>{einleitung.text}</div>}
+            <EvidenzBlock text={einleitung.evidenz} />
             <QuellenBlock liste={einleitung.quellen} />
           </div>
         )}
@@ -1239,12 +1264,7 @@ function NonOpView({ onBack }) {
         <div>
           {einl.intro && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 12 }}>{einl.intro}</div>}
           {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line", marginBottom: 16 }}>{einl.text}</div>}
-          {einl.evidenz && (
-            <div style={{ padding: "12px 14px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)", marginBottom: 16 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 5 }}>Was die Studienlage zeigt</div>
-              <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{einl.evidenz}</div>
-            </div>
-          )}
+          <EvidenzBlock text={einl.evidenz} />
           <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {uebungen.length} Übungen</div>
             {uebungen.map(function(u, i){
@@ -1346,6 +1366,7 @@ function NonOpView({ onBack }) {
         <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
         {einleitung.intro && <p style={{ marginTop: 0, marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6, fontWeight: 600 }}>{einleitung.intro}</p>}
         {einleitung.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line", marginBottom: 18 }}>{einleitung.text}</div>}
+        <EvidenzBlock text={einleitung.evidenz} />
         <QuellenBlock liste={einleitung.quellen} />
         <MassnahmenKachel liste={kb.weitereMassnahmen} />
         {(function(){
