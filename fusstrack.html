@@ -572,8 +572,34 @@ function getUrlParams() {
     home: params.get("home"), // "1" erzwingt Hauptmenü/LandingView trotz bestehender Session
     ctx: params.get("ctx"), // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
     massnahme: params.get("massnahme"), // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
-    nonop: params.get("nonop") // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
+    nonop: params.get("nonop"), // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
+    fokus: params.get("fokus") // Einstiegsadresse der Fokus-Ansicht (kodiert), fuer den Ruecksprung
   };
+}
+
+// Fokus-Ansicht: Merker der Einstiegsadresse. Alle Links, die innerhalb der
+// Fokus-Ansicht erzeugt werden, tragen ihn weiter, damit jedes Ziel einen
+// Rücksprung zur ursprünglichen Seite anbieten kann — statt ins Hauptmenü.
+let FOKUS_ORIGIN = null;
+
+function fokusZiel(kodiert) {
+  try { return window.location.pathname + "?" + decodeURIComponent(kodiert); }
+  catch (e) { return window.location.pathname; }
+}
+
+// Rücksprungleiste, die auf jedem verlinkten Ziel innerhalb der Fokus-Ansicht steht.
+function FokusRuecksprung({ ziel }) {
+  if (!ziel) return null;
+  return (
+    <div style={{ maxWidth: 680, margin: "10px auto 0", padding: "0 16px" }}>
+      <a href={fokusZiel(ziel)}
+         style={{ display: "inline-block", padding: "6px 12px", borderRadius: 6,
+                  background: "var(--c-bg)", color: "var(--c-text)", fontSize: 12,
+                  fontWeight: 600, textDecoration: "none" }}>
+        ← zurück zur ausgewählten Information
+      </a>
+    </div>
+  );
 }
 
 function isValidWissenKey(key) {
@@ -774,6 +800,18 @@ function App() {
     );
   }
 
+  // Fokus-Merker setzen: auf einer Zielseite der mitgereichte Wert, sonst — wenn
+  // wir selbst die Fokus-Ansicht sind — die eigene Adresse ohne fokus-Parameter.
+  if (urlParams.fokus) {
+    FOKUS_ORIGIN = urlParams.fokus;
+  } else if (urlParams.modus === "aufklaerung" && urlParams.op) {
+    const eigene = new URLSearchParams(window.location.search);
+    eigene.delete("fokus");
+    FOKUS_ORIGIN = eigene.toString();
+  } else {
+    FOKUS_ORIGIN = null;
+  }
+
   // 1. Aufklärungs-Modus: ?op=X&modus=aufklaerung
   const isAufklaerungsModus = urlParams.modus === "aufklaerung";
   const aufklObj = getAufklaerungFor(urlParams.op);
@@ -819,6 +857,7 @@ function App() {
             direkt in die App. Der Weg nach draussen geht ueber den Hinweis am
             Seitenende auf die Landingpage. */}
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
+        <FokusRuecksprung ziel={urlParams.fokus} />
         <FokusKopf />
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} begleiterUrl={begleiterUrl} />
         <FokusFuss />
@@ -835,6 +874,7 @@ function App() {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
+        <FokusRuecksprung ziel={urlParams.fokus} />
         <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -3903,9 +3943,14 @@ function renderInline(text) {
           const safeUrl = /^(https?:\/\/|\.|\/|#|\?)/i.test(linkUrl) ? linkUrl : "#";
           // Interne Query-Links (?op=…/?massnahme=…) im selben Tab öffnen; nur externe/relative Ziele in neuem Tab
           const isInternalLink = safeUrl.charAt(0) === "?" || safeUrl.charAt(0) === "#";
+          // In der Fokus-Ansicht reicht jeder interne Link die Einstiegsadresse
+          // weiter, damit das Ziel einen Rücksprung dorthin anbieten kann.
+          const zielUrl = (FOKUS_ORIGIN && safeUrl.charAt(0) === "?" && safeUrl.indexOf("fokus=") < 0)
+            ? safeUrl + "&fokus=" + encodeURIComponent(FOKUS_ORIGIN)
+            : safeUrl;
           flushBuffer();
           parts.push(
-            <a key={"l" + (keyIdx++)} href={safeUrl}
+            <a key={"l" + (keyIdx++)} href={zielUrl}
                target={isInternalLink ? undefined : "_blank"}
                rel={isInternalLink ? undefined : "noopener noreferrer"}
                style={{ color: "var(--c-main)", textDecoration: "underline", fontWeight: 600 }}>
