@@ -954,6 +954,25 @@ function NonOpView({ onBack }) {
   }
 
   // Kachel "Weitere sinnvolle Maßnahmen" (in den Programmen), verlinkt auf allgemeine Maßnahmen-Seiten
+  // Quellenangaben einer Einleitung. Bis dahin lagen sie ungenutzt in den Daten.
+  function QuellenBlock({ liste }) {
+    if (!liste || liste.length === 0) return null;
+    return (
+      <div style={{ marginTop: 16, paddingTop: 12, borderTop: "1px solid rgba(0,0,0,.08)" }}>
+        <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>
+          Quellen
+        </div>
+        {liste.map(function(q, i){
+          return (
+            <div key={i} style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.55, marginBottom: 3 }}>
+              {q}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   function MassnahmenKachel({ liste }) {
     if (!liste || liste.length === 0) return null;
     return (
@@ -1115,6 +1134,7 @@ function NonOpView({ onBack }) {
           <div style={{ marginBottom: 14 }}>
             {einleitung.intro && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 6 }}>{einleitung.intro}</div>}
             {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, whiteSpace: "pre-line" }}>{einleitung.text}</div>}
+            <QuellenBlock liste={einleitung.quellen} />
           </div>
         )}
 
@@ -1237,6 +1257,7 @@ function NonOpView({ onBack }) {
             })}
           </div>
           {einl.hinweis && <div style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.5, marginTop: 14 }}>{einl.hinweis}</div>}
+          <QuellenBlock liste={einl.quellen} />
           <MassnahmenKachel liste={kb.weitereMassnahmen} />
         </div>
       );
@@ -1325,6 +1346,8 @@ function NonOpView({ onBack }) {
         <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
         {einleitung.intro && <p style={{ marginTop: 0, marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6, fontWeight: 600 }}>{einleitung.intro}</p>}
         {einleitung.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line", marginBottom: 18 }}>{einleitung.text}</div>}
+        <QuellenBlock liste={einleitung.quellen} />
+        <MassnahmenKachel liste={kb.weitereMassnahmen} />
         {(function(){
           var ab = NONOP_INHALTE[kb.abklaerung];
           if (!ab) return null;

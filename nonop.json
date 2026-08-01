@@ -14,7 +14,9 @@
    "stufen": "aussenband_stufen",
    "abklaerung": "aussenband_abklaerung",
    "modell": "zeitanker",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "neuromuskulaer_aussenband" }
+   ]
   },
   "achillodynie_midportion": {
    "label": "Achillodynie nicht-insertional",
@@ -25,7 +27,13 @@
    "ampel": "achillo_ampel",
    "einleitung": "achillo_mid_einleitung",
    "stufen": "achillo_mid_stufen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "achilles_tendoloading" },
+    { "ref": "waden_dehnung" },
+    { "ref": "stosswelle" },
+    { "ref": "einlagen" },
+    { "ref": "prp_acp" }
+   ]
   },
   "achillodynie_insertion": {
    "label": "Achillodynie insertional",
@@ -36,7 +44,11 @@
    "ampel": "achillo_ampel",
    "einleitung": "achillo_ins_einleitung",
    "stufen": "achillo_ins_stufen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "achilles_tendoloading" },
+    { "ref": "einlagen" },
+    { "ref": "stosswelle" }
+   ]
   },
   "knicksenkfuss": {
    "label": "Knick-Senk-Fuß",
@@ -45,7 +57,13 @@
    "modell": "uebungspaket",
    "einleitung": "ksf_einleitung",
    "uebungen": "ksf_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "einlagen" },
+    { "ref": "uebungen_knicksenkfuss" },
+    { "ref": "waden_dehnung" },
+    { "ref": "nachtschiene" },
+    { "ref": "short_foot" }
+   ]
   },
   "hallux_valgus": {
    "label": "Hallux valgus",
@@ -54,7 +72,13 @@
    "modell": "uebungspaket",
    "einleitung": "hv_einleitung",
    "uebungen": "hv_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "uebungen_hallux_valgus" },
+    { "ref": "waden_dehnung" },
+    { "ref": "short_foot" },
+    { "ref": "nachtschiene" },
+    { "ref": "einlagen" }
+   ]
   },
   "plantarfasziitis": {
    "label": "Plantarfasziitis",
@@ -63,7 +87,16 @@
    "modell": "uebungspaket",
    "einleitung": "pf_einleitung",
    "uebungen": "pf_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "uebungen_plantarfasziitis" },
+    { "ref": "waden_dehnung" },
+    { "ref": "einlagen" },
+    { "ref": "stosswelle" },
+    { "ref": "nachtschiene" },
+    { "ref": "botox_plantar" },
+    { "ref": "prp_acp" },
+    { "ref": "lllt" }
+   ]
   },
   "wadenmuskeldehnung": {
    "label": "Wadenmuskeldehnung",
@@ -72,7 +105,9 @@
    "modell": "uebungspaket",
    "einleitung": "waden_einleitung",
    "uebungen": "waden_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "waden_dehnung" }
+   ]
   },
   "sprunggelenk_instabilitaet": {
    "label": "Chronische Sprunggelenkinstabilität",
@@ -81,7 +116,9 @@
    "modell": "uebungspaket",
    "einleitung": "sgi_einleitung",
    "uebungen": "sgi_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "neuromuskulaer_aussenband" }
+   ]
   },
   "hallux_rigidus": {
    "label": "Hallux rigidus (Frühstadium)",
@@ -90,7 +127,10 @@
    "modell": "uebungspaket",
    "einleitung": "hr_einleitung",
    "uebungen": "hr_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "einlagen" },
+    { "ref": "infiltrationen" }
+   ]
   },
   "sprunggelenk_arthrose": {
    "label": "Sprunggelenkarthrose",
@@ -99,7 +139,10 @@
    "modell": "uebungspaket",
    "einleitung": "sga_einleitung",
    "uebungen": "sga_uebungen",
-   "weitereMassnahmen": []
+   "weitereMassnahmen": [
+    { "ref": "einlagen" },
+    { "ref": "hyaluronsaeure" }
+   ]
   }
  },
  "NONOP_INHALTE": {
