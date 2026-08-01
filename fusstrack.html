@@ -956,9 +956,11 @@ function NonOpView({ onBack }) {
   // Kachel "Weitere sinnvolle Maßnahmen" (in den Programmen), verlinkt auf allgemeine Maßnahmen-Seiten
   // Studienlage: bewusst eingeklappt. Der Begleiter soll die Übungen anleiten;
   // informiert wird im Infomaterial. Nimmt zugeklappt nur eine Zeile ein.
-  function EvidenzBlock({ text }) {
+  // Die Quellen liegen mit in der Box — sie gehören zur Studienlage und sollen
+  // nicht dauerhaft Platz einnehmen, während die Aussage dazu eingeklappt ist.
+  function EvidenzBlock({ text, quellen }) {
     const [offen, setOffen] = useState(false);
-    if (!text) return null;
+    if (!text && (!quellen || quellen.length === 0)) return null;
     return (
       <div style={{ marginBottom: 16, border: "1px solid rgba(44,79,124,.20)", borderRadius: 8, overflow: "hidden" }}>
         <div onClick={function(){ setOffen(!offen); }}
@@ -970,29 +972,26 @@ function NonOpView({ onBack }) {
           <span style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 700 }}>{offen ? "−" : "+"}</span>
         </div>
         {offen && (
-          <div style={{ padding: "10px 12px 12px", fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>
-            {text}
+          <div style={{ padding: "10px 12px 12px" }}>
+            {text && (
+              <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>
+                {text}
+              </div>
+            )}
+            {quellen && quellen.length > 0 && (
+              <div style={{ marginTop: text ? 12 : 0, paddingTop: text ? 10 : 0, borderTop: text ? "1px solid rgba(0,0,0,.08)" : "none" }}>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 5 }}>
+                  Quellen
+                </div>
+                {quellen.map(function(q, i){
+                  return (
+                    <div key={i} style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.55, marginBottom: 3 }}>{q}</div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         )}
-      </div>
-    );
-  }
-
-  // Quellenangaben einer Einleitung. Bis dahin lagen sie ungenutzt in den Daten.
-  function QuellenBlock({ liste }) {
-    if (!liste || liste.length === 0) return null;
-    return (
-      <div style={{ marginTop: 16, paddingTop: 12, borderTop: "1px solid rgba(0,0,0,.08)" }}>
-        <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>
-          Quellen
-        </div>
-        {liste.map(function(q, i){
-          return (
-            <div key={i} style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.55, marginBottom: 3 }}>
-              {q}
-            </div>
-          );
-        })}
       </div>
     );
   }
@@ -1158,8 +1157,7 @@ function NonOpView({ onBack }) {
           <div style={{ marginBottom: 14 }}>
             {einleitung.intro && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 6 }}>{einleitung.intro}</div>}
             {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, whiteSpace: "pre-line" }}>{einleitung.text}</div>}
-            <EvidenzBlock text={einleitung.evidenz} />
-            <QuellenBlock liste={einleitung.quellen} />
+            <EvidenzBlock text={einleitung.evidenz} quellen={einleitung.quellen} />
           </div>
         )}
 
@@ -1264,7 +1262,7 @@ function NonOpView({ onBack }) {
         <div>
           {einl.intro && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 12 }}>{einl.intro}</div>}
           {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line", marginBottom: 16 }}>{einl.text}</div>}
-          <EvidenzBlock text={einl.evidenz} />
+          <EvidenzBlock text={einl.evidenz} quellen={einl.quellen} />
           <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {uebungen.length} Übungen</div>
             {uebungen.map(function(u, i){
@@ -1277,7 +1275,6 @@ function NonOpView({ onBack }) {
             })}
           </div>
           {einl.hinweis && <div style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.5, marginTop: 14 }}>{einl.hinweis}</div>}
-          <QuellenBlock liste={einl.quellen} />
           <MassnahmenKachel liste={kb.weitereMassnahmen} />
         </div>
       );
@@ -1365,9 +1362,8 @@ function NonOpView({ onBack }) {
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
         {einleitung.intro && <p style={{ marginTop: 0, marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6, fontWeight: 600 }}>{einleitung.intro}</p>}
-        {einleitung.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line", marginBottom: 18 }}>{einleitung.text}</div>}
-        <EvidenzBlock text={einleitung.evidenz} />
-        <QuellenBlock liste={einleitung.quellen} />
+        {einleitung.text && <div style={{ marginBottom: 18 }}><MarkdownView source={einleitung.text} /></div>}
+        <EvidenzBlock text={einleitung.evidenz} quellen={einleitung.quellen} />
         <MassnahmenKachel liste={kb.weitereMassnahmen} />
         {(function(){
           var ab = NONOP_INHALTE[kb.abklaerung];
@@ -3840,6 +3836,16 @@ function renderInline(text) {
       if (end !== -1) {
         flushBuffer();
         parts.push(<strong key={"b" + (keyIdx++)}>{text.substring(i + 2, end)}</strong>);
+        i = end + 2;
+        continue;
+      }
+    }
+    // Unterstrichen: __...__  (für hervorgehobene Kernaussagen)
+    if (text[i] === "_" && text[i+1] === "_") {
+      const end = text.indexOf("__", i + 2);
+      if (end !== -1) {
+        flushBuffer();
+        parts.push(<u key={"u" + (keyIdx++)}>{text.substring(i + 2, end)}</u>);
         i = end + 2;
         continue;
       }
