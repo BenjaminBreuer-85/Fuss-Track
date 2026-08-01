@@ -357,7 +357,7 @@
    ],
    "testbatterie": {
     "titel": "Sportmedizinische Testbatterie (nach Bloch et al. 2019)",
-    "intro": "Die Testbatterie prüft strukturiert Faktoren, die wissenschaftlich belegt mit einer höheren Rate an erneuten Verletzungen einhergehen. Begonnen wird mit Aufwärmen auf dem Laufband bei 8, 10, 12, 8 km/h für je 2 Minuten, Kniebeugen, dynamischen Richtungswechseln und Sprüngen (Squat-Jumps, Countermovement-Jumps). Schmerzen beim Aufwärmen sind ein Abbruchkriterium.",
+    "intro": "Diese Testung kann nicht eigenständig erfolgen. Sie muss durch eine Sportmedizinerin oder einen Sportmediziner beziehungsweise durch eine Sportwissenschaftlerin oder einen Sportwissenschaftler betreut werden.\n\nDie Testbatterie prüft strukturiert Faktoren, die wissenschaftlich belegt mit einer höheren Rate an erneuten Verletzungen einhergehen. Begonnen wird mit Aufwärmen auf dem Laufband bei 8, 10, 12, 8 km/h für je 2 Minuten, Kniebeugen, dynamischen Richtungswechseln und Sprüngen (Squat-Jumps, Countermovement-Jumps). Schmerzen beim Aufwärmen sind ein Abbruchkriterium.",
     "bereiche": [
      {
       "name": "Posturale Kontrolle / Statische Stabilität",
