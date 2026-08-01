@@ -1462,14 +1462,22 @@ function NonOpView({ onBack, startKb }) {
 
         <div style={{ marginBottom: 16, padding: "14px 16px", background: "rgba(44,79,124,.06)", borderRadius: 10 }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 10 }}>Ihr Heilungsverlauf</div>
-          <div style={{ display: "flex", gap: 22, marginBottom: 12 }}>
-            <div>
-              <div style={{ fontSize: 23, fontWeight: 800, color: "var(--c-main)", lineHeight: 1 }}>Stufe {aktuelleStufe}<span style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)" }}> / {gesamtStufen}</span></div>
-              <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 4 }}>aktuelle Stufe</div>
+          {/* Stufe und Woche als eigene, hervorgehobene Kästen — die beiden
+              wichtigsten Orientierungswerte der Seite. */}
+          <div style={{ display: "flex", gap: 10, marginBottom: 12 }}>
+            <div style={{ flex: 1, background: "#fff", border: "1px solid rgba(44,79,124,.25)", borderRadius: 10, padding: "12px 14px", textAlign: "center" }}>
+              <div style={{ fontSize: 26, fontWeight: 800, color: "var(--c-main)", lineHeight: 1.05 }}>
+                {aktuelleStufe}<span style={{ fontSize: 14, fontWeight: 600, color: "var(--c-text-muted)" }}> / {gesamtStufen}</span>
+              </div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: "var(--c-main)", marginTop: 5 }}>Stufe</div>
+              <div style={{ fontSize: 10.5, color: "var(--c-text-muted)", marginTop: 2 }}>aktuell</div>
             </div>
-            <div>
-              <div style={{ fontSize: 23, fontWeight: 800, color: "var(--c-main)", lineHeight: 1 }}>Woche {wocheAktuell}<span style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)" }}> / 52</span></div>
-              <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 4 }}>seit dem Unfall</div>
+            <div style={{ flex: 1, background: "#fff", border: "1px solid rgba(44,79,124,.25)", borderRadius: 10, padding: "12px 14px", textAlign: "center" }}>
+              <div style={{ fontSize: 26, fontWeight: 800, color: "var(--c-main)", lineHeight: 1.05 }}>
+                {wocheAktuell}<span style={{ fontSize: 14, fontWeight: 600, color: "var(--c-text-muted)" }}> / 52</span>
+              </div>
+              <div style={{ fontSize: 12, fontWeight: 700, color: "var(--c-main)", marginTop: 5 }}>Woche</div>
+              <div style={{ fontSize: 10.5, color: "var(--c-text-muted)", marginTop: 2 }}>seit dem Unfall</div>
             </div>
           </div>
           <div style={{ height: 7, borderRadius: 4, background: "rgba(0,0,0,.08)", overflow: "hidden" }}>
