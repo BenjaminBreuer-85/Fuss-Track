@@ -341,9 +341,9 @@
    ]
   },
   "aussenband_stufe4": {
-   "ziel": "Wiederaufnahme des sportartspezifischen Trainings und Mannschaftstrainings außerhalb von Wettkämpfen.",
+   "ziel": "Wiederaufnahme des sportartspezifischen Trainings und Mannschaftstrainings __außerhalb von Wettkämpfen__.",
    "ruhigstellung": "Externe Stabilisierung mit Orthese oder Tape während des Sports in den ersten 6 Monaten nach dem Trauma. Wegen des Effektivitätsverlustes von Tape muss nach 15–20 Minuten nachgetapt werden.",
-   "text": "Der exakte Zeitpunkt hängt vom Heilungsfortschritt und dem jeweiligen Sport ab. Ein Wiederbeginn vor dem 3. Monat nach dem Bandriss ist bei Risikosportarten kritisch.",
+   "text": "Der exakte Zeitpunkt hängt vom Heilungsfortschritt und dem jeweiligen Sport ab. Ein Wiederbeginn vor dem 3. Monat nach dem Bandriss ist bei Risikosportarten kritisch.\\n\\nAuch ab dem dritten Monat ist ein Wiederbeginn nicht zwingend möglich. Unabhängig von der vergangenen Zeit ist es wichtiger, dass gewisse Kriterien erfüllt sind.",
    "voraussetzungen_titel": "Voraussetzungen für den Wiederbeginn (Chinn et al. 2010):",
    "voraussetzungen": [
     "Keine Defizite in Balance und Propriozeption in sportspezifischen Sprungübungen",
@@ -917,7 +917,7 @@
     "stufe": 3,
     "tagOffset": 35,
     "titel": "Return to sport",
-    "zeitfenster": "ab Woche 5–6, Langzeitübungen übers 1. Jahr",
+    "zeitfenster": "ab Woche 6, Langzeitübungen übers 1. Jahr",
     "emoji": "🏃",
     "erinnerung": "3x_woche_30min",
     "optional": false,
