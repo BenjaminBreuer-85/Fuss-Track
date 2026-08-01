@@ -997,9 +997,10 @@ function NonOpView({ onBack, startKb }) {
     );
   }
 
-  // Maßnahmen: Objekte werden als Kacheln mit Erläuterung und Bildplatz gezeigt,
-  // einfache Zeichenketten weiterhin als Stichpunktliste (übrige Stufen).
-  function MassnahmenListe({ liste, ueberschrift }) {
+  // Maßnahmen: Objekte als aufklappbare Zeilen — gleiche Bauform wie die Übungen
+  // in Stufe 3, damit die Seite nicht überläuft. Einfache Zeichenketten bleiben
+  // eine Stichpunktliste (übrige Stufen).
+  function MassnahmenListe({ liste, ueberschrift, idPrefix }) {
     if (!liste || liste.length === 0) return null;
     if (typeof liste[0] === "string") {
       return (
@@ -1013,22 +1014,29 @@ function NonOpView({ onBack, startKb }) {
     }
     return (
       <div style={{ marginBottom: 12 }}>
-        <strong>{ueberschrift}</strong>
-        <div style={{ marginTop: 8 }}>
-          {liste.map(function(mn, i){
-            return (
-              <div key={i} style={{ marginBottom: 10, padding: "14px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.10)", borderRadius: 10 }}>
-                <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-main)", marginBottom: 6 }}>{mn.titel}</div>
-                {mn.text && <div style={{ fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>{mn.text}</div>}
-                {mn.bild === false ? null : (mn.bild
-                  ? <img src={mn.bild} alt={mn.titel} loading="lazy" style={{ display: "block", width: "100%", maxWidth: 320, height: "auto", margin: "12px auto 0", borderRadius: 8 }} />
-                  : <div style={{ marginTop: 12, padding: "22px 14px", borderRadius: 8, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
-                      {"Bild zu \u201E" + mn.titel + "\u201C folgt"}
-                    </div>)}
+        <div style={{ fontWeight: 700, marginBottom: 6 }}>{ueberschrift}</div>
+        {liste.map(function(mn, i){
+          var mid = (idPrefix || "m") + "_" + i;
+          var offen = !!uebungOffen[mid];
+          return (
+            <div key={i} style={{ marginTop: 8, border: "1px solid rgba(0,0,0,.08)", borderRadius: 6, overflow: "hidden" }}>
+              <div onClick={function(){ toggleUebung(mid); }}
+                   style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between", gap: 10 }}>
+                <span>{mn.titel}</span><span style={{ color: "var(--c-text-muted)" }}>{offen ? "▲" : "▼"}</span>
               </div>
-            );
-          })}
-        </div>
+              {offen && (
+                <div style={{ padding: "10px 12px 12px" }}>
+                  {mn.text && <div style={{ fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>{mn.text}</div>}
+                  {mn.bild === false ? null : (mn.bild
+                    ? <img src={mn.bild} alt={mn.titel} loading="lazy" style={{ display: "block", width: "100%", maxWidth: 320, height: "auto", margin: "12px auto 0", borderRadius: 8 }} />
+                    : <div style={{ marginTop: 12, padding: "22px 14px", borderRadius: 8, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
+                        {"Bild zu \u201E" + mn.titel + "\u201C folgt"}
+                      </div>)}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     );
   }
@@ -1593,8 +1601,8 @@ function NonOpView({ onBack, startKb }) {
         {cAkt.ruhigstellung && <div style={{ marginBottom: 12 }}><strong>Ruhigstellung:</strong> {cAkt.ruhigstellung}</div>}
         {cAkt.text && <div style={{ marginBottom: 12, whiteSpace: "pre-line" }}>{cAkt.text}</div>}
         <EvidenzBlock text={cAkt.wissenschaft} titel="Wissenschaftliche Grundlage" />
-        <MassnahmenListe liste={cAkt.massnahmen} ueberschrift="Maßnahmen:" />
-        <MassnahmenListe liste={cAkt.massnahmen_erweitert} ueberschrift={cAkt.massnahmen_erweitert_titel || "Weitere Maßnahmen:"} />
+        <MassnahmenListe liste={cAkt.massnahmen} ueberschrift="Maßnahmen:" idPrefix={sAkt.id + "_m"} />
+        <MassnahmenListe liste={cAkt.massnahmen_erweitert} ueberschrift={cAkt.massnahmen_erweitert_titel || "Weitere Maßnahmen:"} idPrefix={sAkt.id + "_e"} />
         {cAkt.steigerung_hinweis && <div style={{ marginBottom: 12, fontStyle: "italic", color: "var(--c-text-muted)" }}>{cAkt.steigerung_hinweis}</div>}
 
         {cAkt.uebungen && (
