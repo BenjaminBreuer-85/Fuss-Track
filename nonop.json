@@ -26,11 +26,18 @@
    "einleitung": "achillo_mid_einleitung",
    "stufen": "achillo_mid_stufen",
    "weitereMassnahmen": [
-    { "ref": "achilles_tendoloading" },
-    { "ref": "waden_dehnung" },
-    { "ref": "stosswelle" },
-    { "ref": "einlagen" },
-    { "ref": "prp_acp" }
+    {
+     "ref": "waden_dehnung"
+    },
+    {
+     "ref": "stosswelle"
+    },
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "prp_acp"
+    }
    ]
   },
   "achillodynie_insertion": {
@@ -43,9 +50,15 @@
    "einleitung": "achillo_ins_einleitung",
    "stufen": "achillo_ins_stufen",
    "weitereMassnahmen": [
-    { "ref": "achilles_tendoloading" },
-    { "ref": "einlagen" },
-    { "ref": "stosswelle" }
+    {
+     "ref": "achilles_tendoloading"
+    },
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "stosswelle"
+    }
    ]
   },
   "knicksenkfuss": {
@@ -56,11 +69,21 @@
    "einleitung": "ksf_einleitung",
    "uebungen": "ksf_uebungen",
    "weitereMassnahmen": [
-    { "ref": "einlagen" },
-    { "ref": "uebungen_knicksenkfuss" },
-    { "ref": "waden_dehnung" },
-    { "ref": "nachtschiene" },
-    { "ref": "short_foot" }
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "uebungen_knicksenkfuss"
+    },
+    {
+     "ref": "waden_dehnung"
+    },
+    {
+     "ref": "nachtschiene"
+    },
+    {
+     "ref": "short_foot"
+    }
    ]
   },
   "hallux_valgus": {
@@ -71,11 +94,21 @@
    "einleitung": "hv_einleitung",
    "uebungen": "hv_uebungen",
    "weitereMassnahmen": [
-    { "ref": "uebungen_hallux_valgus" },
-    { "ref": "waden_dehnung" },
-    { "ref": "short_foot" },
-    { "ref": "nachtschiene" },
-    { "ref": "einlagen" }
+    {
+     "ref": "uebungen_hallux_valgus"
+    },
+    {
+     "ref": "waden_dehnung"
+    },
+    {
+     "ref": "short_foot"
+    },
+    {
+     "ref": "nachtschiene"
+    },
+    {
+     "ref": "einlagen"
+    }
    ]
   },
   "plantarfasziitis": {
@@ -86,14 +119,30 @@
    "einleitung": "pf_einleitung",
    "uebungen": "pf_uebungen",
    "weitereMassnahmen": [
-    { "ref": "uebungen_plantarfasziitis" },
-    { "ref": "waden_dehnung" },
-    { "ref": "einlagen" },
-    { "ref": "stosswelle" },
-    { "ref": "nachtschiene" },
-    { "ref": "botox_plantar" },
-    { "ref": "prp_acp" },
-    { "ref": "lllt" }
+    {
+     "ref": "uebungen_plantarfasziitis"
+    },
+    {
+     "ref": "waden_dehnung"
+    },
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "stosswelle"
+    },
+    {
+     "ref": "nachtschiene"
+    },
+    {
+     "ref": "botox_plantar"
+    },
+    {
+     "ref": "prp_acp"
+    },
+    {
+     "ref": "lllt"
+    }
    ]
   },
   "wadenmuskeldehnung": {
@@ -104,7 +153,9 @@
    "einleitung": "waden_einleitung",
    "uebungen": "waden_uebungen",
    "weitereMassnahmen": [
-    { "ref": "waden_dehnung" }
+    {
+     "ref": "waden_dehnung"
+    }
    ]
   },
   "sprunggelenk_instabilitaet": {
@@ -115,7 +166,9 @@
    "einleitung": "sgi_einleitung",
    "uebungen": "sgi_uebungen",
    "weitereMassnahmen": [
-    { "ref": "neuromuskulaer_aussenband" }
+    {
+     "ref": "neuromuskulaer_aussenband"
+    }
    ]
   },
   "hallux_rigidus": {
@@ -126,8 +179,12 @@
    "einleitung": "hr_einleitung",
    "uebungen": "hr_uebungen",
    "weitereMassnahmen": [
-    { "ref": "einlagen" },
-    { "ref": "infiltrationen" }
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "infiltrationen"
+    }
    ]
   },
   "sprunggelenk_arthrose": {
@@ -138,8 +195,12 @@
    "einleitung": "sga_einleitung",
    "uebungen": "sga_uebungen",
    "weitereMassnahmen": [
-    { "ref": "einlagen" },
-    { "ref": "hyaluronsaeure" }
+    {
+     "ref": "einlagen"
+    },
+    {
+     "ref": "hyaluronsaeure"
+    }
    ]
   }
  },
@@ -153,7 +214,7 @@
     "Hubbard & Hicks-Little 2008",
     "Hultman et al. 2010"
    ],
-    "evidenz": "Die frühfunktionelle Behandlung in einer semirigiden Orthese mit anschließendem neuromuskulärem Training ist gut untersucht; eine vollständige Ruhigstellung oder Entlastung ist nicht nötig. Dem neuromuskulären Training kommt dabei eine zentrale Rolle zu: Die Bandverletzung schädigt Mechanorezeptoren und stört die Tiefenwahrnehmung. Ein propriozeptives Training, auch als Heimprogramm, senkt die Rate erneuter Verletzungen und ist in hochwertigen Studien belegt."
+   "evidenz": "Die frühfunktionelle Behandlung in einer semirigiden Orthese mit anschließendem neuromuskulärem Training ist gut untersucht; eine vollständige Ruhigstellung oder Entlastung ist nicht nötig. Dem neuromuskulären Training kommt dabei eine zentrale Rolle zu: Die Bandverletzung schädigt Mechanorezeptoren und stört die Tiefenwahrnehmung. Ein propriozeptives Training, auch als Heimprogramm, senkt die Rate erneuter Verletzungen und ist in hochwertigen Studien belegt."
   },
   "aussenband_stufe1": {
    "ziel": "Reduktion von Schwellung und Schmerz.",
@@ -413,52 +474,58 @@
    "bestaetigung": "Die Diagnose und der passende Pfad wurden ärztlich festgelegt"
   },
   "achillo_mid_einleitung": {
-   "intro": "Bei der mittleren Form sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
-   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen (=Tendoloading). Wichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
-    "quellen": [
-     "Martin RL et al. 2018 (JOSPT Clinical Practice Guideline)",
-     "Chimenti RL et al. 2024",
-     "Prudêncio DA et al. 2023",
-     "Maetz R et al. 2023",
-     "Praet SFE et al. 2019"
-    ],
-    "evidenz": "Das dosierte Belastungstraining der Sehne gehört bei der mittleren Form zu den am besten untersuchten Maßnahmen. Systematische Übersichtsarbeiten zeigen, dass exzentrisches Training anderen Übungsformen überlegen ist (Prudêncio et al. 2023) und dass Belastungsprotokolle besser abschneiden als passive Behandlungen (Maetz et al. 2023). Die Leitlinie der amerikanischen Physiotherapie-Fachgesellschaft empfiehlt Belastungstraining als zentrale Maßnahme (Martin et al. 2018, aktualisiert Chimenti et al. 2024). Zu Dauer und genauer Dosierung gibt es keine einheitliche Empfehlung."
+   "intro": "Bei der Mid-Portion-Tendinopathie sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
+   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+   "quellen": [
+    "Martin RL et al. 2018 (JOSPT Clinical Practice Guideline)",
+    "Chimenti RL et al. 2024",
+    "Prudêncio DA et al. 2023",
+    "Maetz R et al. 2023",
+    "Praet SFE et al. 2019"
+   ],
+   "evidenz": "Das dosierte Belastungstraining der Sehne gehört bei der mittleren Form zu den am besten untersuchten Maßnahmen. Systematische Übersichtsarbeiten zeigen, dass exzentrisches Training anderen Übungsformen überlegen ist (Prudêncio et al. 2023) und dass Belastungsprotokolle besser abschneiden als passive Behandlungen (Maetz et al. 2023). Die Leitlinie der amerikanischen Physiotherapie-Fachgesellschaft empfiehlt Belastungstraining als zentrale Maßnahme (Martin et al. 2018, aktualisiert Chimenti et al. 2024). Zu Dauer und genauer Dosierung gibt es keine einheitliche Empfehlung."
   },
   "achillo_ins_einleitung": {
    "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
    "text": "Das Training ist ähnlich aufgebaut wie bei der mittleren Form — mit einem entscheidenden Unterschied: Die Ferse wird nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab — es gibt keine festen Zeitvorgaben. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
-    "quellen": [
-     "Sivrika AP et al. 2023",
-     "Jarin IJ et al. 2021",
-     "Zhi X et al. 2021",
-     "von Rickenbach KJ et al. 2021"
-    ],
-    "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
+   "quellen": [
+    "Sivrika AP et al. 2023",
+    "Jarin IJ et al. 2021",
+    "Zhi X et al. 2021",
+    "von Rickenbach KJ et al. 2021"
+   ],
+   "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
   },
   "achillo_mid_s1": {
-   "was": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung halten, ohne Bewegung.",
    "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag.",
-   "hinweis": "Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt — wenn es nicht hilft, direkt mit Stufe 2 beginnen."
+   "hinweis": "Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt — wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
+   "uebungen": [
+    {
+     "titel": "Isometrisches Halten im Stand",
+     "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern."
+    },
+    {
+     "titel": "Halten gegen die Spannung eines Therabandes",
+     "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
+    }
+   ]
   },
   "achillo_mid_s2": {
-   "was": "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter.",
-   "dosis": "3 Sätze × 15 Wiederholungen, Tempo 3 Sekunden hoch / 3 Sekunden runter, täglich.",
-   "hinweis": "Volle Bewegung erlaubt — beim Absenken die Ferse leicht unter Stufenniveau sinken lassen."
+   "was": "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter. Die volle Bewegung ist erlaubt; beim Absenken darf die Ferse leicht unter Stufenniveau sinken.",
+   "dosis": "3 Sätze × 15 Wiederholungen, Tempo 3 Sekunden hoch / 3 Sekunden runter, täglich."
   },
   "achillo_mid_s3": {
-   "was": "Auf einem Bein langsame Wadenhebung; bzw. mit Gewicht (Rucksack, Gerät, Langhantel).",
-   "dosis": "3–4 Sätze, Tempo 3 s hoch / 3 s runter, 3×/Woche. Wiederholungen sinken von 15 → 6, während das Gewicht steigt.",
-   "hinweis": "Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind, die Ausführung aber sauber bleibt."
+   "was": "Auf einem Bein langsame Wadenhebung, wahlweise mit Zusatzgewicht (Rucksack, Gerät, Langhantel). Als Orientierung für die Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind, die Ausführung aber sauber bleibt.",
+   "dosis": "3–4 Sätze, Tempo 3 s hoch / 3 s runter, 3×/Woche. Wiederholungen sinken von 15 → 6, während das Gewicht steigt."
   },
   "achillo_mid_s4": {
-   "was": "Auf der Stufe stehend mit dem gesunden Bein hochkommen, das langsame Absenken nur mit dem betroffenen Bein — Ferse unter die Stufenkante absenken. Mit gestrecktem und mit gebeugtem Knie.",
-   "dosis": "3 Sätze × 15 Wiederholungen, 2×/Tag, täglich (gestreckt + gebeugt = insgesamt 180 Absenkungen/Tag).",
-   "hinweis": "Last mit Rucksack/Gewicht steigern, sobald es ohne wesentlichen Schmerz geht."
+   "was": "Auf der Stufe stehend mit dem gesunden Bein hochkommen, das langsame Absenken nur mit dem betroffenen Bein — die Ferse dabei unter die Stufenkante absenken. Mit gestrecktem und mit gebeugtem Knie. Die Last wird mit Rucksack oder Gewicht gesteigert, sobald es ohne wesentlichen Schmerz geht.",
+   "dosis": "3 Sätze × 15 Wiederholungen, 2×/Tag, täglich (gestreckt + gebeugt = insgesamt 180 Absenkungen/Tag)."
   },
   "achillo_mid_s5": {
    "was": "Federnde, schnellere Belastung (Hüpfen, Seilspringen, sportartspezifische Sprünge/Läufe).",
    "dosis": "Sportartabhängig, langsam aufbauend.",
-   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit."
+   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
   },
   "achillo_ins_s1": {
    "was": "Beidbeiniges Halten auf dem Vorfuß, ohne tiefe Fersenabsenkung.",
@@ -494,7 +561,7 @@
     "Jia et al. 2024"
    ],
    "hinweis": "Allgemeine Empfehlung und Orientierung. Im Einzelfall muss die Behandlung fachärztlich überwacht und ggf. angepasst werden. Dieses Programm eignet sich für den flexiblen Knick-Senk-Fuß; die ärztliche Diagnose sollte vorliegen.",
-    "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
+   "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
   },
   "ksf_u1": {
    "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
@@ -952,7 +1019,7 @@
     "stufe": 1,
     "titel": "Isometrisches Halten",
     "emoji": "⏸️",
-    "optional": true,
+    "optional": false,
     "inhalt": "achillo_mid_s1"
    },
    {
