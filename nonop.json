@@ -165,6 +165,7 @@
     },
     {
      "titel": "Kryotherapie und Hochlagerung",
+     "bild": false,
      "text": "Kühlung und Hochlagerung sind die Basismaßnahmen gegen die Schwellung. Zum Kühlen eignen sich Cool-Packs oder eine Packung Tiefkühlgemüse. Das Kühlelement gehört nie direkt auf die Haut, sondern eingeschlagen in ein Handtuch. Als Grundregel gilt mindestens 15 Minuten, etwa dreimal täglich. Wird häufiger gekühlt, sollte der Fuß danach mindestens so lange ohne Kühlung bleiben, wie er gekühlt wurde. Bei noch wirkender Betäubung oder vorbestehenden Nervenschäden kann übermäßiges Kühlen zu Erfrierungen oder Gewebeschäden führen."
     },
     {
@@ -173,6 +174,7 @@
     },
     {
      "titel": "Medikamente",
+     "bild": false,
      "text": "Medikamente unterstützen die Behandlung, sie ersetzen sie nicht. Entzündungshemmende Schmerzmittel (NSAR wie Ibuprofen) zählen in der Frühphase zu den am besten untersuchten Maßnahmen (van den Bekerom et al. 2015). Für Enzympräparate mit Bromelain oder Papain, etwa Wobenzym, ist eine entzündungshemmende Wirkung bislang nur im Labor belegt (Onken 2008); bei vollständiger Blutverdünnung sollten sie wegen ihrer fibrinolytischen Wirkung nicht eingenommen werden."
     }
    ],

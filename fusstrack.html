@@ -1571,11 +1571,12 @@ function NonOpView({ onBack, startKb }) {
                     <div key={i} style={{ marginBottom: 10, padding: "14px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.10)", borderRadius: 10 }}>
                       <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-main)", marginBottom: 6 }}>{mn.titel}</div>
                       {mn.text && <div style={{ fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>{mn.text}</div>}
-                      {mn.bild
+                      {/* bild: false = bewusst ohne Abbildung; Zeichenkette = Bild; fehlt = Platzhalter */}
+                      {mn.bild === false ? null : (mn.bild
                         ? <img src={mn.bild} alt={mn.titel} loading="lazy" style={{ display: "block", width: "100%", maxWidth: 320, height: "auto", margin: "12px auto 0", borderRadius: 8 }} />
                         : <div style={{ marginTop: 12, padding: "22px 14px", borderRadius: 8, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
                             {"Bild zu \u201E" + mn.titel + "\u201C folgt"}
-                          </div>}
+                          </div>)}
                     </div>
                   );
                 })}
