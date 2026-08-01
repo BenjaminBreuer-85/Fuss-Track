@@ -1201,7 +1201,7 @@ function NonOpView({ onBack, startKb }) {
         {stufeAktuell === 1 && (
           <div style={{ marginBottom: 14 }}>
             {einleitung.intro && <div style={{ fontSize: 13, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 6 }}>{einleitung.intro}</div>}
-            {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, whiteSpace: "pre-line" }}>{einleitung.text}</div>}
+            {einleitung.text && <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55 }}><MarkdownView source={einleitung.text} /></div>}
             <EvidenzBlock text={einleitung.evidenz} quellen={einleitung.quellen} />
           </div>
         )}
@@ -1217,12 +1217,25 @@ function NonOpView({ onBack, startKb }) {
           <div style={{ marginBottom: 14 }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Übung</div>
             <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.was}</div>
+            <div style={{ marginTop: 12, marginBottom: 4, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
           </div>
         )}
 
-        <div style={{ marginBottom: 16, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                    <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
-        </div>
+        {/* Mehrere Übungen in einer Stufe: je Übung eigene Beschreibung und eigenes Bild */}
+        {c.uebungen && c.uebungen.map(function(u, i){
+          return (
+            <div key={i} style={{ marginBottom: 14 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>
+                {"Übung " + (i + 1) + " von " + c.uebungen.length}
+              </div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{u.titel}</div>
+              <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{u.text}</div>
+              <div style={{ marginTop: 12, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
+                {"Bild zu \u201E" + u.titel + "\u201C folgt"}
+              </div>
+            </div>
+          );
+        })}
 
         {c.dosis && (
           <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
@@ -1235,18 +1248,27 @@ function NonOpView({ onBack, startKb }) {
         {/* Ampel */}
         <div style={{ border: "1px solid rgba(0,0,0,.10)", borderRadius: 10, padding: "14px 14px", marginBottom: 14 }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 6 }}>Wie waren Ihre Beschwerden?</div>
+          {stufeAktuell === 1 ? (
+            <React.Fragment>
           <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.55, marginBottom: 8 }}>Schätzen Sie hier nach dem Üben regelmäßig Ihre Beschwerden ein: Tippen Sie auf Grün, Gelb oder Rot. Sie erhalten dann eine Empfehlung, ob Sie steigern können, auf der Stufe bleiben oder einen Schritt zurückgehen sollten.</div>
-          {ampel.grundregel && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 12 }}>{ampel.grundregel}</div>}
-          {!aktAmpel && (
-            <div style={{ marginBottom: 12, padding: "10px 12px", background: "var(--c-bg)", borderRadius: 8 }}>
-              {ampelStufen.map(function(a){
-                return (
-                  <div key={a.farbe} style={{ display: "flex", gap: 8, alignItems: "flex-start", padding: "4px 0" }}>
-                    <span style={{ width: 13, height: 13, borderRadius: "50%", flexShrink: 0, marginTop: 3, background: a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F0B429" : "#C62828" }}></span>
-                    <span style={{ fontSize: 12, color: "var(--c-text)", lineHeight: 1.5 }}><strong>{a.label}:</strong> {a.bedeutung}</span>
-                  </div>
-                );
-              })}
+              {ampel.grundregel && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 12 }}>{ampel.grundregel}</div>}
+              {!aktAmpel && (
+                <div style={{ marginBottom: 12, padding: "10px 12px", background: "var(--c-bg)", borderRadius: 8 }}>
+                  {ampelStufen.map(function(a){
+                    return (
+                      <div key={a.farbe} style={{ display: "flex", gap: 8, alignItems: "flex-start", padding: "4px 0" }}>
+                        <span style={{ width: 13, height: 13, borderRadius: "50%", flexShrink: 0, marginTop: 3, background: a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F0B429" : "#C62828" }}></span>
+                        <span style={{ fontSize: 12, color: "var(--c-text)", lineHeight: 1.5 }}><strong>{a.label}:</strong> {a.bedeutung}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </React.Fragment>
+          ) : (
+            /* Ab Stufe 2 nur noch die Kurzform — das Konzept ist dann bekannt. */
+            <div style={{ fontSize: 12.5, color: "var(--c-text-muted)", lineHeight: 1.55, marginBottom: 10 }}>
+              Schmerzen bis etwa 5 von 10 sind beim Training in Ordnung, solange sie bis zum nächsten Morgen abklingen. Bei stärkeren Schmerzen nicht weiter steigern.
             </div>
           )}
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
