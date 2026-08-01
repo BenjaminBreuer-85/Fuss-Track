@@ -1534,7 +1534,6 @@ function NonOpView({ onBack, startKb }) {
   var faelligAkt = sAkt.tagOffset <= tageSeitUnfall;
   var istAktuellAkt = sAkt.stufe === aktuelleStufe;
   var hatUebungen = cAkt.uebungen && cAkt.uebungen.length;
-  var stufenMedien = (cAkt.medien && cAkt.medien.length) ? cAkt.medien : (hatUebungen ? [] : [{}]);
 
   // Bewusst ohne Sprung-Tabs: Die Stufe wurde in der Übersicht gezielt gewählt,
   // der Ablauf ist zeitgebunden. Zurück geht es über die Kopfzeile oder unten.
@@ -1557,7 +1556,33 @@ function NonOpView({ onBack, startKb }) {
         {cAkt.ziel && <div style={{ marginBottom: 12, padding: "14px 16px", background: "rgba(44,79,124,.05)", borderRadius: 8, borderLeft: "3px solid var(--c-main)" }}><div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Ziel</div><div style={{ whiteSpace: "pre-line", lineHeight: 1.65 }}>{cAkt.ziel}</div></div>}
         {cAkt.ruhigstellung && <div style={{ marginBottom: 12 }}><strong>Ruhigstellung:</strong> {cAkt.ruhigstellung}</div>}
         {cAkt.text && <div style={{ marginBottom: 12, whiteSpace: "pre-line" }}>{cAkt.text}</div>}
-        {cAkt.massnahmen && <div style={{ marginBottom: 12 }}><strong>Maßnahmen:</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{cAkt.massnahmen.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}</ul></div>}
+        {cAkt.massnahmen && cAkt.massnahmen.length > 0 && (
+          <div style={{ marginBottom: 12 }}>
+            <strong>Maßnahmen:</strong>
+            {typeof cAkt.massnahmen[0] === "string" ? (
+              <ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>
+                {cAkt.massnahmen.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}
+              </ul>
+            ) : (
+              /* Ausführliche Maßnahmen: je eine Kachel mit eigenem Bildplatz — analog zu den Übungen */
+              <div style={{ marginTop: 8 }}>
+                {cAkt.massnahmen.map(function(mn, i){
+                  return (
+                    <div key={i} style={{ marginBottom: 10, padding: "14px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.10)", borderRadius: 10 }}>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-main)", marginBottom: 6 }}>{mn.titel}</div>
+                      {mn.text && <div style={{ fontSize: 13, color: "var(--c-text)", lineHeight: 1.6 }}>{mn.text}</div>}
+                      {mn.bild
+                        ? <img src={mn.bild} alt={mn.titel} loading="lazy" style={{ display: "block", width: "100%", maxWidth: 320, height: "auto", margin: "12px auto 0", borderRadius: 8 }} />
+                        : <div style={{ marginTop: 12, padding: "22px 14px", borderRadius: 8, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
+                            {"Bild zu \u201E" + mn.titel + "\u201C folgt"}
+                          </div>}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
         {cAkt.massnahmen_erweitert && <div style={{ marginBottom: 12 }}><strong>{cAkt.massnahmen_erweitert_titel || "Weitere Maßnahmen:"}</strong><ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>{cAkt.massnahmen_erweitert.map(function(x, i){ return <li key={i} style={{ marginBottom: 4, lineHeight: 1.55 }}>{x}</li>; })}</ul></div>}
         {cAkt.steigerung_hinweis && <div style={{ marginBottom: 12, fontStyle: "italic", color: "var(--c-text-muted)" }}>{cAkt.steigerung_hinweis}</div>}
 
@@ -1606,13 +1631,6 @@ function NonOpView({ onBack, startKb }) {
           </div>
         )}
 
-        {stufenMedien.map(function(m, i){
-          return (
-            <div key={i} style={{ marginBottom: 12, padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                            <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{m.titel ? ("Bild / Video zu \u201E" + m.titel + "\u201C folgt") : "Bild / Video folgt"}</div>
-            </div>
-          );
-        })}
 
         {cAkt.kriterien && cAkt.kriterien.length > 0 && <Ampel sid={sAkt.id} kriterien={cAkt.kriterien} />}
         {cAkt.steigerung && !cAkt.kriterien && <div style={{ marginTop: 12, padding: "12px 14px", background: "rgba(44,79,124,.06)", borderRadius: 8, fontSize: 13 }}><strong>Weiter zur nächsten Stufe:</strong> {cAkt.steigerung}</div>}

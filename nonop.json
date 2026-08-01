@@ -159,10 +159,22 @@
    "ziel": "Reduktion von Schwellung und Schmerz.",
    "ruhigstellung": "Semirigide Orthese Tag und Nacht (Grad 1–2 Rupturen; Grad 3 Rupturen, wenn tolerabel). Bei starker Schwellung (Grad 3) Gipsschiene an 2 Stützen mit Thromboseschutz für maximal 5–7 Tage.",
    "massnahmen": [
-    "Lymphdrainage",
-    "Kryotherapie, Hochlagerung",
-    "Isometrische Anspannungen der Unterschenkelmuskulatur",
-    "NSAR wie Ibuprofen (van den Bekerom et al. 2015)"
+    {
+     "titel": "Lymphdrainage und Lymphtapes",
+     "text": "Manuelle Lymphdrainage unterstützt den Abtransport der Schwellung. Ergänzend können Lymphtapes angelegt werden, die über der geschwollenen Region auf der Haut kleben und die Entstauung unterstützen."
+    },
+    {
+     "titel": "Kryotherapie und Hochlagerung",
+     "text": "Kühlung und Hochlagerung sind die Basismaßnahmen gegen die Schwellung. Zum Kühlen eignen sich Cool-Packs oder eine Packung Tiefkühlgemüse. Das Kühlelement gehört nie direkt auf die Haut, sondern eingeschlagen in ein Handtuch. Als Grundregel gilt mindestens 15 Minuten, etwa dreimal täglich. Wird häufiger gekühlt, sollte der Fuß danach mindestens so lange ohne Kühlung bleiben, wie er gekühlt wurde. Bei noch wirkender Betäubung oder vorbestehenden Nervenschäden kann übermäßiges Kühlen zu Erfrierungen oder Gewebeschäden führen."
+    },
+    {
+     "titel": "Isometrische Anspannungen",
+     "text": "Isometrisch bedeutet Anspannung ohne Bewegung (=der Muskel arbeitet, das Gelenk bleibt still). Die Unterschenkelmuskulatur wird angespannt und wieder gelöst, ohne das Sprunggelenk zu bewegen. So bleibt die Muskulatur aktiv, ohne den verletzten Bandapparat zu belasten."
+    },
+    {
+     "titel": "Medikamente",
+     "text": "Medikamente unterstützen die Behandlung, sie ersetzen sie nicht. Entzündungshemmende Schmerzmittel (NSAR wie Ibuprofen) zählen in der Frühphase zu den am besten untersuchten Maßnahmen (van den Bekerom et al. 2015). Für Enzympräparate mit Bromelain oder Papain, etwa Wobenzym, ist eine entzündungshemmende Wirkung bislang nur im Labor belegt (Onken 2008); bei vollständiger Blutverdünnung sollten sie wegen ihrer fibrinolytischen Wirkung nicht eingenommen werden."
+    }
    ],
    "steigerung": "Fortführung mit der nächsten Stufe, wenn eine gute Abschwellung erreicht ist und die Mobilisierung unter Vollbelastung möglich ist.",
    "kriterien": [
