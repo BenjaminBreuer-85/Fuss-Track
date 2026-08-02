@@ -1374,9 +1374,11 @@ function NonOpView({ onBack, startKb }) {
       if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0);
     }
 
-    // Start-Disclaimer: einmalig pro Kapitel, aktive Kenntnisnahme vor der ersten Übung
-    if (seite >= 1 && !ubAck[kbKey]) {
-      return <DisclaimerGate titel={kb.label} onBack={function(){ setSeite(0); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
+    // Start-Disclaimer: einmalig pro Kapitel, aktive Kenntnisnahme vor jedem Inhalt.
+    // Frueher erst ab der ersten Uebung — die Einleitung lief ungeschuetzt, weil dort
+    // ein Hinweis im Text stand. Jetzt einheitlich wie in den anderen Modellen.
+    if (!ubAck[kbKey]) {
+      return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); setSeite(0); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
     var stepItems = [{ key: "info", label: "Info", wide: true }].concat(uebungen.map(function(u){ return { key: u.id, label: String(u.nr) }; }));
@@ -1386,7 +1388,7 @@ function NonOpView({ onBack, startKb }) {
       inhalt = (
         <div>
           {einl.intro && <div style={{ fontSize: 14.5, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 12 }}>{einl.intro}</div>}
-          {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, whiteSpace: "pre-line", marginBottom: 16 }}>{einl.text}</div>}
+          {einl.text && <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.7, marginBottom: 16 }}><MarkdownView source={einl.text} /></div>}
           <EvidenzBlock text={einl.evidenz} quellen={einl.quellen} />
           <div style={{ padding: "14px 16px", background: "var(--c-bg)", borderRadius: 10, marginBottom: 8 }}>
             <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {uebungen.length} Übungen</div>
