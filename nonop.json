@@ -174,6 +174,12 @@
     },
     {
      "ref": "hyaluronsaeure"
+    },
+    {
+     "ref": "prp_acp"
+    },
+    {
+     "ref": "allg_verschleiss"
     }
    ]
   }
@@ -827,13 +833,12 @@
   },
   "hr_einleitung": {
    "intro": "Der Hallux rigidus ist ein Verschleiß (=Arthrose) des Großzehengrundgelenks mit zunehmender Einsteifung und Schmerz beim Abrollen. Im Frühstadium (oft „Hallux limitus“ genannt) ist die Beweglichkeit nur teilweise eingeschränkt.",
-   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen.\n\nDie Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
+   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen. Übungen sind beim Hallux rigidus nur bedingt möglich, weil die Einsteifung des Gelenks selbst die Bewegung begrenzt.\n\nDie Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
    "quellen": [
     "Kunnasegaran & Thevendran 2015",
     "Brantingham et al. 2009"
    ],
-   "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose.",
-   "hinweis": "Sanft und schmerzarm üben. Bei zunehmender Einsteifung oder starkem Schmerz ärztliche Vorstellung."
+   "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose."
   },
   "hr_u1": {
    "ziel": "Erhalt der aktiven Beweglichkeit des Großzehengrundgelenks.",
@@ -855,21 +860,20 @@
   "hr_u3": {
    "ziel": "Entlastung des Vorfußes durch Lockerung der Wade.",
    "schritte": [
-    "Die Durchführung der Wadendehnung ist im eigenen Kapitel beschrieben."
+    "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
    ],
    "dosis": "",
    "hinweis": "",
    "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
   },
   "sga_einleitung": {
-   "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben — zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
+   "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben, zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
    "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab — bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden — nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
    "quellen": [
     "Witteveen et al. 2015 (Cochrane)",
     "Paterson et al. 2018"
    ],
-   "evidenz": "Für konservative Maßnahmen bei Sprunggelenkarthrose ist die Evidenz begrenzt; eine Cochrane-Übersicht fand unzureichende Daten und weist darauf hin, dass sich Empfehlungen für Hüft- und Kniearthrose wegen der anderen Entstehung nicht ohne Weiteres übertragen lassen (Witteveen et al. 2015). Übungen werden in der Praxis ergänzend eingesetzt, hochwertige Studien fehlen jedoch weitgehend.",
-   "hinweis": "Wegen der sehr unterschiedlichen Ursachen ist die individuelle ärztliche Abklärung entscheidend. Übungen nur im schmerzarmen Bereich. Bei Schmerzzunahme pausieren und ärztlich abklären."
+   "evidenz": "Für konservative Maßnahmen bei Sprunggelenkarthrose ist die Evidenz begrenzt; eine Cochrane-Übersicht fand unzureichende Daten und weist darauf hin, dass sich Empfehlungen für Hüft- und Kniearthrose wegen der anderen Entstehung nicht ohne Weiteres übertragen lassen (Witteveen et al. 2015). Übungen werden in der Praxis ergänzend eingesetzt, hochwertige Studien fehlen jedoch weitgehend."
   },
   "sga_u1": {
    "ziel": "Erhalt der verbliebenen Beweglichkeit im schmerzarmen Bereich.",
@@ -891,7 +895,7 @@
    "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung, besonders bei Instabilitätskomponente.",
    "schritte": [
     "Einbeinstand, bei Bedarf mit Festhalten.",
-    "Sicher im Stand das Gleichgewicht halten."
+    "Wenn der Einbeinstand sicher gelingt, steigern: zeitweise die Augen schließen oder langsam in eine leichte Kniebeuge gehen und wieder aufrichten."
    ],
    "dosis": "Mehrere Haltezeiten, mehrfach pro Woche. Nur in sicherem Umfeld mit Festhaltemöglichkeit. Steigerung nur, wenn sicher und schmerzarm."
   }
