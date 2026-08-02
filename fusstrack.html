@@ -1469,7 +1469,7 @@ function NonOpView({ onBack, startKb }) {
                   <div key={i} style={{ marginBottom: 18 }}>
                     <div style={{ display: "flex", gap: 12, marginBottom: 8 }}>
                       <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
-                      <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                      <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{renderInline(st)}</div>
                     </div>
                     <div style={{ marginLeft: 38, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
                                             <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu Schritt {i + 1} folgt</div>
@@ -2031,7 +2031,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
                     <div key={i} style={{ marginBottom: 18 }}>
                       <div style={{ display: "flex", gap: 12, marginBottom: 8 }}>
                         <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
-                        <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{st}</div>
+                        <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{renderInline(st)}</div>
                       </div>
                     </div>
                   );
