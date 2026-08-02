@@ -143,11 +143,7 @@
    "modell": "uebungspaket",
    "einleitung": "sgi_einleitung",
    "uebungen": "sgi_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "neuromuskulaer_aussenband"
-    }
-   ]
+   "weitereMassnahmen": []
   },
   "hallux_rigidus": {
    "label": "Hallux rigidus (Frühstadium)",
@@ -779,12 +775,11 @@
   },
   "sgi_einleitung": {
    "intro": "Nach wiederholten Umknickverletzungen kann eine chronische Instabilität (=anhaltendes Unsicherheits- und Wegknickgefühl im Sprunggelenk) entstehen. Häufig bestehen wiederkehrendes Umknicken, ein Gefühl der Unsicherheit und eine Schwellneigung.",
-   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nDas Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nDie folgenden Übungen entsprechen dem Stabilitätsprogramm nach frischer Außenbandverletzung und sind als dauerhaftes Training gedacht. Der Schwierigkeitsgrad wird gesteigert, sobald die jeweilige Stufe sicher und schmerzfrei gelingt.",
+   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nDas Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nZum Training nach einer frischen Außenbandverletzung gibt es einige Parallelen. Bei chronischer Instabilität ist eine stufenweise Steigerung der Belastung in der Regel aber nicht sinnvoll, sondern ein dauerhaftes Programm. **Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten.** Bei Schmerzen oder häufigem Wegknicken trotz Training stellen Sie sich bitte ärztlich vor.",
    "quellen": [
     "Hupperets et al. 2008"
    ],
-   "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll.",
-   "hinweis": "Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten. Bei Schmerzen oder häufigem Wegknicken trotz Training bitte ärztlich vorstellen."
+   "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll."
   },
   "sgi_u1": {
    "ziel": "Stabilisierung von Sprunggelenk und Beinachse unter Belastung.",
