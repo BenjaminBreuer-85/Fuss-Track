@@ -1434,13 +1434,9 @@ function NonOpView({ onBack, startKb }) {
           {aktAmpel && (
             <div style={{ padding: "12px 14px", borderRadius: 8, background: aktAmpel.farbe === "gruen" ? "rgba(46,125,50,.10)" : aktAmpel.farbe === "gelb" ? "rgba(249,168,37,.12)" : "rgba(198,40,40,.10)" }}>
               <div style={{ fontSize: 12.5, color: "var(--c-text)", lineHeight: 1.5, marginBottom: 6 }}>{aktAmpel.bedeutung}</div>
+              {/* Die Ampel gibt nur eine Einschaetzung. Gewechselt wird ueber die
+                  Blaetter-Navigation am Seitenende, wie in allen anderen Begleitern. */}
               <div style={{ fontSize: 13.5, fontWeight: 700, color: aktAmpel.farbe === "gruen" ? "#2E7D32" : aktAmpel.farbe === "gelb" ? "#8A6D0B" : "#C62828" }}>{aktAmpel.empfehlung}</div>
-              {aktAmpel.farbe === "gruen" && stufeAktuell < stufen.length && (
-                <div onClick={function(){ setStufe(stufeAktuell + 1); }} style={{ marginTop: 10, textAlign: "center", padding: "10px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer" }}>Zur nächsten Stufe →</div>
-              )}
-              {aktAmpel.farbe === "rot" && stufeAktuell > 1 && (
-                <div onClick={function(){ setStufe(stufeAktuell - 1); }} style={{ marginTop: 10, textAlign: "center", padding: "10px", background: "#fff", border: "1px solid #C62828", color: "#C62828", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer" }}>← Eine Stufe zurück</div>
-              )}
             </div>
           )}
         </div>
