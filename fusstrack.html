@@ -847,9 +847,20 @@ function App() {
     };
     // Adresse des Nachbehandlungs-Begleiters für den sichtbaren Übergang am
     // Ende der Slides. Nutzt die mitgegebene Variante, sonst den ctx-Marker.
+    // Ohne bekannte Variante kann der Begleiter nicht direkt starten. Dann wird
+    // das zugehoerige Krankheitsbild angesteuert, damit die Auswahl im Begleiter
+    // erscheint statt im Hauptmenue.
+    const kbFuerOp = (typeof KRANKHEITSBILDER !== "undefined" && KRANKHEITSBILDER)
+      ? (KRANKHEITSBILDER.filter(function(k){
+          return (k.operationen || []).some(function(o){ return o.opKey === urlParams.op; })
+                 || k.aufklaerungOp === urlParams.op;
+        })[0] || null)
+      : null;
     const begleiterUrl = begleitVerfuegbar
-      ? (urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var })
-                       : buildUrl({ op: urlParams.op, ctx: "begleiter" }))
+      ? ((urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var })
+                        : (kbFuerOp ? buildUrl({ kb: kbFuerOp.key })
+                                    : buildUrl({ op: urlParams.op, ctx: "begleiter" })))
+         + (FOKUS_ORIGIN ? "&fokus=" + encodeURIComponent(FOKUS_ORIGIN) : ""))
       : null;
     return (
       <div className="app">
@@ -885,6 +896,7 @@ function App() {
   return (
     <div className="app">
       <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} />
+      <FokusRuecksprung ziel={urlParams.fokus} />
       {session && (
         <>
           {!session.opDatum
@@ -2318,11 +2330,17 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       // Vom Aufklärungs-Modus zurück in den Begleit-Modus.
       // Wenn var bekannt, beibehalten. Sonst (reiner ctx=begleiter-Einstieg ohne
       // Variante) ctx weitergeben, damit der Begleit-Einstieg erkennbar bleibt.
-      if (urlParams.var) {
-        window.location.href = buildUrl({ op: urlParams.op, var: urlParams.var });
-      } else {
-        window.location.href = buildUrl({ op: urlParams.op, ctx: "begleiter" });
-      }
+      var kbZiel = (typeof KRANKHEITSBILDER !== "undefined" && KRANKHEITSBILDER)
+        ? (KRANKHEITSBILDER.filter(function(k){
+            return (k.operationen || []).some(function(o){ return o.opKey === urlParams.op; })
+                   || k.aufklaerungOp === urlParams.op;
+          })[0] || null)
+        : null;
+      var ziel = urlParams.var
+        ? buildUrl({ op: urlParams.op, var: urlParams.var })
+        : (kbZiel ? buildUrl({ kb: kbZiel.key }) : buildUrl({ op: urlParams.op, ctx: "begleiter" }));
+      if (FOKUS_ORIGIN) ziel += "&fokus=" + encodeURIComponent(FOKUS_ORIGIN);
+      window.location.href = ziel;
     }
   }
   function goHauptmenue() {
