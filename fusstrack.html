@@ -580,6 +580,7 @@ function getUrlParams() {
 // Fokus-Ansicht: Merker der Einstiegsadresse. Alle Links, die innerhalb der
 // Fokus-Ansicht erzeugt werden, tragen ihn weiter, damit jedes Ziel einen
 // Rücksprung zur ursprünglichen Seite anbieten kann — statt ins Hauptmenü.
+const NONOP_ACK = "__begleiter";
 let FOKUS_ORIGIN = null;
 
 function fokusZiel(kodiert) {
@@ -617,6 +618,25 @@ function opAckGelesen() {
 }
 function opAckSetzen() {
   try { localStorage.setItem(OP_DISCLAIMER_KEY, "yes"); } catch (e) {}
+}
+
+// Hinweis beim Wiedereinstieg: Die Startseite kommt zuerst, die letzte Stelle
+// wird nur auf Klick wiederhergestellt.
+function FortsetzenBanner({ text, onFortsetzen }) {
+  return (
+    <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
+      <div onClick={onFortsetzen}
+           style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px",
+                    background: "rgba(44,79,124,.06)", border: "1px solid rgba(44,79,124,.25)",
+                    borderRadius: 10, cursor: "pointer" }}>
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--c-main)" }}>Dort weitermachen, wo Sie aufgehört haben</div>
+          {text && <div style={{ fontSize: 12, color: "var(--c-text-muted)", marginTop: 2 }}>{text}</div>}
+        </div>
+        <div style={{ fontSize: 20, color: "var(--c-main)", fontWeight: 700 }}>›</div>
+      </div>
+    </div>
+  );
 }
 
 function OpDisclaimerGate({ titel, onConfirm }) {
@@ -717,6 +737,9 @@ function App() {
   const [session, setSession] = useState(Storage.get());
   const [opAck, setOpAck] = useState(opAckGelesen());
   const [showResetModal, setShowResetModal] = useState(false);
+  // Beim Wiedereinstieg zuerst die Startseite zeigen; die letzte Stelle wird
+  // nur auf ausdruecklichen Klick wiederhergestellt.
+  const [fortsetzen, setFortsetzen] = useState(false);
 
   // Zugang nur über URL-Parameter (II): wenn keine gültigen Parameter UND keine bestehende Session
   const hasValidUrlParams = isValidEingriffsAuswahl(urlParams.op, urlParams.var);
@@ -915,11 +938,16 @@ function App() {
   // 2. Begleit-Modus: ?op=X&var=Y (Standard)
   //    Wenn keine validen URL-Parameter UND keine bestehende Session → LandingView
   //    (vorher: ErrorPage; ändert sich für App-Store-Tauglichkeit)
-  if (!hasValidUrlParams && !hasSession) {
+  if ((!hasValidUrlParams && !hasSession) || (!hasValidUrlParams && hasSession && !fortsetzen)) {
+    const laufend = hasSession && EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante];
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
+        {hasSession && !urlParams.massnahme && !urlParams.nonop && !urlParams.kb && (
+          <FortsetzenBanner text={laufend ? laufend.anzeigename : null}
+                            onFortsetzen={function(){ setFortsetzen(true); }} />
+        )}
         <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -972,7 +1000,9 @@ function nonopClear() {
 
 function NonOpView({ onBack, startKb }) {
   var persisted = nonopLoad();
-  var [kbKey, setKbKey] = useState(startKb || (persisted ? persisted.kbKey : null));
+  // Ohne Deep-Link startet der Begleiter bei der Auswahl. Die letzte Stelle steht
+  // im Speicher und wird nur ueber den Fortsetzen-Hinweis wiederhergestellt.
+  var [kbKey, setKbKey] = useState(startKb || null);
   var [unfallDatum, setUnfallDatum] = useState(persisted ? persisted.unfallDatum : null);
   var [tempDatum, setTempDatum] = useState(todayIso());
   var [zeigeSportler, setZeigeSportler] = useState(persisted ? !!persisted.zeigeSportler : false);
@@ -982,7 +1012,7 @@ function NonOpView({ onBack, startKb }) {
   var [studienOffen, setStudienOffen] = useState(false);
   var [stufeAktuell, setStufeAktuell] = useState(persisted && persisted.stufeAktuell ? persisted.stufeAktuell : 1);
   var [ampelWahl, setAmpelWahl] = useState(persisted && persisted.ampelWahl ? persisted.ampelWahl : null);
-  var [seite, setSeite] = useState(0);
+  var [seite, setSeite] = useState(startKb ? 0 : (persisted && persisted.seite ? persisted.seite : 0));
   var [massnahmeOffen, setMassnahmeOffen] = useState(null);
   var [ubAck, setUbAck] = useState(persisted && persisted.ubAck ? persisted.ubAck : {});
 
@@ -993,9 +1023,11 @@ function NonOpView({ onBack, startKb }) {
   var DISCLAIMER_TITEL = "Bitte zuerst lesen und bestätigen";
   var DISCLAIMER_TEXT = "Die Diagnose und die Freigabe des Trainings müssen ärztlich erfolgen. Die folgenden Übungen und Hinweise entsprechen einem allgemeinen Schema — Ihr Einzelfall kann davon abweichen. Bitte üben Sie nur nach ärztlicher Rücksprache und im schmerzarmen Bereich.";
   var DISCLAIMER_BTN = "✓ Verstanden und zur Kenntnis genommen";
+  // Der Disclaimer gilt einmal fuer den gesamten Nicht-OP-Begleiter, nicht je
+  // Krankheitsbild. Der Schluessel ist deshalb fest.
   function ackKapitel(k) {
     var next = Object.assign({}, ubAck);
-    next[k] = true;
+    next[NONOP_ACK] = true;
     setUbAck(next);
     var cur = nonopLoad() || {};
     cur.ubAck = next;
@@ -1193,7 +1225,7 @@ function NonOpView({ onBack, startKb }) {
 
 
   function persist(extra) {
-    var base = { kbKey: kbKey, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks, ubAck: ubAck };
+    var base = { kbKey: kbKey, seite: seite, unfallDatum: unfallDatum, zeigeSportler: zeigeSportler, checks: checks, ubAck: ubAck };
     nonopSave(Object.assign(nonopLoad() || {}, base, extra || {}));
   }
   function start(sportler) {
@@ -1228,6 +1260,25 @@ function NonOpView({ onBack, startKb }) {
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <ZurueckLeiste onBack={onBack} titel="Non-OP-Begleiter" />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>Worum geht es bei Ihnen?</p>
+        {/* Letzte Stelle nur auf Klick wiederherstellen — sonst landet man beim
+            Wiedereinstieg mitten in einem Text. */}
+        {(function(){
+          var gesp = nonopLoad() || {};
+          var letzter = gesp.kbKey && NONOP_KB[gesp.kbKey];
+          if (!letzter) return null;
+          return (
+            <div onClick={function(){ setKbKey(gesp.kbKey); }}
+                 style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px", marginBottom: 14,
+                          background: "rgba(44,79,124,.06)", border: "1px solid rgba(44,79,124,.25)",
+                          borderRadius: 10, cursor: "pointer" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--c-main)" }}>Dort weitermachen, wo Sie aufgehört haben</div>
+                <div style={{ fontSize: 12, color: "var(--c-text-muted)", marginTop: 2 }}>{letzter.label}</div>
+              </div>
+              <div style={{ fontSize: 20, color: "var(--c-main)", fontWeight: 700 }}>›</div>
+            </div>
+          );
+        })()}
         {kbListe.length === 0 && <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>Aktuell sind keine Inhalte verfügbar.</div>}
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {kbListe.map(function(k) {
@@ -1279,7 +1330,7 @@ function NonOpView({ onBack, startKb }) {
     }
 
     // --- Pflicht-Gate (einheitlicher Start-Disclaimer, einmalig pro Kapitel) ---
-    if (!ubAck[kbKey]) {
+    if (!ubAck[NONOP_ACK]) {
       return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
@@ -1410,13 +1461,15 @@ function NonOpView({ onBack, startKb }) {
     function geheZu(n) {
       var clamped = Math.max(0, Math.min(gesamtSeiten - 1, n));
       setSeite(clamped);
+      // Seite mitspeichern, damit der Wiedereinstieg genau hier fortsetzt
+      nonopSave(Object.assign(nonopLoad() || {}, { kbKey: kbKey, seite: clamped, ubAck: ubAck }));
       if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0);
     }
 
     // Start-Disclaimer: einmalig pro Kapitel, aktive Kenntnisnahme vor jedem Inhalt.
     // Frueher erst ab der ersten Uebung — die Einleitung lief ungeschuetzt, weil dort
     // ein Hinweis im Text stand. Jetzt einheitlich wie in den anderen Modellen.
-    if (!ubAck[kbKey]) {
+    if (!ubAck[NONOP_ACK]) {
       return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); setSeite(0); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
     }
 
@@ -1520,7 +1573,7 @@ function NonOpView({ onBack, startKb }) {
   }
 
   // --- Start-Disclaimer (einheitlich, einmalig pro Kapitel) vor dem Zeitanker-Pfad ---
-  if (!ubAck[kbKey]) {
+  if (!ubAck[NONOP_ACK]) {
     return <DisclaimerGate titel={kb.label} onBack={function(){ setKbKey(null); }} onConfirm={function(){ ackKapitel(kbKey); }} />;
   }
 
