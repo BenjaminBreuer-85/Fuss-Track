@@ -547,7 +547,6 @@
     "Elsayed et al. 2023",
     "Jia et al. 2024"
    ],
-   "hinweis": "Dieses Programm eignet sich für den flexiblen Knick-Senk-Fuß; die ärztliche Diagnose sollte vorliegen.",
    "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
   },
   "ksf_u1": {
@@ -614,8 +613,7 @@
     "Mortka et al. 2020",
     "Liu et al. 2024"
    ],
-   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt — ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar.",
-   "hinweis": "Dieses Programm eignet sich begleitend; die ärztliche Diagnose sollte vorliegen."
+   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt — ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar."
   },
   "hv_u0": {
    "ziel": "Lockerung des Fußes vor dem Üben.",
@@ -773,7 +771,7 @@
     "Medeiros & Martini 2017"
    ],
    "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden — in einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017).",
-   "hinweis": "Die Dehnung darf ziehend, aber nicht schmerzhaft sein. Bei belasteter Dehnung mit Knick-Senk-Fuß das Längsgewölbe schützen (z. B. Einlage). Allgemeine Empfehlung; im Einzelfall ärztlich abklären."
+   "hinweis": "Die Dehnung darf ziehend, aber nicht schmerzhaft sein. Bei belasteter Dehnung mit Knick-Senk-Fuß das Längsgewölbe schützen (z. B. Einlage)."
   },
   "wd_u1": {
    "ziel": "Dehnung des zweigelenkigen Zwillingswadenmuskels (=M. gastrocnemius).",
@@ -813,7 +811,7 @@
     "Hupperets et al. 2008"
    ],
    "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll.",
-   "hinweis": "Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten. Bei Schmerzen oder häufigem Wegknicken trotz Training bitte ärztlich vorstellen. Allgemeine Empfehlung; ärztliche Diagnose sollte vorliegen."
+   "hinweis": "Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten. Bei Schmerzen oder häufigem Wegknicken trotz Training bitte ärztlich vorstellen."
   },
   "sgi_u1": {
    "ziel": "Stabilisierung von Sprunggelenk und Beinachse unter Belastung.",
@@ -873,7 +871,7 @@
     "Brantingham et al. 2009"
    ],
    "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose.",
-   "hinweis": "ENTWURF zur ärztlichen Prüfung. Sanft und schmerzarm üben. Bei zunehmender Einsteifung oder starkem Schmerz ärztliche Vorstellung. Allgemeine Empfehlung; ärztliche Diagnose sollte vorliegen."
+   "hinweis": "ENTWURF zur ärztlichen Prüfung. Sanft und schmerzarm üben. Bei zunehmender Einsteifung oder starkem Schmerz ärztliche Vorstellung."
   },
   "hr_u1": {
    "ziel": "Erhalt der aktiven Beweglichkeit des Großzehengrundgelenks.",
