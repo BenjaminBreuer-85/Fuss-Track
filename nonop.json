@@ -73,9 +73,6 @@
      "ref": "einlagen"
     },
     {
-     "ref": "uebungen_knicksenkfuss"
-    },
-    {
      "ref": "waden_dehnung"
     },
     {
@@ -94,9 +91,6 @@
    "einleitung": "hv_einleitung",
    "uebungen": "hv_uebungen",
    "weitereMassnahmen": [
-    {
-     "ref": "uebungen_hallux_valgus"
-    },
     {
      "ref": "waden_dehnung"
     },
@@ -119,9 +113,6 @@
    "einleitung": "pf_einleitung",
    "uebungen": "pf_uebungen",
    "weitereMassnahmen": [
-    {
-     "ref": "uebungen_plantarfasziitis"
-    },
     {
      "ref": "waden_dehnung"
     },
@@ -152,11 +143,7 @@
    "modell": "uebungspaket",
    "einleitung": "waden_einleitung",
    "uebungen": "waden_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "waden_dehnung"
-    }
-   ]
+   "weitereMassnahmen": []
   },
   "sprunggelenk_instabilitaet": {
    "label": "Chronische Sprunggelenkinstabilität",

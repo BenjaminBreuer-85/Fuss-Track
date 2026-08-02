@@ -602,6 +602,39 @@ function FokusRuecksprung({ ziel }) {
   );
 }
 
+// Pflicht-Disclaimer vor dem OP-Begleiter. Gleiche Stelle und gleiche Bauform wie
+// im Nicht-OP-Begleiter, nur der Text ist auf den operativen Kontext gemuenzt.
+const OP_DISCLAIMER_KEY = "fusstrack_op_ack";
+const OP_DISCLAIMER_TITEL = "Bitte zuerst lesen und bestätigen";
+const OP_DISCLAIMER_TEXT = "Dieser Begleiter zeigt einen allgemeinen Ablauf nach der Operation. "
+  + "Maßgeblich sind immer die persönlichen Vorgaben Ihrer Operateurin oder Ihres Operateurs "
+  + "und die Angaben in Ihrem Entlassbrief. Weichen diese davon ab, gelten sie. Bei Beschwerden, "
+  + "Fieber oder Auffälligkeiten an der Wunde wenden Sie sich bitte an Ihr behandelndes Zentrum.";
+const OP_DISCLAIMER_BTN = "\u2713 Verstanden und zur Kenntnis genommen";
+
+function opAckGelesen() {
+  try { return localStorage.getItem(OP_DISCLAIMER_KEY) === "yes"; } catch (e) { return false; }
+}
+function opAckSetzen() {
+  try { localStorage.setItem(OP_DISCLAIMER_KEY, "yes"); } catch (e) {}
+}
+
+function OpDisclaimerGate({ titel, onConfirm }) {
+  return (
+    <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+      {titel && <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)", marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>{titel}</div>}
+      <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
+        <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{OP_DISCLAIMER_TITEL}</div>
+        <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{OP_DISCLAIMER_TEXT}</div>
+        <div onClick={onConfirm}
+             style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
+          {OP_DISCLAIMER_BTN}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function isValidWissenKey(key) {
   return !!(key && WISSEN && WISSEN[key]);
 }
@@ -682,6 +715,7 @@ function App() {
   const [privacyOk, setPrivacyOk] = useState(Storage.getPrivacy());
   const urlParams = useMemo(getUrlParams, []);
   const [session, setSession] = useState(Storage.get());
+  const [opAck, setOpAck] = useState(opAckGelesen());
   const [showResetModal, setShowResetModal] = useState(false);
 
   // Zugang nur über URL-Parameter (II): wenn keine gültigen Parameter UND keine bestehende Session
@@ -897,7 +931,12 @@ function App() {
     <div className="app">
       <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} />
       <FokusRuecksprung ziel={urlParams.fokus} />
-      {session && (
+      {session && !opAck && (
+        <OpDisclaimerGate titel={EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante]
+          ? EINGRIFFE[session.eingriff].varianten[session.variante].anzeigename : null}
+          onConfirm={function(){ opAckSetzen(); setOpAck(true); }} />
+      )}
+      {session && opAck && (
         <>
           {!session.opDatum
             ? <DatumEingabe session={session} onUpdate={updateSession} />
