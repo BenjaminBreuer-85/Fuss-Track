@@ -1336,7 +1336,7 @@ function NonOpView({ onBack, startKb }) {
 
         {c.dosis && (
           <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung und Hinweise</div>
             <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
           </div>
         )}
@@ -1482,7 +1482,7 @@ function NonOpView({ onBack, startKb }) {
           {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
           {c.dosis && (
             <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung und Hinweise</div>
               <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
             </div>
           )}
@@ -1498,6 +1498,8 @@ function NonOpView({ onBack, startKb }) {
         onPrev={function(){ geheZu(seite - 1); }} onNext={function(){ geheZu(seite + 1); }}
         canPrev={seite > 0} canNext={seite < gesamtSeiten - 1} weiterText={seite === 0 ? "Mit den Übungen beginnen →" : "Nächste Übung →"}>
         {inhalt}
+        {/* Unterstützen-Karte am Ende des Programms, unter der letzten Übung */}
+        {seite === gesamtSeiten - 1 && <SupportCard />}
       </BlaetterRahmen>
     );
   }
@@ -2041,7 +2043,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
             {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
             {c.dosis && (
               <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
-                <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung</div>
+                <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung und Hinweise</div>
                 <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.dosis}</div>
               </div>
             )}

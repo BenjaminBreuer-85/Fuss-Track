@@ -92,12 +92,6 @@
    "uebungen": "hv_uebungen",
    "weitereMassnahmen": [
     {
-     "ref": "waden_dehnung"
-    },
-    {
-     "ref": "short_foot"
-    },
-    {
      "ref": "nachtschiene"
     },
     {
@@ -484,8 +478,7 @@
    "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
   },
   "achillo_mid_s1": {
-   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag.",
-   "hinweis": "Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt — wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
+   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt — wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
    "uebungen": [
     {
      "titel": "Isometrisches Halten im Stand",
@@ -511,33 +504,27 @@
   },
   "achillo_mid_s5": {
    "was": "Federnde, schnellere Belastung (Hüpfen, Seilspringen, sportartspezifische Sprünge/Läufe).",
-   "dosis": "Sportartabhängig, langsam aufbauend.",
-   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
+   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
   },
   "achillo_ins_s1": {
    "was": "Beidbeiniges Halten auf dem Vorfuß, ohne tiefe Fersenabsenkung.",
-   "dosis": "5 × 45 Sekunden, 2–3 Minuten Pause, 1–2×/Tag.",
-   "hinweis": "Optionaler Einstieg bei stark reizbarer Sehne."
+   "dosis": "5 × 45 Sekunden, 2–3 Minuten Pause, 1–2×/Tag. Optionaler Einstieg bei stark reizbarer Sehne."
   },
   "achillo_ins_s2": {
    "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
-   "dosis": "3 × 15, Tempo 3 s / 3 s, täglich.",
-   "hinweis": "Keine Dehnung unter Bodenhöhe."
+   "dosis": "3 × 15, Tempo 3 s / 3 s, täglich. Keine Dehnung unter Bodenhöhe."
   },
   "achillo_ins_s3": {
    "was": "Einbeinige Wadenhebung bzw. mit Gewicht, Bewegung nur bis Neutralstellung, keine Dehnung unter Bodenhöhe.",
-   "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last.",
-   "hinweis": "Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
+   "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last. Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
   },
   "achillo_ins_s4": {
    "was": "Kräftigung mit Gewicht, gestreckt und gebeugt, ohne Absenken unter die Stufenkante.",
-   "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag).",
-   "hinweis": "Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
+   "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag). Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
   },
   "achillo_ins_s5": {
    "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
-   "dosis": "Sportartabhängig, langsam aufbauend.",
-   "hinweis": "Voraussetzung: Stufe 4 schmerzarm und sicher."
+   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher."
   },
   "ksf_einleitung": {
    "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
@@ -602,14 +589,14 @@
   },
   "hv_einleitung": {
    "intro": "Beim Hallux valgus (=Schiefstand der Großzehe, „Ballenzeh“) bestehen wie bei jeder chronischen Erkrankung des Bewegungsapparates nicht-operative und operative Optionen. Vor einer Operation sollten alternative Maßnahmen probiert werden.",
-   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung — gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\n\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\n\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind — ähnlich wie an der Hand — für Feinmotorik und „Griffkraft“ des Fußes zuständig.\n\nEhrlich und realistisch: Das Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
+   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung. Gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\n\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\n\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind ähnlich wie an der Hand für Feinmotorik und „Griffkraft“ des Fußes zuständig.\n\nDas Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
    "quellen": [
     "Mortka & Lisiński 2015",
     "Kim et al. 2013",
     "Mortka et al. 2020",
     "Liu et al. 2024"
    ],
-   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt — ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar."
+   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt. Ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar."
   },
   "hv_u0": {
    "ziel": "Lockerung des Fußes vor dem Üben.",
@@ -617,7 +604,7 @@
     "Ausstreichen der Fußsohle.",
     "Querdehnung des Fußrückens."
    ],
-   "dosis": "Als angenehme, risikoarme Vorbereitung vor den Übungen. Die Massage ist eine Vorbereitung und dient der Lockerung — sie ersetzt die Übungen nicht."
+   "dosis": "Als angenehme, risikoarme Vorbereitung vor den Übungen. Die Massage ist eine Vorbereitung und dient der Lockerung, sie ersetzt die Übungen nicht."
   },
   "hv_u1": {
    "ziel": "Stärkung der kleinen Zehenbeuger (=intrinsische Zehenbeuger).",
@@ -625,7 +612,7 @@
     "Mit den Zehen eine Kugel greifen und 10× von links nach rechts legen.",
     "Einen Schnürsenkel oder ein kleines Band mit den Zehen aufnehmen und nacheinander die Buchstaben Ihres Vor- und Nachnamens formen."
    ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen. Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert — hier ist Geduld gefragt.",
+   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen. Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert. Hier ist Geduld gefragt.",
    "hinweis": ""
   },
   "hv_u2": {
@@ -672,7 +659,7 @@
    "hinweis": ""
   },
   "hv_u7": {
-   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann — vor allem bei gleichzeitigem Knick-Senk-Fuß — zur Instabilität des Längsgewölbes und zur Dezentrierung des 1. Mittelfußknochens beitragen.",
+   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann vor allem bei gleichzeitigem Knick-Senk-Fuß zur Instabilität des Längsgewölbes und zur Dezentrierung des 1. Mittelfußknochens beitragen.",
    "schritte": [
     "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
    ],
@@ -796,7 +783,7 @@
   },
   "sgi_einleitung": {
    "intro": "Nach wiederholten Umknickverletzungen kann eine chronische Instabilität (=anhaltendes Unsicherheits- und Wegknickgefühl im Sprunggelenk) entstehen. Häufig bestehen wiederkehrendes Umknicken, ein Gefühl der Unsicherheit und eine Schwellneigung.",
-   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nEhrlich und realistisch: Das Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nDie folgenden Übungen entsprechen dem Stabilitätsprogramm nach frischer Außenbandverletzung und sind als dauerhaftes Training gedacht. Der Schwierigkeitsgrad wird gesteigert, sobald die jeweilige Stufe sicher und schmerzfrei gelingt.",
+   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nDas Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nDie folgenden Übungen entsprechen dem Stabilitätsprogramm nach frischer Außenbandverletzung und sind als dauerhaftes Training gedacht. Der Schwierigkeitsgrad wird gesteigert, sobald die jeweilige Stufe sicher und schmerzfrei gelingt.",
    "quellen": [
     "Hupperets et al. 2008"
    ],
@@ -849,7 +836,7 @@
   },
   "hr_einleitung": {
    "intro": "Der Hallux rigidus ist ein Verschleiß (=Arthrose) des Großzehengrundgelenks mit zunehmender Einsteifung und Schmerz beim Abrollen. Im Frühstadium (oft „Hallux limitus“ genannt) ist die Beweglichkeit nur teilweise eingeschränkt.",
-   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen.\n\nEhrlich und realistisch: Die Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
+   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen.\n\nDie Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
    "quellen": [
     "Kunnasegaran & Thevendran 2015",
     "Brantingham et al. 2009"
@@ -885,7 +872,7 @@
   },
   "sga_einleitung": {
    "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben — zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
-   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab — bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nEhrlich und realistisch: Die wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden — nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
+   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab — bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden — nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
    "quellen": [
     "Witteveen et al. 2015 (Cochrane)",
     "Paterson et al. 2018"
