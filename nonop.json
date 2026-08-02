@@ -739,15 +739,14 @@
   },
   "waden_einleitung": {
    "intro": "Die Wadenmuskulatur besteht aus dem zweigelenkigen Zwillingswadenmuskel (=M. gastrocnemius, überspringt Knie und Sprunggelenk) und dem darunterliegenden Schollenmuskel (=M. soleus). Ist die Wade verkürzt, ist das Anheben des Fußes (=Dorsalextension) eingeschränkt.",
-   "text": "Eine verkürzte Wade ist sehr häufig und kann zu Mehrbelastung an Ferse, Fußsohle und Vorfuß beitragen. Sie steht in Zusammenhang mit verschiedenen Fußbeschwerden — unter anderem Plantarfasziitis, Knick-Senk-Fuß und Vorfußüberlastung.\n\nRealistisch und ehrlich: Dehnen verbessert die Beweglichkeit des Sprunggelenks, aber meist nur in kleinem Maß. Es ist ein sinnvoller ergänzender Baustein, keine alleinige Lösung. Der Effekt hält nur an, wenn dauerhaft gedehnt wird.\n\nWichtig ist die Unterscheidung: Mit gestrecktem Knie wird vor allem der Zwillingswadenmuskel gedehnt, mit gebeugtem Knie eher der tiefere Schollenmuskel. Beide Varianten gehören dazu.",
+   "text": "Eine verkürzte Wade ist sehr häufig und kann zu Mehrbelastung an Ferse, Fußsohle und Vorfuß beitragen. Sie steht unter anderem mit Plantarfasziitis, Knick-Senk-Fuß und Vorfußüberlastung in Zusammenhang.\n\nDehnen verbessert die Beweglichkeit des Sprunggelenks, aber meist nur in kleinem Maß. Es ist ein sinnvoller ergänzender Baustein, keine alleinige Lösung. Der Effekt hält nur an, wenn dauerhaft gedehnt wird.\n\nMit gestrecktem Knie wird vor allem der Zwillingswadenmuskel gedehnt, mit gebeugtem Knie eher der tiefere Schollenmuskel. Beide Varianten gehören dazu.",
    "quellen": [
     "Radford et al. 2006",
     "Patel & DiGiovanni 2011",
     "Johanson/Dinh et al. 2010",
     "Medeiros & Martini 2017"
    ],
-   "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden — in einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017).",
-   "hinweis": "Die Dehnung darf ziehend, aber nicht schmerzhaft sein. Bei belasteter Dehnung mit Knick-Senk-Fuß das Längsgewölbe schützen (z. B. Einlage)."
+   "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden. In einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017)."
   },
   "wd_u1": {
    "ziel": "Dehnung des zweigelenkigen Zwillingswadenmuskels (=M. gastrocnemius).",
@@ -757,7 +756,7 @@
     "Die hintere Ferse bleibt fest am Boden, das hintere Knie bleibt gestreckt.",
     "Das Becken langsam nach vorne verlagern, bis ein Ziehen in der Wade spürbar ist."
    ],
-   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Belastet (im Stand) oder unbelastet ist gleich wirksam — wählen Sie die für Sie angenehmere Variante."
+   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Belastet (im Stand) oder unbelastet ist gleich wirksam. Wählen Sie die für Sie angenehmere Variante."
   },
   "wd_u2": {
    "ziel": "Dehnung des tieferen Schollenmuskels (=M. soleus).",
@@ -770,7 +769,7 @@
    "hinweis": ""
   },
   "wd_u3": {
-   "ziel": "Alternative Dehnung über die Stufenkante.",
+   "ziel": "Alternative Dehnung über die Stufenkante. Diese Variante ist deutlich intensiver als die Dehnung an der Wand. Sie lässt sich mit einer exzentrischen Kräftigung (=Tendoloading) verbinden: Dafür langsam und unter Anspannung aus dem Zehenspitzenstand in die Dehnung absinken.",
    "schritte": [
     "Mit dem Vorfuß auf eine Stufe oder einen Keil stellen, sich festhalten.",
     "Die Ferse langsam und kontrolliert absenken, bis ein Ziehen in der Wade entsteht.",
