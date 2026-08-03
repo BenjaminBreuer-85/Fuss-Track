@@ -7005,63 +7005,63 @@
     },
     "botox_plantar": {
       "titel": "Botulinumtoxin (Botox) bei Plantarfasziitis",
-      "kurz": "Botulinumtoxin entspannt verkrampfte Fußmuskeln und wirkt schmerzhemmend — eine neuere Option bei hartnäckiger Plantarfasziitis.",
+      "kurz": "Botulinumtoxin entspannt verkrampfte Fußmuskeln und wirkt schmerzhemmend, eine neuere Option bei hartnäckiger Plantarfasziitis.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "Die **Plantarfasziitis** ist der häufigste Fußschmerz und oft hartnäckig. Als Alternative bei schlechtem Ansprechen oder für eine zügige Besserung kann **Botulinumtoxin (Botox)** in die **intrinsischen Fußmuskeln** injiziert werden, um kontrakte Strukturen zu entspannen. Botox ist ein Protein des Bakteriums Clostridium botulinum (Typ A am gebräuchlichsten); es blockiert die Freisetzung des Überträgerstoffs **Acetylcholin** und lähmt so den Muskel vorübergehend. Zusätzlich hat Botox einen **schmerzhemmenden** Effekt über die Modulation von Schmerz-Neurotransmittern [[botox_plantar_q1]]. Es ist meist **keine alleinige Therapie**, sondern wird mit Einlagen, Wadendehnung etc. kombiniert."
+          "text": "Die **Plantarfasziitis** ist der häufigste Fußschmerz und oft hartnäckig zu behandeln, weshalb immer wieder neuere Behandlungstechniken entwickelt werden. Neben Botox ist die Injektion von plättchenreichem Plasma (PRP/ACP) gängig, das für eine langfristige Besserung gut untersucht ist.\n\nAls Alternative bei schlechtem Ansprechen oder mit dem Ziel einer zügigen Besserung kann **Botulinumtoxin (Botox)** in die kleinen Fußmuskeln injiziert werden, um die meist verkrampften Strukturen zu entspannen. Es ist in der Regel **keine alleinige Therapie**, sondern wird mit weiteren konservativen Maßnahmen wie Einlagen und Wadendehnung kombiniert.\n\nBotox ist ein Eiweiß des Bakteriums Clostridium botulinum. Es gibt sieben Serotypen (A bis G) sowie weitere gentechnisch hergestellte Formen. Typ A war das erste medizinisch zugelassene Präparat und wird am häufigsten verwendet. In kleinen Dosen bewirkt Botox über die Blockade des Überträgerstoffs **Acetylcholin** eine vorübergehende Muskelentspannung. Zusätzlich hat es einen **schmerzhemmenden** Effekt über die Beeinflussung schmerzvermittelnder Botenstoffe [[botox_plantar_q1]]. In der Fuß- und Sprunggelenkmedizin wird Botox bereits länger zur Behandlung spastischer Spitzfußstellungen bei neurologischen Erkrankungen eingesetzt.\n\n[Mehr zur Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung)\n\n[Mehr zu PRP/ACP](?massnahme=prp_acp)"
         },
         {
           "titel": "Anwendung",
-          "text": "Injektion meist in den **M. flexor digitorum brevis**, **M. abductor hallucis** und/oder **M. quadratus plantae** [[botox_plantar_q2]][[botox_plantar_q3]], typischerweise ca. **50 IE in NaCl 0,9 % pro Muskelgruppe** unter Ultraschallkontrolle. Es handelt sich um eine **Off-Label-Anwendung** (Nutzung jenseits der Zulassung, keine Kassenübernahme) — die Patienten müssen der Off-Label-Nutzung vorher separat schriftlich zustimmen."
+          "text": "Der Zielort unterscheidet sich je nach Studie. Beschrieben wird eine Injektion in die kleinen Fußmuskeln an ihrem Ursprung, vor allem in den Großzehen-Abspreizer (M. abductor hallucis) und den viereckigen Sohlenmuskel (M. quadratus plantae) [[botox_plantar_q2]]. Ein anderes Vorgehen spritzt rund 50 Einheiten direkt in die Sehnenplatte der Fußsohle unter Ultraschallkontrolle [[botox_plantar_q3]].\n\nDie Botox-Behandlung bei der Plantarfasziitis ist eine neue Technik, die von den Krankenkassen bislang nicht übernommen wird. Zudem handelt es sich um eine **Off-Label-Anwendung**, also eine Nutzung des Medikaments jenseits seiner Zulassung. Die Patienten müssen der Off-Label-Nutzung vor der Injektion gesondert schriftlich zustimmen.\n\n[Mehr zu Einlagen](?massnahme=einlagen)\n\n[Mehr zur Wadendehnung](?massnahme=waden_dehnung)"
         },
         {
           "titel": "Ergebnisse",
-          "text": "Eine Vergleichsstudie (78 Patienten) zeigte ähnlich gute Effekte wie Cortison oder Betäubungsmittel nach ca. 6 Monaten [[botox_plantar_q4]]. Ein direkter Vergleich mit **PRP** zeigte für beide gute Effekte — kurzfristig eher besser für Botox, langfristig eher für PRP [[botox_plantar_q5]]. Eine **Meta-Analyse (2021/2022)** bestätigte verbesserte Funktion und weniger Schmerz auch über 6–12 Monate [[botox_plantar_q6]]. Die verfügbaren Studien sind noch klein; belastbare Aussagen zu Langzeiteffekten sind begrenzt."
+          "text": "In einer randomisierten, placebokontrollierten Studie besserte Botox den Fersenschmerz kurzfristig deutlich [[botox_plantar_q7]]. Eine Vergleichsstudie fand ähnlich gute Effekte wie bei einer Kortison- oder Betäubungsmittel-Injektion nach etwa sechs Monaten [[botox_plantar_q4]]. Ein direkter Vergleich mit PRP zeigte für beide gute Effekte, kurzfristig eher besser für Botox und langfristig eher für PRP [[botox_plantar_q5]][[botox_plantar_q8]].\n\nEine Meta-Analyse fasste die randomisierten Studien zusammen: Die Schmerzlinderung hielt bis zu zwölf Monate an, während die funktionelle Besserung vor allem in den ersten sechs Monaten deutlich war [[botox_plantar_q6]]. Insgesamt sind die verfügbaren Studien noch klein, sodass belastbare Aussagen zu Langzeiteffekten und seltenen Nebenwirkungen begrenzt sind."
         },
         {
           "titel": "Mögliche Nebenwirkungen",
-          "text": "Vorübergehende Muskelschwäche; wie bei jeder Injektion geringes Infektionsrisiko (steril <1:10.000). Spezifische Komplikationen sind nicht beschrieben."
+          "text": "Möglich ist eine vorübergehende Muskelschwäche. Spezifische Komplikationen sind nicht beschrieben. Wie bei jeder Injektion besteht ein geringes Risiko eines Infekts mit Bildung eines Abszesses, das bei steriler Injektion in der Regel als klein eingeschätzt wird (unter 1 zu 10.000)."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Mustafa G, et al. Anti-nociceptive effect of a conjugate of substance P and botulinum neurotoxin type A. Pain. 2013.\n[2] Radovic P. Treatment of plantar heel pain syndrome with botulinum toxin — a novel injection paradigm pilot study. Foot (Edinb). 2020;45:101710.\n[3] Huang YC, et al. Ultrasonographic guided botulinum toxin type A for plantar fasciitis. J Rehabil Med. 2010.\n[4] Elizondo-Rodríguez J, et al. Comparison of botulinum toxin A, corticosteroid, and anesthetic injection for plantar fasciitis. Foot Ankle Int. 2021;42(3):305–313.\n[5] Ruiz-Hernández IM, et al. Botulinum toxin A versus PRP ultrasound-guided injection in plantar fasciitis: a randomised controlled trial. Foot Ankle Surg. 2024;30(2):117–122.\n[6] Acosta-Olivo C, et al. Clinical efficacy of botulinum toxin in plantar fasciitis: systematic review and meta-analysis of RCTs. Arch Phys Med Rehabil. 2022;103(2):364–371.\n[7] Babcock MS, et al. Treatment of plantar fasciitis with botulinum toxin A: RCT. Am J Phys Med Rehabil. 2005;84(9):649–654.\n[8] Ahmad J, Ahmad SH, Jones K. Treatment of plantar fasciitis with botulinum toxin. Foot Ankle Int. 2017;38(1):1–7."
+          "text": "[1] Mustafa G, Anderson EM, Bokrand-Donatelli Y, Neubert JK, Caudle RM. Anti-nociceptive effect of a conjugate of substance P and light chain of botulinum neurotoxin type A. Pain. 2013;154(11):2547-2553. doi:10.1016/j.pain.2013.07.041\n[2] Radovic P. Treatment of plantar fasciitis / plantar heel pain syndrome with botulinum toxin: a novel injection paradigm pilot study. Foot (Edinb). 2020;45:101711. doi:10.1016/j.foot.2020.101711\n[3] Huang YC, Wei SH, Wang HK, Lieu FK. Ultrasonographic guided botulinum toxin type A treatment for plantar fasciitis: an outcome-based investigation for treating pain and gait changes. J Rehabil Med. 2010;42(2):136-140. doi:10.2340/16501977-0491\n[4] Elizondo-Rodríguez J, Simental-Mendía M, Peña-Martínez V, Vilchez-Cavazos F, Tamez-Mata Y, Acosta-Olivo C. Comparison of botulinum toxin A, corticosteroid, and anesthetic injection for plantar fasciitis. Foot Ankle Int. 2021;42(3):305-313. doi:10.1177/1071100720961093\n[5] Ruiz-Hernández IM, Gascó-Adrien J, Buen-Ruiz C, et al. Botulinum toxin A versus platelet-rich plasma ultrasound-guided injection in the treatment of plantar fasciitis: a randomised controlled trial. Foot Ankle Surg. 2024;30(2):117-122. doi:10.1016/j.fas.2023.10.004\n[6] Acosta-Olivo C, Simental-Mendía LE, Vilchez-Cavazos F, Peña-Martínez VM, Elizondo-Rodríguez J, Simental-Mendía M. Clinical efficacy of botulinum toxin in the treatment of plantar fasciitis: a systematic review and meta-analysis of randomized controlled trials. Arch Phys Med Rehabil. 2022;103(2):364-371. doi:10.1016/j.apmr.2021.10.003\n[7] Babcock MS, Foster L, Pasquina P, Jabbari B. Treatment of pain attributed to plantar fasciitis with botulinum toxin A: a short-term, randomized, placebo-controlled, double-blind study. Am J Phys Med Rehabil. 2005;84(9):649-654. doi:10.1097/01.phm.0000176339.73591.d7\n[8] Ahmad J, Ahmad SH, Jones K. Treatment of plantar fasciitis with botulinum toxin. Foot Ankle Int. 2017;38(1):1-7. doi:10.1177/1071100716666364"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "quellen": [
         {
           "id": "botox_plantar_q1",
-          "text": "Mustafa G, et al. Anti-nociceptive effect of a conjugate of substance P and botulinum neurotoxin type A. Pain. 2013."
+          "text": "Mustafa G, Anderson EM, Bokrand-Donatelli Y, Neubert JK, Caudle RM. Anti-nociceptive effect of a conjugate of substance P and light chain of botulinum neurotoxin type A. Pain. 2013;154(11):2547-2553. doi:10.1016/j.pain.2013.07.041"
         },
         {
           "id": "botox_plantar_q2",
-          "text": "Radovic P. Treatment of plantar heel pain syndrome with botulinum toxin — a novel injection paradigm pilot study. Foot (Edinb). 2020;45:101710."
+          "text": "Radovic P. Treatment of plantar fasciitis / plantar heel pain syndrome with botulinum toxin: a novel injection paradigm pilot study. Foot (Edinb). 2020;45:101711. doi:10.1016/j.foot.2020.101711"
         },
         {
           "id": "botox_plantar_q3",
-          "text": "Huang YC, et al. Ultrasonographic guided botulinum toxin type A for plantar fasciitis. J Rehabil Med. 2010."
+          "text": "Huang YC, Wei SH, Wang HK, Lieu FK. Ultrasonographic guided botulinum toxin type A treatment for plantar fasciitis: an outcome-based investigation for treating pain and gait changes. J Rehabil Med. 2010;42(2):136-140. doi:10.2340/16501977-0491"
         },
         {
           "id": "botox_plantar_q4",
-          "text": "Elizondo-Rodríguez J, et al. Comparison of botulinum toxin A, corticosteroid, and anesthetic injection for plantar fasciitis. Foot Ankle Int. 2021;42(3):305–313."
+          "text": "Elizondo-Rodríguez J, Simental-Mendía M, Peña-Martínez V, Vilchez-Cavazos F, Tamez-Mata Y, Acosta-Olivo C. Comparison of botulinum toxin A, corticosteroid, and anesthetic injection for plantar fasciitis. Foot Ankle Int. 2021;42(3):305-313. doi:10.1177/1071100720961093"
         },
         {
           "id": "botox_plantar_q5",
-          "text": "Ruiz-Hernández IM, et al. Botulinum toxin A versus PRP ultrasound-guided injection in plantar fasciitis: a randomised controlled trial. Foot Ankle Surg. 2024;30(2):117–122."
+          "text": "Ruiz-Hernández IM, Gascó-Adrien J, Buen-Ruiz C, et al. Botulinum toxin A versus platelet-rich plasma ultrasound-guided injection in the treatment of plantar fasciitis: a randomised controlled trial. Foot Ankle Surg. 2024;30(2):117-122. doi:10.1016/j.fas.2023.10.004"
         },
         {
           "id": "botox_plantar_q6",
-          "text": "Acosta-Olivo C, et al. Clinical efficacy of botulinum toxin in plantar fasciitis: systematic review and meta-analysis of RCTs. Arch Phys Med Rehabil. 2022;103(2):364–371."
+          "text": "Acosta-Olivo C, Simental-Mendía LE, Vilchez-Cavazos F, Peña-Martínez VM, Elizondo-Rodríguez J, Simental-Mendía M. Clinical efficacy of botulinum toxin in the treatment of plantar fasciitis: a systematic review and meta-analysis of randomized controlled trials. Arch Phys Med Rehabil. 2022;103(2):364-371. doi:10.1016/j.apmr.2021.10.003"
         },
         {
           "id": "botox_plantar_q7",
-          "text": "Babcock MS, et al. Treatment of plantar fasciitis with botulinum toxin A: RCT. Am J Phys Med Rehabil. 2005;84(9):649–654."
+          "text": "Babcock MS, Foster L, Pasquina P, Jabbari B. Treatment of pain attributed to plantar fasciitis with botulinum toxin A: a short-term, randomized, placebo-controlled, double-blind study. Am J Phys Med Rehabil. 2005;84(9):649-654. doi:10.1097/01.phm.0000176339.73591.d7"
         },
         {
           "id": "botox_plantar_q8",
-          "text": "Ahmad J, Ahmad SH, Jones K. Treatment of plantar fasciitis with botulinum toxin. Foot Ankle Int. 2017;38(1):1–7."
+          "text": "Ahmad J, Ahmad SH, Jones K. Treatment of plantar fasciitis with botulinum toxin. Foot Ankle Int. 2017;38(1):1-7. doi:10.1177/1071100716666364"
         }
       ]
     },
