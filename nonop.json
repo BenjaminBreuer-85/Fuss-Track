@@ -572,8 +572,7 @@
     "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
    ],
    "dosis": "",
-   "hinweis": "",
-   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
+   "hinweis": ""
   },
   "ksf_u5": {
    "ziel": "Kräftigung der Gesäßmuskulatur (=Glutealmuskulatur). Sie stabilisiert die Beinachse und entlastet so das Fußgewölbe.",
@@ -669,8 +668,7 @@
     "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
    ],
    "dosis": "",
-   "hinweis": "",
-   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
+   "hinweis": ""
   },
   "pf_einleitung": {
    "intro": "Bei der Plantarfasziitis kommt es zu einer verschleiß- und überlastungsbedingten Schädigung der Plantarfaszie (=bindegewebige Sehnenplatte der Fußsohle) mit häufig erheblichem chronischem Schmerz an der Ferse.",
@@ -869,12 +867,11 @@
     "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
    ],
    "dosis": "",
-   "hinweis": "",
-   "verweis": "Wadenmuskeldehnung (eigenes Kapitel im Menü)"
+   "hinweis": ""
   },
   "sga_einleitung": {
    "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben, zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
-   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab — bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden — nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
+   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab. Bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden, nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
    "quellen": [
     "Witteveen et al. 2015 (Cochrane)",
     "Paterson et al. 2018"
