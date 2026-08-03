@@ -351,7 +351,7 @@
       ],
       "_review": false,
       "_entwurf": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), inkl. Register-/Standzeit-/Modelldaten & TARVA — ärztlich zu prüfen"
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), inkl. Register-/Standzeit-/Modelldaten & TARVA"
     },
     "hallux_valgus": {
       "infoKategorie": "krankheitsbild",
@@ -484,7 +484,7 @@
         "chevron_quellen"
       ],
       "_review": false,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert)",
       "quellen": [
         {
           "id": "chevron_akin_q1",
@@ -3246,7 +3246,7 @@
       ],
       "_review": true,
       "_entwurf": true,
-      "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen",
+      "stand": "Recherche-Entwurf 07/2026",
       "quellen": [
         {
           "id": "double_arthrodese_q1",
@@ -4209,7 +4209,7 @@
         "kb_ung_quellen"
       ],
       "_review": true,
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert)",
       "quellen": [
         {
           "id": "unguis_incarnatus_kb_q1",
@@ -4474,7 +4474,7 @@
         "kb_cavo_quellen"
       ],
       "_review": true,
-      "stand": "Recherche-basiert 07/2026 (kein mediq-Fachtext, intensiv recherchiert) — ärztlich zu prüfen",
+      "stand": "Recherche-basiert 07/2026 (kein mediq-Fachtext, intensiv recherchiert)",
       "quellen": [
         {
           "id": "hohlfuss_kb_q1",
@@ -5052,7 +5052,7 @@
           "text": "Khor YP, Tan KJ. The anatomic pattern of injuries in acute inversion ankle sprains: a magnetic resonance imaging study. Orthop J Sports Med. 2013;1(7):2325967113517078."
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 — ärztlich zu prüfen",
+      "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026",
       "_review": true
     },
     "baxter_kb": {
