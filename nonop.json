@@ -51,9 +51,6 @@
    "stufen": "achillo_ins_stufen",
    "weitereMassnahmen": [
     {
-     "ref": "achilles_tendoloading"
-    },
-    {
      "ref": "einlagen"
     },
     {
@@ -467,7 +464,7 @@
   },
   "achillo_ins_einleitung": {
    "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
-   "text": "An der Achillessehne gibt es zwei verschiedene Beschwerdebilder: die ansatznahe Form am Fersenbein und die Form im mittleren Sehnenabschnitt. Die nicht-operativen Behandlungskonzepte ähneln sich stark, es gibt aber einige Ausnahmen. Der wichtigste Unterschied betrifft die Ferse: Sie wird bei der ansatznahen Form nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nSie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+   "text": "An der Achillessehne gibt es zwei verschiedene Beschwerdebilder: die ansatznahe Form am Fersenbein und die Mid-Portion-Tendinopathie im mittleren Sehnenabschnitt. Die nicht-operativen Behandlungskonzepte ähneln sich stark, es gibt aber einige Ausnahmen. Der wichtigste Unterschied betrifft die Ferse: Sie wird bei der ansatznahen Form nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nDas Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
    "quellen": [
     "Sivrika AP et al. 2023",
     "Jarin IJ et al. 2021",
@@ -506,8 +503,17 @@
    "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
   },
   "achillo_ins_s1": {
-   "was": "Beidbeiniges Halten auf dem Vorfuß, ohne tiefe Fersenabsenkung.",
-   "dosis": "5 × 45 Sekunden, 2–3 Minuten Pause, 1–2×/Tag. Optionaler Einstieg bei stark reizbarer Sehne."
+   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. Beim Achilles ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt. Wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
+   "uebungen": [
+    {
+     "titel": "Isometrisches Halten im Stand",
+     "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern. Die Ferse wird dabei nicht abgesenkt."
+    },
+    {
+     "titel": "Halten gegen die Spannung eines Therabandes",
+     "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
+    }
+   ]
   },
   "achillo_ins_s2": {
    "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
@@ -523,7 +529,7 @@
   },
   "achillo_ins_s5": {
    "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
-   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher."
+   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
   },
   "ksf_einleitung": {
    "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
@@ -1006,7 +1012,7 @@
     "stufe": 1,
     "titel": "Isometrisches Halten",
     "emoji": "⏸️",
-    "optional": true,
+    "optional": false,
     "inhalt": "achillo_ins_s1"
    },
    {
@@ -1020,7 +1026,7 @@
    {
     "id": "ins3",
     "stufe": 3,
-    "titel": "Einbeinig / HSR (bis Neutralstellung)",
+    "titel": "Einbeinig / Heavy Slow Resistance (bis Neutralstellung)",
     "emoji": "🏋️",
     "optional": false,
     "inhalt": "achillo_ins_s3"
