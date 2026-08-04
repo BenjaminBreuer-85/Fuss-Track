@@ -513,6 +513,24 @@ function getAufklaerungFor(op) {
   return AUFKLAERUNG[aufklKey] || null;
 }
 
+// Liefert das Krankheitsbild (Begleiter-Einstieg aus phasen.json) zu einem
+// Eingriffs- ODER Artikelschluessel. Die Aufloesung laeuft ueber die Eingriffe
+// des Krankheitsbilds, ueber aufklaerungOp und zusaetzlich ueber
+// AUFKLAERUNG_OP_MAP — damit trifft auch der Artikelschluessel (chevron_akin)
+// und nicht nur der Eingriffsschluessel (chevron).
+// Null bedeutet: zu dieser OP gibt es keinen Begleiter.
+function findKbFuerOp(op) {
+  if (!op || typeof KRANKHEITSBILDER === "undefined" || !KRANKHEITSBILDER) return null;
+  const artikel = AUFKLAERUNG_OP_MAP[op] || op;
+  return KRANKHEITSBILDER.filter(function(k) {
+    return (k.operationen || []).some(function(o) {
+             return o.opKey === op || (AUFKLAERUNG_OP_MAP[o.opKey] || o.opKey) === artikel;
+           })
+           || k.aufklaerungOp === op
+           || (AUFKLAERUNG_OP_MAP[k.aufklaerungOp] || k.aufklaerungOp) === artikel;
+  })[0] || null;
+}
+
 /* ============================================================
  * STORAGE LAYER — abstrahierte Schnittstelle
  * Heute: localStorage. Später: Firebase (Storage tauschen, Rest bleibt).
@@ -909,12 +927,18 @@ function App() {
       urlParams.ctx === "begleiter" ||
       (aufklObj && aufklObj.infoKategorie === "op_technik")
     );
-    // Switcher "Zum Patientenbegleiter" nur sichtbar, wenn der Begleit-Modus
-    // tatsächlich verfügbar ist: ctx=begleiter-Marker (QR mit Begleiter-Kontext)
-    // ODER gültige Variante im URL bekannt.
+    // Zu welchem Krankheitsbild gehoert diese OP? Null heisst: kein Begleiter.
+    const kbFuerOp = findKbFuerOp(urlParams.op);
+    // Erste Bedingung: Fuer diesen Eingriff existiert ueberhaupt ein Begleiter.
+    // Frueher fehlte diese Pruefung — ein ctx=begleiter-Marker auf einer OP ohne
+    // Begleiter (z. B. brostrom) blendete den Schalter trotzdem ein, und der
+    // Klick landete im Hauptmenue.
+    const begleiterExistiert = !!(EINGRIFFE[urlParams.op] || kbFuerOp);
+    // Zweite Bedingung: Der Begleit-Modus ist auch angefordert — ctx=begleiter
+    // (QR mit Begleiter-Kontext) ODER gültige Variante im URL.
     // Eine zufällig laufende Hintergrund-Session löst den Link NICHT aus —
     // das reine Infomaterial-Archiv bleibt immer linkfrei und konsistent.
-    const begleitVerfuegbar = !!(
+    const begleitVerfuegbar = begleiterExistiert && !!(
       (urlParams.ctx === "begleiter") ||
       (urlParams.var && isValidEingriffsAuswahl(urlParams.op, urlParams.var))
     );
@@ -931,12 +955,6 @@ function App() {
     // Ohne bekannte Variante kann der Begleiter nicht direkt starten. Dann wird
     // das zugehoerige Krankheitsbild angesteuert, damit die Auswahl im Begleiter
     // erscheint statt im Hauptmenue.
-    const kbFuerOp = (typeof KRANKHEITSBILDER !== "undefined" && KRANKHEITSBILDER)
-      ? (KRANKHEITSBILDER.filter(function(k){
-          return (k.operationen || []).some(function(o){ return o.opKey === urlParams.op; })
-                 || k.aufklaerungOp === urlParams.op;
-        })[0] || null)
-      : null;
     const begleiterUrl = begleitVerfuegbar
       ? ((urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var, kbinfo: kbInfoOrigin })
                         : (kbFuerOp ? buildUrl({ kb: kbFuerOp.key, kbinfo: kbInfoOrigin })
@@ -2447,12 +2465,7 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       // Vom Aufklärungs-Modus zurück in den Begleit-Modus.
       // Wenn var bekannt, beibehalten. Sonst (reiner ctx=begleiter-Einstieg ohne
       // Variante) ctx weitergeben, damit der Begleit-Einstieg erkennbar bleibt.
-      var kbZiel = (typeof KRANKHEITSBILDER !== "undefined" && KRANKHEITSBILDER)
-        ? (KRANKHEITSBILDER.filter(function(k){
-            return (k.operationen || []).some(function(o){ return o.opKey === urlParams.op; })
-                   || k.aufklaerungOp === urlParams.op;
-          })[0] || null)
-        : null;
+      var kbZiel = findKbFuerOp(urlParams.op);
       // kbinfo wandert mit, damit der Weg zum Krankheitsbild auch im Begleiter
       // offen bleibt.
       var kbi = urlParams.kbinfo || null;
