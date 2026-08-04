@@ -936,20 +936,13 @@ function App() {
       );
     }
     // ?thema=<slide>: Ein Anker, den es im Artikel nicht gibt, sprang bisher
-    // still auf die erste Seite. Der Code zeigt dann auf einen Abschnitt, den
-    // es nicht (mehr) gibt, ohne dass es jemand bemerkt — deshalb auch hier
-    // die Auffangseite.
+    // still auf die erste Seite. Eine Auffangseite waere hier zu hart — das
+    // Krankheitsbild stimmt ja, nur der Abschnitt fehlt. Der Artikel oeffnet
+    // deshalb von Beginn an, und ein sichtbarer Hinweis macht den Fehlanker
+    // kenntlich, statt ihn zu verschlucken.
     const themaParam = new URLSearchParams(window.location.search).get("thema");
-    if (themaParam && !(aufklObj.slides || []).some(function(s){ return s && s.key === themaParam; })) {
-      return (
-        <div className="app">
-          <Header showSwitcher={false} hideSubtitle={true} />
-          <AuffangSeite text={"Der Link oder QR-Code, über den Sie hierher gekommen sind, verweist auf einen Abschnitt, den es in dieser Information nicht (mehr) gibt. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an."} />
-          <FooterLinks />
-          {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
-        </div>
-      );
-    }
+    const themaFehlt = !!(themaParam
+      && !(aufklObj.slides || []).some(function(s){ return s && s.key === themaParam; }));
     // ?kbinfo=<artikel>: Rueckweg zum Krankheitsbild-Artikel, den ein QR-Ziel
     // mitfuehrt. Gueltig nur, wenn der Schluessel einen Artikel der Kategorie
     // "krankheitsbild" trifft; sonst wird er stumm verworfen — kbinfo ist
@@ -1008,7 +1001,7 @@ function App() {
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         <FokusKopf opKontext={opKontext} />
-        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} />
+        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} themaFehlt={themaFehlt} />
         <FokusFuss opKontext={opKontext} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -2665,7 +2658,7 @@ function FokusFuss({ opKontext }) {
   );
 }
 
-function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl }) {
+function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl, themaFehlt }) {
   const aufkl = getAufklaerungFor(opKey);
   if (!aufkl) return <ErrorPage />;
   const slides = aufkl.slides || [];
@@ -2801,6 +2794,15 @@ function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl }) {
   return (
     <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px", minWidth: 0 }}>
       <ZurueckLink />
+      {/* Fehlanker aus ?thema=: Der Artikel stimmt, nur der Abschnitt fehlt.
+          Der Hinweis macht das sichtbar, statt still auf Seite 1 zu springen. */}
+      {themaFehlt && (
+        <div style={{ marginBottom: 8, padding: "12px 14px", borderRadius: 10,
+                      background: "rgba(224,168,46,.12)", border: "1px solid rgba(138,90,0,.25)",
+                      fontSize: 13, color: "var(--c-text)", lineHeight: 1.55 }}>
+          Der gewünschte Abschnitt wurde nicht gefunden. Sie sehen die Information von Beginn an.
+        </div>
+      )}
       {/* Persistenter Kopf der Informationsseite — zeigt immer, welches Thema läuft */}
       <div style={{
         background: "var(--c-card)",
