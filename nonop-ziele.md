@@ -22,6 +22,16 @@ Der `thema`-Teil ist optional; ohne ihn öffnet der Artikel auf dem Überblick.
 Ein unbekannter Anker öffnet den Artikel von Beginn an und zeigt einen
 sichtbaren Hinweis — der Artikel geht nicht verloren.
 
+43 der 47 Artikel haben einen eigenständigen konservativen Abschnitt. Bei vier
+Artikeln zeigt der Anker auf einen **gemeinsamen Behandlungsabschnitt**, der
+konservatives und operatives Vorgehen zusammenfasst — dort landet der Patient
+nicht ausschließlich beim nicht-operativen Teil:
+
+- `achilles_riss_kb` → `kb_asr_behandlung` („Behandlung")
+- `osteoporose_kb` → `kb_ost_behandlung` („Behandlung")
+- `plantarer_fersenschmerz_kb` → `kb_pfs_behandlung` („Diagnostik & Behandlung")
+- `usg_arthrose` → `usg_umschalter` („Behandlung nach betroffenem Gelenk")
+
 | Krankheitsbild | Artikel-Key | Konservativ-Anker |
 |---|---|---|
 | Achillessehne — Mid-Portion-Tendinopathie | `achilles_midportion_kb` | `kb_amid_konservativ` |
@@ -97,13 +107,13 @@ Der Begleiter-Schalter erscheint dort nicht (geprüft).
 
     ?massnahme=<key>
 
-| Maßnahme | Key | zieht Übungen aus |
+| Maßnahme | Key | verweist auf Programm |
 |---|---|---|
 | Allgemeine Maßnahmen bei Verschleiß (Arthrose) | `allg_verschleiss` | — |
 | Botulinumtoxin (Botox) bei Plantarfasziitis | `botox_plantar` | — |
-| Eigenübungen bei Plantarfasziitis / Fersensporn | `uebungen_plantarfasziitis` | — |
-| Eigenübungen beim Hallux valgus | `uebungen_hallux_valgus` | — |
-| Eigenübungen beim Knick-Senk-Fuß | `uebungen_knicksenkfuss` | — |
+| Eigenübungen bei Plantarfasziitis / Fersensporn | `uebungen_plantarfasziitis` | `plantarfasziitis` |
+| Eigenübungen beim Hallux valgus | `uebungen_hallux_valgus` | `hallux_valgus` |
+| Eigenübungen beim Knick-Senk-Fuß | `uebungen_knicksenkfuss` | `knicksenkfuss` |
 | Einlagen | `einlagen` | — |
 | Entspannungstechniken | `entspannung` | — |
 | Ernährung bei Erkrankungen des Bewegungsapparates | `ernaehrung_bewegung` | — |
@@ -117,28 +127,28 @@ Der Begleiter-Schalter erscheint dort nicht (geprüft).
 | Nachtschiene | `nachtschiene` | — |
 | Nahrungsergänzungsmittel | `nahrungsergaenzung` | — |
 | Naturheilkundliche Schmerztherapie (Phytoanalgesie) | `phytoanalgesie` | — |
-| Neuromuskuläres Training | `neuromuskulaer_aussenband` | — |
+| Neuromuskuläres Training | `neuromuskulaer_aussenband` | `aussenband_konservativ` |
 | PRP/ACP (plättchenreiches Plasma / autologes konditioniertes Plasma) | `prp_acp` | — |
 | Radiosynoviorthese (RSO) | `rso` | — |
 | Schmerztherapie bei und nach einer Operation | `schmerztherapie_op` | — |
 | Short-Foot-Übungen | `short_foot` | — |
 | Stoßwellentherapie (extrakorporale Stoßwelle, ESWT) | `stosswelle` | — |
 | Vitamin-D3-Therapie | `vitamin_d3` | — |
-| Wadenmuskeldehnung | `waden_dehnung` | — |
+| Wadenmuskeldehnung | `waden_dehnung` | `wadenmuskeldehnung` |
 
 ## Übungsprogramme (Non-OP-Begleiter)
 
     ?nonop=<key>
 
-| Programm | Key | verlinkt aus |
+| Programm | Key | erreichbar aus |
 |---|---|---|
 | Frische Außenbandverletzung OSG | `aussenband_konservativ` | `aussenbandruptur_kb` |
 | Achillodynie nicht-insertional | `achillodynie_midportion` | `achilles_midportion_kb` |
 | Achillodynie insertional | `achillodynie_insertion` | `achilles_insertional_kb` |
-| Knick-Senk-Fuß | `knicksenkfuss` | über Maßnahme uebungen_knicksenkfuss |
-| Hallux valgus | `hallux_valgus` | über Maßnahme uebungen_hallux_valgus |
-| Plantarfasziitis | `plantarfasziitis` | über Maßnahme uebungen_plantarfasziitis |
-| Wadenmuskeldehnung | `wadenmuskeldehnung` | über Maßnahme waden_dehnung |
+| Knick-Senk-Fuß | `knicksenkfuss` | Maßnahme `uebungen_knicksenkfuss` |
+| Hallux valgus | `hallux_valgus` | Maßnahme `uebungen_hallux_valgus` |
+| Plantarfasziitis | `plantarfasziitis` | Maßnahme `uebungen_plantarfasziitis` |
+| Wadenmuskeldehnung | `wadenmuskeldehnung` | Maßnahme `waden_dehnung` |
 | Chronische Sprunggelenkinstabilität | `sprunggelenk_instabilitaet` | `clai_kb` |
 | Hallux rigidus (Frühstadium) | `hallux_rigidus` | `hallux_rigidus` |
 | Sprunggelenkarthrose | `sprunggelenk_arthrose` | `osg_arthrose` |
