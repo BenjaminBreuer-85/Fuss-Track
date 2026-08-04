@@ -573,7 +573,12 @@ function getUrlParams() {
     ctx: params.get("ctx"), // "begleiter" markiert Infomaterial im OP-Begleiter-Kontext (Link einblenden)
     massnahme: params.get("massnahme"), // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
     nonop: params.get("nonop"), // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
-    fokus: params.get("fokus") // Einstiegsadresse der Fokus-Ansicht (kodiert), fuer den Ruecksprung
+    fokus: params.get("fokus"), // Einstiegsadresse der Fokus-Ansicht (kodiert), fuer den Ruecksprung
+    // Krankheitsbild-ARTIKEL als Rueckweg-Kontext eines QR-Ziels (47 Keys aus
+    // INFOMATERIAL). Bewusst nicht ueber ?kb=: dort liegen die zwei
+    // Begleiter-Einstiege aus phasen.json, und die Schluessel hallux_valgus und
+    // osg_arthrose gibt es in beiden Namensraeumen.
+    kbinfo: params.get("kbinfo")
   };
 }
 
@@ -888,6 +893,22 @@ function App() {
         </div>
       );
     }
+    // ?kbinfo=<artikel>: Rueckweg zum Krankheitsbild-Artikel, den ein QR-Ziel
+    // mitfuehrt. Gueltig nur, wenn der Schluessel einen Artikel der Kategorie
+    // "krankheitsbild" trifft; sonst wird er stumm verworfen — kbinfo ist
+    // Beiwerk, nicht das Ziel des Codes.
+    const kbInfoOrigin = (urlParams.kbinfo
+                          && AUFKLAERUNG[urlParams.kbinfo]
+                          && AUFKLAERUNG[urlParams.kbinfo].infoKategorie === "krankheitsbild")
+      ? urlParams.kbinfo : null;
+    // OP-Kontext: bekannte Variante, Begleiter-Marker oder ein Artikel, der
+    // selbst eine Operation beschreibt. Fehlt alles davon, ist es ein reiner
+    // Informationseinstieg — Kopf- und Fusstext bleiben dann neutral.
+    const opKontext = !!(
+      (urlParams.var && isValidEingriffsAuswahl(urlParams.op, urlParams.var)) ||
+      urlParams.ctx === "begleiter" ||
+      (aufklObj && aufklObj.infoKategorie === "op_technik")
+    );
     // Switcher "Zum Patientenbegleiter" nur sichtbar, wenn der Begleit-Modus
     // tatsächlich verfügbar ist: ctx=begleiter-Marker (QR mit Begleiter-Kontext)
     // ODER gültige Variante im URL bekannt.
@@ -900,7 +921,10 @@ function App() {
     const switcherUrlParams = {
       op: urlParams.op,
       var: urlParams.var || null,
-      ctx: urlParams.ctx === "begleiter" ? "begleiter" : null
+      ctx: urlParams.ctx === "begleiter" ? "begleiter" : null,
+      // Reicht den Krankheitsbild-Kontext an den Begleiter weiter, damit der
+      // Weg zum Krankheitsbild auch nach dem Wechsel offen bleibt.
+      kbinfo: kbInfoOrigin
     };
     // Adresse des Nachbehandlungs-Begleiters für den sichtbaren Übergang am
     // Ende der Slides. Nutzt die mitgegebene Variante, sonst den ctx-Marker.
@@ -914,9 +938,9 @@ function App() {
         })[0] || null)
       : null;
     const begleiterUrl = begleitVerfuegbar
-      ? ((urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var })
-                        : (kbFuerOp ? buildUrl({ kb: kbFuerOp.key })
-                                    : buildUrl({ op: urlParams.op, ctx: "begleiter" })))
+      ? ((urlParams.var ? buildUrl({ op: urlParams.op, var: urlParams.var, kbinfo: kbInfoOrigin })
+                        : (kbFuerOp ? buildUrl({ kb: kbFuerOp.key, kbinfo: kbInfoOrigin })
+                                    : buildUrl({ op: urlParams.op, ctx: "begleiter", kbinfo: kbInfoOrigin })))
          + (FOKUS_ORIGIN ? "&fokus=" + encodeURIComponent(FOKUS_ORIGIN) : ""))
       : null;
     return (
@@ -926,9 +950,9 @@ function App() {
             Seitenende auf die Landingpage. */}
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
-        <FokusKopf />
-        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} begleiterUrl={begleiterUrl} />
-        <FokusFuss />
+        <FokusKopf opKontext={opKontext} />
+        <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} />
+        <FokusFuss opKontext={opKontext} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -2417,7 +2441,8 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       // Vom Begleit-Modus in den Aufklärungs-Modus wechseln.
       // ctx=begleiter markiert, dass die Aufklärung im OP-Begleiter-Kontext
       // geöffnet wird → dort erscheint der Rückweg-Link zum Begleiter.
-      window.location.href = buildUrl({ op: urlParams.op, modus: "aufklaerung", ctx: "begleiter" });
+      window.location.href = buildUrl({ op: urlParams.op, modus: "aufklaerung", ctx: "begleiter",
+                                        kbinfo: urlParams.kbinfo || null });
     } else {
       // Vom Aufklärungs-Modus zurück in den Begleit-Modus.
       // Wenn var bekannt, beibehalten. Sonst (reiner ctx=begleiter-Einstieg ohne
@@ -2428,9 +2453,13 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
                    || k.aufklaerungOp === urlParams.op;
           })[0] || null)
         : null;
+      // kbinfo wandert mit, damit der Weg zum Krankheitsbild auch im Begleiter
+      // offen bleibt.
+      var kbi = urlParams.kbinfo || null;
       var ziel = urlParams.var
-        ? buildUrl({ op: urlParams.op, var: urlParams.var })
-        : (kbZiel ? buildUrl({ kb: kbZiel.key }) : buildUrl({ op: urlParams.op, ctx: "begleiter" }));
+        ? buildUrl({ op: urlParams.op, var: urlParams.var, kbinfo: kbi })
+        : (kbZiel ? buildUrl({ kb: kbZiel.key, kbinfo: kbi })
+                  : buildUrl({ op: urlParams.op, ctx: "begleiter", kbinfo: kbi }));
       if (FOKUS_ORIGIN) ziel += "&fokus=" + encodeURIComponent(FOKUS_ORIGIN);
       window.location.href = ziel;
     }
@@ -2532,7 +2561,11 @@ function AuffangSeite({ titel, text }) {
 
 // Kopfzeile der Fokus-Ansicht: sagt, warum diese Seite gezeigt wird, und was
 // im Zweifel gilt.
-function FokusKopf() {
+// Kopfhinweis der Fokus-Ansicht. Der Verweis auf Operateurin/Operateur und den
+// Entlassbrief gilt nur, wenn tatsaechlich eine Operation im Spiel ist. Beim
+// reinen Informationseinstieg (Krankheitsbild ohne OP-Kontext) stuende dort
+// sonst ein Text, der zur Empfehlung nicht passt.
+function FokusKopf({ opKontext }) {
   return (
     <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
       <div style={{ background: "var(--c-bg)", borderRadius: 10, padding: "12px 14px" }}>
@@ -2540,9 +2573,9 @@ function FokusKopf() {
           Diese Information wurde für Sie von Ihrer Ärztin oder Ihrem Arzt ausgewählt
         </div>
         <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.6 }}>
-          Sie ergänzt das Gespräch, ersetzt es aber nicht. Maßgeblich sind die
-          persönlichen Vorgaben Ihrer Operateurin oder Ihres Operateurs und der
-          Brief, den Sie ausgehändigt bekommen haben.
+          {opKontext
+            ? "Sie ergänzt das Gespräch, ersetzt es aber nicht. Maßgeblich sind die persönlichen Vorgaben Ihrer Operateurin oder Ihres Operateurs und der Brief, den Sie ausgehändigt bekommen haben."
+            : "Sie ergänzt das Gespräch, ersetzt es aber nicht. Maßgeblich bleibt, was Ihre Ärztin oder Ihr Arzt mit Ihnen persönlich besprochen hat."}
         </div>
       </div>
     </div>
@@ -2550,15 +2583,29 @@ function FokusKopf() {
 }
 
 // Abgesetzter Hinweis am Seitenende auf die vollständige App.
-function FokusFuss() {
+// Fusshinweis der Fokus-Ansicht. Beim reinen Informationseinstieg fehlte bisher
+// jeder Weg in die App — es blieb nur der Sprung auf die Landingpage. Dort steht
+// deshalb zusaetzlich der Einstieg ins Hauptmenue (?home=1).
+function FokusFuss({ opKontext }) {
   return (
     <div style={{ maxWidth: 680, margin: "28px auto 0", padding: "0 16px" }}>
       <div style={{ borderTop: "1px solid var(--c-border, rgba(0,0,0,.1))", paddingTop: 14,
                     textAlign: "center" }}>
         <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.6, marginBottom: 8 }}>
-          Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern
-          und einen Begleiter für die Zeit nach der Operation.
+          {opKontext
+            ? "Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern und einen Begleiter für die Zeit nach der Operation."
+            : "Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern und zu nicht-operativen Behandlungen."}
         </div>
+        {!opKontext && (
+          <div style={{ marginBottom: 10 }}>
+            <a href={buildUrl({ home: "1" })}
+               style={{ display: "inline-block", padding: "8px 16px", borderRadius: 8,
+                        background: "var(--c-main)", color: "#fff", fontSize: 13,
+                        fontWeight: 700, textDecoration: "none" }}>
+              Weitere Themen in Fuss-Track ansehen
+            </a>
+          </div>
+        )}
         <a href="/"
            style={{ fontSize: 13, color: "var(--c-main)", fontWeight: 600 }}>
           Mehr über Fuss-Track
@@ -2568,7 +2615,7 @@ function FokusFuss() {
   );
 }
 
-function AufklaerungsView({ opKey, kbOrigin, begleiterUrl }) {
+function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl }) {
   const aufkl = getAufklaerungFor(opKey);
   if (!aufkl) return <ErrorPage />;
   const slides = aufkl.slides || [];
@@ -2587,9 +2634,27 @@ function AufklaerungsView({ opKey, kbOrigin, begleiterUrl }) {
   })();
   const [toggleSel, setToggleSel] = useState(0); // aktive Option eines Umschalter-Slides
 
-  // Zurück-Link: nur anzeigen, wenn der Patient aus einer KB-Auswahl kam (kb-URL-Param da)
+  // Rueckweg. Es wird immer genau einer angezeigt, in dieser Reihenfolge:
+  //   1. ?kb=      — echte In-App-Navigation aus der Begleiter-Auswahl
+  //   2. ?kbinfo=  — Krankheitsbild-Artikel, den ein QR-Ziel mitfuehrt
+  // ?kb= schlaegt ?kbinfo=, weil es den tatsaechlich gegangenen Weg abbildet.
   function ZurueckLink() {
-    if (!kbOrigin) return null;
+    if (!kbOrigin) {
+      if (!kbInfoOrigin) return null;
+      const kbTitel = (AUFKLAERUNG[kbInfoOrigin] || {}).titel || "Krankheitsbild";
+      return (
+        <div style={{ marginBottom: 8 }}>
+          <a href={buildUrl({ op: kbInfoOrigin, modus: "aufklaerung" })}
+             style={{
+               display: "inline-flex", alignItems: "center", gap: 4, padding: "6px 12px",
+               background: "var(--c-bg)", borderRadius: 4, fontSize: 12,
+               color: "var(--c-text)", fontWeight: 600, textDecoration: "none"
+             }}>
+            {"← Zum Krankheitsbild: " + kbTitel}
+          </a>
+        </div>
+      );
+    }
     return (
       <div style={{ marginBottom: 8 }}>
         <a href={buildUrl({ kb: kbOrigin })}
