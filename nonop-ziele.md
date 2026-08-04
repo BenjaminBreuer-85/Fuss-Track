@@ -206,13 +206,15 @@ Fußmuskulatur" (`scarf`, `mica`), „Eigenübungen beim Hallux valgus"
 (`juveniler_hv_kb`). Im Artikel `hallux_valgus` ist auf „Zum Übungsprogramm
 beim Hallux valgus" vereinheitlicht. Bewusst nicht angeglichen.
 
-**5. Drei tote Slide-Keys (Bestand, nicht aus dieser Arbeit).** Die folgenden
+**5. Zwei tote Slide-Keys (Bestand, nicht aus dieser Arbeit).** Die folgenden
 Slides sind in `infomaterial.json` gelistet, fehlen aber in `bausteine.json`
 und werden beim Laden still verworfen — die Seite fehlt im Artikel:
 
 - `osg_arthrose` → `osg_op_arthrodese`
 - `osg_arthrodese_op` → `osg_arthrodese_quellen`
-- `hallux_rigidus` → `hr_quellen` (Artikel zeigt 5 statt 6 Seiten)
+
+Ein dritter Fall, `hallux_rigidus` → `hr_quellen`, ist behoben: Der Baustein
+wurde angelegt, der Artikel zeigt seine 19 Quellen wieder.
 
 **6. Gleiche Schlüssel in verschiedenen Namensräumen.** Ein Schlüssel allein
 sagt nicht, worauf er zeigt — erst der Parameter entscheidet. Beim Erzeugen der
