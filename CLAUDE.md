@@ -39,7 +39,9 @@ Artikel, prominent als eigene Linkzeile.** Maßgeblich ist die erste Erwähnung
 über alle Slides hinweg, nicht die erste Detail-Liste: Nennt schon der
 Überblick die Übungen, gehört der Link dorthin. Gemeint ist die Erwähnung der
 Übungen **als Behandlung** — Training als Risikofaktor („Trainingsfehler",
-„hohes Trainingspensum") zählt nicht.
+„hohes Trainingspensum") zählt nicht. Zusätzlich steht der Verweis im
+Konservativ-Abschnitt, wenn dieser als QR-/`thema`-Einstieg dient — diese
+Doppelung ist gewollt: Wer über den Anker dort landet, sieht den Überblick nie.
 
 ## Markenrichtlinie (BRAND.md)
 
