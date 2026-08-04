@@ -8412,36 +8412,40 @@
     },
     "uebungen_knicksenkfuss": {
       "titel": "Eigenübungen beim Knick-Senk-Fuß",
-      "kurz": "Aktive Kräftigung von Fuß-, Hüft- und Gesäßmuskulatur zur Stabilisierung des Fußgewölbes — wirksamer als passive Maßnahmen allein.",
+      "kurz": "Aktive Kräftigung von Fuß-, Hüft- und Gesäßmuskulatur zur Stabilisierung des Fußgewölbes. Wirksamer als passive Maßnahmen allein, verbessert aber vor allem Funktion und Schmerz, nicht die Fehlstellung selbst. Das konkrete Übungsprogramm findet sich im Nicht-OP-Begleiter.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "Der Knick-Senk-Fuß ist eine komplexe Deformität mit Instabilität im Rückfuß, Einsacken des Gewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen. Es kommt zur Überlastung der aktiven und passiven Stabilisatoren am Rückfuß (Tibialis-posterior-Sehne, Innenband, Spring Ligament) und der Mittel-/Rückfußgelenke. Die Stabilisierung des Fußes erfolgt durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\n\n[Zum Übungsprogramm beim Knick-Senk-Fuß](?nonop=knicksenkfuss)"
+          "text": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsacken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen. Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet, etwa die hintere Schienbeinsehne (Tibialis posterior), das Innenband und das Spring-Ligament, ebenso die Mittel- und Rückfußgelenke.\n\nDie Stabilisierung des Fußes entsteht durch ein Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln. Genau hier setzen die Eigenübungen an. Dieser Artikel erläutert den Hintergrund und die allgemeinen Konzepte, das konkrete, schrittweise Übungsprogramm wird im Nicht-OP-Begleiter angeleitet.\n\n[Zum Übungsprogramm beim Knick-Senk-Fuß](?nonop=knicksenkfuss)\n\n[Mehr zum Knick-Senk-Fuß](?op=ppv_ksf&modus=aufklaerung)"
+        },
+        {
+          "titel": "Allgemeine Übungskonzepte",
+          "text": "Die Eigenübungen lassen sich in einige Grundprinzipien einordnen. Sie werden im Begleiter konkret angeleitet.\n\n**Kräftigung der einwärtsdrehenden Muskulatur:** Vor allem die hintere Schienbeinsehne wird gezielt gekräftigt, um das Längsgewölbe aktiv zu stützen.\n\n**Modellierung von Fußgewölbe und Beinachse:** Über koordinative Übungen (etwa nach dem Prinzip der Spiraldynamik) werden Gewölbe und Beinachse geschult.\n\n**Aktivierung der kleinen Fußmuskeln:** Übungen nach dem Prinzip des kurzen Fußes (Short Foot) heben das Gewölbe an, ohne dass die Zehen krallen.\n\n**Kräftigung der Hüft- und Gesäßmuskulatur:** Ein Training der Hüft-Abspreizer und -Außendreher stabilisiert die gesamte Beinachse und verbessert die Wirkung des Fußtrainings.\n\n**Dehnung der Wadenmuskulatur:** Eine verkürzte Wade kann das Längsgewölbe zusätzlich destabilisieren.\n\n**Barfußlaufen und Sensomotorik:** Barfußgehen auf natürlichem Untergrund aktiviert die Fußmuskulatur und schult die Tiefenwahrnehmung.\n\nAls allgemeine Regel gilt, dass die Übungen dauerhaft und regelmäßig erfolgen müssen, um zu wirken.\n\n[Mehr zum Training des kurzen Fußes (Short Foot)](?massnahme=short_foot)\n\n[Mehr zur Wadendehnung](?massnahme=waden_dehnung)"
         },
         {
           "titel": "Was die Studienlage zeigt",
-          "text": "Eine nicht-operative Therapie mit aktiver Komponente ist immer effektiver als passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können eine gewisse Symptombesserung bringen; Übungen zur Kräftigung und Schulung der Propriozeption (=Tiefenwahrnehmung) verbessern Funktion und verringern Beschwerden, müssen aber regelmäßig und kontinuierlich erfolgen [[uebungen_knicksenkfuss_q1]][[uebungen_knicksenkfuss_q2]]. Eine Verbesserung der tatsächlichen Fehlstellung ist beim ausgewachsenen Fuß nicht wahrscheinlich. Die Übungen sind effektiver in Kombination mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren [[uebungen_knicksenkfuss_q3]]."
+          "text": "Eine nicht-operative Therapie mit aktiver Komponente ist wirksamer als rein passive Maßnahmen. Klassisch passive Maßnahmen wie Einlagen können eine gewisse Symptombesserung bringen. Übungen zur Kräftigung und zur Schulung der Tiefenwahrnehmung (Propriozeption) verbessern Funktion und verringern Beschwerden, müssen aber regelmäßig und dauerhaft erfolgen [[uebungen_knicksenkfuss_q1]][[uebungen_knicksenkfuss_q2]]. Eine Verbesserung der eigentlichen Fehlstellung ist beim ausgewachsenen Fuß dagegen nicht zu erwarten: Weder Übungen noch Einlagen richten die Fußstellung nachweislich auf [[uebungen_knicksenkfuss_q1]]. In einer randomisierten Studie besserten Kurzfuß-Übungen zusätzlich zur Einlage Schmerz und Funktion stärker als die Einlage allein, das Absinken des Kahnbeins änderte sich aber in beiden Gruppen gleich [[uebungen_knicksenkfuss_q2]]. Am wirksamsten sind die Übungen, wenn sie mit einem Training der Hüft- und Gesäßmuskulatur kombiniert werden [[uebungen_knicksenkfuss_q3]].\n\n[Mehr zu Einlagen](?massnahme=einlagen)"
         },
         {
           "titel": "Quellen",
-          "text": "[1] Hoang NT, Chen S, Chou LW. Impact of Foot Orthoses and Exercises on Pain and Navicular Drop for Adult Flatfoot: Network Meta-Analysis. Int J Environ Res Public Health. 2021;18(15):8063.\n[2] Elsayed W, Alotaibi S, Shaheen A, et al. Combined effect of short foot exercises and orthosis in symptomatic flexible flatfoot: RCT. Eur J Phys Rehabil Med. 2023;59(3):396–405.\n[3] Jia Y, Sai X, Zhang E. Efficacy of exercise therapy in adult flexible flatfoot: network meta-analysis of RCTs. Sci Rep. 2024;14(1):21186."
+          "text": "[1] Hoang NT, Chen S, Chou LW. The impact of foot orthoses and exercises on pain and navicular drop for adult flatfoot: a network meta-analysis. Int J Environ Res Public Health. 2021;18(15):8063. doi:10.3390/ijerph18158063\n[2] Elsayed W, Alotaibi S, Shaheen A, Farouk M, Farrag A. The combined effect of short foot exercises and orthosis in symptomatic flexible flatfoot: a randomized controlled trial. Eur J Phys Rehabil Med. 2023;59(3):396-405. doi:10.23736/S1973-9087.23.07846-2\n[3] Jia Y, Sai X, Zhang E. Comparing the efficacy of exercise therapy on adult flexible flatfoot individuals through a network meta-analysis of randomized controlled trials. Sci Rep. 2024;14(1):21186. doi:10.1038/s41598-024-72149-w"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "_programm": true,
       "quellen": [
         {
           "id": "uebungen_knicksenkfuss_q1",
-          "text": "Hoang NT, Chen S, Chou LW. Impact of Foot Orthoses and Exercises on Pain and Navicular Drop for Adult Flatfoot: Network Meta-Analysis. Int J Environ Res Public Health. 2021;18(15):8063."
+          "text": "Hoang NT, Chen S, Chou LW. The impact of foot orthoses and exercises on pain and navicular drop for adult flatfoot: a network meta-analysis. Int J Environ Res Public Health. 2021;18(15):8063. doi:10.3390/ijerph18158063"
         },
         {
           "id": "uebungen_knicksenkfuss_q2",
-          "text": "Elsayed W, Alotaibi S, Shaheen A, et al. Combined effect of short foot exercises and orthosis in symptomatic flexible flatfoot: RCT. Eur J Phys Rehabil Med. 2023;59(3):396–405."
+          "text": "Elsayed W, Alotaibi S, Shaheen A, Farouk M, Farrag A. The combined effect of short foot exercises and orthosis in symptomatic flexible flatfoot: a randomized controlled trial. Eur J Phys Rehabil Med. 2023;59(3):396-405. doi:10.23736/S1973-9087.23.07846-2"
         },
         {
           "id": "uebungen_knicksenkfuss_q3",
-          "text": "Jia Y, Sai X, Zhang E. Efficacy of exercise therapy in adult flexible flatfoot: network meta-analysis of RCTs. Sci Rep. 2024;14(1):21186."
+          "text": "Jia Y, Sai X, Zhang E. Comparing the efficacy of exercise therapy on adult flexible flatfoot individuals through a network meta-analysis of randomized controlled trials. Sci Rep. 2024;14(1):21186. doi:10.1038/s41598-024-72149-w"
         }
       ]
     },
