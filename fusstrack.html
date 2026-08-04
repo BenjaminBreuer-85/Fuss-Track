@@ -836,6 +836,30 @@ function App() {
   }
 
   // === RENDER ===
+  // 0. Unbekannte Schluessel abfangen. Frueher landeten ?kb=, ?massnahme= und
+  //    ?nonop= mit falschem Wert kommentarlos im Hauptmenue — auf einer
+  //    gedruckten Karte faellt ein Tippfehler damit niemandem auf. Jetzt gilt
+  //    ueberall dasselbe Verhalten wie in der OP-Strecke: Auffangseite.
+  //    ?kb= wird nur geprueft, wenn es das Ziel ist; im Aufklaerungs-Modus ist
+  //    es blosser Rueckweg-Marker und wird dort (wie kbinfo) still verworfen.
+  const unbekannterSchluessel =
+      (urlParams.massnahme && !(typeof NONOP_MASSNAHMEN !== "undefined" && NONOP_MASSNAHMEN[urlParams.massnahme])) ? "massnahme"
+    : (urlParams.nonop && !(typeof NONOP_KB !== "undefined" && NONOP_KB[urlParams.nonop])) ? "nonop"
+    : (urlParams.modus !== "aufklaerung" && urlParams.kb
+       && !(typeof KRANKHEITSBILDER !== "undefined" && KRANKHEITSBILDER
+            && KRANKHEITSBILDER.some(function(k){ return k.key === urlParams.kb; }))) ? "kb"
+    : null;
+  if (unbekannterSchluessel) {
+    return (
+      <div className="app">
+        <Header showSwitcher={false} hideSubtitle={true} />
+        <AuffangSeite text={"Der Link oder QR-Code, über den Sie hierher gekommen sind, verweist auf ein Thema, das in Fuss-Track nicht (mehr) vorhanden ist. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an."} />
+        <FooterLinks />
+        {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+      </div>
+    );
+  }
+
   // 0. Hauptmenü erzwingen: ?home=1 (zeigt LandingView, auch wenn Session existiert)
   if (urlParams.home === "1") {
     return (
@@ -906,6 +930,21 @@ function App() {
         <div className="app">
           <Header showSwitcher={false} hideSubtitle={true} />
           <AuffangSeite />
+          <FooterLinks />
+          {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+        </div>
+      );
+    }
+    // ?thema=<slide>: Ein Anker, den es im Artikel nicht gibt, sprang bisher
+    // still auf die erste Seite. Der Code zeigt dann auf einen Abschnitt, den
+    // es nicht (mehr) gibt, ohne dass es jemand bemerkt — deshalb auch hier
+    // die Auffangseite.
+    const themaParam = new URLSearchParams(window.location.search).get("thema");
+    if (themaParam && !(aufklObj.slides || []).some(function(s){ return s && s.key === themaParam; })) {
+      return (
+        <div className="app">
+          <Header showSwitcher={false} hideSubtitle={true} />
+          <AuffangSeite text={"Der Link oder QR-Code, über den Sie hierher gekommen sind, verweist auf einen Abschnitt, den es in dieser Information nicht (mehr) gibt. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an."} />
           <FooterLinks />
           {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
         </div>
@@ -2016,12 +2055,10 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
         .concat(mAbschnitte.map(function(a, i){ return { key: "a" + i, label: String(i + 1), tab: (a.titel || ("Abschnitt " + (i + 1))) }; }))
         .concat(mUebungen.map(function(u){ return { key: "u" + u.id, label: "Ü" + u.nr, tab: ("Übung " + u.nr) }; }));
       const mZurueck = function(){
-        // Per Link geöffnet (z. B. aus einem Krankheitsbild) → über den Browser-Verlauf
-        // zurück zur Herkunftsseite. Sonst (aus der Infomaterial-Liste heraus) zurück zur Liste.
-        if (massnahmeDeepLink && typeof window !== "undefined" && window.history && window.history.length > 1) {
-          window.history.back();
-          return;
-        }
+        // Immer zurueck zur Maßnahmen-Auswahl — unabhaengig davon, welche Seite
+        // vorher offen war. Frueher lief der Deep-Link-Fall ueber
+        // window.history.back(); der Knopf hiess "Zurück zur Auswahl", landete
+        // aber auf der zuletzt besuchten Seite und beim QR-Einstieg im Nichts.
         setMassnahmeKey(null); setMassnahmeSeite(0);
       };
 
