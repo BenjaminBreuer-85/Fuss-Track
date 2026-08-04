@@ -34,6 +34,13 @@ Quellenverzeichnisse, die aus Daten erzeugten Übungsschritte und Tabellen.
 Beim Umformulieren bleibt der Inhalt identisch — es ändert sich ausschließlich
 die Form.
 
+**Verweise auf Übungsprogramme stehen bei der ersten Erwähnung der Übungen im
+Artikel, prominent als eigene Linkzeile.** Maßgeblich ist die erste Erwähnung
+über alle Slides hinweg, nicht die erste Detail-Liste: Nennt schon der
+Überblick die Übungen, gehört der Link dorthin. Gemeint ist die Erwähnung der
+Übungen **als Behandlung** — Training als Risikofaktor („Trainingsfehler",
+„hohes Trainingspensum") zählt nicht.
+
 ## Markenrichtlinie (BRAND.md)
 
 Verbindlich: Alle Änderungen an Oberfläche, Texten oder Grafiken müssen
