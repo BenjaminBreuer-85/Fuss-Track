@@ -7083,55 +7083,55 @@
     },
     "rso": {
       "titel": "Radiosynoviorthese (RSO)",
-      "kurz": "Ein ins Gelenk gespritztes Radionuklid behandelt eine entzündete Gelenkschleimhaut — v. a. bei Rheuma.",
+      "kurz": "Ein ins Gelenk gespritztes, schwach strahlendes Radionuklid behandelt eine entzündete Gelenkschleimhaut. Die Methode ist vor allem bei entzündlich-rheumatischen Erkrankungen etabliert und sicher. Bei gewöhnlichem Verschleiß (Arthrose) wird sie von den Fachgesellschaften nicht empfohlen.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "Die **Radiosynoviorthese** ist eine **nuklearmedizinische** Maßnahme: Ein ins Gelenk injiziertes **Radionuklid** wird von den Zellen der **Gelenkschleimhaut (Synovia)** aufgenommen und zerstört durch lokale Strahlung die oberflächlichen Schleimhautschichten. Die Strahlenwirkung ist auf wenige Millimeter begrenzt (geringe Auswirkung auf Knorpel/Nachbargewebe); in den Folgewochen bildet sich neue Schleimhaut. Klassische Radiopharmaka sind **Yttrium-90, Erbium-169, Rhenium-186**. Etabliert v. a. bei **entzündlichen Gelenkerkrankungen (Rheuma)**, auch bei Hämophilie oder Schleimhauttumoren (PVNS/Riesenzelltumor). Eine RSO sollte **frühestens 6 Wochen nach einer Operation** erfolgen. Eine S1-Leitlinie von 2019 ist im Oktober 2024 abgelaufen und wird überarbeitet."
+          "text": "Die Radiosynoviorthese ist eine nuklearmedizinische Behandlung. Dabei wird ein schwach strahlendes Radionuklid in ein Gelenk gespritzt, um die entzündete Gelenkschleimhaut zu behandeln. Das Präparat wird von den Schleimhautzellen aufgenommen und zerstört gezielt die oberflächlichen Schichten der Schleimhaut. Die Strahlung reicht nur wenige Millimeter weit, sodass Knorpel und angrenzendes Gewebe kaum betroffen sind. In den folgenden Wochen bildet sich die Schleimhaut neu.\n\nJe nach Gelenkgröße werden unterschiedliche Radionuklide verwendet, klassisch Yttrium-90, Erbium-169 oder Rhenium-186. Am Fuß und Sprunggelenk kommen die kleineren Nuklide zum Einsatz. Die Behandlung sollte frühestens sechs Wochen nach einer Operation erfolgen.\n\n[Mehr zu Infiltrationen und Injektionen ins Gelenk](?massnahme=infiltrationen)"
         },
         {
-          "titel": "Ergebnisse und Indikation",
-          "text": "Sinnvoll v. a. bei **starker floride Entzündung** der Schleimhaut. Bei Rheuma (rheumatoide Arthritis, seronegative Spondylarthropathie, villonoduläre Synovialitis nach OP, Hämophilie-Arthropathie) bei Versagen der Ersttherapie empfohlen, gut untersucht und **kurz-/mittelfristig wirksam und sicher** [[rso_q1]][[rso_q2]][[rso_q3]]. Eine prospektive Studie (2024) zeigte eine Funktionsbesserung bei **~75 %** nach 12 Monaten [[rso_q4]]; RSO kann eine radiologische Progression in etwa **70 %** verhindern/verzögern [[rso_q5]]. Bei reinem **Verschleiß (Arthrose)** ist der Nutzen unsicher — die **DGRh spricht sich klar gegen die Anwendung bei Arthrose aus** [[rso_q6]]."
+          "titel": "Wann sie sinnvoll ist (Indikationen)",
+          "text": "Die RSO ist vor allem dann sinnvoll, wenn eine **starke, floride Entzündung der Gelenkschleimhaut** vorliegt, die den Krankheitsprozess wesentlich mitträgt. Sie ist daher bei entzündlich-rheumatischen Erkrankungen etabliert [[rso_q4]]. Bei Rheuma wird sie empfohlen, wenn die medikamentöse Ersttherapie nicht ausreichend wirkt und eine deutliche Schleimhautentzündung besteht.\n\nGut belegte Indikationen sind die rheumatoide Arthritis, seronegative Spondyloarthropathien, Kristallarthropathien, die villonoduläre Synovialitis (etwa nach einer Operation) und die Blutergelenke bei Hämophilie [[rso_q3]]. Die Wirkung ist für den kurz- und mittelfristigen Verlauf gut untersucht und die Methode gilt als sicher: Eine große aktuelle Studie bestätigte eine über zwölf Monate anhaltende Besserung bei überwiegend leichten Nebenwirkungen [[rso_q2]]. Die Erfolgsrate ist bei rheumatoider Arthritis höher als bei Verschleiß [[rso_q1]], und der Effekt hält im Mittel etwa fünf Jahre an [[rso_q3]]."
         },
         {
-          "titel": "Wann nicht geeignet (Kontraindikationen)",
-          "text": "**Nicht** im Kindes-/Jugendalter mit nicht abgeschlossenem Knochenwachstum, in **Schwangerschaft** und **Stillzeit**, bei primären Gelenkinstabilitäten sowie – mangels Daten – bei Kinderwunsch."
+          "titel": "Bei Arthrose (nicht-rheumatischer Verschleiß)",
+          "text": "Auch beim gewöhnlichen Gelenkverschleiß ist die auskleidende Schleimhaut oft mitentzündet, diese Entzündung ist aber schwächer ausgeprägt und weniger ursächlich für den Krankheitsprozess. Ob eine RSO hier zu einer nachhaltigen Beschwerdekontrolle beiträgt, ist unsicher und nicht ausreichend belegt [[rso_q4]].\n\nDie rheumatologischen Fachgesellschaften (DGRh und EULAR) sprechen für die Anwendung bei Arthrose keine Empfehlung aus [[rso_q3]][[rso_q6]]. Für einen reinen Verschleiß ohne ausgeprägte entzündliche Komponente ist die RSO daher kein empfohlenes Verfahren. [Mehr zu allgemeinen Maßnahmen bei Arthrose](?massnahme=allg_verschleiss)"
+        },
+        {
+          "titel": "Wann sie nicht angewendet werden darf",
+          "text": "Nicht angewendet werden darf die RSO im Kindes- und Jugendalter bei noch nicht abgeschlossenem Knochenwachstum, in der Schwangerschaft und Stillzeit, bei einer bestehenden Gelenkinstabilität sowie, wegen fehlender Daten, bei Kinderwunsch. Für den Strahlenschutz gelten besondere Vorgaben [[rso_q5]]. Eine deutsche Leitlinie zur RSO aus dem Jahr 2019 ist inzwischen ausgelaufen und wird derzeit überarbeitet."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Zuderman L, et al. Radiosynoviorthesis (RSO): influencing factors and therapy monitoring. Ann Nucl Med. 2008;22(9):735–741.\n[2] Beil FT, Rüther W. Indikationen und Kontraindikationen zur Radiosynoviorthese. Z Rheumatol. 2015;74(9):780–785.\n[3] Seidel W; Kommission Pharmakotherapie der DGRh. Radiosynoviorthese. Z Rheumatol. 2006;65(3):239–244.\n[4] Desaulniers M, et al. Safety and efficacy of radiosynoviorthesis: a prospective Canadian multicenter study. J Nucl Med. 2024;65(7):1095–1100.\n[5] Efficacy of radiosynoviorthesis on radiological OA features of hip/ankle in OA and RA. 2020 (ergänzt).\n[6] DGRh — Empfehlung zur Radiosynoviorthese: https://dgrh.de/Start/Publikationen/Empfehlungen/Lokaltherapie/Radiosynoviorthese.html\n[7] Bundesamt für Strahlenschutz. Merkblatt — Empfehlungen zum Strahlenschutz bei der RSO; Mai 2013."
+          "text": "[1] Zuderman L, Liepe K, Zöphel K, Andreeff M, Kotzerke J, Luboldt W. Radiosynoviorthesis (RSO): influencing factors and therapy monitoring. Ann Nucl Med. 2008;22(9):735-741. doi:10.1007/s12149-008-0167-7\n[2] Desaulniers M, Paquette M, Dubreuil S, Senta H, Lavallée É, Thorne JC, Turcotte É. Safety and efficacy of radiosynoviorthesis: a prospective Canadian multicenter study. J Nucl Med. 2024;65(7):1095-1100. doi:10.2967/jnumed.123.267297\n[3] Beil FT, Rüther W. Indikationen und Kontraindikationen zur Radiosynoviorthese. Z Rheumatol. 2015;74(9):780-785. doi:10.1007/s00393-015-1627-9\n[4] Seidel W; Kommission Pharmakotherapie der DGRh. Radiosynoviorthese. Z Rheumatol. 2006;65(3):239-244. doi:10.1007/s00393-005-0011-6\n[5] Bundesamt für Strahlenschutz. Merkblatt: Empfehlungen zum Strahlenschutz bei der Radiosynoviorthese (RSO). Mai 2013.\n[6] Deutsche Gesellschaft für Rheumatologie e. V. (DGRh). Empfehlungen zur Lokaltherapie: Radiosynoviorthese. www.dgrh.de."
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "quellen": [
         {
           "id": "rso_q1",
-          "text": "Zuderman L, et al. Radiosynoviorthesis (RSO): influencing factors and therapy monitoring. Ann Nucl Med. 2008;22(9):735–741."
+          "text": "Zuderman L, Liepe K, Zöphel K, Andreeff M, Kotzerke J, Luboldt W. Radiosynoviorthesis (RSO): influencing factors and therapy monitoring. Ann Nucl Med. 2008;22(9):735-741. doi:10.1007/s12149-008-0167-7"
         },
         {
           "id": "rso_q2",
-          "text": "Beil FT, Rüther W. Indikationen und Kontraindikationen zur Radiosynoviorthese. Z Rheumatol. 2015;74(9):780–785."
+          "text": "Desaulniers M, Paquette M, Dubreuil S, Senta H, Lavallée É, Thorne JC, Turcotte É. Safety and efficacy of radiosynoviorthesis: a prospective Canadian multicenter study. J Nucl Med. 2024;65(7):1095-1100. doi:10.2967/jnumed.123.267297"
         },
         {
           "id": "rso_q3",
-          "text": "Seidel W; Kommission Pharmakotherapie der DGRh. Radiosynoviorthese. Z Rheumatol. 2006;65(3):239–244."
+          "text": "Beil FT, Rüther W. Indikationen und Kontraindikationen zur Radiosynoviorthese. Z Rheumatol. 2015;74(9):780-785. doi:10.1007/s00393-015-1627-9"
         },
         {
           "id": "rso_q4",
-          "text": "Desaulniers M, et al. Safety and efficacy of radiosynoviorthesis: a prospective Canadian multicenter study. J Nucl Med. 2024;65(7):1095–1100."
+          "text": "Seidel W; Kommission Pharmakotherapie der DGRh. Radiosynoviorthese. Z Rheumatol. 2006;65(3):239-244. doi:10.1007/s00393-005-0011-6"
         },
         {
           "id": "rso_q5",
-          "text": "Efficacy of radiosynoviorthesis on radiological OA features of hip/ankle in OA and RA. 2020 (ergänzt)."
+          "text": "Bundesamt für Strahlenschutz. Merkblatt: Empfehlungen zum Strahlenschutz bei der Radiosynoviorthese (RSO). Mai 2013."
         },
         {
           "id": "rso_q6",
-          "text": "DGRh — Empfehlung zur Radiosynoviorthese: https://dgrh.de/Start/Publikationen/Empfehlungen/Lokaltherapie/Radiosynoviorthese.html"
-        },
-        {
-          "id": "rso_q7",
-          "text": "Bundesamt für Strahlenschutz. Merkblatt — Empfehlungen zum Strahlenschutz bei der RSO; Mai 2013."
+          "text": "Deutsche Gesellschaft für Rheumatologie e. V. (DGRh). Empfehlungen zur Lokaltherapie: Radiosynoviorthese. www.dgrh.de."
         }
       ]
     },
