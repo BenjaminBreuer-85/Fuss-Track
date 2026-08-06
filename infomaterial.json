@@ -6883,123 +6883,139 @@
     },
     "prp_acp": {
       "titel": "PRP/ACP (plättchenreiches Plasma / autologes konditioniertes Plasma)",
-      "kurz": "Aus dem eigenen Blut gewonnene Wachstumsfaktoren werden gezielt an die erkrankte Stelle gespritzt.",
+      "kurz": "Aus dem eigenen Blut werden Wachstumsfaktoren gewonnen und gezielt an die erkrankte Stelle gespritzt, um die Heilung anzuregen. Am Fuß und Sprunggelenk ist die Evidenz bei der Plantarfasziitis am besten, bei der Achillessehne eher ernüchternd. Es ist eine Selbstzahlerleistung.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "**PRP (=Platelet Rich Plasma)** wird aus dem eigenen Blut gewonnen: Eine Blutprobe wird **zentrifugiert** und der konzentrierte Überstand mit **Wachstumsfaktoren** (PDGF, TGF, VEGF u. a.) über eine Doppelkammerspritze abgetrennt und zurückinjiziert. Diese Faktoren fördern die Heilung von Wunden, Sehnen und Knochen [[prp_acp_q1]][[prp_acp_q2]]; man geht davon aus, dass die gezielte Injektion den Heilungsprozess (wieder) aktiviert [[prp_acp_q3]]. PRP kann **leukozytenreich** oder **leukozytenarm** aufbereitet werden — tendenziell ist leukozytenreiches PRP eher bei Sehnenerkrankungen, leukozytenarmes eher bei Arthrose günstig [[prp_acp_q4]]."
+          "text": "PRP (plättchenreiches Plasma) wird aus dem eigenen Blut gewonnen. Dazu wird eine Blutprobe abgenommen und in einer Zentrifuge aufgetrennt. Über eine Doppelkammerspritze wird der plättchenreiche Überstand abgetrennt und zurückgespritzt. In diesem Plasma sind Blutplättchen mit ihren **Wachstumsfaktoren** angereichert, etwa PDGF, TGF und VEGF, die die Heilung von Wunden, Sehnen und Knochen fördern [[prp_acp_q1]][[prp_acp_q2]]. ACP (autologes konditioniertes Plasma) ist eine gängige, plättchenreiche Variante dieses Prinzips.\n\nDie Überlegung ist, dass die gezielte Injektion dieser Faktoren an eine erkrankte oder verletzte Stelle den Heilungsprozess dort wieder anstößt oder beschleunigt. Speziell für Fuß und Sprunggelenk wurden die Anwendungen in Übersichtsarbeiten zusammengestellt [[prp_acp_q3]].\n\nPRP kann **leukozytenreich** oder **leukozytenarm** aufbereitet werden. Der Vergleich ist schwierig, weil viele Studien die Art des PRP nicht angeben. Man geht tendenziell davon aus, dass leukozytenreiches PRP bei Sehnenerkrankungen und leukozytenarmes PRP bei Arthrose günstiger ist [[prp_acp_q4]]. Eine Erklärung ist, dass die weißen Blutkörperchen in den frühen Phasen der Sehnenheilung eine Rolle spielen, eine Entzündungsreaktion im verschlissenen Gelenk aber eher ungünstig ist [[prp_acp_q5]]."
         },
         {
           "titel": "Kosten",
-          "text": "PRP wird von den gesetzlichen Kassen **nicht** bezahlt (private nicht immer). Eine Injektion kostet meist ca. **150 €** (hohe Anschaffungskosten für Zentrifuge/Doppelkammerspritze); in der Regel sind **4–6 Behandlungen** nötig."
+          "text": "Eine PRP-Behandlung ist in der Regel teuer und wird von den gesetzlichen Kassen nicht bezahlt, auch private Kassen übernehmen die Kosten nicht immer. Eine einzelne Injektion kostet meist etwa 150 Euro, unter anderem wegen der hohen Anschaffungskosten für Zentrifuge und Doppelkammerspritze. Bei gegebener Indikation sind in der Regel etwa vier bis sechs Behandlungen nötig."
         },
         {
           "titel": "Ergebnisse — Sehnenerkrankungen",
-          "text": "Bei der **Achillessehnenentzündung** ist die Datenlage eher ernüchternd — einzelne positive Arbeiten, aber in Review-Arbeiten kein klarer Effekt [[prp_acp_q5]][[prp_acp_q6]]; hier ist weitere Forschung nötig. Bei anderen Sehnen (Patellarsehne, Tennisellenbogen) wurden gute Effekte auf Schmerz und Funktion gezeigt [[prp_acp_q7]][[prp_acp_q8]]. Im Zellversuch erhöht PRP Wachstum, Vitalität, Gefäß- und Kollagenbildung von Sehnenzellen [[prp_acp_q9]]."
+          "text": "PRP wird im orthopädischen Alltag häufig bei Sehnenerkrankungen eingesetzt. Für die **Achillessehne** ist die Datenlage allerdings ernüchternd: Weder für den akuten Sehnenriss [[prp_acp_q6]] noch für die chronische Reizung im mittleren Sehnenabschnitt (Mid-Portion-Tendinopathie) ließ sich in Übersichtsarbeiten ein klarer Nutzen sichern [[prp_acp_q7]]. Da die Achillessehne unterschiedliche Erkrankungen aufweist, muss hier noch weiter erforscht werden, in welcher Situation PRP hilft. [Mehr zur Mid-Portion-Tendinopathie der Achillessehne](?op=achilles_midportion_kb&modus=aufklaerung)\n\nBei anderen Sehnenerkrankungen fällt das Bild günstiger aus. Für die Patellarsehne [[prp_acp_q9]] und den Tennisellenbogen [[prp_acp_q8]] wurden Verbesserungen von Schmerz und Funktion gezeigt, und ultraschallgezielte Injektionen bei Sehnenerkrankungen schnitten in einer Meta-Analyse positiv ab [[prp_acp_q24]]. Im Laborversuch steigert PRP Wachstum, Gefäß- und Kollagenbildung von Band- und Sehnenzellen [[prp_acp_q10]]."
         },
         {
           "titel": "Ergebnisse — Plantarfasziitis",
-          "text": "Verhältnismäßig **gute Studienlage**: Mehrere Reviews attestieren PRP positive Effekte mit signifikanter Verbesserung von Schmerz und Funktion [[prp_acp_q10]]. Ob PRP effektiver als Cortison ist, ist uneinheitlich (Ling: besser; Yu: kein Unterschied) [[prp_acp_q11]][[prp_acp_q12]]. Die Wirkung setzt später ein als bei Cortison (positiver Effekt ab ca. 2 Monaten), hat aber **keine relevanten spezifischen Nebenwirkungen** und mittel- bis langfristige Wirkung. Cortison wird an Sehnen wegen kurzer Wirkung und Rissgefahr generell nicht mehr empfohlen."
+          "text": "Bei der **Plantarfasziitis** ist die Studienlage vergleichsweise gut. Mehrere Übersichtsarbeiten kommen zwar zu teils unterschiedlichen Ergebnissen, attestieren der PRP-Behandlung aber überwiegend eine deutliche Verbesserung von Schmerz und Funktion [[prp_acp_q11]][[prp_acp_q12]][[prp_acp_q13]]. Ob PRP wirksamer ist als eine Kortisonspritze, ist nicht eindeutig geklärt, hier kommen die Arbeiten zu unterschiedlichen Ergebnissen [[prp_acp_q14]].\n\nDie Wirkung setzt bei PRP später ein als nach einer Kortisoninjektion, etwa ab zwei Monaten, scheint dafür aber ohne spezifische Nebenwirkungen zu sein und mittel- bis langfristig anzuhalten. Kortison ist zwar ein etabliertes Medikament, wird zur Injektion an Sehnen aber generell nicht mehr empfohlen, da es nur kurz wirkt und bei wiederholter Anwendung das Risiko eines Sehnenrisses erhöht. [Mehr zur Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung)"
         },
         {
-          "titel": "Ergebnisse — Arthrose / Knorpelschäden",
-          "text": "Viele Studien zeigen gute Effekte bei Arthrose/Knorpelschäden (meist am Knie untersucht) [[prp_acp_q13]]; am Knie ist PRP effektiver als Hyaluronsäure, v. a. bei geringem Verschleiß [[prp_acp_q14]]. Für **Fuß/Sprunggelenk** sind die Daten seltener, spätere Arbeiten belegen den positiven Effekt (konservativ und nach Knorpelchirurgie) [[prp_acp_q15]][[prp_acp_q16]]; nach 4 Injektionen konnte ein Aufschieben von Operationen bei OSG-Arthrose gezeigt werden [[prp_acp_q17]]."
+          "titel": "Ergebnisse — Arthrose und Knorpelschäden",
+          "text": "Für Arthrose und Knorpelschäden liegen viele Studien mit günstigen Ergebnissen vor [[prp_acp_q15]], die meisten davon zum **Kniegelenk**. Dort war PRP wirksamer als Hyaluronsäure und besonders bei noch geringem Verschleiß wirksam [[prp_acp_q16]].\n\nFür **Fuß und Sprunggelenk** sind die Daten seltener, sollten aber grundsätzlich übertragbar sein. Während frühe Arbeiten noch keinen Vorteil gegenüber einem Scheinmedikament fanden, zeigten spätere Untersuchungen wiederholt einen positiven Effekt, sowohl bei der konservativen Behandlung der Sprunggelenkarthrose [[prp_acp_q17]] als auch nach Knorpelchirurgie am Sprungbein [[prp_acp_q18]]. Nach mehreren Injektionen ließ sich eine Operation wegen Sprunggelenkverschleiß hinauszögern [[prp_acp_q19]]. [Mehr zur OSG-Arthrose](?op=osg_arthrose&modus=aufklaerung) [Mehr zur osteochondralen Läsion des Talus](?op=olt_kb&modus=aufklaerung)\n\n[Mehr zur Hyaluronsäure-Injektion](?massnahme=hyaluronsaeure)"
         },
         {
-          "titel": "Ergebnisse — Muskel / Knochenheilung / Sesamoiditis",
-          "text": "**Muskelverletzungen:** in der Sportmedizin schnellere Return-to-Sport-Zeit, aber kein Unterschied bei Schmerz/Funktion/Kraft — Zielgruppe v. a. ambitionierte Sportler [[prp_acp_q18]]. **Verzögerte Knochenheilung/Pseudarthrose:** höhere Heilungsraten nach PRP-Gabe (kleine, inhomogene Studien) [[prp_acp_q19]]. **Sesamoiditis MTP I:** kaum Evidenz, eine Arbeit beschrieb zügigere Sportrückkehr [[prp_acp_q20]]."
+          "titel": "Ergebnisse — Muskel, Knochenheilung und Sesamoiditis",
+          "text": "Bei **Muskelverletzungen** ist PRP vor allem in der Sportmedizin beliebt. Belegt ist eine schnellere Rückkehr zum Sport, während sich Schmerz, Funktion, Heilungszeit, Kraft und Beweglichkeit nicht von einer Behandlung ohne PRP unterscheiden [[prp_acp_q20]]. Die Zielgruppe sind daher vor allem ambitionierte Sportler, die möglichst rasch zurückwollen.\n\nBei **verzögerter Knochenheilung oder Pseudarthrose** kann PRP ergänzend eingesetzt werden. Eine Übersicht über 18 kleine Arbeiten beschrieb höhere Heilungsraten [[prp_acp_q21]], und eine Studie an 78 Patienten fand nach einer Pseudarthrosen-Operation eine deutlich höhere Heilungsrate, wies aber auf eine möglicherweise erhöhte Infektgefahr hin [[prp_acp_q22]]. [Mehr zur Ultraschalltherapie bei gestörter Knochenheilung](?massnahme=lipus)\n\nZur **Sesamoiditis am Großzehengrundgelenk** gibt es kaum Daten. Eine Fallserie beschrieb nach einer einzelnen PRP-Injektion eine zügigere Rückkehr zum Sport [[prp_acp_q23]]."
         },
         {
           "titel": "Mögliche Nebenwirkungen",
-          "text": "Reizreaktion mit zeitlich begrenzter Schwellung, Einblutung oder Schmerz. Das Infektionsrisiko ist wie bei sterilen Injektionen ca. **1:10.000** — wichtig: eine Gelenkinfektion ist schwerwiegender als eine im Weichteil."
+          "text": "Nach der Injektion kann es zu einer Reizreaktion mit vorübergehender Schwellung, Einblutung oder Schmerz kommen. Das Infektionsrisiko entspricht dem anderer steriler Injektionen und liegt bei etwa 1 zu 10.000. Wichtig ist, dass ein Infekt in einem Gelenk schwerwiegender und schwerer zu behandeln ist als in Weichteilen oder Muskel."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Bennett NT, Schultz GS. Growth factors and wound healing. Am J Surg. 1993;165(6):728–737.\n[2] Foster TE, et al. Platelet-rich plasma: from basic science to clinical applications. Am J Sports Med. 2009;37(11):2259–2272.\n[3] Vannini F, et al. Platelet-rich plasma for foot and ankle pathologies: a systematic review. Foot Ankle Surg. 2014.\n[4] Collins T, Alexander D, Barkatali B. Platelet-rich plasma: a narrative review. EFORT Open Rev. 2021;6(4):225–235.\n[5] Wang C, et al. Effectiveness of PRP for acute Achilles tendon rupture: systematic review and meta-analysis. Medicine. 2021;100(41):e27526.\n[6] Nauwelaers AK, et al. Evidence for the use of PRP in chronic midsubstance Achilles tendinopathy: a systematic review with meta-analysis. Foot Ankle Surg. 2021;27(5):486–495.\n[7] Barman A, et al. PRP injection in patellar tendinopathy: systematic review and meta-analysis. Knee Surg Relat Res. 2022;34(1):22.\n[8] Ben-Nafa W, Munro W. Corticosteroid vs PRP for lateral epicondylitis: a systematic review. SICOT J. 2018;4:11.\n[9] Chalidis B, et al. Molecular and biologic effects of PRP in ligament and tendon healing: a systematic review. Int J Mol Sci. 2023;24(3):2744.\n[10] Rhim HC, et al. A systematic review of systematic reviews on plantar fasciitis. Life (Basel). 2021;11(12):1287.\n[11] Ling Y, Wang S. PRP in the treatment of plantar fasciitis: a meta-analysis of RCTs. Medicine. 2018;97(37).\n[12] Yu T, et al. Outcomes of PRP for plantar fasciopathy: a best-evidence synthesis. J Orthop Surg Res. 2020.\n[13] Laver L, et al. PRP for degenerative cartilage disease: a systematic review. Cartilage. 2017;8:341–364.\n[14] Chang KV, et al. Comparative effectiveness of PRP for knee cartilage degeneration: systematic review and meta-analysis. Arch Phys Med Rehabil. 2014;95:562–575.\n[15] Angthong C, et al. Outcomes and quality of life after PRP in recalcitrant hindfoot and ankle diseases. J Foot Ankle Surg. 2013.\n[16] Yausep OE, et al. PRP for osteochondral lesions of the talus: a systematic review. J Orthop. 2020;18:218–225.\n[17] Repetto I, et al. Conservative treatment of ankle osteoarthritis: can PRP postpone surgery? J Foot Ankle Surg. 2017;56(2):362–365.\n[18] Grassi A, et al. Is PRP effective in acute muscle injuries? Systematic review and meta-analysis. Sports Med. 2018;48:971–989.\n[19] Andersen C, et al. The use of PRP for the management of non-union fractures. Curr Osteoporos Rep. 2021;19:1–14.\n[20] Le HM, et al. PRP for hallux sesamoid injuries: a case series. Phys Sportsmed. 2021;50(2):181–184."
+          "text": "[1] Bennett NT, Schultz GS. Growth factors and wound healing: biochemical properties of growth factors and their receptors. Am J Surg. 1993;165(6):728-737. doi:10.1016/s0002-9610(05)80797-4\n[2] Foster TE, Puskas BL, Mandelbaum BR, Gerhardt MB, Rodeo SA. Platelet-rich plasma: from basic science to clinical applications. Am J Sports Med. 2009;37(11):2259-2272. doi:10.1177/0363546509349921\n[3] Vannini F, Di Matteo B, Filardo G, Kon E, Marcacci M, Giannini S. Platelet-rich plasma for foot and ankle pathologies: a systematic review. Foot Ankle Surg. 2014;20(1):2-9. doi:10.1016/j.fas.2013.08.001\n[4] Collins T, Alexander D, Barkatali B. Platelet-rich plasma: a narrative review. EFORT Open Rev. 2021;6(4):225-235. doi:10.1302/2058-5241.6.200017\n[5] Mishra A, Woodall J Jr, Vieira A. Treatment of tendon and muscle using platelet-rich plasma. Clin Sports Med. 2009;28(1):113-125. doi:10.1016/j.csm.2008.08.007\n[6] Wang C, Fan H, Li Y, Yun Z, Zhang Z, Zhu Q. Effectiveness of platelet-rich plasma injections for the treatment of acute Achilles tendon rupture: a systematic review and meta-analysis. Medicine (Baltimore). 2021;100(41):e27526. doi:10.1097/MD.0000000000027526\n[7] Nauwelaers AK, Van Oost L, Peers K. Evidence for the use of PRP in chronic midsubstance Achilles tendinopathy: a systematic review with meta-analysis. Foot Ankle Surg. 2021;27(5):486-495. doi:10.1016/j.fas.2020.07.009\n[8] Ben-Nafa W, Munro W. The effect of corticosteroid versus platelet-rich plasma injection therapies for the management of lateral epicondylitis: a systematic review. SICOT J. 2018;4:11. doi:10.1051/sicotj/2017062\n[9] Barman A, Sinha MK, Sahoo J, et al. Platelet-rich plasma injection in the treatment of patellar tendinopathy: a systematic review and meta-analysis. Knee Surg Relat Res. 2022;34(1):22. doi:10.1186/s43019-022-00151-5\n[10] Chalidis B, Givissis P, Papadopoulos P, Pitsilos C. Molecular and biologic effects of platelet-rich plasma (PRP) in ligament and tendon healing and regeneration: a systematic review. Int J Mol Sci. 2023;24(3):2744. doi:10.3390/ijms24032744\n[11] Rhim HC, Kwon J, Park J, Borg-Stein J, Tenforde AS. A systematic review of systematic reviews on the epidemiology, evaluation, and treatment of plantar fasciitis. Life (Basel). 2021;11(12):1287. doi:10.3390/life11121287\n[12] Ling Y, Wang S. Effects of platelet-rich plasma in the treatment of plantar fasciitis: a meta-analysis of randomized controlled trials. Medicine (Baltimore). 2018;97(37):e12110. doi:10.1097/MD.0000000000012110\n[13] Yu T, Xia J, Li B, Zhou H, Yang Y, Yu G. Outcomes of platelet-rich plasma for plantar fasciopathy: a best-evidence synthesis. J Orthop Surg Res. 2020;15(1):432. doi:10.1186/s13018-020-01783-7\n[14] Alkhatib N, Salameh M, Ahmed AF, et al. Platelet-rich plasma versus corticosteroids in the treatment of chronic plantar fasciitis: a systematic review and meta-analysis of prospective comparative studies. J Foot Ankle Surg. 2020;59(3):546-552. doi:10.1053/j.jfas.2019.10.003\n[15] Laver L, Marom N, Dnyanesh L, Mei-Dan O, Espregueira-Mendes J, Gobbi A. PRP for degenerative cartilage disease: a systematic review of clinical studies. Cartilage. 2017;8(4):341-364. doi:10.1177/1947603516670709\n[16] Chang KV, Hung CY, Aliwarga F, Wang TG, Han DS, Chen WS. Comparative effectiveness of platelet-rich plasma injections for treating knee joint cartilage degenerative pathology: a systematic review and meta-analysis. Arch Phys Med Rehabil. 2014;95(3):562-575. doi:10.1016/j.apmr.2013.11.006\n[17] Angthong C, Khadsongkram A, Angthong W. Outcomes and quality of life after platelet-rich plasma therapy in patients with recalcitrant hindfoot and ankle diseases: a preliminary report of 12 patients. J Foot Ankle Surg. 2013;52(4):475-480. doi:10.1053/j.jfas.2013.04.005\n[18] Yausep OE, Madhi I, Trigkilidas D. Platelet rich plasma for treatment of osteochondral lesions of the talus: a systematic review of clinical trials. J Orthop. 2020;18:218-225. doi:10.1016/j.jor.2020.01.046\n[19] Repetto I, Biti B, Cerruti P, Trentini R, Felli L. Conservative treatment of ankle osteoarthritis: can platelet-rich plasma effectively postpone surgery? J Foot Ankle Surg. 2017;56(2):362-365. doi:10.1053/j.jfas.2016.11.015\n[20] Grassi A, Napoli F, Romandini I, et al. Is platelet-rich plasma (PRP) effective in the treatment of acute muscle injuries? A systematic review and meta-analysis. Sports Med. 2018;48(4):971-989. doi:10.1007/s40279-018-0860-1\n[21] Andersen C, Wragg NM, Shariatzadeh M, et al. The use of platelet-rich plasma (PRP) for the management of non-union fractures: a systematic review. Curr Osteoporos Rep. 2021;19(1):1-14. doi:10.1007/s11914-020-00643-x\n[22] Ghaffarpasand F, Shahrezaei M, Dehghankhalili M. Effects of platelet-rich plasma on healing rate of long bone non-union fractures: a randomized double-blind placebo controlled clinical trial. Bull Emerg Trauma. 2016;4(3):134-140. PMID:27540547\n[23] Le HM, Stracciolini A, Stein CJ, Quinn BJ, Jackson SS. Platelet rich plasma for hallux sesamoid injuries: a case series. Phys Sportsmed. 2022;50(2):181-184. doi:10.1080/00913847.2021.1964006\n[24] Masiello F, Pati I, Veropalumbo E, Pupella S, Cruciani M, De Angelis V. Ultrasound-guided injection of platelet-rich plasma for tendinopathies: a systematic review and meta-analysis. Blood Transfus. 2023;21(2):119-136. doi:10.2450/2022.0087-22"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
-      "_review": true,
+      "stand": "Juli 2026",
+      "_review": false,
       "quellen": [
         {
           "id": "prp_acp_q1",
-          "text": "Bennett NT, Schultz GS. Growth factors and wound healing. Am J Surg. 1993;165(6):728–737."
+          "text": "Bennett NT, Schultz GS. Growth factors and wound healing: biochemical properties of growth factors and their receptors. Am J Surg. 1993;165(6):728-737. doi:10.1016/s0002-9610(05)80797-4"
         },
         {
           "id": "prp_acp_q2",
-          "text": "Foster TE, et al. Platelet-rich plasma: from basic science to clinical applications. Am J Sports Med. 2009;37(11):2259–2272."
+          "text": "Foster TE, Puskas BL, Mandelbaum BR, Gerhardt MB, Rodeo SA. Platelet-rich plasma: from basic science to clinical applications. Am J Sports Med. 2009;37(11):2259-2272. doi:10.1177/0363546509349921"
         },
         {
           "id": "prp_acp_q3",
-          "text": "Vannini F, et al. Platelet-rich plasma for foot and ankle pathologies: a systematic review. Foot Ankle Surg. 2014."
+          "text": "Vannini F, Di Matteo B, Filardo G, Kon E, Marcacci M, Giannini S. Platelet-rich plasma for foot and ankle pathologies: a systematic review. Foot Ankle Surg. 2014;20(1):2-9. doi:10.1016/j.fas.2013.08.001"
         },
         {
           "id": "prp_acp_q4",
-          "text": "Collins T, Alexander D, Barkatali B. Platelet-rich plasma: a narrative review. EFORT Open Rev. 2021;6(4):225–235."
+          "text": "Collins T, Alexander D, Barkatali B. Platelet-rich plasma: a narrative review. EFORT Open Rev. 2021;6(4):225-235. doi:10.1302/2058-5241.6.200017"
         },
         {
           "id": "prp_acp_q5",
-          "text": "Wang C, et al. Effectiveness of PRP for acute Achilles tendon rupture: systematic review and meta-analysis. Medicine. 2021;100(41):e27526."
+          "text": "Mishra A, Woodall J Jr, Vieira A. Treatment of tendon and muscle using platelet-rich plasma. Clin Sports Med. 2009;28(1):113-125. doi:10.1016/j.csm.2008.08.007"
         },
         {
           "id": "prp_acp_q6",
-          "text": "Nauwelaers AK, et al. Evidence for the use of PRP in chronic midsubstance Achilles tendinopathy: a systematic review with meta-analysis. Foot Ankle Surg. 2021;27(5):486–495."
+          "text": "Wang C, Fan H, Li Y, Yun Z, Zhang Z, Zhu Q. Effectiveness of platelet-rich plasma injections for the treatment of acute Achilles tendon rupture: a systematic review and meta-analysis. Medicine (Baltimore). 2021;100(41):e27526. doi:10.1097/MD.0000000000027526"
         },
         {
           "id": "prp_acp_q7",
-          "text": "Barman A, et al. PRP injection in patellar tendinopathy: systematic review and meta-analysis. Knee Surg Relat Res. 2022;34(1):22."
+          "text": "Nauwelaers AK, Van Oost L, Peers K. Evidence for the use of PRP in chronic midsubstance Achilles tendinopathy: a systematic review with meta-analysis. Foot Ankle Surg. 2021;27(5):486-495. doi:10.1016/j.fas.2020.07.009"
         },
         {
           "id": "prp_acp_q8",
-          "text": "Ben-Nafa W, Munro W. Corticosteroid vs PRP for lateral epicondylitis: a systematic review. SICOT J. 2018;4:11."
+          "text": "Ben-Nafa W, Munro W. The effect of corticosteroid versus platelet-rich plasma injection therapies for the management of lateral epicondylitis: a systematic review. SICOT J. 2018;4:11. doi:10.1051/sicotj/2017062"
         },
         {
           "id": "prp_acp_q9",
-          "text": "Chalidis B, et al. Molecular and biologic effects of PRP in ligament and tendon healing: a systematic review. Int J Mol Sci. 2023;24(3):2744."
+          "text": "Barman A, Sinha MK, Sahoo J, et al. Platelet-rich plasma injection in the treatment of patellar tendinopathy: a systematic review and meta-analysis. Knee Surg Relat Res. 2022;34(1):22. doi:10.1186/s43019-022-00151-5"
         },
         {
           "id": "prp_acp_q10",
-          "text": "Rhim HC, et al. A systematic review of systematic reviews on plantar fasciitis. Life (Basel). 2021;11(12):1287."
+          "text": "Chalidis B, Givissis P, Papadopoulos P, Pitsilos C. Molecular and biologic effects of platelet-rich plasma (PRP) in ligament and tendon healing and regeneration: a systematic review. Int J Mol Sci. 2023;24(3):2744. doi:10.3390/ijms24032744"
         },
         {
           "id": "prp_acp_q11",
-          "text": "Ling Y, Wang S. PRP in the treatment of plantar fasciitis: a meta-analysis of RCTs. Medicine. 2018;97(37)."
+          "text": "Rhim HC, Kwon J, Park J, Borg-Stein J, Tenforde AS. A systematic review of systematic reviews on the epidemiology, evaluation, and treatment of plantar fasciitis. Life (Basel). 2021;11(12):1287. doi:10.3390/life11121287"
         },
         {
           "id": "prp_acp_q12",
-          "text": "Yu T, et al. Outcomes of PRP for plantar fasciopathy: a best-evidence synthesis. J Orthop Surg Res. 2020."
+          "text": "Ling Y, Wang S. Effects of platelet-rich plasma in the treatment of plantar fasciitis: a meta-analysis of randomized controlled trials. Medicine (Baltimore). 2018;97(37):e12110. doi:10.1097/MD.0000000000012110"
         },
         {
           "id": "prp_acp_q13",
-          "text": "Laver L, et al. PRP for degenerative cartilage disease: a systematic review. Cartilage. 2017;8:341–364."
+          "text": "Yu T, Xia J, Li B, Zhou H, Yang Y, Yu G. Outcomes of platelet-rich plasma for plantar fasciopathy: a best-evidence synthesis. J Orthop Surg Res. 2020;15(1):432. doi:10.1186/s13018-020-01783-7"
         },
         {
           "id": "prp_acp_q14",
-          "text": "Chang KV, et al. Comparative effectiveness of PRP for knee cartilage degeneration: systematic review and meta-analysis. Arch Phys Med Rehabil. 2014;95:562–575."
+          "text": "Alkhatib N, Salameh M, Ahmed AF, et al. Platelet-rich plasma versus corticosteroids in the treatment of chronic plantar fasciitis: a systematic review and meta-analysis of prospective comparative studies. J Foot Ankle Surg. 2020;59(3):546-552. doi:10.1053/j.jfas.2019.10.003"
         },
         {
           "id": "prp_acp_q15",
-          "text": "Angthong C, et al. Outcomes and quality of life after PRP in recalcitrant hindfoot and ankle diseases. J Foot Ankle Surg. 2013."
+          "text": "Laver L, Marom N, Dnyanesh L, Mei-Dan O, Espregueira-Mendes J, Gobbi A. PRP for degenerative cartilage disease: a systematic review of clinical studies. Cartilage. 2017;8(4):341-364. doi:10.1177/1947603516670709"
         },
         {
           "id": "prp_acp_q16",
-          "text": "Yausep OE, et al. PRP for osteochondral lesions of the talus: a systematic review. J Orthop. 2020;18:218–225."
+          "text": "Chang KV, Hung CY, Aliwarga F, Wang TG, Han DS, Chen WS. Comparative effectiveness of platelet-rich plasma injections for treating knee joint cartilage degenerative pathology: a systematic review and meta-analysis. Arch Phys Med Rehabil. 2014;95(3):562-575. doi:10.1016/j.apmr.2013.11.006"
         },
         {
           "id": "prp_acp_q17",
-          "text": "Repetto I, et al. Conservative treatment of ankle osteoarthritis: can PRP postpone surgery? J Foot Ankle Surg. 2017;56(2):362–365."
+          "text": "Angthong C, Khadsongkram A, Angthong W. Outcomes and quality of life after platelet-rich plasma therapy in patients with recalcitrant hindfoot and ankle diseases: a preliminary report of 12 patients. J Foot Ankle Surg. 2013;52(4):475-480. doi:10.1053/j.jfas.2013.04.005"
         },
         {
           "id": "prp_acp_q18",
-          "text": "Grassi A, et al. Is PRP effective in acute muscle injuries? Systematic review and meta-analysis. Sports Med. 2018;48:971–989."
+          "text": "Yausep OE, Madhi I, Trigkilidas D. Platelet rich plasma for treatment of osteochondral lesions of the talus: a systematic review of clinical trials. J Orthop. 2020;18:218-225. doi:10.1016/j.jor.2020.01.046"
         },
         {
           "id": "prp_acp_q19",
-          "text": "Andersen C, et al. The use of PRP for the management of non-union fractures. Curr Osteoporos Rep. 2021;19:1–14."
+          "text": "Repetto I, Biti B, Cerruti P, Trentini R, Felli L. Conservative treatment of ankle osteoarthritis: can platelet-rich plasma effectively postpone surgery? J Foot Ankle Surg. 2017;56(2):362-365. doi:10.1053/j.jfas.2016.11.015"
         },
         {
           "id": "prp_acp_q20",
-          "text": "Le HM, et al. PRP for hallux sesamoid injuries: a case series. Phys Sportsmed. 2021;50(2):181–184."
+          "text": "Grassi A, Napoli F, Romandini I, et al. Is platelet-rich plasma (PRP) effective in the treatment of acute muscle injuries? A systematic review and meta-analysis. Sports Med. 2018;48(4):971-989. doi:10.1007/s40279-018-0860-1"
+        },
+        {
+          "id": "prp_acp_q21",
+          "text": "Andersen C, Wragg NM, Shariatzadeh M, et al. The use of platelet-rich plasma (PRP) for the management of non-union fractures: a systematic review. Curr Osteoporos Rep. 2021;19(1):1-14. doi:10.1007/s11914-020-00643-x"
+        },
+        {
+          "id": "prp_acp_q22",
+          "text": "Ghaffarpasand F, Shahrezaei M, Dehghankhalili M. Effects of platelet-rich plasma on healing rate of long bone non-union fractures: a randomized double-blind placebo controlled clinical trial. Bull Emerg Trauma. 2016;4(3):134-140. PMID:27540547"
+        },
+        {
+          "id": "prp_acp_q23",
+          "text": "Le HM, Stracciolini A, Stein CJ, Quinn BJ, Jackson SS. Platelet rich plasma for hallux sesamoid injuries: a case series. Phys Sportsmed. 2022;50(2):181-184. doi:10.1080/00913847.2021.1964006"
+        },
+        {
+          "id": "prp_acp_q24",
+          "text": "Masiello F, Pati I, Veropalumbo E, Pupella S, Cruciani M, De Angelis V. Ultrasound-guided injection of platelet-rich plasma for tendinopathies: a systematic review and meta-analysis. Blood Transfus. 2023;21(2):119-136. doi:10.2450/2022.0087-22"
         }
       ]
     },
@@ -7241,55 +7257,95 @@
     },
     "phytoanalgesie": {
       "titel": "Naturheilkundliche Schmerztherapie (Phytoanalgesie)",
-      "kurz": "Pflanzliche Wirkstoffe können bei akuten und chronischen Schmerzen eine Alternative oder Ergänzung sein — mit Wechselwirkungen und Wirkungseintritt.",
+      "kurz": "Pflanzliche Wirkstoffe können bei akuten und chronischen Gelenkschmerzen eine Ergänzung oder Alternative zu klassischen Schmerzmitteln sein. Zu beachten sind der oft verzögerte Wirkeintritt und mögliche Wechselwirkungen, besonders mit Blutgerinnungshemmern.",
       "abschnitte": [
         {
           "titel": "Überblick",
-          "text": "Es gibt wirksame **pflanzliche (phytotherapeutische)** Alternativen zu klassischen Schmerzmitteln. Zur **akuten** Schmerztherapie eignet sich **Weidenrinde**; bei **chronischen** Schmerzen **Brennnessel** oder **Teufelskralle** (Wirkeintritt beachten); Schmerzen mit **entzündlicher** Komponente sprechen auf **Weihrauch** an."
+          "text": "Es gibt einige brauchbare pflanzliche Alternativen oder Ergänzungen zu klassischen Schmerzmitteln. Für die **akute** Schmerzbehandlung eignet sich Weidenrinde gut. Bei **chronischen** Beschwerden bieten sich Teufelskralle oder Brennnessel an, wobei hier die Zeit bis zum Wirkeintritt zu beachten ist. Schmerzen mit deutlicher **entzündlicher** Komponente sprechen eher auf Weihrauch oder Kurkuma an.\n\nInsgesamt ist die Aussagekraft der Studien meist niedrig bis mäßig, für mehrere Mittel gibt es aber Hinweise auf einen echten, wenn auch begrenzten Nutzen [[phytoanalgesie_q11]][[phytoanalgesie_q12]]. Wichtig ist, dass „pflanzlich“ nicht automatisch „harmlos“ bedeutet: Einige Mittel haben Wechselwirkungen, vor allem mit Blutgerinnungshemmern, und eigene Gegenanzeigen.\n\n[Mehr zu allgemeinen Maßnahmen bei Arthrose](?massnahme=allg_verschleiss)"
         },
         {
-          "titel": "Teufelskralle",
-          "text": "Wurzel aus der Kalahari, lange Tradition. Wirkstoffe: Iridoidglykoside, Phytosterole, Phenolsäure. **Schmerzlindernd über COX-2-Hemmung** und Senkung entzündungsfördernder Zytokine, fiebersenkend. Anwendung bei **Arthrose/Gelenkschmerz**. Geringe Nebenwirkungsrate (**3 % Magen-Darm-Beschwerden**, selten Bradykardie) [[phytoanalgesie_q1]]. **Nicht** in der Schwangerschaft oder bei Magen-Darm-Geschwüren. Dosierung z. B. 3 × 2 Tabletten à 400 mg/Tag (Doloteffin); Spiegelaufbau über Tage → **Wirkung erst ab ca. Tag 10**."
+          "titel": "Teufelskralle (Harpagophytum)",
+          "text": "Die Teufelskralle ist eine Pflanze aus den Sandfeldern der Kalahari, deren Wurzelknollen in Deutschland eine lange Anwendungstradition haben. Wirksame Inhaltsstoffe sind Iridoidglykoside (vor allem Harpagosid), Phytosterole und Phenolsäuren. Sie wirkt schmerzlindernd, unter anderem über eine Hemmung des Enzyms COX-2 und eine Senkung entzündungsfördernder Botenstoffe, und wird bei Arthrose und Gelenkschmerz eingesetzt.\n\nDie Verträglichkeit ist gut, beschrieben ist eine geringe Rate an Nebenwirkungen mit etwa 3 Prozent Magen-Darm-Beschwerden und selten einem verlangsamten Herzschlag [[phytoanalgesie_q1]]. Übersichtsarbeiten sehen einen wahrscheinlichen Nutzen bei Gelenk- und Rückenschmerz [[phytoanalgesie_q2]]. Nicht eingenommen werden sollte sie in der Schwangerschaft und bei Geschwüren im Magen-Darm-Trakt. Eine übliche Dosierung liegt bei etwa dreimal täglich 800 mg standardisiertem Extrakt. Da sich der Wirkspiegel erst über mehrere Tage aufbaut, ist eine Wirkung meist erst ab etwa dem zehnten Einnahmetag zu erwarten."
         },
         {
-          "titel": "Weidenrinde",
-          "text": "Enthält **Salicylsäure** (Vorstufe von ASS). Anwendung bei fieberhaften Erkrankungen, Rheuma, Gelenkbeschwerden; **antientzündlich, antioxidativ, schleimhautschützend**, gut verträglich [[phytoanalgesie_q2]]. **Nicht** bei Asthma bronchiale, Blutungsneigung, Magen-Darm-Geschwüren oder Kindern (Reye-Syndrom-Gefahr). Dosierung 120–240 mg Salicin/Tag; **zur akuten Schmerztherapie gut geeignet** (Einzeldosis 120 mg)."
+          "titel": "Weidenrinde (Salix)",
+          "text": "Die Rinde und die jungen Zweige der Weide enthalten Salicin, eine natürliche Vorstufe der Salicylsäure, die mit dem Wirkstoff von Aspirin verwandt ist. Weidenrinde wirkt entzündungshemmend und antioxidativ und wird bei fieberhaften Erkrankungen, Rheuma und Gelenkbeschwerden verwendet. Die Verträglichkeit ist gut, auch für den Magen [[phytoanalgesie_q3]], und Übersichtsarbeiten stützen einen Nutzen bei muskuloskelettalen Schmerzen [[phytoanalgesie_q4]].\n\nNicht eingenommen werden sollte sie bei Asthma bronchiale, erhöhter Blutungsneigung, Magen-Darm-Geschwüren und bei Kindern (wegen der Gefahr des seltenen Reye-Syndroms). Die Tagesdosis liegt bei etwa 120 bis 240 mg Salicin. Im Unterschied zu den langsam wirkenden Mitteln eignet sich Weidenrinde mit einer Einzeldosis von etwa 120 mg auch zur akuten Schmerzlinderung."
         },
         {
-          "titel": "Phytodolor, Weihrauch, Brennnessel, Curcuma, Enzyme",
-          "text": "**Phytodolor** (Zitterpappelrinde, Goldrutenkraut, Eichenrinde): schmerzlindernd/entzündungshemmend, in einer Studie **vergleichbar mit NSAR** bei Rheumaschmerz [[phytoanalgesie_q3]]; Wirkmaximum nach 10–14 Tagen (nicht für Akutschmerz). **Weihrauch**: Wirkung über 5-LOX-Hemmung, bei chronisch-entzündlichen Erkrankungen (3 × 800 mg/Tag). **Brennnessel**: viel Vitamin C und sekundäre Pflanzenstoffe, antientzündlich/harntreibend — **Cave: Cytochrom-P450-Hemmung (Wechselwirkungen) und Vitamin-K-Gehalt (kann Marcumar-Wirkung mindern)**. **Curcuma (Kurkuma)**: entzündungshemmend, wirksam bei Gelenkschmerz [[phytoanalgesie_q4]][[phytoanalgesie_q5]]. **Enzyme (Bromelain/Papain)**: entzündungshemmend im Labor — **nicht bei Vollantikoagulation** (fibrinolytische Wirkung)."
+          "titel": "Phytodolor",
+          "text": "Phytodolor ist eine feste Mischung aus Zitterpappelrinde, Goldrutenkraut und Eschenrinde. Sie wirkt schmerzlindernd, entzündungshemmend und abschwellend. In einer Auswertung mehrerer Studien zeigte sich bei muskuloskelettalen Schmerzen eine mit entzündungshemmenden Schmerzmitteln (NSAR) vergleichbare Wirkung [[phytoanalgesie_q5]]. Als Nebenwirkungen kommen Blähungen, Durchfall, Schwindel und ein Anstieg der Leberwerte vor. Übliche Dosierung ist dreimal täglich 40 Tropfen. Das Wirkmaximum wird erst nach etwa 10 bis 14 Tagen erreicht, weshalb sich das Mittel nicht für die akute Schmerzbehandlung eignet."
+        },
+        {
+          "titel": "Weihrauch (Boswellia serrata)",
+          "text": "Weihrauch ist in der Naturheilkunde ein bekanntes Mittel bei chronischen Entzündungen. Er hemmt das Enzym 5-Lipoxygenase, sodass weniger entzündungsfördernde Leukotriene gebildet werden. Eine Meta-Analyse fand bei Arthrose positive Effekte auf Schmerz und Steifigkeit, stärker bei angereicherten Extrakten [[phytoanalgesie_q6]]. Eine übliche Dosierung liegt bei etwa dreimal täglich 800 mg. Weihrauch ist damit vor allem bei entzündlich geprägten Gelenkschmerzen eine Option.\n\n[Mehr zu Nahrungsergänzungsmitteln (auch Weihrauch und Kurkuma im Detail)](?massnahme=nahrungsergaenzung)"
+        },
+        {
+          "titel": "Brennnessel (Urtica dioica)",
+          "text": "Junge Brennnesseltriebe enthalten viel Vitamin C sowie zahlreiche sekundäre Pflanzenstoffe. Der Brennnessel werden entzündungshemmende, harntreibende und kräftigende Effekte zugeschrieben, und sie wird bei Gelenk- und Rheumaschmerz, Wasseransammlungen und Arthrose verwendet. Die Studienlage am Menschen ist allerdings dünn, ein kleiner kontrollierter Versuch fand einen Effekt bei Daumensattelgelenk-Schmerz [[phytoanalgesie_q7]].\n\nZu beachten sind Wechselwirkungen: Brennnessel hemmt Abbauwege der Leber (Cytochrom P450) und kann so die Wirkung vieler Medikamente beeinflussen. Wegen ihres Vitamin-K-Gehalts kann sie außerdem die Wirkung von Cumarin-Gerinnungshemmern abschwächen. Eine in Studien verwendete Dosierung liegt bei etwa 1340 mg Trockensubstanz pro Tag."
+        },
+        {
+          "titel": "Kurkuma (Curcuma)",
+          "text": "Kurkuma wirkt entzündungshemmend. Bei der Kniearthrose ist der Wirkstoff am besten untersucht: In einer Studie besserten sich die Beschwerden deutlich [[phytoanalgesie_q8]], und in einer weiteren Untersuchung wirkte ein Kurkuma-Extrakt ähnlich gut wie Ibuprofen, bei weniger Magen-Darm-Nebenwirkungen [[phytoanalgesie_q9]]. Kurkuma ist damit besonders bei entzündlich geprägten Beschwerden sinnvoll. Angaben zu Dosierung und Präparaten finden sich im Artikel zu den Nahrungsergänzungsmitteln.\n\n[Mehr zu Kurkuma bei den Nahrungsergänzungsmitteln](?massnahme=nahrungsergaenzung)"
+        },
+        {
+          "titel": "Enzyme (Bromelain, Papain)",
+          "text": "Bromelain (aus der Ananas) und Papain (aus der Papaya) sind eiweißspaltende Enzyme, denen im Laborversuch entzündungshemmende Effekte zugeschrieben werden. Für die Behandlung der Arthrose ist die klinische Datenlage begrenzt und uneinheitlich [[phytoanalgesie_q10]]. Wegen einer die Blutgerinnung hemmenden (fibrinolytischen) Wirkung sollten diese Enzyme nicht zusammen mit einer vollen Blutverdünnung eingenommen werden."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Vlachojannis J, et al. Devil's claw (Harpagophytum) — Verträglichkeit/Nebenwirkungen. 2008.\n[2] Khayyal MT, et al. Willow bark extract — anti-inflammatory. 2003.\n[3] Uehleke B, et al. Phytodolor vs. NSAR bei Rheumaschmerz. 2011.\n[4] Yun (zit. n. mediq). Curcuma — Immunwirkung. 2011.\n[5] Kuptniratsaikul V, et al. Curcuma domestica extracts bei Gelenkschmerz (Kniearthrose). 2009.\n[6] Onken (zit. n. mediq). Bromelain/Papain — entzündungshemmend im Labor. 2008."
+          "text": "[1] Vlachojannis J, Roufogalis BD, Chrubasik S. Systematic review on the safety of Harpagophytum preparations for osteoarthritic and low back pain. Phytother Res. 2008;22(2):149-152. doi:10.1002/ptr.2314\n[2] Brien S, Lewith GT, McGregor G. Devil's claw (Harpagophytum procumbens) as a treatment for osteoarthritis: a review of efficacy and safety. J Altern Complement Med. 2006;12(10):981-993. doi:10.1089/acm.2006.12.981\n[3] Khayyal MT, El-Ghazaly MA, Abdallah DM, Okpanyi SN, Kelber O, Weiser D. Mechanisms involved in the anti-inflammatory effect of a standardized willow bark extract. Arzneimittelforschung. 2005;55(11):677-687. doi:10.1055/s-0031-1296917\n[4] Vlachojannis JE, Cameron M, Chrubasik S. A systematic review on the effectiveness of willow bark for musculoskeletal pain. Phytother Res. 2009;23(7):897-900. doi:10.1002/ptr.2747\n[5] Uehleke B, Brignoli R, Rostock M, Saller R, Melzer J. Phytodolor in musculoskeletal disorders: re-analysis and meta-analysis. Forsch Komplementmed. 2011;18(5):249-256. doi:10.1159/000332820\n[6] Yu G, Xiang W, Zhang T, Zeng L, Yang K, Li J. Effectiveness of Boswellia and Boswellia extract for osteoarthritis patients: a systematic review and meta-analysis. BMC Complement Med Ther. 2020;20(1):225. doi:10.1186/s12906-020-02985-6\n[7] Randall C, Randall H, Dobbs F, Hutton C, Sanders H. Randomized controlled trial of nettle sting for treatment of base-of-thumb pain. J R Soc Med. 2000;93(6):305-309. doi:10.1177/014107680009300607\n[8] Kuptniratsaikul V, Thanakhumtorn S, Chinswangwatanakul P, Wattanamongkonsil L, Thamlikitkul V. Efficacy and safety of Curcuma domestica extracts in patients with knee osteoarthritis. J Altern Complement Med. 2009;15(8):891-897. doi:10.1089/acm.2008.0186\n[9] Kuptniratsaikul V, Dajpratham P, Taechaarpornkul W, et al. Efficacy and safety of Curcuma domestica extracts compared with ibuprofen in patients with knee osteoarthritis: a multicenter study. Clin Interv Aging. 2014;9:451-458. doi:10.2147/CIA.S58535\n[10] Brien S, Lewith G, Walker A, Hicks SM, Middleton D. Bromelain as a treatment for osteoarthritis: a review of clinical studies. Evid Based Complement Alternat Med. 2004;1(3):251-257. doi:10.1093/ecam/neh035\n[11] Cameron M, Gagnier JJ, Little CV, Parsons TJ, Blümle A, Chrubasik S. Evidence of effectiveness of herbal medicinal products in the treatment of arthritis. Part I: osteoarthritis. Phytother Res. 2009;23(11):1497-1515. doi:10.1002/ptr.3007\n[12] Cameron M, Chrubasik S. Oral herbal therapies for treating osteoarthritis. Cochrane Database Syst Rev. 2014;(5):CD002947. doi:10.1002/14651858.CD002947.pub2"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
-      "_review": true,
+      "stand": "Juli 2026",
+      "_review": false,
       "quellen": [
         {
           "id": "phytoanalgesie_q1",
-          "text": "Vlachojannis J, et al. Devil's claw (Harpagophytum) — Verträglichkeit/Nebenwirkungen. 2008."
+          "text": "Vlachojannis J, Roufogalis BD, Chrubasik S. Systematic review on the safety of Harpagophytum preparations for osteoarthritic and low back pain. Phytother Res. 2008;22(2):149-152. doi:10.1002/ptr.2314"
         },
         {
           "id": "phytoanalgesie_q2",
-          "text": "Khayyal MT, et al. Willow bark extract — anti-inflammatory. 2003."
+          "text": "Brien S, Lewith GT, McGregor G. Devil's claw (Harpagophytum procumbens) as a treatment for osteoarthritis: a review of efficacy and safety. J Altern Complement Med. 2006;12(10):981-993. doi:10.1089/acm.2006.12.981"
         },
         {
           "id": "phytoanalgesie_q3",
-          "text": "Uehleke B, et al. Phytodolor vs. NSAR bei Rheumaschmerz. 2011."
+          "text": "Khayyal MT, El-Ghazaly MA, Abdallah DM, Okpanyi SN, Kelber O, Weiser D. Mechanisms involved in the anti-inflammatory effect of a standardized willow bark extract. Arzneimittelforschung. 2005;55(11):677-687. doi:10.1055/s-0031-1296917"
         },
         {
           "id": "phytoanalgesie_q4",
-          "text": "Yun (zit. n. mediq). Curcuma — Immunwirkung. 2011."
+          "text": "Vlachojannis JE, Cameron M, Chrubasik S. A systematic review on the effectiveness of willow bark for musculoskeletal pain. Phytother Res. 2009;23(7):897-900. doi:10.1002/ptr.2747"
         },
         {
           "id": "phytoanalgesie_q5",
-          "text": "Kuptniratsaikul V, et al. Curcuma domestica extracts bei Gelenkschmerz (Kniearthrose). 2009."
+          "text": "Uehleke B, Brignoli R, Rostock M, Saller R, Melzer J. Phytodolor in musculoskeletal disorders: re-analysis and meta-analysis. Forsch Komplementmed. 2011;18(5):249-256. doi:10.1159/000332820"
         },
         {
           "id": "phytoanalgesie_q6",
-          "text": "Onken (zit. n. mediq). Bromelain/Papain — entzündungshemmend im Labor. 2008."
+          "text": "Yu G, Xiang W, Zhang T, Zeng L, Yang K, Li J. Effectiveness of Boswellia and Boswellia extract for osteoarthritis patients: a systematic review and meta-analysis. BMC Complement Med Ther. 2020;20(1):225. doi:10.1186/s12906-020-02985-6"
+        },
+        {
+          "id": "phytoanalgesie_q7",
+          "text": "Randall C, Randall H, Dobbs F, Hutton C, Sanders H. Randomized controlled trial of nettle sting for treatment of base-of-thumb pain. J R Soc Med. 2000;93(6):305-309. doi:10.1177/014107680009300607"
+        },
+        {
+          "id": "phytoanalgesie_q8",
+          "text": "Kuptniratsaikul V, Thanakhumtorn S, Chinswangwatanakul P, Wattanamongkonsil L, Thamlikitkul V. Efficacy and safety of Curcuma domestica extracts in patients with knee osteoarthritis. J Altern Complement Med. 2009;15(8):891-897. doi:10.1089/acm.2008.0186"
+        },
+        {
+          "id": "phytoanalgesie_q9",
+          "text": "Kuptniratsaikul V, Dajpratham P, Taechaarpornkul W, et al. Efficacy and safety of Curcuma domestica extracts compared with ibuprofen in patients with knee osteoarthritis: a multicenter study. Clin Interv Aging. 2014;9:451-458. doi:10.2147/CIA.S58535"
+        },
+        {
+          "id": "phytoanalgesie_q10",
+          "text": "Brien S, Lewith G, Walker A, Hicks SM, Middleton D. Bromelain as a treatment for osteoarthritis: a review of clinical studies. Evid Based Complement Alternat Med. 2004;1(3):251-257. doi:10.1093/ecam/neh035"
+        },
+        {
+          "id": "phytoanalgesie_q11",
+          "text": "Cameron M, Gagnier JJ, Little CV, Parsons TJ, Blümle A, Chrubasik S. Evidence of effectiveness of herbal medicinal products in the treatment of arthritis. Part I: osteoarthritis. Phytother Res. 2009;23(11):1497-1515. doi:10.1002/ptr.3007"
+        },
+        {
+          "id": "phytoanalgesie_q12",
+          "text": "Cameron M, Chrubasik S. Oral herbal therapies for treating osteoarthritis. Cochrane Database Syst Rev. 2014;(5):CD002947. doi:10.1002/14651858.CD002947.pub2"
         }
       ]
     },
@@ -8721,108 +8777,64 @@
     },
     "neuromuskulaer_aussenband": {
       "titel": "Neuromuskuläres Training",
-      "kurz": "Strukturierte, phasengerechte Rehabilitation nach Außenbandriss — senkt das Risiko erneuter Verletzungen und chronischer Instabilität um rund 40 %.",
+      "kurz": "Balance-, Koordinations- und Stabilisationstraining schult das Zusammenspiel von Nerven und Muskeln und sichert das Gelenk aktiv. Besonders wichtig ist es nach Bandverletzungen zur Vermeidung erneuter Verletzungen, es hat aber auch allgemein einen Nutzen bei der Verletzungs- und Sturzvorbeugung.",
       "abschnitte": [
         {
-          "titel": "Hinweis",
-          "text": "Die interaktive, schrittweise Version für die Zeit nach einer Außenbandverletzung findet sich im Nicht-OP-Begleiter: [Trainingsprogramm nach Außenbandverletzung](?nonop=aussenband_konservativ). Dort werden die Stufen angeleitet und mit der Ampel gesteuert — es ist dieselbe Quelle."
-        },
-        {
           "titel": "Worum es geht",
-          "text": "Eine strukturierte Nachbehandlung nach Außenbandverletzung ist wichtig für eine erfolgreiche Rehabilitation, die Verringerung erneuter Umknicktraumata, die Verhinderung einer chronischen Instabilität und die zeitgerechte Wiederaufnahme von Beruf und Sport. Etwa 70 % der Patienten erleiden im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität [[neuromuskulaer_aussenband_q3]] — vor allem wiederholte Traumata sind verantwortlich; im ersten Jahr ist das Risiko einer erneuten Verletzung mehr als verdoppelt. Dieses Konzept ist eine allgemeine Orientierung; im Einzelfall muss es fachärztlich überwacht und angepasst werden. Das exakte Trainingsvolumen ist unklar, mehr Volumen scheint besser: Bei 4 überwachten Einheiten wurden bessere Ergebnisse erzielt als bei nur 2 [[neuromuskulaer_aussenband_q4]]."
+          "text": "Neuromuskuläres Training schult das Zusammenspiel von Nerven und Muskeln. Über Gleichgewichts-, Koordinations- und Stabilisationsübungen wird die aktive Sicherung eines Gelenks verbessert. Ein wichtiger Baustein ist die **Tiefenwahrnehmung (Propriozeption)**, also der Sinn für die Stellung und Bewegung des Gelenks. Sie wird durch eine Bandverletzung häufig gestört, lässt sich aber gezielt wieder trainieren.\n\nDieser Artikel erläutert Hintergrund und Bedeutung. Das konkrete, schrittweise Übungsprogramm mit Steigerung des Schwierigkeitsgrads wird im Nicht-OP-Begleiter angeleitet.\n\n[Zum Übungsprogramm nach Außenbandverletzung](?nonop=aussenband_konservativ)\n\nIm Einzelfall sollte das Vorgehen fachärztlich begleitet und bei Bedarf angepasst werden."
         },
         {
-          "titel": "Phasen der Bandheilung",
-          "text": "Die Rehabilitation muss sich der Physiologie der Bandheilung anpassen — je nach Phase sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zu einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zur ausgereiften Bandheilung 9–12 Monate [[neuromuskulaer_aussenband_q5]].\n\nInflammationsphase (1–10 Tage): Einblutung ins Gewebe, Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\n\nProliferationsphase (14 Tage bis 6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte, kontrollierte Belastungen fördern die Faserorientierung.\n\nRemodellierungsphase (bis Ende des ersten Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\n\nWährend Stufe 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen Stufe 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit sportmedizinischer Betreuung dar."
+          "titel": "Bedeutung bei Bandverletzungen",
+          "text": "Die Verletzung des Außenbandes am Sprunggelenk ist eine der häufigsten Verletzungen des Bewegungsapparates. Sie heilt zwar meist gut, ein erheblicher Teil der Betroffenen erleidet aber erneute Umknickverletzungen, und etwa 20 bis 40 Prozent entwickeln eine chronische Instabilität, die wiederum vorzeitigen Gelenkverschleiß begünstigt [[neuromuskulaer_aussenband_q1]]. Gerade wiederholte Verletzungen sind das eigentliche Problem, im ersten Jahr nach einer Bandverletzung ist das Risiko einer erneuten Verletzung deutlich erhöht.\n\nGenau hier setzt das neuromuskuläre Training an. Es ist der wirksamste Baustein, um erneute Verletzungen und eine chronische Instabilität zu vermeiden. In einer großen Studie senkte ein häusliches Balancetraining nach einer Bandverletzung die Rate erneuter Verletzungen um etwa ein Drittel [[neuromuskulaer_aussenband_q3]], und Übersichtsarbeiten bestätigen sowohl für die Vorbeugung als auch für die Nachbehandlung eine deutliche Risikosenkung [[neuromuskulaer_aussenband_q4]][[neuromuskulaer_aussenband_q5]].\n\nWichtig ist, dass sich die Rehabilitation an der **biologischen Bandheilung** orientiert. Bis zu einer belastbaren Narbe vergehen mehrere Wochen, bis zur vollständigen Ausreifung des Kapsel-Band-Apparates rund ein Jahr [[neuromuskulaer_aussenband_q2]]. Das Training wird daher schrittweise gesteigert und sollte über das gesamte erste Jahr fortgeführt werden."
         },
         {
-          "titel": "Phase 1 (1–7 Tage): „Return to daily life“",
-          "text": "Ziel: Reduktion von Schwellung und Schmerz. Ruhigstellung: semirigide Orthese Tag und Nacht (Grad-1–2-Rupturen; Grad 3, wenn tolerabel); bei starker Schwellung (Grad 3) Gipsschiene an 2 Stützen mit Thromboseschutz für maximal 5–7 Tage. Maßnahmen: Lymphdrainage, Kryotherapie (=Kälteanwendung) und Hochlagerung, isometrische Anspannung der Unterschenkelmuskulatur, NSAR wie Ibuprofen [[neuromuskulaer_aussenband_q15]]. Übergang zur nächsten Stufe bei guter Abschwellung und möglicher Mobilisierung unter Vollbelastung."
+          "titel": "Allgemeine Bedeutung über die Bandverletzung hinaus",
+          "text": "Der Nutzen des neuromuskulären Trainings beschränkt sich nicht auf die Zeit nach einer Bandverletzung. In der **Sportmedizin** senken Übungsprogramme mit Kraft- und Propriozeptionsanteilen das allgemeine Verletzungsrisiko deutlich, während reines Dehnen keinen solchen Effekt hat [[neuromuskulaer_aussenband_q6]]. Solche Programme eignen sich daher auch zur Vorbeugung an noch gesunden Gelenken, etwa als Teil des Aufwärmens.\n\nAuch außerhalb des Sports ist das Prinzip wertvoll. Bei **älteren Menschen** senkt ein Gleichgewichts- und Funktionstraining die Sturzrate deutlich und beugt so sturzbedingten Verletzungen vor [[neuromuskulaer_aussenband_q7]]. Neuromuskuläres Training ist damit ein breit einsetzbares Werkzeug zur aktiven Gelenksicherung, von der Verletzungsvorbeugung über die Nachbehandlung bis zur Sturzprävention im Alter."
         },
         {
-          "titel": "Phase 2 (1.–6. Woche): „Return to activity“",
-          "text": "Ziel: Wiedergewinnung von Beweglichkeit und Stabilität für grundsätzliche Bewegungsmuster. Ruhigstellung: semirigide Orthese Tag und Nacht. Bei Grad-1–2-Läsionen zeigt eine zügige funktionelle Nachbehandlung bessere Ergebnisse [[neuromuskulaer_aussenband_q9]]: Wackelbrett-/Balancetraining und Mobilisierung des OSG in die Extension können bereits nach einer Woche beginnen — in Studien schnellere Rehabilitation ohne erhöhte Re-Verletzungsrate [[neuromuskulaer_aussenband_q10]][[neuromuskulaer_aussenband_q11]] (allerdings unter enger professioneller Betreuung). Maßnahmen: isometrische Eversion gegen Widerstand (Theraband), konsequenter Verzicht auf jegliche Inversion, Gangschule geradeaus in Orthese. Bei Schmerzfreiheit im Alltag und abgeschwollenen Weichteilen zusätzlich: Gangschule mit Richtungswechseln, Stabilitätstraining unter Orthesenschutz (erst einbeinig, dann beidbeinig; erst am Boden, dann auf wackeligem Untergrund/Balance-Board), Ergometertraining in der Orthese, Kraftübungen in geschlossener Kette (Hamstring Curls, Beinpresse), passive Mobilisierung mit Theraband in die Extension. Übergang zur nächsten Stufe, wenn der Einbeinstand mit offenen und geschlossenen Augen auf geradem oder unebenem Untergrund über 10 Sekunden sicher möglich ist."
-        },
-        {
-          "titel": "Phase 3 (ab 5.–6. Woche): „Return to sport“",
-          "text": "Ziel: Wiederaufnahme von Sport, volle berufliche Belastbarkeit. Ruhigstellung: Taping oder Orthese bei längerer Belastung. Die Übungen mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperts et al.) sind als Langzeitübungen für das komplette erste Jahr gedacht — Ziel sind 3 Einheiten pro Woche à 30 Minuten [[neuromuskulaer_aussenband_q14]]. Der Schwierigkeitsgrad wird gesteigert, wenn die Übung sicher und schmerzfrei gelingt; die Wochenangaben sind Orientierungspunkte (spätere Steigerung unproblematisch, frühere nur nach sportmedizinischer Beratung).\n\nEinbeinige Kniebeuge: eben ab Woche 6, mit geschlossenen Augen ab Woche 10, auf Wackelbrett ab Woche 16. Beidbeiniger Zehenspitzenstand: erhöht mit Festhalten ab Woche 6, ohne Festhalten ab Woche 12. Einbeinstand: eben ab Woche 6, geschlossene Augen ab Woche 10, Wackelbrett ab Woche 12. Läuferpose: eben ab Woche 6, geschlossene Augen ab Woche 8, Wackelbrett ab Woche 12. Überkreuzschwung der Beine: eben mit Festhalten ab Woche 6, ohne Festhalten ab Woche 8, ohne Festhalten mit geschlossenen Augen ab Woche 10, Wackelbrett ab Woche 12. Zehenspitzengang: gehend ab Woche 6, springend ab Woche 10."
-        },
-        {
-          "titel": "Phase 4 (Return to play) und Phase 5 (Return to competition)",
-          "text": "Phase 4 — Wiederaufnahme des sportartspezifischen Trainings/Mannschaftstrainings außerhalb von Wettkämpfen: externe Stabilisierung mit Orthese oder Tape während des Sports in den ersten 6 Monaten (Tape nach 15–20 Minuten nachtapen). Ein Wiederbeginn vor dem 3. Monat ist bei Risikosportarten kritisch. Voraussetzungen (nach Chinn et al.): keine Defizite in Balance/Propriozeption bei sportspezifischen Sprungübungen, uneingeschränkte Beweglichkeit, Schmerzfreiheit, sportartspezifische Bewegungsmuster ohne Kompensation, intra-/intermuskuläre Koordination, 90 % der Kraft der Gegenseite, aktive Ansteuerbarkeit der Mm. peronei, subjektive Bereitschaft (z. B. CAIT ≥ 28 Punkte oder I-PRRS ≥ 50–60).\n\nEine sportmedizinische Testbatterie (nach Bloch et al.) prüft strukturiert Risikofaktoren für Re-Verletzungen: Aufwärmen auf dem Laufband (8/10/12/8 km/h je 2 Minuten), Kniebeugen, dynamische Richtungswechsel und Sprünge (Schmerzen sind Abbruchkriterium). Getestet werden u. a. posturale Kontrolle (Star Excursion Balance Test: Gesamtwert ≥ 94 %, Seitendifferenz je Richtung ≤ 4 cm), Kraft (isokinetische Testung, Heel-Rise-Test mit ≥ 30 einbeinigen Hebungen, 5 kontrollierte einbeinige Kniebeugen), Sprung/Landung (einbeiniger Drop Jump mit LSI > 90; Side Hop: 10 Sprünge unter 13 Sekunden, LSI 90–110). Die psychologische Bereitschaft kann per Fragebogen geprüft werden (CAIT, FAAM, I-PRRS).\n\nPhase 5 — Wiederaufnahme des Wettkampfbetriebs: individuelle sportmedizinische Entscheidung je nach Niveau und Sportart; im Wettkampf ist eine externe Stabilisierung mit Orthese oder Tape in den ersten 6–12 Monaten sinnvoll."
+          "titel": "Wie das Training abläuft",
+          "text": "Das Programm ist in Stufen aufgebaut, die sich am Heilungsfortschritt orientieren. Zu Beginn stehen Abschwellung und die Wiederkehr der Beweglichkeit im Vordergrund, danach folgen Stabilisations- und Balanceübungen mit zunehmendem Schwierigkeitsgrad, etwa vom festen zum wackeligen Untergrund, vom beidbeinigen zum einbeinigen Stand und mit geschlossenen Augen. Der Schwierigkeitsgrad wird immer erst dann gesteigert, wenn die jeweilige Übung sicher und schmerzfrei gelingt.\n\nDie ersten Stufen sind für alle Betroffenen sinnvoll und gut umsetzbar. Für ambitionierte Hobby- und Leistungssportler gibt es darüber hinaus eine sportartspezifische Rückkehr zum Sport und zum Wettkampf mit gezielten Belastungstests, die eine sportmedizinische Betreuung erfordert. Alle konkreten Übungen und Stufen finden sich im Nicht-OP-Begleiter.\n\n[Zum Übungsprogramm nach Außenbandverletzung](?nonop=aussenband_konservativ)\n\n[Zum Übungsprogramm bei chronischer Sprunggelenkinstabilität](?nonop=sprunggelenk_instabilitaet)"
         },
         {
           "titel": "Was die Studienlage zeigt",
-          "text": "Mit spezifischem Training kann die Rate wiederholter Verletzungen um etwa 40 % reduziert werden [[neuromuskulaer_aussenband_q1]] — angesichts der großen Zahl Betroffener hochrelevant, da wiederholte Verletzungen ein erhebliches Risiko für vorzeitigen Gelenkverschleiß mit Folgebehandlungen oder Operationen bergen. Propriozeptives Balance-Board-Training senkt die Rate von Sprunggelenksverstauchungen nachweislich [[neuromuskulaer_aussenband_q2]]."
+          "text": "Die Belege für das neuromuskuläre Training sind gut. Nach einer Bandverletzung senkt es die Rate erneuter Verletzungen deutlich, in Übersichtsarbeiten um rund 35 bis 40 Prozent [[neuromuskulaer_aussenband_q3]][[neuromuskulaer_aussenband_q5]], und es verringert auch bei sportlich Aktiven insgesamt das Verletzungsrisiko [[neuromuskulaer_aussenband_q4]][[neuromuskulaer_aussenband_q6]]. Bei älteren Menschen ist die sturzvorbeugende Wirkung eines Gleichgewichtstrainings mit hoher Sicherheit belegt [[neuromuskulaer_aussenband_q7]].\n\nDas genaue nötige Trainingsvolumen ist noch unklar. Ein höheres Volumen wird als günstig vermutet, ein eindeutiger Zusammenhang zwischen Umfang und Erfolg ließ sich in einer Übersichtsarbeit aber nicht sichern [[neuromuskulaer_aussenband_q5]]. Da die Zahl der Betroffenen sehr groß ist und wiederholte Verletzungen ein erhebliches Verschleißrisiko bergen, ist der Nutzen dennoch von großer Bedeutung.\n\n[Mehr zur chronischen Sprunggelenkinstabilität](?op=clai_kb&modus=aufklaerung)"
         },
         {
           "titel": "Quellen",
-          "text": "[1] Wagemans J, Bleakley C, Taeymans J, et al. Exercise-based rehabilitation reduces reinjury following acute lateral ankle sprain: systematic review with meta-analysis. PLoS One. 2022;17(2):e0262023.\n[2] Verhagen E, van der Beek A, Twisk J, et al. Proprioceptive balance board training for prevention of ankle sprains: prospective controlled trial. Am J Sports Med. 2004;32(6):1385–9.\n[3] Gribble PA, Bleakley CM, Caulfield BM, et al. 2016 International Ankle Consortium consensus statement on lateral ankle sprains. Br J Sports Med. 2016;50(24):1496–505.\n[4] Hultman K, Fältström A, Öberg U. The effect of early physiotherapy after an acute ankle sprain. Adv Physiother. 2010;12(2):65–73.\n[5] Hubbard TJ, Hicks-Little CA. Ankle Ligament Healing After an Acute Ankle Sprain: An Evidence-Based Approach. J Athl Train. 2008;43(5):523–529.\n[6] Gribble PA, Hertel J, Plisky P. Using the Star Excursion Balance Test to assess dynamic postural-control deficits: systematic review. J Athl Train. 2012;47(3):339–57.\n[7] Sigonney F, Lopes R, Bouché PA, et al. The ALR-RSI scale to quantify psychological readiness before returning to sport. Knee Surg Sports Traumatol Arthrosc. 2020;28:4003–4010.\n[8] Chinn L, Hertel J. Rehabilitation of ankle and foot injuries in athletes. Clin Sports Med. 2010;29(1):157–67.\n[9] Bleakley CM, O'Connor SR, Tully MA, et al. Effect of accelerated rehabilitation on function after ankle sprain: RCT. BMJ. 2010;340:c1964.\n[10] Wester JU, Jespersen SM, Nielsen KD, Neumann L. Wobble board training after partial sprains of the lateral ligaments: prospective randomized study. J Orthop Sports Phys Ther. 1996;23(5):332–6.\n[11] Holme E, Magnusson SP, Becher K, et al. Effect of supervised rehabilitation on strength, postural sway, position sense and re-injury risk after acute ankle sprain. Scand J Med Sci Sports. 1999;9:104–9.\n[12] van den Bekerom MPJ, Sjer A, Somford MP, et al. NSAIDs for treating acute ankle sprains in adults. Knee Surg Sports Traumatol Arthrosc. 2015;23(8):2390–2399.\n[13] Bloch H, et al. Return-to-Competition-Testmanual nach akuter lateraler Bandverletzung am Sprunggelenk. VBG; 2019.\n[14] Hupperets MD, Verhagen EA, van Mechelen W. Unsupervised proprioceptive balance board training to prevent ankle sprain recurrences: RCT design (2BFit). BMC Musculoskelet Disord. 2008;9:71.\n[15] Waizy H, Harrasser N, Fehske K. Außenbandverletzungen. Unfallchirurg. 2018;121:683–692."
+          "text": "[1] Gribble PA, Bleakley CM, Caulfield BM, et al. Evidence review for the 2016 International Ankle Consortium consensus statement on the prevalence, impact and long-term consequences of lateral ankle sprains. Br J Sports Med. 2016;50(24):1496-1505. doi:10.1136/bjsports-2016-096189\n[2] Hubbard TJ, Hicks-Little CA. Ankle ligament healing after an acute ankle sprain: an evidence-based approach. J Athl Train. 2008;43(5):523-529. doi:10.4085/1062-6050-43.5.523\n[3] Hupperets MDW, Verhagen EALM, van Mechelen W. Effect of unsupervised home based proprioceptive training on recurrences of ankle sprain: randomised controlled trial. BMJ. 2009;339:b2684. doi:10.1136/bmj.b2684\n[4] Schiftan GS, Ross LA, Hahne AJ. The effectiveness of proprioceptive training in preventing ankle sprains in sporting populations: a systematic review and meta-analysis. J Sci Med Sport. 2015;18(3):238-244. doi:10.1016/j.jsams.2014.04.005\n[5] Wagemans J, Bleakley C, Taeymans J, et al. Exercise-based rehabilitation reduces reinjury following acute lateral ankle sprain: a systematic review update with meta-analysis. PLoS One. 2022;17(2):e0262023. doi:10.1371/journal.pone.0262023\n[6] Lauersen JB, Bertelsen DM, Andersen LB. The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials. Br J Sports Med. 2014;48(11):871-877. doi:10.1136/bjsports-2013-092538\n[7] Sherrington C, Fairhall NJ, Wallbank GK, et al. Exercise for preventing falls in older people living in the community. Cochrane Database Syst Rev. 2019;1:CD012424. doi:10.1002/14651858.CD012424.pub2"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
-      "_review": true,
+      "stand": "Juli 2026",
+      "_review": false,
       "_programm": true,
       "quellen": [
         {
           "id": "neuromuskulaer_aussenband_q1",
-          "text": "Wagemans J, Bleakley C, Taeymans J, et al. Exercise-based rehabilitation reduces reinjury following acute lateral ankle sprain: systematic review with meta-analysis. PLoS One. 2022;17(2):e0262023."
+          "text": "Gribble PA, Bleakley CM, Caulfield BM, et al. Evidence review for the 2016 International Ankle Consortium consensus statement on the prevalence, impact and long-term consequences of lateral ankle sprains. Br J Sports Med. 2016;50(24):1496-1505. doi:10.1136/bjsports-2016-096189"
         },
         {
           "id": "neuromuskulaer_aussenband_q2",
-          "text": "Verhagen E, van der Beek A, Twisk J, et al. Proprioceptive balance board training for prevention of ankle sprains: prospective controlled trial. Am J Sports Med. 2004;32(6):1385–9."
+          "text": "Hubbard TJ, Hicks-Little CA. Ankle ligament healing after an acute ankle sprain: an evidence-based approach. J Athl Train. 2008;43(5):523-529. doi:10.4085/1062-6050-43.5.523"
         },
         {
           "id": "neuromuskulaer_aussenband_q3",
-          "text": "Gribble PA, Bleakley CM, Caulfield BM, et al. 2016 International Ankle Consortium consensus statement on lateral ankle sprains. Br J Sports Med. 2016;50(24):1496–505."
+          "text": "Hupperets MDW, Verhagen EALM, van Mechelen W. Effect of unsupervised home based proprioceptive training on recurrences of ankle sprain: randomised controlled trial. BMJ. 2009;339:b2684. doi:10.1136/bmj.b2684"
         },
         {
           "id": "neuromuskulaer_aussenband_q4",
-          "text": "Hultman K, Fältström A, Öberg U. The effect of early physiotherapy after an acute ankle sprain. Adv Physiother. 2010;12(2):65–73."
+          "text": "Schiftan GS, Ross LA, Hahne AJ. The effectiveness of proprioceptive training in preventing ankle sprains in sporting populations: a systematic review and meta-analysis. J Sci Med Sport. 2015;18(3):238-244. doi:10.1016/j.jsams.2014.04.005"
         },
         {
           "id": "neuromuskulaer_aussenband_q5",
-          "text": "Hubbard TJ, Hicks-Little CA. Ankle Ligament Healing After an Acute Ankle Sprain: An Evidence-Based Approach. J Athl Train. 2008;43(5):523–529."
+          "text": "Wagemans J, Bleakley C, Taeymans J, et al. Exercise-based rehabilitation reduces reinjury following acute lateral ankle sprain: a systematic review update with meta-analysis. PLoS One. 2022;17(2):e0262023. doi:10.1371/journal.pone.0262023"
         },
         {
           "id": "neuromuskulaer_aussenband_q6",
-          "text": "Gribble PA, Hertel J, Plisky P. Using the Star Excursion Balance Test to assess dynamic postural-control deficits: systematic review. J Athl Train. 2012;47(3):339–57."
+          "text": "Lauersen JB, Bertelsen DM, Andersen LB. The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials. Br J Sports Med. 2014;48(11):871-877. doi:10.1136/bjsports-2013-092538"
         },
         {
           "id": "neuromuskulaer_aussenband_q7",
-          "text": "Sigonney F, Lopes R, Bouché PA, et al. The ALR-RSI scale to quantify psychological readiness before returning to sport. Knee Surg Sports Traumatol Arthrosc. 2020;28:4003–4010."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q8",
-          "text": "Chinn L, Hertel J. Rehabilitation of ankle and foot injuries in athletes. Clin Sports Med. 2010;29(1):157–67."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q9",
-          "text": "Bleakley CM, O'Connor SR, Tully MA, et al. Effect of accelerated rehabilitation on function after ankle sprain: RCT. BMJ. 2010;340:c1964."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q10",
-          "text": "Wester JU, Jespersen SM, Nielsen KD, Neumann L. Wobble board training after partial sprains of the lateral ligaments: prospective randomized study. J Orthop Sports Phys Ther. 1996;23(5):332–6."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q11",
-          "text": "Holme E, Magnusson SP, Becher K, et al. Effect of supervised rehabilitation on strength, postural sway, position sense and re-injury risk after acute ankle sprain. Scand J Med Sci Sports. 1999;9:104–9."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q12",
-          "text": "van den Bekerom MPJ, Sjer A, Somford MP, et al. NSAIDs for treating acute ankle sprains in adults. Knee Surg Sports Traumatol Arthrosc. 2015;23(8):2390–2399."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q13",
-          "text": "Bloch H, et al. Return-to-Competition-Testmanual nach akuter lateraler Bandverletzung am Sprunggelenk. VBG; 2019."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q14",
-          "text": "Hupperets MD, Verhagen EA, van Mechelen W. Unsupervised proprioceptive balance board training to prevent ankle sprain recurrences: RCT design (2BFit). BMC Musculoskelet Disord. 2008;9:71."
-        },
-        {
-          "id": "neuromuskulaer_aussenband_q15",
-          "text": "Waizy H, Harrasser N, Fehske K. Außenbandverletzungen. Unfallchirurg. 2018;121:683–692."
+          "text": "Sherrington C, Fairhall NJ, Wallbank GK, et al. Exercise for preventing falls in older people living in the community. Cochrane Database Syst Rev. 2019;1:CD012424. doi:10.1002/14651858.CD012424.pub2"
         }
       ]
     }
