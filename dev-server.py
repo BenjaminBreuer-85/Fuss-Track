@@ -55,6 +55,13 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def do_GET(self):
+        # Kurzlink auf das Startmenue (ohne Deep-Link-Parameter wie ?nonop=).
+        if self.path in ("/start", "/start/"):
+            self.send_response(302)
+            self.send_header("Location", "/fusstrack.html")
+            self.end_headers()
+            return
+
         if self.path == "/__livereload":
             body = watch_token().encode()
             self.send_response(200)
@@ -89,6 +96,7 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     server = ThreadingHTTPServer(("localhost", PORT), Handler)
     print(f"Fußtrack-Devserver läuft: http://localhost:{PORT}/fusstrack.html")
+    print(f"Startmenü (ohne Deep-Link): http://localhost:{PORT}/start")
     print("Live-Reload aktiv – Seite lädt bei Dateiänderungen automatisch neu. Beenden mit Ctrl+C.")
     try:
         server.serve_forever()
