@@ -6781,103 +6781,143 @@
   "NONOP_MASSNAHMEN": {
     "stosswelle": {
       "titel": "Stoßwellentherapie (extrakorporale Stoßwelle, ESWT)",
-      "kurz": "Druckwellen von außen regen die Heilung von Sehnen-, Knochen- und Weichteilbeschwerden an.",
+      "kurz": "Von außen aufgebrachte Druckwellen regen die Heilung von Sehnen-, Knochen- und Weichteilbeschwerden an. Am Fuß und Sprunggelenk ist sie vor allem bei der Plantarfasziitis und der Achillessehnen-Tendinopathie gut belegt, ergänzend auch bei gestörter Knochenheilung.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "Stoßwellengeräte erzeugen hochenergetische **Druckimpulse** (Dauer im Mikrosekundenbereich, Spitzendrücke 35–120 MPa). Im Gewebe entstehen durch den schnellen Druckwechsel kleine **Kavitationsblasen**; die Energieentladung regt einen Heilungsimpuls an. Beschrieben werden ein schmerzstillender **Soforteffekt (Hyperstimulationsanalgesie)** und über **Mechanotransduktion** vermittelte, zeitverzögerte Effekte mit Wirkung nach 8–12 Wochen. Es gibt zwei Arten: die **fokussierte** (gebündelt, dringt tiefer ein) und die **radiale** Stoßwelle (gleichmäßige Ausbreitung). Experimentell belegt sind u. a. die Bildung neuer Blutgefäße und Kollagensynthese in verschlissenem Sehnengewebe [[stosswelle_q1]] sowie erhöhte Heilungsfaktoren (TGF-β1, IGF-1) und erniedrigte heilungshemmende Faktoren in Sehnenzellen [[stosswelle_q2]][[stosswelle_q3]]."
+          "text": "Stoßwellengeräte erzeugen hochenergetische Druckimpulse von Mikrosekunden Dauer mit Spitzendrücken von etwa 35 bis 120 MPa. Durch den raschen Wechsel von hohem zu niedrigem Druck entstehen im Gewebe kleine Kavitationsbläschen. Man geht davon aus, dass die Energieabgabe einen Heilungsreiz setzt. Beschrieben werden ein sofortiger schmerzstillender Effekt (Hyperstimulationsanalgesie) sowie über die sogenannte Mechanotransduktion vermittelte, zeitverzögerte Effekte, die erst nach etwa 8 bis 12 Wochen wirken.\n\nEs gibt zwei Formen: die **fokussierte** und die **radiale** Stoßwelle. Bei der fokussierten wird die Energie gebündelt auf eine Stelle zentriert und dringt tiefer ins Gewebe ein, bei der radialen breitet sie sich gleichmäßig von der Auflagestelle aus.\n\nExperimentell wurden viele Effekte belegt: eine Schmerzverminderung, die Bildung neuer Blutgefäße und eine vermehrte Kollagenbildung in geschädigtem Sehnengewebe [[stosswelle_q6]]. Im Tiermodell stiegen heilungsrelevante Faktoren wie TGF-beta1 und IGF-1 [[stosswelle_q4]], und in Zellversuchen sanken heilungshemmende Stoffe wie Interleukine und Enzyme (MMP) in Sehnenzellen [[stosswelle_q5]]."
         },
         {
           "titel": "Anwendung",
-          "text": "Hauptanwendungsgebiet sind **Sehnenansatzentzündungen** (Plantarfasziitis, Achillodynie, Tennisellenbogen, Kalkschulter); daneben zur Beschleunigung der Knochenheilung oder muskulären Rehabilitation. Meist **4–8 Termine im Wochentakt**; nach der Anwendung sind sanfte Dehnübungen und Kühlung sinnvoll. Bei bestimmten Indikationen und ausreichender Beschwerdedauer erfolgt eine Kostenübernahme durch die gesetzlichen Kassen."
+          "text": "Hauptanwendungsgebiet sind **Sehnenansatzbeschwerden** wie die Plantarfasziitis, die Achillessehnenreizung, der Tennisellenbogen oder die Kalkschulter. Unter bestimmten Bedingungen und ab einer gewissen Beschwerdedauer werden diese Anwendungen auch von den gesetzlichen Kassen übernommen. Daneben wird die Stoßwelle eingesetzt, um eine knöcherne Heilung zu beschleunigen oder eine Muskelverletzung schneller zu rehabilitieren.\n\nJe nach Zielstruktur finden meist vier bis acht Sitzungen im Wochenabstand statt. Nach der Anwendung sind sanfte Dehnübungen und Kühlung sinnvoll. Ein gleichzeitig eingesetztes örtliches Betäubungsmittel verringert die Wirksamkeit."
         },
         {
           "titel": "Ergebnisse — Plantarfasziitis",
-          "text": "Gut erforscht und als wirksam belegt; empfohlen bei fehlender Besserung nach 3–6 Monaten, ab **6 Monaten** Beschwerdedauer Kassenübernahme. Meist 4–6 Sitzungen, Besserung nach 4–6 Wochen [[stosswelle_q4]]. Eine Studie zeigte eine abnehmende Faszien-Dicke über 4 Wochen bis 6 Monate [[stosswelle_q5]]; die Wirksamkeit war besser bei radiologisch kontrollierter Behandlung [[stosswelle_q1]] und verkürzt die Arbeitsunfähigkeit stärker als andere nicht-operative Verfahren [[stosswelle_q6]]. **Mittel- bis hochenergetische (>0,08 mJ/mm²) sowie radiale** Stoßwelle scheinen wirksam; der Studienvergleich ist wegen unterschiedlicher Geräte/Einstellungen erschwert."
+          "text": "Bei der **Plantarfasziitis** ist die Stoßwelle gut untersucht und als wirksam belegt. Sie wird bei ausbleibender Besserung nach 3 bis 6 Monaten empfohlen und ab 6 Monaten Beschwerdedauer von den gesetzlichen Kassen übernommen. Üblich sind vier bis sechs Sitzungen, eine Besserung ist nach vier bis sechs Wochen zu erwarten.\n\nMehrere Meta-Analysen belegen die Wirksamkeit [[stosswelle_q8]][[stosswelle_q9]][[stosswelle_q10]]. Im Bildgebungsverlauf nahm die Dicke der Sehnenplatte ab [[stosswelle_q7]]. Wirksam erscheinen vor allem mittel- bis höherenergetische Anwendungen (über etwa 0,08 mJ/mm²) sowie die radiale Stoßwelle [[stosswelle_q11]]. Die Stoßwelle verkürzt zudem die Arbeitsunfähigkeit stärker als andere nicht-operative Verfahren [[stosswelle_q9]]. Der Vergleich einzelner Studien ist allerdings schwierig, da sehr unterschiedliche Geräte, Einstellungen und Konzepte verwendet werden [[stosswelle_q10]], und radiologisch kontrolliert durchgeführte Behandlungen wirken besser [[stosswelle_q6]]. [Mehr zur Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung)"
         },
         {
           "titel": "Ergebnisse — Achillessehne",
-          "text": "Bei der **Mid-Portion-Tendinopathie** gute Datenlage: Besserung gegenüber Abwarten/Schonung [[stosswelle_q7]], ähnlich wie exzentrische Übungen [[stosswelle_q8]]. **Besonders wirksam ist ESWT in Kombination mit exzentrischen Übungen** — nach ~4 Monaten waren 82 % sehr zufrieden (vs. 56 % bei alleinigen Übungen) [[stosswelle_q9]]. Gleichzeitige Lokalanästhetika verringern die Wirkung. Eine Anwendung in der Remodeling-Phase ab der 4. Woche erscheint meist sinnvoll."
+          "text": "Bei der schmerzhaften Achillessehne ist die Datenlage vor allem für den **mittleren Abschnitt (Mid-Portion)** gut. Die Stoßwelle bessert den Befund gegenüber bloßem Abwarten [[stosswelle_q1]] und wirkt ähnlich gut wie exzentrische Übungen [[stosswelle_q3]]. Besonders wirksam ist die **Kombination** aus Stoßwelle und exzentrischem Training: Nach etwa vier Monaten waren damit rund 82 Prozent sehr zufrieden, gegenüber nur 56 Prozent mit den Übungen allein [[stosswelle_q2]].\n\nDer beste Zeitpunkt bei Sehnenverletzungen ist noch unklar. In der Akutphase wird meist nicht behandelt, eine Anwendung ab etwa der vierten Woche (Umbauphase) erscheint sinnvoll. [Mehr zur Mid-Portion-Tendinopathie](?op=achilles_midportion_kb&modus=aufklaerung) [Mehr zum Belastungstraining der Achillessehne](?massnahme=achilles_tendoloading)"
         },
         {
-          "titel": "Ergebnisse — Knochenmarködem / schlecht heilende Brüche",
-          "text": "Ein Review (8 Arbeiten) zu schlecht heilenden Knochenverletzungen am Fuß/Sprunggelenk zeigte **Heilungsraten von 65–90 % über 3–6 Monate** — vergleichbar mit einer operativen Revision [[stosswelle_q10]]. Nachgewiesen sind ein Anstieg knochenrelevanter Wachstumsfaktoren (BMP-2, Osteocalcin, TGF-β, VEGF) und erhöhte Osteoprogenitorzell-Aktivität. Bei **Knochenmarködem/Osteonekrose** wurde eine signifikante Schmerzlinderung über 1–12 Monate beschrieben (bei noch begrenzter Datenqualität) [[stosswelle_q11]][[stosswelle_q12]]."
+          "titel": "Ergebnisse — Knochenheilung und Knochenmarködem",
+          "text": "Die Stoßwelle setzt gezielt kleine Mikroverletzungen im Knochen, um eine neue Heilung anzustoßen. Nachgewiesen ist ein Anstieg knochenrelevanter Wachstumsfaktoren (BMP-2, Osteocalcin, TGF-beta, VEGF) und eine gesteigerte Aktivität knochenbildender Zellen [[stosswelle_q12]].\n\nFür **schlecht heilende Brüche am Fuß und Sprunggelenk** fasste eine Übersicht acht Arbeiten zusammen und beschrieb Heilungsraten von 65 bis 90 Prozent über 3 bis 6 Monate, vergleichbar mit einer operativen Revision [[stosswelle_q20]]. Bei tief liegenden Knochen wird die fokussierte, bei oberflächlichen auch die radiale Stoßwelle genutzt [[stosswelle_q21]].\n\nAuf dieser Grundlage wird die Stoßwelle auch bei **Stressfrakturen und Knochenmarködemen** eingesetzt, mit dem Ziel, die Durchblutung und Gefäßbildung zu fördern. Übersichtsarbeiten beschreiben eine Besserung bei Knochennekrosen und schmerzhaftem Knochenmarködem, bei allerdings noch begrenzter Datenqualität [[stosswelle_q22]][[stosswelle_q23]], und in einer Studie am Knie wirkte die Stoßwelle beim Knochenmarködem besser als eine medikamentöse Therapie mit Bisphosphonaten [[stosswelle_q24]]. [Mehr zu Stressfraktur und Knochenmarködem](?op=stressfraktur_kmoe_kb&modus=aufklaerung) [Mehr zur proximalen Fraktur des 5. Mittelfußknochens](?op=mfk5_fraktur_kb&modus=aufklaerung) [Mehr zur Ultraschalltherapie bei gestörter Knochenheilung](?massnahme=lipus)"
         },
         {
           "titel": "Ergebnisse — Muskelverletzungen",
-          "text": "In der Sportmedizin bei Prellungen, Muskelfaser-/Bündelrissen: **kürzere Return-to-Sport-Zeit und geringere Re-Verletzungsrate** (v. a. Typ-1a/2b-Verletzungen), vorrangig durch verkürzte Erholung, weniger durch Schmerzreduktion [[stosswelle_q13]]. Belegt sind positive Effekte auf Mikrozirkulation und Reparaturprozesse im Muskel."
+          "text": "In der Sportmedizin wird die Stoßwelle bei Muskelverletzungen wie schweren Prellungen sowie Muskelfaser- und Bündelrissen eingesetzt. Die Rückkehr zum Sport war deutlich schneller und die Rate erneuter Verletzungen geringer, vor allem bei leichteren Verletzungen [[stosswelle_q14]]. Die Stoßwelle scheint dabei eher die Erholungszeit zu verkürzen als den Schmerz zu senken [[stosswelle_q15]]. Im Labor verbesserte sie die Durchblutung des Muskels und beschleunigte die Reparaturvorgänge [[stosswelle_q16]][[stosswelle_q17]], und diese Effekte ließen sich auch für die fokussierte Stoßwelle zeigen [[stosswelle_q18]]. Zur Auflösung von Muskelblutergüssen (Hämatomen) gibt es bislang nur Einzelfallberichte [[stosswelle_q19]]."
         },
         {
-          "titel": "Mögliche Nebenwirkungen / Kontraindikationen",
-          "text": "Vorübergehend Schmerzen, Rötung, Schwellung oder kleine Blutergüsse an der behandelten Stelle. Zurückhaltung bei Blutgerinnungsstörungen/Blutverdünnung, akuter Infektion, Tumoren im Behandlungsgebiet sowie in der Schwangerschaft (individuell ärztlich prüfen)."
+          "titel": "Mögliche Nebenwirkungen und Gegenanzeigen",
+          "text": "Eine Übersicht über 39 Arbeiten zur Plantarfasziitis fand außer Schmerzen während der Anwendung, örtlicher Schwellung und einer vorübergehenden Rötung mit kleinen Hauteinblutungen keine Nebenwirkungen im ersten Jahr nach der Behandlung [[stosswelle_q13]]. Insgesamt gilt die Stoßwelle bei Beschwerden des Bewegungsapparates als sicher und nebenwirkungsarm [[stosswelle_q25]].\n\nZurückhaltung ist geboten bei Gerinnungsstörungen oder Blutverdünnung, bei Infekten oder Tumoren im Behandlungsgebiet, in der Schwangerschaft sowie über offenen Wachstumsfugen bei Kindern."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Speed C. A systematic review of shockwave therapies in soft tissue conditions. Br J Sports Med. 2014.\n[2] Chen YJ, et al. Extracorporeal shock waves promote healing of collagenase-induced Achilles tendinitis and increase TGF-β1 and IGF-1 expression. J Orthop Res. 2004.\n[3] Han SH, et al. Effect of extracorporeal shock wave therapy on cultured tenocytes. Foot Ankle Int. 2009.\n[4] Ogden JA, et al. Shock wave therapy for chronic proximal plantar fasciitis. 2002.\n[5] Al-Abbad H, et al. ESWT and plantar fascia thickness. 2020.\n[6] Sun J, et al. ESWT vs. other non-operative techniques for plantar fasciitis. 2017.\n[7] Mani-Babu S, et al. The effectiveness of extracorporeal shockwave therapy in lower limb tendinopathy. Am J Sports Med. 2015.\n[8] Rompe JD, et al. Eccentric loading vs. shock-wave treatment for chronic Achilles tendinopathy. 2007.\n[9] Rompe JD, et al. Eccentric loading compared with shock wave treatment for midportion Achilles tendinopathy. J Bone Joint Surg Am. 2009.\n[10] Kwok IHY, et al. Extracorporeal shockwave therapy in foot and ankle non-unions: a review. 2020.\n[11] Sconza C, et al. ESWT for bone marrow edema/osteonecrosis: systematic review. 2022.\n[12] Häußer J, et al. ESWT for painful bone marrow edema. 2021.\n[13] Morgen (zit. n. mediq). ESWT bei Muskelverletzungen, Return-to-sport. 2021.\n[14] ESWT bei Plantarfasziopathie — Meta-Analyse 2024 (ergänzt): PMC11561739.\n[15] ESWT Achilles/Patellar/Plantar — Meta-Analyse 2023 (ergänzt): PMC10468604."
+          "text": "[1] Mani-Babu S, Morrissey D, Waugh C, Screen H, Barton C. The effectiveness of extracorporeal shock wave therapy in lower limb tendinopathy: a systematic review. Am J Sports Med. 2015;43(3):752-761. doi:10.1177/0363546514531911\n[2] Rompe JD, Furia J, Maffulli N. Eccentric loading versus eccentric loading plus shock-wave treatment for midportion Achilles tendinopathy: a randomized controlled trial. Am J Sports Med. 2009;37(3):463-470. doi:10.1177/0363546508326983\n[3] Rompe JD, Nafe B, Furia JP, Maffulli N. Eccentric loading, shock-wave treatment, or a wait-and-see policy for tendinopathy of the main body of tendo Achillis: a randomized controlled trial. Am J Sports Med. 2007;35(3):374-383. doi:10.1177/0363546506295940\n[4] Chen YJ, Wang CJ, Yang KD, et al. Extracorporeal shock waves promote healing of collagenase-induced Achilles tendinitis and increase TGF-beta1 and IGF-I expression. J Orthop Res. 2004;22(4):854-861. doi:10.1016/j.orthres.2003.10.013\n[5] Han SH, Lee JW, Guyton GP, et al. Effect of extracorporeal shock wave therapy on cultured tenocytes. Foot Ankle Int. 2009;30(2):93-98. doi:10.3113/FAI-2009-0093\n[6] Speed C. A systematic review of shockwave therapies in soft tissue conditions: focusing on the evidence. Br J Sports Med. 2014;48(21):1538-1542. doi:10.1136/bjsports-2012-091961\n[7] Al-Abbad H, Allen S, Morris S, et al. The effects of shockwave therapy on musculoskeletal conditions based on changes in imaging: a systematic review and meta-analysis with meta-regression. BMC Musculoskelet Disord. 2020;21(1):275. doi:10.1186/s12891-020-03270-w\n[8] Ogden JA, Alvarez RG, Marlow M. Shockwave therapy for chronic proximal plantar fasciitis: a meta-analysis. Foot Ankle Int. 2002;23(4):301-308. doi:10.1177/107110070202300402\n[9] Sun J, Gao F, Wang Y, Sun W, Jiang B, Li Z. Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: a meta-analysis of RCTs. Medicine (Baltimore). 2017;96(15):e6621. doi:10.1097/MD.0000000000006621\n[10] Dizon JN, Gonzalez-Suarez C, Zamora MT, Gambito ED. Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis. Am J Phys Med Rehabil. 2013;92(7):606-620. doi:10.1097/PHM.0b013e31828cd42b\n[11] Wang YC, Chen SJ, Huang PJ, et al. Efficacy of different energy levels used in focused and radial extracorporeal shockwave therapy in the treatment of plantar fasciitis: a meta-analysis of randomized placebo-controlled trials. J Clin Med. 2019;8(9):1497. doi:10.3390/jcm8091497\n[12] Wang CJ, Huang KE, Sun YC, et al. VEGF modulates angiogenesis and osteogenesis in shockwave-promoted fracture healing in rabbits. J Surg Res. 2011;171(1):114-119. doi:10.1016/j.jss.2010.01.045\n[13] Roerdink RL, Dietvorst M, van der Zwaard B, van der Worp H, Zwerver J. Complications of extracorporeal shockwave therapy in plantar fasciitis: systematic review. Int J Surg. 2017;46:133-145. doi:10.1016/j.ijsu.2017.08.587\n[14] Morgan JP, Hamm M, Schmitz C, Brem MH. Return to play after treating acute muscle injuries in elite football players with radial extracorporeal shock wave therapy. J Orthop Surg Res. 2021;16(1):708. doi:10.1186/s13018-021-02853-0\n[15] Nahon RL, Silva Lopes JS, Monteiro de Magalhães Neto A. Physical therapy interventions for the treatment of delayed onset muscle soreness (DOMS): systematic review and meta-analysis. Phys Ther Sport. 2021;52:1-12. doi:10.1016/j.ptsp.2021.07.005\n[16] Kisch T, Wuerfel W, Forstmeier V, et al. Repetitive shock wave therapy improves muscular microcirculation. J Surg Res. 2016;201(2):440-445. doi:10.1016/j.jss.2015.11.049\n[17] Zissler A, Steinbacher P, Zimmermann R, et al. Extracorporeal shock wave therapy accelerates regeneration after acute skeletal muscle injury. Am J Sports Med. 2017;45(3):676-684. doi:10.1177/0363546516668622\n[18] Astur DC, Santos B, de Moraes ER, Arliani GG, Dos Santos PR, Pochini AC. Extracorporeal shockwave therapy to treat chronic muscle injury. Acta Ortop Bras. 2015;23(5):247-250. doi:10.1590/1413-785220152305142211\n[19] Jung JW, Kim HS, Yang JH, Lee KH, Park SB. Extracorporeal shock wave therapy treatment of painful hematoma in the calf: a case report. World J Clin Cases. 2020;8(24):6511-6516. doi:10.12998/wjcc.v8.i24.6511\n[20] Kwok IHY, Ieong E, Aljalahma MA, Haldar A, Welck M. Extracorporeal shock wave treatment in foot and ankle fracture non-unions: a review. Foot (Edinb). 2022;51:101889. doi:10.1016/j.foot.2021.101889\n[21] Kertzman P, Csaszar NBM, Furia JP, Schmitz C. Radial extracorporeal shock wave therapy is efficient and safe in the treatment of fracture nonunions of superficial bones: a retrospective case series. J Orthop Surg Res. 2017;12(1):164. doi:10.1186/s13018-017-0667-z\n[22] Sconza C, Anzà M, Di Matteo B, et al. Extracorporeal shock wave therapy for the treatment of osteonecrosis and bone vascular diseases: a systematic review of randomized controlled trials. Eur Rev Med Pharmacol Sci. 2022;26(8):2949-2959. doi:10.26355/eurrev_202204_28626\n[23] Häußer J, Wieber J, Catalá-Lehnen P. The use of extracorporeal shock wave therapy for the treatment of bone marrow oedema: a systematic review and meta-analysis. J Orthop Surg Res. 2021;16(1):369. doi:10.1186/s13018-021-02484-5\n[24] Gao F, Sun W, Li Z, et al. Extracorporeal shock wave therapy in the treatment of primary bone marrow edema syndrome of the knee: a prospective randomised controlled study. BMC Musculoskelet Disord. 2015;16:379. doi:10.1186/s12891-015-0837-2\n[25] De la Corte-Rodríguez H, Román-Belmonte JM, Rodríguez-Damiani BA, Vázquez-Sasot A, Rodríguez-Merchán EC. Extracorporeal shock wave therapy for the treatment of musculoskeletal pain: a narrative review. Healthcare (Basel). 2023;11(21):2830. doi:10.3390/healthcare11212830"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "quellen": [
         {
           "id": "stosswelle_q1",
-          "text": "Speed C. A systematic review of shockwave therapies in soft tissue conditions. Br J Sports Med. 2014."
+          "text": "Mani-Babu S, Morrissey D, Waugh C, Screen H, Barton C. The effectiveness of extracorporeal shock wave therapy in lower limb tendinopathy: a systematic review. Am J Sports Med. 2015;43(3):752-761. doi:10.1177/0363546514531911"
         },
         {
           "id": "stosswelle_q2",
-          "text": "Chen YJ, et al. Extracorporeal shock waves promote healing of collagenase-induced Achilles tendinitis and increase TGF-β1 and IGF-1 expression. J Orthop Res. 2004."
+          "text": "Rompe JD, Furia J, Maffulli N. Eccentric loading versus eccentric loading plus shock-wave treatment for midportion Achilles tendinopathy: a randomized controlled trial. Am J Sports Med. 2009;37(3):463-470. doi:10.1177/0363546508326983"
         },
         {
           "id": "stosswelle_q3",
-          "text": "Han SH, et al. Effect of extracorporeal shock wave therapy on cultured tenocytes. Foot Ankle Int. 2009."
+          "text": "Rompe JD, Nafe B, Furia JP, Maffulli N. Eccentric loading, shock-wave treatment, or a wait-and-see policy for tendinopathy of the main body of tendo Achillis: a randomized controlled trial. Am J Sports Med. 2007;35(3):374-383. doi:10.1177/0363546506295940"
         },
         {
           "id": "stosswelle_q4",
-          "text": "Ogden JA, et al. Shock wave therapy for chronic proximal plantar fasciitis. 2002."
+          "text": "Chen YJ, Wang CJ, Yang KD, et al. Extracorporeal shock waves promote healing of collagenase-induced Achilles tendinitis and increase TGF-beta1 and IGF-I expression. J Orthop Res. 2004;22(4):854-861. doi:10.1016/j.orthres.2003.10.013"
         },
         {
           "id": "stosswelle_q5",
-          "text": "Al-Abbad H, et al. ESWT and plantar fascia thickness. 2020."
+          "text": "Han SH, Lee JW, Guyton GP, et al. Effect of extracorporeal shock wave therapy on cultured tenocytes. Foot Ankle Int. 2009;30(2):93-98. doi:10.3113/FAI-2009-0093"
         },
         {
           "id": "stosswelle_q6",
-          "text": "Sun J, et al. ESWT vs. other non-operative techniques for plantar fasciitis. 2017."
+          "text": "Speed C. A systematic review of shockwave therapies in soft tissue conditions: focusing on the evidence. Br J Sports Med. 2014;48(21):1538-1542. doi:10.1136/bjsports-2012-091961"
         },
         {
           "id": "stosswelle_q7",
-          "text": "Mani-Babu S, et al. The effectiveness of extracorporeal shockwave therapy in lower limb tendinopathy. Am J Sports Med. 2015."
+          "text": "Al-Abbad H, Allen S, Morris S, et al. The effects of shockwave therapy on musculoskeletal conditions based on changes in imaging: a systematic review and meta-analysis with meta-regression. BMC Musculoskelet Disord. 2020;21(1):275. doi:10.1186/s12891-020-03270-w"
         },
         {
           "id": "stosswelle_q8",
-          "text": "Rompe JD, et al. Eccentric loading vs. shock-wave treatment for chronic Achilles tendinopathy. 2007."
+          "text": "Ogden JA, Alvarez RG, Marlow M. Shockwave therapy for chronic proximal plantar fasciitis: a meta-analysis. Foot Ankle Int. 2002;23(4):301-308. doi:10.1177/107110070202300402"
         },
         {
           "id": "stosswelle_q9",
-          "text": "Rompe JD, et al. Eccentric loading compared with shock wave treatment for midportion Achilles tendinopathy. J Bone Joint Surg Am. 2009."
+          "text": "Sun J, Gao F, Wang Y, Sun W, Jiang B, Li Z. Extracorporeal shock wave therapy is effective in treating chronic plantar fasciitis: a meta-analysis of RCTs. Medicine (Baltimore). 2017;96(15):e6621. doi:10.1097/MD.0000000000006621"
         },
         {
           "id": "stosswelle_q10",
-          "text": "Kwok IHY, et al. Extracorporeal shockwave therapy in foot and ankle non-unions: a review. 2020."
+          "text": "Dizon JN, Gonzalez-Suarez C, Zamora MT, Gambito ED. Effectiveness of extracorporeal shock wave therapy in chronic plantar fasciitis: a meta-analysis. Am J Phys Med Rehabil. 2013;92(7):606-620. doi:10.1097/PHM.0b013e31828cd42b"
         },
         {
           "id": "stosswelle_q11",
-          "text": "Sconza C, et al. ESWT for bone marrow edema/osteonecrosis: systematic review. 2022."
+          "text": "Wang YC, Chen SJ, Huang PJ, et al. Efficacy of different energy levels used in focused and radial extracorporeal shockwave therapy in the treatment of plantar fasciitis: a meta-analysis of randomized placebo-controlled trials. J Clin Med. 2019;8(9):1497. doi:10.3390/jcm8091497"
         },
         {
           "id": "stosswelle_q12",
-          "text": "Häußer J, et al. ESWT for painful bone marrow edema. 2021."
+          "text": "Wang CJ, Huang KE, Sun YC, et al. VEGF modulates angiogenesis and osteogenesis in shockwave-promoted fracture healing in rabbits. J Surg Res. 2011;171(1):114-119. doi:10.1016/j.jss.2010.01.045"
         },
         {
           "id": "stosswelle_q13",
-          "text": "Morgen (zit. n. mediq). ESWT bei Muskelverletzungen, Return-to-sport. 2021."
+          "text": "Roerdink RL, Dietvorst M, van der Zwaard B, van der Worp H, Zwerver J. Complications of extracorporeal shockwave therapy in plantar fasciitis: systematic review. Int J Surg. 2017;46:133-145. doi:10.1016/j.ijsu.2017.08.587"
         },
         {
           "id": "stosswelle_q14",
-          "text": "ESWT bei Plantarfasziopathie — Meta-Analyse 2024 (ergänzt): PMC11561739."
+          "text": "Morgan JP, Hamm M, Schmitz C, Brem MH. Return to play after treating acute muscle injuries in elite football players with radial extracorporeal shock wave therapy. J Orthop Surg Res. 2021;16(1):708. doi:10.1186/s13018-021-02853-0"
         },
         {
           "id": "stosswelle_q15",
-          "text": "ESWT Achilles/Patellar/Plantar — Meta-Analyse 2023 (ergänzt): PMC10468604."
+          "text": "Nahon RL, Silva Lopes JS, Monteiro de Magalhães Neto A. Physical therapy interventions for the treatment of delayed onset muscle soreness (DOMS): systematic review and meta-analysis. Phys Ther Sport. 2021;52:1-12. doi:10.1016/j.ptsp.2021.07.005"
+        },
+        {
+          "id": "stosswelle_q16",
+          "text": "Kisch T, Wuerfel W, Forstmeier V, et al. Repetitive shock wave therapy improves muscular microcirculation. J Surg Res. 2016;201(2):440-445. doi:10.1016/j.jss.2015.11.049"
+        },
+        {
+          "id": "stosswelle_q17",
+          "text": "Zissler A, Steinbacher P, Zimmermann R, et al. Extracorporeal shock wave therapy accelerates regeneration after acute skeletal muscle injury. Am J Sports Med. 2017;45(3):676-684. doi:10.1177/0363546516668622"
+        },
+        {
+          "id": "stosswelle_q18",
+          "text": "Astur DC, Santos B, de Moraes ER, Arliani GG, Dos Santos PR, Pochini AC. Extracorporeal shockwave therapy to treat chronic muscle injury. Acta Ortop Bras. 2015;23(5):247-250. doi:10.1590/1413-785220152305142211"
+        },
+        {
+          "id": "stosswelle_q19",
+          "text": "Jung JW, Kim HS, Yang JH, Lee KH, Park SB. Extracorporeal shock wave therapy treatment of painful hematoma in the calf: a case report. World J Clin Cases. 2020;8(24):6511-6516. doi:10.12998/wjcc.v8.i24.6511"
+        },
+        {
+          "id": "stosswelle_q20",
+          "text": "Kwok IHY, Ieong E, Aljalahma MA, Haldar A, Welck M. Extracorporeal shock wave treatment in foot and ankle fracture non-unions: a review. Foot (Edinb). 2022;51:101889. doi:10.1016/j.foot.2021.101889"
+        },
+        {
+          "id": "stosswelle_q21",
+          "text": "Kertzman P, Csaszar NBM, Furia JP, Schmitz C. Radial extracorporeal shock wave therapy is efficient and safe in the treatment of fracture nonunions of superficial bones: a retrospective case series. J Orthop Surg Res. 2017;12(1):164. doi:10.1186/s13018-017-0667-z"
+        },
+        {
+          "id": "stosswelle_q22",
+          "text": "Sconza C, Anzà M, Di Matteo B, et al. Extracorporeal shock wave therapy for the treatment of osteonecrosis and bone vascular diseases: a systematic review of randomized controlled trials. Eur Rev Med Pharmacol Sci. 2022;26(8):2949-2959. doi:10.26355/eurrev_202204_28626"
+        },
+        {
+          "id": "stosswelle_q23",
+          "text": "Häußer J, Wieber J, Catalá-Lehnen P. The use of extracorporeal shock wave therapy for the treatment of bone marrow oedema: a systematic review and meta-analysis. J Orthop Surg Res. 2021;16(1):369. doi:10.1186/s13018-021-02484-5"
+        },
+        {
+          "id": "stosswelle_q24",
+          "text": "Gao F, Sun W, Li Z, et al. Extracorporeal shock wave therapy in the treatment of primary bone marrow edema syndrome of the knee: a prospective randomised controlled study. BMC Musculoskelet Disord. 2015;16:379. doi:10.1186/s12891-015-0837-2"
+        },
+        {
+          "id": "stosswelle_q25",
+          "text": "De la Corte-Rodríguez H, Román-Belmonte JM, Rodríguez-Damiani BA, Vázquez-Sasot A, Rodríguez-Merchán EC. Extracorporeal shock wave therapy for the treatment of musculoskeletal pain: a narrative review. Healthcare (Basel). 2023;11(21):2830. doi:10.3390/healthcare11212830"
         }
       ]
     },
@@ -7137,55 +7177,55 @@
     },
     "vitamin_d3": {
       "titel": "Vitamin-D3-Therapie",
-      "kurz": "Vitamin D3 fördert die Knochenhärtung; bei Mangel kann eine Einnahme sinnvoll sein — mit Begleitstoffen und Kontrollen.",
+      "kurz": "Vitamin D3 steuert den Knochen- und Calciumstoffwechsel und härtet den Knochen. Ein Mangel ist in unseren Breiten häufig. Bei belegtem Mangel ist eine Einnahme sinnvoll, zusammen mit ausreichend Calcium, Vitamin K2 und Magnesium sowie regelmäßigen Kontrollen.",
       "abschnitte": [
         {
           "titel": "Worum es geht",
-          "text": "Knochen besteht aus mineralischer Substanz, organischer Matrix (u. a. Kollagen 1) und Knochenzellen. Etwa **90 % des Körperkalziums** sind im Knochen gebunden; Ein- und Ausbau werden über **Parathormon, Calcitonin und Vitamin D3** sowie die Kalziumkonzentration im Blut gesteuert. Vitamin D3 **fördert die Härtung des Knochens**. Ein ausreichender Spiegel senkt das Risiko für **Stürze, Brüche, Mobilitäts- und Kraftverlust** im Alter und verbessert die Immunfunktion [[vitamin_d3_q1]]; Hinweise deuten auf einen günstigen Einfluss auf die Überlebensrate bei Krebs [[vitamin_d3_q2]]. Vitamin D3 wird unter **UV-B-Licht** in der Haut gebildet (Umwandlung in Leber und Niere zur aktiven Form 1,25-OH-D3); die Bildung schwankt mit Sonnenexposition und Breitengrad. Die Ernährung (fetter Seefisch, Eigelb, Pilze) deckt den Bedarf in der Regel **bei weitem nicht**. Solarium wird vom Bundesamt für Strahlenschutz nicht empfohlen."
+          "text": "Knochen besteht aus kalziumreicher Mineralsubstanz, organischer Grundsubstanz (etwa Kollagen Typ 1) und Knochenzellen (Osteozyten, Osteoblasten, Osteoklasten). Rund 90 Prozent des Körpercalciums sind im Knochen gebunden. Freisetzung und Einbau werden unter anderem durch Parathormon, Calcitonin und Vitamin D3 gesteuert, geregelt über die Mineralisierung des Knochens, die Calciumaufnahme im Darm und die Ausscheidung über die Niere. Vitamin D3 fördert in diesem Zusammenspiel die Härtung des Knochens.\n\nEine gute Versorgung senkt im Alter das Risiko für Stürze, Brüche und den Verlust von Beweglichkeit und Kraft. Für die Immunfunktion gibt es Hinweise auf günstige Effekte, die sich in klinischen Studien allerdings nicht immer bestätigen ließen, während das Vermeiden eines Mangels klar wichtig ist [[vitamin_d3_q1]]. Bei Krebspatienten deutet sich ein Nutzen an: In einer großen Auswertung senkte eine tägliche Vitamin-D-Einnahme die Krebssterblichkeit, über alle Studien hinweg war der Effekt aber knapp nicht statistisch gesichert [[vitamin_d3_q2]].\n\nVitamin D3 wird unter Sonnenlicht in der Haut gebildet: UV-B-Strahlung stößt die Umwandlung einer Vorstufe an, in der Leber entsteht daraus 25-OH-Vitamin-D3 und in der Niere die aktive Form 1,25-OH-Vitamin-D3. Die Eigenbildung schwankt daher mit Sonnenstand und Breitengrad. Zur Sicherung der Versorgung wird empfohlen, sich von März bis Oktober täglich etwa 5 bis 25 Minuten (je nach Hauttyp) mit unbedecktem Gesicht, Armen und Beinen zu sonnen. Die im Sommer aufgebauten Reserven können theoretisch für den Winter reichen. Ein Solariumbesuch zur Förderung der Bildung wird vom Bundesamt für Strahlenschutz ausdrücklich nicht empfohlen.\n\nÜber die Ernährung spielt die Zufuhr nur eine geringe Rolle. Vitamin D steckt vor allem in fettem Seefisch (Lachs, Hering, Makrele), Eigelb, Margarine und Pilzen, die zur Bedarfsdeckung nötige Menge wird darüber aber in der Regel bei Weitem nicht erreicht."
         },
         {
           "titel": "Anwendung und Dosierung",
-          "text": "Von einem **Mangel** spricht man bei 25-OH-Vitamin-D3 unter **30 nmol/l** (gute Versorgung 40–50 nmol/l). Präventive Dosierungen liegen bei **800–1000 IE/Tag** (DGE-Schätzwert 20 µg = 800 IE); bei deutlichem Mangel oder erhöhtem Bedarf (z. B. Osteoporose) zeitweise höher (z. B. 20.000 IE/Woche). **Vor** Therapie sollten Kalzium- und Nierenwerte bestimmt und Stoffwechselstörungen (z. B. Nebenschilddrüse) ausgeschlossen werden; **nach ~4 Wochen** Kontrolle von Kalzium und Spiegel. Wichtig sind Begleitstoffe: ausreichend **Kalzium (~1000 mg/Tag)**, **Vitamin K2** (all-trans, ~100–200 µg/Tag, für korrekte Aktivierung/Kalziumverteilung) und **Magnesium** (~200 mg/Tag, v. a. zu Beginn hochdosierter Therapie zur Umwandlung in die aktive Form)."
+          "text": "Von einem **Mangel** spricht man bei einer Serumkonzentration von 25-OH-Vitamin-D3 unter etwa 30 nmol/l, eine gute Versorgung liegt bei etwa 40 bis 50 nmol/l. Reicht die Eigenbildung nicht aus, ist eine Einnahme über Präparate sinnvoll, häufig in den Wintermonaten, wegen der guten Speicherfähigkeit aber auch zu anderen Zeiten wirksam.\n\nAls Schätzwert für eine angemessene Zufuhr nennt die Deutsche Gesellschaft für Ernährung (DGE) für Kinder, Jugendliche und Erwachsene 20 µg (800 Einheiten) pro Tag [[vitamin_d3_q6]]. Manche Fachleute halten das für zu niedrig und empfehlen höhere Dosen. Typische vorbeugende Dosierungen liegen bei 800 bis 1000 Einheiten pro Tag. Bei deutlichem Mangel oder erhöhtem Bedarf, etwa im Rahmen einer Osteoporose- oder Knochenbehandlung, können zeitweise höhere Dosen nötig sein, beispielsweise 20.000 Einheiten pro Woche.\n\nVor Beginn sollten Calcium- und Nierenwerte bestimmt und eine Stoffwechselstörung wie eine Überfunktion der Nebenschilddrüse ausgeschlossen werden. Im Verlauf werden Calciumwert und Vitaminspiegel kontrolliert (frühestens nach etwa vier Wochen), um die Dosis anzupassen.\n\nFür die Wirkung sind einige Begleitstoffe wichtig. Eine ausreichende **Calciumzufuhr** von etwa 1000 mg pro Tag lässt sich meist über die Ernährung decken. **Vitamin K2** unterstützt die richtige Verteilung des Calciums, bevorzugt in der natürlichen Form (all-trans MK-7, etwa 100 bis 200 µg pro Tag). **Magnesium** wird für die Umwandlung in die aktive Form benötigt, gerade zu Beginn einer hochdosierten Therapie kann eine zusätzliche Gabe von etwa 200 mg pro Tag sinnvoll sein. [Mehr zu Calcium, Vitamin K2 und Magnesium in der Ernährung](?massnahme=ernaehrung_bewegung)"
         },
         {
           "titel": "Mögliche Nebenwirkungen",
-          "text": "Eine **Überdosierung** ist nur durch überhöhte Medikamenteneinnahme möglich (längerfristig >4000 IE/Tag); viele Studien berichten gute Verträglichkeit auch höherer Dosen [[vitamin_d3_q3]][[vitamin_d3_q4]], was aber medizinisch überwacht werden muss. Möglich sind **Nierensteine/-verkalkungen, Hyperkalzämie**, Durchfall, vermehrtes Wasserlassen/Durst, Verstopfung, Kopfschmerz, Appetitlosigkeit, Übelkeit/Erbrechen [[vitamin_d3_q5]]."
+          "text": "Eine Überdosierung ist praktisch nur durch eine überhöhte Einnahme von Präparaten möglich. Dafür müssten über längere Zeit mehr als 4000 Einheiten pro Tag eingenommen werden. In Studien wurden auch deutlich höhere Dosen gut vertragen, etwa bis zu 20.000 Einheiten pro Tag [[vitamin_d3_q3]] oder hochdosierte Schemata über Jahre [[vitamin_d3_q4]]. Es besteht also eine gewisse Sicherheitsspanne, bei erhöhter Zufuhr ist aber eine ärztliche Überwachung nötig.\n\nBei einer echten Überdosierung kann der Calciumspiegel im Blut ansteigen (Hyperkalzämie). Mögliche Folgen sind Nierensteine oder Nierenverkalkungen sowie Beschwerden wie Durchfall, vermehrtes Wasserlassen und Durst, Verstopfung, Kopfschmerzen, Appetitlosigkeit, Übelkeit oder Erbrechen [[vitamin_d3_q5]]."
         },
         {
           "titel": "Wann nicht geeignet",
-          "text": "Nicht bei Erkrankungen mit erhöhtem Kalziumspiegel; Dosisanpassung bei Nierenerkrankungen; vor hochdosierter Therapie Stoffwechselstörung ausschließen (individuell ärztlich prüfen)."
+          "text": "Nicht ohne besondere ärztliche Kontrolle angewendet werden sollte eine (hochdosierte) Vitamin-D3-Therapie bei bereits erhöhtem Calciumspiegel, bei bestimmten Erkrankungen mit gesteigerter Vitamin-D-Aktivierung (etwa Sarkoidose und anderen granulomatösen Erkrankungen), bei schwerer Nierenfunktionsstörung sowie bei Nierensteinleiden. In diesen Fällen entscheidet die Ärztin oder der Arzt über Dosis und Kontrollen."
         },
         {
           "titel": "Quellen",
-          "text": "[1] Martens PJ, Gysemans C, Verstuyf A, Mathieu C. Vitamin D's effect on immune function. Nutrients. 2020;12(5):1248.\n[2] Kuznia S, et al. Efficacy of vitamin D3 supplementation on cancer mortality: systematic review and IPD meta-analysis of RCTs. Ageing Res Rev. 2023;87:101923.\n[3] Ekwaru JP, et al. The importance of body weight for the dose-response relationship of oral vitamin D. PLoS One. 2014.\n[4] Pietras SM, et al. Vitamin D treatment for deficiency and insufficiency for up to 6 years. Arch Intern Med. 2009.\n[5] Marcinowska-Suchowierska E, et al. Vitamin D toxicity — a clinical perspective. Front Endocrinol. 2018;9:550.\n[6] DGE-Referenzwerte Vitamin D: https://www.dge.de/wissenschaft/referenzwerte/vitamin-d/"
+          "text": "[1] Martens PJ, Gysemans C, Verstuyf A, Mathieu C. Vitamin D's effect on immune function. Nutrients. 2020;12(5):1248. doi:10.3390/nu12051248\n[2] Kuznia S, Zhu A, Akutsu T, et al. Efficacy of vitamin D3 supplementation on cancer mortality: systematic review and individual patient data meta-analysis of randomised controlled trials. Ageing Res Rev. 2023;87:101923. doi:10.1016/j.arr.2023.101923\n[3] Ekwaru JP, Zwicker JD, Holick MF, Giovannucci E, Veugelers PJ. The importance of body weight for the dose response relationship of oral vitamin D supplementation and serum 25-hydroxyvitamin D in healthy volunteers. PLoS One. 2014;9(11):e111265. doi:10.1371/journal.pone.0111265\n[4] Pietras SM, Obayan BK, Cai MH, Holick MF. Vitamin D2 treatment for vitamin D deficiency and insufficiency for up to 6 years. Arch Intern Med. 2009;169(19):1806-1808. doi:10.1001/archinternmed.2009.361\n[5] Marcinowska-Suchowierska E, Kupisz-Urbańska M, Łukaszkiewicz J, Płudowski P, Jones G. Vitamin D toxicity: a clinical perspective. Front Endocrinol (Lausanne). 2018;9:550. doi:10.3389/fendo.2018.00550\n[6] Deutsche Gesellschaft für Ernährung e. V. (DGE). Referenzwerte für die Vitamin-D-Zufuhr. www.dge.de/wissenschaft/referenzwerte/vitamin-d."
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "quellen": [
         {
           "id": "vitamin_d3_q1",
-          "text": "Martens PJ, Gysemans C, Verstuyf A, Mathieu C. Vitamin D's effect on immune function. Nutrients. 2020;12(5):1248."
+          "text": "Martens PJ, Gysemans C, Verstuyf A, Mathieu C. Vitamin D's effect on immune function. Nutrients. 2020;12(5):1248. doi:10.3390/nu12051248"
         },
         {
           "id": "vitamin_d3_q2",
-          "text": "Kuznia S, et al. Efficacy of vitamin D3 supplementation on cancer mortality: systematic review and IPD meta-analysis of RCTs. Ageing Res Rev. 2023;87:101923."
+          "text": "Kuznia S, Zhu A, Akutsu T, et al. Efficacy of vitamin D3 supplementation on cancer mortality: systematic review and individual patient data meta-analysis of randomised controlled trials. Ageing Res Rev. 2023;87:101923. doi:10.1016/j.arr.2023.101923"
         },
         {
           "id": "vitamin_d3_q3",
-          "text": "Ekwaru JP, et al. The importance of body weight for the dose-response relationship of oral vitamin D. PLoS One. 2014."
+          "text": "Ekwaru JP, Zwicker JD, Holick MF, Giovannucci E, Veugelers PJ. The importance of body weight for the dose response relationship of oral vitamin D supplementation and serum 25-hydroxyvitamin D in healthy volunteers. PLoS One. 2014;9(11):e111265. doi:10.1371/journal.pone.0111265"
         },
         {
           "id": "vitamin_d3_q4",
-          "text": "Pietras SM, et al. Vitamin D treatment for deficiency and insufficiency for up to 6 years. Arch Intern Med. 2009."
+          "text": "Pietras SM, Obayan BK, Cai MH, Holick MF. Vitamin D2 treatment for vitamin D deficiency and insufficiency for up to 6 years. Arch Intern Med. 2009;169(19):1806-1808. doi:10.1001/archinternmed.2009.361"
         },
         {
           "id": "vitamin_d3_q5",
-          "text": "Marcinowska-Suchowierska E, et al. Vitamin D toxicity — a clinical perspective. Front Endocrinol. 2018;9:550."
+          "text": "Marcinowska-Suchowierska E, Kupisz-Urbańska M, Łukaszkiewicz J, Płudowski P, Jones G. Vitamin D toxicity: a clinical perspective. Front Endocrinol (Lausanne). 2018;9:550. doi:10.3389/fendo.2018.00550"
         },
         {
           "id": "vitamin_d3_q6",
-          "text": "DGE-Referenzwerte Vitamin D: https://www.dge.de/wissenschaft/referenzwerte/vitamin-d/"
+          "text": "Deutsche Gesellschaft für Ernährung e. V. (DGE). Referenzwerte für die Vitamin-D-Zufuhr. www.dge.de/wissenschaft/referenzwerte/vitamin-d."
         }
       ]
     },
@@ -8694,45 +8734,41 @@
       ]
     },
     "short_foot": {
-      "titel": "Short-Foot-Übungen",
-      "kurz": "Gezielte Aktivierung der kleinen Fußmuskeln über das „Dooming“ — Basis bei Hallux valgus, Plantarfasziitis und Knick-Senk-Fuß.",
+      "titel": "Short-Foot-Übungen (Training der intrinsischen Fußmuskeln)",
+      "kurz": "Gezielte Aktivierung der kleinen Fußmuskeln über das „Dooming“, das Anheben des Fußgewölbes durch innere Anspannung. Ein risikoarmer Baustein bei Knick-Senk-Fuß, Plantarfasziitis und Hallux valgus. Der Effekt braucht Geduld, weil das Zusammenspiel von Nerv und Muskel erst wieder gelernt werden muss.",
       "abschnitte": [
         {
-          "titel": "Hinweis",
-          "text": "Die interaktive, schrittweise Version dieses Übungsprogramms findest du im Nicht-OP-Begleiter (Ohne Operation). Dort werden die Übungen als Stufenprogramm angeleitet — dies ist dieselbe Quelle."
-        },
-        {
           "titel": "Worum es geht",
-          "text": "Die „intrinsischen“ Fußmuskeln haben Ansatz und Ursprung im Fuß selbst. Sie stabilisieren Fuß und Fußgewölbe und entlasten Knochen und Gelenke vor Hebel-, Stauchungs- und Druckkräften. Durch stabiles Schuhwerk, unnatürlichen Untergrund und geringe körperliche Aktivität sind diese Muskeln beim modernen Menschen oft schwächer ausgeprägt und kaum bewusst ansteuerbar — ihre Aktivierung über bewusste Nervenimpulse wurde „verlernt“. Zentrales Element ist das „Dooming“ — das Anheben des Fußgewölbes über innere Muskelanspannung. Das ist oft eine sehr kleine Bewegung, die anfangs kaum sichtbar oder spürbar ist; mit der Zeit wird die Ansteuerbarkeit besser. Es braucht Geduld, bis die Übung als effektiv wahrgenommen wird, da die Abstimmung von Nerven und Muskeln bei vielen erst wieder vernetzt werden muss."
+          "text": "Die **intrinsischen Fußmuskeln** haben Ursprung und Ansatz im Fuß selbst. Sie stabilisieren den Fuß und das Fußgewölbe und entlasten so Knochen und Gelenke von Hebel-, Stauchungs- und Druckkräften.\n\nDurch festes Schuhwerk, ebene Böden und wenig Barfußbelastung sind diese Muskeln beim modernen Menschen oft schwach ausgeprägt und kaum bewusst ansteuerbar. Ihre gezielte Aktivierung über Nervenimpulse ist gewissermaßen „verlernt“.\n\nZentrales Element ist das **Dooming**, das Anheben des Fußgewölbes durch innere Muskelanspannung. Das ist häufig eine sehr kleine Bewegung, die anfangs kaum zu sehen oder zu spüren ist. Mit der Zeit verbessert sich die Ansteuerung, der Körper lernt wieder, diese Muskeln zu aktivieren. Es braucht daher einige Geduld, bis die Übung als wirksam empfunden wird, weil das Zusammenspiel von Nerven und Muskeln bei vielen Menschen erst wieder aufgebaut werden muss."
         },
         {
           "titel": "Die Übungen",
-          "text": "Übung 1 (im Sitzen): sitzend mit beiden Füßen flach am Boden; die Zehenmuskulatur entspannen (die Zehen nicht krallen); die Ballenregion zum Rückfuß anziehen, sodass sich das Gewölbe dazwischen anhebt — der Fuß „verkürzt“ sich; 3 Sätze à 10 Wiederholungen, die maximale Spannung jeweils einige Sekunden halten.\n\nÜbung 2 (im Stand): barfuß im hüftbreiten Stand, Gewicht auf beiden Füßen; den Vorfuß Richtung Rückfuß ziehen wie im Sitzen, mit Anheben des Gewölbes; 3 Sätze à 10 Wiederholungen, maximale Spannung einige Sekunden halten."
+          "text": "Wichtig bei beiden Übungen: Die Zehen bleiben entspannt und werden nicht gekrallt. Die maximale Anspannung wird jeweils einige Sekunden gehalten. Üblich sind drei Sätze mit je zehn Wiederholungen.\n\n**Übung 1 (im Sitzen):**\n\n- aufrecht sitzen, beide Füße flach auf dem Boden\n- die Zehenmuskeln bewusst entspannen, nicht krallen\n- die Ballenregion in Richtung Ferse ziehen, sodass sich das Längsgewölbe dazwischen anhebt und sich der Fuß leicht „verkürzt“\n\n**Übung 2 (im Stehen):**\n\n- barfuß im hüftbreiten Stand, das Gewicht gleichmäßig auf beiden Füßen\n- wie im Sitzen den Vorfuß in Richtung Ferse ziehen und das Gewölbe anheben\n\nDie stehende Variante ist etwas anspruchsvoller und sollte erst geübt werden, wenn die sitzende sicher gelingt."
         },
         {
           "titel": "Was die Studienlage zeigt",
-          "text": "Das Training der intrinsischen Fußmuskeln (Short-Foot Exercises) fördert die Stabilisierung des Fußes erheblich und ist erwiesenermaßen relevant bei vielen gängigen fußorthopädischen Krankheitsbildern — z. B. Hallux valgus, Plantarfasziitis/Fersensporn und Knick-Senk-Fuß [[short_foot_q1]][[short_foot_q2]][[short_foot_q3]]."
+          "text": "Das Training der kleinen Fußmuskeln verbessert nachweislich die **Fußstellung**. Eine Meta-Analyse an Menschen mit Knick-Senk-Fuß fand eine Verbesserung der Gewölbeabsenkung (Navicular Drop) und des Fußstellungsindex gegenüber Vergleichsbehandlungen, ein eindeutiges Dickenwachstum der Muskeln ließ sich dabei aber nicht sichern [[short_foot_q1]]. Eine systematische Übersicht bestätigte, dass sich das Längsgewölbe bessern kann, allerdings erst bei einem Training über mindestens etwa fünf Wochen, und die Datenlage bleibt uneinheitlich [[short_foot_q2]].\n\nDer Nutzen reicht über den Fuß hinaus: Bei vorderem Knieschmerz (patellofemorales Schmerzsyndrom) besserten zusätzliche Short-Foot-Übungen Schmerz, Fußstellung und die Kraft der Hüftmuskeln [[short_foot_q3]].\n\nInsgesamt sind die Übungen ein sinnvoller, risikoarmer Baustein bei mehreren häufigen Fußproblemen. Sie bessern eher die Stellung und die Beschwerden, als dass sie eine feste Fehlstellung korrigieren. [Mehr zum Knick-Senk-Fuß](?op=ppv_ksf&modus=aufklaerung) [Mehr zur Plantarfasziitis](?op=plantarfasziitis_kb&modus=aufklaerung) [Mehr zum Hallux valgus](?op=hallux_valgus&modus=aufklaerung)"
         },
         {
           "titel": "Quellen",
-          "text": "[1] Huang C, Chen LY, Liao YH, Masodsai K, Lin YY. Effects of the Short-Foot Exercise on Foot Alignment and Muscle Hypertrophy in Flatfoot: A Meta-Analysis. Int J Environ Res Public Health. 2022;19(19):11994.\n[2] Kısacık P, Tunay VB, Bek N, et al. Short foot exercises have additional effects on knee pain, foot biomechanics and lower-extremity strength in patellofemoral pain. J Back Musculoskelet Rehabil. 2021;34(6):1093–1104.\n[3] Hara S, Kitano M, Kudo S. The effects of short foot exercises to treat flat foot deformity: a systematic review. J Back Musculoskelet Rehabil. 2023;36(1):21–33."
+          "text": "[1] Huang C, Chen LY, Liao YH, Masodsai K, Lin YY. Effects of the short-foot exercise on foot alignment and muscle hypertrophy in flatfoot individuals: a meta-analysis. Int J Environ Res Public Health. 2022;19(19):11994. doi:10.3390/ijerph191911994\n[2] Hara S, Kitano M, Kudo S. The effects of short foot exercises to treat flat foot deformity: a systematic review. J Back Musculoskelet Rehabil. 2023;36(1):21-33. doi:10.3233/BMR-210374\n[3] Kısacık P, Tunay VB, Bek N, Atay ÖA, Selfe J, Karaduman AA. Short foot exercises have additional effects on knee pain, foot biomechanics, and lower extremity muscle strength in patients with patellofemoral pain. J Back Musculoskelet Rehabil. 2021;34(6):1093-1104. doi:10.3233/BMR-200255"
         }
       ],
-      "stand": "Übertrag aus mediq (B. Breuer), 07/2026 — ärztlich zu prüfen",
+      "stand": "Juli 2026 (überarbeitet, DOI-verifiziert) — ärztlich zu prüfen",
       "_review": true,
       "_programm": true,
       "quellen": [
         {
           "id": "short_foot_q1",
-          "text": "Huang C, Chen LY, Liao YH, Masodsai K, Lin YY. Effects of the Short-Foot Exercise on Foot Alignment and Muscle Hypertrophy in Flatfoot: A Meta-Analysis. Int J Environ Res Public Health. 2022;19(19):11994."
+          "text": "Huang C, Chen LY, Liao YH, Masodsai K, Lin YY. Effects of the short-foot exercise on foot alignment and muscle hypertrophy in flatfoot individuals: a meta-analysis. Int J Environ Res Public Health. 2022;19(19):11994. doi:10.3390/ijerph191911994"
         },
         {
           "id": "short_foot_q2",
-          "text": "Kısacık P, Tunay VB, Bek N, et al. Short foot exercises have additional effects on knee pain, foot biomechanics and lower-extremity strength in patellofemoral pain. J Back Musculoskelet Rehabil. 2021;34(6):1093–1104."
+          "text": "Hara S, Kitano M, Kudo S. The effects of short foot exercises to treat flat foot deformity: a systematic review. J Back Musculoskelet Rehabil. 2023;36(1):21-33. doi:10.3233/BMR-210374"
         },
         {
           "id": "short_foot_q3",
-          "text": "Hara S, Kitano M, Kudo S. The effects of short foot exercises to treat flat foot deformity: a systematic review. J Back Musculoskelet Rehabil. 2023;36(1):21–33."
+          "text": "Kısacık P, Tunay VB, Bek N, Atay ÖA, Selfe J, Karaduman AA. Short foot exercises have additional effects on knee pain, foot biomechanics, and lower extremity muscle strength in patients with patellofemoral pain. J Back Musculoskelet Rehabil. 2021;34(6):1093-1104. doi:10.3233/BMR-200255"
         }
       ]
     },
