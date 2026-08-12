@@ -44,6 +44,92 @@
           "op": "osg_tep",
           "variante": "komplex",
           "gruppe": "Prothese (Endoprothese)"
+        },
+        {
+          "op": "ttc",
+          "variante": "einfach",
+          "gruppe": "Versteifung (Arthrodese)"
+        },
+        {
+          "op": "ttc",
+          "variante": "komplex",
+          "gruppe": "Versteifung (Arthrodese)"
+        },
+        {
+          "op": "smot_valgus",
+          "variante": "einfach",
+          "gruppe": "Gelenkerhaltende Korrektur"
+        },
+        {
+          "op": "smot_valgus",
+          "variante": "komplex",
+          "gruppe": "Gelenkerhaltende Korrektur"
+        }
+      ]
+    },
+    {
+      "key": "usg_arthrose",
+      "label": "USG- und Rückfuß-Arthrose",
+      "untertitel": "Verschleiß und Fehlstellung des Rückfußes",
+      "emoji": "🦴",
+      "aufklaerungOp": "subtalar",
+      "eingriffe": [
+        {
+          "op": "subtalar",
+          "variante": "einfach",
+          "gruppe": "Versteifung einzelner Gelenke"
+        },
+        {
+          "op": "subtalar",
+          "variante": "komplex",
+          "gruppe": "Versteifung einzelner Gelenke"
+        },
+        {
+          "op": "tn",
+          "variante": "einfach",
+          "gruppe": "Versteifung einzelner Gelenke"
+        },
+        {
+          "op": "tn",
+          "variante": "komplex",
+          "gruppe": "Versteifung einzelner Gelenke"
+        },
+        {
+          "op": "double_arthrodese",
+          "variante": "einfach",
+          "gruppe": "Kombinierte Versteifungen"
+        },
+        {
+          "op": "double_arthrodese",
+          "variante": "komplex",
+          "gruppe": "Kombinierte Versteifungen"
+        },
+        {
+          "op": "triple",
+          "variante": "einfach",
+          "gruppe": "Kombinierte Versteifungen"
+        },
+        {
+          "op": "triple",
+          "variante": "komplex",
+          "gruppe": "Kombinierte Versteifungen"
+        }
+      ]
+    },
+    {
+      "key": "lisfranc_arthrose",
+      "label": "Mittelfuß-Arthrose (Lisfranc)",
+      "untertitel": "Verschleiß der Fußwurzel-Mittelfuß-Gelenke",
+      "emoji": "🦶",
+      "aufklaerungOp": "tmt",
+      "eingriffe": [
+        {
+          "op": "tmt",
+          "variante": "einfach"
+        },
+        {
+          "op": "tmt",
+          "variante": "komplex"
         }
       ]
     }
@@ -461,11 +547,6 @@
               "baustein": "verband_ab_ruhiggestellt"
             },
             {
-              "tag": 28,
-              "label": "4 Wochen nach OP",
-              "baustein": "bewegung_ohne_belastung"
-            },
-            {
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
@@ -500,7 +581,10 @@
       },
       "platzhalter": {
         "WOCHEN": "8",
-        "GELENK": "untere Sprunggelenk"
+        "GELENK": "untere Sprunggelenk",
+        "GELENK_VERSTEIFT": "oberen Sprunggelenk",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
       }
     },
     "osg_tep": {
@@ -670,7 +754,2200 @@
         }
       },
       "platzhalter": {
-        "WOCHEN": "6"
+        "WOCHEN": "6",
+        "THROMBOSE_WOCHEN": "6"
+      }
+    },
+    "subtalar": {
+      "label": "Subtalararthrodese",
+      "kurzlabel": "USG-Arthrodese",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "GELENK_VERSTEIFT": "unteren Sprunggelenk",
+        "SCHUHVERSORGUNG": "einem Pufferabsatz oder einem Schuh mit hoher Dämpfung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "USG-Arthrodese — Teilbelastung",
+          "beschreibung": "Versteifung des unteren Sprunggelenks mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "USG-Arthrodese — Entlastung",
+          "beschreibung": "Versteifung des unteren Sprunggelenks mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "tn": {
+      "label": "TN-Arthrodese",
+      "kurzlabel": "TN-Arthrodese",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "GELENK_VERSTEIFT": "Talonaviculargelenk",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Versteifung des Talonaviculargelenks — Teilbelastung",
+          "beschreibung": "Versteifung des Talonaviculargelenks mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Versteifung des Talonaviculargelenks — Entlastung",
+          "beschreibung": "Versteifung des Talonaviculargelenks mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "double_arthrodese": {
+      "label": "Double-Arthrodese",
+      "kurzlabel": "Double-Arthrodese",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "GELENK_VERSTEIFT": "Rückfuß",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk — Teilbelastung",
+          "beschreibung": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk — Entlastung",
+          "beschreibung": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "triple": {
+      "label": "Triple-Arthrodese",
+      "kurzlabel": "Triple-Arthrodese",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "GELENK_VERSTEIFT": "Rückfuß",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Versteifung der drei Rückfußgelenke — Teilbelastung",
+          "beschreibung": "Versteifung der drei Rückfußgelenke mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Versteifung der drei Rückfußgelenke — Entlastung",
+          "beschreibung": "Versteifung der drei Rückfußgelenke mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "lambrinudi": {
+      "label": "Triple-Arthrodese nach Lambrinudi",
+      "kurzlabel": "Lambrinudi",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "GELENK_VERSTEIFT": "Rückfuß",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Versteifung der drei Rückfußgelenke nach Lambrinudi — Teilbelastung",
+          "beschreibung": "Versteifung der drei Rückfußgelenke nach Lambrinudi mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Versteifung der drei Rückfußgelenke nach Lambrinudi — Entlastung",
+          "beschreibung": "Versteifung der drei Rückfußgelenke nach Lambrinudi mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "ttc": {
+      "label": "Transtalare Arthrodese (Nagel)",
+      "kurzlabel": "TTC-Nagel",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "Chopart-Gelenk",
+        "GELENK_VERSTEIFT": "oberen und unteren Sprunggelenk",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Teilbelastung",
+          "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Entlastung",
+          "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Versteifung mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "smot_valgus": {
+      "label": "Supramalleoläre Osteotomie",
+      "kurzlabel": "SMOT",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Supramalleoläre Osteotomie",
+          "beschreibung": "Achskorrektur oberhalb des Sprunggelenks ohne Zusatzeingriff",
+          "auswahl_label": "Osteotomie allein",
+          "auswahl_kurz": "Achskorrektur ohne Zusatzeingriff",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Supramalleoläre Osteotomie mit Bandstabilisierung",
+          "beschreibung": "Achskorrektur mit zusätzlicher Stabilisierung der Außenbänder",
+          "auswahl_label": "Osteotomie mit Bandstabilisierung",
+          "auswahl_kurz": "Mit zusätzlicher Stabilisierung der Außenbänder",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_geschuetzt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_bandstabilisierung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_nach_bandstabilisierung"
+            }
+          ]
+        }
+      }
+    },
+    "tmt": {
+      "label": "TMT-Arthrodese",
+      "kurzlabel": "TMT-Arthrodese",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "Sprunggelenk",
+        "GELENK_VERSTEIFT": "Mittelfuß",
+        "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "TMT-Arthrodese 2–5",
+          "beschreibung": "Versteifung der Tarsometatarsalgelenke 2–5",
+          "auswahl_label": "Versteifung TMT 2–5",
+          "auswahl_kurz": "Ohne Beteiligung des ersten Strahls",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "TMT-Arthrodese 1 kombiniert mit 2–5",
+          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks in Kombination mit TMT 2–5",
+          "auswahl_label": "Versteifung TMT 1 kombiniert mit 2–5",
+          "auswahl_kurz": "Erster Strahl gemeinsam mit weiteren Gelenken",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_walker_wechsel"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "roentgen_vollbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "calc_medial": {
+      "label": "Calcaneus-Verschiebeosteotomie",
+      "kurzlabel": "Calcaneus-OT",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Calcaneus-Verschiebeosteotomie — Teilbelastung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Calcaneus-Verschiebeosteotomie — Entlastung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "calc_verlaengerung": {
+      "label": "Calcaneus-Verlängerungsosteotomie",
+      "kurzlabel": "Calcaneus-Verlängerung",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Calcaneus-Verlängerungsosteotomie — Teilbelastung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Calcaneus-Verlängerungsosteotomie — Entlastung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "lapidus": {
+      "label": "Lapidus-Arthrodese",
+      "kurzlabel": "Lapidus",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "Großzehengrundgelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Lapidus-Arthrodese — Teilbelastung",
+          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Lapidus-Arthrodese — Entlastung",
+          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "brostrom": {
+      "label": "Außenbandreparatur (Broström)",
+      "kurzlabel": "Broström",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Außenbandreparatur (Broström) — Teilbelastung",
+          "beschreibung": "Naht und Raffung der Außenbänder des Sprunggelenks, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_bandreparatur"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_bandreparatur"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_nach_bandreparatur"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Außenbandreparatur (Broström) — Entlastung",
+          "beschreibung": "Naht und Raffung der Außenbänder des Sprunggelenks, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_bandreparatur"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_bandreparatur"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_nach_bandreparatur"
+            }
+          ]
+        }
+      }
+    },
+    "lat_stabil": {
+      "label": "Laterale Stabilisierung mit Bandplastik",
+      "kurzlabel": "Bandplastik",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Laterale Stabilisierung mit Bandplastik — Teilbelastung",
+          "beschreibung": "Stabilisierung der Außenbänder mit körpereigener Sehne, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_bandreparatur"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_bandreparatur"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_nach_bandreparatur"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Laterale Stabilisierung mit Bandplastik — Entlastung",
+          "beschreibung": "Stabilisierung der Außenbänder mit körpereigener Sehne, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_bandreparatur"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_bandreparatur"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_nach_bandreparatur"
+            }
+          ]
+        }
       }
     }
   },
@@ -714,7 +2991,7 @@
       "thema": "Sanfte Bewegungsübungen",
       "emoji": "🦶",
       "intro": "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
-      "text": "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.",
+      "text": "Sie können nun mit einer sanften, belastungsfreien Mobilisierung der an das versteifte Gelenk angrenzenden Gelenke beginnen — am besten unter physiotherapeutischer Anleitung. Ergänzend sind ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie sinnvoll. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nWichtig: An der Belastung ändert sich dadurch nichts — die 15-kg-Teilbelastung im Walker gilt unverändert weiter bis zur Kontrolle nach §WOCHEN§ Wochen.",
       "subthemen": []
     },
     "bewegung_osg_frei": {
@@ -742,14 +3019,14 @@
       "thema": "CT-Kontrolle planen",
       "emoji": "🩻",
       "intro": "In etwa einer Woche steht Ihre CT-Kontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
-      "text": "Die CT-Kontrolle sollte 8 Wochen nach dem Eingriff stattfinden. In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Die CT liefert hier genauere Informationen zum Fortschritt der knöchernen Heilung als ein normales Röntgenbild und ist bei der OSG-Arthrodese der bessere Verlaufsindikator.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+      "text": "Die CT-Kontrolle sollte 8 Wochen nach dem Eingriff stattfinden. In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Die CT liefert hier genauere Informationen zum Fortschritt der knöchernen Heilung als ein normales Röntgenbild und ist bei den Rückfußversteifungen der bessere Verlaufsindikator.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
       "subthemen": []
     },
     "ct_walker_wechsel": {
       "thema": "CT-Kontrolle und Wechsel in Walker",
       "emoji": "🩻",
       "intro": "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
-      "text": "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte noch so lange fortgeführt werden, wie Sie den Walker oder die Stützen nutzen.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im oberen Sprunggelenk profitieren viele Patientinnen und Patienten von einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+      "text": "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
       "subthemen": []
     },
     "diabetes": {
@@ -920,7 +3197,7 @@
       "thema": "Vollentlastung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Bei dieser Variante ist eine vollständige Entlastung des operierten Fußes für §WOCHEN§ Wochen vorgesehen.",
-      "text": "Das bedeutet: Sie dürfen den Fuß in dieser Zeit gar nicht belasten, auch nicht auftupfen. Die Fortbewegung erfolgt im Rollstuhl oder an Unterarmgehstützen, wenn dies für Sie sicher umsetzbar ist. Welcher Weg für Sie passend ist, hängt von Ihrer körperlichen Verfassung, Ihrem Gleichgewicht und der Wohnsituation ab. Ein Gespräch mit Ihrem Behandler und ggf. der Physiotherapie klärt, was sicher ist.\n\nMit der vollständigen Entlastung verbunden ist eine stärkere Beanspruchung von Armen, Rumpf und gegenseitigem Bein. Achten Sie auf eine gute Sturzprophylaxe — gerade in Bad und Treppenhaus.\n\nEine Thromboseprophylaxe ist für die gesamte Entlastungsphase nötig, da die Muskulatur deutlich weniger beansprucht wird und das Sprunggelenk ruhiggestellt ist. Sollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen — fragen Sie hier spezifisch Ihre Behandler.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+      "text": "Das bedeutet: Sie dürfen den Fuß in dieser Zeit gar nicht belasten, auch nicht auftupfen. Die Fortbewegung erfolgt im Rollstuhl oder an Unterarmgehstützen, wenn dies für Sie sicher umsetzbar ist. Welcher Weg für Sie passend ist, hängt von Ihrer körperlichen Verfassung, Ihrem Gleichgewicht und der Wohnsituation ab. Ein Gespräch mit Ihrem Behandler und ggf. der Physiotherapie klärt, was sicher ist.\n\nMit der vollständigen Entlastung verbunden ist eine stärkere Beanspruchung von Armen, Rumpf und gegenseitigem Bein. Achten Sie auf eine gute Sturzprophylaxe — gerade in Bad und Treppenhaus.\n\nEine Thromboseprophylaxe ist für die gesamte Entlastungsphase nötig, mindestens jedoch §THROMBOSE_WOCHEN§ Wochen, da die Muskulatur deutlich weniger beansprucht wird und das Sprunggelenk ruhiggestellt ist. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen. Sollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen — fragen Sie hier spezifisch Ihre Behandler.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -931,7 +3208,7 @@
       "thema": "Mobilisierung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Nach dem Eingriff können Sie in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
-      "text": "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens §WOCHEN§ Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+      "text": "Hierbei spricht man von einer 15 kg Teilbelastung. Dies ist das Gewicht, welches Sie etwa mit einer Tasse Kaffee in der Hand belasten würden — also nur leichtes Auftupfen mit dem Bein, ohne tatsächliche Lastübernahme.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -1017,7 +3294,7 @@
       "thema": "Röntgenkontrolle und Belastungssteigerung",
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
-      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
+      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
       "subthemen": []
     },
     "roentgen_prothese": {
@@ -1185,6 +3462,34 @@
       "emoji": "🏠",
       "intro": "Nun rückt der Termin näher. Sie können nun auch im Haushalt konkrete Vorbereitungen treffen.",
       "text": "Erinnern Sie noch einmal Freunde und Bekannte, die Ihnen Hilfe angeboten haben, an Ihren Termin. Ebenfalls können Sie sich über Möglichkeiten zur Lieferung von Lebensmitteln informieren, ausreichend auf Vorrat einkaufen oder sogar vorkochen. Besonders wenn Sie alleine leben, sparen Sie sich so viel Arbeit und Stress in der sowieso anstrengenden Phase nach dem Eingriff.\n\nAchten Sie auf Dinge, die Sie häufig benötigen (Geschirr, Töpfe, Kleidungsstücke), die aber schwer erreichbar sind, weil sie unter dem Bett liegen oder auf dem Schrank stehen. Stellen Sie diese an Stellen bereit, an denen Sie sie einfach und auch aus dem Rollstuhl heraus oder an Gehstützen erreichen können.\n\nPrüfen Sie noch einmal Ihr Badezimmer und legen Sie rutschfeste Unterlagen in die Dusche oder Badewanne. Ebenfalls ist die Nutzung eines Badewannenbrettes, eines Duschhockers oder eines Schwammes mit langem Stiel sinnvoll. Nach der Operation sollten Sie nicht auf nassem Untergrund auf einem Bein in der Dusche jonglieren müssen.\n\nGehen Sie die Wege in Ihrer Wohnung ab und entfernen Sie Stolperfallen wie Teppiche oder niedrige Möbelstücke.\n\nSollte Ihr Bett niedrig sein, dann legen Sie sich eine zweite Matratze in Ihr Bett, damit Sie einfacher ein- und aussteigen können.",
+      "subthemen": []
+    },
+    "roentgen_heilungskontrolle": {
+      "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "emoji": "🩻",
+      "intro": "In etwa einer Woche steht Ihre Röntgenkontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
+      "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung. Sie sollte etwa 6 bis 8 Wochen nach dem Eingriff stattfinden.\n\nWenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
+      "subthemen": []
+    },
+    "bewegung_osg_bandreparatur": {
+      "thema": "Sanfte Bewegungsübungen",
+      "emoji": "🦶",
+      "intro": "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
+      "text": "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Es können auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband erfolgen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nWichtig: Aufgrund der Bandreparatur soll das obere Sprunggelenk in den ersten 6 Wochen nach der OP nicht intensiv mobilisiert werden — insbesondere keine starken Bewegungen in die Plantarflexion (Fuß nach unten) und keine Inversion (Fuß nach innen kippen). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nEine sanfte, geführte Beübung im beschwerdearmen Bereich ist erlaubt, sobald Ihre Wundheilung dies zulässt. Im Zweifel sprechen Sie mit Ihrer Physiotherapie oder dem Behandler.",
+      "subthemen": []
+    },
+    "roentgen_bandreparatur": {
+      "thema": "Röntgenkontrolle und Belastungssteigerung",
+      "emoji": "🩻",
+      "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig: Aufgrund der Bandreparatur soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
+      "subthemen": []
+    },
+    "sport_nach_bandreparatur": {
+      "thema": "Sportliche Belastungssteigerung",
+      "emoji": "🚴",
+      "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
+      "text": "Nach einer Bandreparatur gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
       "subthemen": []
     }
   },
