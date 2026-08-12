@@ -391,6 +391,7 @@ let PHASEN_INHALTE = {};
 let WISSEN_KATEGORIEN = {};
 let WISSEN = {};
 let KRANKHEITSBILDER = [];
+let VORLAUF_BY_OP = {};   // Vorlauf je Eingriff (Schema 2); leer = gemeinsamer Vorlauf
 let AUFKLAERUNG = {}; // Daten aus aufklaerung.json (Aufklärungs-Modus)
 let NONOP_KB = {};       // Non-OP-Begleiter: Krankheitsbilder
 let NONOP_STUFEN = {};   // Non-OP-Begleiter: Stufenlisten je Krankheitsbild
@@ -403,7 +404,8 @@ let KATALOG = null;   // Daten aus katalog.json (Beschwerde-Wegweiser) — null 
 function getPhasenForVariant(opKey, variantKey) {
   const opGroup = POST_OP_PHASEN_BY_OP[opKey];
   const postPhasen = (opGroup && opGroup[variantKey]) || [];
-  return ONBOARDING_PHASEN.concat(SHARED_PRE_OP_PHASEN).concat(postPhasen);
+  const vorlauf = VORLAUF_BY_OP[opKey] || SHARED_PRE_OP_PHASEN;
+  return ONBOARDING_PHASEN.concat(vorlauf).concat(postPhasen);
 }
 
 // Lädt die Daten aus phasen.json und befüllt die Modul-Level-Variablen.
@@ -414,14 +416,112 @@ async function loadPhasenData() {
     throw new Error("Phasen-Daten konnten nicht geladen werden (HTTP " + response.status + ")");
   }
   const data = await response.json();
+  WISSEN_KATEGORIEN     = data.WISSEN_KATEGORIEN     || {};
+  WISSEN                = data.WISSEN                || {};
+  if (data.SCHEMA >= 2) { uebersetzeSchema2(data); return; }
+  // --- Altes Schema (SCHEMA fehlt) --------------------------------------
   EINGRIFFE             = data.EINGRIFFE             || {};
   ONBOARDING_PHASEN     = data.ONBOARDING_PHASEN     || [];
   SHARED_PRE_OP_PHASEN  = data.SHARED_PRE_OP_PHASEN  || [];
   POST_OP_PHASEN_BY_OP  = data.POST_OP_PHASEN_BY_OP  || {};
   PHASEN_INHALTE        = data.PHASEN_INHALTE        || {};
-  WISSEN_KATEGORIEN     = data.WISSEN_KATEGORIEN     || {};
-  WISSEN                = data.WISSEN                || {};
   KRANKHEITSBILDER      = data.KRANKHEITSBILDER      || [];
+}
+
+/* ============================================================
+ * SCHEMA 2 → Laufzeitform
+ * ------------------------------------------------------------
+ * phasen.json haelt seit Schema 2 die Inhalte EINMAL in
+ * BEGLEITER_BAUSTEINE und je Eingriff nur noch eine Liste aus
+ * Tag + Bausteinname. Diese Funktion setzt daraus genau die
+ * Strukturen zusammen, mit denen die Oberflaeche schon immer
+ * arbeitet — dadurch bleibt unterhalb dieser Stelle alles
+ * unveraendert. Die Phasen-ID ist der Bausteinname.
+ * ============================================================ */
+function uebersetzeSchema2(data) {
+  const B = data.BEGLEITER_BAUSTEINE || {};
+  PHASEN_INHALTE = {};
+  Object.keys(B).forEach(function(k) {
+    PHASEN_INHALTE[k] = { intro: B[k].intro, text: B[k].text, subthemen: B[k].subthemen || [] };
+  });
+
+  // Platzhalter der Form §WOCHEN§ oder §GELENK§: Ein Baustein kann Werte offen
+  // lassen, die der jeweilige Begleiter mitbringt (data.BEGLEITER[op].platzhalter).
+  // Damit derselbe Baustein je Eingriff verschieden gefuellt werden kann, bekommt
+  // die gefuellte Fassung einen eigenen Schluessel <baustein>__<op>.
+  function fuelle(txt, werte) {
+    return String(txt).replace(/§([A-ZÄÖÜ_]+)§/g, function(ganz, name) {
+      return (werte && werte[name] !== undefined) ? werte[name] : ganz;
+    });
+  }
+  function inhaltsId(bausteinKey, opKey) {
+    const b = B[bausteinKey];
+    if (!b) return bausteinKey;
+    const werte = ((data.BEGLEITER || {})[opKey] || {}).platzhalter;
+    const roh = String(b.intro) + String(b.text);
+    if (!werte || roh.indexOf("§") < 0) return bausteinKey;
+    const id = bausteinKey + "__" + opKey;
+    if (!PHASEN_INHALTE[id]) {
+      PHASEN_INHALTE[id] = { intro: fuelle(b.intro, werte), text: fuelle(b.text, werte),
+                             subthemen: b.subthemen || [] };
+    }
+    return id;
+  }
+
+  // Eintrag {tag,label,baustein} → Phase {id,type,tagOffset,label,thema,emoji}
+  function phase(e, opKey) {
+    const b = B[e.baustein] || {};
+    return { id: inhaltsId(e.baustein, opKey), type: e.type || "calendar", tagOffset: e.tag,
+             label: e.label, thema: b.thema, emoji: b.emoji };
+  }
+
+  ONBOARDING_PHASEN    = (data.ONBOARDING_PHASEN    || []).map(phase);
+  SHARED_PRE_OP_PHASEN = (data.SHARED_PRE_OP_PHASEN || []).map(phase);
+
+  const BEGL = data.BEGLEITER || {};
+  EINGRIFFE = {};
+  POST_OP_PHASEN_BY_OP = {};
+  Object.keys(BEGL).forEach(function(opKey) {
+    const b = BEGL[opKey];
+    EINGRIFFE[opKey] = { label: b.label, kurzlabel: b.kurzlabel, varianten: {} };
+    POST_OP_PHASEN_BY_OP[opKey] = {};
+    Object.keys(b.varianten || {}).forEach(function(vk) {
+      const v = b.varianten[vk];
+      EINGRIFFE[opKey].varianten[vk] = { anzeigename: v.anzeigename, beschreibung: v.beschreibung };
+      POST_OP_PHASEN_BY_OP[opKey][vk] = (v.postop || []).map(function(e){ return phase(e, opKey); });
+    });
+  });
+
+  // Vorlauf je Eingriff: ersetzte und ergaenzte Phasen. Beides ist optional;
+  // ohne Eintrag bleibt der gemeinsame Vorlauf unveraendert.
+  VORLAUF_BY_OP = {};
+  Object.keys(BEGL).forEach(function(opKey) {
+    const p = BEGL[opKey].praeop || {};
+    const ersetze = p.ersetze || {};
+    let liste = SHARED_PRE_OP_PHASEN.map(function(ph) {
+      return ersetze[ph.id] ? phase({ tag: ph.tagOffset, label: ph.label, baustein: ersetze[ph.id] }, opKey) : ph;
+    });
+    liste = liste.concat((p.ergaenze || []).map(function(e){ return phase(e, opKey); }));
+    liste.sort(function(a, b2) { return a.tagOffset - b2.tagOffset; });
+    VORLAUF_BY_OP[opKey] = liste;
+  });
+
+  // Krankheitsbild: haelt seit Schema 2 nur noch Verweise. Beschriftung und
+  // Kurztext der Auswahlzeile kommen aus der Variante des Begleiters.
+  KRANKHEITSBILDER = (data.KRANKHEITSBILDER || []).map(function(kb) {
+    return {
+      key: kb.key, label: kb.label, untertitel: kb.untertitel,
+      emoji: kb.emoji, aufklaerungOp: kb.aufklaerungOp,
+      operationen: (kb.eingriffe || []).map(function(e) {
+        const v = ((BEGL[e.op] || {}).varianten || {})[e.variante] || {};
+        const o = { opKey: e.op, variant: e.variante,
+                    label: v.auswahl_label || v.anzeigename || e.op,
+                    kurz:  v.auswahl_kurz  || "" };
+        if (e.gruppe) o.gruppe = e.gruppe;
+        return o;
+      })
+    };
+  });
 }
 
 // Lädt die Aufklärungs-Daten (Slide-basierte Inhalte für den Aufklärungs-Modus).
