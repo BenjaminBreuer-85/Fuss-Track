@@ -6793,7 +6793,7 @@
       ],
       "_quelle": "Elsner et al. 2011 (von Benjamin bereitgestelltes PDF) + PubMed-Recherche 08/2026",
       "_review": true,
-      "_entwurf": true,
+      "_entwurf": false,
       "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
       "stand": "August 2026",
       "quellen": [
@@ -6825,7 +6825,8 @@
           "id": "lambrinudi_q7",
           "text": "Hamel J. Korrektureingriffe und Indikationen bei kindlichen und jugendlichen Cavovarus-Deformitäten. Oper Orthop Traumatol. 2017;29(6):473-482. doi: [10.1007/s00064-017-0520-x](https://doi.org/10.1007/s00064-017-0520-x)"
         }
-      ]
+      ],
+      "_freigegeben": "2026-08-13 (Benjamin, mit Korrekturen)"
     },
     "dwyer": {
       "infoKategorie": "op_technik",
@@ -6843,7 +6844,7 @@
       ],
       "_quelle": "PubMed-Recherche 08/2026",
       "_review": true,
-      "_entwurf": true,
+      "_entwurf": false,
       "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
       "stand": "August 2026",
       "quellen": [
@@ -6879,7 +6880,8 @@
           "id": "dwyer_q8",
           "text": "Monteagudo M, Maceira E. Management of Müller-Weiss disease. Foot Ankle Clin. 2019;24(1):89-105. doi: [10.1016/j.fcl.2018.09.006](https://doi.org/10.1016/j.fcl.2018.09.006)"
         }
-      ]
+      ],
+      "_freigegeben": "2026-08-13 (Benjamin, mit Korrekturen)"
     }
   },
   "NONOP_MASSNAHMEN": {

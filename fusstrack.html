@@ -2591,11 +2591,11 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
         Sind Sie unsicher, kontaktieren Sie bitte Ihren Behandler — ohne die richtige Auswahl
         stimmen die Inhalte nicht.
       </p>
-      {groupOrder.map(function(groupName) {
+      {groupOrder.map(function(groupName, gi) {
         return (
-          <div key={groupName} style={{ marginBottom: 14 }}>
+          <div key={groupName} style={{ marginBottom: 28, marginTop: gi > 0 ? 30 : 0 }}>
             {groupName !== "_default" && (
-              <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-text-muted)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8, paddingLeft: 4 }}>
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.6, marginBottom: 10, paddingLeft: 4, paddingBottom: 6, borderBottom: "1px solid rgba(0,0,0,.08)" }}>
                 {groupName}
               </div>
             )}

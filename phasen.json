@@ -38,12 +38,12 @@
         {
           "op": "osg_tep",
           "variante": "einfach",
-          "gruppe": "Prothese (Endoprothese)"
+          "gruppe": "Endoprothese des OSG (künstliches Sprunggelenk)"
         },
         {
           "op": "osg_tep",
           "variante": "komplex",
-          "gruppe": "Prothese (Endoprothese)"
+          "gruppe": "Endoprothese des OSG (künstliches Sprunggelenk)"
         },
         {
           "op": "ttc",
@@ -599,7 +599,7 @@
         "einfach": {
           "anzeigename": "OSG-Prothese",
           "beschreibung": "OSG-Prothese",
-          "auswahl_label": "Prothese allein",
+          "auswahl_label": "OSG-Prothese allein",
           "auswahl_kurz": "Endoprothese als alleinige Operation",
           "postop": [
             {
@@ -677,8 +677,8 @@
         "komplex": {
           "anzeigename": "OSG-Prothese mit Zusatzeingriff",
           "beschreibung": "OSG-Prothese mit Stabilisierung oder weiterer knöcherner Korrektur (Osteotomie/Arthrodese)",
-          "auswahl_label": "Prothese mit knöcherner Korrektur",
-          "auswahl_kurz": "Mit knöcherner Korrektur oder Stabilisierung",
+          "auswahl_label": "OSG-Prothese mit Zusatzeingriff",
+          "auswahl_kurz": "Mit zusätzlicher Versteifung eines Fußgelenks, Korrekturbruch eines weiteren Knochens oder Bandstabilisierung",
           "postop": [
             {
               "tag": 0,
@@ -1817,7 +1817,7 @@
         "einfach": {
           "anzeigename": "Supramalleoläre Osteotomie",
           "beschreibung": "Achskorrektur oberhalb des Sprunggelenks ohne Zusatzeingriff",
-          "auswahl_label": "Osteotomie allein",
+          "auswahl_label": "Supramalleoläre Osteotomie",
           "auswahl_kurz": "Achskorrektur ohne Zusatzeingriff",
           "postop": [
             {
@@ -1890,7 +1890,7 @@
         "komplex": {
           "anzeigename": "Supramalleoläre Osteotomie mit Bandstabilisierung",
           "beschreibung": "Achskorrektur mit zusätzlicher Stabilisierung der Außenbänder",
-          "auswahl_label": "Osteotomie mit Bandstabilisierung",
+          "auswahl_label": "Supramalleoläre Osteotomie mit Bandstabilisierung",
           "auswahl_kurz": "Mit zusätzlicher Stabilisierung der Außenbänder",
           "postop": [
             {
