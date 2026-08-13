@@ -696,6 +696,7 @@ function getUrlParams() {
     massnahme: params.get("massnahme"), // "hyaluronsaeure" — direkt eine Nicht-OP-Maßnahme (NONOP_MASSNAHMEN) öffnen
     nonop: params.get("nonop"), // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
     fokus: params.get("fokus"), // Einstiegsadresse der Fokus-Ansicht (kodiert), fuer den Ruecksprung
+    nav: params.get("nav"), // "1" = aus der App heraus geoeffnet: volle Navigation statt Fokus-Ansicht
     // Krankheitsbild-ARTIKEL als Rueckweg-Kontext eines QR-Ziels (47 Keys aus
     // INFOMATERIAL). Bewusst nicht ueber ?kb=: dort liegen die zwei
     // Begleiter-Einstiege aus phasen.json, und die Schluessel hallux_valgus und
@@ -709,6 +710,11 @@ function getUrlParams() {
 // Rücksprung zur ursprünglichen Seite anbieten kann — statt ins Hauptmenü.
 const NONOP_ACK = "__begleiter";
 let FOKUS_ORIGIN = null;
+// In-App-Navigation: gesetzt, wenn die Aufklaerungs-Route aus der App heraus
+// geoeffnet wurde (?nav=1 oder mit ?kb=-Rueckweg). Dann volle Navigation
+// statt Fokus-Ansicht — die Fokus-Ansicht bleibt dem QR-/Direkteinstieg
+// vorbehalten, dessen gedruckte Adressen unveraendert bleiben muessen.
+let IN_APP_NAV = false;
 
 function fokusZiel(kodiert) {
   try { return window.location.pathname + "?" + decodeURIComponent(kodiert); }
@@ -1008,11 +1014,17 @@ function App() {
     );
   }
 
+  // In-App-Kennung: ?nav=1 (App-interne Links) oder ?kb= (Weg ueber die
+  // Krankheitsbild-Auswahl). Beides erzeugt nur die App selbst — QR-Codes
+  // tragen keinen dieser Parameter.
+  IN_APP_NAV = urlParams.modus === "aufklaerung" && (urlParams.nav === "1" || !!urlParams.kb);
+
   // Fokus-Merker setzen: auf einer Zielseite der mitgereichte Wert, sonst — wenn
   // wir selbst die Fokus-Ansicht sind — die eigene Adresse ohne fokus-Parameter.
+  // In-App geoeffnete Aufklaerung ist KEINE Fokus-Ansicht und setzt keinen Merker.
   if (urlParams.fokus) {
     FOKUS_ORIGIN = urlParams.fokus;
-  } else if (urlParams.modus === "aufklaerung" && urlParams.op) {
+  } else if (urlParams.modus === "aufklaerung" && urlParams.op && !IN_APP_NAV) {
     const eigene = new URLSearchParams(window.location.search);
     eigene.delete("fokus");
     FOKUS_ORIGIN = eigene.toString();
@@ -1099,14 +1111,15 @@ function App() {
       : null;
     return (
       <div className="app">
-        {/* showHauptmenue={false}: aus der Fokus-Ansicht fuehrt kein Knopf
-            direkt in die App. Der Weg nach draussen geht ueber den Hinweis am
-            Seitenende auf die Landingpage. */}
-        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={false} hideSubtitle={true} />
+        {/* Fokus-Ansicht (QR-/Direkteinstieg): showHauptmenue={false} — kein Knopf
+            direkt in die App, der Weg nach draussen geht ueber den Hinweis am
+            Seitenende. In-App geoeffnet (IN_APP_NAV): volle Navigation, ohne
+            Fokus-Kopf und -Fusstext. */}
+        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
-        <FokusKopf opKontext={opKontext} />
+        {!IN_APP_NAV && <FokusKopf opKontext={opKontext} />}
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} themaFehlt={themaFehlt} />
-        <FokusFuss opKontext={opKontext} />
+        {!IN_APP_NAV && <FokusFuss opKontext={opKontext} />}
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -2088,7 +2101,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   function goAufklaerung(kb) {
     // Direkt zur Aufklärung springen — verwendet den AUFKLAERUNG_OP_MAP-Key des Krankheitsbilds
     // Mit kb-Parameter für Zurück-Navigation aus AufklaerungsView
-    window.location.href = buildUrl({ op: kb.aufklaerungOp, modus: "aufklaerung", kb: kb.key });
+    window.location.href = buildUrl({ op: kb.aufklaerungOp, modus: "aufklaerung", kb: kb.key, nav: "1" });
   }
   function goBegleitung(kb, op) {
     // Direkt in den Begleit-Modus springen
@@ -2456,7 +2469,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
               const titel = e.daten.infoTitel || e.daten.titel || e.key;
               return (
                 <div key={e.key}
-                     onClick={function() { if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung" }); } }}
+                     onClick={function() { if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung", nav: "1" }); } }}
                      style={{ padding: 16, border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", gap: 12, alignItems: "center", boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}
                      onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                   <div style={{ fontSize: 20, lineHeight: 1 }}>{aktiveKat.icon}</div>
@@ -2621,8 +2634,10 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       // Vom Begleit-Modus in den Aufklärungs-Modus wechseln.
       // ctx=begleiter markiert, dass die Aufklärung im OP-Begleiter-Kontext
       // geöffnet wird → dort erscheint der Rückweg-Link zum Begleiter.
+      // nav=1: der Wechsel kommt aus dem Begleit-Modus, also aus der App mit
+      // voller Navigation — die Aufklaerung soll diese behalten.
       window.location.href = buildUrl({ op: urlParams.op, modus: "aufklaerung", ctx: "begleiter",
-                                        kbinfo: urlParams.kbinfo || null });
+                                        kbinfo: urlParams.kbinfo || null, nav: "1" });
     } else {
       // Vom Aufklärungs-Modus zurück in den Begleit-Modus.
       // Wenn var bekannt, beibehalten. Sonst (reiner ctx=begleiter-Einstieg ohne
@@ -2819,7 +2834,7 @@ function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl, themaFe
       const kbTitel = (AUFKLAERUNG[kbInfoOrigin] || {}).titel || "Krankheitsbild";
       return (
         <div style={{ marginBottom: 8 }}>
-          <a href={buildUrl({ op: kbInfoOrigin, modus: "aufklaerung" })}
+          <a href={buildUrl({ op: kbInfoOrigin, modus: "aufklaerung", nav: IN_APP_NAV ? "1" : null })}
              style={{
                display: "inline-flex", alignItems: "center", gap: 4, padding: "6px 12px",
                background: "var(--c-bg)", borderRadius: 4, fontSize: 12,
@@ -3842,7 +3857,7 @@ function FinderView() {
             <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
             <p>{top1.kb.kurz}</p>
             {top1.kb.info_ref && (
-              <button className="btn btn-primary" onClick={function() { window.location.href = buildUrl({ op: top1.kb.info_ref, modus: "aufklaerung" }); }}>
+              <button className="btn btn-primary" onClick={function() { window.location.href = buildUrl({ op: top1.kb.info_ref, modus: "aufklaerung", nav: "1" }); }}>
                 Mehr zum Krankheitsbild →
               </button>
             )}
@@ -3859,7 +3874,7 @@ function FinderView() {
               <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
               <p style={{ marginBottom: e.kb.info_ref ? 10 : 0 }}>{e.kb.kurz}</p>
               {e.kb.info_ref && (
-                <a href={buildUrl({ op: e.kb.info_ref, modus: "aufklaerung" })} style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", textDecoration: "underline" }}>Mehr zum Krankheitsbild →</a>
+                <a href={buildUrl({ op: e.kb.info_ref, modus: "aufklaerung", nav: "1" })} style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", textDecoration: "underline" }}>Mehr zum Krankheitsbild →</a>
               )}
             </div>
           );
@@ -4304,9 +4319,15 @@ function renderInline(text) {
           const isInternalLink = safeUrl.charAt(0) === "?" || safeUrl.charAt(0) === "#";
           // In der Fokus-Ansicht reicht jeder interne Link die Einstiegsadresse
           // weiter, damit das Ziel einen Rücksprung dorthin anbieten kann.
-          const zielUrl = (FOKUS_ORIGIN && safeUrl.charAt(0) === "?" && safeUrl.indexOf("fokus=") < 0)
-            ? safeUrl + "&fokus=" + encodeURIComponent(FOKUS_ORIGIN)
-            : safeUrl;
+          // In-App geoeffnet wandert stattdessen die nav=1-Kennung mit, damit
+          // auch quer verlinkte Artikel in der App-Navigation bleiben.
+          let zielUrl = safeUrl;
+          if (FOKUS_ORIGIN && safeUrl.charAt(0) === "?" && safeUrl.indexOf("fokus=") < 0) {
+            zielUrl = safeUrl + "&fokus=" + encodeURIComponent(FOKUS_ORIGIN);
+          } else if (IN_APP_NAV && safeUrl.charAt(0) === "?"
+                     && safeUrl.indexOf("modus=aufklaerung") >= 0 && safeUrl.indexOf("nav=") < 0) {
+            zielUrl = safeUrl + "&nav=1";
+          }
           flushBuffer();
           parts.push(
             <a key={"l" + (keyIdx++)} href={zielUrl}

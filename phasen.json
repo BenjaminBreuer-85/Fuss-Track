@@ -760,7 +760,7 @@
     },
     "subtalar": {
       "label": "Subtalararthrodese",
-      "kurzlabel": "USG-Arthrodese",
+      "kurzlabel": "Subtalararthrodese",
       "merkmale": {
         "belastung": "teil",
         "ruhigstellung": "walker",
@@ -769,7 +769,7 @@
       "platzhalter": {
         "WOCHEN": "8",
         "GELENK": "obere Sprunggelenk",
-        "GELENK_VERSTEIFT": "unteren Sprunggelenk",
+        "GELENK_VERSTEIFT": "Subtalargelenk",
         "SCHUHVERSORGUNG": "einem Pufferabsatz oder einem Schuh mit hoher Dämpfung",
         "THROMBOSE_WOCHEN": "8"
       },
@@ -779,10 +779,10 @@
       },
       "varianten": {
         "einfach": {
-          "anzeigename": "USG-Arthrodese — Teilbelastung",
-          "beschreibung": "Versteifung des unteren Sprunggelenks mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "USG-Arthrodese — Teilbelastung",
-          "auswahl_kurz": "Versteifung des unteren Sprunggelenks, Teilbelastung ab früh nach OP",
+          "anzeigename": "Subtalararthrodese — Teilbelastung",
+          "beschreibung": "Versteifung des Subtalargelenks mit Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Subtalararthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung des Subtalargelenks, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -852,10 +852,10 @@
           ]
         },
         "komplex": {
-          "anzeigename": "USG-Arthrodese — Entlastung",
-          "beschreibung": "Versteifung des unteren Sprunggelenks mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "USG-Arthrodese — Entlastung",
-          "auswahl_kurz": "Versteifung des unteren Sprunggelenks, komplette Entlastung in den ersten Wochen",
+          "anzeigename": "Subtalararthrodese — Entlastung",
+          "beschreibung": "Versteifung des Subtalargelenks mit vollständiger Entlastung in der Nachbehandlung",
+          "auswahl_label": "Subtalararthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung des Subtalargelenks, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -1634,7 +1634,7 @@
       "platzhalter": {
         "WOCHEN": "8",
         "GELENK": "Chopart-Gelenk",
-        "GELENK_VERSTEIFT": "oberen und unteren Sprunggelenk",
+        "GELENK_VERSTEIFT": "oberen Sprunggelenk und Subtalargelenk",
         "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
         "THROMBOSE_WOCHEN": "8"
       },
@@ -1644,10 +1644,10 @@
       },
       "varianten": {
         "einfach": {
-          "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Teilbelastung",
-          "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "OSG+USG-Arthrodese (Nagel) — Teilbelastung",
-          "auswahl_kurz": "Versteifung von oberem und unterem Sprunggelenk, Teilbelastung ab früh nach OP",
+          "anzeigename": "Arthrodese mit Nagel (OSG + Subtalargelenk) — Teilbelastung",
+          "beschreibung": "Versteifung von oberem Sprunggelenk und Subtalargelenk über einen Nagel, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Arthrodese mit Nagel (OSG + Subtalargelenk) — Teilbelastung",
+          "auswahl_kurz": "Versteifung von oberem Sprunggelenk und Subtalargelenk, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -1717,10 +1717,10 @@
           ]
         },
         "komplex": {
-          "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Entlastung",
-          "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "OSG+USG-Arthrodese (Nagel) — Entlastung",
-          "auswahl_kurz": "Versteifung von oberem und unterem Sprunggelenk, komplette Entlastung in den ersten Wochen",
+          "anzeigename": "Arthrodese mit Nagel (OSG + Subtalargelenk) — Entlastung",
+          "beschreibung": "Versteifung von oberem Sprunggelenk und Subtalargelenk über einen Nagel, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Arthrodese mit Nagel (OSG + Subtalargelenk) — Entlastung",
+          "auswahl_kurz": "Versteifung von oberem Sprunggelenk und Subtalargelenk, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -1983,10 +1983,10 @@
       },
       "varianten": {
         "einfach": {
-          "anzeigename": "TMT-Arthrodese 2–5",
-          "beschreibung": "Versteifung der Tarsometatarsalgelenke 2–5",
-          "auswahl_label": "Versteifung TMT 2–5",
-          "auswahl_kurz": "Ohne Beteiligung des ersten Strahls",
+          "anzeigename": "TMT-Arthrodese 2–3",
+          "beschreibung": "Versteifung der Tarsometatarsalgelenke 2 und 3, ohne den ersten Strahl",
+          "auswahl_label": "TMT-Arthrodese 2–3",
+          "auswahl_kurz": "Mittlere Strahlen ohne den ersten, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -2056,10 +2056,10 @@
           ]
         },
         "komplex": {
-          "anzeigename": "TMT-Arthrodese 1 kombiniert mit 2–5",
-          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks in Kombination mit TMT 2–5",
-          "auswahl_label": "Versteifung TMT 1 kombiniert mit 2–5",
-          "auswahl_kurz": "Erster Strahl gemeinsam mit weiteren Gelenken",
+          "anzeigename": "TMT-Arthrodese 1–3",
+          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks gemeinsam mit TMT 2 und 3",
+          "auswahl_label": "TMT-Arthrodese 1–3",
+          "auswahl_kurz": "Erster Strahl gemeinsam mit den mittleren, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -2074,12 +2074,12 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "mobilisierung_teilbelastung"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 2,
@@ -2092,6 +2092,11 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "redression_grosszehe_tmt1"
+            },
+            {
               "tag": 14,
               "label": "2 Wochen nach OP",
               "baustein": "faden_standard"
@@ -2102,6 +2107,11 @@
               "baustein": "verband_ab_ruhiggestellt"
             },
             {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_ohne_belastung"
+            },
+            {
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
@@ -2110,16 +2120,6 @@
               "tag": 49,
               "label": "7 Wochen nach OP",
               "baustein": "ct_kontrolle_arthrodese"
-            },
-            {
-              "tag": 56,
-              "label": "8 Wochen nach OP",
-              "baustein": "ct_walker_wechsel"
-            },
-            {
-              "tag": 84,
-              "label": "12 Wochen nach OP",
-              "baustein": "roentgen_vollbelastung"
             },
             {
               "tag": 84,
@@ -5128,6 +5128,13 @@
       "emoji": "✅",
       "intro": "Der Eingriff ist nun 3 Monate her.",
       "text": "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Eine restliche Schwellneigung oder ein gelegentliches Ziehen im OP-Gebiet wären zu diesem Zeitpunkt noch nicht ungewöhnlich.\n\nSollten noch relevante Beschwerden im OP-Gebiet vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
+      "subthemen": []
+    },
+    "redression_grosszehe_tmt1": {
+      "thema": "Führung der Großzehe",
+      "emoji": "🦶",
+      "intro": "Ob dieser Punkt Sie betrifft, hängt vom Grund Ihrer Operation ab.",
+      "text": "Wurde der erste Strahl bei Ihnen zur Korrektur eines Hallux valgus versteift, muss die Großzehe in der Korrekturposition gehalten werden (man spricht von einer Redression). Dies geschieht über redressierende Verbände, die bei den Verbandswechseln erneuert werden, und ergänzend über Zwischenzehenkeile oder eine Schiene. Die genaue Führung legt Ihr Behandler fest.\n\nWurde das Gelenk dagegen wegen Verschleißes versteift, etwa nach einer Lisfranc-Verletzung, und war keine Korrektur der Großzehe nötig, entfällt die Redression.",
       "subthemen": []
     }
   },
