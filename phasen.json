@@ -430,8 +430,8 @@
         "einfach": {
           "anzeigename": "OSG-Arthrodese — Teilbelastung",
           "beschreibung": "OSG-Arthrodese mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "OSG-Arthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung des oberen Sprunggelenks, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -503,8 +503,8 @@
         "komplex": {
           "anzeigename": "OSG-Arthrodese — Entlastung",
           "beschreibung": "OSG-Arthrodese mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "OSG-Arthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung des oberen Sprunggelenks, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -781,8 +781,8 @@
         "einfach": {
           "anzeigename": "USG-Arthrodese — Teilbelastung",
           "beschreibung": "Versteifung des unteren Sprunggelenks mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "USG-Arthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung des unteren Sprunggelenks, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -854,8 +854,8 @@
         "komplex": {
           "anzeigename": "USG-Arthrodese — Entlastung",
           "beschreibung": "Versteifung des unteren Sprunggelenks mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "USG-Arthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung des unteren Sprunggelenks, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -954,8 +954,8 @@
         "einfach": {
           "anzeigename": "Versteifung des Talonaviculargelenks — Teilbelastung",
           "beschreibung": "Versteifung des Talonaviculargelenks mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "TN-Arthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung des Talonaviculargelenks, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -1027,8 +1027,8 @@
         "komplex": {
           "anzeigename": "Versteifung des Talonaviculargelenks — Entlastung",
           "beschreibung": "Versteifung des Talonaviculargelenks mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "TN-Arthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung des Talonaviculargelenks, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -1127,8 +1127,8 @@
         "einfach": {
           "anzeigename": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk — Teilbelastung",
           "beschreibung": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "Double-Arthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung von zwei Rückfußgelenken, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -1200,8 +1200,8 @@
         "komplex": {
           "anzeigename": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk — Entlastung",
           "beschreibung": "Versteifung von unterem Sprunggelenk und Talonaviculargelenk mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "Double-Arthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung von zwei Rückfußgelenken, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -1300,8 +1300,8 @@
         "einfach": {
           "anzeigename": "Versteifung der drei Rückfußgelenke — Teilbelastung",
           "beschreibung": "Versteifung der drei Rückfußgelenke mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "Triple-Arthrodese — Teilbelastung",
+          "auswahl_kurz": "Versteifung der drei Rückfußgelenke, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -1373,8 +1373,8 @@
         "komplex": {
           "anzeigename": "Versteifung der drei Rückfußgelenke — Entlastung",
           "beschreibung": "Versteifung der drei Rückfußgelenke mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "Triple-Arthrodese — Entlastung",
+          "auswahl_kurz": "Versteifung der drei Rückfußgelenke, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -1646,8 +1646,8 @@
         "einfach": {
           "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Teilbelastung",
           "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit Teilbelastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit Teilbelastung",
-          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "auswahl_label": "OSG+USG-Arthrodese (Nagel) — Teilbelastung",
+          "auswahl_kurz": "Versteifung von oberem und unterem Sprunggelenk, Teilbelastung ab früh nach OP",
           "postop": [
             {
               "tag": 0,
@@ -1719,8 +1719,8 @@
         "komplex": {
           "anzeigename": "Versteifung von oberem und unterem Sprunggelenk mit Nagel — Entlastung",
           "beschreibung": "Versteifung von oberem und unterem Sprunggelenk mit Nagel mit vollständiger Entlastung in der Nachbehandlung",
-          "auswahl_label": "Versteifung mit kompletter Entlastung",
-          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "auswahl_label": "OSG+USG-Arthrodese (Nagel) — Entlastung",
+          "auswahl_kurz": "Versteifung von oberem und unterem Sprunggelenk, komplette Entlastung in den ersten Wochen",
           "postop": [
             {
               "tag": 0,
@@ -2949,6 +2949,1574 @@
           ]
         }
       }
+    },
+    "scarf": {
+      "label": "Scarf-Osteotomie",
+      "kurzlabel": "Scarf",
+      "merkmale": {},
+      "platzhalter": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Scarf-Osteotomie",
+          "beschreibung": "Scarf-Osteotomie zur Hallux-valgus-Korrektur",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss"
+            },
+            {
+              "tag": 22,
+              "label": "3 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Scarf-Osteotomie mit Zusatzeingriff",
+          "beschreibung": "Scarf-Osteotomie zur Hallux-valgus-Korrektur, kombiniert mit Zusatzeingriff an Metatarsale oder Zehen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_4_redression"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss_komplex"
+            },
+            {
+              "tag": 29,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        }
+      }
+    },
+    "youngswick": {
+      "label": "Youngswick-Osteotomie",
+      "kurzlabel": "Youngswick",
+      "merkmale": {},
+      "platzhalter": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Youngswick-Osteotomie",
+          "beschreibung": "Youngswick-Osteotomie beim Hallux rigidus",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss"
+            },
+            {
+              "tag": 22,
+              "label": "3 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Youngswick-Osteotomie mit Zusatzeingriff",
+          "beschreibung": "Youngswick-Osteotomie beim Hallux rigidus, kombiniert mit Zusatzeingriff an Metatarsale oder Zehen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_4_redression"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss_komplex"
+            },
+            {
+              "tag": 29,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        }
+      }
+    },
+    "cheilektomie": {
+      "label": "Cheilektomie",
+      "kurzlabel": "Cheilektomie",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh oder einem Schuh mit steifer Sohle"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Cheilektomie",
+          "beschreibung": "Abtragung der knöchernen Anbauten am Großzehengrundgelenk",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "bewegung_mtp1_frei"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_rigidus_cheilektomie"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Cheilektomie mit Moberg-Osteotomie",
+          "beschreibung": "Abtragung der knöchernen Anbauten, kombiniert mit einer Moberg-Osteotomie des Großzehengrundglieds",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "bewegung_mtp1_frei"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_rigidus_cheilektomie"
+            }
+          ]
+        }
+      }
+    },
+    "mtp1_arthrodese": {
+      "label": "MTP1-Arthrodese",
+      "kurzlabel": "MTP1-Arthrodese",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh mit steifer Sohle"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "MTP1-Arthrodese",
+          "beschreibung": "Versteifung des Großzehengrundgelenks",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_mtp1_arthrodese"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "MTP1-Arthrodese mit Kleinzehenkorrektur",
+          "beschreibung": "Versteifung des Großzehengrundgelenks, kombiniert mit einer Korrektur der Kleinzehen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_mtp1_arthrodese"
+            }
+          ]
+        }
+      }
+    },
+    "kleinzehen_pip": {
+      "label": "Kleinzehenkorrektur",
+      "kurzlabel": "Kleinzehen",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh oder einem Schuh mit steifer Sohle"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Kleinzehenkorrektur — ohne Draht",
+          "beschreibung": "Korrektur der Kleinzehenfehlstellung, Sicherung über Taping",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Kleinzehenkorrektur — mit Draht",
+          "beschreibung": "Korrektur der Kleinzehenfehlstellung, zusätzlich mit einem Draht gesichert",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "draht_entfernung"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "dmmo": {
+      "label": "DMMO (Mittelfuß-Osteotomie)",
+      "kurzlabel": "DMMO",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Schuh mit steifer Sohle"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "DMMO",
+          "beschreibung": "Minimalinvasive Osteotomie der Mittelfußknochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "schuh_breiter_vorfuss"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "DMMO mit Kleinzehenkorrektur",
+          "beschreibung": "Minimalinvasive Osteotomie der Mittelfußknochen, kombiniert mit einer Korrektur der Kleinzehen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "schuh_breiter_vorfuss"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "weil": {
+      "label": "Weil-Osteotomie",
+      "kurzlabel": "Weil",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Weil-Osteotomie",
+          "beschreibung": "Verkürzende Osteotomie der Mittelfußknochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_zehen_beugung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Weil-Osteotomie mit Kleinzehenkorrektur",
+          "beschreibung": "Verkürzende Osteotomie der Mittelfußknochen, kombiniert mit einer Korrektur der Kleinzehen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_taping_zehen"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_zehen_beugung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "taping_wechsel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "morton": {
+      "label": "Entfernung Morton-Neurom",
+      "kurzlabel": "Morton",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": [],
+        "entferne": [
+          "versorgung_sozial",
+          "versorgung_hilfsmittel",
+          "wohnung_vorbereitung"
+        ]
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Entfernung Morton-Neurom",
+          "beschreibung": "Entfernung des verdickten Nervs zwischen den Mittelfußköpfen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "plantarfascie": {
+      "label": "Plantarfaszien-Release",
+      "kurzlabel": "Plantarfaszie",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "normalem, bequemem Schuhwerk"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": [],
+        "entferne": [
+          "versorgung_sozial",
+          "versorgung_hilfsmittel",
+          "wohnung_vorbereitung"
+        ]
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Plantarfaszien-Release",
+          "beschreibung": "Teilweise Durchtrennung der Plantarfaszie am Fersenansatz",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "gastroc": {
+      "label": "Wadenmuskel-Verlängerung",
+      "kurzlabel": "Gastroc",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "normalem Schuhwerk"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Wadenmuskel-Verlängerung (proximal)",
+          "beschreibung": "Verlängerung des Wadenmuskels am Muskelübergang, sofortige Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "calcaneoplastie": {
+      "label": "Calcaneoplastie",
+      "kurzlabel": "Calcaneoplastie",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Schutzschuh oder einer weiten Sandale, häufig mit einem Fersenkeil"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Calcaneoplastie",
+          "beschreibung": "Abtragung des knöchernen Fersenüberstands (Haglund-Ferse)",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "arthrorise": {
+      "label": "Arthrorise",
+      "kurzlabel": "Arthrorise",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Schutzschuh"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Arthrorise",
+          "beschreibung": "Einsetzen einer Schraube im Sinus tarsi zur Korrektur des kindlichen Knick-Senk-Fußes",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "coalitio_cn": {
+      "label": "Coalitio-Resektion (calcaneonavicular)",
+      "kurzlabel": "Coalitio-CN",
+      "merkmale": {},
+      "platzhalter": {
+        "SCHUH": "einem Walker"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Coalitio-Resektion",
+          "beschreibung": "Entfernung der knöchernen Verbindung zwischen Fersenbein und Kahnbein, Vollbelastung im Walker für 4 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
     }
   },
   "BEGLEITER_BAUSTEINE": {
@@ -3490,6 +5058,76 @@
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
       "text": "Nach einer Bandreparatur gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+      "subthemen": []
+    },
+    "mobilisierung_vollbelastung_allgemein": {
+      "thema": "Mobilisierung und Thromboseschutz",
+      "emoji": "🚶",
+      "intro": "Nach diesem Eingriff dürfen Sie in der Regel direkt voll belasten.",
+      "text": "Dies bedeutet, dass Sie in §SCHUH§ ohne Stützen auftreten und nach Möglichkeit normal laufen. Wenn das volle Belasten möglich ist und keine Neigung zu Thrombosen vorliegt, müssen Sie keinen Thromboseschutz spritzen. Dies sollten Sie bei Ihrem Behandler aber immer explizit nachfragen.\n\nGelingt die volle Belastung zunächst nicht — etwa wegen Schmerzen oder Unsicherheit — und gehen Sie überwiegend an den Stützen, sollte für diese Zeit ein Thromboseschutz erfolgen. Besprechen Sie das im Zweifel mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "verband_taping_zehen": {
+      "thema": "Redressierender Tape-Verband",
+      "emoji": "🩹",
+      "intro": "Nach dem Eingriff werden die operierten Zehen mit einem Tape-Verband in der korrigierten Stellung gehalten.",
+      "text": "Die Zehen werden dabei leicht in Richtung Fußsohle geführt (man spricht von einem plantarisierenden Taping), damit Knochen und Weichteile in der Korrekturposition ausheilen. Wichtig dabei: Die Beugung nach fußsohlenwärts erfolgt nur im Zehengrundgelenk — die Zehe selbst wird als Ganzes gerade getaped und nicht gekrümmt. Der Verband ist damit ein wichtiger Teil der Behandlung und nicht nur ein Wundschutz.\n\nDas Tape wird wöchentlich durch Ihren Operateur oder geschultes Personal erneuert — entfernen Sie es nicht selbst. Sollte sich der Verband lockern, durchfeuchten oder Druckstellen verursachen, melden Sie sich bei Ihrem Behandler.",
+      "subthemen": []
+    },
+    "taping_wechsel": {
+      "thema": "Tape-Wechsel",
+      "emoji": "🩹",
+      "intro": "Diese Woche steht der Wechsel des redressierenden Tape-Verbandes an.",
+      "text": "Beim Wechsel wird die Stellung der Zehen geprüft und das Tape erneuert. Auch hier gilt: im Zehengrundgelenk leicht fußsohlenwärts geführt, die Zehe selbst als Ganzes gerade. Achten Sie zwischen den Terminen auf die Haut — Blasen, Druckstellen oder zunehmende Schmerzen sollten Sie ansprechen.\n\nIm Zweifelsfall wird das stabilisierende Taping lieber etwas länger fortgeführt, um eine gute Ausheilung in der Korrekturposition zu ermöglichen.",
+      "subthemen": []
+    },
+    "draht_entfernung": {
+      "thema": "Entfernung des Drahtes",
+      "emoji": "🔩",
+      "intro": "Zur Sicherung der Korrektur wurde ein dünner Draht eingebracht — dieser wird nun entfernt.",
+      "text": "Die Entfernung erfolgt in der Regel 3 bis 6 Wochen nach dem Eingriff in der Sprechstunde. Eine Betäubung ist dafür nicht nötig, das Herausziehen ist nur kurz unangenehm.\n\nSolange der Draht einliegt, sollte das Drahtende trocken und sauber gehalten werden. Baden und Schwimmen sind in dieser Zeit nicht möglich. Selbstauflösende Stifte verbleiben dagegen im Knochen und müssen nicht entfernt werden.",
+      "subthemen": []
+    },
+    "bewegung_zehen_beugung": {
+      "thema": "Beugeübungen der Zehen",
+      "emoji": "🦶",
+      "intro": "Damit die operierte Zehe kräftig am Boden bleibt, sind aktive Beugeübungen über Monate wichtig.",
+      "text": "Nach Eingriffen an den Mittelfußknochen kann es passieren, dass eine Zehe den Bodenkontakt verliert und leicht angehoben stehen bleibt (man spricht von einer Floating Toe). Dem können Sie vorbeugen, indem Sie die Zehen mehrmals täglich aktiv in Richtung Fußsohle beugen — etwa indem Sie versuchen, ein Tuch mit den Zehen zu greifen.\n\nFühren Sie diese Übungen über mehrere Monate fort, auch wenn der Fuß längst wieder belastbar ist.",
+      "subthemen": []
+    },
+    "schuh_breiter_vorfuss": {
+      "thema": "Wechsel in den eigenen Schuh",
+      "emoji": "👟",
+      "intro": "Etwa 4 Wochen nach dem Eingriff können Sie vom Verbandschuh in eigenes Schuhwerk wechseln.",
+      "text": "Geeignet ist ein Schuh mit breitem Vorfußbereich, steifer Sohle und weichem Oberleder, damit die Zehen nicht eingeengt werden und der Vorfuß beim Abrollen geschützt bleibt. Das Taping läuft dabei weiter, bis Ihr Behandler es beendet.\n\nSollte der Fuß noch deutlich geschwollen sein, tragen Sie den Verbandschuh einfach noch etwas länger — das wäre nicht ungewöhnlich.",
+      "subthemen": []
+    },
+    "bewegung_mtp1_frei": {
+      "thema": "Bewegungsübungen Großzehengrundgelenk",
+      "emoji": "🦶",
+      "intro": "Nach der Cheilektomie soll das Großzehengrundgelenk früh bewegt werden, damit die gewonnene Beweglichkeit erhalten bleibt.",
+      "text": "Beginnen Sie frühzeitig mit eigenständigen Bewegungsübungen der Großzehe in die Beugung und die Hebung. Machen Sie die Übungen im beschwerdearmen Bereich und steigern Sie den Umfang von Tag zu Tag. Eine Schiene oder Zwischenzehenkeile sind nach diesem Eingriff nicht nötig — das Gelenk darf und soll sich bewegen.",
+      "subthemen": []
+    },
+    "kontrolle_rigidus_cheilektomie": {
+      "thema": "Kontrolle",
+      "emoji": "✅",
+      "intro": "Der Eingriff ist nun 3 Monate her.",
+      "text": "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Das Großzehengrundgelenk sollte spürbar beweglicher sein als vor dem Eingriff, so dass Sie die Zehe heben und über dem Vorfuß abrollen können.\n\nSollten noch relevante Beschwerden oder eine störende Steife des Gelenkes vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
+      "subthemen": []
+    },
+    "kontrolle_mtp1_arthrodese": {
+      "thema": "Kontrolle",
+      "emoji": "✅",
+      "intro": "Der Eingriff ist nun 3 Monate her.",
+      "text": "Sie sollten im Alltag bereits gut zurechtkommen und Ihre Belastung weiter steigern können. Das versteifte Großzehengrundgelenk ist nicht mehr beweglich — das ist gewollt. Das Abrollen übernehmen das Endgelenk der Großzehe und der Mittelfuß; eine gewisse Anpassungszeit an das veränderte Abrollen ist normal.\n\nSollten noch relevante Beschwerden im OP-Gebiet vorliegen oder das Gehen weiterhin deutlich eingeschränkt sein, ist eine ärztliche Kontrolle nötig — am besten bei den Kolleginnen, die den Eingriff durchgeführt haben.",
+      "subthemen": []
+    },
+    "kontrolle_vorfuss_allgemein": {
+      "thema": "Kontrolle",
+      "emoji": "✅",
+      "intro": "Der Eingriff ist nun 3 Monate her.",
+      "text": "Sie sollten im Alltag bereits gut zurechtkommen und auch darüber hinaus Ihre Belastung bereits etwas steigern können. Eine restliche Schwellneigung oder ein gelegentliches Ziehen im OP-Gebiet wären zu diesem Zeitpunkt noch nicht ungewöhnlich.\n\nSollten noch relevante Beschwerden im OP-Gebiet vorliegen, ist eine ärztliche Kontrolle nötig. Dies wird am besten bei den Kolleginnen vorgenommen, die auch den Eingriff durchgeführt haben.",
       "subthemen": []
     }
   },
