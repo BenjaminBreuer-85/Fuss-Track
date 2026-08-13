@@ -4517,6 +4517,167 @@
           ]
         }
       }
+    },
+    "dwyer": {
+      "label": "Dwyer-Osteotomie",
+      "kurzlabel": "Dwyer-Osteotomie",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Dwyer-Osteotomie — Teilbelastung",
+          "beschreibung": "Zuklappende Keilosteotomie des Fersenbeins zur Korrektur des Rückfuß-Varus, Teilbelastung in der Nachbehandlung",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Dwyer-Osteotomie — Entlastung",
+          "beschreibung": "Zuklappende Keilosteotomie des Fersenbeins zur Korrektur des Rückfuß-Varus, vollständige Entlastung in der Nachbehandlung",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
     }
   },
   "BEGLEITER_BAUSTEINE": {

@@ -6776,6 +6776,110 @@
           "text": "Kennedy JG, Baxter DE. Nerve disorders in dancers. Clin Sports Med. 2008;27(2):329-334. doi:10.1016/j.csm.2008.01.001"
         }
       ]
+    },
+    "lambrinudi": {
+      "infoKategorie": "op_technik",
+      "infoTitel": "Lambrinudi-Arthrodese",
+      "titel": "Lambrinudi-Arthrodese",
+      "untertitel": "Aufrichtende Versteifung der drei Rückfußgelenke bei fixiertem Spitz- oder Fallfuß",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "op_lambrinudi_ueberblick",
+        "op_lambrinudi_ablauf",
+        "op_lambrinudi_ergebnisse",
+        "op_lambrinudi_nachbehandlung",
+        "op_lambrinudi_komplikationen",
+        "op_lambrinudi_quellen"
+      ],
+      "_quelle": "Elsner et al. 2011 (von Benjamin bereitgestelltes PDF) + PubMed-Recherche 08/2026",
+      "_review": true,
+      "_entwurf": true,
+      "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
+      "stand": "August 2026",
+      "quellen": [
+        {
+          "id": "lambrinudi_q1",
+          "text": "Elsner A, Barg A, Stufkens S, Knupp M, Hintermann B. Modifizierte Arthrodese nach Lambrinudi mit zusätzlichem Transfer der Tibialis-posterior-Sehne zur Behandlung des adulten Fallfußes. Oper Orthop Traumatol. 2011;23(2):121-130. doi: [10.1007/s00064-011-0027-9](https://doi.org/10.1007/s00064-011-0027-9)"
+        },
+        {
+          "id": "lambrinudi_q2",
+          "text": "Elsner A, Barg A, Stufkens SA, Hintermann B. Lambrinudi arthrodesis with posterior tibialis transfer in adult drop-foot. Foot Ankle Int. 2010;31(1):30-37. doi: [10.3113/FAI.2010.0030](https://doi.org/10.3113/FAI.2010.0030)"
+        },
+        {
+          "id": "lambrinudi_q3",
+          "text": "So LWN, Kuong EE, To KM, Leong JCY, Chow W. Long-term outcome after Lambrinudi arthrodesis: How they're doing after three decades. J Orthop Surg (Hong Kong). 2019;27(1). doi: [10.1177/2309499019826492](https://doi.org/10.1177/2309499019826492)"
+        },
+        {
+          "id": "lambrinudi_q4",
+          "text": "Li M, Xu Y, Liang X, et al. Modified Lambrinudi combined with X-shaped plate internal fixation for triple arthrodesis. Foot Ankle Int. 2026;47(4):484-492. doi: [10.1177/10711007251412836](https://doi.org/10.1177/10711007251412836)"
+        },
+        {
+          "id": "lambrinudi_q5",
+          "text": "Agrawal P, Mehta Y, Vishwakarma R, Bedwal D, Pandey S. Lambrinudi triple arthrodesis with posterior tibial tendon transfer in adult fixed equinus deformity: Case report. J Orthop Case Rep. 2024;14(6):163-170. doi: [10.13107/jocr.2024.v14.i06.4540](https://doi.org/10.13107/jocr.2024.v14.i06.4540)"
+        },
+        {
+          "id": "lambrinudi_q6",
+          "text": "Harrasser N, Lenze F, Hamel J. Der Ballenhohlfuß (Cavovarus). Orthopäde. 2021;50(1):75-85. doi: [10.1007/s00132-020-04053-w](https://doi.org/10.1007/s00132-020-04053-w)"
+        },
+        {
+          "id": "lambrinudi_q7",
+          "text": "Hamel J. Korrektureingriffe und Indikationen bei kindlichen und jugendlichen Cavovarus-Deformitäten. Oper Orthop Traumatol. 2017;29(6):473-482. doi: [10.1007/s00064-017-0520-x](https://doi.org/10.1007/s00064-017-0520-x)"
+        }
+      ]
+    },
+    "dwyer": {
+      "infoKategorie": "op_technik",
+      "infoTitel": "Dwyer-Osteotomie",
+      "titel": "Dwyer-Osteotomie",
+      "untertitel": "Zuklappende Keilosteotomie des Fersenbeins zur Korrektur des Rückfuß-Varus",
+      "betrifft_eingriffe": [],
+      "slides": [
+        "op_dwyer_ueberblick",
+        "op_dwyer_ablauf",
+        "op_dwyer_ergebnisse",
+        "op_dwyer_nachbehandlung",
+        "op_dwyer_komplikationen",
+        "op_dwyer_quellen"
+      ],
+      "_quelle": "PubMed-Recherche 08/2026",
+      "_review": true,
+      "_entwurf": true,
+      "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
+      "stand": "August 2026",
+      "quellen": [
+        {
+          "id": "dwyer_q1",
+          "text": "Weinheimer K, Campbell B, Roush EP, et al. Effects of variations in Dwyer calcaneal osteotomy determined by three-dimensional printed patient-specific modeling. J Orthop Res. 2020;38(12):2619-2624. doi: [10.1002/jor.24772](https://doi.org/10.1002/jor.24772)"
+        },
+        {
+          "id": "dwyer_q2",
+          "text": "MacGill A, Hendricks D, Leaman M, Perry D. Calcaneal osteotomies. Clin Podiatr Med Surg. 2026;43(1):53-68. doi: [10.1016/j.cpm.2025.07.005](https://doi.org/10.1016/j.cpm.2025.07.005)"
+        },
+        {
+          "id": "dwyer_q3",
+          "text": "Tennant JN, Carmont M, Phisitkul P. Calcaneus osteotomy. Curr Rev Musculoskelet Med. 2014;7(4):271-276. doi: [10.1007/s12178-014-9237-8](https://doi.org/10.1007/s12178-014-9237-8)"
+        },
+        {
+          "id": "dwyer_q4",
+          "text": "An TW, Michalski M, Jansson K, Pfeffer G. Comparison of lateralizing calcaneal osteotomies for varus hindfoot correction. Foot Ankle Int. 2018;39(10):1229-1236. doi: [10.1177/1071100718781572](https://doi.org/10.1177/1071100718781572)"
+        },
+        {
+          "id": "dwyer_q5",
+          "text": "deMeireles AJ, Guzman JZ, Nordio A, et al. Complications after percutaneous osteotomies of the calcaneus. Foot Ankle Orthop. 2022;7(3). doi: [10.1177/24730114221119731](https://doi.org/10.1177/24730114221119731)"
+        },
+        {
+          "id": "dwyer_q6",
+          "text": "Saxena A, Fournier M. Single-incision peroneal tendon repair with concomitant modified Dwyer calcaneal osteotomy: report of 15 cases with plate fixation. Foot Ankle Int. 2025;46(2):168-174. doi: [10.1177/10711007241303749](https://doi.org/10.1177/10711007241303749)"
+        },
+        {
+          "id": "dwyer_q7",
+          "text": "Boffeli TJ, Collier RC. Surgical technique for combined Dwyer calcaneal osteotomy and peroneal tendon repair for correction of peroneal tendon pathology associated with cavus foot deformity. J Foot Ankle Surg. 2012;51(1):135-140. doi: [10.1053/j.jfas.2011.10.021](https://doi.org/10.1053/j.jfas.2011.10.021)"
+        },
+        {
+          "id": "dwyer_q8",
+          "text": "Monteagudo M, Maceira E. Management of Müller-Weiss disease. Foot Ankle Clin. 2019;24(1):89-105. doi: [10.1016/j.fcl.2018.09.006](https://doi.org/10.1016/j.fcl.2018.09.006)"
+        }
+      ]
     }
   },
   "NONOP_MASSNAHMEN": {
