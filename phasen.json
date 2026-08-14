@@ -1,5 +1,21 @@
 {
   "SCHEMA": 2,
+  "AUFENTHALT_ERSATZ": {
+    "entlassung_stationaer": {
+      "ambulant": {
+        "baustein": "entlassung_ambulant",
+        "tag": 0,
+        "label": "OP-Tag"
+      }
+    },
+    "heimkehr_ambulant": {
+      "stationaer": {
+        "baustein": "entlassung_stationaer",
+        "tag": 2,
+        "label": "Tag 2 nach OP"
+      }
+    }
+  },
   "KRANKHEITSBILDER": [
     {
       "key": "hallux_valgus",
@@ -416,7 +432,8 @@
           ]
         }
       },
-      "platzhalter": {}
+      "platzhalter": {},
+      "aufenthalt_default": "ambulant"
     },
     "osg_arthrodese": {
       "label": "OSG-Arthrodese",
@@ -585,7 +602,8 @@
         "GELENK_VERSTEIFT": "oberen Sprunggelenk",
         "SCHUHVERSORGUNG": "der Anfertigung einer Schuhzurichtung mit Abrollhilfe und Sohlenversteifung",
         "THROMBOSE_WOCHEN": "8"
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "osg_tep": {
       "label": "OSG-Prothese",
@@ -756,7 +774,8 @@
       "platzhalter": {
         "WOCHEN": "6",
         "THROMBOSE_WOCHEN": "6"
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "subtalar": {
       "label": "Subtalararthrodese",
@@ -929,7 +948,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "tn": {
       "label": "TN-Arthrodese",
@@ -1102,7 +1122,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "double_arthrodese": {
       "label": "Double-Arthrodese",
@@ -1275,7 +1296,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "triple": {
       "label": "Triple-Arthrodese",
@@ -1448,7 +1470,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "lambrinudi": {
       "label": "Triple-Arthrodese nach Lambrinudi",
@@ -1621,7 +1644,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "ttc": {
       "label": "Transtalare Arthrodese (Nagel)",
@@ -1794,7 +1818,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "smot_valgus": {
       "label": "Supramalleoläre Osteotomie",
@@ -1960,7 +1985,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "tmt": {
       "label": "TMT-Arthrodese",
@@ -2133,7 +2159,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "calc_medial": {
       "label": "Calcaneus-Verschiebeosteotomie",
@@ -2294,7 +2321,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "calc_verlaengerung": {
       "label": "Calcaneus-Verlängerungsosteotomie",
@@ -2455,7 +2483,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "lapidus": {
       "label": "Lapidus-Arthrodese",
@@ -2616,7 +2645,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "brostrom": {
       "label": "Außenbandreparatur (Broström)",
@@ -2782,7 +2812,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "lat_stabil": {
       "label": "Laterale Stabilisierung mit Bandplastik",
@@ -2948,7 +2979,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "scarf": {
       "label": "Scarf-Osteotomie",
@@ -3107,7 +3139,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "youngswick": {
       "label": "Youngswick-Osteotomie",
@@ -3266,7 +3299,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "cheilektomie": {
       "label": "Cheilektomie",
@@ -3402,7 +3436,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "mtp1_arthrodese": {
       "label": "MTP1-Arthrodese",
@@ -3558,7 +3593,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "kleinzehen_pip": {
       "label": "Kleinzehenkorrektur",
@@ -3729,7 +3765,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "dmmo": {
       "label": "DMMO (Mittelfuß-Osteotomie)",
@@ -3905,7 +3942,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "weil": {
       "label": "Weil-Osteotomie",
@@ -4081,7 +4119,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "morton": {
       "label": "Entfernung Morton-Neurom",
@@ -4156,7 +4195,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "plantarfascie": {
       "label": "Plantarfaszien-Release",
@@ -4231,7 +4271,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "gastroc": {
       "label": "Wadenmuskel-Verlängerung",
@@ -4301,7 +4342,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "calcaneoplastie": {
       "label": "Calcaneoplastie",
@@ -4371,7 +4413,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "arthrorise": {
       "label": "Arthrorise",
@@ -4441,7 +4484,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "coalitio_cn": {
       "label": "Coalitio-Resektion (calcaneonavicular)",
@@ -4516,7 +4560,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "ambulant"
     },
     "dwyer": {
       "label": "Dwyer-Osteotomie",
@@ -4677,7 +4722,8 @@
             }
           ]
         }
-      }
+      },
+      "aufenthalt_default": "stationaer"
     },
     "knorpel_osg": {
       "label": "Knorpelchirurgie am OSG",
@@ -4859,6 +4905,652 @@
               "tag": 84,
               "label": "3 Monate nach OP",
               "baustein": "sport_nach_bandstabilisierung"
+            }
+          ]
+        }
+      },
+      "aufenthalt_default": "stationaer"
+    },
+    "haglund_split": {
+      "label": "Haglund-OP mit Sehnen-Refixation",
+      "kurzlabel": "Haglund-Refixation",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "aufenthalt_default": "stationaer",
+      "platzhalter": {
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Haglund-OP mit Refixation — ohne Sehnentransfer",
+          "beschreibung": "Abtragung des Haglund-Höckers über einen Sehnen-Split mit Refixation der Achillessehne",
+          "auswahl_label": "Refixation allein",
+          "auswahl_kurz": "Haglund-Abtragung mit Sehnen-Split und Refixation, Spitzfuß-Walker über 8 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Haglund-OP mit Refixation — mit FHL-Transfer",
+          "beschreibung": "Zusätzlich Transfer der langen Großzehenbeugesehne (FHL) zur Verstärkung der Achillessehne",
+          "auswahl_label": "Mit FHL-Transfer",
+          "auswahl_kurz": "Zusätzlich Transfer der langen Großzehenbeugesehne zur Verstärkung der Sehne",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "fhl_kraeftigung"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "achilles_nekrose": {
+      "label": "Offene Achillessehnen-Sanierung",
+      "kurzlabel": "Sehnen-Sanierung",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "aufenthalt_default": "stationaer",
+      "platzhalter": {
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Offene Achillessehnen-Sanierung mit Refixation",
+          "beschreibung": "Entfernung des geschädigten Sehnengewebes mit Refixation der Achillessehne am Knochen",
+          "auswahl_label": "Sanierung mit Refixation",
+          "auswahl_kurz": "Entfernung des geschädigten Gewebes und Refixation, Spitzfuß-Walker über 8 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Offene Achillessehnen-Sanierung — mit FHL-Transfer",
+          "beschreibung": "Zusätzlich Transfer der langen Großzehenbeugesehne (FHL) zur Verstärkung der Achillessehne",
+          "auswahl_label": "Mit FHL-Transfer",
+          "auswahl_kurz": "Zusätzlich Transfer der langen Großzehenbeugesehne zur Verstärkung der Sehne",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "fhl_kraeftigung"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "achilles_naht": {
+      "label": "Achillessehnen-Naht",
+      "kurzlabel": "Achillessehnen-Naht",
+      "merkmale": {
+        "belastung": "voll",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "aufenthalt_default": "stationaer",
+      "platzhalter": {
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Achillessehnen-Naht — perkutan",
+          "beschreibung": "Minimal-invasive Naht der gerissenen Achillessehne über kleine Hautschnitte",
+          "auswahl_label": "Perkutane Naht",
+          "auswahl_kurz": "Minimal-invasive Naht über kleine Schnitte, frühfunktionelle Nachbehandlung im Spitzfuß-Walker",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "belastung_naht_frueh"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Achillessehnen-Naht — offen",
+          "beschreibung": "Offene Naht der gerissenen Achillessehne über einen Hautschnitt",
+          "auswahl_label": "Offene Naht",
+          "auswahl_kurz": "Offene Naht der Sehne, frühfunktionelle Nachbehandlung im Spitzfuß-Walker",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_spitzfuss_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "belastung_naht_frueh"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "stufe_walker_2"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "stufe_walker_1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 49,
+              "label": "7 Wochen nach OP",
+              "baustein": "stufe_walker_0"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "schuh_fersenkeil"
+            },
+            {
+              "tag": 70,
+              "label": "10 Wochen nach OP",
+              "baustein": "training_rad_kraft"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "freie_bewegung_achilles"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "tendoskopie_achilles": {
+      "label": "Achillessehnen-Tendoskopie",
+      "kurzlabel": "Tendoskopie",
+      "merkmale": {
+        "belastung": "voll",
+        "ruhigstellung": "keine",
+        "aufenthalt": "ambulant"
+      },
+      "aufenthalt_default": "ambulant",
+      "platzhalter": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": [],
+        "entferne": [
+          "versorgung_sozial",
+          "versorgung_hilfsmittel",
+          "wohnung_vorbereitung"
+        ]
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Achillessehnen-Tendoskopie",
+          "beschreibung": "Minimal-invasive Spiegelung und Sanierung des Gleitgewebes der Achillessehne",
+          "auswahl_label": "Standard",
+          "auswahl_kurz": "Frühfunktionelle Nachbehandlung ohne Ruhigstellung, zügige Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_tendoskopie"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "exzentrik_tendoskopie"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "sport_tendoskopie"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
             }
           ]
         }
@@ -5494,7 +6186,7 @@
       "thema": "Sanfte Bewegungsübungen des Sprunggelenks",
       "emoji": "🦶",
       "intro": "Bei dieser Variante wurden zusätzlich die Bänder stabilisiert — die Beübung folgt deshalb strengeren Regeln.",
-      "text": "In den ersten 6 Wochen nach der Operation darf das Sprunggelenk nicht in die Beugung fußsohlenwärts gebracht, nicht verdreht und nicht nach innen gekippt werden (keine Flexion, keine Verdrehung des Fußes, keine Inversion). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nAb der vierten Woche können Sie mit einer sanften Mobilisierung in die Gegenrichtung beginnen — dem vorsichtigen Anheben des Fußes (Extension), im beschwerdearmen Bereich und ohne Zug an den Bändern zu erzwingen. Im Zweifel besprechen Sie die Übungen mit Ihrer Physiotherapie oder dem Behandler.\n\nErgänzend sind ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie sinnvoll — auch zur Thromboseprophylaxe.",
+      "text": "In den ersten 6 Wochen nach der Operation darf das Sprunggelenk nicht in die Beugung fußsohlenwärts gebracht, nicht verdreht und nicht nach innen gekippt werden (keine Flexion, keine Verdrehung des Fußes, keine Inversion). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nAb der vierten Woche können Sie mit einer sanften Mobilisierung in die Gegenrichtung beginnen — dem vorsichtigen Anheben des Fußes (Extension). Ausgangspunkt ist dabei die Neutralstellung, also die 90°-Stellung des Fußes zum Unterschenkel. Aus dieser Position wird der Fuß nur nach oben angehoben und wieder bis zur Neutralstellung zurückgeführt — nicht darüber hinaus fußsohlenwärts. Üben Sie im beschwerdearmen Bereich und ohne Zug an den Bändern zu erzwingen. Im Zweifel besprechen Sie die Übungen mit Ihrer Physiotherapie oder dem Behandler.\n\nBewegungsübungen ohne Belastung für Hüfte und Knie sind weiterhin sinnvoll — auch zur Thromboseprophylaxe.",
       "subthemen": []
     },
     "aufbelastung_knorpel": {
@@ -5508,21 +6200,123 @@
       "thema": "Wechsel in die Orthese und Aufbelastung",
       "emoji": "🦵",
       "intro": "Nach 6 Wochen Teilbelastung folgen bei dieser Variante weitere 6 Wochen in einer Orthese — nun unter Vollbelastung.",
-      "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese schützt die stabilisierten Bänder in der Heilungsphase und wird bis zur 12. Woche nach der Operation getragen. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nAuch in dieser Phase gilt: keine forcierten Verdrehungen und kein Kippen des Fußes nach innen. Die Physiotherapie begleitet die Aufbelastung mit Gangschule und vorsichtiger Beweglichkeitsarbeit — die Inhalte nehmen Rücksicht auf die Bandstabilisierung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald die Vollbelastung in der Orthese sicher gelingt. Solange Sie noch überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese wird nur bei Belastung getragen — also beim Stehen und Gehen; in Ruhe können Sie sie ablegen. Sie schützt vor allem vor einem erneuten Umknicken in dieser frühen Phase, in der der Gang oft noch unsicher ist, und wird bis zur 12. Woche nach der Operation genutzt. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nForcierte Verdrehungen und ein Kippen des Fußes nach innen sollten Sie weiterhin vermeiden. Der Fokus der Physiotherapie liegt jetzt auf der Mobilisierung des Sprunggelenks und auf neuromuskulärem Training — also Übungen für Gleichgewicht, Koordination und die muskuläre Kontrolle des Gelenks.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald die Vollbelastung in der Orthese sicher gelingt. Solange Sie noch überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
       "subthemen": []
     },
     "nem_knorpel": {
       "thema": "Nahrungsergänzung für den Knorpel",
       "emoji": "💊",
       "intro": "Die Heilung des Knorpelgewebes können Sie von innen unterstützen.",
-      "text": "Schon in der Vorbereitung auf die Operation haben wir auf eine ausgewogene, eiweißreiche Ernährung hingewiesen. Nach einer Knorpeltherapie lohnt es sich, gezielt nachzulegen. Für die folgenden Präparate gibt es Hinweise aus Studien, dass sie den Aufbau von Knorpelgewebe unterstützen oder Gelenkbeschwerden lindern können. Die Effekte sind moderat, die Verträglichkeit ist insgesamt gut.\n\nSinnvoll ist eine tägliche Einnahme über etwa drei Monate von Vitamin C (unterstützt als Baustein die körpereigene Kollagenbildung), hydrolysiertem Kollagen (=in kleine Bausteine zerlegtes Kollagen, üblich sind etwa 10 g täglich), Chondroitin (etwa 1200 mg täglich, auf pharmazeutische Qualität achten) und Glucosamin (etwa 1500 mg täglich). Ergänzend kann die Kontrolle des Vitamin-D-Spiegels sinnvoll sein. Ein Mangel sollte ausgeglichen werden, da Vitamin D auch für den Knochen unter dem Knorpel wichtig ist.\n\nWichtig ist die richtige Einordnung. Nahrungsergänzungsmittel ersetzen weder die Nachbehandlung noch eine ausgewogene Ernährung. Wenn Sie blutverdünnende Medikamente einnehmen, eine Schalentier-Allergie haben oder relevante Vorerkrankungen bestehen, besprechen Sie die Einnahme zuerst mit Ihrem Behandler.",
-      "subthemen": []
+      "text": "Schon in der Vorbereitung auf die Operation haben wir auf eine ausgewogene, eiweißreiche Ernährung hingewiesen. Nach einer Knorpeltherapie lohnt es sich, gezielt nachzulegen. Für die folgenden Präparate gibt es Hinweise aus Studien, dass sie den Aufbau von Knorpelgewebe unterstützen oder Gelenkbeschwerden lindern können. Die Effekte sind moderat, die Verträglichkeit ist insgesamt gut.\n\nSinnvoll ist eine tägliche Einnahme über etwa drei Monate von Vitamin C (unterstützt als Baustein die körpereigene Kollagenbildung), hydrolysiertem Kollagen (=in kleine Bausteine zerlegtes Kollagen, üblich sind etwa 10 g täglich), Chondroitin (etwa 1200 mg täglich) und Glucosamin (etwa 1500 mg täglich). Sie müssen die Mittel nicht einzeln kaufen — gut geeignet ist auch ein Kombinationspräparat, wie es etwa in Drogeriemärkten angeboten wird. Die genannten Dosierungen sind Richtwerte aus Studien und müssen nicht exakt eingehalten werden — die optimale Menge ist ohnehin nicht genau bekannt. Ergänzend kann die Kontrolle des Vitamin-D-Spiegels sinnvoll sein. Ein Mangel sollte ausgeglichen werden, da Vitamin D auch für den Knochen unter dem Knorpel wichtig ist.\n\nWichtig ist die richtige Einordnung. Nahrungsergänzungsmittel ersetzen weder die Nachbehandlung noch eine ausgewogene Ernährung. Wenn Sie blutverdünnende Medikamente einnehmen, eine Schalentier-Allergie haben oder relevante Vorerkrankungen bestehen, besprechen Sie die Einnahme zuerst mit Ihrem Behandler.",
+      "subthemen": [
+        {
+          "wissen": "nahrungsergaenzung_fuss_osg"
+        }
+      ]
     },
     "prp_knorpel": {
       "thema": "PRP als ergänzende Maßnahme",
       "emoji": "💉",
       "intro": "Als ergänzende Maßnahme nach einer Knorpeltherapie kann die Injektion von Eigenblutplasma (PRP) sinnvoll sein.",
       "text": "Bei PRP (=plättchenreiches Plasma) wird aus einer kleinen Menge Ihres eigenen Blutes ein Konzentrat der Blutplättchen gewonnen und in das Gelenk gespritzt. Die darin enthaltenen Wachstumsfaktoren sollen die Einheilung des behandelten Knorpelareals unterstützen.\n\nStudien am Sprunggelenk zeigen, dass Patientinnen und Patienten nach einer Knorpeltherapie mit ergänzendem PRP im Durchschnitt weniger Schmerzen und eine bessere Funktion erreichen als ohne diese Ergänzung. Vorübergehende Reizungen oder Schmerzen an der Injektionsstelle sind möglich.\n\nOb PRP in Ihrem Fall sinnvoll ist, wie viele Injektionen infrage kommen und zu welchem Zeitpunkt, besprechen Sie mit Ihrem Behandler. Die Kosten werden von den gesetzlichen Krankenkassen in der Regel nicht übernommen.",
+      "subthemen": []
+    },
+    "entlassung_ambulant": {
+      "thema": "Entlassung",
+      "emoji": "🏡",
+      "intro": "Ihr Eingriff erfolgt ambulant — Sie können noch am OP-Tag nach Hause.",
+      "text": "Die Entlassung findet statt, wenn Sie wach und kreislaufstabil sind, Ihr Schmerzniveau erträglich ist und Sie die ersten Schritte sicher bewältigt haben. Lassen Sie sich von einer Vertrauensperson abholen. Nach einer Narkose oder Sedierung dürfen Sie am OP-Tag nicht selbst Auto fahren und sollten auch wichtige Entscheidungen auf den nächsten Tag verschieben. Für die erste Nacht sollte eine Person in Ihrer Nähe oder gut erreichbar sein.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen. Nehmen Sie die verordneten Schmerzmittel nach Plan ein, bevor starke Schmerzen entstehen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
+      "subthemen": []
+    },
+    "walker_spitzfuss_anlage": {
+      "thema": "Der Spitzfuß-Walker",
+      "emoji": "🥾",
+      "intro": "Direkt nach der Operation wird ein Spitzfuß-Walker angelegt.",
+      "text": "Der Stiefel hält den Fuß in einer Spitzfußstellung von etwa 120 Grad — alle Fersenkeile sind eingelegt beziehungsweise die Schiene steht auf Stufe 3. In dieser Stellung ist die Achillessehne entspannt und kann in Ruhe heilen. Der Walker wird in den ersten Wochen Tag und Nacht getragen und nur zur Wund- und Hautkontrolle nach Anleitung abgenommen.\n\nÜber die folgenden Wochen wird die Spitzfußstellung schrittweise verringert, indem nacheinander Fersenkeile entfernt werden beziehungsweise die Schiene umgestellt wird. Den Zeitplan dazu finden Sie in den kommenden Phasen dieses Begleiters.",
+      "subthemen": []
+    },
+    "entlastung_spitzfuss_20kg": {
+      "thema": "Mobilisierung und Thromboseschutz",
+      "emoji": "🚶",
+      "intro": "In den ersten zwei Wochen wird im Spitzfuß-Walker an zwei Unterarmgehstützen gegangen.",
+      "text": "Bei reizloser Wunde und nach Freigabe durch Ihre Behandler dürfen Sie bereits mit 20 kg teilbelasten. Ein gutes Gefühl für diese Belastung bekommen Sie mit einer Personenwaage — drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 20 kg anzeigt. Auf Bewegungsübungen des Sprunggelenks wird in dieser frühen Phase verzichtet, da die refixierte Sehne noch keinen Zug vertragen darf.\n\nEine Thromboseprophylaxe ist mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und der Walker das Sprunggelenk ruhigstellt. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
+      "subthemen": []
+    },
+    "belastung_naht_frueh": {
+      "thema": "Mobilisierung und Thromboseschutz",
+      "emoji": "🚶",
+      "intro": "Nach der Naht wird frühfunktionell behandelt — die Belastung darf zügig gesteigert werden.",
+      "text": "Sie gehen im Spitzfuß-Walker an zwei Unterarmgehstützen. Nach Vorgabe Ihrer Behandler wird die Belastung zügig bis zur Vollbelastung im Stiefel gesteigert — die frühe Belastung verbessert nachweislich das Ergebnis. Auf aktive Bewegungsübungen des Sprunggelenks wird in den ersten zwei Wochen verzichtet, und der Walker wird Tag und Nacht getragen.\n\nEine Thromboseprophylaxe ist in der Regel mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, solange das Sprunggelenk im Walker ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
+      "subthemen": []
+    },
+    "stufe_walker_2": {
+      "thema": "Walker-Umstellung auf Stufe 2",
+      "emoji": "🥾",
+      "intro": "Zu Beginn der dritten Woche wird die Spitzfußstellung zum ersten Mal verringert.",
+      "text": "Ein Fersenkeil wird entfernt beziehungsweise die Schiene auf Stufe 2 umgestellt. Die bisherige Belastungsvorgabe gilt unverändert weiter, das Gehen erfolgt weiterhin an zwei Unterarmgehstützen mit Abrollbewegung.\n\nZusätzlich beginnen nun Koordinationsübungen als Eigentraining, in das Sie kurz eingewiesen werden. Bewegungsübungen des Sprunggelenks selbst sind weiterhin nicht vorgesehen.",
+      "subthemen": []
+    },
+    "stufe_walker_1": {
+      "thema": "Walker-Umstellung auf Stufe 1",
+      "emoji": "🥾",
+      "intro": "Zu Beginn der fünften Woche wird die Spitzfußstellung weiter verringert.",
+      "text": "Ein weiterer Fersenkeil wird entfernt beziehungsweise die Schiene auf Stufe 1 umgestellt. Alles Übrige bleibt unverändert — die bisherige Belastungsvorgabe, das Gehen an den Stützen und die Koordinationsübungen werden fortgeführt.",
+      "subthemen": []
+    },
+    "stufe_walker_0": {
+      "thema": "Walker-Umstellung auf Stufe 0",
+      "emoji": "🥾",
+      "intro": "Zu Beginn der siebten Woche erreicht der Fuß wieder die normale Stellung.",
+      "text": "Der letzte Fersenkeil wird entfernt beziehungsweise die Schiene auf Stufe 0 umgestellt — der Fuß steht nun wieder im 90-Grad-Winkel. Spätestens jetzt ist die Vollbelastung im Walker schmerzabhängig möglich. „Schmerzabhängig\" heißt, dass Sie nur so viel belasten, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist.",
+      "subthemen": []
+    },
+    "schuh_fersenkeil": {
+      "thema": "Eigenes Schuhwerk und Physiotherapie",
+      "emoji": "👟",
+      "intro": "Ab der neunten Woche wird der Walker gegen das eigene Schuhwerk getauscht.",
+      "text": "In den Schuh kommt ein Silikon-Fersenkeil, der die Achillessehne noch etwas entlastet. Nach Möglichkeit gehen Sie nun schon ohne Gehstützen.\n\nDie Physiotherapie beginnt mit neuromuskulärem Training, Gangschule und Bewegungsübungen des oberen Sprunggelenks. Der Fuß soll dabei nicht kräftig nach oben gehoben werden (keine forcierte Dorsalflexion), um die heilende Sehne zu schonen. In den ersten zwei Monaten liegt der Schwerpunkt auf einer schonenden Kräftigung ohne Zug an der Sehne.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald Sie ohne Ruhigstellung deutlich mehr als 20 kg belasten. Solange Sie den Walker noch tragen oder überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "fhl_kraeftigung": {
+      "thema": "Kräftigung nach FHL-Transfer",
+      "emoji": "💪",
+      "intro": "Nach dem Sehnentransfer hat die Kräftigung einen besonderen Schwerpunkt.",
+      "text": "Bei Ihnen wurde die lange Großzehenbeugesehne (FHL) verlagert, um die Achillessehne zu verstärken beziehungsweise zu ersetzen. In der Physiotherapie liegt der Schwerpunkt in den kommenden Wochen deshalb auf der Kraft der kurzen Fußbeuger und des FHL-Muskels, der seine neue Aufgabe übernehmen muss. Die Übungen werden Ihnen in der Physiotherapie gezeigt und als Eigentraining fortgeführt.",
+      "subthemen": []
+    },
+    "training_rad_kraft": {
+      "thema": "Training auf dem Rad",
+      "emoji": "🚴",
+      "intro": "Ab der elften Woche darf das Training ausgeweitet werden.",
+      "text": "Möglich sind nun Training auf dem Fahrrad oder Ergometer mit geringem Kraftaufwand sowie dosiertes Krafttraining. Steigern Sie den Umfang langsam und orientieren Sie sich an den Beschwerden — ein leichtes Ziehen nach dem Training ist nicht ungewöhnlich, deutliche Schmerzen sind ein Zeichen für zu viel Belastung.",
+      "subthemen": []
+    },
+    "freie_bewegung_achilles": {
+      "thema": "Freie Bewegung und Belastungsaufbau",
+      "emoji": "🏃",
+      "intro": "Nach 3 Monaten wird die Bewegung freigegeben.",
+      "text": "Das Sprunggelenk darf nun frei bewegt werden. Erlaubt sind Belastungen ohne Stoß- und Sprungelemente (non-impact), etwa zügiges Gehen, Radfahren, Crosstrainer oder Schwimmen. Die Physiotherapie ergänzt Mobilisation unter Vollbelastung, isometrische Übungen und propriozeptive neuromuskuläre Bahnung (PNF, eine Technik zur Verbesserung des Zusammenspiels von Nerven und Muskeln).\n\nSportarten mit Sprüngen, schnellen Richtungswechseln oder explosivem Abdruck brauchen deutlich länger. Die Rückkehr dorthin wird individuell mit Ihren Behandlern abgestimmt und dauert je nach Sportart oft mehrere Monate bis etwa ein Jahr.",
+      "subthemen": []
+    },
+    "mobilisierung_tendoskopie": {
+      "thema": "Mobilisierung und Thromboseschutz",
+      "emoji": "🚶",
+      "intro": "Nach der Tendoskopie wird früh und konsequent bewegt — eine Ruhigstellung ist nicht nötig.",
+      "text": "Sie dürfen direkt auftreten und steigern die Belastung an zwei Unterarmgehstützen über die ersten zwei Wochen schrittweise bis zur Vollbelastung. Die frühe, konsequente Bewegung soll erneute Verklebungen der Sehne verhindern. Beginnen Sie früh mit täglichen, sanften Dehnübungen der Wade und — sobald die Wunde es zulässt — mit einer Narbenmassage. Die Physiotherapie begleitet die Mobilisierung.\n\nEine Thromboseprophylaxe (wenn keine Blutverdünnung von Hause aus besteht) wird durchgeführt, solange Sie an den Stützen nur mit geringer Belastung gehen. Gelingt die Vollbelastung sicher, kann sie in aller Regel beendet werden — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "exzentrik_tendoskopie": {
+      "thema": "Exzentrische Kräftigung",
+      "emoji": "💪",
+      "intro": "Ab der zweiten Woche kommen Kräftigungsübungen dazu.",
+      "text": "Zusätzlich zu den täglichen Dehnübungen beginnen nun exzentrische Kräftigungsübungen der Wadenmuskulatur. Dabei wird der Muskel unter Last langsam verlängert, zum Beispiel beim kontrollierten Absenken der Ferse über eine Treppenstufe. Diese Übungsform hat sich bei Erkrankungen der Achillessehne besonders bewährt. Die genaue Ausführung zeigt Ihnen Ihre Physiotherapie, geübt wird anschließend täglich als Eigentraining.",
+      "subthemen": []
+    },
+    "sport_tendoskopie": {
+      "thema": "Sportliche Steigerung",
+      "emoji": "🏃",
+      "intro": "Ab etwa der vierten Woche kann die sportliche Belastung gesteigert werden.",
+      "text": "Wie schnell die Steigerung gelingt, ist je nach Ausgangslage sehr unterschiedlich — üblich sind vier bis acht Wochen bis zur sportlichen Belastung. Steigern Sie schrittweise und beschwerdeorientiert, beginnend mit Radfahren, Schwimmen oder zügigem Gehen, bevor Lauf- und Sprungbelastungen dazukommen.\n\nErgänzend ist eine Infiltration mit Hyaluronsäure möglich. Ob dies bei Ihnen sinnvoll ist, besprechen Sie mit Ihren Behandlern.",
       "subthemen": []
     }
   },

@@ -392,6 +392,7 @@ let WISSEN_KATEGORIEN = {};
 let WISSEN = {};
 let KRANKHEITSBILDER = [];
 let VORLAUF_BY_OP = {};   // Vorlauf je Eingriff (Schema 2); leer = gemeinsamer Vorlauf
+let AUFENTHALT_ERSATZ_BY_OP = {}; // je Eingriff: Original-Baustein → Ersatzphase je Aufenthaltsart
 let AUFKLAERUNG = {}; // Daten aus aufklaerung.json (Aufklärungs-Modus)
 let NONOP_KB = {};       // Non-OP-Begleiter: Krankheitsbilder
 let NONOP_STUFEN = {};   // Non-OP-Begleiter: Stufenlisten je Krankheitsbild
@@ -400,12 +401,32 @@ let NONOP_AMPEL = {};    // Non-OP-Begleiter: Ampel-Bausteine (stufenloses Model
 let NONOP_MASSNAHMEN = {}; // Non-OP-Begleiter: allgemeine nicht-operative Maßnahmen (aus infomaterial.json)
 let KATALOG = null;   // Daten aus katalog.json (Beschwerde-Wegweiser) — null bevor geladen
 
-// Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey]
-function getPhasenForVariant(opKey, variantKey) {
+// Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey].
+// aufenthalt ("stationaer" | "ambulant") passt die Liste an den gewaehlten Weg an:
+// Phasen mit "nur"-Kennung werden gefiltert, Bausteine mit Aufenthalts-Ersatz
+// (AUFENTHALT_ERSATZ in phasen.json) ausgetauscht, Bausteine mit eigener
+// Ambulant-Textfassung auf diese umgestellt.
+function getPhasenForVariant(opKey, variantKey, aufenthalt) {
   const opGroup = POST_OP_PHASEN_BY_OP[opKey];
   const postPhasen = (opGroup && opGroup[variantKey]) || [];
   const vorlauf = VORLAUF_BY_OP[opKey] || SHARED_PRE_OP_PHASEN;
-  return ONBOARDING_PHASEN.concat(vorlauf).concat(postPhasen);
+  const mode = aufenthalt || (EINGRIFFE[opKey] && EINGRIFFE[opKey].aufenthaltDefault) || "stationaer";
+  const ersatz = AUFENTHALT_ERSATZ_BY_OP[opKey] || {};
+  function anpassen(liste, sortieren) {
+    let out = liste
+      .filter(function (ph) { return !ph.nur || ph.nur === mode; })
+      .map(function (ph) {
+        const e = ph.baustein && ersatz[ph.baustein] && ersatz[ph.baustein][mode];
+        if (e) return e;
+        if (mode === "ambulant" && ph.idAmb) return Object.assign({}, ph, { id: ph.idAmb });
+        return ph;
+      });
+    if (sortieren) {
+      out = out.slice().sort(function (a, b) { return (a.tagOffset || 0) - (b.tagOffset || 0); });
+    }
+    return out;
+  }
+  return anpassen(ONBOARDING_PHASEN, false).concat(anpassen(vorlauf, false)).concat(anpassen(postPhasen, true));
 }
 
 // Lädt die Daten aus phasen.json und befüllt die Modul-Level-Variablen.
@@ -454,25 +475,41 @@ function uebersetzeSchema2(data) {
       return (werte && werte[name] !== undefined) ? werte[name] : ganz;
     });
   }
-  function inhaltsId(bausteinKey, opKey) {
+  // Ein Baustein kann eine eigene Fassung fuer den ambulanten Weg mitbringen
+  // (intro_ambulant / text_ambulant). Fehlende Felder fallen auf die
+  // Standardfassung (= stationaer) zurueck.
+  function hatAmbulantFassung(bausteinKey) {
+    const b = B[bausteinKey];
+    return !!(b && (b.intro_ambulant !== undefined || b.text_ambulant !== undefined));
+  }
+  function inhaltsId(bausteinKey, opKey, amb) {
     const b = B[bausteinKey];
     if (!b) return bausteinKey;
+    const basisId = amb ? bausteinKey + "@amb" : bausteinKey;
+    const intro = (amb && b.intro_ambulant !== undefined) ? b.intro_ambulant : b.intro;
+    const text  = (amb && b.text_ambulant  !== undefined) ? b.text_ambulant  : b.text;
+    if (amb && !PHASEN_INHALTE[basisId]) {
+      PHASEN_INHALTE[basisId] = { intro: intro, text: text, subthemen: b.subthemen || [] };
+    }
     const werte = ((data.BEGLEITER || {})[opKey] || {}).platzhalter;
-    const roh = String(b.intro) + String(b.text);
-    if (!werte || roh.indexOf("§") < 0) return bausteinKey;
-    const id = bausteinKey + "__" + opKey;
+    const roh = String(intro) + String(text);
+    if (!werte || roh.indexOf("§") < 0) return basisId;
+    const id = basisId + "__" + opKey;
     if (!PHASEN_INHALTE[id]) {
-      PHASEN_INHALTE[id] = { intro: fuelle(b.intro, werte), text: fuelle(b.text, werte),
+      PHASEN_INHALTE[id] = { intro: fuelle(intro, werte), text: fuelle(text, werte),
                              subthemen: b.subthemen || [] };
     }
     return id;
   }
 
-  // Eintrag {tag,label,baustein} → Phase {id,type,tagOffset,label,thema,emoji}
+  // Eintrag {tag,label,baustein[,nur]} → Phase {id,type,tagOffset,label,thema,emoji,baustein[,nur][,idAmb]}
   function phase(e, opKey) {
     const b = B[e.baustein] || {};
-    return { id: inhaltsId(e.baustein, opKey), type: e.type || "calendar", tagOffset: e.tag,
-             label: e.label, thema: b.thema, emoji: b.emoji };
+    const ph = { id: inhaltsId(e.baustein, opKey, false), type: e.type || "calendar", tagOffset: e.tag,
+                 label: e.label, thema: b.thema, emoji: b.emoji, baustein: e.baustein };
+    if (e.nur) ph.nur = e.nur;
+    if (hatAmbulantFassung(e.baustein)) ph.idAmb = inhaltsId(e.baustein, opKey, true);
+    return ph;
   }
 
   ONBOARDING_PHASEN    = (data.ONBOARDING_PHASEN    || []).map(phase);
@@ -483,13 +520,32 @@ function uebersetzeSchema2(data) {
   POST_OP_PHASEN_BY_OP = {};
   Object.keys(BEGL).forEach(function(opKey) {
     const b = BEGL[opKey];
-    EINGRIFFE[opKey] = { label: b.label, kurzlabel: b.kurzlabel, varianten: {} };
+    EINGRIFFE[opKey] = { label: b.label, kurzlabel: b.kurzlabel, varianten: {},
+                         aufenthaltDefault: b.aufenthalt_default || (b.merkmale || {}).aufenthalt || "stationaer" };
     POST_OP_PHASEN_BY_OP[opKey] = {};
     Object.keys(b.varianten || {}).forEach(function(vk) {
       const v = b.varianten[vk];
       EINGRIFFE[opKey].varianten[vk] = { anzeigename: v.anzeigename, beschreibung: v.beschreibung };
       POST_OP_PHASEN_BY_OP[opKey][vk] = (v.postop || []).map(function(e){ return phase(e, opKey); });
     });
+  });
+
+  // Aufenthalts-Ersatz: data.AUFENTHALT_ERSATZ bildet Bausteine auf eine
+  // Ersatzphase je Aufenthaltsart ab (z. B. entlassung_stationaer → ambulant:
+  // entlassung_ambulant am OP-Tag). Die Ersatzphasen werden hier je Eingriff
+  // vorgebaut, damit Platzhalter korrekt gefuellt sind.
+  AUFENTHALT_ERSATZ_BY_OP = {};
+  const ERS = data.AUFENTHALT_ERSATZ || {};
+  Object.keys(BEGL).forEach(function(opKey) {
+    const m = {};
+    Object.keys(ERS).forEach(function(orig) {
+      m[orig] = {};
+      Object.keys(ERS[orig]).forEach(function(art) {
+        const z = ERS[orig][art];
+        m[orig][art] = phase({ tag: z.tag, label: z.label, baustein: z.baustein }, opKey);
+      });
+    });
+    AUFENTHALT_ERSATZ_BY_OP[opKey] = m;
   });
 
   // Vorlauf je Eingriff: ersetzte und ergaenzte Phasen. Beides ist optional;
@@ -697,6 +753,7 @@ function getUrlParams() {
     nonop: params.get("nonop"), // "aussenband_konservativ" — direkt ein Programm im Nicht-OP-Begleiter öffnen
     fokus: params.get("fokus"), // Einstiegsadresse der Fokus-Ansicht (kodiert), fuer den Ruecksprung
     nav: params.get("nav"), // "1" = aus der App heraus geoeffnet: volle Navigation statt Fokus-Ansicht
+    aufenthalt: params.get("aufenthalt"), // "stationaer" | "ambulant" — Voreinstellung des Aufenthalts-Wegs (z. B. per QR)
     // Krankheitsbild-ARTIKEL als Rueckweg-Kontext eines QR-Ziels (47 Keys aus
     // INFOMATERIAL). Bewusst nicht ueber ?kb=: dort liegen die zwei
     // Begleiter-Einstiege aus phasen.json, und die Schluessel hallux_valgus und
@@ -889,6 +946,7 @@ function App() {
           sessionId: generateSessionId(),
           eingriff: urlParams.op,
           variante: urlParams.var,
+          aufenthalt: (urlParams.aufenthalt === "ambulant" || urlParams.aufenthalt === "stationaer") ? urlParams.aufenthalt : null,
           opDatum: null,
           createdAt: new Date().toISOString(),
           feedback: {},
@@ -904,6 +962,7 @@ function App() {
       sessionId: generateSessionId(),
       eingriff: urlParams.op,
       variante: urlParams.var,
+      aufenthalt: (urlParams.aufenthalt === "ambulant" || urlParams.aufenthalt === "stationaer") ? urlParams.aufenthalt : null,
       opDatum: null,
       createdAt: new Date().toISOString(),
       feedback: {},
@@ -3980,9 +4039,10 @@ function DatumEingabe({ session, onUpdate }) {
 function PhasenVerlauf({ session, onUpdate, onReset }) {
   const eingriff = EINGRIFFE[session.eingriff];
   const variante = eingriff.varianten[session.variante];
+  const aufenthalt = session.aufenthalt || eingriff.aufenthaltDefault || "stationaer";
   const phasen = useMemo(
-    () => getPhasenForVariant(session.eingriff, session.variante),
-    [session.eingriff, session.variante]
+    () => getPhasenForVariant(session.eingriff, session.variante, aufenthalt),
+    [session.eingriff, session.variante, aufenthalt]
   );
   const currentIdx = useMemo(
     () => computeCurrentPhaseIndex(phasen, session.opDatum),
@@ -4037,6 +4097,32 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
         {variante.beschreibung !== variante.anzeigename && (
           <p style={{ margin: "0 0 8px", color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
         )}
+
+        {/* Aufenthalts-Umschalter: stationär / ambulant. Voreinstellung je Eingriff
+            (aufenthalt_default in phasen.json), Auswahl wird in der Session gespeichert. */}
+        <div style={{ margin: "4px 0 12px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 13, color: "var(--c-text-muted)" }}>Ihr Eingriff erfolgt:</span>
+            <div style={{ display: "flex", gap: 6 }}>
+              <button
+                className={"btn btn-small " + (aufenthalt === "stationaer" ? "btn-primary" : "btn-secondary")}
+                onClick={() => onUpdate({ aufenthalt: "stationaer" })}
+              >
+                Stationär
+              </button>
+              <button
+                className={"btn btn-small " + (aufenthalt === "ambulant" ? "btn-primary" : "btn-secondary")}
+                onClick={() => onUpdate({ aufenthalt: "ambulant" })}
+              >
+                Ambulant
+              </button>
+            </div>
+          </div>
+          <p style={{ margin: "6px 0 0", fontSize: 12, color: "var(--c-text-muted)" }}>
+            Voreingestellt ist der übliche Weg für diesen Eingriff. Maßgeblich ist die Planung Ihres
+            Behandlungsteams — stellen Sie um, wenn Ihr Eingriff anders geplant ist.
+          </p>
+        </div>
 
         {!editingDate ? (
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
