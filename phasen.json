@@ -12,7 +12,7 @@
       "stationaer": {
         "baustein": "entlassung_stationaer",
         "tag": 2,
-        "label": "Tag 2 nach OP"
+        "label": "sobald die Kriterien erfüllt sind"
       },
       "ambulant": {
         "baustein": "entlassung_ambulant",
@@ -318,8 +318,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -391,8 +391,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -468,22 +468,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -541,22 +551,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -638,11 +658,6 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
-            },
-            {
-              "tag": 1,
-              "label": "Tag 1 nach OP",
               "baustein": "hygiene_walker"
             },
             {
@@ -651,14 +666,24 @@
               "baustein": "lymphdrainage"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -716,11 +741,6 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
-            },
-            {
-              "tag": 1,
-              "label": "Tag 1 nach OP",
               "baustein": "hygiene_walker"
             },
             {
@@ -729,14 +749,24 @@
               "baustein": "lymphdrainage"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -766,7 +796,7 @@
             {
               "tag": 63,
               "label": "9 Wochen nach OP",
-              "baustein": "sport_nach_bandstabilisierung"
+              "baustein": "sport_nach_bandstabilisierung_prothese"
             },
             {
               "tag": 84,
@@ -821,17 +851,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -839,8 +869,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -894,17 +934,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -912,8 +952,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -995,17 +1045,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1013,8 +1063,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1068,17 +1128,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1086,8 +1146,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1169,17 +1239,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1187,8 +1257,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1242,17 +1322,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1260,8 +1340,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1343,17 +1433,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1361,8 +1451,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1416,17 +1516,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1434,8 +1534,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1517,17 +1627,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1535,8 +1645,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1590,17 +1710,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1608,8 +1728,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1691,17 +1821,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1709,8 +1839,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1764,17 +1904,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -1782,8 +1922,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -1863,22 +2013,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -1896,14 +2056,14 @@
               "baustein": "bewegung_osg_frei"
             },
             {
-              "tag": 35,
-              "label": "5 Wochen nach OP",
-              "baustein": "roentgen_heilungskontrolle"
-            },
-            {
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_smot_aufbelastung"
             },
             {
               "tag": 84,
@@ -1914,6 +2074,11 @@
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "sport_rueckfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "roentgen_verlauf_12wo"
             }
           ]
         },
@@ -1936,22 +2101,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -1987,6 +2162,11 @@
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "sport_nach_bandstabilisierung"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "roentgen_verlauf_12wo"
             }
           ]
         }
@@ -2032,17 +2212,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -2050,8 +2230,18 @@
               "baustein": "verband_1_ruhiggestellt"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -2105,17 +2295,17 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
@@ -2128,8 +2318,18 @@
               "baustein": "redression_grosszehe_tmt1"
             },
             {
-              "tag": 14,
-              "label": "2 Wochen nach OP",
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
               "baustein": "faden_standard"
             },
             {
@@ -2204,22 +2404,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2277,22 +2487,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2366,22 +2586,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2439,22 +2669,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2511,7 +2751,7 @@
       "varianten": {
         "einfach": {
           "anzeigename": "Lapidus-Arthrodese — Teilbelastung",
-          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks, Teilbelastung in der Nachbehandlung",
+          "beschreibung": "Versteifung des ersten Tarsometatarsalgelenks, Teilbelastung in der Nachbehandlung. Je nach Stabilität der Versorgung kann Ihr Behandler stattdessen auch eine Vollbelastung im Spezialschuh mit steifer Sohle festlegen — maßgeblich ist Ihre individuelle Vorgabe.",
           "auswahl_label": "Mit Teilbelastung",
           "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
           "postop": [
@@ -2528,22 +2768,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2601,22 +2851,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2690,22 +2950,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2763,22 +3033,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2857,22 +3137,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -2930,22 +3220,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -3028,8 +3328,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -3099,8 +3399,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -3188,8 +3488,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -3259,8 +3559,8 @@
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "verband_1_redression"
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
             },
             {
               "tag": 7,
@@ -3349,14 +3649,14 @@
               "baustein": "hygiene_verbandschuh"
             },
             {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "bewegung_mtp1_frei"
+            },
+            {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_redression"
-            },
-            {
-              "tag": 7,
-              "label": "1 Woche nach OP",
-              "baustein": "bewegung_mtp1_frei"
             },
             {
               "tag": 14,
@@ -3410,14 +3710,14 @@
               "baustein": "hygiene_verbandschuh"
             },
             {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "bewegung_mtp1_frei"
+            },
+            {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_redression"
-            },
-            {
-              "tag": 7,
-              "label": "1 Woche nach OP",
-              "baustein": "bewegung_mtp1_frei"
             },
             {
               "tag": 14,
@@ -3658,6 +3958,11 @@
               "baustein": "faden_standard"
             },
             {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
+            },
+            {
               "tag": 21,
               "label": "3 Wochen nach OP",
               "baustein": "taping_wechsel"
@@ -3732,6 +4037,11 @@
               "tag": 14,
               "label": "2 Wochen nach OP",
               "baustein": "faden_standard"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
             },
             {
               "tag": 21,
@@ -3830,6 +4140,11 @@
               "baustein": "faden_standard"
             },
             {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
+            },
+            {
               "tag": 21,
               "label": "3 Wochen nach OP",
               "baustein": "taping_wechsel"
@@ -3909,6 +4224,11 @@
               "tag": 14,
               "label": "2 Wochen nach OP",
               "baustein": "faden_standard"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
             },
             {
               "tag": 21,
@@ -4012,6 +4332,11 @@
               "baustein": "bewegung_zehen_beugung"
             },
             {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
+            },
+            {
               "tag": 21,
               "label": "3 Wochen nach OP",
               "baustein": "taping_wechsel"
@@ -4091,6 +4416,11 @@
               "tag": 14,
               "label": "2 Wochen nach OP",
               "baustein": "bewegung_zehen_beugung"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "bewegung_mtp_passiv"
             },
             {
               "tag": 21,
@@ -4284,7 +4614,8 @@
       "kurzlabel": "Gastroc",
       "merkmale": {},
       "platzhalter": {
-        "SCHUH": "normalem Schuhwerk"
+        "SCHUH": "normalem Schuhwerk",
+        "THROMBOSE_WOCHEN": "4"
       },
       "praeop": {
         "ersetze": {},
@@ -4344,6 +4675,86 @@
               "tag": 84,
               "label": "3 Monate nach OP",
               "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ],
+          "auswahl_label": "Proximal",
+          "auswahl_kurz": "Verlängerung am Muskelübergang, sofortige Vollbelastung"
+        },
+        "komplex": {
+          "anzeigename": "Wadenmuskel-Verlängerung (distal, Strayer)",
+          "beschreibung": "Verlängerung der Wadenmuskulatur am sehnigen Übergang (nach Strayer); 4 Wochen Teilbelastung in Neutralstellung im Walker, danach Beübung",
+          "auswahl_label": "Distal (Strayer)",
+          "auswahl_kurz": "4 Wochen Teilbelastung im Walker in Neutralstellung, dann Beübung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "walker_neutral_anlage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "walker_ende_gastroc_distal"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "sport_rueckfuss"
             }
           ]
         }
@@ -4605,22 +5016,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -4678,22 +5099,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_entlastung"
+              "baustein": "hygiene_gips"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_gips"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 14,
@@ -4766,22 +5197,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 3,
@@ -4849,22 +5290,32 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "mobilisierung_teilbelastung"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
             },
             {
-              "tag": 2,
-              "label": "Tag 2 nach OP",
-              "baustein": "entlassung_stationaer"
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
               "label": "Tag 2 nach OP",
               "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
             },
             {
               "tag": 3,
@@ -4957,16 +5408,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "entlastung_spitzfuss_20kg"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5040,16 +5501,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "entlastung_spitzfuss_20kg"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5147,16 +5618,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "entlastung_spitzfuss_20kg"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5230,16 +5711,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "entlastung_spitzfuss_20kg"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "entlastung_spitzfuss_20kg"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5337,16 +5828,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "belastung_naht_frueh"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "belastung_naht_frueh"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5420,16 +5921,26 @@
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "belastung_naht_frueh"
+              "baustein": "hygiene_walker"
             },
             {
               "tag": 1,
               "label": "Tag 1 nach OP",
-              "baustein": "hygiene_walker"
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
             },
             {
               "tag": 2,
-              "label": "Tag 2 nach OP",
+              "label": "Tag 2–3 nach OP",
+              "baustein": "belastung_naht_frueh"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
               "baustein": "entlassung_stationaer"
             },
             {
@@ -5615,8 +6126,8 @@
     "bewegung_osg_geschuetzt": {
       "thema": "Sanfte Bewegungsübungen",
       "emoji": "🦶",
-      "intro": "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
-      "text": "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Es können auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband erfolgen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nWichtig: Aufgrund der zusätzlichen Bandstabilisierung soll das obere Sprunggelenk in den ersten 6 Wochen nach der OP nicht intensiv mobilisiert werden — insbesondere keine starken Bewegungen in die Plantarflexion (Fuß nach unten) und keine Inversion (Fuß nach innen kippen). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nEine sanfte, geführte Beübung im beschwerdearmen Bereich ist erlaubt, sobald Ihre Wundheilung dies zulässt. Im Zweifel sprechen Sie mit Ihrer Physiotherapie oder dem Behandler.",
+      "intro": "Wegen der zusätzlichen Bandstabilisierung folgt die Beübung des Sprunggelenks strengen Regeln.",
+      "text": "In den ersten 6 Wochen nach der Operation darf das Sprunggelenk nicht in die Beugung fußsohlenwärts gebracht, nicht verdreht und nicht nach innen gekippt werden (keine Flexion, keine Verdrehung des Fußes, keine Inversion). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nAb der vierten Woche können Sie mit einer sanften Mobilisierung in die Gegenrichtung beginnen — dem vorsichtigen Anheben des Fußes (Extension). Ausgangspunkt ist dabei die Neutralstellung, also die 90°-Stellung des Fußes zum Unterschenkel. Aus dieser Position wird der Fuß nur nach oben angehoben und wieder bis zur Neutralstellung zurückgeführt — nicht darüber hinaus fußsohlenwärts. Üben Sie im beschwerdearmen Bereich und ohne Zug an den Bändern zu erzwingen. Im Zweifel besprechen Sie die Übungen mit Ihrer Physiotherapie oder dem Behandler.\n\nBewegungsübungen ohne Belastung für Hüfte und Knie sind weiterhin sinnvoll — auch zur Thromboseprophylaxe.",
       "subthemen": []
     },
     "blutverduenner": {
@@ -5630,14 +6141,14 @@
       "thema": "CT-Kontrolle planen",
       "emoji": "🩻",
       "intro": "In etwa einer Woche steht Ihre CT-Kontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
-      "text": "Die CT-Kontrolle sollte 8 Wochen nach dem Eingriff stattfinden. In der Regel benötigen die Rückfußversteifungen mindestens 8 Wochen für eine sichere Fusion. Die CT liefert hier genauere Informationen zum Fortschritt der knöchernen Heilung als ein normales Röntgenbild und ist bei den Rückfußversteifungen der bessere Verlaufsindikator.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+      "text": "Die CT-Kontrolle sollte 8 Wochen nach dem Eingriff stattfinden. In der Regel benötigen die versteiften Gelenke mindestens 8 Wochen für eine sichere Fusion. Die CT liefert hier genauere Informationen zum Fortschritt der knöchernen Heilung als ein normales Röntgenbild und ist bei Versteifungsoperationen am Fuß der bessere Verlaufsindikator. Bei gutem Verlauf zeigt die CT korrekt liegende, stabile Implantate und Zeichen der ablaufenden knöchernen Überbrückung — diese muss zu diesem Zeitpunkt noch nicht abgeschlossen sein, die vollständige Durchbauung kann mehrere Monate dauern.\n\nWenn der Fortschritt der knöchernen Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
       "subthemen": []
     },
     "ct_walker_wechsel": {
       "thema": "CT-Kontrolle und Wechsel in Walker",
       "emoji": "🩻",
       "intro": "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
-      "text": "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
+      "text": "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
       "subthemen": []
     },
     "diabetes": {
@@ -5655,7 +6166,7 @@
       "thema": "Entlassung",
       "emoji": "🏡",
       "intro": "Ihr Eingriff erfolgt stationär.",
-      "text": "Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist, die Wunde unauffällig ist und Sie die ersten Schritte sicher selber bewältigt haben. Bei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
+      "text": "Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist, die Wunde unauffällig ist und Sie die ersten Schritte sicher selber bewältigt haben. Die Dauer des Aufenthalts richtet sich also nicht nach einem festen Tag, sondern danach, wann diese Kriterien erreicht sind. Bei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
       "subthemen": []
     },
     "entspannung": {
@@ -5740,7 +6251,7 @@
       "thema": "Körperhygiene",
       "emoji": "🚿",
       "intro": "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
-      "text": "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+      "text": "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden. Auch das verordnete Hilfsmittel — der Verbandschuh, eine Schiene oder Orthese — bleibt beim Duschen angelegt und wird nicht abgenommen.\n\nAm praktischsten ist eine wiederverwendbare wasserdichte Dusch-Schutzhülle für das Bein (im Handel als „Duschschutz\" oder „Gipsschutz Unterschenkel\" bezeichnet), die es in Apotheken, im Sanitätshaus oder online für wenig Geld gibt. Sie wird im Sitzen trocken über Fuß und Hilfsmittel gezogen; die elastische Manschette wird dazu weit gedehnt und liegt oberhalb des Verbandes rundum an der Haut an, sodass kein Klebeband nötig ist. Ersatzweise funktioniert eine wasserdichte (Müll-)Tüte, die oberhalb des Verbandes mit Klebeband rundum am Bein verschlossen wird. Reicht der Verband bis an die Wade, ziehen Sie Hülle oder Tüte entsprechend höher und dichten unterhalb des Knies ab.\n\nDer Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
       "subthemen": [
         {
           "wissen": "gips_wasserdicht"
@@ -5751,7 +6262,7 @@
       "thema": "Körperhygiene",
       "emoji": "🚿",
       "intro": "Nach dem Eingriff kann die Körperhygiene etwas verkompliziert sein.",
-      "text": "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden.\n\nIn aller Regel kann man den Fuß im Schuh oder Walker mit Verband in eine wasserdichte (Müll-)Tüte stecken und am Unterschenkel mit Klebeband verschließen. Dies wirkt etwas improvisiert, klappt aber gut und ist alltagstauglich. Der Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
+      "text": "Sie sollten sich im Bad auf einen Duschhocker mit rutschfesten Füßen setzen und nicht auf dem gesunden Bein balancierend auf nassem Untergrund einen Sturz riskieren. Der Verband muss belassen werden und darf nicht nass werden. Auch das verordnete Hilfsmittel — der Walker beziehungsweise die Schiene — bleibt beim Duschen angelegt und wird nicht abgenommen, wenn Ihre Behandler nichts anderes festgelegt haben.\n\nAm praktischsten ist eine wiederverwendbare wasserdichte Dusch-Schutzhülle für das Bein (im Handel als „Duschschutz\" oder „Gipsschutz Unterschenkel\" bezeichnet), die es in Apotheken, im Sanitätshaus oder online für wenig Geld gibt. Sie wird im Sitzen trocken über Fuß und Hilfsmittel gezogen; die elastische Manschette wird dazu weit gedehnt und liegt oberhalb des Verbandes rundum an der Haut an, sodass kein Klebeband nötig ist. Ersatzweise funktioniert eine wasserdichte (Müll-)Tüte, die oberhalb des Verbandes mit Klebeband rundum am Bein verschlossen wird. Reicht der Verband bis an die Wade, ziehen Sie Hülle oder Tüte entsprechend höher und dichten unterhalb des Knies ab.\n\nDer Fuß selber, auch wenn er noch etwas gefärbt ist durch das Desinfektionsmittel nach dem Eingriff, muss nicht gewaschen werden.",
       "subthemen": [
         {
           "wissen": "gips_wasserdicht"
@@ -5808,7 +6319,7 @@
       "thema": "Vollentlastung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Bei dieser Variante ist eine vollständige Entlastung des operierten Fußes für §WOCHEN§ Wochen vorgesehen.",
-      "text": "Das bedeutet: Sie dürfen den Fuß in dieser Zeit gar nicht belasten, auch nicht auftupfen. Die Fortbewegung erfolgt im Rollstuhl oder an Unterarmgehstützen, wenn dies für Sie sicher umsetzbar ist. Welcher Weg für Sie passend ist, hängt von Ihrer körperlichen Verfassung, Ihrem Gleichgewicht und der Wohnsituation ab. Ein Gespräch mit Ihrem Behandler und ggf. der Physiotherapie klärt, was sicher ist.\n\nMit der vollständigen Entlastung verbunden ist eine stärkere Beanspruchung von Armen, Rumpf und gegenseitigem Bein. Achten Sie auf eine gute Sturzprophylaxe — gerade in Bad und Treppenhaus.\n\nEine Thromboseprophylaxe ist für die gesamte Entlastungsphase nötig, mindestens jedoch §THROMBOSE_WOCHEN§ Wochen, da die Muskulatur deutlich weniger beansprucht wird und das Sprunggelenk ruhiggestellt ist. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen. Sollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen — fragen Sie hier spezifisch Ihre Behandler.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+      "text": "Das bedeutet: Sie dürfen den Fuß in dieser Zeit gar nicht belasten, auch nicht auftupfen. Die Fortbewegung erfolgt im Rollstuhl oder an Unterarmgehstützen, wenn dies für Sie sicher umsetzbar ist. Welcher Weg für Sie passend ist, hängt von Ihrer körperlichen Verfassung, Ihrem Gleichgewicht und der Wohnsituation ab. Ein Gespräch mit Ihrem Behandler und ggf. der Physiotherapie klärt, was sicher ist.\n\nMit der vollständigen Entlastung verbunden ist eine stärkere Beanspruchung von Armen, Rumpf und gegenseitigem Bein. Achten Sie auf eine gute Sturzprophylaxe — gerade in Bad und Treppenhaus.\n\nEine Thromboseprophylaxe ist bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes nötig — mindestens jedoch §THROMBOSE_WOCHEN§ Wochen, da die Muskulatur deutlich weniger beansprucht wird und das Sprunggelenk ruhiggestellt ist. Sollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen — fragen Sie hier spezifisch Ihre Behandler.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -5819,7 +6330,7 @@
       "thema": "Mobilisierung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Nach dem Eingriff können Sie in der Regel auf den operierten Fuß in einem geringen Maße auftreten.",
-      "text": "Hierbei spricht man von einer 15-kg-Teilbelastung: Der Fuß wird an den Unterarmgehstützen mit aufgesetzt und abgerollt, das Körpergewicht tragen aber die Stützen. Ein gutes Gefühl dafür bekommen Sie mit einer Personenwaage: Drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 15 kg anzeigt — mehr soll es beim Gehen nicht werden.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+      "text": "Hierbei spricht man von einer 15-kg-Teilbelastung: Der Fuß wird an den Unterarmgehstützen mit aufgesetzt und abgerollt, das Körpergewicht tragen aber die Stützen. Ein gutes Gefühl dafür bekommen Sie mit einer Personenwaage: Drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 15 kg anzeigt — mehr soll es beim Gehen nicht werden.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEine Thromboseprophylaxe ist bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes nötig — mindestens jedoch §THROMBOSE_WOCHEN§ Wochen, da die Muskulatur deutlich weniger beansprucht wird und durch die Schienen und Stiefel das Sprunggelenk ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -5907,14 +6418,14 @@
       "thema": "Röntgenkontrolle und Belastungssteigerung",
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
-      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
+      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
       "subthemen": []
     },
     "roentgen_prothese": {
       "thema": "Röntgenkontrolle und Belastungssteigerung",
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
-      "text": "In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn die Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte noch so lange fortgeführt werden, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
+      "text": "In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn die Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
       "subthemen": []
     },
     "roentgen_vollbelastung": {
@@ -5935,7 +6446,7 @@
       "thema": "Sportliche Belastungssteigerung",
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
-      "text": "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+      "text": "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sollte nach einer Bandstabilisierung frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
       "subthemen": []
     },
     "sport_prothese": {
@@ -6024,7 +6535,7 @@
       "thema": "Abnahme des Verbandes",
       "emoji": "👟",
       "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
-      "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht.",
+      "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Alternativ kann die Großzehe mit einem Tape geführt werden — dieses muss regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden.",
       "subthemen": [
         {
           "wissen": "keile_nachtschiene_chevron"
@@ -6035,7 +6546,7 @@
       "thema": "Abnahme des Verbandes",
       "emoji": "👟",
       "intro": "Es sind nun ca. 4 Wochen seit dem Eingriff vergangen.",
-      "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Sollte ein Draht in eine Zehe eingesetzt worden sein, wird dieser nun entfernt, und die Kleinzehen müssen weiter mit einem Tape zentrierend positioniert werden. Dies muss zwingend von einem in Fußchirurgie erfahrenen Behandler erfolgen.\n\nWenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Gerade bei komplexen Eingriffen an mehreren Zehen ergeben sich aber sehr individuelle Konzepte. Hier sollte genau mit den Operateuren geklärt werden, wie die Nachbehandlung und das Taping/Zentrieren der Zehen erfolgt, und keinen pauschalen Konzepten gefolgt werden.",
+      "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Sollte ein Draht in eine Zehe eingesetzt worden sein, wird dieser nun entfernt, und die Kleinzehen müssen weiter mit einem Tape zentrierend positioniert werden. Dies muss zwingend von einem in Fußchirurgie erfahrenen Behandler erfolgen.\n\nWenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Alternativ kann die Großzehe mit einem Tape geführt werden — dieses muss regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden. Gerade bei komplexen Eingriffen an mehreren Zehen ergeben sich aber sehr individuelle Konzepte. Hier sollte genau mit den Operateuren geklärt werden, wie die Nachbehandlung und das Taping/Zentrieren der Zehen erfolgt, und keinen pauschalen Konzepten gefolgt werden.",
       "subthemen": [
         {
           "wissen": "keile_nachtschiene_chevron"
@@ -6046,7 +6557,7 @@
       "thema": "Versorgung nach OP — Hilfsmittel",
       "emoji": "🦯",
       "intro": "Nach dem Eingriff werden verschiedene Hilfsmittel benötigt.",
-      "text": "An Rollstühlen, Knierollern, Gehstützen, Duschhockern oder Badewannenbrettern stehen verschiedene Modelle zur Verfügung. Sie können hier bereits überlegen, was Sie benötigen, diese im Sanitätshaus ansehen oder ausprobieren und vorbestellen. Damit benötigen Sie nach dem Eingriff nur noch das Rezept und sind sofort mit allem versorgt, was Sie brauchen.\n\nGerade bei organisatorisch aufwendigen Hilfsmitteln wie einem Pflegebett oder Treppenlift muss zuerst eine Kostenzusage der Kasse eingeholt werden, was einige Zeit in Anspruch nehmen kann.",
+      "text": "An Rollstühlen, Knierollern, Gehstützen, Duschhockern oder Badewannenbrettern stehen verschiedene Modelle zur Verfügung. Sie können hier bereits überlegen, was Sie benötigen, diese im Sanitätshaus ansehen oder ausprobieren und vorbestellen. Damit benötigen Sie nach dem Eingriff nur noch das Rezept und sind sofort mit allem versorgt, was Sie brauchen.\n\nSinnvoll ist außerdem, schon vor der Operation eine wiederverwendbare wasserdichte Dusch-Schutzhülle für das Bein zu kaufen — erhältlich in Apotheken, im Sanitätshaus oder online als „Duschschutz\" beziehungsweise „Gipsschutz Unterschenkel\". Sie macht das Duschen mit Verband, Schuh oder Walker deutlich einfacher.\n\nGerade bei organisatorisch aufwendigen Hilfsmitteln wie einem Pflegebett oder Treppenlift muss zuerst eine Kostenzusage der Kasse eingeholt werden, was einige Zeit in Anspruch nehmen kann.",
       "subthemen": []
     },
     "versorgung_sozial": {
@@ -6081,28 +6592,28 @@
       "thema": "Röntgenkontrolle und Belastungsaufbau",
       "emoji": "🩻",
       "intro": "In etwa einer Woche steht Ihre Röntgenkontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
-      "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung. Sie sollte etwa 6 bis 8 Wochen nach dem Eingriff stattfinden.\n\nWenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
+      "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung. Sie sollte etwa 6 bis 8 Wochen nach dem Eingriff stattfinden.\n\nWenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
       "subthemen": []
     },
     "bewegung_osg_bandreparatur": {
       "thema": "Sanfte Bewegungsübungen",
       "emoji": "🦶",
-      "intro": "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten.",
-      "text": "Sie sollten aber dennoch ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie machen. Es können auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband erfolgen. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nWichtig: Aufgrund der Bandreparatur soll das obere Sprunggelenk in den ersten 6 Wochen nach der OP nicht intensiv mobilisiert werden — insbesondere keine starken Bewegungen in die Plantarflexion (Fuß nach unten) und keine Inversion (Fuß nach innen kippen). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nEine sanfte, geführte Beübung im beschwerdearmen Bereich ist erlaubt, sobald Ihre Wundheilung dies zulässt. Im Zweifel sprechen Sie mit Ihrer Physiotherapie oder dem Behandler.",
+      "intro": "Nach der Bandreparatur folgt die Beübung des Sprunggelenks strengen Regeln.",
+      "text": "In den ersten 6 Wochen nach der Operation darf das Sprunggelenk nicht in die Beugung fußsohlenwärts gebracht, nicht verdreht und nicht nach innen gekippt werden (keine Flexion, keine Verdrehung des Fußes, keine Inversion). Diese Bewegungen würden die reparierten Bänder in der Heilungsphase überlasten.\n\nAb der vierten Woche können Sie mit einer sanften Mobilisierung in die Gegenrichtung beginnen — dem vorsichtigen Anheben des Fußes (Extension). Ausgangspunkt ist dabei die Neutralstellung, also die 90°-Stellung des Fußes zum Unterschenkel. Aus dieser Position wird der Fuß nur nach oben angehoben und wieder bis zur Neutralstellung zurückgeführt — nicht darüber hinaus fußsohlenwärts. Üben Sie im beschwerdearmen Bereich und ohne Zug an den Bändern zu erzwingen. Im Zweifel besprechen Sie die Übungen mit Ihrer Physiotherapie oder dem Behandler.\n\nBewegungsübungen ohne Belastung für Hüfte und Knie sind weiterhin sinnvoll — auch zur Thromboseprophylaxe.",
       "subthemen": []
     },
     "roentgen_bandreparatur": {
       "thema": "Röntgenkontrolle und Belastungssteigerung",
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
-      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig: Aufgrund der Bandreparatur soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
+      "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig: Aufgrund der Bandreparatur soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
       "subthemen": []
     },
     "sport_nach_bandreparatur": {
       "thema": "Sportliche Belastungssteigerung",
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
-      "text": "Nach einer Bandreparatur gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+      "text": "Nach einer Bandreparatur gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sollte nach einer Bandreparatur frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
       "subthemen": []
     },
     "mobilisierung_vollbelastung_allgemein": {
@@ -6151,7 +6662,7 @@
       "thema": "Bewegungsübungen Großzehengrundgelenk",
       "emoji": "🦶",
       "intro": "Nach der Cheilektomie soll das Großzehengrundgelenk früh bewegt werden, damit die gewonnene Beweglichkeit erhalten bleibt.",
-      "text": "Beginnen Sie frühzeitig mit eigenständigen Bewegungsübungen der Großzehe in die Beugung und die Hebung. Machen Sie die Übungen im beschwerdearmen Bereich und steigern Sie den Umfang von Tag zu Tag. Eine Schiene oder Zwischenzehenkeile sind nach diesem Eingriff nicht nötig — das Gelenk darf und soll sich bewegen.",
+      "text": "Mit eigenständigen Bewegungsübungen der Großzehe in die Beugung und die Hebung können Sie sofort beginnen — zunächst sanft und im beschwerdearmen Bereich. Sobald die Wundheilung gesichert ist, etwa ab dem siebten Tag, dürfen die Übungen auch forciert erfolgen. Bewegen Sie das Gelenk dann mehrmals täglich kräftig bis an die Bewegungsgrenze.\n\nEine Schiene oder Zwischenzehenkeile sind nach diesem Eingriff nicht nötig — das Gelenk darf und soll sich bewegen.",
       "subthemen": []
     },
     "kontrolle_rigidus_cheilektomie": {
@@ -6200,14 +6711,14 @@
       "thema": "Aufbelastung",
       "emoji": "🚶",
       "intro": "Nach 6 Wochen Teilbelastung kann die Belastung nun schrittweise gesteigert werden.",
-      "text": "Wenn Ihr Behandler die Freigabe erteilt, steigern Sie die Belastung im Stiefel und mit den Stützen langsam und schmerzadaptiert bis zur Vollbelastung. „Schmerzadaptiert\" heißt: nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Ein Wechsel in das normale Schuhwerk ist je nach Verlauf möglich.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, belastungsfreie Mobilisierung des Gelenks und die Lastaufnahme mit Steigerung zur Vollbelastung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "text": "Wenn Ihr Behandler die Freigabe erteilt, steigern Sie die Belastung im Stiefel und mit den Stützen langsam und schmerzadaptiert bis zur Vollbelastung. „Schmerzadaptiert\" heißt: nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Ein Wechsel in das normale Schuhwerk ist je nach Verlauf möglich.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, belastungsfreie Mobilisierung des Gelenks und die Lastaufnahme mit Steigerung zur Vollbelastung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.",
       "subthemen": []
     },
     "orthese_vollbelastung_knorpel": {
       "thema": "Wechsel in die Orthese und Aufbelastung",
       "emoji": "🦵",
       "intro": "Nach 6 Wochen Teilbelastung folgen bei dieser Variante weitere 6 Wochen in einer Orthese — nun unter Vollbelastung.",
-      "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese wird nur bei Belastung getragen — also beim Stehen und Gehen; in Ruhe können Sie sie ablegen. Sie schützt vor allem vor einem erneuten Umknicken in dieser frühen Phase, in der der Gang oft noch unsicher ist, und wird bis zur 12. Woche nach der Operation genutzt. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nForcierte Verdrehungen und ein Kippen des Fußes nach innen sollten Sie weiterhin vermeiden. Der Fokus der Physiotherapie liegt jetzt auf der Mobilisierung des Sprunggelenks und auf neuromuskulärem Training — also Übungen für Gleichgewicht, Koordination und die muskuläre Kontrolle des Gelenks.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald die Vollbelastung in der Orthese sicher gelingt. Solange Sie noch überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese wird nur bei Belastung getragen — also beim Stehen und Gehen; in Ruhe können Sie sie ablegen. Sie schützt vor allem vor einem erneuten Umknicken in dieser frühen Phase, in der der Gang oft noch unsicher ist, und wird bis zur 12. Woche nach der Operation genutzt. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nForcierte Verdrehungen und ein Kippen des Fußes nach innen sollten Sie weiterhin vermeiden. Der Fokus der Physiotherapie liegt jetzt auf der Mobilisierung des Sprunggelenks und auf neuromuskulärem Training — also Übungen für Gleichgewicht, Koordination und die muskuläre Kontrolle des Gelenks.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — mit dem Wechsel in die Orthese und sicherer Vollbelastung kann er in aller Regel beendet werden. Den genauen Endpunkt legt Ihr Behandler fest.",
       "subthemen": []
     },
     "nem_knorpel": {
@@ -6246,7 +6757,7 @@
       "thema": "Mobilisierung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "In den ersten zwei Wochen wird im Spitzfuß-Walker an zwei Unterarmgehstützen gegangen.",
-      "text": "Bei reizloser Wunde und nach Freigabe durch Ihre Behandler dürfen Sie bereits mit 20 kg teilbelasten. Ein gutes Gefühl für diese Belastung bekommen Sie mit einer Personenwaage — drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 20 kg anzeigt. Auf Bewegungsübungen des Sprunggelenks wird in dieser frühen Phase verzichtet, da die refixierte Sehne noch keinen Zug vertragen darf.\n\nEine Thromboseprophylaxe ist mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, da die Muskulatur deutlich weniger beansprucht wird und der Walker das Sprunggelenk ruhigstellt. Danach wird sie so lange fortgeführt, wie das Sprunggelenk ruhiggestellt ist oder Sie an den Stützen mit höchstens 20 kg Teilbelastung gehen.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
+      "text": "Bei reizloser Wunde und nach Freigabe durch Ihre Behandler dürfen Sie bereits mit 20 kg teilbelasten. Ein gutes Gefühl für diese Belastung bekommen Sie mit einer Personenwaage — drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 20 kg anzeigt. Auf Bewegungsübungen des Sprunggelenks wird in dieser frühen Phase verzichtet, da die refixierte Sehne noch keinen Zug vertragen darf.\n\nEine Thromboseprophylaxe ist bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes nötig — mindestens jedoch §THROMBOSE_WOCHEN§ Wochen, da die Muskulatur deutlich weniger beansprucht wird und der Walker das Sprunggelenk ruhigstellt.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -6257,7 +6768,7 @@
       "thema": "Mobilisierung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Nach der Naht wird frühfunktionell behandelt — die Belastung darf zügig gesteigert werden.",
-      "text": "Sie gehen im Spitzfuß-Walker an zwei Unterarmgehstützen. Nach Vorgabe Ihrer Behandler wird die Belastung zügig bis zur Vollbelastung im Stiefel gesteigert — die frühe Belastung verbessert nachweislich das Ergebnis. Auf aktive Bewegungsübungen des Sprunggelenks wird in den ersten zwei Wochen verzichtet, und der Walker wird Tag und Nacht getragen.\n\nEine Thromboseprophylaxe ist in der Regel mindestens §THROMBOSE_WOCHEN§ Wochen lang nötig, solange das Sprunggelenk im Walker ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
+      "text": "Sie gehen im Spitzfuß-Walker an zwei Unterarmgehstützen. Nach Vorgabe Ihrer Behandler wird die Belastung zügig bis zur Vollbelastung im Stiefel gesteigert — die frühe Belastung verbessert nachweislich das Ergebnis. Auf aktive Bewegungsübungen des Sprunggelenks wird in den ersten zwei Wochen verzichtet, und der Walker wird Tag und Nacht getragen.\n\nEine Thromboseprophylaxe ist bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes nötig — in der Regel mindestens §THROMBOSE_WOCHEN§ Wochen, solange das Sprunggelenk im Walker ruhiggestellt ist.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungsübungen ohne Belastung für Hüfte und Knie.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -6289,7 +6800,7 @@
       "thema": "Eigenes Schuhwerk und Physiotherapie",
       "emoji": "👟",
       "intro": "Ab der neunten Woche wird der Walker gegen das eigene Schuhwerk getauscht.",
-      "text": "In den Schuh kommt ein Silikon-Fersenkeil, der die Achillessehne noch etwas entlastet. Nach Möglichkeit gehen Sie nun schon ohne Gehstützen.\n\nDie Physiotherapie beginnt mit neuromuskulärem Training, Gangschule und Bewegungsübungen des oberen Sprunggelenks. Der Fuß soll dabei nicht kräftig nach oben gehoben werden (keine forcierte Dorsalflexion), um die heilende Sehne zu schonen. In den ersten zwei Monaten liegt der Schwerpunkt auf einer schonenden Kräftigung ohne Zug an der Sehne.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald Sie ohne Ruhigstellung deutlich mehr als 20 kg belasten. Solange Sie den Walker noch tragen oder überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "text": "In den Schuh kommt ein Silikon-Fersenkeil, der die Achillessehne noch etwas entlastet. Nach Möglichkeit gehen Sie nun schon ohne Gehstützen.\n\nDie Physiotherapie beginnt mit neuromuskulärem Training, Gangschule und Bewegungsübungen des oberen Sprunggelenks. Der Fuß soll dabei nicht kräftig nach oben gehoben werden (keine forcierte Dorsalflexion), um die heilende Sehne zu schonen. In den ersten zwei Monaten liegt der Schwerpunkt auf einer schonenden Kräftigung ohne Zug an der Sehne.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt. Mit dem Wechsel in das eigene Schuhwerk und sicherer Vollbelastung kann er in aller Regel beendet werden — den genauen Endpunkt legt Ihr Behandler fest.",
       "subthemen": []
     },
     "fhl_kraeftigung": {
@@ -6317,7 +6828,7 @@
       "thema": "Mobilisierung und Thromboseschutz",
       "emoji": "🚶",
       "intro": "Nach der Tendoskopie wird früh und konsequent bewegt — eine Ruhigstellung ist nicht nötig.",
-      "text": "Sie dürfen direkt auftreten und steigern die Belastung an zwei Unterarmgehstützen über die ersten zwei Wochen schrittweise bis zur Vollbelastung. Die frühe, konsequente Bewegung soll erneute Verklebungen der Sehne verhindern. Beginnen Sie früh mit täglichen, sanften Dehnübungen der Wade und — sobald die Wunde es zulässt — mit einer Narbenmassage. Die Physiotherapie begleitet die Mobilisierung.\n\nEine Thromboseprophylaxe (wenn keine Blutverdünnung von Hause aus besteht) wird durchgeführt, solange Sie an den Stützen nur mit geringer Belastung gehen. Gelingt die Vollbelastung sicher, kann sie in aller Regel beendet werden — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "text": "Sie dürfen direkt auftreten und steigern die Belastung an zwei Unterarmgehstützen über die ersten zwei Wochen schrittweise bis zur Vollbelastung. Die frühe, konsequente Bewegung soll erneute Verklebungen der Sehne verhindern. Beginnen Sie früh mit täglichen, sanften Dehnübungen der Wade und — sobald die Wunde es zulässt — mit einer Narbenmassage. Die Physiotherapie begleitet die Mobilisierung.\n\nEine Thromboseprophylaxe (wenn keine Blutverdünnung von Hause aus besteht) erfolgt bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes — nach der Tendoskopie in der Regel also nur, bis die Vollbelastung sicher gelingt. Besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
       "subthemen": [
         {
           "wissen": "thromboseschutz_bewegung"
@@ -6336,6 +6847,66 @@
       "emoji": "🏃",
       "intro": "Ab etwa der vierten Woche kann die sportliche Belastung gesteigert werden.",
       "text": "Wie schnell die Steigerung gelingt, ist je nach Ausgangslage sehr unterschiedlich — üblich sind vier bis acht Wochen bis zur sportlichen Belastung. Steigern Sie schrittweise und beschwerdeorientiert, beginnend mit Radfahren, Schwimmen oder zügigem Gehen, bevor Lauf- und Sprungbelastungen dazukommen.\n\nErgänzend ist eine Infiltration mit Hyaluronsäure möglich. Ob dies bei Ihnen sinnvoll ist, besprechen Sie mit Ihren Behandlern.",
+      "subthemen": []
+    },
+    "wundkonditionierung": {
+      "thema": "Wundkonditionierung",
+      "emoji": "🩹",
+      "intro": "In den ersten Tagen steht die Beruhigung der Weichteile im Vordergrund.",
+      "text": "Nach größeren Eingriffen am Fuß und Sprunggelenk werden die ersten etwa zwei Tage zur Wundkonditionierung genutzt. Der Fuß bleibt überwiegend hochgelagert und wird gekühlt, damit Schwellung und Wundspannung zurückgehen und die Wunde sich beruhigen kann.\n\nDie Mobilisierung erfolgt in dieser Phase unter Entlastung — Sie bewegen sich an zwei Unterarmgehstützen, ohne mit dem operierten Fuß aufzutreten. Erst wenn die Wunde reizlos ist und Ihre Behandler die Freigabe erteilen, wird je nach Konzept auf die vorgesehene Belastung übergegangen.",
+      "subthemen": []
+    },
+    "roentgen_smot_aufbelastung": {
+      "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "emoji": "🩻",
+      "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+      "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung der Osteotomie. Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, steigern Sie im Stiefel und mit den Stützen die Belastung schrittweise bis zur Vollbelastung. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, Mobilisierung und die Lastaufnahme mit Steigerung zur Vollbelastung.",
+      "subthemen": []
+    },
+    "roentgen_verlauf_12wo": {
+      "thema": "Erneute Röntgenkontrolle",
+      "emoji": "🩻",
+      "intro": "Nach 12 Wochen wird der Heilungsverlauf erneut im Röntgen kontrolliert.",
+      "text": "Die erneute Röntgenkontrolle zeigt den weiteren Fortschritt der knöchernen Durchbauung. Bei regelrechtem Befund können verbliebene Einschränkungen weiter gelockert und die Belastung in Alltag und Sport weiter gesteigert werden. Das genaue Vorgehen legt Ihr Behandler anhand des Befundes fest.",
+      "subthemen": []
+    },
+    "sport_nach_bandstabilisierung_prothese": {
+      "thema": "Sportliche Belastungssteigerung",
+      "emoji": "🚴",
+      "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
+      "text": "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
+      "subthemen": []
+    },
+    "verband_1_hallux": {
+      "thema": "Erster Verbandwechsel",
+      "emoji": "🩹",
+      "intro": "Wenn der Verband sich nicht früher gelockert hat oder stark durchgeblutet ist, erfolgt am 1.–2. Tag nach der OP häufig die erste Wundkontrolle.",
+      "text": "Machen Sie sich ruhig ein Foto der Wunde für den späteren Vergleich und erfragen Sie beim Behandler, ob alles regelrecht aussieht.\n\nSollte hier die Schwellung noch als deutlich eingeschätzt werden, müssen Sie Ihre Belastung der letzten Tage hinterfragen und sich zurücknehmen. Eine gute Abschwellung ist von besonderer Wichtigkeit für eine gute und komplikationsfreie Wundheilung und die Abwendung von Infekten.\n\nEbenfalls wird nun in der Regel in Abhängigkeit von der Wunde der nächste Termin mit Ihnen geplant. Meistens ist dieser in ca. einer Woche.\n\nDer redressierende Verband, der die Großzehe in der Korrekturstellung hält, besteht bereits von Anfang an — er wird direkt im Operationssaal angelegt. Bei der Wundkontrolle wird er erneuert.",
+      "subthemen": [
+        {
+          "wissen": "verbandwechsel_chevron"
+        }
+      ]
+    },
+    "bewegung_mtp_passiv": {
+      "thema": "Passive Beugung der Zehengrundgelenke",
+      "emoji": "🦶",
+      "intro": "Ab der zweiten Woche werden die Zehengrundgelenke zusätzlich passiv gebeugt.",
+      "text": "Nehmen Sie die operierte Zehe dafür mit den Fingern und beugen Sie sie sanft in Richtung Fußsohle. Die Beugung erfolgt im Zehengrundgelenk — die Zehe selbst wird dabei nicht gekrümmt. Dies beugt einer Steife vor und unterstützt den Bodenkontakt der Zehe.\n\nBeginnen Sie sanft im beschwerdearmen Bereich und üben Sie mehrmals täglich in kurzen Einheiten. Ab der vierten Woche dürfen die Übungen kräftiger erfolgen.",
+      "subthemen": []
+    },
+    "walker_neutral_anlage": {
+      "thema": "Der Walker in Neutralstellung",
+      "emoji": "🥾",
+      "intro": "Direkt nach der Operation wird ein Walker in Neutralstellung angelegt.",
+      "text": "Der Stiefel hält den Fuß in der Neutralstellung, also der 90°-Stellung des Fußes zum Unterschenkel. Eine Spitzfußstellung ist nicht nötig — die verlängerte Wadenmuskulatur soll gerade in der gewonnenen Länge ausheilen. Der Walker wird beim Gehen getragen; die Vorgaben zum Tragen in Ruhe und zur Nacht legt Ihr Behandler fest.\n\nFür die ersten 4 Wochen gilt eine Teilbelastung — die Einzelheiten dazu finden Sie in der nächsten Phase.",
+      "subthemen": []
+    },
+    "walker_ende_gastroc_distal": {
+      "thema": "Walker-Ende und Beübung",
+      "emoji": "🦵",
+      "intro": "Nach 4 Wochen endet die Ruhigstellung — nun beginnt die Beübung.",
+      "text": "Wenn Ihre Behandler die Freigabe erteilen, wird der Walker abgelegt und die Belastung schrittweise bis zur Vollbelastung gesteigert. Nun beginnt die Beübung mit sanften Bewegungsübungen des Sprunggelenks, vorsichtiger Dehnung der Wade und einer zunehmenden Kräftigung der Wadenmuskulatur. Die Kräftigung hat besonderes Gewicht, da die Wade nach einer Verlängerung vorübergehend an Kraft verliert. Die Physiotherapie leitet Sie an, geübt wird zusätzlich täglich zu Hause.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — mit dem Walker-Ende und sicherer Vollbelastung kann er in aller Regel beendet werden. Den genauen Endpunkt legt Ihr Behandler fest.",
       "subthemen": []
     }
   },
