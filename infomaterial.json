@@ -1760,9 +1760,9 @@
     },
     "achilles_nekrose": {
       "infoKategorie": "op_technik",
-      "infoTitel": "Offene Achillessehnen-Sanierung",
-      "titel": "Offene Achillessehnen-Sanierung",
-      "untertitel": "Offene Entfernung von Sehnennekrosen mit Naht und Tenolyse bei Mid-Portion-Tendinopathie",
+      "infoTitel": "Débridement der Achillessehne bei Tendinose",
+      "titel": "Débridement der Achillessehne bei Tendinose",
+      "untertitel": "Offene Entfernung des kranken Sehnengewebes (Débridement) mit Naht und Tenolyse bei Mid-Portion-Tendinopathie",
       "betrifft_eingriffe": [],
       "slides": [
         "op_achilles_nekrose_ueberblick",
@@ -2679,7 +2679,7 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": false,
-      "_entwurf": true,
+      "_entwurf": false,
       "quellen": [
         {
           "id": "fhl_q1",
@@ -2738,7 +2738,8 @@
           "text": "Apinun J, Jenvorapoj S, Arirachakaran A, Kongtharvonskul J. Clinical outcomes of chronic Achilles tendon rupture treated with flexor hallucis longus grafting and flexor hallucis longus grafting plus additional augmentation: a meta-analysis. Foot Ankle Surg. 2020;26(7):717-722. doi: [10.1016/j.fas.2019.09.006](https://doi.org/10.1016/j.fas.2019.09.006)"
         }
       ],
-      "stand": "Recherche 07/2026 (DOI-verifiziert) + Galla 2019 / Walther 2011 — Reha-Schema vorläufig, ärztlich zu prüfen"
+      "stand": "Recherche 07/2026 (DOI-verifiziert) + Galla 2019 / Walther 2011 — Reha-Schema vorläufig, ärztlich zu prüfen",
+      "_freigegeben": "2026-08-14 (Benjamin)"
     },
     "moberg": {
       "infoKategorie": "op_technik",
@@ -2771,6 +2772,7 @@
       "betrifft_eingriffe": [],
       "slides": [
         "op_achilles_naht_ueberblick",
+        "op_achilles_naht_ablauf",
         "op_achilles_naht_ergebnisse",
         "op_achilles_naht_nachbehandlung",
         "op_achilles_naht_komplikationen",
@@ -2792,6 +2794,22 @@
         {
           "id": "achilles_naht_q3",
           "text": "Ochen Y, et al. Operative vs nonoperative treatment of Achilles tendon ruptures: systematic review and meta-analysis (Reruptur op ~3,6 % vs. konservativ ~12,1 %). 2019."
+        },
+        {
+          "id": "achilles_naht_q4",
+          "text": "Attia AK, Mahmoud K, d'Hooghe P, et al. Outcomes and Complications of Open Versus Minimally Invasive Repair of Acute Achilles Tendon Ruptures: A Systematic Review and Meta-analysis of Randomized Controlled Trials. Am J Sports Med. 2023;51(3):825-836. doi: [10.1177/03635465211053619](https://doi.org/10.1177/03635465211053619)"
+        },
+        {
+          "id": "achilles_naht_q5",
+          "text": "Gatz M, Driessen A, Eschweiler J, Tingart M, Migliorini F. Open versus minimally-invasive surgery for Achilles tendon rupture: a meta-analysis study. Arch Orthop Trauma Surg. 2021;141(3):383-401. doi: [10.1007/s00402-020-03437-z](https://doi.org/10.1007/s00402-020-03437-z)"
+        },
+        {
+          "id": "achilles_naht_q6",
+          "text": "Pisano A, Boxler M, Gambuti E, et al. Open surgical repair as gold standard for acute Achilles tendon ruptures: Systematic review and network meta-analysis. Knee Surg Sports Traumatol Arthrosc. 2025;33(7):2664-2683. doi: [10.1002/ksa.12686](https://doi.org/10.1002/ksa.12686)"
+        },
+        {
+          "id": "achilles_naht_q7",
+          "text": "Moore ML, Pollock JR, Karsen PJ, et al. Open Achilles Tendon Repair. JBJS Essent Surg Tech. 2023;13(1):e21.00054. doi: [10.2106/JBJS.ST.21.00054](https://doi.org/10.2106/JBJS.ST.21.00054)"
         }
       ]
     },
@@ -2803,6 +2821,7 @@
       "betrifft_eingriffe": [],
       "slides": [
         "op_achilles_perkutan_ueberblick",
+        "op_achilles_perkutan_ablauf",
         "op_achilles_perkutan_ergebnisse",
         "op_achilles_perkutan_nachbehandlung",
         "op_achilles_perkutan_komplikationen",
@@ -2820,6 +2839,22 @@
         {
           "id": "achilles_perkutan_q2",
           "text": "AOFAS Position Statement: Management of Acute Achilles Tendon Ruptures. November 2024."
+        },
+        {
+          "id": "achilles_perkutan_q3",
+          "text": "Attia AK, Mahmoud K, d'Hooghe P, et al. Outcomes and Complications of Open Versus Minimally Invasive Repair of Acute Achilles Tendon Ruptures: A Systematic Review and Meta-analysis of Randomized Controlled Trials. Am J Sports Med. 2023;51(3):825-836. doi: [10.1177/03635465211053619](https://doi.org/10.1177/03635465211053619)"
+        },
+        {
+          "id": "achilles_perkutan_q4",
+          "text": "Gatz M, Driessen A, Eschweiler J, Tingart M, Migliorini F. Open versus minimally-invasive surgery for Achilles tendon rupture: a meta-analysis study. Arch Orthop Trauma Surg. 2021;141(3):383-401. doi: [10.1007/s00402-020-03437-z](https://doi.org/10.1007/s00402-020-03437-z)"
+        },
+        {
+          "id": "achilles_perkutan_q5",
+          "text": "Pisano A, Boxler M, Gambuti E, et al. Open surgical repair as gold standard for acute Achilles tendon ruptures: Systematic review and network meta-analysis. Knee Surg Sports Traumatol Arthrosc. 2025;33(7):2664-2683. doi: [10.1002/ksa.12686](https://doi.org/10.1002/ksa.12686)"
+        },
+        {
+          "id": "achilles_perkutan_q6",
+          "text": "Aurich M, Becherer L, Rammelt S. Operative oder nicht-operative Behandlung der akuten Achillessehnenruptur — was sagt die aktuelle Literatur? Orthopädie (Heidelb). 2024;53(10):740-748. doi: [10.1007/s00132-024-04556-w](https://doi.org/10.1007/s00132-024-04556-w)"
         }
       ]
     },

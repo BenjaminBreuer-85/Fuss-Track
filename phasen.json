@@ -5102,8 +5102,8 @@
       }
     },
     "achilles_nekrose": {
-      "label": "Offene Achillessehnen-Sanierung",
-      "kurzlabel": "Sehnen-Sanierung",
+      "label": "Débridement der Achillessehne bei Tendinose",
+      "kurzlabel": "Achillessehnen-Débridement",
       "merkmale": {
         "belastung": "teil",
         "ruhigstellung": "walker",
@@ -5119,10 +5119,10 @@
       },
       "varianten": {
         "einfach": {
-          "anzeigename": "Offene Achillessehnen-Sanierung mit Refixation",
-          "beschreibung": "Entfernung des geschädigten Sehnengewebes mit Refixation der Achillessehne am Knochen",
-          "auswahl_label": "Sanierung mit Refixation",
-          "auswahl_kurz": "Entfernung des geschädigten Gewebes und Refixation, Spitzfuß-Walker über 8 Wochen",
+          "anzeigename": "Achillessehnen-Débridement mit Refixation",
+          "beschreibung": "Entfernung des kranken Sehnengewebes (Débridement) mit Refixation der Achillessehne am Knochen",
+          "auswahl_label": "Débridement mit Refixation",
+          "auswahl_kurz": "Entfernung des kranken Gewebes und Refixation, Spitzfuß-Walker über 8 Wochen",
           "postop": [
             {
               "tag": 0,
@@ -5202,7 +5202,7 @@
           ]
         },
         "komplex": {
-          "anzeigename": "Offene Achillessehnen-Sanierung — mit FHL-Transfer",
+          "anzeigename": "Achillessehnen-Débridement — mit FHL-Transfer",
           "beschreibung": "Zusätzlich Transfer der langen Großzehenbeugesehne (FHL) zur Verstärkung der Achillessehne",
           "auswahl_label": "Mit FHL-Transfer",
           "auswahl_kurz": "Zusätzlich Transfer der langen Großzehenbeugesehne zur Verstärkung der Sehne",
