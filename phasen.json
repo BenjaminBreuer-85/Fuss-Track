@@ -4678,6 +4678,191 @@
           ]
         }
       }
+    },
+    "knorpel_osg": {
+      "label": "Knorpelchirurgie am OSG",
+      "kurzlabel": "Knorpelchirurgie",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Knorpeltherapie am OSG — ohne Bandstabilisierung",
+          "beschreibung": "Knorpeltherapie am oberen Sprunggelenk (AMIC, Nanofrakturierung oder OATS) ohne Zusatzeingriff",
+          "auswahl_label": "Knorpeltherapie allein",
+          "auswahl_kurz": "AMIC, Nanofrakturierung oder OATS ohne Bandstabilisierung, 6 Wochen Teilbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 3,
+              "label": "Tag 3 nach OP",
+              "baustein": "nem_knorpel"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "prp_knorpel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "bewegung_osg_knorpel"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "aufbelastung_knorpel"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Knorpeltherapie am OSG — mit Bandstabilisierung",
+          "beschreibung": "Knorpeltherapie am oberen Sprunggelenk, kombiniert mit einer Stabilisierung der Außenbänder",
+          "auswahl_label": "Knorpeltherapie mit Bandstabilisierung",
+          "auswahl_kurz": "Mit zusätzlicher Stabilisierung der Außenbänder, danach 6 Wochen Orthese unter Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 3,
+              "label": "Tag 3 nach OP",
+              "baustein": "nem_knorpel"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "prp_knorpel"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_knorpel_stab"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "orthese_vollbelastung_knorpel"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "sport_nach_bandstabilisierung"
+            }
+          ]
+        }
+      }
     }
   },
   "BEGLEITER_BAUSTEINE": {
@@ -5296,6 +5481,48 @@
       "emoji": "🦶",
       "intro": "Ob dieser Punkt Sie betrifft, hängt vom Grund Ihrer Operation ab.",
       "text": "Wurde der erste Strahl bei Ihnen zur Korrektur eines Hallux valgus versteift, muss die Großzehe in der Korrekturposition gehalten werden (man spricht von einer Redression). Dies geschieht über redressierende Verbände, die bei den Verbandswechseln erneuert werden, und ergänzend über Zwischenzehenkeile oder eine Schiene. Die genaue Führung legt Ihr Behandler fest.\n\nWurde das Gelenk dagegen wegen Verschleißes versteift, etwa nach einer Lisfranc-Verletzung, und war keine Korrektur der Großzehe nötig, entfällt die Redression.",
+      "subthemen": []
+    },
+    "bewegung_osg_knorpel": {
+      "thema": "Sanfte Bewegungsübungen des Sprunggelenks",
+      "emoji": "🦶",
+      "intro": "Ab dem Ende der dritten Woche soll das obere Sprunggelenk sanft bewegt werden.",
+      "text": "Die Bewegung des Gelenks ohne Belastung tut dem heilenden Knorpelgewebe gut — sie fördert die Ernährung des Knorpels und beugt einer Steife vor. Beginnen Sie mit sanften, belastungsfreien Bewegungen des oberen Sprunggelenks nach oben und unten, im beschwerdearmen Bereich und ohne die Bewegung an den Anschlag zu erzwingen. Der Umfang kann von Tag zu Tag gesteigert werden.\n\nWeiterhin gilt: kein Auftreten über die freigegebene Teilbelastung hinaus. Ergänzend sind ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie sinnvoll — auch zur Thromboseprophylaxe.",
+      "subthemen": []
+    },
+    "bewegung_osg_knorpel_stab": {
+      "thema": "Sanfte Bewegungsübungen des Sprunggelenks",
+      "emoji": "🦶",
+      "intro": "Bei dieser Variante wurden zusätzlich die Bänder stabilisiert — die Beübung folgt deshalb strengeren Regeln.",
+      "text": "In den ersten 6 Wochen nach der Operation darf das Sprunggelenk nicht in die Beugung fußsohlenwärts gebracht, nicht verdreht und nicht nach innen gekippt werden (keine Flexion, keine Verdrehung des Fußes, keine Inversion). Diese Bewegungen würden die stabilisierten Bänder in der Heilungsphase überlasten.\n\nAb der vierten Woche können Sie mit einer sanften Mobilisierung in die Gegenrichtung beginnen — dem vorsichtigen Anheben des Fußes (Extension), im beschwerdearmen Bereich und ohne Zug an den Bändern zu erzwingen. Im Zweifel besprechen Sie die Übungen mit Ihrer Physiotherapie oder dem Behandler.\n\nErgänzend sind ruhig kreisende Bewegungen und Bewegungsübungen ohne Belastung für Hüfte und Knie sinnvoll — auch zur Thromboseprophylaxe.",
+      "subthemen": []
+    },
+    "aufbelastung_knorpel": {
+      "thema": "Aufbelastung",
+      "emoji": "🚶",
+      "intro": "Nach 6 Wochen Teilbelastung kann die Belastung nun schrittweise gesteigert werden.",
+      "text": "Wenn Ihr Behandler die Freigabe erteilt, steigern Sie die Belastung im Stiefel und mit den Stützen langsam und schmerzadaptiert bis zur Vollbelastung. „Schmerzadaptiert\" heißt: nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Ein Wechsel in das normale Schuhwerk ist je nach Verlauf möglich.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, belastungsfreie Mobilisierung des Gelenks und die Lastaufnahme mit Steigerung zur Vollbelastung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) sollte auch nach der Freigabe noch fortgeführt werden, solange das Sprunggelenk weiterhin in einem Walker oder Cast ruhiggestellt ist — manche tragen diesen noch etwas länger — oder solange Sie an den Stützen nur mit etwa 20 kg oder weniger belasten. Gelingt bereits eine deutlich höhere Belastung ohne Ruhigstellung, kann der Thromboseschutz in aller Regel beendet werden. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "orthese_vollbelastung_knorpel": {
+      "thema": "Wechsel in die Orthese und Aufbelastung",
+      "emoji": "🦵",
+      "intro": "Nach 6 Wochen Teilbelastung folgen bei dieser Variante weitere 6 Wochen in einer Orthese — nun unter Vollbelastung.",
+      "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese schützt die stabilisierten Bänder in der Heilungsphase und wird bis zur 12. Woche nach der Operation getragen. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nAuch in dieser Phase gilt: keine forcierten Verdrehungen und kein Kippen des Fußes nach innen. Die Physiotherapie begleitet die Aufbelastung mit Gangschule und vorsichtiger Beweglichkeitsarbeit — die Inhalte nehmen Rücksicht auf die Bandstabilisierung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) kann in aller Regel beendet werden, sobald die Vollbelastung in der Orthese sicher gelingt. Solange Sie noch überwiegend an den Stützen mit geringer Belastung gehen, wird er fortgeführt. Eine scharfe Grenze gibt es hier nicht — besprechen Sie den Zeitpunkt im Zweifel mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "nem_knorpel": {
+      "thema": "Nahrungsergänzung für den Knorpel",
+      "emoji": "💊",
+      "intro": "Die Heilung des Knorpelgewebes können Sie von innen unterstützen.",
+      "text": "Schon in der Vorbereitung auf die Operation haben wir auf eine ausgewogene, eiweißreiche Ernährung hingewiesen. Nach einer Knorpeltherapie lohnt es sich, gezielt nachzulegen. Für die folgenden Präparate gibt es Hinweise aus Studien, dass sie den Aufbau von Knorpelgewebe unterstützen oder Gelenkbeschwerden lindern können. Die Effekte sind moderat, die Verträglichkeit ist insgesamt gut.\n\nSinnvoll ist eine tägliche Einnahme über etwa drei Monate von Vitamin C (unterstützt als Baustein die körpereigene Kollagenbildung), hydrolysiertem Kollagen (=in kleine Bausteine zerlegtes Kollagen, üblich sind etwa 10 g täglich), Chondroitin (etwa 1200 mg täglich, auf pharmazeutische Qualität achten) und Glucosamin (etwa 1500 mg täglich). Ergänzend kann die Kontrolle des Vitamin-D-Spiegels sinnvoll sein. Ein Mangel sollte ausgeglichen werden, da Vitamin D auch für den Knochen unter dem Knorpel wichtig ist.\n\nWichtig ist die richtige Einordnung. Nahrungsergänzungsmittel ersetzen weder die Nachbehandlung noch eine ausgewogene Ernährung. Wenn Sie blutverdünnende Medikamente einnehmen, eine Schalentier-Allergie haben oder relevante Vorerkrankungen bestehen, besprechen Sie die Einnahme zuerst mit Ihrem Behandler.",
+      "subthemen": []
+    },
+    "prp_knorpel": {
+      "thema": "PRP als ergänzende Maßnahme",
+      "emoji": "💉",
+      "intro": "Als ergänzende Maßnahme nach einer Knorpeltherapie kann die Injektion von Eigenblutplasma (PRP) sinnvoll sein.",
+      "text": "Bei PRP (=plättchenreiches Plasma) wird aus einer kleinen Menge Ihres eigenen Blutes ein Konzentrat der Blutplättchen gewonnen und in das Gelenk gespritzt. Die darin enthaltenen Wachstumsfaktoren sollen die Einheilung des behandelten Knorpelareals unterstützen.\n\nStudien am Sprunggelenk zeigen, dass Patientinnen und Patienten nach einer Knorpeltherapie mit ergänzendem PRP im Durchschnitt weniger Schmerzen und eine bessere Funktion erreichen als ohne diese Ergänzung. Vorübergehende Reizungen oder Schmerzen an der Injektionsstelle sind möglich.\n\nOb PRP in Ihrem Fall sinnvoll ist, wie viele Injektionen infrage kommen und zu welchem Zeitpunkt, besprechen Sie mit Ihrem Behandler. Die Kosten werden von den gesetzlichen Krankenkassen in der Regel nicht übernommen.",
       "subthemen": []
     }
   },
