@@ -2780,7 +2780,7 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
+      "_entwurf": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -2811,7 +2811,8 @@
           "id": "achilles_naht_q7",
           "text": "Moore ML, Pollock JR, Karsen PJ, et al. Open Achilles Tendon Repair. JBJS Essent Surg Tech. 2023;13(1):e21.00054. doi: [10.2106/JBJS.ST.21.00054](https://doi.org/10.2106/JBJS.ST.21.00054)"
         }
-      ]
+      ],
+      "_freigegeben": "2026-08-14 (Benjamin, mit Korrekturen)"
     },
     "achilles_perkutan": {
       "infoKategorie": "op_technik",
@@ -2829,7 +2830,7 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
+      "_entwurf": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -2856,7 +2857,8 @@
           "id": "achilles_perkutan_q6",
           "text": "Aurich M, Becherer L, Rammelt S. Operative oder nicht-operative Behandlung der akuten Achillessehnenruptur — was sagt die aktuelle Literatur? Orthopädie (Heidelb). 2024;53(10):740-748. doi: [10.1007/s00132-024-04556-w](https://doi.org/10.1007/s00132-024-04556-w)"
         }
-      ]
+      ],
+      "_freigegeben": "2026-08-14 (Benjamin, mit Korrekturen)"
     },
     "subtalar": {
       "infoKategorie": "op_technik",
