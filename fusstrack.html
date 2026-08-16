@@ -1049,7 +1049,7 @@ function App() {
     }
     return (
       <div className="app">
-        <Header showSwitcher={false} showHauptmenue={true} />
+        <Header showSwitcher={false} showHauptmenue={true} titel="Beschwerde-Wegweiser" />
         <FinderView />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -2686,7 +2686,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   );
 }
 
-function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideSubtitle }) {
+function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideSubtitle, titel }) {
   function switchMode() {
     if (!urlParams || !urlParams.op) return;
     if (switcherTarget === "aufklaerung") {
@@ -2729,7 +2729,7 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
   }
   return (
     <div className="app-header">
-      <h1>Fuss-Track</h1>
+      <h1>{titel || "Fuss-Track"}</h1>
       {!hideSubtitle && (
         <div className="subtitle">Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk</div>
       )}
@@ -3978,9 +3978,6 @@ function FinderView() {
 
   return (
     <div className="finder-view" style={{ maxWidth: 720, margin: "0 auto" }}>
-      <div style={{ fontSize: 11, color: "#9CA3AF", marginBottom: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
-        Beschwerde-Wegweiser
-      </div>
       {step === "akut" && renderAkut()}
       {step === "regionen" && renderRegionen()}
       {step === "fragen" && renderFragen()}
