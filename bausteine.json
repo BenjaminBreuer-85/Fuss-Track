@@ -52,7 +52,9 @@
     },
     "hv_op_chevron": {
       "titel": "Chevron-Osteotomie",
-      "text": "Bei der **Chevron-Osteotomie (=V-förmiger Korrekturschnitt am Großzehen-Mittelfußknochen)** wird der Kopf des ersten Mittelfußknochens durchtrennt und in eine korrigierte Stellung verschoben. Der Knochen wird in der neuen Position meist mit einer kleinen Schraube gesichert. Das Verfahren wird vor allem bei **leichter bis mittelgradiger** Fehlstellung eingesetzt und erhält das Großzehengrundgelenk.\n\nHäufig wird zusätzlich eine **Akin-Osteotomie (=Korrekturschnitt am Großzehen-Grundglied)** durchgeführt, wenn nach der Korrektur am Mittelfußknochen noch eine Restfehlstellung der Großzehe verbleibt."
+      "text": "Bei der **Chevron-Osteotomie (=V-förmiger Korrekturschnitt am Großzehen-Mittelfußknochen)** wird der Kopf des ersten Mittelfußknochens durchtrennt und in eine korrigierte Stellung verschoben. Der Knochen wird in der neuen Position meist mit einer kleinen Schraube gesichert. Das Verfahren wird vor allem bei **leichter bis mittelgradiger** Fehlstellung eingesetzt und erhält das Großzehengrundgelenk.\n\nHäufig wird zusätzlich eine **Akin-Osteotomie (=Korrekturschnitt am Großzehen-Grundglied)** durchgeführt, wenn nach der Korrektur am Mittelfußknochen noch eine Restfehlstellung der Großzehe verbleibt.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hv_op_scarf": {
       "titel": "Scarf-Osteotomie",
@@ -60,19 +62,27 @@
     },
     "hv_op_lapidus": {
       "titel": "Lapidus-Arthrodese",
-      "text": "Bei der **Lapidus-Arthrodese (=Versteifung des Gelenks zwischen erstem Mittelfußknochen und Fußwurzel)** wird das körpernahe Gelenk des ersten Strahls dauerhaft versteift. Dadurch wird die Fehlstellung an ihrer Wurzel korrigiert und ein instabiler erster Strahl stabilisiert. Das Verfahren kommt vor allem bei **ausgeprägter** Fehlstellung oder bei Instabilität in diesem Gelenk infrage.\n\nHäufig wird zusätzlich eine **Akin-Osteotomie (=Korrekturschnitt am Großzehen-Grundglied)** durchgeführt, wenn eine Restfehlstellung der Großzehe verbleibt."
+      "text": "Bei der **Lapidus-Arthrodese (=Versteifung des Gelenks zwischen erstem Mittelfußknochen und Fußwurzel)** wird das körpernahe Gelenk des ersten Strahls dauerhaft versteift. Dadurch wird die Fehlstellung an ihrer Wurzel korrigiert und ein instabiler erster Strahl stabilisiert. Das Verfahren kommt vor allem bei **ausgeprägter** Fehlstellung oder bei Instabilität in diesem Gelenk infrage.\n\nHäufig wird zusätzlich eine **Akin-Osteotomie (=Korrekturschnitt am Großzehen-Grundglied)** durchgeführt, wenn eine Restfehlstellung der Großzehe verbleibt.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hv_op_dmmo": {
       "titel": "DMMO – Mittelfuß-Osteotomie",
-      "text": "Die **DMMO (=minimal-invasive Umstellung der kleineren Mittelfußknochen)** ist ein ergänzender Eingriff. Über sehr kleine Hautschnitte werden ein oder mehrere der kleineren Mittelfußknochen durchtrennt, um eine begleitende Überlastung im mittleren Vorfußbereich (Metatarsalgie) zu behandeln. Die Knochen finden ihre Position weitgehend selbst und werden meist ohne Schrauben belassen."
+      "text": "Die **DMMO (=minimal-invasive Umstellung der kleineren Mittelfußknochen)** ist ein ergänzender Eingriff. Über sehr kleine Hautschnitte werden ein oder mehrere der kleineren Mittelfußknochen durchtrennt, um eine begleitende Überlastung im mittleren Vorfußbereich (Metatarsalgie) zu behandeln. Die Knochen finden ihre Position weitgehend selbst und werden meist ohne Schrauben belassen.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hv_op_kleinzehen": {
       "titel": "Korrektur der Kleinzehen",
-      "text": "Bei Fehlstellungen der Zehen, häufig als **Krallenzehen**, können diese mitkorrigiert werden. Je nach Fehlstellung kommen zur Ausgeradung und Balancierung der Zehe Eingriffe an den **Streck- oder Beugesehnen**, eine Versteifung des **Zehenmittelgelenks (=PIP-Gelenk)** oder **Korrekturbrüche (=Osteotomien)** infrage."
+      "text": "Bei Fehlstellungen der Zehen, häufig als **Krallenzehen**, können diese mitkorrigiert werden. Je nach Fehlstellung kommen zur Ausgeradung und Balancierung der Zehe Eingriffe an den **Streck- oder Beugesehnen**, eine Versteifung des **Zehenmittelgelenks (=PIP-Gelenk)** oder **Korrekturbrüche (=Osteotomien)** infrage.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hv_op_akin": {
       "titel": "Akin-Osteotomie (Zusatzeingriff)",
-      "text": "Die **Akin-Osteotomie (=Korrekturschnitt am Grundglied der Großzehe)** ist ein **ergänzender Eingriff**, der die Stellung der Großzehe selbst korrigiert. Dabei wird ein kleiner **Knochenkeil entnommen** und der Spalt geschlossen (**schließende Osteotomie**). Die korrigierte Stellung wird mit einer **Naht, einer Schraube oder einer Klammer** gesichert (**Osteosynthese** – Stabilisierung des durchtrennten Knochens).\n\nZiel ist die **Ausgeradung der Zehe im Grundglied**, wenn dort eine eigene Fehlstellung besteht (**Hallux interphalangeus** – Schiefstellung innerhalb der Großzehe selbst), oder die **Zentrierung des Sehnenzugs**, damit die Zehe gerade geführt wird.\n\nDie Akin-Osteotomie wird selten allein, sondern meist **zusätzlich zu einer anderen Korrektur** durchgeführt – zum Beispiel zur Chevron-, Scarf- oder Lapidus-Operation oder im Rahmen einer minimal-invasiven Korrektur. Ob sie notwendig ist, wird oft erst **während der Operation** anhand der erreichten Stellung entschieden; insgesamt ist sie ein häufiger Zusatzeingriff."
+      "text": "Die **Akin-Osteotomie (=Korrekturschnitt am Grundglied der Großzehe)** ist ein **ergänzender Eingriff**, der die Stellung der Großzehe selbst korrigiert. Dabei wird ein kleiner **Knochenkeil entnommen** und der Spalt geschlossen (**schließende Osteotomie**). Die korrigierte Stellung wird mit einer **Naht, einer Schraube oder einer Klammer** gesichert (**Osteosynthese** – Stabilisierung des durchtrennten Knochens).\n\nZiel ist die **Ausgeradung der Zehe im Grundglied**, wenn dort eine eigene Fehlstellung besteht (**Hallux interphalangeus** – Schiefstellung innerhalb der Großzehe selbst), oder die **Zentrierung des Sehnenzugs**, damit die Zehe gerade geführt wird.\n\nDie Akin-Osteotomie wird selten allein, sondern meist **zusätzlich zu einer anderen Korrektur** durchgeführt – zum Beispiel zur Chevron-, Scarf- oder Lapidus-Operation oder im Rahmen einer minimal-invasiven Korrektur. Ob sie notwendig ist, wird oft erst **während der Operation** anhand der erreichten Stellung entschieden; insgesamt ist sie ein häufiger Zusatzeingriff.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hv_op_mica": {
       "titel": "Minimal-invasive Korrektur (MICA)",
@@ -88,7 +98,9 @@
     },
     "hr_op_cheilektomie": {
       "titel": "Cheilektomie",
-      "text": "Bei der **Cheilektomie (=Abtragung der knöchernen Anbauten am Großzehengrundgelenk)** werden die störenden Knochenauswüchse (Osteophyten) an der Oberseite und seitlich des Gelenks entfernt. Dadurch wird das **Anstoßen (=schmerzhaftes Aufeinandertreffen der Knochen beim Anheben der Zehe)** verringert und die Beweglichkeit verbessert. Das Gelenk selbst bleibt erhalten.\n\nDas Verfahren kommt vor allem bei **leichtem bis mittlerem** Verschleiß infrage, bei dem noch ausreichend funktionsfähiger Knorpel vorhanden ist. Es lindert in erster Linie die durch das Anstoßen verursachten Beschwerden; ein bestehender tiefer Gelenkverschleiß wird dadurch nicht behoben. Die Cheilektomie lässt sich auch **minimal-invasiv (über kleine Hautschnitte)** durchführen.\n\n## Nachbehandlung\n\nIn der Regel ist früh eine Belastung in einem entlastenden oder normalen Schuh möglich. Eine frühe Beübung der Beweglichkeit ist wichtig, um den Bewegungsgewinn zu erhalten. Die genauen Vorgaben richten sich nach dem Operationsbefund und werden Ihnen individuell mitgeteilt.\n\n## Wie häufig sind Probleme?\n\nDie Cheilektomie gilt als komplikationsarmes Verfahren mit hoher Patientenzufriedenheit. Bei einem Teil der Patientinnen und Patienten schreitet der Gelenkverschleiß über die Jahre dennoch fort, sodass später ein weiterer Eingriff (z. B. eine Versteifung) notwendig werden kann."
+      "text": "Bei der **Cheilektomie (=Abtragung der knöchernen Anbauten am Großzehengrundgelenk)** werden die störenden Knochenauswüchse (Osteophyten) an der Oberseite und seitlich des Gelenks entfernt. Dadurch wird das **Anstoßen (=schmerzhaftes Aufeinandertreffen der Knochen beim Anheben der Zehe)** verringert und die Beweglichkeit verbessert. Das Gelenk selbst bleibt erhalten.\n\nDas Verfahren kommt vor allem bei **leichtem bis mittlerem** Verschleiß infrage, bei dem noch ausreichend funktionsfähiger Knorpel vorhanden ist. Es lindert in erster Linie die durch das Anstoßen verursachten Beschwerden; ein bestehender tiefer Gelenkverschleiß wird dadurch nicht behoben. Die Cheilektomie lässt sich auch **minimal-invasiv (über kleine Hautschnitte)** durchführen.\n\n## Nachbehandlung\n\nIn der Regel ist früh eine Belastung in einem entlastenden oder normalen Schuh möglich. Eine frühe Beübung der Beweglichkeit ist wichtig, um den Bewegungsgewinn zu erhalten. Die genauen Vorgaben richten sich nach dem Operationsbefund und werden Ihnen individuell mitgeteilt.\n\n## Wie häufig sind Probleme?\n\nDie Cheilektomie gilt als komplikationsarmes Verfahren mit hoher Patientenzufriedenheit. Bei einem Teil der Patientinnen und Patienten schreitet der Gelenkverschleiß über die Jahre dennoch fort, sodass später ein weiterer Eingriff (z. B. eine Versteifung) notwendig werden kann.",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "hr_op_arthrodese": {
       "titel": "Versteifung des Großzehengrundgelenks (MTP1-Arthrodese)",
@@ -857,12 +869,16 @@
     "op_spongiosa_ergebnisse_spenderstelle": {
       "titel": "Ergebnisse / Spenderstellen-Morbidität",
       "text": "Die Belastung folgt dem Haupteingriff. Wichtig ist eine niedrige Komplikationsrate an der Entnahmestelle. Eine Review-Arbeit über **6449 Patienten** fand **19,4 % Komplikationen** bei Entnahme am vorderen/hinteren Beckenkamm [[spongiosa_q1]]: **7,7 %** noch 6 Monate nach der OP Schmerz am Beckenkamm, 0,1 % Brüche (einer operiert), **0,2 % Schäden des N. cutaneus femoris lateralis**, 0,5 % Infekte (jeder 4. tief/operiert), 0,5 % Hämatome (jedes 5. operiert), **4,8 % Missempfindungen im Narbenbereich**, 1,3 % Kritik am kosmetischen Ergebnis. Eine kleinere Serie (37 Patienten, trikortikaler Span) berichtete je einen Fall mit anhaltendem Schmerz, Taubheit und Gefühlsminderung im Bereich des seitlichen Oberschenkel-Hautnervs [[spongiosa_q2]].",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "op_spongiosa_wie_h_ufig_sind_probleme": {
       "titel": "Wie häufig sind Probleme?",
       "text": "An der Entnahmestelle möglich: **anhaltender Schmerz (~8 % nach 6 Monaten)**, Taubheit/Missempfindung (N. cutaneus femoris lateralis), selten Infekt, Hämatom oder Fraktur.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "op_spongiosa_quellen": {
       "titel": "Quellen",
@@ -1238,12 +1254,16 @@
     "ppv_krankheitsbild": {
       "titel": "Krankheitsbild",
       "bilder": [],
-      "text": "Der **Pes planovalgus (PPV, =Knick-Senk-Fuß)** des Erwachsenen ist eine dreidimensionale — **flexible oder kontrakte (fixierte)** — Fußfehlstellung mit vermehrter **Valgusstellung der Ferse** und **Abflachung des medialen Längsgewölbes** (ICD-10: M21.4). Beim Erwachsenen liegt häufig eine **Insuffizienz der Tibialis-posterior-Sehne** zugrunde, die das Längsgewölbe aktiv stützt; hinzu kommen eine Schwäche der inneren Bänder (u. a. Spring Ligament) und eine mit der Zeit zunehmende knöcherne Fehlstellung.\n\n**Übergewicht** ist ein erwiesener unabhängiger Faktor für das Fortbestehen der Fehlstellung (in Studien mehr als verdoppeltes Risiko) und daher ein zentraler Ansatzpunkt der Behandlung.\n\n## Flexibel oder fixiert?\n\nEntscheidend für die Behandlung ist, ob die Fehlstellung **flexibel** (passiv noch ausgleichbar) oder **fixiert** (nicht mehr korrigierbar, oft mit begleitender Arthrose des Rückfußes) ist. Flexible Formen lassen sich häufig gelenkerhaltend behandeln, fixierte Formen erfordern in fortgeschrittenen Fällen eine Versteifung. Man spricht auch von Stadien der erworbenen Plattfußdeformität (Stadium I–IV)."
+      "text": "Der **Pes planovalgus (PPV, =Knick-Senk-Fuß)** des Erwachsenen ist eine dreidimensionale — **flexible oder kontrakte (fixierte)** — Fußfehlstellung mit vermehrter **Valgusstellung der Ferse** und **Abflachung des medialen Längsgewölbes** (ICD-10: M21.4). Beim Erwachsenen liegt häufig eine **Insuffizienz der Tibialis-posterior-Sehne** zugrunde, die das Längsgewölbe aktiv stützt; hinzu kommen eine Schwäche der inneren Bänder (u. a. Spring Ligament) und eine mit der Zeit zunehmende knöcherne Fehlstellung.\n\n**Übergewicht** ist ein erwiesener unabhängiger Faktor für das Fortbestehen der Fehlstellung (in Studien mehr als verdoppeltes Risiko) und daher ein zentraler Ansatzpunkt der Behandlung.\n\n## Flexibel oder fixiert?\n\nEntscheidend für die Behandlung ist, ob die Fehlstellung **flexibel** (passiv noch ausgleichbar) oder **fixiert** (nicht mehr korrigierbar, oft mit begleitender Arthrose des Rückfußes) ist. Flexible Formen lassen sich häufig gelenkerhaltend behandeln, fixierte Formen erfordern in fortgeschrittenen Fällen eine Versteifung. Man spricht auch von Stadien der erworbenen Plattfußdeformität (Stadium I–IV).",
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "ppv_behandlung": {
       "titel": "Behandlung",
       "text": "## Nicht-operativ\n\nZiel der konservativen Therapie ist nicht die Heilung der Fehlstellung, sondern Symptomlinderung und der Erhalt des Status quo durch Entlastung der medialen Stabilisatoren. **Gewichtsreduktion** ist dabei elementar. Weiter kommen zum Einsatz: stützende Einlagen bzw. Orthesen zur Aufrichtung des Gewölbes und Rückfußführung, Schuhzurichtung, **Kräftigung der Tibialis-posterior- und Fußmuskulatur** sowie **Dehnung der verkürzten Wade** (siehe die entsprechenden Übungsprogramme und die Kapitel [„Einlagen\"](?massnahme=einlagen) und [„Eigenübungen beim Knick-Senk-Fuß\"](?massnahme=uebungen_knicksenkfuss)). Gewichtsreduktion und Belastungsanpassung unterstützen die Behandlung.\n\n## Operativ — flexibel\n\nBei **flexibler** Fehlstellung mit anhaltenden Beschwerden werden **gelenkerhaltende** Verfahren kombiniert: eine **medialisierende Fersenbein-Osteotomie**, ggf. eine **Verlängerungs-Osteotomie** des äußeren Fersenbeins, eine **Cotton-Osteotomie**, eine **Sehnenrekonstruktion (z. B. FDL-Transfer)** und eine **Wadenmuskelverlängerung**. Ziel ist die Wiederherstellung der Achse ohne Versteifung.\n\n## Operativ — fixiert\n\nBei **fixierter** Fehlstellung oder begleitender Rückfußarthrose ist eine **Versteifung** nötig. Je nach betroffenen Gelenken kommen die **Double-Arthrodese** (Subtalar- + Talonavikulargelenk, Kalkaneokuboidgelenk erhalten) oder die **Triple-Arthrodese** (zusätzlich Kalkaneokuboidgelenk) infrage. Die Double-Arthrodese über einen meist medialen Zugang gilt beim fixierten erworbenen Plattfuß (Stadium III) heute vielfach als weichteilschonende, gleichwertige Alternative zur Triple-Arthrodese.\n\n→ [Double-Arthrodese](?op=double_arthrodese&modus=aufklaerung)  ·  [Triple-Arthrodese](?op=triple&modus=aufklaerung)  ·  [Subtalararthrodese](?op=subtalar&modus=aufklaerung)",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "ppv_quellen": {
       "titel": "Quellen",
@@ -1293,7 +1313,9 @@
     "kb_achillo_behandlung": {
       "titel": "Behandlung & weiterführend",
       "text": "Grundlage fast aller Achillessehnen-Beschwerden ist ein **dosiertes Belastungs- und Krafttraining** sowie die **Dehnung der Wade** — konsequent über Wochen bis Monate:\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading)\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nErgänzend kommen je nach Form Stoßwellentherapie, Einlagen/Fersenkissen und ggf. PRP/ACP zum Einsatz:\n- [Stoßwellentherapie](?massnahme=stosswelle) · [Einlagen](?massnahme=einlagen) · [PRP/ACP](?massnahme=prp_acp)\n\n**Zur jeweiligen Form:**\n- [Mid-Portion-Tendinopathie](?op=achilles_midportion_kb&modus=aufklaerung)\n- [Insertionsnahe Tendinopathie](?op=achilles_insertional_kb&modus=aufklaerung)\n\nOperative Verfahren bleiben Fällen vorbehalten, die über viele Monate nicht auf die konservative Therapie ansprechen (siehe die jeweiligen Formen und OP-Techniken).",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_achillo_quellen": {
       "titel": "Quellen",
@@ -1308,12 +1330,16 @@
     "kb_amid_beschwerden": {
       "titel": "Beschwerden & Diagnostik",
       "text": "Typisch sind belastungsabhängige Schmerzen und eine tastbare, teils spindelförmige Verdickung im mittleren Sehnenverlauf, oft mit Steifigkeit am Morgen. \n\nZur Diagnostik gehört ein **belastetes Röntgen** (2 Ebenen, Saltzmann-/Rückfußachsen-Aufnahme) zur Darstellung von Fußfehlstellungen — eine Knick-Senk-Fuß-Stellung mit Überpronation ist mit Achillessehnenbeschwerden vergesellschaftet — sowie zur Beurteilung der Fersenbeingeometrie und möglicher Verkalkungen. Das **MRT** ist zur Beurteilung des Schädigungsausmaßes und zur Therapieplanung meist erforderlich; der **Ultraschall** erlaubt eine dynamische Beurteilung der Sehne.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_amid_behandlung": {
       "titel": "Behandlung",
       "text": "Die Behandlung ist ganz überwiegend **konservativ und gut belegt**. Kernstück ist ein **dosiertes Belastungstraining (Tendoloading)** mit exzentrischen Übungen, das bei der Mid-Portion-Tendinopathie sehr wirksam ist (Magnusson & Kjaer 2009), ergänzt durch Wadendehnung:\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading)\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nErgänzend kommen **Stoßwellentherapie** und ggf. **PRP/ACP** sowie eine Einlagen-/Fußkorrektur bei begleitender Fehlstellung zum Einsatz:\n- [Stoßwellentherapie](?massnahme=stosswelle) · [PRP/ACP](?massnahme=prp_acp) · [Einlagen](?massnahme=einlagen)\n\n**Operativ** (erst nach vielen Monaten erfolgloser konservativer Therapie): je nach Befund eine **Tendoskopie** oder ein Débridement der Sehne:\n- [Achilles-Tendoskopie](?op=tendoskopie_achilles&modus=aufklaerung) · [Nekrosen/Débridement am Ansatz](?op=achilles_nekrose&modus=aufklaerung)",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_amid_quellen": {
       "titel": "Quellen",
@@ -1338,7 +1364,9 @@
     "kb_ains_behandlung": {
       "titel": "Behandlung",
       "text": "Die insertionelle Tendinopathie wird **immer primär konservativ (nicht-operativ)** behandelt, auch wenn sie schwerer und langsamer anspricht als die Mid-Portion-Form. Grundlage ist eine **Anpassung der Belastung**. Reize, die den Sehnenansatz gegen das Fersenbein pressen, vor allem Bergauf- und Treppengehen sowie tiefe Dehnung, werden vorübergehend reduziert, während die Sehne kontrolliert weiter belastet wird [[achilles_insertional_kb_q9]].\n\nKern der Behandlung ist ein **progressives Kraft- und Belastungstraining** der Wadenmuskel-Sehnen-Einheit. Beim insertionellen Typ werden die Übungen bewusst **nur bis zur Neutralstellung** ausgeführt und nicht über eine Stufenkante in die tiefe Dehnung, um die schmerzhafte Kompression am Ansatz zu vermeiden. Neben dem klassischen exzentrischen Training kommen auch langsame, schwere Kräftigungsübungen (Heavy Slow Resistance) infrage [[achilles_insertional_kb_q11]]. Die beste Evidenz zur Erstbehandlung haben exzentrisches Training und die **niedrig-energetische Stoßwellentherapie**, oft in Kombination und ergänzt um Weichteiltechniken [[achilles_insertional_kb_q2]][[achilles_insertional_kb_q3]][[achilles_insertional_kb_q4]]. Ein **Fersenkeil bzw. eine Einlage mit Fersenerhöhung** verringert die Dorsalextension und damit die Kompression am Ansatz. Bis eine deutliche Besserung eintritt, vergehen häufig mehrere Monate.\n- [Exzentrische Kräftigung der Achillessehne / Tendoloading](?massnahme=achilles_tendoloading) — beim insertionellen Typ nur bis zur Neutralstellung, nicht in die tiefe Dehnung.\n- [Stoßwellentherapie](?massnahme=stosswelle)\n- [Einlagen](?massnahme=einlagen)\n\n::: warning\nIntensive Dehnübungen in Aufwärtsstellung des Fußes sind hier zurückhaltend einzusetzen, da sie die knöchernen Veränderungen am hinteren Fersenbein und die Kompression der Sehne verstärken und Schmerzen auslösen können. Sie gehören nur in ein angeleitetes physiotherapeutisches Programm.\n:::\n\nEine **Kortison-Spritze direkt in den Sehnenansatz** wird vermieden, weil sie das Sehnengewebe schwächt und das Risiko eines Sehnenrisses erhöht [[achilles_insertional_kb_q9]].\n\n**Operativ** kommt bei anhaltendem Leidensdruck über etwa sechs bis neun Monate trotz konsequenter konservativer Therapie in Frage. Welches Verfahren gewählt wird, richtet sich vor allem danach, wie stark die Sehne selbst geschädigt ist, wie groß die Haglund-Exostose ist, wie viel Kalk im Ansatz eingelagert ist und welche Form das Fersenbein hat, außerdem nach Alter und Anspruch des Patienten [[achilles_insertional_kb_q5]].\n\nSteht eine knöcherne Reizung durch die Haglund-Exostose im Vordergrund und ist die Sehne noch weitgehend intakt, genügt oft die **Calcaneoplastie**, also die alleinige Abtragung der Exostose, meist endoskopisch. Ist der Sehnenansatz selbst ausgedehnt umgebaut oder verkalkt, wird er über einen **zentralen Sehnensplit** eröffnet, das geschädigte Gewebe entfernt und die Sehne wieder am Knochen befestigt [[achilles_insertional_kb_q7]]. Bei der **kalkanearen Aufrichtungsosteotomie (Zadek-Osteotomie)** wird ein keilförmiges Stück aus dem Fersenbein entnommen und der Knochen aufgerichtet. Das schwenkt die Haglund-Kante nach vorne und entlastet den Sehnenansatz, ohne die Sehne selbst abzulösen [[achilles_insertional_kb_q6]]. Bei schwerem Sehnenschaden oder älteren Patienten kann zusätzlich die **Flexor-hallucis-longus-Sehne** verlagert werden, um die geschwächte Achillessehne zu verstärken [[achilles_insertional_kb_q2]]. Ablauf, Nachbehandlung und die spezifischen Ergebnisse der einzelnen Verfahren finden sich auf den jeweiligen Seiten:\n- [Calcaneoplastie (endoskopisch oder mini-open)](?op=calcaneoplastie&modus=aufklaerung)\n- [Haglund-Abtragung mit Achillessehnen-Split und Refixation](?op=haglund_split&modus=aufklaerung)\n- [Nekrosen/Débridement](?op=achilles_nekrose&modus=aufklaerung)\n\nInsgesamt bessern die operativen Verfahren Schmerz und Funktion bei den meisten Patienten deutlich. Jeder Eingriff birgt jedoch Risiken, vor allem eine unvollständige Schmerzlinderung, Wundheilungsstörungen und Infekte, Nervenschäden, Folgeeingriffe und in seltenen Fällen einen Achillessehnenabriss [[achilles_insertional_kb_q5]][[achilles_insertional_kb_q10]]. Die Erholung braucht Geduld; bis zur vollen Belastung und zur Rückkehr in Sport oder körperliche Arbeit vergehen in der Regel mehrere Monate [[achilles_insertional_kb_q10]].",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_ains_quellen": {
       "titel": "Quellen",
@@ -1388,7 +1416,9 @@
     "kb_asi_behandlung": {
       "titel": "Behandlung",
       "text": "Bei leichten bis mittelschweren Verläufen kann die **konservative Therapie** Beschwerden lindern und die Funktion stabilisieren, den strukturellen Sehnenschaden aber nicht beheben:\n- **Fersenerhöhung** zur Entlastung der Sehne, Orthesen/Schuhzurichtung zur Stabilisierung\n- **Physiotherapie** mit gezieltem Kraftaufbau der Wade → [Exzentrische Kräftigung / Tendoloading](?massnahme=achilles_tendoloading) · [Wadenmuskeldehnung](?massnahme=waden_dehnung)\n\nBei ausgeprägtem Kraftverlust und eingeschränkter Alltagsfunktion sind die konservativen Möglichkeiten begrenzt. Die **operative Therapie** stellt die mechanische Funktion wieder her; die Verfahrenswahl richtet sich nach Defektgröße, Gewebequalität, Aktivitätsniveau und Begleiterkrankungen. Bei kleinem Defekt können eine **V-Y-Plastik oder Umkipp-(Turndown-)Plastik** zur Überbrückung genügen; bei größeren Defekten wird die Sehne durch einen **Sehnentransfer** verstärkt oder ersetzt — am gängigsten der **FHL-Transfer** (Flexor-hallucis-longus-Sehne):\n- [FHL-Sehnentransfer](?op=fhl&modus=aufklaerung)",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_asi_quellen": {
       "titel": "Quellen",
@@ -1453,7 +1483,9 @@
     "kb_gicht_behandlung": {
       "titel": "Behandlung",
       "text": "**Akuter Anfall:** entzündungshemmende Medikamente (NSAR), Colchicin oder Kortison; Ruhigstellung und Kühlung des Gelenks.\n\n**Langfristig / vorbeugend:** Senkung des Harnsäurespiegels — durch **harnsäuresenkende Medikamente** (z. B. Allopurinol) sowie durch **Ernährungs- und Lebensstilanpassung**. Eine purinbewusste Ernährung ist ein wichtiger Baustein → [Ernährung bei Gicht](?massnahme=ernaehrung_gicht). Bei schmerzhaftem Großzehengrundgelenk mit begleitender Arthrose können zusätzlich die allgemeinen Maßnahmen bei Gelenkverschleiß helfen → [Allgemeine Maßnahmen bei Verschleiß](?massnahme=allg_verschleiss).\n\n_Hinweis: Für dieses Krankheitsbild lag kein mediq-Fachtext vor — die Seite wurde recherchebasiert erstellt und ist ärztlich zu prüfen/zu ergänzen._",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_gicht_quellen": {
       "titel": "Quellen",
@@ -1488,7 +1520,9 @@
     "kb_jhv_behandlung": {
       "titel": "Behandlung",
       "text": "Wie beim Erwachsenen gibt es **keine erwiesenermaßen fehlstellungskorrigierende konservative Behandlung** — sinnvolle Maßnahmen zielen auf Beschwerdelinderung und ggf. Verlangsamung: gut passendes, im Vorfuß ausreichend weites **Schuhwerk** (wegen des Wachstums 1–2× pro Jahr erneuern), Einlagen bei begleitendem Knick-Senk-Fuß sowie **Fußübungen** → [Eigenübungen beim Hallux valgus](?massnahme=uebungen_hallux_valgus).\n\nEine **operative Korrektur vor Wachstumsabschluss** ist möglich, aber prognostisch unsicherer, da das Restwachstum die Korrektur beeinflusst und die **Rückfallrate erhöht** ist. Als Orientierung gilt: Die Füße sind bei Jungen mit etwa 15, bei Mädchen mit 12–13 Jahren ausgewachsen (Maier et al. 2003) — nach Möglichkeit wird die endgültige Korrektur an das Wachstumsende gelegt. Die eigentlichen Korrekturverfahren entsprechen denen beim Erwachsenen (siehe die jeweiligen OP-Techniken, z. B. [Chevron-/Akin-Osteotomie](?op=chevron_akin&modus=aufklaerung)).",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_jhv_quellen": {
       "titel": "Quellen",
@@ -1513,7 +1547,9 @@
     "kb_kppv_behandlung": {
       "titel": "Behandlung",
       "text": "Bei der **flexiblen, schmerzfreien** Form besteht meist **kein Behandlungsbedarf** — im Vordergrund stehen Aufklärung, **Gewichtsreduktion** (Übergewicht verdoppelt das Risiko für das Fortbestehen) und die Förderung von **täglicher Bewegung, auch barfuß auf wechselndem Untergrund**. Spezielle Schuhe oder das Erzwingen von Schuhwerk verbessern die Fußentwicklung des Kindes **nicht** (Rao et al. 1992). Bei Beschwerden können stützende Einlagen und Fußübungen helfen → [Eigenübungen beim Knick-Senk-Fuß](?massnahme=uebungen_knicksenkfuss) · [Wadenmuskeldehnung](?massnahme=waden_dehnung).\n\n**Operationsindikationen** (nach Alter):\n- **bis 6 Jahre:** nur bei neuromuskulären Erkrankungen oder erheblicher Rigidität\n- **6–10 Jahre:** schwere dekompensierte flexible Fehlstellungen ohne Besserung durch konservative Therapie; symptomatische rigide und neurogene Fehlstellungen\n- **ab 10 Jahren:** symptomatische flexible Fehlstellungen ohne Besserung durch konservative Therapie\n\nEingriffe erfolgen am besten **vor der skelettalen Reife** und nur in sehr schweren Fällen in der ersten Lebensdekade. Wachstumslenkende Verfahren wie die **Arthrorise** (temporäre Verblockung der übermäßigen Rückfuß-Eversion mit Schraube/Spacer) nutzen das Restwachstum; ergänzend kommen je nach Befund knöcherne Korrekturen (z. B. Verlängerungs-Osteotomie des äußeren Fersenbeins) und Weichteileingriffe zum Einsatz:\n- [Arthrorise](?op=arthrorise&modus=aufklaerung) · [Calcaneus-Verlängerung](?op=calc_verlaengerung&modus=aufklaerung)",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_kppv_quellen": {
       "titel": "Quellen",
@@ -1528,7 +1564,9 @@
     "kb_cavo_ursachen": {
       "titel": "Ursachen & Beschwerden",
       "text": "In vielen Fällen liegt eine **neurologische Ursache** zugrunde — am häufigsten die **Charcot-Marie-Tooth-Erkrankung** (hereditäre Neuropathie), daneben Zerebralparese, Friedreich-Ataxie oder Rückenmarksläsionen; ein Teil ist idiopathisch oder posttraumatisch. Durch das Muskelungleichgewicht kippt die Ferse in den Varus und das Gewölbe wird überhöht.\n\nBeschwerden entstehen v. a. durch die **Überlastung des äußeren Fußrandes**: Schwielen unter dem Kleinzehenballen/Basis des 5. Mittelfußknochens, **Stressfrakturen des 5. Mittelfußknochens**, wiederkehrende **Umknickverletzungen/Bandinstabilität** am Sprunggelenk sowie **Krallenzehen**.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_cavo_diagnostik": {
       "titel": "Beschwerden & Diagnostik",
@@ -1538,7 +1576,9 @@
     "kb_cavo_behandlung": {
       "titel": "Behandlung",
       "text": "Bei **milder, nicht fortschreitender** Fehlstellung ist die Behandlung **nicht-operativ**: angepasste **Einlagen/Orthesen** (Abstützung des äußeren Fußrandes, Weichbettung, Fersen-Varus-Ausgleich), Physiotherapie und ggf. eine Sprunggelenks-Orthese bei Instabilität; die Versorgung dient auch dem Schutz vor Druckstellen (v. a. bei Neuropathie).\n\nDie **operative** Behandlung richtet sich nach **Flexibilität (Coleman-Block-Test)** und Alter und kombiniert meist **Weichteileingriffe** (Release, Sehnentransfers zum Ausgleich des Muskelungleichgewichts) mit **Osteotomien** (z. B. Aufrichtungs-Osteotomie des ersten Strahls, Fersenbein-Osteotomie zur Varus-Korrektur); bei fixierten, arthrotischen Rückfüßen kann eine Versteifung nötig sein. Nach der Operation sichern gut angepasste Einlagen die Korrektur und beugen Druckschäden vor.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_cavo_quellen": {
       "titel": "Quellen",
@@ -1558,7 +1598,9 @@
     "kb_k1_behandlung": {
       "titel": "Behandlung",
       "text": "Die Therapie richtet sich nach den Beschwerden. **Asymptomatische Zufallsbefunde** können zunächst nur beobachtet werden. In der akuten Phase werden **Ruhigstellung, Kühlung, Schonung und Sportkarenz** für auslösende Sportarten empfohlen; ergänzend eine **Einlagenversorgung** zur Entlastung → [Einlagen](?massnahme=einlagen). In ausgeprägten Fällen kann kurzzeitig ein Unterschenkelcast eingesetzt werden.\n\nFür die Erkrankung selbst bestehen **keine operativen Techniken**. Nur falls es im weiteren Leben zu einer beschwerdeauslösenden Arthrose kommt, kann später eine Versteifung (Arthrodese) infrage kommen.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_k1_quellen": {
       "titel": "Quellen",
@@ -1578,7 +1620,9 @@
     "kb_frb_behandlung": {
       "titel": "Behandlung",
       "text": "Auch als Zufallsbefund und bei bestehenden Symptomen ist immer zunächst ein **konservativer Therapieversuch** empfehlenswert: entzündungshemmende Schmerzmittel, **Schuhzurichtungen, Sportmodifikation** und **Einlagen mit Weichbettung des betroffenen Mittelfußkopfes** (retrokapitale Pelotte/Abrollhilfe) → [Einlagen](?massnahme=einlagen).\n\n**Operativ** — bei ausbleibender Besserung, bereits eingetretener symptomatischer Verformung/Arthrose oder freien Gelenkkörpern — kommen je nach Befund ein Gelenkdébridement, die Entfernung freier Gelenkkörper oder eine **aufrichtende (dorsale) Osteotomie des Mittelfußkopfes** infrage.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_frb_quellen": {
       "titel": "Quellen",
@@ -1598,7 +1642,9 @@
     "kb_ren_behandlung": {
       "titel": "Behandlung",
       "text": "Als klarer Standard gilt die **konservative Therapie** — vor jeder Operation sollte ein **mindestens 6-monatiger** konsequenter Versuch erfolgen. Basismaßnahmen sind Kühlung, Schonung und **Sportkarenz** für die auslösende Sportart, in der akuten Phase auch eine schmerzadaptierte Teilbelastung sowie eine **entlastende Einlagenversorgung** (Weichbettung/Aussparung des Sesambeinbereichs) → [Einlagen](?massnahme=einlagen).\n\n**Operativ** — erst nach mehrmonatig erfolgloser Therapie: Vor Eingriffen an den Sesambeinen selbst sollten auslösende Faktoren (z. B. ein plantarflektierter erster Strahl/Fehlstellung) korrigiert werden; als letzte Option kommt die (Teil-)Entfernung des betroffenen Sesambeins infrage.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_ren_quellen": {
       "titel": "Quellen",
@@ -1618,7 +1664,9 @@
     "kb_sev_behandlung": {
       "titel": "Behandlung",
       "text": "Die **konservative Therapie ist Standard** und führt fast immer zur Ausheilung. Erstmaßnahmen sind **Kühlung, entzündungshemmende Schmerzmittel bei Bedarf, vorübergehender Sportstopp und weites Schuhwerk** sowie eine **Belastungsreduktion**. Sehr hilfreich sind ein **Fersenkeil/eine Einlage mit Fersenerhöhung** und die konsequente **Dehnung der Wadenmuskulatur**:\n- [Wadenmuskeldehnung](?massnahme=waden_dehnung) · [Einlagen](?massnahme=einlagen)\n\nIn ausgeprägten Fällen kann der Fuß kurzzeitig (wenige Tage) in einem Unterschenkelcast ruhiggestellt werden. **Operative Verfahren sind nicht etabliert.** Die Beschwerden halten meist nur wenige Wochen an; bei klinischer Besserung ist eine schmerzadaptierte Rückkehr zum Sport möglich.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_sev_quellen": {
       "titel": "Quellen",
@@ -1638,7 +1686,9 @@
     "kb_pac_behandlung": {
       "titel": "Behandlung",
       "text": "Eine einheitliche, in Studien validierte Empfehlung besteht nicht (nur kleine retrospektive Serien). In den **meisten Fällen wird konservativ** behandelt — die Ruhigstellung reicht in der Literatur von kompletter Entlastung im Gips für 2–8 Wochen bis zur frühfunktionellen Belastung; bei kleinen, nicht verschobenen Fragmenten und stabilem Chopart-Gelenk ist eine funktionelle Behandlung meist ausreichend.\n\n**Operativ** (ebenfalls ohne evidenzbasierten Standard): bei größeren Fragmenten die **Schraubenrefixation** (Osteosynthese, z. B. Typ Degan 3) oder die **Exzision** kleinerer, störender Fragmente. Ziel ist ein stabiles, schmerzfreies Chopart-Gelenk.",
-      "bilder": []
+      "bilder": [],
+      "_archiv": true,
+      "_archiv_hinweis": "Nicht mehr in Verwendung — als Archiv behalten (Stand 08/2026)."
     },
     "kb_pac_quellen": {
       "titel": "Quellen",

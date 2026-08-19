@@ -27,7 +27,26 @@
           "ref": "hyaluronsaeure",
           "kurztext": "Spritze ins Gelenk; als alleinige Behandlung am Sprunggelenk nicht empfohlen, im Einzelfall als Selbstzahlerleistung erwägbar."
         }
-      ]
+      ],
+      "quellen": [
+        {
+          "id": "osg_arthrose_q1",
+          "text": "Valderrabano V, Horisberger M, Russell I, Dougall H, Hintermann B. Etiology of ankle osteoarthritis. Clin Orthop Relat Res. 2009;467(7):1800-1806. doi:10.1007/s11999-008-0543-6"
+        },
+        {
+          "id": "osg_arthrose_q2",
+          "text": "Zaidi R, Cro S, Gurusamy K, et al. The outcome of total ankle replacement: a systematic review and meta-analysis. Bone Joint J. 2013;95-B(11):1500-1507. doi:10.1302/0301-620X.95B11.31633"
+        },
+        {
+          "id": "osg_arthrose_q3",
+          "text": "Daniels TR, Younger AS, Penner M, et al. Intermediate-term results of total ankle replacement and ankle arthrodesis: a COFAS multicenter study. J Bone Joint Surg Am. 2014;96(2):135-142. doi:10.2106/JBJS.L.01597"
+        },
+        {
+          "id": "osg_arthrose_q4",
+          "text": "SooHoo NF, Zingmond DS, Ko CY. Comparison of reoperation rates following ankle arthrodesis and total ankle arthroplasty. J Bone Joint Surg Am. 2007;89(10):2143-2149. doi:10.2106/JBJS.F.01611"
+        }
+      ],
+      "stand": "2026-08"
     },
     "osg_arthrodese_op": {
       "infoKategorie": "op_technik",
@@ -350,7 +369,6 @@
         }
       ],
       "_review": false,
-      "_entwurf": true,
       "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert), inkl. Register-/Standzeit-/Modelldaten & TARVA"
     },
     "hallux_valgus": {
@@ -553,7 +571,18 @@
         "hv_behandlung",
         "hv_op_scarf",
         "scarf_nachbehandlung"
-      ]
+      ],
+      "quellen": [
+        {
+          "id": "scarf_q1",
+          "text": "Barouk LS. Scarf osteotomy for hallux valgus correction. Local anatomy, surgical technique, and combination with other forefoot procedures. Foot Ankle Clin. 2000;5(3):525-558."
+        },
+        {
+          "id": "scarf_q2",
+          "text": "Bock P, Kluger R, Kristen KH, Mittlböck M, Schuh R, Trnka HJ. The Scarf osteotomy with minimally invasive lateral release for treatment of hallux valgus deformity: intermediate and long-term results. J Bone Joint Surg Am. 2015;97(15):1238-1245. doi:10.2106/JBJS.N.00971"
+        }
+      ],
+      "stand": "2026-08"
     },
     "lapidus": {
       "infoKategorie": "op_technik",
@@ -799,7 +828,6 @@
         }
       ],
       "_review": false,
-      "_entwurf": true,
       "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "mica": {
@@ -815,7 +843,14 @@
         "hv_behandlung",
         "hv_op_mica",
         "mica_nachbehandlung"
-      ]
+      ],
+      "quellen": [
+        {
+          "id": "mica_q1",
+          "text": "Lewis TL, Ray R, Robinson P, et al. Percutaneous chevron and Akin (PECA) osteotomies for severe hallux valgus deformity with mean 3-year follow-up. Foot Ankle Int. 2021;42(10):1231-1240. doi:10.1177/10711007211008498"
+        }
+      ],
+      "stand": "2026-08"
     },
     "hallux_rigidus": {
       "infoKategorie": "krankheitsbild",
@@ -969,7 +1004,6 @@
         }
       ],
       "_review": false,
-      "_entwurf": true,
       "stand": "Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "youngswick": {
@@ -1043,7 +1077,14 @@
         "hr_behandlung",
         "hr_op_arthrodese",
         "mtp1_arthrodese_nachbehandlung"
-      ]
+      ],
+      "quellen": [
+        {
+          "id": "mtp1_arthrodese_q1",
+          "text": "Roukis TS. Nonunion after arthrodesis of the first metatarsal-phalangeal joint: a systematic review. J Foot Ankle Surg. 2011;50(6):710-713. doi:10.1053/j.jfas.2011.06.012 (2818 Arthrodesen: Pseudarthrose 5,4 %, davon symptomatisch 1,8 %; Materialentfernung 8,5 %)"
+        }
+      ],
+      "stand": "2026-08"
     },
     "weil": {
       "infoKategorie": "op_technik",
@@ -1462,7 +1503,6 @@
           "text": "Alhaddad A, Gronfula AG, Alsharif TH, Khawjah A, Al Shareef NS, AlThagafi AA, et al. A comparative analysis of complication rates in arthroscopic repair of the lateral ankle ligament and the Brostrom-Gould technique: a systematic review. Cureus. 2023;15(11):e48460. doi: [10.7759/cureus.48460](https://doi.org/10.7759/cureus.48460)"
         }
       ],
-      "_entwurf": true,
       "stand": "Übertrag aus mediq (B. Breuer) + Recherche 07/2026 (DOI-verifiziert) — ärztlich zu prüfen"
     },
     "lat_stabil": {
@@ -2633,7 +2673,18 @@
         "op_pin_pflege_quellen"
       ],
       "_quelle": "Übertrag aus mediq (B. Breuer)",
-      "_review": true
+      "_review": true,
+      "quellen": [
+        {
+          "id": "pin_pflege_q1",
+          "text": "Kazmers NH, Fragomen AT, Rozbruch SR. Prevention of pin site infection in external fixation: a review of the literature. Strategies Trauma Limb Reconstr. 2016;11(2):75-85. doi:10.1007/s11751-016-0256-4"
+        },
+        {
+          "id": "pin_pflege_q2",
+          "text": "Ktistakis I, Guerado E, Giannoudis PV. Pin-site care: can we reduce the incidence of infections? Injury. 2015;46 Suppl 3:S35-39. doi:10.1016/S0020-1383(15)30009-7"
+        }
+      ],
+      "stand": "2026-08"
     },
     "teilprothese_talus": {
       "infoKategorie": "op_technik",
@@ -2683,7 +2734,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": false,
-      "_entwurf": false,
       "quellen": [
         {
           "id": "fhl_q1",
@@ -2760,7 +2810,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "quellen": [
         {
           "id": "moberg_q1",
@@ -2784,7 +2833,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -2834,7 +2882,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": false,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -2884,7 +2931,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -2954,7 +3000,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "quellen": [
         {
           "id": "tmt_q1",
@@ -3027,7 +3072,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "quellen": [
         {
           "id": "tn_q1",
@@ -3096,7 +3140,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -3161,7 +3204,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -3186,7 +3228,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "_recherche_integriert": "2026-07 (aktuelle Evidenz, ärztlich zu prüfen)",
       "quellen": [
         {
@@ -3267,7 +3308,6 @@
       ],
       "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
       "_review": true,
-      "_entwurf": true,
       "quellen": [
         {
           "id": "osg_arthroskopie_q1",
@@ -3290,7 +3330,6 @@
         "op_double_quellen"
       ],
       "_review": true,
-      "_entwurf": true,
       "stand": "Recherche-Entwurf 07/2026",
       "quellen": [
         {
@@ -3328,7 +3367,6 @@
         "usg_quellen"
       ],
       "_review": true,
-      "_entwurf": true,
       "stand": "Recherche-Entwurf 07/2026 — ärztlich zu prüfen",
       "quellen": [
         {
@@ -3364,7 +3402,6 @@
         "ppv_quellen"
       ],
       "_review": true,
-      "_entwurf": true,
       "stand": "2026-07",
       "quellen": [
         {
@@ -6838,7 +6875,6 @@
       ],
       "_quelle": "Elsner et al. 2011 (von Benjamin bereitgestelltes PDF) + PubMed-Recherche 08/2026",
       "_review": true,
-      "_entwurf": false,
       "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
       "stand": "August 2026",
       "quellen": [
@@ -6889,7 +6925,6 @@
       ],
       "_quelle": "PubMed-Recherche 08/2026",
       "_review": true,
-      "_entwurf": false,
       "_recherche_integriert": "2026-08 (PubMed, ärztlich zu prüfen)",
       "stand": "August 2026",
       "quellen": [
