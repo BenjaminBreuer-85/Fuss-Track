@@ -3990,10 +3990,13 @@ function DatumEingabe({ session, onUpdate }) {
   const eingriff = EINGRIFFE[session.eingriff];
   const variante = eingriff.varianten[session.variante];
   const [datum, setDatum] = useState("");
+  // Aufenthalt wird bewusst schon hier abgefragt (nicht erst im Verlauf), damit die
+  // Auswahl nicht untergeht. Voreinstellung: URL-Parameter > Eingriffs-Default.
+  const [aufenthalt, setAufenthalt] = useState(session.aufenthalt || eingriff.aufenthaltDefault || "stationaer");
 
   function speichern() {
     if (!datum) return;
-    onUpdate({ opDatum: datum });
+    onUpdate({ opDatum: datum, aufenthalt: aufenthalt });
   }
 
   return (
@@ -4005,6 +4008,31 @@ function DatumEingabe({ session, onUpdate }) {
           <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
         )}
         <div className="preselect-hint">Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
+      </div>
+
+      <div className="card">
+        <h2>Findet Ihr Eingriff stationär oder ambulant statt?</h2>
+        <p style={{ marginBottom: 12 }}>
+          Voreingestellt ist der übliche Weg für diesen Eingriff. Maßgeblich ist die Planung Ihres
+          Behandlungsteams — stellen Sie um, wenn Ihr Eingriff anders geplant ist. Sie können die
+          Auswahl später jederzeit im Verlauf ändern.
+        </p>
+        <div style={{ display: "flex", gap: 8 }}>
+          <button
+            className={"btn " + (aufenthalt === "stationaer" ? "btn-primary" : "btn-secondary")}
+            style={{ flex: 1 }}
+            onClick={() => setAufenthalt("stationaer")}
+          >
+            Stationär
+          </button>
+          <button
+            className={"btn " + (aufenthalt === "ambulant" ? "btn-primary" : "btn-secondary")}
+            style={{ flex: 1 }}
+            onClick={() => setAufenthalt("ambulant")}
+          >
+            Ambulant
+          </button>
+        </div>
       </div>
 
       <div className="card">

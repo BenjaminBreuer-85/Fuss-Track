@@ -6171,6 +6171,652 @@
           ]
         }
       }
+    },
+    "osg_arthroskopie": {
+      "label": "Arthroskopie des OSG",
+      "kurzlabel": "OSG-Arthroskopie",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "ambulant",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Arthroskopie des oberen Sprunggelenks",
+          "beschreibung": "Gelenkspiegelung des OSG ohne Knorpel-Zusatzeingriff",
+          "auswahl_label": "Arthroskopie des oberen Sprunggelenks",
+          "auswahl_kurz": "Einfache Nachbehandlung mit direkter Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_woche1_einfach"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_woche3_einfach"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "tarsaltunnel": {
+      "label": "Tarsaltunnel-Dekompression",
+      "kurzlabel": "Tarsaltunnel",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "ambulant",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Tarsaltunnel-Dekompression",
+          "beschreibung": "Entlastung des Schienbeinnervs am Innenknöchel",
+          "auswahl_label": "Tarsaltunnel-Dekompression",
+          "auswahl_kurz": "Einfache Nachbehandlung mit direkter Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_woche1_einfach"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_woche3_einfach"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "schede": {
+      "label": "Schede-/McBride-Operation",
+      "kurzlabel": "Schede",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "ambulant",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Schede-/McBride-Operation",
+          "beschreibung": "Abtragung der Pseudoexostose mit Weichteileingriff",
+          "auswahl_label": "Schede-/McBride-Operation",
+          "auswahl_kurz": "Einfache Nachbehandlung mit direkter Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_woche1_einfach"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_woche3_einfach"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "moberg": {
+      "label": "Moberg-Osteotomie",
+      "kurzlabel": "Moberg",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "ambulant",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Moberg-Osteotomie",
+          "beschreibung": "Umstellung des Großzehengrundglieds beim Hallux rigidus",
+          "auswahl_label": "Moberg-Osteotomie",
+          "auswahl_kurz": "Einfache Nachbehandlung mit direkter Vollbelastung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung_allgemein"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_redression"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_woche1_einfach"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_woche3_einfach"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            }
+          ]
+        }
+      }
+    },
+    "mica": {
+      "label": "Minimal-invasive Korrektur (MICA)",
+      "kurzlabel": "MICA",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Minimal-invasive Korrektur (MICA)",
+          "beschreibung": "Minimal-invasive Chevron/Akin-Korrektur",
+          "auswahl_label": "Minimal-invasive Korrektur allein",
+          "auswahl_kurz": "Standardeingriff ohne Zusatzkorrektur",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss"
+            },
+            {
+              "tag": 22,
+              "label": "3 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Minimal-invasive Korrektur (MICA) mit Zusatzeingriff",
+          "beschreibung": "Minimal-invasive Chevron/Akin-Korrektur mit Zusatzeingriff",
+          "auswahl_label": "Minimal-invasive Korrektur plus Zusatzkorrektur",
+          "auswahl_kurz": "Mit Mittelfuß- oder Kleinzehenkorrektur",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_vorfuss"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "heimkehr_ambulant"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "mobilisierung_vollbelastung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 1–2 nach OP",
+              "baustein": "verband_1_hallux"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "verband_2_redression"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_vorfuss"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_4_redression"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "verband_ab_vorfuss_komplex"
+            },
+            {
+              "tag": 29,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_mtp1"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "sport_vorfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_vorfuss"
+            }
+          ]
+        }
+      },
+      "platzhalter": {},
+      "aufenthalt_default": "ambulant"
+    },
+    "teilprothese_talus": {
+      "label": "Teilprothese des Talus",
+      "kurzlabel": "Talus-Teilprothese",
+      "merkmale": {},
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Teilprothese des Talus",
+          "beschreibung": "Oberflächenersatz einer Talusschulter",
+          "auswahl_label": "Teilprothese des Talus",
+          "auswahl_kurz": "Endoprothese als alleinige Operation",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_prothese"
+            },
+            {
+              "tag": 63,
+              "label": "9 Wochen nach OP",
+              "baustein": "sport_prothese"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_prothese"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Teilprothese des Talus",
+          "beschreibung": "Oberflächenersatz einer Talusschulter",
+          "auswahl_label": "Teilprothese des Talus",
+          "auswahl_kurz": "Mit zusätzlicher Versteifung eines Fußgelenks, Korrekturbruch eines weiteren Knochens oder Bandstabilisierung",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_prothese"
+            },
+            {
+              "tag": 63,
+              "label": "9 Wochen nach OP",
+              "baustein": "sport_prothese"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "kontrolle_prothese"
+            }
+          ]
+        }
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "aufenthalt_default": "stationaer"
     }
   },
   "BEGLEITER_BAUSTEINE": {
@@ -7048,6 +7694,20 @@
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
       "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\nDie Führung der Großzehe ist damit noch nicht beendet — in den Wochen 6 bis 12 wird die Zehe weiter geführt, nachts mit einer Nachtschiene und tagsüber mit einem Zwischenzehenkeil, damit die Korrektur in guter Stellung ausreift.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
+      "subthemen": []
+    },
+    "verband_woche1_einfach": {
+      "thema": "Verbandwechsel",
+      "emoji": "🩹",
+      "intro": "Eine Woche nach dem Eingriff steht der nächste Verbandwechsel an.",
+      "text": "Die Wunde wird kontrolliert und ein frischer Verband angelegt. Die Wunde sollte inzwischen trocken sein und die Schwellung erkennbar zurückgehen.\n\nSie können Fragen zum Verlauf stellen und bei Bedarf eine neue Arbeitsunfähigkeitsbescheinigung ausgestellt bekommen. Der nächste Termin ist in der Regel in einer Woche zum Fadenzug.",
+      "subthemen": []
+    },
+    "verband_woche3_einfach": {
+      "thema": "Letzter Verbandwechsel",
+      "emoji": "🩹",
+      "intro": "Drei Wochen nach dem Eingriff erfolgt in der Regel der letzte Verbandwechsel.",
+      "text": "Ist die Wunde reizlos und trocken, genügt ab jetzt ein einfaches Pflaster zum Schutz vor Druckstellen, bis sich die letzte Kruste gelöst hat. Duschen ist bei geschlossener Wunde ohne besonderen Schutz möglich, auf Vollbäder, Schwimmbad und Sauna sollten Sie noch verzichten, bis die Wunde vollständig abgeheilt ist.",
       "subthemen": []
     }
   },

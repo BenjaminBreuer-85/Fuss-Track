@@ -213,7 +213,7 @@
     },
     "op_schede_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- In der Regel Vollbelastung im Verbandschuh ~3–4 Wochen\n- frühe Beübung der Großzehe\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- In der Regel Vollbelastung im Verbandschuh ~3–4 Wochen\n- frühe Beübung der Großzehe\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=schede&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "op_schede_komplikationen": {
@@ -813,7 +813,7 @@
     },
     "op_teilprothese_talus_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- Entlastung bis zur Heilung der Innenknöchel-Osteotomie\n- danach schrittweiser Aufbau (verfahrensabhängig)\n- Thromboseschutz (TVT-Prophylaxe) bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes\n- ab Woche 6 bei gutem Röntgenbefund physiotherapeutisch angeleitete Aufbelastung\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- Entlastung bis zur Heilung der Innenknöchel-Osteotomie\n- danach schrittweiser Aufbau (verfahrensabhängig)\n- Thromboseschutz (TVT-Prophylaxe) bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes\n- ab Woche 6 bei gutem Röntgenbefund physiotherapeutisch angeleitete Aufbelastung\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=teilprothese_talus&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "op_teilprothese_talus_komplikationen": {
@@ -1067,7 +1067,7 @@
     },
     "op_tarsaltunnel_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- Frühe Belastung nach Maßgabe der Wundverhältnisse, anfangs mit Hochlagerung zur Abschwellung\n- frühzeitige Nerven-Gleitmobilisation, um Vernarbungen um den Nerv zu vermeiden\n- Schonung der Wunde bis zum Fadenzug nach etwa zwei Wochen\n- keine besondere Ruhigstellung nötig, da kein Knochen heilen muss\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- Frühe Belastung nach Maßgabe der Wundverhältnisse, anfangs mit Hochlagerung zur Abschwellung\n- frühzeitige Nerven-Gleitmobilisation, um Vernarbungen um den Nerv zu vermeiden\n- Schonung der Wunde bis zum Fadenzug nach etwa zwei Wochen\n- keine besondere Ruhigstellung nötig, da kein Knochen heilen muss\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=tarsaltunnel&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "op_tarsaltunnel_komplikationen": {
@@ -1122,7 +1122,7 @@
     },
     "op_moberg_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "In der Regel Vollbelastung im Verbandschuh ~4 Wochen.\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "In der Regel Vollbelastung im Verbandschuh ~4 Wochen.\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=moberg&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "op_moberg_komplikationen": {
@@ -1147,7 +1147,7 @@
     },
     "op_osg_arthroskopie_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- Frühe Belastung nach Maßgabe\n- abhängig vom durchgeführten Zusatzeingriff (bei Knorpelverfahren ggf. Entlastung)\n- Thromboseschutz (TVT-Prophylaxe) bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes\n- ab Woche 6 bei gutem Röntgenbefund physiotherapeutisch angeleitete Aufbelastung\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::",
+      "text": "- Frühe Belastung nach Maßgabe\n- abhängig vom durchgeführten Zusatzeingriff (bei Knorpelverfahren ggf. Entlastung)\n- Thromboseschutz (TVT-Prophylaxe) bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes\n- ab Woche 6 bei gutem Röntgenbefund physiotherapeutisch angeleitete Aufbelastung\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=osg_arthroskopie&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen.",
       "bilder": []
     },
     "op_osg_arthroskopie_komplikationen": {
@@ -3157,7 +3157,7 @@
     },
     "mica_nachbehandlung": {
       "titel": "Nachbehandlung",
-      "text": "- In der Regel ist eine **Vollbelastung in einem Verbandschuh** möglich\n- die genauen Vorgaben richten sich nach dem Operationsbefund\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::"
+      "text": "- In der Regel ist eine **Vollbelastung in einem Verbandschuh** möglich\n- die genauen Vorgaben richten sich nach dem Operationsbefund\n\n::: warning\nDies ist eine allgemeine Empfehlung. Die individuelle Nachbehandlung kann davon abweichen und muss immer mit der Behandlerin oder dem Behandler besprochen werden. Bitte beachten Sie die Vorgaben in Ihrem Entlassbrief.\n:::\n\n[Nachbehandlung Schritt für Schritt — zum Begleiter](?op=mica&ctx=begleiter)\n\nDort finden Sie den zeitlichen Ablauf nach der Operation mit Erinnerungen und Übungen."
     },
     "mtp1_arthrodese_nachbehandlung": {
       "titel": "Nachbehandlung",
