@@ -521,6 +521,11 @@
               "baustein": "ct_kontrolle_arthrodese"
             },
             {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
+            },
+            {
               "tag": 84,
               "label": "3 Monate nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -904,6 +909,11 @@
               "baustein": "ct_kontrolle_arthrodese"
             },
             {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -1096,6 +1106,11 @@
               "tag": 49,
               "label": "7 Wochen nach OP",
               "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
             },
             {
               "tag": 84,
@@ -1292,6 +1307,11 @@
               "baustein": "ct_kontrolle_arthrodese"
             },
             {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -1484,6 +1504,11 @@
               "tag": 49,
               "label": "7 Wochen nach OP",
               "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
             },
             {
               "tag": 84,
@@ -1680,6 +1705,11 @@
               "baustein": "ct_kontrolle_arthrodese"
             },
             {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -1872,6 +1902,11 @@
               "tag": 49,
               "label": "7 Wochen nach OP",
               "baustein": "ct_kontrolle_arthrodese"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
             },
             {
               "tag": 84,
@@ -2265,6 +2300,11 @@
               "baustein": "ct_kontrolle_arthrodese"
             },
             {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "ct_aufbelastung_arthrodese"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -2457,6 +2497,11 @@
               "baustein": "narbenpflege"
             },
             {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -2533,6 +2578,11 @@
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
             },
             {
               "tag": 84,
@@ -2639,6 +2689,11 @@
               "baustein": "narbenpflege"
             },
             {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -2717,6 +2772,11 @@
               "baustein": "narbenpflege"
             },
             {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -2787,6 +2847,11 @@
             },
             {
               "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "redression_grosszehe_lapidus"
+            },
+            {
+              "tag": 2,
               "label": "Tag 2–3 nach OP",
               "baustein": "mobilisierung_teilbelastung"
             },
@@ -2803,7 +2868,7 @@
             {
               "tag": 21,
               "label": "3 Wochen nach OP",
-              "baustein": "verband_ab_ruhiggestellt"
+              "baustein": "verband_ab_lapidus"
             },
             {
               "tag": 28,
@@ -2819,6 +2884,11 @@
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung_lapidus"
             },
             {
               "tag": 84,
@@ -2870,6 +2940,11 @@
             },
             {
               "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "redression_grosszehe_lapidus"
+            },
+            {
+              "tag": 2,
               "label": "Tag 2–3 nach OP",
               "baustein": "mobilisierung_entlastung"
             },
@@ -2886,7 +2961,7 @@
             {
               "tag": 21,
               "label": "3 Wochen nach OP",
-              "baustein": "verband_ab_ruhiggestellt"
+              "baustein": "verband_ab_lapidus"
             },
             {
               "tag": 35,
@@ -2897,6 +2972,11 @@
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung_lapidus"
             },
             {
               "tag": 84,
@@ -3807,6 +3887,11 @@
             },
             {
               "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_schuhwechsel_mtp1"
+            },
+            {
+              "tag": 42,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "sport_vorfuss"
             },
@@ -3885,6 +3970,11 @@
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_schuhwechsel_mtp1"
             },
             {
               "tag": 42,
@@ -5069,6 +5159,11 @@
               "baustein": "narbenpflege"
             },
             {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
               "tag": 84,
               "label": "12 Wochen nach OP",
               "baustein": "kontrolle_arthrodese"
@@ -5145,6 +5240,11 @@
               "tag": 40,
               "label": "ca. 6 Wochen nach OP",
               "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
             },
             {
               "tag": 84,
@@ -6907,6 +7007,47 @@
       "emoji": "🦵",
       "intro": "Nach 4 Wochen endet die Ruhigstellung — nun beginnt die Beübung.",
       "text": "Wenn Ihre Behandler die Freigabe erteilen, wird der Walker abgelegt und die Belastung schrittweise bis zur Vollbelastung gesteigert. Nun beginnt die Beübung mit sanften Bewegungsübungen des Sprunggelenks, vorsichtiger Dehnung der Wade und einer zunehmenden Kräftigung der Wadenmuskulatur. Die Kräftigung hat besonderes Gewicht, da die Wade nach einer Verlängerung vorübergehend an Kraft verliert. Die Physiotherapie leitet Sie an, geübt wird zusätzlich täglich zu Hause.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — mit dem Walker-Ende und sicherer Vollbelastung kann er in aller Regel beendet werden. Den genauen Endpunkt legt Ihr Behandler fest.",
+      "subthemen": []
+    },
+    "ct_aufbelastung_arthrodese": {
+      "thema": "CT-Kontrolle und Beginn der Aufbelastung",
+      "emoji": "🩻",
+      "intro": "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
+      "text": "Im Anschluss an die CT-Kontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der Fusion als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Walker-Stiefel in den folgenden Wochen schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt."
+    },
+    "roentgen_aufbelastung": {
+      "thema": "Röntgenkontrolle und Beginn der Aufbelastung",
+      "emoji": "🩻",
+      "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
+      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
+      "subthemen": []
+    },
+    "roentgen_schuhwechsel_mtp1": {
+      "thema": "Röntgenkontrolle und Wechsel ins normale Schuhwerk",
+      "emoji": "🩻",
+      "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung der Versteifung.",
+      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie vom Verbandschuh in normales, weites Schuhwerk wechseln — anfangs möglichst mit fester Sohle. Die Belastung war bereits erlaubt und wird nun im normalen Schuh fortgeführt.\n\nDie vollständige knöcherne Durchbauung der Versteifung kann noch einige Wochen dauern. Steigern Sie längere Gehstrecken und Aktivität deshalb schrittweise und nach Beschwerden.",
+      "subthemen": []
+    },
+    "redression_grosszehe_lapidus": {
+      "thema": "Führung der Großzehe (Redression)",
+      "emoji": "🦶",
+      "intro": "Die Lapidus-Arthrodese versteift den ersten Strahl zur Korrektur des Hallux valgus — die Großzehe muss nun in der Korrekturposition gehalten werden.",
+      "text": "Man spricht dabei von einer Redression. Bei jedem Verbandswechsel wird ein redressierender Verband angelegt, der die Großzehe zentriert, damit die korrigierten Weichteile in guter Stellung ausheilen. Ergänzend kommen Zwischenzehenkeile oder eine Schiene zum Einsatz. Die genaue Führung legt Ihr Behandler fest.\n\nDie Redression begleitet Sie über die gesamte Nachbehandlung — auch nach dem Ende der Verbände wird die Zehe noch mit Nachtschiene und Zwischenzehenkeil weiter geführt.",
+      "subthemen": []
+    },
+    "verband_ab_lapidus": {
+      "thema": "Verband ab — Führung der Großzehe geht weiter",
+      "emoji": "👟",
+      "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
+      "text": "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.\n\nDie Führung der Großzehe wird fortgesetzt — mit redressierendem Verband oder Zwischenzehenkeil, nachts ergänzt durch eine Nachtschiene. So reift die Korrektur in guter Stellung aus.",
+      "subthemen": []
+    },
+    "roentgen_aufbelastung_lapidus": {
+      "thema": "Röntgenkontrolle und Beginn der Aufbelastung",
+      "emoji": "🩻",
+      "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
+      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\nDie Führung der Großzehe ist damit noch nicht beendet — in den Wochen 6 bis 12 wird die Zehe weiter geführt, nachts mit einer Nachtschiene und tagsüber mit einem Zwischenzehenkeil, damit die Korrektur in guter Stellung ausreift.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
       "subthemen": []
     }
   },

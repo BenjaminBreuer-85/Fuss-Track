@@ -551,7 +551,8 @@
       "slides": [
         "hv_krankheitsbild",
         "hv_behandlung",
-        "hv_op_scarf"
+        "hv_op_scarf",
+        "scarf_nachbehandlung"
       ]
     },
     "lapidus": {
@@ -812,7 +813,8 @@
       "slides": [
         "hv_krankheitsbild",
         "hv_behandlung",
-        "hv_op_mica"
+        "hv_op_mica",
+        "mica_nachbehandlung"
       ]
     },
     "hallux_rigidus": {
@@ -984,6 +986,7 @@
         "op_youngswick_ueberblick",
         "op_youngswick_ablauf",
         "op_youngswick_ergebnisse",
+        "youngswick_nachbehandlung",
         "op_youngswick_komplikationen",
         "op_youngswick_quellen"
       ],
@@ -1038,7 +1041,8 @@
       "slides": [
         "hr_krankheitsbild",
         "hr_behandlung",
-        "hr_op_arthrodese"
+        "hr_op_arthrodese",
+        "mtp1_arthrodese_nachbehandlung"
       ]
     },
     "weil": {
@@ -2856,6 +2860,10 @@
         {
           "id": "achilles_perkutan_q6",
           "text": "Aurich M, Becherer L, Rammelt S. Operative oder nicht-operative Behandlung der akuten Achillessehnenruptur — was sagt die aktuelle Literatur? Orthopädie (Heidelb). 2024;53(10):740-748. doi: [10.1007/s00132-024-04556-w](https://doi.org/10.1007/s00132-024-04556-w)"
+        },
+        {
+          "id": "achilles_perkutan_q7",
+          "text": "Ochen Y, Beks RB, van Heijl M, et al. Operative treatment versus nonoperative treatment of Achilles tendon ruptures: systematic review and meta-analysis. BMJ. 2019;364:k5120. doi:10.1136/bmj.k5120"
         }
       ],
       "_freigegeben": "2026-08-14 (Benjamin, mit Korrekturen)"
