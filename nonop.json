@@ -1,1343 +1,1344 @@
 {
- "_meta": {
-  "version": "0.1-entwurf",
-  "hinweis": "ENTWURF Non-OP-Begleiter. Anker = Unfalltag (tagOffset ab Unfall). Inhalte 1:1 aus Benjamins Text. Stufen 4-5 optional (Sportler)."
- },
- "NONOP_KB": {
-  "aussenband_konservativ": {
-   "label": "Frische Außenbandverletzung OSG",
-   "kurzlabel": "Außenband",
-   "kontext": "trauma",
-   "ankerFrage": "Wann war der Unfall?",
-   "ankerDefault": "heute",
-   "einleitung": "aussenband_einleitung",
-   "stufen": "aussenband_stufen",
-   "abklaerung": "aussenband_abklaerung",
-   "modell": "zeitanker",
-   "weitereMassnahmen": []
+  "_meta": {
+    "version": "0.1-entwurf",
+    "hinweis": "ENTWURF Non-OP-Begleiter. Anker = Unfalltag (tagOffset ab Unfall). Inhalte 1:1 aus Benjamins Text. Stufen 4-5 optional (Sportler)."
   },
-  "achillodynie_midportion": {
-   "label": "Achillodynie nicht-insertional",
-   "kurzlabel": "Achillodynie Mid-Portion",
-   "kontext": "chronisch",
-   "modell": "stufenlos_ampel",
-   "gate": "achillo_gate",
-   "ampel": "achillo_ampel",
-   "einleitung": "achillo_mid_einleitung",
-   "stufen": "achillo_mid_stufen",
-   "weitereMassnahmen": [
-    {
-     "ref": "waden_dehnung"
+  "NONOP_KB": {
+    "aussenband_konservativ": {
+      "label": "Frische Außenbandverletzung OSG",
+      "kurzlabel": "Außenband",
+      "kontext": "trauma",
+      "ankerFrage": "Wann war der Unfall?",
+      "ankerDefault": "heute",
+      "einleitung": "aussenband_einleitung",
+      "stufen": "aussenband_stufen",
+      "abklaerung": "aussenband_abklaerung",
+      "modell": "zeitanker",
+      "weitereMassnahmen": []
     },
-    {
-     "ref": "stosswelle"
-    },
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "prp_acp"
-    }
-   ]
-  },
-  "achillodynie_insertion": {
-   "label": "Achillodynie insertional",
-   "kurzlabel": "Achillodynie insertionell",
-   "kontext": "chronisch",
-   "modell": "stufenlos_ampel",
-   "gate": "achillo_gate",
-   "ampel": "achillo_ampel",
-   "einleitung": "achillo_ins_einleitung",
-   "stufen": "achillo_ins_stufen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "stosswelle"
-    }
-   ]
-  },
-  "knicksenkfuss": {
-   "label": "Knick-Senk-Fuß",
-   "kurzlabel": "Knick-Senk-Fuß",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "ksf_einleitung",
-   "uebungen": "ksf_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "waden_dehnung"
-    },
-    {
-     "ref": "nachtschiene"
-    },
-    {
-     "ref": "short_foot"
-    }
-   ]
-  },
-  "hallux_valgus": {
-   "label": "Hallux valgus",
-   "kurzlabel": "Hallux valgus",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "hv_einleitung",
-   "uebungen": "hv_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "nachtschiene"
-    },
-    {
-     "ref": "einlagen"
-    }
-   ]
-  },
-  "plantarfasziitis": {
-   "label": "Plantarfasziitis",
-   "kurzlabel": "Plantarfasziitis",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "pf_einleitung",
-   "uebungen": "pf_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "stosswelle"
-    },
-    {
-     "ref": "nachtschiene"
-    },
-    {
-     "ref": "botox_plantar"
-    },
-    {
-     "ref": "prp_acp"
-    },
-    {
-     "ref": "lllt"
-    }
-   ]
-  },
-  "wadenmuskeldehnung": {
-   "label": "Wadenmuskeldehnung",
-   "kurzlabel": "Wadendehnung",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "waden_einleitung",
-   "uebungen": "waden_uebungen",
-   "weitereMassnahmen": []
-  },
-  "sprunggelenk_instabilitaet": {
-   "label": "Chronische Sprunggelenkinstabilität",
-   "kurzlabel": "SG-Instabilität",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "sgi_einleitung",
-   "uebungen": "sgi_uebungen",
-   "weitereMassnahmen": []
-  },
-  "hallux_rigidus": {
-   "label": "Hallux rigidus (Frühstadium)",
-   "kurzlabel": "Hallux rigidus",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "hr_einleitung",
-   "uebungen": "hr_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "infiltrationen"
-    }
-   ]
-  },
-  "sprunggelenk_arthrose": {
-   "label": "Sprunggelenkarthrose",
-   "kurzlabel": "SG-Arthrose",
-   "kontext": "chronisch",
-   "modell": "uebungspaket",
-   "einleitung": "sga_einleitung",
-   "uebungen": "sga_uebungen",
-   "weitereMassnahmen": [
-    {
-     "ref": "einlagen"
-    },
-    {
-     "ref": "hyaluronsaeure"
-    },
-    {
-     "ref": "prp_acp"
-    },
-    {
-     "ref": "allg_verschleiss"
-    }
-   ]
-  }
- },
- "NONOP_INHALTE": {
-  "aussenband_einleitung": {
-   "intro": "Eine strukturierte Nachbehandlung nach Außenbandverletzung ist wichtig für eine erfolgreiche Rehabilitation, die Verringerung der Wahrscheinlichkeit erneuter Umknicktraumata, die Verhinderung einer chronischen Instabilität und die zeitgerechte Wiederaufnahme von Beruf und Sport.",
-   "text": "Ca. 70 % der Patienten erleiden nach einer Außenbandverletzung im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität (Gribble et al. 2016). Hierfür sind gerade wiederholte Traumata verantwortlich. Im ersten Jahr nach der Außenbandverletzung ist das Risiko für eine erneute Verletzung mehr als verdoppelt.\n\n__Mit spezifischem Training kann die Rate an wiederholten Verletzungen um 40 % reduziert werden__ (Wagemans et al. 2022). Bei wiederholten Verletzungen besteht ein erhebliches Risiko eines verfrühten Gelenkverschleißes mit damit verbundenen Beschwerden und der Notwendigkeit weiterer Behandlungen oder Operationen.\n\nDie Rehabilitation muss sich der Physiologie der Bandheilung anpassen. Je nach Phase der biologischen Heilung sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zur Ausbildung einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zum Vorliegen einer ausgereiften Bandheilung 9–12 Monate (Hubbard & Hicks-Little 2008). Ab wann Beruf, Sport oder Freizeit wieder risikofrei möglich sind, hängt von der initialen Bandverletzung (Grad 1–3), dem Heilungsfortschritt und dem Risikoprofil der Tätigkeit ab.\n\n**Die Bandheilung läuft in drei Phasen ab:**\n- __Inflammationsphase__ (1–10 Tage): Einblutung und Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\n- __Proliferationsphase__ (14 Tage–6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte kontrollierte Belastungen fördern die Faserausrichtung.\n- __Remodellierungsphase__ (bis Ende des 1. Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\n\nWährend die Stufen 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen die Stufen 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit spezifischer sportmedizinischer Betreuung dar.",
-   "quellen": [
-    "Gribble et al. 2016",
-    "Wagemans et al. 2022",
-    "Hubbard & Hicks-Little 2008",
-    "Hultman et al. 2010"
-   ],
-   "evidenz": "Die frühfunktionelle Behandlung in einer semirigiden Orthese mit anschließendem neuromuskulärem Training ist gut untersucht; eine vollständige Ruhigstellung oder Entlastung ist nicht nötig. Dem neuromuskulären Training kommt dabei eine zentrale Rolle zu: Die Bandverletzung schädigt Mechanorezeptoren und stört die Tiefenwahrnehmung. Ein propriozeptives Training, auch als Heimprogramm, senkt die Rate erneuter Verletzungen und ist in hochwertigen Studien belegt."
-  },
-  "aussenband_stufe1": {
-   "ziel": "Reduktion von Schwellung und Schmerz.",
-   "ruhigstellung": "Semirigide Orthese Tag und Nacht (Grad 1–2 Rupturen; Grad 3 Rupturen, wenn tolerabel). Bei starker Schwellung (Grad 3) Gipsschiene an 2 Stützen mit Thromboseschutz für maximal 5–7 Tage.",
-   "massnahmen": [
-    {
-     "titel": "Lymphdrainage und Lymphtapes",
-     "text": "Manuelle Lymphdrainage unterstützt den Abtransport der Schwellung. Ergänzend können Lymphtapes angelegt werden, die über der geschwollenen Region auf der Haut kleben und die Entstauung unterstützen."
-    },
-    {
-     "titel": "Kryotherapie und Hochlagerung",
-     "bild": false,
-     "text": "Kühlung und Hochlagerung sind die Basismaßnahmen gegen die Schwellung. Zum Kühlen eignen sich Cool-Packs oder eine Packung Tiefkühlgemüse. Das Kühlelement gehört nie direkt auf die Haut, sondern eingeschlagen in ein Handtuch. Als Grundregel gilt mindestens 15 Minuten, etwa dreimal täglich. Wird häufiger gekühlt, sollte der Fuß danach mindestens so lange ohne Kühlung bleiben, wie er gekühlt wurde. Bei noch wirkender Betäubung oder vorbestehenden Nervenschäden kann übermäßiges Kühlen zu Erfrierungen oder Gewebeschäden führen."
-    },
-    {
-     "titel": "Isometrische Anspannungen",
-     "text": "Isometrisch bedeutet Anspannung ohne Bewegung (=der Muskel arbeitet, das Gelenk bleibt still). Die Unterschenkelmuskulatur wird angespannt und wieder gelöst, ohne das Sprunggelenk zu bewegen. So bleibt die Muskulatur aktiv, ohne den verletzten Bandapparat zu belasten."
-    },
-    {
-     "titel": "Verzicht auf Inversion",
-     "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
-    },
-    {
-     "titel": "Medikamente",
-     "bild": false,
-     "text": "Medikamente unterstützen die Behandlung, sie ersetzen sie nicht. Entzündungshemmende Schmerzmittel (NSAR wie Ibuprofen) zählen in der Frühphase zu den am besten untersuchten Maßnahmen (van den Bekerom et al. 2015). Für Enzympräparate mit Bromelain oder Papain, etwa Wobenzym, ist eine entzündungshemmende Wirkung bislang nur im Labor belegt (Onken 2008); bei vollständiger Blutverdünnung sollten sie wegen ihrer fibrinolytischen Wirkung nicht eingenommen werden."
-    }
-   ],
-   "steigerung": "Fortführung mit der nächsten Stufe, wenn eine gute Abschwellung erreicht ist und die Mobilisierung unter Vollbelastung möglich ist.",
-   "kriterien": [
-    "Gute Abschwellung erreicht",
-    "Mobilisierung unter Vollbelastung möglich"
-   ]
-  },
-  "aussenband_stufe2": {
-   "ziel": "Wiedergewinnung von Beweglichkeit und Stabilität zur kontrollierten Ausübung grundsätzlicher Bewegungsmuster.",
-   "ruhigstellung": "Tragen einer semirigiden Orthese Tag und Nacht.",
-   "wissenschaft": "Eine konsequent getragene Orthese (=Schiene) gehört zu den am besten belegten Maßnahmen, um erneute Umknickverletzungen zu vermeiden.\n\nEine frühe, kontrollierte Bewegung (=funktionelle Behandlung) und entzündungshemmende Medikamente zählen in der Frühphase zu den am besten untersuchten Maßnahmen. Bei Grad-1–2-Läsionen weist eine zügige funktionelle Nachbehandlung bessere Ergebnisse auf (Bleakley et al. 2010). Wackelbrett- und Balancetraining sowie Mobilisierungsübungen des OSG in die Extension können bereits nach einer Woche aufgenommen werden. Dies führte in zwei Studien zu schnellerer Rehabilitation ohne erhöhte Rate an Re-Verletzungen (Wester et al. 1996, Holme et al. 1999). Zu beachten ist, dass die Patienten im Studiensetting professionell durch Ärzte und Physiotherapeuten eng betreut und angeleitet wurden.",
-   "massnahmen": [
-    {
-     "titel": "Isometrische Eversion gegen Widerstand",
-     "text": "Wie schon in Stufe 1 wird der Muskel angespannt, ohne das Gelenk zu bewegen. Hier arbeitet der Fuß gegen den Zug eines Therabands nach außen (=Eversion, Auswärtskippen) — also in die Gegenrichtung des Umknickens. Das kräftigt genau die Muskeln, die das Sprunggelenk vor einem erneuten Umknicken schützen."
-    },
-    {
-     "titel": "Verzicht auf Inversion",
-     "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
-    },
-    {
-     "titel": "Gangschule geradeaus in der Orthese",
-     "text": "Gangschule bedeutet das bewusste Wiedererlernen eines gleichmäßigen Gangbilds. In dieser Stufe wird ausschließlich geradeaus gegangen, in der Orthese und ohne Richtungswechsel. Ziel ist ein flüssiges Abrollen mit gleich langen Schritten, ohne Schonhinken."
-    }
-   ],
-   "massnahmen_erweitert_titel": "Weitere Maßnahmen bei Schmerzfreiheit im Alltag und abgeschwollenen Weichteilen:",
-   "massnahmen_erweitert": [
-    {
-     "titel": "Gangschule mit Richtungswechseln",
-     "text": "Sobald das Geradeausgehen sicher gelingt, kommen Kurven, Wenden und Ausweichschritte dazu. Richtungswechsel belasten das Außenband stärker als geradeaus gehen, deshalb folgen sie erst später und weiterhin in der Orthese."
-    },
-    {
-     "titel": "Stabilitätstraining unter Schutz der Orthese",
-     "text": "Trainiert wird die Tiefenwahrnehmung (=Propriozeption), also das Gespür für die Stellung des Gelenks. Der Aufbau erfolgt schrittweise: erst beidbeinig, dann einbeinig, erst auf festem Boden, später auf wackeligem Untergrund oder einem Balance-Board."
-    },
-    {
-     "titel": "Ergometertraining in der Orthese",
-     "text": "Radfahren auf dem Ergometer bringt das Sprunggelenk in gleichmäßige Bewegung, ohne dass das volle Körpergewicht darauf lastet. Es hält Kreislauf und Beinmuskulatur in Schwung, während stoßbelastende Sportarten noch nicht möglich sind."
-    },
-    {
-     "titel": "Kraftübungen in geschlossener Kette",
-     "text": "Geschlossene Kette bedeutet, dass der Fuß dabei festen Kontakt zum Boden oder zu einem Gerät hat, etwa bei der Beinpresse oder bei Beinbeugern (Hamstring Curls). Die Belastung verteilt sich dadurch über das ganze Bein, und das Sprunggelenk wird weniger einzeln beansprucht."
-    },
-    {
-     "titel": "Passive Mobilisierung in die Streckung",
-     "text": "Mit einem Theraband wird der Fuß behutsam in Richtung Hochziehen bewegt (=Dorsalextension). Diese Beweglichkeit geht nach einer Verletzung häufig zuerst verloren und wird für ein normales Abrollen wieder gebraucht. Bewegt wird nur so weit, wie es nicht schmerzt."
-    }
-   ],
-   "steigerung": "Fortführung in der nächsten Stufe, wenn der Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund (Huber, Posturomed, MFT Training Disc) über 10 Sekunden sicher möglich ist.",
-   "kriterien": [
-    "Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund über 10 Sekunden sicher möglich"
-   ]
-  },
-  "aussenband_stufe3": {
-   "ziel": "Wiederaufnahme von Sport und volle berufliche Belastbarkeit.",
-   "ruhigstellung": "Taping oder Orthese bei längerer Belastung, Ermüdungsgefahr und Belastungssteigerungen.",
-   "text": "Die Übungen der 3. Stufe mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperets et al. 2008) sind als Langzeitübungen für das komplette erste Jahr nach dem Unfall gedacht. Sie sollten mehrfach pro Woche im Rahmen der Freizeit oder als Teil des eigenen Aufwärmprogramms durchgeführt werden. Ziel sind 3 Einheiten pro Woche mit je 30 Minuten Dauer.\n\nAuch bei gutem Heilungsverlauf können über Monate Restbeschwerden bestehen — etwa eine Schwellneigung oder ein Unsicherheitsgefühl. Das ist nicht ungewöhnlich und einer der Gründe, das Stabilitätstraining über das gesamte erste Jahr fortzuführen.",
-   "steigerung_hinweis": "Der Schwierigkeitsgrad wird im Verlauf gesteigert, wenn die jeweilige Übung sicher und ohne Schmerzen durchführbar ist. Die Wochenangaben beziehen sich auf die Zeit nach dem Trauma und stellen nur Orientierungspunkte dar. Eine spätere Steigerung ist kein Problem; eine frühere Steigerung sollte nur nach sportmedizinischer Beratung erfolgen.",
-   "uebungen": [
-    {
-     "name": "Einbeinige Kniebeuge",
-     "varianten": [
-      {
-       "text": "Auf ebenem Untergrund",
-       "woche": 6
-      },
-      {
-       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
-       "woche": 10
-      },
-      {
-       "text": "Auf Wackelbrett",
-       "woche": 16
-      }
-     ]
-    },
-    {
-     "name": "Beidbeiniger Zehenspitzenstand",
-     "varianten": [
-      {
-       "text": "Auf erhöhtem Untergrund mit Festhalten",
-       "woche": 6
-      },
-      {
-       "text": "Auf erhöhtem Untergrund ohne Festhalten",
-       "woche": 12
-      }
-     ]
-    },
-    {
-     "name": "Einbeinstand",
-     "varianten": [
-      {
-       "text": "Auf ebenem Untergrund",
-       "woche": 6
-      },
-      {
-       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
-       "woche": 10
-      },
-      {
-       "text": "Auf Wackelbrett",
-       "woche": 12
-      }
-     ]
-    },
-    {
-     "name": "Läuferpose",
-     "varianten": [
-      {
-       "text": "Auf ebenem Untergrund",
-       "woche": 6
-      },
-      {
-       "text": "Auf ebenem Untergrund mit geschlossenen Augen",
-       "woche": 8
-      },
-      {
-       "text": "Auf Wackelbrett",
-       "woche": 12
-      }
-     ]
-    },
-    {
-     "name": "Überkreuzschwung der Beine",
-     "varianten": [
-      {
-       "text": "Auf ebenem Untergrund mit Festhalten",
-       "woche": 6
-      },
-      {
-       "text": "Auf ebenem Untergrund ohne Festhalten",
-       "woche": 8
-      },
-      {
-       "text": "Auf ebenem Untergrund ohne Festhalten mit geschlossenen Augen",
-       "woche": 10
-      },
-      {
-       "text": "Auf Wackelbrett",
-       "woche": 12
-      }
-     ]
-    },
-    {
-     "name": "Zehenspitzengang",
-     "varianten": [
-      {
-       "text": "Auf ebenem Untergrund gehend",
-       "woche": 6
-      },
-      {
-       "text": "Auf ebenem Untergrund springend",
-       "woche": 10
-      }
-     ]
-    }
-   ]
-  },
-  "aussenband_stufe4": {
-   "ziel": "Wiederaufnahme des sportartspezifischen Trainings und Mannschaftstrainings __außerhalb von Wettkämpfen__.",
-   "ruhigstellung": "Externe Stabilisierung mit Orthese oder Tape während des Sports in den ersten 6 Monaten nach dem Trauma. Wegen des Effektivitätsverlustes von Tape muss nach 15–20 Minuten nachgetapt werden.",
-   "text": "Der exakte Zeitpunkt hängt vom Heilungsfortschritt und dem jeweiligen Sport ab. Ein Wiederbeginn vor dem 3. Monat nach dem Bandriss ist bei Risikosportarten kritisch.\\n\\nAuch ab dem dritten Monat ist ein Wiederbeginn nicht zwingend möglich. Unabhängig von der vergangenen Zeit ist es wichtiger, dass gewisse Kriterien erfüllt sind.",
-   "voraussetzungen_titel": "Voraussetzungen für den Wiederbeginn (Chinn et al. 2010):",
-   "voraussetzungen": [
-    "Keine Defizite in Balance und Propriozeption in sportspezifischen Sprungübungen",
-    "Uneingeschränkte Beweglichkeit",
-    "Schmerzfreiheit",
-    "Sportartspezifische Bewegungsmuster ohne Kompensation möglich",
-    "Intra- und intermuskuläre Koordination gegeben",
-    "90 % der Kraft vor der Verletzung bzw. der Gegenseite",
-    "Aktive Ansteuerbarkeit der Mm. peronei",
-    "Subjektive Einschätzung des Sportlers, dass dies möglich ist (Fragebogen, z. B. CAIT mit mindestens 28 Punkten oder I-PRRS mit mindestens 50–60 Punkten)"
-   ],
-   "testbatterie": {
-    "titel": "Sportmedizinische Testbatterie (nach Bloch et al. 2019)",
-    "intro": "Diese Testung kann nicht eigenständig erfolgen. Sie muss durch eine Sportmedizinerin oder einen Sportmediziner beziehungsweise durch eine Sportwissenschaftlerin oder einen Sportwissenschaftler betreut werden.\n\nDie Testbatterie prüft strukturiert Faktoren, die wissenschaftlich belegt mit einer höheren Rate an erneuten Verletzungen einhergehen. Begonnen wird mit Aufwärmen auf dem Laufband bei 8, 10, 12, 8 km/h für je 2 Minuten, Kniebeugen, dynamischen Richtungswechseln und Sprüngen (Squat-Jumps, Countermovement-Jumps). Schmerzen beim Aufwärmen sind ein Abbruchkriterium.",
-    "bereiche": [
-     {
-      "name": "Posturale Kontrolle / Statische Stabilität",
-      "punkte": [
-       "Star Excursion Balance Test (Gribble et al. 2012): Gesamtwert mindestens 94 %, Seitendifferenz der einzelnen Bewegungsrichtungen nicht mehr als 4 cm. Zur Vergleichbarkeit werden die Reichweiten an die Beinlänge angepasst."
+    "achillodynie_midportion": {
+      "label": "Achillodynie nicht-insertional",
+      "kurzlabel": "Achillodynie Mid-Portion",
+      "kontext": "chronisch",
+      "modell": "stufenlos_ampel",
+      "gate": "achillo_gate",
+      "ampel": "achillo_ampel",
+      "einleitung": "achillo_mid_einleitung",
+      "stufen": "achillo_mid_stufen",
+      "weitereMassnahmen": [
+        {
+          "ref": "waden_dehnung"
+        },
+        {
+          "ref": "stosswelle"
+        },
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "prp_acp"
+        }
       ]
-     },
-     {
-      "name": "Kraft",
-      "punkte": [
-       "Isokinetische Krafttestung",
-       "Heel Rise Test: einbeiniges Fersenanheben alle 2 Sekunden, mindestens ca. 30 Hebungen am Stück ohne Verlust der Rückfußstabilität",
-       "Einbeinige Kniebeuge: 5 Kniebeugen hintereinander bis zur maximalen Knieflexion aus erhöhter Position, rhythmisch getaktet, kontrollierte Ausführung und Stabilität der Hüftabduktoren"
+    },
+    "achillodynie_insertion": {
+      "label": "Achillodynie insertional",
+      "kurzlabel": "Achillodynie insertionell",
+      "kontext": "chronisch",
+      "modell": "stufenlos_ampel",
+      "gate": "achillo_gate",
+      "ampel": "achillo_ampel",
+      "einleitung": "achillo_ins_einleitung",
+      "stufen": "achillo_ins_stufen",
+      "weitereMassnahmen": [
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "stosswelle"
+        }
       ]
-     },
-     {
-      "name": "Sprung und Landung",
-      "punkte": [
-       "Einbeiniger Drop Jump: einbeinig von ca. 20 cm hoher Box auf den anderen Fuß fallen lassen und sofort maximal hoch abspringen; Hände in den Hüften, Oberkörper gerade, anderes Bein ohne Bodenkontakt. Beginn mit der unverletzten Seite, ein Probeversuch, dann 3 Versuche pro Seite; Bodenkontaktzeit und Sprunghöhe werden gemessen (LSI > 90).",
-       "Side Hop: Tapestreifen in 30 cm Entfernung; beim Hüpfen darf das Tape nicht berührt und das andere Bein nicht abgesetzt werden. Beginn mit dem unverletzten Bein, nach einem Probedurchgang 2 Testdurchgänge (besserer zählt); Zeit unter 13 Sekunden für 10 Sprünge hin und zurück (LSI 90–110)."
+    },
+    "knicksenkfuss": {
+      "label": "Knick-Senk-Fuß",
+      "kurzlabel": "Knick-Senk-Fuß",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "ksf_einleitung",
+      "uebungen": "ksf_uebungen",
+      "weitereMassnahmen": [
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "waden_dehnung"
+        },
+        {
+          "ref": "nachtschiene"
+        },
+        {
+          "ref": "short_foot"
+        }
       ]
-     },
-     {
-      "name": "Agilität",
-      "punkte": [
-       "Speed Course Test — nur in spezialisierten Einrichtungen möglich"
+    },
+    "hallux_valgus": {
+      "label": "Hallux valgus",
+      "kurzlabel": "Hallux valgus",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "hv_einleitung",
+      "uebungen": "hv_uebungen",
+      "weitereMassnahmen": [
+        {
+          "ref": "nachtschiene"
+        },
+        {
+          "ref": "einlagen"
+        }
       ]
-     }
+    },
+    "plantarfasziitis": {
+      "label": "Plantarfasziitis",
+      "kurzlabel": "Plantarfasziitis",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "pf_einleitung",
+      "uebungen": "pf_uebungen",
+      "weitereMassnahmen": [
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "stosswelle"
+        },
+        {
+          "ref": "nachtschiene"
+        },
+        {
+          "ref": "botox_plantar"
+        },
+        {
+          "ref": "prp_acp"
+        },
+        {
+          "ref": "lllt"
+        }
+      ]
+    },
+    "wadenmuskeldehnung": {
+      "label": "Wadenmuskeldehnung",
+      "kurzlabel": "Wadendehnung",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "waden_einleitung",
+      "uebungen": "waden_uebungen",
+      "weitereMassnahmen": []
+    },
+    "sprunggelenk_instabilitaet": {
+      "label": "Chronische Sprunggelenkinstabilität",
+      "kurzlabel": "SG-Instabilität",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "sgi_einleitung",
+      "uebungen": "sgi_uebungen",
+      "weitereMassnahmen": []
+    },
+    "hallux_rigidus": {
+      "label": "Hallux rigidus (Frühstadium)",
+      "kurzlabel": "Hallux rigidus",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "hr_einleitung",
+      "uebungen": "hr_uebungen",
+      "weitereMassnahmen": [
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "infiltrationen"
+        }
+      ]
+    },
+    "sprunggelenk_arthrose": {
+      "label": "Sprunggelenkarthrose",
+      "kurzlabel": "SG-Arthrose",
+      "kontext": "chronisch",
+      "modell": "uebungspaket",
+      "einleitung": "sga_einleitung",
+      "uebungen": "sga_uebungen",
+      "weitereMassnahmen": [
+        {
+          "ref": "einlagen"
+        },
+        {
+          "ref": "hyaluronsaeure"
+        },
+        {
+          "ref": "prp_acp"
+        },
+        {
+          "ref": "allg_verschleiss"
+        }
+      ]
+    }
+  },
+  "NONOP_INHALTE": {
+    "aussenband_einleitung": {
+      "intro": "Eine strukturierte Nachbehandlung nach Außenbandverletzung ist wichtig für eine erfolgreiche Rehabilitation, die Verringerung der Wahrscheinlichkeit erneuter Umknicktraumata, die Verhinderung einer chronischen Instabilität und die zeitgerechte Wiederaufnahme von Beruf und Sport.",
+      "text": "Ca. 70 % der Patienten erleiden nach einer Außenbandverletzung im Verlauf ein weiteres Trauma, ca. 20–40 % entwickeln eine chronische Instabilität (Gribble et al. 2016). Hierfür sind gerade wiederholte Traumata verantwortlich. Im ersten Jahr nach der Außenbandverletzung ist das Risiko für eine erneute Verletzung mehr als verdoppelt.\n\n__Mit spezifischem Training kann die Rate an wiederholten Verletzungen um 40 % reduziert werden__ (Wagemans et al. 2022). Bei wiederholten Verletzungen besteht ein erhebliches Risiko eines verfrühten Gelenkverschleißes mit damit verbundenen Beschwerden und der Notwendigkeit weiterer Behandlungen oder Operationen.\n\nDie Rehabilitation muss sich der Physiologie der Bandheilung anpassen. Je nach Phase der biologischen Heilung sind unterschiedliche Belastungen sinnvoll, umsetzbar oder hinderlich. Bis zur Ausbildung einer halbwegs stabilen Narbe am Außenbandapparat vergehen mindestens 6–12 Wochen, bis zum Vorliegen einer ausgereiften Bandheilung 9–12 Monate (Hubbard & Hicks-Little 2008). Ab wann Beruf, Sport oder Freizeit wieder risikofrei möglich sind, hängt von der initialen Bandverletzung (Grad 1–3), dem Heilungsfortschritt und dem Risikoprofil der Tätigkeit ab.\n\n**Die Bandheilung läuft in drei Phasen ab:**\n- __Inflammationsphase__ (1–10 Tage): Einblutung und Ausschüttung von Entzündungsmediatoren; Bluterguss, Schmerz, eingeschränkte Belastbarkeit.\n- __Proliferationsphase__ (14 Tage–6 Wochen): erste Bandheilung mit Bildung von Fibroblasten und Kollagen; dosierte kontrollierte Belastungen fördern die Faserausrichtung.\n- __Remodellierungsphase__ (bis Ende des 1. Jahres): weitere Gewebereifung und stabile Ausreifung des Kapsel-Band-Apparates.\n\nWährend die Stufen 1–3 für alle Patienten hochgradig sinnvoll und anwendbar sind, stellen die Stufen 4–5 Konzepte für ambitionierte Hobby- oder Profisportler mit spezifischer sportmedizinischer Betreuung dar.",
+      "quellen": [
+        "Gribble et al. 2016",
+        "Wagemans et al. 2022",
+        "Hubbard & Hicks-Little 2008",
+        "Hultman et al. 2010"
+      ],
+      "evidenz": "Die frühfunktionelle Behandlung in einer semirigiden Orthese mit anschließendem neuromuskulärem Training ist gut untersucht; eine vollständige Ruhigstellung oder Entlastung ist nicht nötig. Dem neuromuskulären Training kommt dabei eine zentrale Rolle zu: Die Bandverletzung schädigt Mechanorezeptoren und stört die Tiefenwahrnehmung. Ein propriozeptives Training, auch als Heimprogramm, senkt die Rate erneuter Verletzungen und ist in hochwertigen Studien belegt."
+    },
+    "aussenband_stufe1": {
+      "ziel": "Reduktion von Schwellung und Schmerz.",
+      "ruhigstellung": "Semirigide Orthese Tag und Nacht (Grad 1–2 Rupturen; Grad 3 Rupturen, wenn tolerabel). Bei starker Schwellung (Grad 3) Gipsschiene an 2 Stützen mit Thromboseschutz für maximal 5–7 Tage.",
+      "massnahmen": [
+        {
+          "titel": "Lymphdrainage und Lymphtapes",
+          "text": "Manuelle Lymphdrainage unterstützt den Abtransport der Schwellung. Ergänzend können Lymphtapes angelegt werden, die über der geschwollenen Region auf der Haut kleben und die Entstauung unterstützen."
+        },
+        {
+          "titel": "Kryotherapie und Hochlagerung",
+          "bild": false,
+          "text": "Kühlung und Hochlagerung sind die Basismaßnahmen gegen die Schwellung. Zum Kühlen eignen sich Cool-Packs oder eine Packung Tiefkühlgemüse. Das Kühlelement gehört nie direkt auf die Haut, sondern eingeschlagen in ein Handtuch. Als Grundregel gilt mindestens 15 Minuten, etwa dreimal täglich. Wird häufiger gekühlt, sollte der Fuß danach mindestens so lange ohne Kühlung bleiben, wie er gekühlt wurde. Bei noch wirkender Betäubung oder vorbestehenden Nervenschäden kann übermäßiges Kühlen zu Erfrierungen oder Gewebeschäden führen."
+        },
+        {
+          "titel": "Isometrische Anspannungen",
+          "text": "Isometrisch bedeutet Anspannung ohne Bewegung (=der Muskel arbeitet, das Gelenk bleibt still). Die Unterschenkelmuskulatur wird angespannt und wieder gelöst, ohne das Sprunggelenk zu bewegen. So bleibt die Muskulatur aktiv, ohne den verletzten Bandapparat zu belasten."
+        },
+        {
+          "titel": "Verzicht auf Inversion",
+          "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
+        },
+        {
+          "titel": "Medikamente",
+          "bild": false,
+          "text": "Medikamente unterstützen die Behandlung, sie ersetzen sie nicht. Entzündungshemmende Schmerzmittel (NSAR wie Ibuprofen) zählen in der Frühphase zu den am besten untersuchten Maßnahmen (van den Bekerom et al. 2015). Für Enzympräparate mit Bromelain oder Papain, etwa Wobenzym, ist eine entzündungshemmende Wirkung bislang nur im Labor belegt (Onken 2008); bei vollständiger Blutverdünnung sollten sie wegen ihrer fibrinolytischen Wirkung nicht eingenommen werden."
+        }
+      ],
+      "steigerung": "Fortführung mit der nächsten Stufe, wenn eine gute Abschwellung erreicht ist und die Mobilisierung unter Vollbelastung möglich ist.",
+      "kriterien": [
+        "Gute Abschwellung erreicht",
+        "Mobilisierung unter Vollbelastung möglich"
+      ]
+    },
+    "aussenband_stufe2": {
+      "ziel": "Wiedergewinnung von Beweglichkeit und Stabilität zur kontrollierten Ausübung grundsätzlicher Bewegungsmuster.",
+      "ruhigstellung": "Tragen einer semirigiden Orthese Tag und Nacht.",
+      "wissenschaft": "Eine konsequent getragene Orthese (=Schiene) gehört zu den am besten belegten Maßnahmen, um erneute Umknickverletzungen zu vermeiden.\n\nEine frühe, kontrollierte Bewegung (=funktionelle Behandlung) und entzündungshemmende Medikamente zählen in der Frühphase zu den am besten untersuchten Maßnahmen. Bei Grad-1–2-Läsionen weist eine zügige funktionelle Nachbehandlung bessere Ergebnisse auf (Bleakley et al. 2010). Wackelbrett- und Balancetraining sowie Mobilisierungsübungen des OSG in die Extension können bereits nach einer Woche aufgenommen werden. Dies führte in zwei Studien zu schnellerer Rehabilitation ohne erhöhte Rate an Re-Verletzungen (Wester et al. 1996, Holme et al. 1999). Zu beachten ist, dass die Patienten im Studiensetting professionell durch Ärzte und Physiotherapeuten eng betreut und angeleitet wurden.",
+      "massnahmen": [
+        {
+          "titel": "Isometrische Eversion gegen Widerstand",
+          "text": "Wie schon in Stufe 1 wird der Muskel angespannt, ohne das Gelenk zu bewegen. Hier arbeitet der Fuß gegen den Zug eines Therabands nach außen (=Eversion, Auswärtskippen) — also in die Gegenrichtung des Umknickens. Das kräftigt genau die Muskeln, die das Sprunggelenk vor einem erneuten Umknicken schützen."
+        },
+        {
+          "titel": "Verzicht auf Inversion",
+          "text": "Inversion bedeutet das Einwärtskippen des Fußes — genau die Bewegung, bei der das Außenband beim Umknicken überdehnt wird oder reißt. Solange das Band heilt, wird sie konsequent vermieden, damit die junge Narbe nicht wieder auseinandergezogen wird. Die Orthese begrenzt diese Bewegung zusätzlich."
+        },
+        {
+          "titel": "Gangschule geradeaus in der Orthese",
+          "text": "Gangschule bedeutet das bewusste Wiedererlernen eines gleichmäßigen Gangbilds. In dieser Stufe wird ausschließlich geradeaus gegangen, in der Orthese und ohne Richtungswechsel. Ziel ist ein flüssiges Abrollen mit gleich langen Schritten, ohne Schonhinken."
+        }
+      ],
+      "massnahmen_erweitert_titel": "Weitere Maßnahmen bei Schmerzfreiheit im Alltag und abgeschwollenen Weichteilen:",
+      "massnahmen_erweitert": [
+        {
+          "titel": "Gangschule mit Richtungswechseln",
+          "text": "Sobald das Geradeausgehen sicher gelingt, kommen Kurven, Wenden und Ausweichschritte dazu. Richtungswechsel belasten das Außenband stärker als geradeaus gehen, deshalb folgen sie erst später und weiterhin in der Orthese."
+        },
+        {
+          "titel": "Stabilitätstraining unter Schutz der Orthese",
+          "text": "Trainiert wird die Tiefenwahrnehmung (=Propriozeption), also das Gespür für die Stellung des Gelenks. Der Aufbau erfolgt schrittweise: erst beidbeinig, dann einbeinig, erst auf festem Boden, später auf wackeligem Untergrund oder einem Balance-Board."
+        },
+        {
+          "titel": "Ergometertraining in der Orthese",
+          "text": "Radfahren auf dem Ergometer bringt das Sprunggelenk in gleichmäßige Bewegung, ohne dass das volle Körpergewicht darauf lastet. Es hält Kreislauf und Beinmuskulatur in Schwung, während stoßbelastende Sportarten noch nicht möglich sind."
+        },
+        {
+          "titel": "Kraftübungen in geschlossener Kette",
+          "text": "Geschlossene Kette bedeutet, dass der Fuß dabei festen Kontakt zum Boden oder zu einem Gerät hat, etwa bei der Beinpresse oder bei Beinbeugern (Hamstring Curls). Die Belastung verteilt sich dadurch über das ganze Bein, und das Sprunggelenk wird weniger einzeln beansprucht."
+        },
+        {
+          "titel": "Passive Mobilisierung in die Streckung",
+          "text": "Mit einem Theraband wird der Fuß behutsam in Richtung Hochziehen bewegt (=Dorsalextension). Diese Beweglichkeit geht nach einer Verletzung häufig zuerst verloren und wird für ein normales Abrollen wieder gebraucht. Bewegt wird nur so weit, wie es nicht schmerzt."
+        }
+      ],
+      "steigerung": "Fortführung in der nächsten Stufe, wenn der Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund (Huber, Posturomed, MFT Training Disc) über 10 Sekunden sicher möglich ist.",
+      "kriterien": [
+        "Einbeinstand mit offenen und geschlossenen Augen auf geradem oder ungeradem Untergrund über 10 Sekunden sicher möglich"
+      ]
+    },
+    "aussenband_stufe3": {
+      "ziel": "Wiederaufnahme von Sport und volle berufliche Belastbarkeit.",
+      "ruhigstellung": "Taping oder Orthese bei längerer Belastung, Ermüdungsgefahr und Belastungssteigerungen.",
+      "text": "Die Übungen der 3. Stufe mit neuromuskulärem Gleichgewichts- und Stabilisierungstraining (nach Hupperets et al. 2008) sind als Langzeitübungen für das komplette erste Jahr nach dem Unfall gedacht. Sie sollten mehrfach pro Woche im Rahmen der Freizeit oder als Teil des eigenen Aufwärmprogramms durchgeführt werden. Ziel sind 3 Einheiten pro Woche mit je 30 Minuten Dauer.\n\nAuch bei gutem Heilungsverlauf können über Monate Restbeschwerden bestehen — etwa eine Schwellneigung oder ein Unsicherheitsgefühl. Das ist nicht ungewöhnlich und einer der Gründe, das Stabilitätstraining über das gesamte erste Jahr fortzuführen.",
+      "steigerung_hinweis": "Der Schwierigkeitsgrad wird im Verlauf gesteigert, wenn die jeweilige Übung sicher und ohne Schmerzen durchführbar ist. Die Wochenangaben beziehen sich auf die Zeit nach dem Trauma und stellen nur Orientierungspunkte dar. Eine spätere Steigerung ist kein Problem; eine frühere Steigerung sollte nur nach sportmedizinischer Beratung erfolgen.",
+      "uebungen": [
+        {
+          "name": "Einbeinige Kniebeuge",
+          "varianten": [
+            {
+              "text": "Auf ebenem Untergrund",
+              "woche": 6
+            },
+            {
+              "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+              "woche": 10
+            },
+            {
+              "text": "Auf Wackelbrett",
+              "woche": 16
+            }
+          ]
+        },
+        {
+          "name": "Beidbeiniger Zehenspitzenstand",
+          "varianten": [
+            {
+              "text": "Auf erhöhtem Untergrund mit Festhalten",
+              "woche": 6
+            },
+            {
+              "text": "Auf erhöhtem Untergrund ohne Festhalten",
+              "woche": 12
+            }
+          ]
+        },
+        {
+          "name": "Einbeinstand",
+          "varianten": [
+            {
+              "text": "Auf ebenem Untergrund",
+              "woche": 6
+            },
+            {
+              "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+              "woche": 10
+            },
+            {
+              "text": "Auf Wackelbrett",
+              "woche": 12
+            }
+          ]
+        },
+        {
+          "name": "Läuferpose",
+          "varianten": [
+            {
+              "text": "Auf ebenem Untergrund",
+              "woche": 6
+            },
+            {
+              "text": "Auf ebenem Untergrund mit geschlossenen Augen",
+              "woche": 8
+            },
+            {
+              "text": "Auf Wackelbrett",
+              "woche": 12
+            }
+          ]
+        },
+        {
+          "name": "Überkreuzschwung der Beine",
+          "varianten": [
+            {
+              "text": "Auf ebenem Untergrund mit Festhalten",
+              "woche": 6
+            },
+            {
+              "text": "Auf ebenem Untergrund ohne Festhalten",
+              "woche": 8
+            },
+            {
+              "text": "Auf ebenem Untergrund ohne Festhalten mit geschlossenen Augen",
+              "woche": 10
+            },
+            {
+              "text": "Auf Wackelbrett",
+              "woche": 12
+            }
+          ]
+        },
+        {
+          "name": "Zehenspitzengang",
+          "varianten": [
+            {
+              "text": "Auf ebenem Untergrund gehend",
+              "woche": 6
+            },
+            {
+              "text": "Auf ebenem Untergrund springend",
+              "woche": 10
+            }
+          ]
+        }
+      ]
+    },
+    "aussenband_stufe4": {
+      "ziel": "Wiederaufnahme des sportartspezifischen Trainings und Mannschaftstrainings __außerhalb von Wettkämpfen__.",
+      "ruhigstellung": "Externe Stabilisierung mit Orthese oder Tape während des Sports in den ersten 6 Monaten nach dem Trauma. Wegen des Effektivitätsverlustes von Tape muss nach 15–20 Minuten nachgetapt werden.",
+      "text": "Der exakte Zeitpunkt hängt vom Heilungsfortschritt und dem jeweiligen Sport ab. Ein Wiederbeginn vor dem 3. Monat nach dem Bandriss ist bei Risikosportarten kritisch.\\n\\nAuch ab dem dritten Monat ist ein Wiederbeginn nicht zwingend möglich. Unabhängig von der vergangenen Zeit ist es wichtiger, dass gewisse Kriterien erfüllt sind.",
+      "voraussetzungen_titel": "Voraussetzungen für den Wiederbeginn (Chinn et al. 2010):",
+      "voraussetzungen": [
+        "Keine Defizite in Balance und Propriozeption in sportspezifischen Sprungübungen",
+        "Uneingeschränkte Beweglichkeit",
+        "Schmerzfreiheit",
+        "Sportartspezifische Bewegungsmuster ohne Kompensation möglich",
+        "Intra- und intermuskuläre Koordination gegeben",
+        "90 % der Kraft vor der Verletzung bzw. der Gegenseite",
+        "Aktive Ansteuerbarkeit der Mm. peronei",
+        "Subjektive Einschätzung des Sportlers, dass dies möglich ist (Fragebogen, z. B. CAIT mit mindestens 28 Punkten oder I-PRRS mit mindestens 50–60 Punkten)"
+      ],
+      "testbatterie": {
+        "titel": "Sportmedizinische Testbatterie (nach Bloch et al. 2019)",
+        "intro": "Diese Testung kann nicht eigenständig erfolgen. Sie muss durch eine Sportmedizinerin oder einen Sportmediziner beziehungsweise durch eine Sportwissenschaftlerin oder einen Sportwissenschaftler betreut werden.\n\nDie Testbatterie prüft strukturiert Faktoren, die wissenschaftlich belegt mit einer höheren Rate an erneuten Verletzungen einhergehen. Begonnen wird mit Aufwärmen auf dem Laufband bei 8, 10, 12, 8 km/h für je 2 Minuten, Kniebeugen, dynamischen Richtungswechseln und Sprüngen (Squat-Jumps, Countermovement-Jumps). Schmerzen beim Aufwärmen sind ein Abbruchkriterium.",
+        "bereiche": [
+          {
+            "name": "Posturale Kontrolle / Statische Stabilität",
+            "punkte": [
+              "Star Excursion Balance Test (Gribble et al. 2012): Gesamtwert mindestens 94 %, Seitendifferenz der einzelnen Bewegungsrichtungen nicht mehr als 4 cm. Zur Vergleichbarkeit werden die Reichweiten an die Beinlänge angepasst."
+            ]
+          },
+          {
+            "name": "Kraft",
+            "punkte": [
+              "Isokinetische Krafttestung",
+              "Heel Rise Test: einbeiniges Fersenanheben alle 2 Sekunden, mindestens ca. 30 Hebungen am Stück ohne Verlust der Rückfußstabilität",
+              "Einbeinige Kniebeuge: 5 Kniebeugen hintereinander bis zur maximalen Knieflexion aus erhöhter Position, rhythmisch getaktet, kontrollierte Ausführung und Stabilität der Hüftabduktoren"
+            ]
+          },
+          {
+            "name": "Sprung und Landung",
+            "punkte": [
+              "Einbeiniger Drop Jump: einbeinig von ca. 20 cm hoher Box auf den anderen Fuß fallen lassen und sofort maximal hoch abspringen; Hände in den Hüften, Oberkörper gerade, anderes Bein ohne Bodenkontakt. Beginn mit der unverletzten Seite, ein Probeversuch, dann 3 Versuche pro Seite; Bodenkontaktzeit und Sprunghöhe werden gemessen (LSI > 90).",
+              "Side Hop: Tapestreifen in 30 cm Entfernung; beim Hüpfen darf das Tape nicht berührt und das andere Bein nicht abgesetzt werden. Beginn mit dem unverletzten Bein, nach einem Probedurchgang 2 Testdurchgänge (besserer zählt); Zeit unter 13 Sekunden für 10 Sprünge hin und zurück (LSI 90–110)."
+            ]
+          },
+          {
+            "name": "Agilität",
+            "punkte": [
+              "Speed Course Test — nur in spezialisierten Einrichtungen möglich"
+            ]
+          }
+        ],
+        "psychologisch": "Die psychologische Bereitschaft zur Wiederaufnahme der (leistungssportlichen) Belastung kann in einem Fragebogen geprüft werden (Sigonney et al. 2020), z. B. CAIT, FAAM oder I-PRRS."
+      }
+    },
+    "aussenband_stufe5": {
+      "text": "Die Wiederaufnahme des Wettkampfbetriebs stellt eine individuelle sportmedizinische Entscheidung je nach Niveau und Sportart dar. Während des Wettkampfs ist eine externe Stabilisierung mit Orthese oder Tape in den ersten 6–12 Monaten nach dem Trauma sinnvoll."
+    },
+    "aussenband_abklaerung": {
+      "titel": "Ärztliche Abklärung – und wann ein Röntgen sinnvoll ist",
+      "intro": "Jede frische Außenbandverletzung sollte ärztlich abgeklärt werden — unabhängig von den folgenden Hinweisen.\n\nDie folgenden Kriterien helfen nur einzuschätzen, wann zusätzlich ein Röntgenbild sinnvoll ist, um einen Knochenbruch (=Fraktur) auszuschließen. Sie orientieren sich an den Ottawa Ankle Rules — einer international etablierten, wissenschaftlich validierten Entscheidungshilfe, die zuverlässig erkennt, ob ein Knochenbruch wahrscheinlich ist. In Studien erreichte sie eine Sensitivität (=Trefferquote beim Erkennen von Brüchen) von nahezu 100 % (Stiell et al. 1993; Bachmann et al. 2003).",
+      "aufforderung": "Ein Röntgenbild ist besonders sinnvoll, wenn eines der folgenden Zeichen vorliegt (bitte bei der ärztlichen Vorstellung ansprechen):",
+      "kriterien": [
+        "Sie können den Fuß direkt nach der Verletzung nicht belasten (keine vier Schritte möglich)",
+        "Druckschmerz direkt am Knochen des Außen- oder Innenknöchels (hinterer Rand oder Spitze)",
+        "Druckschmerz an der Basis des 5. Mittelfußknochens (tastbarer Höcker am äußeren Fußrand)",
+        "Druckschmerz am Kahnbein (=Os naviculare, am inneren Mittelfuß)"
+      ],
+      "warnzeichen": "Zusätzliche Warnzeichen (nicht Teil der Ottawa-Regeln): zunehmende statt abnehmende Schwellung oder Schmerzen, Taubheitsgefühl, sichtbare Fehlstellung, offene Wunde oder Fieber.",
+      "hinweis": "Im Zweifel gilt: lieber einmal mehr ärztlich vorstellen.",
+      "studienlage": "Die Ottawa Ankle Rules wurden in einer prospektiven Validierungsstudie mit 100 % Sensitivität für Knöchel- und Mittelfußfrakturen bestätigt und können die Zahl unnötiger Röntgenaufnahmen um rund ein Drittel senken (Stiell et al. 1993). Eine systematische Übersicht über 27 Studien mit 15.581 Patienten bestätigte die nahezu 100%ige Sensitivität zum Ausschluss von Brüchen (Bachmann et al. 2003)."
+    },
+    "achillo_gate": {
+      "titel": "Voraussetzung: gesicherte ärztliche Diagnose",
+      "text": "Dieses Programm setzt voraus, dass die Ursache Ihrer Beschwerden ärztlich abgeklärt und die Diagnose einer Achillessehnen-Reizung (=Tendinopathie) gestellt wurde — einschließlich der Einordnung, ob es sich um die mittlere Form (=Mid-Portion) oder die ansatznahe Form (=insertionell) handelt. Welcher Trainingspfad für Sie geeignet ist, legt Ihre Ärztin oder Ihr Arzt fest. Bitte beginnen Sie erst, wenn diese Zuordnung erfolgt ist.",
+      "bestaetigung": "Die Diagnose und der passende Pfad wurden ärztlich festgelegt"
+    },
+    "achillo_mid_einleitung": {
+      "intro": "Bei der Mid-Portion-Tendinopathie sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
+      "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nEbenso wichtig ist die Anleitung. Für ein rein exzentrisches Training in Eigenregie ohne Begleitung zeigte eine aktuelle randomisierte Studie nur eine begrenzte Wirkung. Dieses Programm setzt deshalb auf ein strukturiertes Vorgehen mit Stufen und Ampel. Lassen Sie sich ergänzend physiotherapeutisch anleiten, besonders wenn Sie unsicher sind oder die Beschwerden nicht zurückgehen.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+      "quellen": [
+        "Martin RL et al. 2018 (JOSPT Clinical Practice Guideline)",
+        "Chimenti RL et al. 2024",
+        "Prudêncio DA et al. 2023",
+        "Maetz R et al. 2023",
+        "Praet SFE et al. 2019",
+        "Janssen T et al. 2026"
+      ],
+      "evidenz": "Das dosierte Belastungstraining der Sehne gehört bei der mittleren Form zu den am besten untersuchten Maßnahmen. Systematische Übersichtsarbeiten zeigen, dass exzentrisches Training anderen Übungsformen überlegen ist (Prudêncio et al. 2023) und dass Belastungsprotokolle besser abschneiden als passive Behandlungen (Maetz et al. 2023). Die Leitlinie der amerikanischen Physiotherapie-Fachgesellschaft empfiehlt Belastungstraining als zentrale Maßnahme (Martin et al. 2018, aktualisiert Chimenti et al. 2024). Zu Dauer und genauer Dosierung gibt es keine einheitliche Empfehlung. Eine randomisierte Studie fand für ein tägliches exzentrisches Heimprogramm ohne Anleitung nach 12 Wochen keinen Vorteil gegenüber einem Scheintraining der Arme (Janssen et al. 2026). Das spricht dafür, das Training nicht in reiner Eigenregie durchzuführen, sondern strukturiert und mit Anleitung, wie es dieses Stufenprogramm mit Ampelsteuerung vorsieht."
+    },
+    "achillo_ins_einleitung": {
+      "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
+      "text": "An der Achillessehne gibt es zwei verschiedene Beschwerdebilder: die ansatznahe Form am Fersenbein und die Mid-Portion-Tendinopathie im mittleren Sehnenabschnitt. Die nicht-operativen Behandlungskonzepte ähneln sich stark, es gibt aber einige Ausnahmen. Der wichtigste Unterschied betrifft die Ferse: Sie wird bei der ansatznahen Form nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nDas Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
+      "quellen": [
+        "Sivrika AP et al. 2023",
+        "Jarin IJ et al. 2021",
+        "Zhi X et al. 2021",
+        "von Rickenbach KJ et al. 2021"
+      ],
+      "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
+    },
+    "achillo_mid_s1": {
+      "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. An der Achillessehne ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt. Wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
+      "uebungen": [
+        {
+          "titel": "Isometrisches Halten im Stand",
+          "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern."
+        },
+        {
+          "titel": "Halten gegen die Spannung eines Therabandes",
+          "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
+        }
+      ]
+    },
+    "achillo_mid_s2": {
+      "was": "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter. Die volle Bewegung ist erlaubt; beim Absenken darf die Ferse leicht unter Stufenniveau sinken.",
+      "dosis": "3 Sätze × 15 Wiederholungen, Tempo 3 Sekunden hoch / 3 Sekunden runter, täglich."
+    },
+    "achillo_mid_s3": {
+      "was": "Auf einem Bein langsame Wadenhebung, wahlweise mit Zusatzgewicht (Rucksack, Gerät, Langhantel). Als Orientierung für die Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind, die Ausführung aber sauber bleibt.",
+      "dosis": "3–4 Sätze, Tempo 3 s hoch / 3 s runter, 3×/Woche. Wiederholungen sinken von 15 → 6, während das Gewicht steigt."
+    },
+    "achillo_mid_s4": {
+      "was": "Auf der Stufe stehend mit dem gesunden Bein hochkommen, das langsame Absenken nur mit dem betroffenen Bein — die Ferse dabei unter die Stufenkante absenken. Mit gestrecktem und mit gebeugtem Knie. Die Last wird mit Rucksack oder Gewicht gesteigert, sobald es ohne wesentlichen Schmerz geht.",
+      "dosis": "3 Sätze × 15 Wiederholungen, 2×/Tag, täglich (gestreckt + gebeugt = insgesamt 180 Absenkungen/Tag)."
+    },
+    "achillo_mid_s5": {
+      "was": "Federnde, schnellere Belastung (Hüpfen, Seilspringen, sportartspezifische Sprünge/Läufe).",
+      "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
+    },
+    "achillo_ins_s1": {
+      "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. An der Achillessehne ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt. Wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
+      "uebungen": [
+        {
+          "titel": "Isometrisches Halten im Stand",
+          "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern. Die Ferse wird dabei nicht abgesenkt."
+        },
+        {
+          "titel": "Halten gegen die Spannung eines Therabandes",
+          "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
+        }
+      ]
+    },
+    "achillo_ins_s2": {
+      "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
+      "dosis": "3 × 15, Tempo 3 s / 3 s, täglich. Keine Dehnung unter Bodenhöhe."
+    },
+    "achillo_ins_s3": {
+      "was": "Einbeinige Wadenhebung bzw. mit Gewicht, Bewegung nur bis Neutralstellung, keine Dehnung unter Bodenhöhe.",
+      "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last. Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
+    },
+    "achillo_ins_s4": {
+      "was": "Kräftigung mit Gewicht, gestreckt und gebeugt, ohne Absenken unter die Stufenkante.",
+      "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag). Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
+    },
+    "achillo_ins_s5": {
+      "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
+      "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
+    },
+    "ksf_einleitung": {
+      "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
+      "text": "Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet. Dazu zählen die Sehne des hinteren Schienbeinmuskels (=Tibialis posterior), das Innenband und das Pfannenband (=Spring Ligament) sowie die Mittel- und Rückfußgelenke. Die Stabilisierung des Fußes entsteht durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\n\nEine nicht-operative Therapie mit **aktiver Beteiligung ist wirksamer** als rein passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können die Beschwerden lindern. Übungen zur Kräftigung der entsprechenden Muskeln und zur Schulung der Tiefenwahrnehmung (=Propriozeption) können Funktion und Beschwerden verbessern, vorausgesetzt sie werden regelmäßig und dauerhaft durchgeführt.\n\nEine echte Korrektur der knöchernen Fehlstellung ist beim ausgewachsenen Fuß nicht zu erwarten. Realistisches Ziel ist eine Verbesserung von Beschwerden und Funktion, nicht eine Begradigung des Fußes. Die Übungen sind besonders wirksam, wenn sie mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren kombiniert werden.",
+      "quellen": [
+        "Hoang et al. 2021",
+        "Elsayed et al. 2023",
+        "Jia et al. 2024"
+      ],
+      "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
+    },
+    "ksf_u1": {
+      "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
+      "schritte": [
+        "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in einwärtsgedrehter Position gegen den Zug eines Therabands von außen. Danach langsames, kontrolliertes (=exzentrisches) Führen des Fußes nach außen.",
+        "Einen Ball zwischen beiden Vorfüßen halten, aus der sitzenden Position anheben und zusammenpressen."
+      ],
+      "dosis": "Jeweils 5 Sekunden halten, 10 Wiederholungen. Die langsame Auswärtsbewegung gegen Widerstand (exzentrisch) ist besonders wichtig."
+    },
+    "ksf_u2": {
+      "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
+      "schritte": [
+        "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
+        "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
+      ],
+      "dosis": "Ruhig und kontrolliert, mehrere Wiederholungen pro Seite.",
+      "hinweis": ""
+    },
+    "ksf_u3": {
+      "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln (=intrinsische Muskulatur).",
+      "schritte": [
+        "Fuß flach absetzen und den Vorfußballen in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen, ohne dass die Zehen krallen.",
+        "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
+      ],
+      "dosis": "Mehrere Wiederholungen, ohne Krallen der Zehen. Diese Short-Foot-Übung gilt als Kernübung und ist wissenschaftlich am besten untersucht."
+    },
+    "ksf_u4": {
+      "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann zur Instabilität des Längsgewölbes beitragen.",
+      "schritte": [
+        "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
+      ],
+      "dosis": "",
+      "hinweis": ""
+    },
+    "ksf_u5": {
+      "ziel": "Kräftigung der Gesäßmuskulatur (=Glutealmuskulatur). Sie stabilisiert die Beinachse und entlastet so das Fußgewölbe.",
+      "schritte": [
+        "Ein Theraband um die Oberschenkel knapp oberhalb der Knie legen.",
+        "Version 1: Auf den Rücken legen, Füße hüftbreit aufstellen, das Becken anheben und dabei die Knie nach außen gegen das Band drücken.",
+        "Version 2: In Seitenlage das Band um die Knie legen und das obere Knie anheben, sodass die Hüfte nach außen rotiert."
+      ],
+      "dosis": "Mehrere Wiederholungen pro Seite, kontrolliert. Die Kombination der Fußübungen mit diesem Hüfttraining steigert die Wirksamkeit nachweislich (Jia et al. 2024)."
+    },
+    "ksf_u6": {
+      "ziel": "Allgemeine Aktivierung der kleinen Fußmuskeln und Schulung der Tiefenwahrnehmung (=Sensomotorik).",
+      "schritte": [
+        "Barfußlaufen, wann immer möglich, auf natürlichem Untergrund.",
+        "Im Urlaub im Sand oder im Garten auf dem Rasen."
+      ],
+      "dosis": "Regelmäßig, langsam steigern. Langsam aufbauen, um Überlastungen zu vermeiden."
+    },
+    "hv_einleitung": {
+      "intro": "Beim Hallux valgus (=Schiefstand der Großzehe, „Ballenzeh“) bestehen wie bei jeder chronischen Erkrankung des Bewegungsapparates nicht-operative und operative Optionen. Vor einer Operation sollten alternative Maßnahmen probiert werden.",
+      "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung. Gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\n\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\n\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind ähnlich wie an der Hand für Feinmotorik und „Griffkraft“ des Fußes zuständig.\n\nDas Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
+      "quellen": [
+        "Mortka & Lisiński 2015",
+        "Kim et al. 2013",
+        "Mortka et al. 2020",
+        "Liu et al. 2024"
+      ],
+      "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt. Ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar."
+    },
+    "hv_u0": {
+      "ziel": "Lockerung des Fußes vor dem Üben.",
+      "schritte": [
+        "Ausstreichen der Fußsohle.",
+        "Querdehnung des Fußrückens."
+      ],
+      "dosis": "Als angenehme, risikoarme Vorbereitung vor den Übungen. Die Massage ist eine Vorbereitung und dient der Lockerung, sie ersetzt die Übungen nicht."
+    },
+    "hv_u1": {
+      "ziel": "Stärkung der kleinen Zehenbeuger (=intrinsische Zehenbeuger).",
+      "schritte": [
+        "Mit den Zehen eine Kugel greifen und 10× von links nach rechts legen.",
+        "Einen Schnürsenkel oder ein kleines Band mit den Zehen aufnehmen und nacheinander die Buchstaben Ihres Vor- und Nachnamens formen."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen. Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert. Hier ist Geduld gefragt.",
+      "hinweis": ""
+    },
+    "hv_u2": {
+      "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
+      "schritte": [
+        "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in neutraler Position gegen den Zug eines Therabands von außen.",
+        "Einen Ball zwischen beiden Füßen halten, aus der sitzenden Position anheben und 5 Sekunden zusammenpressen; 10 Wiederholungen."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+      "hinweis": ""
+    },
+    "hv_u3": {
+      "ziel": "Dehnung des beim Hallux valgus häufig verkürzten Großzehen-Anziehers (=M. adductor hallucis).",
+      "schritte": [
+        "Ein Theraband über beide Großzehen ziehen und die Großzehen sanft auseinanderführen (passive Dehnung)."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+      "hinweis": ""
+    },
+    "hv_u4": {
+      "ziel": "Ansteuerung und Kräftigung des Großzehen-Abspreizers (=M. abductor hallucis, der die Großzehe von der 2. Zehe wegzieht).",
+      "schritte": [
+        "Im Sitzen den Fuß flach absetzen.",
+        "Im Wechsel die Zehen krallen und die Großzehe abspreizen."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen."
+    },
+    "hv_u5": {
+      "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
+      "schritte": [
+        "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
+        "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+      "hinweis": ""
+    },
+    "hv_u6": {
+      "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln.",
+      "schritte": [
+        "Fuß flach absetzen und Ballen und Großzehe in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen.",
+        "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
+      ],
+      "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
+      "hinweis": ""
+    },
+    "hv_u7": {
+      "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann vor allem bei gleichzeitigem Knick-Senk-Fuß zur Instabilität des Längsgewölbes und zur Dezentrierung des 1. Mittelfußknochens beitragen.",
+      "schritte": [
+        "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
+      ],
+      "dosis": "",
+      "hinweis": ""
+    },
+    "pf_einleitung": {
+      "intro": "Bei der Plantarfasziitis kommt es zu einer verschleiß- und überlastungsbedingten Schädigung der Plantarfaszie (=bindegewebige Sehnenplatte der Fußsohle) mit häufig erheblichem chronischem Schmerz an der Ferse.",
+      "text": "Ziele der Eigenübungen sind die Dehnung von Plantarfaszie und Wadenmuskulatur, Schmerzlinderung und Entlastung, eine bessere Fußstabilität und Beweglichkeit sowie die Unterstützung des Heilungsverlaufs.\n\nDie Übungen sollten mindestens 3–4× pro Woche durchgeführt werden, jeweils etwa 10 Minuten. Die Dehnübungen dürfen durchaus unangenehm ziehend empfunden werden, sollten aber nicht schmerzen. Parallel darf gerne auf natürlichem Boden barfuß gelaufen werden. Bei Bewegung auf harten Böden sind gut gedämpftes Schuhwerk oder Bettungseinlagen sinnvoll.\n\nEine Besserung tritt auch bei konsequentem Training erst nach mehreren Wochen auf. Hier bedarf es also Geduld.",
+      "quellen": [
+        "Huffer et al. 2017",
+        "Boob et al. 2023",
+        "Rhim et al. 2021"
+      ],
+      "evidenz": "Regelmäßige Übungen sind neben Einlagenversorgung, Stoßwellentherapie und Gewichtsreduktion die wichtigste Maßnahme der Behandlung. Es konnte gezeigt werden, dass kontinuierliche Übungen über Wochen die Beschwerden wirksam verbessern können; besonders das Training der kleinen Fußmuskeln (=intrinsische Fußmuskulatur), die Faszienmassage und die Dehnung der Achillessehne gelten als wirksam (Huffer et al. 2017, Boob et al. 2023, Rhim et al. 2021)."
+    },
+    "pf_u1": {
+      "ziel": "Lockerung vor dem Anlaufen am Morgen. Diese Übung ist gut bei Phasen von hohem Schmerz.",
+      "schritte": [
+        "Im Sitzen oder Liegen ein Handtuch um den Fußballen legen.",
+        "Den Fuß langsam zum Körper ziehen."
+      ],
+      "dosis": "3 × 30 Sekunden pro Seite, direkt nach dem Aufwachen empfehlenswert.",
+      "hinweis": ""
+    },
+    "pf_u2": {
+      "ziel": "Dehnen der Plantarfaszie.",
+      "schritte": [
+        "Im Sitzen ein Bein über das andere schlagen.",
+        "Die Zehen der schmerzhaften Seite mit der Hand langsam in Richtung Schienbein ziehen.",
+        "Mit dem Daumen kann nun eine tiefe Massage quer zur Fußsohle erfolgen; dies darf etwas schmerzhaft sein (=Querfriktion)."
+      ],
+      "dosis": "30 Sekunden halten, 3× wiederholen.",
+      "hinweis": ""
+    },
+    "pf_u3": {
+      "ziel": "Intensive Dehnung der Faszie.",
+      "schritte": [
+        "Stand vor einer Wand, die Großzehe nach oben gestellt.",
+        "Das Gewicht langsam nach vorne verlagern."
+      ],
+      "dosis": "30 Sekunden halten, 3× wiederholen.",
+      "hinweis": ""
+    },
+    "pf_u4": {
+      "ziel": "Entlastung der Faszie durch Lockerung der Waden.",
+      "schritte": [
+        "Ein Bein hinten gestreckt, das andere vorne gebeugt.",
+        "Beide Fersen bleiben am Boden.",
+        "Die Wand nach vorne drücken."
+      ],
+      "dosis": "30 Sekunden halten, 2–3 Wiederholungen pro Seite.",
+      "hinweis": ""
+    },
+    "pf_u5": {
+      "ziel": "Gewebemobilisierung und Schmerzlinderung, Entspannung (=Detonisierung) der Plantarfaszie.",
+      "schritte": [
+        "Im Sitzen mit dem schmerzenden Fuß über einen Igelball oder eine Faszienrolle rollen.",
+        "Von der Ferse bis zu den Zehen."
+      ],
+      "dosis": "1–2 Minuten pro Fuß. Besonders effektiv ist das Rollen auf einem kalten Igelball oder einer Flasche mit gefrorenem Inhalt, da die Kühlung zusätzlich schmerzlindernd wirkt."
+    },
+    "pf_u6": {
+      "ziel": "Kräftigung der Fußmuskulatur.",
+      "schritte": [
+        "Ein Handtuch auf den Boden legen.",
+        "Mit den Zehen zusammenknautschen und heranziehen."
+      ],
+      "dosis": "1 Minute pro Seite, 1–2 Durchgänge.",
+      "hinweis": ""
+    },
+    "pf_u7": {
+      "ziel": "Aktivierung der kleinen Fußmuskeln (=intrinsische Fußmuskulatur).",
+      "schritte": [
+        "Stehend oder sitzend den Ballen leicht Richtung Ferse ziehen. Dadurch wird der Fuß kürzer und das Gewölbe hebt sich.",
+        "Die Zehen sollen dabei nicht krallen."
+      ],
+      "dosis": "10 Wiederholungen à 5 Sekunden. Hier bedarf es viel Geduld, da die Muskulatur am Anfang oft nicht gut angesteuert werden kann. Die Übung ist aber sehr effektiv für die Fußgesundheit — investieren Sie ausreichend Zeit."
+    },
+    "waden_einleitung": {
+      "intro": "Die Wadenmuskulatur besteht aus dem zweigelenkigen Zwillingswadenmuskel (=M. gastrocnemius, überspringt Knie und Sprunggelenk) und dem darunterliegenden Schollenmuskel (=M. soleus). Ist die Wade verkürzt, ist das Anheben des Fußes (=Dorsalextension) eingeschränkt.",
+      "text": "Eine verkürzte Wade ist sehr häufig und kann zu Mehrbelastung an Ferse, Fußsohle und Vorfuß beitragen. Sie steht unter anderem mit Plantarfasziitis, Knick-Senk-Fuß und Vorfußüberlastung in Zusammenhang.\n\nDehnen verbessert die Beweglichkeit des Sprunggelenks, aber meist nur in kleinem Maß. Es ist ein sinnvoller ergänzender Baustein, keine alleinige Lösung. Der Effekt hält nur an, wenn dauerhaft gedehnt wird.\n\nMit gestrecktem Knie wird vor allem der Zwillingswadenmuskel gedehnt, mit gebeugtem Knie eher der tiefere Schollenmuskel. Beide Varianten gehören dazu.",
+      "quellen": [
+        "Radford et al. 2006",
+        "Patel & DiGiovanni 2011",
+        "Johanson/Dinh et al. 2010",
+        "Medeiros & Martini 2017"
+      ],
+      "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden. In einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017)."
+    },
+    "wd_u1": {
+      "ziel": "Dehnung des zweigelenkigen Zwillingswadenmuskels (=M. gastrocnemius).",
+      "schritte": [
+        "Mit den Händen an einer Wand abstützen.",
+        "Das zu dehnende Bein nach hinten stellen, das vordere Bein beugen.",
+        "Die hintere Ferse bleibt fest am Boden, das hintere Knie bleibt gestreckt.",
+        "Das Becken langsam nach vorne verlagern, bis ein Ziehen in der Wade spürbar ist."
+      ],
+      "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Belastet (im Stand) oder unbelastet ist gleich wirksam. Wählen Sie die für Sie angenehmere Variante."
+    },
+    "wd_u2": {
+      "ziel": "Dehnung des tieferen Schollenmuskels (=M. soleus).",
+      "schritte": [
+        "Gleiche Ausgangsposition wie zuvor an der Wand.",
+        "Das hintere Knie diesmal leicht beugen, die Ferse bleibt am Boden.",
+        "Das Gewicht so verlagern, dass ein tiefes Ziehen tiefer in der Wade entsteht."
+      ],
+      "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Bei Knick-Senk-Fuß das Längsgewölbe schützen (z. B. mit einer Einlage oder einem untergelegten Handtuch an der Innenseite).",
+      "hinweis": ""
+    },
+    "wd_u3": {
+      "ziel": "Alternative Dehnung über die Stufenkante. Diese Variante ist deutlich intensiver als die Dehnung an der Wand. Sie lässt sich mit einer exzentrischen Kräftigung (=Tendoloading) verbinden: Dafür langsam und unter Anspannung aus dem Zehenspitzenstand in die Dehnung absinken.",
+      "schritte": [
+        "Mit dem Vorfuß auf eine Stufe oder einen Keil stellen, sich festhalten.",
+        "Die Ferse langsam und kontrolliert absenken, bis ein Ziehen in der Wade entsteht.",
+        "Für den Zwillingswadenmuskel das Knie gestreckt lassen, für den Schollenmuskel leicht beugen."
+      ],
+      "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen."
+    },
+    "sgi_einleitung": {
+      "intro": "Nach wiederholten Umknickverletzungen kann eine chronische Instabilität (=anhaltendes Unsicherheits- und Wegknickgefühl im Sprunggelenk) entstehen. Häufig bestehen wiederkehrendes Umknicken, ein Gefühl der Unsicherheit und eine Schwellneigung.",
+      "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nDas Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nZum Training nach einer frischen Außenbandverletzung gibt es einige Parallelen. Bei chronischer Instabilität ist eine stufenweise Steigerung der Belastung in der Regel aber nicht sinnvoll, sondern ein dauerhaftes Programm. **Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten.** Bei Schmerzen oder häufigem Wegknicken trotz Training stellen Sie sich bitte ärztlich vor.",
+      "quellen": [
+        "Hupperets et al. 2008"
+      ],
+      "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll."
+    },
+    "sgi_u1": {
+      "ziel": "Stabilisierung von Sprunggelenk und Beinachse unter Belastung.",
+      "schritte": [
+        "Auf einem Bein stehen und langsam in eine kontrollierte Kniebeuge gehen, ohne dass das Knie nach innen fällt.",
+        "Langsam wieder aufrichten."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung, sobald sicher: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+    },
+    "sgi_u2": {
+      "ziel": "Kräftigung der Wadenmuskulatur und Stabilisierung.",
+      "schritte": [
+        "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf erhöhtem Untergrund mit Festhalten → ohne Festhalten."
+    },
+    "sgi_u3": {
+      "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung (=Propriozeption).",
+      "schritte": [
+        "Auf einem Bein stehen und das Gleichgewicht halten."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+    },
+    "sgi_u4": {
+      "ziel": "Dynamische Balance und Koordination der Hüft-Bein-Achse.",
+      "schritte": [
+        "Im Einbeinstand den Rumpf nach vorne neigen und das freie Bein nach hinten strecken (Standwaage-ähnliche Position), Rücken gerade.",
+        "Kontrolliert in die Ausgangsposition zurückkehren."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
+    },
+    "sgi_u5": {
+      "ziel": "Dynamische Stabilität des Sprunggelenks gegen wechselnde Belastung.",
+      "schritte": [
+        "Im Einbeinstand das freie Bein kontrolliert über die Körpermitte zur Gegenseite schwingen und zurück."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: mit Festhalten → ohne Festhalten → mit geschlossenen Augen → auf einem Wackelbrett."
+    },
+    "sgi_u6": {
+      "ziel": "Kräftigung und Stabilisierung über das Sprunggelenk im Gehen.",
+      "schritte": [
+        "Auf den Zehenspitzen gehen."
+      ],
+      "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: gehend → federnd/springend."
+    },
+    "hr_einleitung": {
+      "intro": "Der Hallux rigidus ist ein Verschleiß (=Arthrose) des Großzehengrundgelenks mit zunehmender Einsteifung und Schmerz beim Abrollen. Im Frühstadium (oft „Hallux limitus“ genannt) ist die Beweglichkeit nur teilweise eingeschränkt.",
+      "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen. Übungen sind beim Hallux rigidus nur bedingt möglich, weil die Einsteifung des Gelenks selbst die Bewegung begrenzt.\n\nDie Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
+      "quellen": [
+        "Kunnasegaran & Thevendran 2015",
+        "Brantingham et al. 2009"
+      ],
+      "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose."
+    },
+    "hr_u1": {
+      "ziel": "Erhalt der aktiven Beweglichkeit des Großzehengrundgelenks.",
+      "schritte": [
+        "Im Sitzen den Fuß aufstellen.",
+        "Die Großzehe aktiv langsam nach oben (Richtung Schienbein) und nach unten bewegen, soweit es schmerzarm möglich ist."
+      ],
+      "dosis": "10 ruhige Wiederholungen, 2–3× täglich, im schmerzarmen Bereich. Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
+    },
+    "hr_u2": {
+      "ziel": "Sanfter Erhalt der Gelenkbeweglichkeit durch geführte Bewegung.",
+      "schritte": [
+        "Mit einer Hand den Mittelfuß stabilisieren.",
+        "Mit der anderen Hand die Großzehe sanft fassen und vorsichtig nach oben und unten führen.",
+        "Optional eine leichte Zugbewegung (Traktion) entlang der Zehe."
+      ],
+      "dosis": "1–2 Minuten, 1–2× täglich, sehr sanft. Keine ruckartigen Bewegungen, kein Erzwingen. Bei Schmerzzunahme pausieren."
+    },
+    "hr_u3": {
+      "ziel": "Entlastung des Vorfußes durch Lockerung der Wade.",
+      "schritte": [
+        "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
+      ],
+      "dosis": "",
+      "hinweis": ""
+    },
+    "sga_einleitung": {
+      "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben, zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
+      "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab. Bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden, nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
+      "quellen": [
+        "Witteveen et al. 2015 (Cochrane)",
+        "Paterson et al. 2018"
+      ],
+      "evidenz": "Für konservative Maßnahmen bei Sprunggelenkarthrose ist die Evidenz begrenzt; eine Cochrane-Übersicht fand unzureichende Daten und weist darauf hin, dass sich Empfehlungen für Hüft- und Kniearthrose wegen der anderen Entstehung nicht ohne Weiteres übertragen lassen (Witteveen et al. 2015). Übungen werden in der Praxis ergänzend eingesetzt, hochwertige Studien fehlen jedoch weitgehend."
+    },
+    "sga_u1": {
+      "ziel": "Erhalt der verbliebenen Beweglichkeit im schmerzarmen Bereich.",
+      "schritte": [
+        "Im Sitzen den Fuß langsam auf und ab bewegen (Anheben und Absenken).",
+        "Sanfte kreisende Bewegungen des Fußes, soweit schmerzarm möglich."
+      ],
+      "dosis": "Ruhige Wiederholungen über 1–2 Minuten, 1–2× täglich, im schmerzarmen Bereich. Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
+    },
+    "sga_u2": {
+      "ziel": "Kräftigung der das Sprunggelenk stabilisierenden Muskulatur.",
+      "schritte": [
+        "Beidbeiniger Zehenspitzenstand: langsam auf die Zehenspitzen und wieder herunter, bei Bedarf am Geländer festhalten.",
+        "Optional sanftes Training gegen ein Theraband in verschiedenen Richtungen."
+      ],
+      "dosis": "Mehrere ruhige Wiederholungen, mehrfach pro Woche. Belastung langsam steigern. Bei Schmerzen reduzieren."
+    },
+    "sga_u3": {
+      "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung, besonders bei Instabilitätskomponente.",
+      "schritte": [
+        "Einbeinstand, bei Bedarf mit Festhalten.",
+        "Wenn der Einbeinstand sicher gelingt, steigern: zeitweise die Augen schließen oder langsam in eine leichte Kniebeuge gehen und wieder aufrichten."
+      ],
+      "dosis": "Mehrere Haltezeiten, mehrfach pro Woche. Nur in sicherem Umfeld mit Festhaltemöglichkeit. Steigerung nur, wenn sicher und schmerzarm."
+    }
+  },
+  "NONOP_STUFEN": {
+    "aussenband_stufen": [
+      {
+        "id": "stufe1",
+        "stufe": 1,
+        "tagOffset": 0,
+        "titel": "Return to daily life",
+        "zeitfenster": "Tag 1–7 nach dem Unfall",
+        "emoji": "🧊",
+        "erinnerung": "taeglich",
+        "optional": false,
+        "inhalt": "aussenband_stufe1"
+      },
+      {
+        "id": "stufe2",
+        "stufe": 2,
+        "tagOffset": 7,
+        "titel": "Return to activity",
+        "zeitfenster": "Woche 1–6 nach dem Unfall",
+        "emoji": "🚶",
+        "erinnerung": "mehrmals_woche",
+        "optional": false,
+        "inhalt": "aussenband_stufe2"
+      },
+      {
+        "id": "stufe3",
+        "stufe": 3,
+        "tagOffset": 35,
+        "titel": "Return to sport",
+        "zeitfenster": "ab Woche 6, Langzeitübungen übers 1. Jahr",
+        "emoji": "🏃",
+        "erinnerung": "3x_woche_30min",
+        "optional": false,
+        "inhalt": "aussenband_stufe3"
+      },
+      {
+        "id": "stufe4",
+        "stufe": 4,
+        "tagOffset": 90,
+        "titel": "Return to play",
+        "zeitfenster": "ab ca. Monat 3 (Sportler)",
+        "emoji": "⚽",
+        "erinnerung": "sportabhaengig",
+        "optional": true,
+        "inhalt": "aussenband_stufe4"
+      },
+      {
+        "id": "stufe5",
+        "stufe": 5,
+        "tagOffset": 180,
+        "titel": "Return to competition",
+        "zeitfenster": "individuell (Sportler)",
+        "emoji": "🏆",
+        "erinnerung": "keine",
+        "optional": true,
+        "inhalt": "aussenband_stufe5"
+      }
     ],
-    "psychologisch": "Die psychologische Bereitschaft zur Wiederaufnahme der (leistungssportlichen) Belastung kann in einem Fragebogen geprüft werden (Sigonney et al. 2020), z. B. CAIT, FAAM oder I-PRRS."
-   }
+    "achillo_mid_stufen": [
+      {
+        "id": "mid1",
+        "stufe": 1,
+        "titel": "Isometrisches Halten",
+        "emoji": "⏸️",
+        "optional": false,
+        "inhalt": "achillo_mid_s1"
+      },
+      {
+        "id": "mid2",
+        "stufe": 2,
+        "titel": "Beidbeinige Wadenhebung",
+        "emoji": "🦶",
+        "optional": false,
+        "inhalt": "achillo_mid_s2"
+      },
+      {
+        "id": "mid3",
+        "stufe": 3,
+        "titel": "Einbeinig / Heavy Slow Resistance",
+        "emoji": "🏋️",
+        "optional": false,
+        "inhalt": "achillo_mid_s3"
+      },
+      {
+        "id": "mid4",
+        "stufe": 4,
+        "titel": "Exzentrik mit Zusatzlast",
+        "emoji": "⬇️",
+        "optional": false,
+        "inhalt": "achillo_mid_s4"
+      },
+      {
+        "id": "mid5",
+        "stufe": 5,
+        "titel": "Plyometrie / Rückkehr zu Sport",
+        "emoji": "🤸",
+        "optional": false,
+        "inhalt": "achillo_mid_s5"
+      }
+    ],
+    "achillo_ins_stufen": [
+      {
+        "id": "ins1",
+        "stufe": 1,
+        "titel": "Isometrisches Halten",
+        "emoji": "⏸️",
+        "optional": false,
+        "inhalt": "achillo_ins_s1"
+      },
+      {
+        "id": "ins2",
+        "stufe": 2,
+        "titel": "Beidbeinige Wadenhebung (bis Neutralstellung)",
+        "emoji": "🦶",
+        "optional": false,
+        "inhalt": "achillo_ins_s2"
+      },
+      {
+        "id": "ins3",
+        "stufe": 3,
+        "titel": "Einbeinig / Heavy Slow Resistance (bis Neutralstellung)",
+        "emoji": "🏋️",
+        "optional": false,
+        "inhalt": "achillo_ins_s3"
+      },
+      {
+        "id": "ins4",
+        "stufe": 4,
+        "titel": "Kräftigung mit Zusatzlast (bis Neutralstellung)",
+        "emoji": "💪",
+        "optional": false,
+        "inhalt": "achillo_ins_s4"
+      },
+      {
+        "id": "ins5",
+        "stufe": 5,
+        "titel": "Plyometrie / Rückkehr zu Sport",
+        "emoji": "🤸",
+        "optional": false,
+        "inhalt": "achillo_ins_s5"
+      }
+    ],
+    "ksf_uebungen": [
+      {
+        "id": "ksf1",
+        "nr": 1,
+        "titel": "Haltekraft des hinteren Schienbeinmuskels",
+        "emoji": "💪",
+        "inhalt": "ksf_u1"
+      },
+      {
+        "id": "ksf2",
+        "nr": 2,
+        "titel": "Spiraldynamik",
+        "emoji": "🌀",
+        "inhalt": "ksf_u2"
+      },
+      {
+        "id": "ksf3",
+        "nr": 3,
+        "titel": "Fußsohle zusammenziehen (Short-Foot)",
+        "emoji": "🦶",
+        "inhalt": "ksf_u3"
+      },
+      {
+        "id": "ksf4",
+        "nr": 4,
+        "titel": "Dehnung der Achillessehne",
+        "emoji": "📐",
+        "inhalt": "ksf_u4"
+      },
+      {
+        "id": "ksf5",
+        "nr": 5,
+        "titel": "Hüftabduktoren & Außenrotatoren",
+        "emoji": "🍑",
+        "inhalt": "ksf_u5"
+      },
+      {
+        "id": "ksf6",
+        "nr": 6,
+        "titel": "Barfußlaufen",
+        "emoji": "👣",
+        "inhalt": "ksf_u6"
+      }
+    ],
+    "hv_uebungen": [
+      {
+        "id": "hv0",
+        "nr": 1,
+        "titel": "Vorbereitung: Massage",
+        "emoji": "🤲",
+        "inhalt": "hv_u0"
+      },
+      {
+        "id": "hv1",
+        "nr": 2,
+        "titel": "Zehengreifen",
+        "emoji": "✊",
+        "inhalt": "hv_u1"
+      },
+      {
+        "id": "hv2",
+        "nr": 3,
+        "titel": "Halteübungen",
+        "emoji": "💪",
+        "inhalt": "hv_u2"
+      },
+      {
+        "id": "hv3",
+        "nr": 4,
+        "titel": "Dehnung des Großzehen-Anziehers",
+        "emoji": "📐",
+        "inhalt": "hv_u3"
+      },
+      {
+        "id": "hv4",
+        "nr": 5,
+        "titel": "Abspreizen der Großzehe",
+        "emoji": "👍",
+        "inhalt": "hv_u4"
+      },
+      {
+        "id": "hv5",
+        "nr": 6,
+        "titel": "Spiraldynamik",
+        "emoji": "🌀",
+        "inhalt": "hv_u5"
+      },
+      {
+        "id": "hv6",
+        "nr": 7,
+        "titel": "Fußsohle zusammenziehen (Short-Foot)",
+        "emoji": "🦶",
+        "inhalt": "hv_u6"
+      },
+      {
+        "id": "hv7",
+        "nr": 8,
+        "titel": "Dehnung der Achillessehne",
+        "emoji": "📏",
+        "inhalt": "hv_u7"
+      }
+    ],
+    "pf_uebungen": [
+      {
+        "id": "pf1",
+        "nr": 1,
+        "titel": "Sanfte Dehnung im Sitzen",
+        "emoji": "🤚",
+        "inhalt": "pf_u1"
+      },
+      {
+        "id": "pf2",
+        "nr": 2,
+        "titel": "Plantarfaszie-Dehnung im Sitzen",
+        "emoji": "🦶",
+        "inhalt": "pf_u2"
+      },
+      {
+        "id": "pf3",
+        "nr": 3,
+        "titel": "Dehnung der Faszie an der Wand",
+        "emoji": "🧱",
+        "inhalt": "pf_u3"
+      },
+      {
+        "id": "pf4",
+        "nr": 4,
+        "titel": "Waden- und Achillessehnendehnung an der Wand",
+        "emoji": "📏",
+        "inhalt": "pf_u4"
+      },
+      {
+        "id": "pf5",
+        "nr": 5,
+        "titel": "Fasziendehnung unter dem Fuß",
+        "emoji": "⚪",
+        "inhalt": "pf_u5"
+      },
+      {
+        "id": "pf6",
+        "nr": 6,
+        "titel": "Zehengreifen mit Handtuch",
+        "emoji": "✊",
+        "inhalt": "pf_u6"
+      },
+      {
+        "id": "pf7",
+        "nr": 7,
+        "titel": "Short-Foot-Übung",
+        "emoji": "🦵",
+        "inhalt": "pf_u7"
+      }
+    ],
+    "waden_uebungen": [
+      {
+        "id": "wd1",
+        "nr": 1,
+        "titel": "Zwillingswadenmuskel dehnen (Knie gestreckt)",
+        "emoji": "",
+        "inhalt": "wd_u1"
+      },
+      {
+        "id": "wd2",
+        "nr": 2,
+        "titel": "Schollenmuskel dehnen (Knie gebeugt)",
+        "emoji": "",
+        "inhalt": "wd_u2"
+      },
+      {
+        "id": "wd3",
+        "nr": 3,
+        "titel": "Dehnung auf einer Stufe",
+        "emoji": "",
+        "inhalt": "wd_u3"
+      }
+    ],
+    "sgi_uebungen": [
+      {
+        "id": "sgi1",
+        "nr": 1,
+        "titel": "Einbeinige Kniebeuge",
+        "emoji": "",
+        "inhalt": "sgi_u1"
+      },
+      {
+        "id": "sgi2",
+        "nr": 2,
+        "titel": "Beidbeiniger Zehenspitzenstand",
+        "emoji": "",
+        "inhalt": "sgi_u2"
+      },
+      {
+        "id": "sgi3",
+        "nr": 3,
+        "titel": "Einbeinstand",
+        "emoji": "",
+        "inhalt": "sgi_u3"
+      },
+      {
+        "id": "sgi4",
+        "nr": 4,
+        "titel": "Läuferpose",
+        "emoji": "",
+        "inhalt": "sgi_u4"
+      },
+      {
+        "id": "sgi5",
+        "nr": 5,
+        "titel": "Überkreuzschwung der Beine",
+        "emoji": "",
+        "inhalt": "sgi_u5"
+      },
+      {
+        "id": "sgi6",
+        "nr": 6,
+        "titel": "Zehenspitzengang",
+        "emoji": "",
+        "inhalt": "sgi_u6"
+      }
+    ],
+    "hr_uebungen": [
+      {
+        "id": "hr1",
+        "nr": 1,
+        "titel": "Beweglichkeit des Großzehengrundgelenks",
+        "emoji": "",
+        "inhalt": "hr_u1"
+      },
+      {
+        "id": "hr2",
+        "nr": 2,
+        "titel": "Sanfte Mobilisation mit der Hand",
+        "emoji": "",
+        "inhalt": "hr_u2"
+      },
+      {
+        "id": "hr3",
+        "nr": 3,
+        "titel": "Dehnung der Wade",
+        "emoji": "",
+        "inhalt": "hr_u3"
+      }
+    ],
+    "sga_uebungen": [
+      {
+        "id": "sga1",
+        "nr": 1,
+        "titel": "Beweglichkeit des Sprunggelenks erhalten",
+        "emoji": "",
+        "inhalt": "sga_u1"
+      },
+      {
+        "id": "sga2",
+        "nr": 2,
+        "titel": "Kräftigung der stabilisierenden Muskulatur",
+        "emoji": "",
+        "inhalt": "sga_u2"
+      },
+      {
+        "id": "sga3",
+        "nr": 3,
+        "titel": "Gleichgewicht und Tiefenwahrnehmung",
+        "emoji": "",
+        "inhalt": "sga_u3"
+      }
+    ]
   },
-  "aussenband_stufe5": {
-   "text": "Die Wiederaufnahme des Wettkampfbetriebs stellt eine individuelle sportmedizinische Entscheidung je nach Niveau und Sportart dar. Während des Wettkampfs ist eine externe Stabilisierung mit Orthese oder Tape in den ersten 6–12 Monaten nach dem Trauma sinnvoll."
-  },
-  "aussenband_abklaerung": {
-   "titel": "Ärztliche Abklärung – und wann ein Röntgen sinnvoll ist",
-   "intro": "Jede frische Außenbandverletzung sollte ärztlich abgeklärt werden — unabhängig von den folgenden Hinweisen.\n\nDie folgenden Kriterien helfen nur einzuschätzen, wann zusätzlich ein Röntgenbild sinnvoll ist, um einen Knochenbruch (=Fraktur) auszuschließen. Sie orientieren sich an den Ottawa Ankle Rules — einer international etablierten, wissenschaftlich validierten Entscheidungshilfe, die zuverlässig erkennt, ob ein Knochenbruch wahrscheinlich ist. In Studien erreichte sie eine Sensitivität (=Trefferquote beim Erkennen von Brüchen) von nahezu 100 % (Stiell et al. 1993; Bachmann et al. 2003).",
-   "aufforderung": "Ein Röntgenbild ist besonders sinnvoll, wenn eines der folgenden Zeichen vorliegt (bitte bei der ärztlichen Vorstellung ansprechen):",
-   "kriterien": [
-    "Sie können den Fuß direkt nach der Verletzung nicht belasten (keine vier Schritte möglich)",
-    "Druckschmerz direkt am Knochen des Außen- oder Innenknöchels (hinterer Rand oder Spitze)",
-    "Druckschmerz an der Basis des 5. Mittelfußknochens (tastbarer Höcker am äußeren Fußrand)",
-    "Druckschmerz am Kahnbein (=Os naviculare, am inneren Mittelfuß)"
-   ],
-   "warnzeichen": "Zusätzliche Warnzeichen (nicht Teil der Ottawa-Regeln): zunehmende statt abnehmende Schwellung oder Schmerzen, Taubheitsgefühl, sichtbare Fehlstellung, offene Wunde oder Fieber.",
-   "hinweis": "Im Zweifel gilt: lieber einmal mehr ärztlich vorstellen.",
-   "studienlage": "Die Ottawa Ankle Rules wurden in einer prospektiven Validierungsstudie mit 100 % Sensitivität für Knöchel- und Mittelfußfrakturen bestätigt und können die Zahl unnötiger Röntgenaufnahmen um rund ein Drittel senken (Stiell et al. 1993). Eine systematische Übersicht über 27 Studien mit 15.581 Patienten bestätigte die nahezu 100%ige Sensitivität zum Ausschluss von Brüchen (Bachmann et al. 2003)."
-  },
-  "achillo_gate": {
-   "titel": "Voraussetzung: gesicherte ärztliche Diagnose",
-   "text": "Dieses Programm setzt voraus, dass die Ursache Ihrer Beschwerden ärztlich abgeklärt und die Diagnose einer Achillessehnen-Reizung (=Tendinopathie) gestellt wurde — einschließlich der Einordnung, ob es sich um die mittlere Form (=Mid-Portion) oder die ansatznahe Form (=insertionell) handelt. Welcher Trainingspfad für Sie geeignet ist, legt Ihre Ärztin oder Ihr Arzt fest. Bitte beginnen Sie erst, wenn diese Zuordnung erfolgt ist.",
-   "bestaetigung": "Die Diagnose und der passende Pfad wurden ärztlich festgelegt"
-  },
-  "achillo_mid_einleitung": {
-   "intro": "Bei der Mid-Portion-Tendinopathie sitzt die Reizung im mittleren Abschnitt der Achillessehne, einige Zentimeter über dem Fersenbein.",
-   "text": "Das Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
-   "quellen": [
-    "Martin RL et al. 2018 (JOSPT Clinical Practice Guideline)",
-    "Chimenti RL et al. 2024",
-    "Prudêncio DA et al. 2023",
-    "Maetz R et al. 2023",
-    "Praet SFE et al. 2019"
-   ],
-   "evidenz": "Das dosierte Belastungstraining der Sehne gehört bei der mittleren Form zu den am besten untersuchten Maßnahmen. Systematische Übersichtsarbeiten zeigen, dass exzentrisches Training anderen Übungsformen überlegen ist (Prudêncio et al. 2023) und dass Belastungsprotokolle besser abschneiden als passive Behandlungen (Maetz et al. 2023). Die Leitlinie der amerikanischen Physiotherapie-Fachgesellschaft empfiehlt Belastungstraining als zentrale Maßnahme (Martin et al. 2018, aktualisiert Chimenti et al. 2024). Zu Dauer und genauer Dosierung gibt es keine einheitliche Empfehlung."
-  },
-  "achillo_ins_einleitung": {
-   "intro": "Bei der ansatznahen Form sitzt die Reizung direkt am Übergang der Achillessehne zum Fersenbein.",
-   "text": "An der Achillessehne gibt es zwei verschiedene Beschwerdebilder: die ansatznahe Form am Fersenbein und die Mid-Portion-Tendinopathie im mittleren Sehnenabschnitt. Die nicht-operativen Behandlungskonzepte ähneln sich stark, es gibt aber einige Ausnahmen. Der wichtigste Unterschied betrifft die Ferse: Sie wird bei der ansatznahen Form nicht unter die Stufenkante abgesenkt. Wird der Sehnenansatz zu stark gedehnt, drückt er gegen den Knochen und der Schmerz nimmt zu. Alle Übungen enden daher in der Neutralstellung (Fuß flach / Ferse auf Bodenhöhe).\n\nDas Training belastet die Sehne gezielt und dosiert, um sie zu kräftigen und den Umbau anzuregen. Dieses Vorgehen wird als **Tendoloading** bezeichnet.\n\nWichtig ist Geduld: Sehnen reagieren langsam, ein spürbarer Effekt braucht oft mehrere Monate.\n\nDas Training ist in verschiedenen Stufen aufgebaut, die je nach Schmerzintensität beim Training durchgeführt werden. Sie bewegen sich auf den Stufen nach Ihren Beschwerden auf und ab, feste Zeitvorgaben gibt es nicht. Die Ampel hilft Ihnen einzuschätzen, ob Sie steigern, halten oder zurückgehen sollten.",
-   "quellen": [
-    "Sivrika AP et al. 2023",
-    "Jarin IJ et al. 2021",
-    "Zhi X et al. 2021",
-    "von Rickenbach KJ et al. 2021"
-   ],
-   "evidenz": "Für die ansatznahe Form ist die Datenlage schwächer als für die mittlere. Systematische Übersichtsarbeiten zur nicht-operativen Behandlung beschreiben überwiegend günstige Verläufe, die Studien sind aber uneinheitlich und eine eindeutig überlegene Übungsform lässt sich nicht ableiten (Zhi et al. 2021, Jarin et al. 2021, Sivrika et al. 2023). Die Begrenzung der Übungen auf die Neutralstellung ist in Übersichtsarbeiten zur Rehabilitation der Achillessehne beschrieben (von Rickenbach et al. 2021)."
-  },
-  "achillo_mid_s1": {
-   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. An der Achillessehne ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt. Wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
-   "uebungen": [
-    {
-     "titel": "Isometrisches Halten im Stand",
-     "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern."
-    },
-    {
-     "titel": "Halten gegen die Spannung eines Therabandes",
-     "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
+  "NONOP_AMPEL": {
+    "achillo_ampel": {
+      "grundregel": "Ein Schmerz bis etwa 5 von 10 ist beim Sehnentraining erlaubt, solange er bis zum nächsten Morgen abklingt und die Morgensteifigkeit nicht von Woche zu Woche zunimmt.",
+      "stufen": [
+        {
+          "farbe": "gruen",
+          "emoji": "🟢",
+          "label": "Grün",
+          "bedeutung": "Schmerz ≤ 5/10 bei und nach Belastung, am nächsten Morgen abgeklungen, keine zunehmende Morgensteifigkeit.",
+          "empfehlung": "Gut so. Wenn die Stufe sicher sitzt, können Sie die nächste Stufe erwägen."
+        },
+        {
+          "farbe": "gelb",
+          "emoji": "🟡",
+          "label": "Gelb",
+          "bedeutung": "Schmerz um 5/10, morgens noch spürbar, aber rückläufig.",
+          "empfehlung": "Bleiben Sie auf dieser Stufe, noch nicht steigern."
+        },
+        {
+          "farbe": "rot",
+          "emoji": "🔴",
+          "label": "Rot",
+          "bedeutung": "Schmerz > 5/10 oder Morgensteifigkeit nimmt von Woche zu Woche zu.",
+          "empfehlung": "Gehen Sie eine Stufe zurück, bis es sich beruhigt."
+        }
+      ]
     }
-   ]
-  },
-  "achillo_mid_s2": {
-   "was": "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter. Die volle Bewegung ist erlaubt; beim Absenken darf die Ferse leicht unter Stufenniveau sinken.",
-   "dosis": "3 Sätze × 15 Wiederholungen, Tempo 3 Sekunden hoch / 3 Sekunden runter, täglich."
-  },
-  "achillo_mid_s3": {
-   "was": "Auf einem Bein langsame Wadenhebung, wahlweise mit Zusatzgewicht (Rucksack, Gerät, Langhantel). Als Orientierung für die Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind, die Ausführung aber sauber bleibt.",
-   "dosis": "3–4 Sätze, Tempo 3 s hoch / 3 s runter, 3×/Woche. Wiederholungen sinken von 15 → 6, während das Gewicht steigt."
-  },
-  "achillo_mid_s4": {
-   "was": "Auf der Stufe stehend mit dem gesunden Bein hochkommen, das langsame Absenken nur mit dem betroffenen Bein — die Ferse dabei unter die Stufenkante absenken. Mit gestrecktem und mit gebeugtem Knie. Die Last wird mit Rucksack oder Gewicht gesteigert, sobald es ohne wesentlichen Schmerz geht.",
-   "dosis": "3 Sätze × 15 Wiederholungen, 2×/Tag, täglich (gestreckt + gebeugt = insgesamt 180 Absenkungen/Tag)."
-  },
-  "achillo_mid_s5": {
-   "was": "Federnde, schnellere Belastung (Hüpfen, Seilspringen, sportartspezifische Sprünge/Läufe).",
-   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
-  },
-  "achillo_ins_s1": {
-   "dosis": "5 Wiederholungen × 45 Sekunden halten, 2–3 Minuten Pause, 1–2×/Tag. Dient nur dem Einstieg bei sehr reizbarer Sehne. An der Achillessehne ist die schmerzlindernde Wirkung wissenschaftlich nicht sicher belegt. Wenn es nicht hilft, direkt mit Stufe 2 beginnen.",
-   "uebungen": [
-    {
-     "titel": "Isometrisches Halten im Stand",
-     "text": "Im Stand auf dem Vorfuß (beidbeinig) die Wadenspannung aufbauen und halten, ohne die Position zu verändern. Die Ferse wird dabei nicht abgesenkt."
-    },
-    {
-     "titel": "Halten gegen die Spannung eines Therabandes",
-     "text": "Ein Theraband um den Vorfuß legen und mit der Hand auf Spannung bringen. Den Fuß gegen diesen Zug nach unten drücken und die Spannung halten, ohne den Fuß zu bewegen. Im Sitzen möglich und dadurch gut dosierbar."
-    }
-   ]
-  },
-  "achillo_ins_s2": {
-   "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
-   "dosis": "3 × 15, Tempo 3 s / 3 s, täglich. Keine Dehnung unter Bodenhöhe."
-  },
-  "achillo_ins_s3": {
-   "was": "Einbeinige Wadenhebung bzw. mit Gewicht, Bewegung nur bis Neutralstellung, keine Dehnung unter Bodenhöhe.",
-   "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last. Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
-  },
-  "achillo_ins_s4": {
-   "was": "Kräftigung mit Gewicht, gestreckt und gebeugt, ohne Absenken unter die Stufenkante.",
-   "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag). Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
-  },
-  "achillo_ins_s5": {
-   "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",
-   "dosis": "Sportartabhängig, langsam aufbauend. Voraussetzung: Stufe 4 schmerzarm und sicher, kein Anstieg der Morgensteifigkeit. Diese Stufe sollte nur unter Begleitung einer Physiotherapeutin oder eines Physiotherapeuten beziehungsweise einer Sportwissenschaftlerin oder eines Sportwissenschaftlers erfolgen."
-  },
-  "ksf_einleitung": {
-   "intro": "Der Knick-Senk-Fuß ist eine komplexe Fehlstellung mit Instabilität im Rückfuß, Einsinken des Längsgewölbes und fehlender Stabilisierung des Mittelfußes beim Abrollen.",
-   "text": "Dabei werden die aktiven und passiven Stabilisatoren am Rückfuß überlastet. Dazu zählen die Sehne des hinteren Schienbeinmuskels (=Tibialis posterior), das Innenband und das Pfannenband (=Spring Ligament) sowie die Mittel- und Rückfußgelenke. Die Stabilisierung des Fußes entsteht durch ein biomechanisches Zusammenspiel einer Muskel-Faszien-Kette von der Becken- und Hüftmuskulatur bis zu den kleinen Fußmuskeln.\n\nEine nicht-operative Therapie mit **aktiver Beteiligung ist wirksamer** als rein passive Maßnahmen allein. Klassisch passive Maßnahmen wie Einlagen können die Beschwerden lindern. Übungen zur Kräftigung der entsprechenden Muskeln und zur Schulung der Tiefenwahrnehmung (=Propriozeption) können Funktion und Beschwerden verbessern, vorausgesetzt sie werden regelmäßig und dauerhaft durchgeführt.\n\nEine echte Korrektur der knöchernen Fehlstellung ist beim ausgewachsenen Fuß nicht zu erwarten. Realistisches Ziel ist eine Verbesserung von Beschwerden und Funktion, nicht eine Begradigung des Fußes. Die Übungen sind besonders wirksam, wenn sie mit aktivem Training der Hüft-Außenrotatoren und -Abduktoren kombiniert werden.",
-   "quellen": [
-    "Hoang et al. 2021",
-    "Elsayed et al. 2023",
-    "Jia et al. 2024"
-   ],
-   "evidenz": "Ein Training der Fußmuskulatur über mehrere Wochen bessert Beschwerden und Funktion und gilt beim symptomatischen flexiblen Knick-Senk-Fuß als Behandlung der Wahl (Hoang et al. 2021, Elsayed et al. 2023, Jia et al. 2024). Für einzelne physiotherapeutische Techniken besteht dagegen keine hochwertige Evidenz, was auch an den sehr unterschiedlichen Methoden und Patientengruppen in den Studien liegt. Die Übungen zielen auf Beschwerden und Stabilität, nicht auf eine Begradigung der Fehlstellung."
-  },
-  "ksf_u1": {
-   "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
-   "schritte": [
-    "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in einwärtsgedrehter Position gegen den Zug eines Therabands von außen. Danach langsames, kontrolliertes (=exzentrisches) Führen des Fußes nach außen.",
-    "Einen Ball zwischen beiden Vorfüßen halten, aus der sitzenden Position anheben und zusammenpressen."
-   ],
-   "dosis": "Jeweils 5 Sekunden halten, 10 Wiederholungen. Die langsame Auswärtsbewegung gegen Widerstand (exzentrisch) ist besonders wichtig."
-  },
-  "ksf_u2": {
-   "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
-   "schritte": [
-    "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
-    "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
-   ],
-   "dosis": "Ruhig und kontrolliert, mehrere Wiederholungen pro Seite.",
-   "hinweis": ""
-  },
-  "ksf_u3": {
-   "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln (=intrinsische Muskulatur).",
-   "schritte": [
-    "Fuß flach absetzen und den Vorfußballen in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen, ohne dass die Zehen krallen.",
-    "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
-   ],
-   "dosis": "Mehrere Wiederholungen, ohne Krallen der Zehen. Diese Short-Foot-Übung gilt als Kernübung und ist wissenschaftlich am besten untersucht."
-  },
-  "ksf_u4": {
-   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann zur Instabilität des Längsgewölbes beitragen.",
-   "schritte": [
-    "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
-   ],
-   "dosis": "",
-   "hinweis": ""
-  },
-  "ksf_u5": {
-   "ziel": "Kräftigung der Gesäßmuskulatur (=Glutealmuskulatur). Sie stabilisiert die Beinachse und entlastet so das Fußgewölbe.",
-   "schritte": [
-    "Ein Theraband um die Oberschenkel knapp oberhalb der Knie legen.",
-    "Version 1: Auf den Rücken legen, Füße hüftbreit aufstellen, das Becken anheben und dabei die Knie nach außen gegen das Band drücken.",
-    "Version 2: In Seitenlage das Band um die Knie legen und das obere Knie anheben, sodass die Hüfte nach außen rotiert."
-   ],
-   "dosis": "Mehrere Wiederholungen pro Seite, kontrolliert. Die Kombination der Fußübungen mit diesem Hüfttraining steigert die Wirksamkeit nachweislich (Jia et al. 2024)."
-  },
-  "ksf_u6": {
-   "ziel": "Allgemeine Aktivierung der kleinen Fußmuskeln und Schulung der Tiefenwahrnehmung (=Sensomotorik).",
-   "schritte": [
-    "Barfußlaufen, wann immer möglich, auf natürlichem Untergrund.",
-    "Im Urlaub im Sand oder im Garten auf dem Rasen."
-   ],
-   "dosis": "Regelmäßig, langsam steigern. Langsam aufbauen, um Überlastungen zu vermeiden."
-  },
-  "hv_einleitung": {
-   "intro": "Beim Hallux valgus (=Schiefstand der Großzehe, „Ballenzeh“) bestehen wie bei jeder chronischen Erkrankung des Bewegungsapparates nicht-operative und operative Optionen. Vor einer Operation sollten alternative Maßnahmen probiert werden.",
-   "text": "Viele Standardmaßnahmen (Einlagen, Zehenspreizer, Schuhzurichtung) können die Fehlstellung selbst nicht verändern, sondern wirken vor allem symptomatisch. Das hat durchaus Bedeutung. Gerade bei milden bis moderaten Fehlstellungen jüngerer Menschen besteht aber verständlicherweise der Wunsch, das Fortschreiten zu verlangsamen.\n\nÜber die Jahre haben sich Übungen herauskristallisiert, die aus anatomischer und funktioneller Sicht sinnvoll erscheinen. Ob sich damit eine Fehlstellung tatsächlich beeinflussen lässt, ist wissenschaftlich weiterhin offen; es besteht die berechtigte Hoffnung, dass wenigstens das Fortschreiten entschleunigt werden kann.\n\nZiel der Übungen ist vor allem die Stärkung der „kleinen Fußmuskeln“ (=intrinsische Fußmuskulatur). Bei dieser Gruppe liegen Muskelbäuche und Sehnen im Fuß selbst, nicht im Unterschenkel. Diese Muskeln sind durch modernes Schuhwerk und glatte Böden häufig unterfordert. Sie sind ähnlich wie an der Hand für Feinmotorik und „Griffkraft“ des Fußes zuständig.\n\nDas Programm ist eine komplikationsfreie Hilfe zur Selbsthilfe. Es dient eher der Verbesserung von Funktion und der Verringerung von Schmerzen als der Rückbildung der Fehlstellung. Selbst wenn später eine Operation nötig wird, ist der Fuß durch die Übungen besser vorbereitet, und sie können in der Rehabilitation weitergeführt werden.",
-   "quellen": [
-    "Mortka & Lisiński 2015",
-    "Kim et al. 2013",
-    "Mortka et al. 2020",
-    "Liu et al. 2024"
-   ],
-   "evidenz": "In EMG-Messungen ließ sich zeigen, dass der zentrale Großzehen-Abspreizer (=M. abductor hallucis) durch Abspreizübungen tatsächlich aktiviert werden kann (Kim et al. 2013) und dass die Ansteuerung dieses Muskels trainierbar ist (Mortka et al. 2020). In einer kleinen Pilotstudie mit 13 jugendlichen Tanzsportlerinnen sank nach 4 Wochen Training der fotografisch gemessene Hallux-Winkel im Durchschnitt. Ob dieser Effekt langfristig erhalten bleibt, ist nicht bekannt (Liu et al. 2024). Insgesamt ist die Datenlage gering und kaum auf den Alltag der einzelnen Patientin oder des einzelnen Patienten übertragbar."
-  },
-  "hv_u0": {
-   "ziel": "Lockerung des Fußes vor dem Üben.",
-   "schritte": [
-    "Ausstreichen der Fußsohle.",
-    "Querdehnung des Fußrückens."
-   ],
-   "dosis": "Als angenehme, risikoarme Vorbereitung vor den Übungen. Die Massage ist eine Vorbereitung und dient der Lockerung, sie ersetzt die Übungen nicht."
-  },
-  "hv_u1": {
-   "ziel": "Stärkung der kleinen Zehenbeuger (=intrinsische Zehenbeuger).",
-   "schritte": [
-    "Mit den Zehen eine Kugel greifen und 10× von links nach rechts legen.",
-    "Einen Schnürsenkel oder ein kleines Band mit den Zehen aufnehmen und nacheinander die Buchstaben Ihres Vor- und Nachnamens formen."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen. Diese Übung ist beim Hallux valgus besonders wichtig. Es kann einige Zeit dauern, bis der Muskel auf die Anspannungsimpulse gut koordiniert reagiert. Hier ist Geduld gefragt.",
-   "hinweis": ""
-  },
-  "hv_u2": {
-   "ziel": "Kräftigung der einwärtsdrehenden (=invertierenden) Muskulatur und Modellierung des Fußgewölbes.",
-   "schritte": [
-    "Isometrische Anspannung (=Anspannung ohne Bewegung) des Fußes in neutraler Position gegen den Zug eines Therabands von außen.",
-    "Einen Ball zwischen beiden Füßen halten, aus der sitzenden Position anheben und 5 Sekunden zusammenpressen; 10 Wiederholungen."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
-   "hinweis": ""
-  },
-  "hv_u3": {
-   "ziel": "Dehnung des beim Hallux valgus häufig verkürzten Großzehen-Anziehers (=M. adductor hallucis).",
-   "schritte": [
-    "Ein Theraband über beide Großzehen ziehen und die Großzehen sanft auseinanderführen (passive Dehnung)."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
-   "hinweis": ""
-  },
-  "hv_u4": {
-   "ziel": "Ansteuerung und Kräftigung des Großzehen-Abspreizers (=M. abductor hallucis, der die Großzehe von der 2. Zehe wegzieht).",
-   "schritte": [
-    "Im Sitzen den Fuß flach absetzen.",
-    "Im Wechsel die Zehen krallen und die Großzehe abspreizen."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen."
-  },
-  "hv_u5": {
-   "ziel": "Üben einer gut koordinierten Modellierung von Fußgewölbe und Beinachse.",
-   "schritte": [
-    "Beidbeiniger Stand in leichter Kniebeuge, ein Theraband um die Beine etwas oberhalb der Knie. Die Knie nach außen gegen den Druck des Bandes anspannen.",
-    "Sitzende Position, Fuß auf die Außenkante ablegen. Ein Theraband um den Vorfuß legen, die Ferse mit einer Hand in eingedrehter Position fixieren. Den Vorfuß gegen den Widerstand des Bandes gegendrehen."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
-   "hinweis": ""
-  },
-  "hv_u6": {
-   "ziel": "Aktivierung des Fußgewölbes und der kleinen Fußmuskeln.",
-   "schritte": [
-    "Fuß flach absetzen und Ballen und Großzehe in Richtung Ferse ziehen. Dabei soll sich das Fußgewölbe aufbauen.",
-    "„Raupengang“: Im Sitzen den Fuß abstellen. Der Fuß arbeitet sich am Boden schrittweise nach vorne, indem Vorfuß und Großzehe sich bei festem Bodenkontakt maximal anziehen und so die Ferse nachziehen."
-   ],
-   "dosis": "Jede Übung ca. 10 Wiederholungen, bzw. bis ein Ermüdungseffekt auftritt. Die Übungen können nacheinander absolviert werden; für einen Trainingseffekt den ganzen Durchlauf 3–4× wiederholen.\n\nWichtig ist die Regelmäßigkeit auf Dauer, nicht das einmalige Verausgaben. Bei zu großem Umfang kann auch jeden 2.–3. Tag im Wechsel eine Hälfte des Durchgangs erfolgen.",
-   "hinweis": ""
-  },
-  "hv_u7": {
-   "ziel": "Dehnung der bei vielen Patientinnen und Patienten verkürzten Wadenmuskulatur. Eine verkürzte Wade kann vor allem bei gleichzeitigem Knick-Senk-Fuß zur Instabilität des Längsgewölbes und zur Dezentrierung des 1. Mittelfußknochens beitragen.",
-   "schritte": [
-    "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
-   ],
-   "dosis": "",
-   "hinweis": ""
-  },
-  "pf_einleitung": {
-   "intro": "Bei der Plantarfasziitis kommt es zu einer verschleiß- und überlastungsbedingten Schädigung der Plantarfaszie (=bindegewebige Sehnenplatte der Fußsohle) mit häufig erheblichem chronischem Schmerz an der Ferse.",
-   "text": "Ziele der Eigenübungen sind die Dehnung von Plantarfaszie und Wadenmuskulatur, Schmerzlinderung und Entlastung, eine bessere Fußstabilität und Beweglichkeit sowie die Unterstützung des Heilungsverlaufs.\n\nDie Übungen sollten mindestens 3–4× pro Woche durchgeführt werden, jeweils etwa 10 Minuten. Die Dehnübungen dürfen durchaus unangenehm ziehend empfunden werden, sollten aber nicht schmerzen. Parallel darf gerne auf natürlichem Boden barfuß gelaufen werden. Bei Bewegung auf harten Böden sind gut gedämpftes Schuhwerk oder Bettungseinlagen sinnvoll.\n\nEine Besserung tritt auch bei konsequentem Training erst nach mehreren Wochen auf. Hier bedarf es also Geduld.",
-   "quellen": [
-    "Huffer et al. 2017",
-    "Boob et al. 2023",
-    "Rhim et al. 2021"
-   ],
-   "evidenz": "Regelmäßige Übungen sind neben Einlagenversorgung, Stoßwellentherapie und Gewichtsreduktion die wichtigste Maßnahme der Behandlung. Es konnte gezeigt werden, dass kontinuierliche Übungen über Wochen die Beschwerden wirksam verbessern können; besonders das Training der kleinen Fußmuskeln (=intrinsische Fußmuskulatur), die Faszienmassage und die Dehnung der Achillessehne gelten als wirksam (Huffer et al. 2017, Boob et al. 2023, Rhim et al. 2021)."
-  },
-  "pf_u1": {
-   "ziel": "Lockerung vor dem Anlaufen am Morgen. Diese Übung ist gut bei Phasen von hohem Schmerz.",
-   "schritte": [
-    "Im Sitzen oder Liegen ein Handtuch um den Fußballen legen.",
-    "Den Fuß langsam zum Körper ziehen."
-   ],
-   "dosis": "3 × 30 Sekunden pro Seite, direkt nach dem Aufwachen empfehlenswert.",
-   "hinweis": ""
-  },
-  "pf_u2": {
-   "ziel": "Dehnen der Plantarfaszie.",
-   "schritte": [
-    "Im Sitzen ein Bein über das andere schlagen.",
-    "Die Zehen der schmerzhaften Seite mit der Hand langsam in Richtung Schienbein ziehen.",
-    "Mit dem Daumen kann nun eine tiefe Massage quer zur Fußsohle erfolgen; dies darf etwas schmerzhaft sein (=Querfriktion)."
-   ],
-   "dosis": "30 Sekunden halten, 3× wiederholen.",
-   "hinweis": ""
-  },
-  "pf_u3": {
-   "ziel": "Intensive Dehnung der Faszie.",
-   "schritte": [
-    "Stand vor einer Wand, die Großzehe nach oben gestellt.",
-    "Das Gewicht langsam nach vorne verlagern."
-   ],
-   "dosis": "30 Sekunden halten, 3× wiederholen.",
-   "hinweis": ""
-  },
-  "pf_u4": {
-   "ziel": "Entlastung der Faszie durch Lockerung der Waden.",
-   "schritte": [
-    "Ein Bein hinten gestreckt, das andere vorne gebeugt.",
-    "Beide Fersen bleiben am Boden.",
-    "Die Wand nach vorne drücken."
-   ],
-   "dosis": "30 Sekunden halten, 2–3 Wiederholungen pro Seite.",
-   "hinweis": ""
-  },
-  "pf_u5": {
-   "ziel": "Gewebemobilisierung und Schmerzlinderung, Entspannung (=Detonisierung) der Plantarfaszie.",
-   "schritte": [
-    "Im Sitzen mit dem schmerzenden Fuß über einen Igelball oder eine Faszienrolle rollen.",
-    "Von der Ferse bis zu den Zehen."
-   ],
-   "dosis": "1–2 Minuten pro Fuß. Besonders effektiv ist das Rollen auf einem kalten Igelball oder einer Flasche mit gefrorenem Inhalt, da die Kühlung zusätzlich schmerzlindernd wirkt."
-  },
-  "pf_u6": {
-   "ziel": "Kräftigung der Fußmuskulatur.",
-   "schritte": [
-    "Ein Handtuch auf den Boden legen.",
-    "Mit den Zehen zusammenknautschen und heranziehen."
-   ],
-   "dosis": "1 Minute pro Seite, 1–2 Durchgänge.",
-   "hinweis": ""
-  },
-  "pf_u7": {
-   "ziel": "Aktivierung der kleinen Fußmuskeln (=intrinsische Fußmuskulatur).",
-   "schritte": [
-    "Stehend oder sitzend den Ballen leicht Richtung Ferse ziehen. Dadurch wird der Fuß kürzer und das Gewölbe hebt sich.",
-    "Die Zehen sollen dabei nicht krallen."
-   ],
-   "dosis": "10 Wiederholungen à 5 Sekunden. Hier bedarf es viel Geduld, da die Muskulatur am Anfang oft nicht gut angesteuert werden kann. Die Übung ist aber sehr effektiv für die Fußgesundheit — investieren Sie ausreichend Zeit."
-  },
-  "waden_einleitung": {
-   "intro": "Die Wadenmuskulatur besteht aus dem zweigelenkigen Zwillingswadenmuskel (=M. gastrocnemius, überspringt Knie und Sprunggelenk) und dem darunterliegenden Schollenmuskel (=M. soleus). Ist die Wade verkürzt, ist das Anheben des Fußes (=Dorsalextension) eingeschränkt.",
-   "text": "Eine verkürzte Wade ist sehr häufig und kann zu Mehrbelastung an Ferse, Fußsohle und Vorfuß beitragen. Sie steht unter anderem mit Plantarfasziitis, Knick-Senk-Fuß und Vorfußüberlastung in Zusammenhang.\n\nDehnen verbessert die Beweglichkeit des Sprunggelenks, aber meist nur in kleinem Maß. Es ist ein sinnvoller ergänzender Baustein, keine alleinige Lösung. Der Effekt hält nur an, wenn dauerhaft gedehnt wird.\n\nMit gestrecktem Knie wird vor allem der Zwillingswadenmuskel gedehnt, mit gebeugtem Knie eher der tiefere Schollenmuskel. Beide Varianten gehören dazu.",
-   "quellen": [
-    "Radford et al. 2006",
-    "Patel & DiGiovanni 2011",
-    "Johanson/Dinh et al. 2010",
-    "Medeiros & Martini 2017"
-   ],
-   "evidenz": "Wadendehnung erhöht die Sprunggelenk-Beweglichkeit statistisch signifikant, aber nur um wenige Grad; die klinische Bedeutung ist begrenzt (Radford et al. 2006; Medeiros & Martini 2017). Eine verkürzte Wade ist häufig mit Plantarfasziitis verbunden. In einer Untersuchung hatten 83 % der Betroffenen eine eingeschränkte Dorsalextension, gut die Hälfte eine isolierte Verkürzung des Zwillingswadenmuskels (Patel & DiGiovanni 2011). Statisches Dehnen wirkt, ruckartiges (ballistisches) Dehnen nicht (Medeiros & Martini 2017)."
-  },
-  "wd_u1": {
-   "ziel": "Dehnung des zweigelenkigen Zwillingswadenmuskels (=M. gastrocnemius).",
-   "schritte": [
-    "Mit den Händen an einer Wand abstützen.",
-    "Das zu dehnende Bein nach hinten stellen, das vordere Bein beugen.",
-    "Die hintere Ferse bleibt fest am Boden, das hintere Knie bleibt gestreckt.",
-    "Das Becken langsam nach vorne verlagern, bis ein Ziehen in der Wade spürbar ist."
-   ],
-   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Belastet (im Stand) oder unbelastet ist gleich wirksam. Wählen Sie die für Sie angenehmere Variante."
-  },
-  "wd_u2": {
-   "ziel": "Dehnung des tieferen Schollenmuskels (=M. soleus).",
-   "schritte": [
-    "Gleiche Ausgangsposition wie zuvor an der Wand.",
-    "Das hintere Knie diesmal leicht beugen, die Ferse bleibt am Boden.",
-    "Das Gewicht so verlagern, dass ein tiefes Ziehen tiefer in der Wade entsteht."
-   ],
-   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen. Bei Knick-Senk-Fuß das Längsgewölbe schützen (z. B. mit einer Einlage oder einem untergelegten Handtuch an der Innenseite).",
-   "hinweis": ""
-  },
-  "wd_u3": {
-   "ziel": "Alternative Dehnung über die Stufenkante. Diese Variante ist deutlich intensiver als die Dehnung an der Wand. Sie lässt sich mit einer exzentrischen Kräftigung (=Tendoloading) verbinden: Dafür langsam und unter Anspannung aus dem Zehenspitzenstand in die Dehnung absinken.",
-   "schritte": [
-    "Mit dem Vorfuß auf eine Stufe oder einen Keil stellen, sich festhalten.",
-    "Die Ferse langsam und kontrolliert absenken, bis ein Ziehen in der Wade entsteht.",
-    "Für den Zwillingswadenmuskel das Knie gestreckt lassen, für den Schollenmuskel leicht beugen."
-   ],
-   "dosis": "5 Wiederholungen à 30 Sekunden, 2× täglich, über mindestens 3 Wochen. Zur Erhaltung dauerhaft fortführen."
-  },
-  "sgi_einleitung": {
-   "intro": "Nach wiederholten Umknickverletzungen kann eine chronische Instabilität (=anhaltendes Unsicherheits- und Wegknickgefühl im Sprunggelenk) entstehen. Häufig bestehen wiederkehrendes Umknicken, ein Gefühl der Unsicherheit und eine Schwellneigung.",
-   "text": "Ein gezieltes Gleichgewichts- und Stabilisierungstraining (=neuromuskuläres bzw. propriozeptives Training) ist die am besten belegte aktive Maßnahme bei chronischer Instabilität. Trainiert werden die Tiefenwahrnehmung (=Propriozeption), die Reaktionsfähigkeit und die muskuläre Stabilisierung.\n\nDas Training kann die Stabilität und Sicherheit deutlich verbessern und das Risiko erneuten Umknickens senken. Eine bereits eingetretene Bandlockerung wird damit nicht rückgängig gemacht. Bei ausgeprägter Instabilität oder Versagen des Trainings sollte die operative Option ärztlich besprochen werden.\n\nZum Training nach einer frischen Außenbandverletzung gibt es einige Parallelen. Bei chronischer Instabilität ist eine stufenweise Steigerung der Belastung in der Regel aber nicht sinnvoll, sondern ein dauerhaftes Programm. **Ziel sind etwa 3 Einheiten pro Woche zu je rund 30 Minuten.** Bei Schmerzen oder häufigem Wegknicken trotz Training stellen Sie sich bitte ärztlich vor.",
-   "quellen": [
-    "Hupperets et al. 2008"
-   ],
-   "evidenz": "Gleichgewichts- und Stabilisierungstraining ist bei chronischer Sprunggelenkinstabilität gut untersucht und gilt als wirksam zur Verbesserung von Stabilität und Funktion sowie zur Senkung des Wiederverletzungsrisikos (u. a. Hupperets et al. 2008). Eine externe Stabilisierung (Orthese/Tape) bei Belastung ist ergänzend sinnvoll."
-  },
-  "sgi_u1": {
-   "ziel": "Stabilisierung von Sprunggelenk und Beinachse unter Belastung.",
-   "schritte": [
-    "Auf einem Bein stehen und langsam in eine kontrollierte Kniebeuge gehen, ohne dass das Knie nach innen fällt.",
-    "Langsam wieder aufrichten."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung, sobald sicher: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
-  },
-  "sgi_u2": {
-   "ziel": "Kräftigung der Wadenmuskulatur und Stabilisierung.",
-   "schritte": [
-    "Auf beiden Beinen langsam auf die Zehenspitzen und wieder herunter."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf erhöhtem Untergrund mit Festhalten → ohne Festhalten."
-  },
-  "sgi_u3": {
-   "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung (=Propriozeption).",
-   "schritte": [
-    "Auf einem Bein stehen und das Gleichgewicht halten."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
-  },
-  "sgi_u4": {
-   "ziel": "Dynamische Balance und Koordination der Hüft-Bein-Achse.",
-   "schritte": [
-    "Im Einbeinstand den Rumpf nach vorne neigen und das freie Bein nach hinten strecken (Standwaage-ähnliche Position), Rücken gerade.",
-    "Kontrolliert in die Ausgangsposition zurückkehren."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: auf ebenem Untergrund → mit geschlossenen Augen → auf einem Wackelbrett."
-  },
-  "sgi_u5": {
-   "ziel": "Dynamische Stabilität des Sprunggelenks gegen wechselnde Belastung.",
-   "schritte": [
-    "Im Einbeinstand das freie Bein kontrolliert über die Körpermitte zur Gegenseite schwingen und zurück."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: mit Festhalten → ohne Festhalten → mit geschlossenen Augen → auf einem Wackelbrett."
-  },
-  "sgi_u6": {
-   "ziel": "Kräftigung und Stabilisierung über das Sprunggelenk im Gehen.",
-   "schritte": [
-    "Auf den Zehenspitzen gehen."
-   ],
-   "dosis": "Mehrfach pro Woche, im Rahmen des Aufwärmens oder als eigenes Training.\n\nPro Übung mehrere kontrollierte Wiederholungen bzw. Haltezeiten. Steigerung: gehend → federnd/springend."
-  },
-  "hr_einleitung": {
-   "intro": "Der Hallux rigidus ist ein Verschleiß (=Arthrose) des Großzehengrundgelenks mit zunehmender Einsteifung und Schmerz beim Abrollen. Im Frühstadium (oft „Hallux limitus“ genannt) ist die Beweglichkeit nur teilweise eingeschränkt.",
-   "text": "Ziel der Übungen im Frühstadium ist es, die verbliebene Beweglichkeit des Großzehengrundgelenks zu erhalten und das Abrollen zu erleichtern. Eine Arthrose lässt sich durch Übungen nicht rückgängig machen. Übungen sind beim Hallux rigidus nur bedingt möglich, weil die Einsteifung des Gelenks selbst die Bewegung begrenzt.\n\nDie Datenlage zu Übungen beim Hallux rigidus ist begrenzt. Übungen und sanfte Mobilisation können Beschwerden lindern und die Beweglichkeit unterstützen, sind aber Teil eines Gesamtkonzepts aus geeignetem Schuhwerk, ggf. einer versteifenden Einlage (=Rigidusfeder) und ärztlicher Begleitung.\n\nDie Übungen sollten sanft und im schmerzarmen Bereich erfolgen. Schmerzhaftes Erzwingen von Bewegung ist zu vermeiden.",
-   "quellen": [
-    "Kunnasegaran & Thevendran 2015",
-    "Brantingham et al. 2009"
-   ],
-   "evidenz": "Für die nicht-operative Behandlung des Hallux rigidus (Schuhanpassung, Einlagen, Mobilisation, Physiotherapie) gibt es Übersichtsarbeiten, aber nur begrenzte Evidenz (Kunnasegaran & Thevendran 2015). Manuelle Therapie kombiniert mit Übungen wird mit eingeschränkter Evidenz (Level C) beschrieben (Brantingham et al. 2009). Übungen zielen auf Beschwerden und Beweglichkeit, nicht auf eine Heilung der Arthrose."
-  },
-  "hr_u1": {
-   "ziel": "Erhalt der aktiven Beweglichkeit des Großzehengrundgelenks.",
-   "schritte": [
-    "Im Sitzen den Fuß aufstellen.",
-    "Die Großzehe aktiv langsam nach oben (Richtung Schienbein) und nach unten bewegen, soweit es schmerzarm möglich ist."
-   ],
-   "dosis": "10 ruhige Wiederholungen, 2–3× täglich, im schmerzarmen Bereich. Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
-  },
-  "hr_u2": {
-   "ziel": "Sanfter Erhalt der Gelenkbeweglichkeit durch geführte Bewegung.",
-   "schritte": [
-    "Mit einer Hand den Mittelfuß stabilisieren.",
-    "Mit der anderen Hand die Großzehe sanft fassen und vorsichtig nach oben und unten führen.",
-    "Optional eine leichte Zugbewegung (Traktion) entlang der Zehe."
-   ],
-   "dosis": "1–2 Minuten, 1–2× täglich, sehr sanft. Keine ruckartigen Bewegungen, kein Erzwingen. Bei Schmerzzunahme pausieren."
-  },
-  "hr_u3": {
-   "ziel": "Entlastung des Vorfußes durch Lockerung der Wade.",
-   "schritte": [
-    "Die genaue Durchführung finden Sie im [Übungsprogramm Wadenmuskeldehnung](?nonop=wadenmuskeldehnung)."
-   ],
-   "dosis": "",
-   "hinweis": ""
-  },
-  "sga_einleitung": {
-   "intro": "Die Sprunggelenkarthrose ist ein Verschleiß des oberen Sprunggelenks. Anders als an Hüfte oder Knie ist sie häufig Folge früherer Verletzungen (=posttraumatisch) und kann sehr unterschiedliche Ursachen haben, zum Beispiel eine zugrundeliegende Instabilität, Fehlstellungen oder frühere Brüche.",
-   "text": "Gerade weil die Ursachen so unterschiedlich sind, ist eine ärztliche Abklärung der individuellen Situation besonders wichtig. Welche Übungen sinnvoll und unbedenklich sind, hängt stark von der Ursache ab. Bei einer Instabilität steht zum Beispiel das Stabilitätstraining im Vordergrund.\n\nDie wissenschaftliche Datenlage zu Übungen speziell bei Sprunggelenkarthrose ist dünn, und die Leitlinien von Hüfte und Knie lassen sich nicht einfach übertragen. Übungen zielen auf Erhalt von Beweglichkeit, Kräftigung der stabilisierenden Muskulatur und Linderung von Beschwerden, nicht auf eine Heilung des Verschleißes.\n\nDie folgenden Übungen sind allgemein und schonend gehalten. Sie ersetzen nicht die individuelle ärztliche Beratung, in der das passende Vorgehen für Ihre Situation festgelegt wird.",
-   "quellen": [
-    "Witteveen et al. 2015 (Cochrane)",
-    "Paterson et al. 2018"
-   ],
-   "evidenz": "Für konservative Maßnahmen bei Sprunggelenkarthrose ist die Evidenz begrenzt; eine Cochrane-Übersicht fand unzureichende Daten und weist darauf hin, dass sich Empfehlungen für Hüft- und Kniearthrose wegen der anderen Entstehung nicht ohne Weiteres übertragen lassen (Witteveen et al. 2015). Übungen werden in der Praxis ergänzend eingesetzt, hochwertige Studien fehlen jedoch weitgehend."
-  },
-  "sga_u1": {
-   "ziel": "Erhalt der verbliebenen Beweglichkeit im schmerzarmen Bereich.",
-   "schritte": [
-    "Im Sitzen den Fuß langsam auf und ab bewegen (Anheben und Absenken).",
-    "Sanfte kreisende Bewegungen des Fußes, soweit schmerzarm möglich."
-   ],
-   "dosis": "Ruhige Wiederholungen über 1–2 Minuten, 1–2× täglich, im schmerzarmen Bereich. Nur so weit bewegen, wie es ohne stärkeren Schmerz möglich ist."
-  },
-  "sga_u2": {
-   "ziel": "Kräftigung der das Sprunggelenk stabilisierenden Muskulatur.",
-   "schritte": [
-    "Beidbeiniger Zehenspitzenstand: langsam auf die Zehenspitzen und wieder herunter, bei Bedarf am Geländer festhalten.",
-    "Optional sanftes Training gegen ein Theraband in verschiedenen Richtungen."
-   ],
-   "dosis": "Mehrere ruhige Wiederholungen, mehrfach pro Woche. Belastung langsam steigern. Bei Schmerzen reduzieren."
-  },
-  "sga_u3": {
-   "ziel": "Schulung von Gleichgewicht und Tiefenwahrnehmung, besonders bei Instabilitätskomponente.",
-   "schritte": [
-    "Einbeinstand, bei Bedarf mit Festhalten.",
-    "Wenn der Einbeinstand sicher gelingt, steigern: zeitweise die Augen schließen oder langsam in eine leichte Kniebeuge gehen und wieder aufrichten."
-   ],
-   "dosis": "Mehrere Haltezeiten, mehrfach pro Woche. Nur in sicherem Umfeld mit Festhaltemöglichkeit. Steigerung nur, wenn sicher und schmerzarm."
   }
- },
- "NONOP_STUFEN": {
-  "aussenband_stufen": [
-   {
-    "id": "stufe1",
-    "stufe": 1,
-    "tagOffset": 0,
-    "titel": "Return to daily life",
-    "zeitfenster": "Tag 1–7 nach dem Unfall",
-    "emoji": "🧊",
-    "erinnerung": "taeglich",
-    "optional": false,
-    "inhalt": "aussenband_stufe1"
-   },
-   {
-    "id": "stufe2",
-    "stufe": 2,
-    "tagOffset": 7,
-    "titel": "Return to activity",
-    "zeitfenster": "Woche 1–6 nach dem Unfall",
-    "emoji": "🚶",
-    "erinnerung": "mehrmals_woche",
-    "optional": false,
-    "inhalt": "aussenband_stufe2"
-   },
-   {
-    "id": "stufe3",
-    "stufe": 3,
-    "tagOffset": 35,
-    "titel": "Return to sport",
-    "zeitfenster": "ab Woche 6, Langzeitübungen übers 1. Jahr",
-    "emoji": "🏃",
-    "erinnerung": "3x_woche_30min",
-    "optional": false,
-    "inhalt": "aussenband_stufe3"
-   },
-   {
-    "id": "stufe4",
-    "stufe": 4,
-    "tagOffset": 90,
-    "titel": "Return to play",
-    "zeitfenster": "ab ca. Monat 3 (Sportler)",
-    "emoji": "⚽",
-    "erinnerung": "sportabhaengig",
-    "optional": true,
-    "inhalt": "aussenband_stufe4"
-   },
-   {
-    "id": "stufe5",
-    "stufe": 5,
-    "tagOffset": 180,
-    "titel": "Return to competition",
-    "zeitfenster": "individuell (Sportler)",
-    "emoji": "🏆",
-    "erinnerung": "keine",
-    "optional": true,
-    "inhalt": "aussenband_stufe5"
-   }
-  ],
-  "achillo_mid_stufen": [
-   {
-    "id": "mid1",
-    "stufe": 1,
-    "titel": "Isometrisches Halten",
-    "emoji": "⏸️",
-    "optional": false,
-    "inhalt": "achillo_mid_s1"
-   },
-   {
-    "id": "mid2",
-    "stufe": 2,
-    "titel": "Beidbeinige Wadenhebung",
-    "emoji": "🦶",
-    "optional": false,
-    "inhalt": "achillo_mid_s2"
-   },
-   {
-    "id": "mid3",
-    "stufe": 3,
-    "titel": "Einbeinig / Heavy Slow Resistance",
-    "emoji": "🏋️",
-    "optional": false,
-    "inhalt": "achillo_mid_s3"
-   },
-   {
-    "id": "mid4",
-    "stufe": 4,
-    "titel": "Exzentrik mit Zusatzlast",
-    "emoji": "⬇️",
-    "optional": false,
-    "inhalt": "achillo_mid_s4"
-   },
-   {
-    "id": "mid5",
-    "stufe": 5,
-    "titel": "Plyometrie / Rückkehr zu Sport",
-    "emoji": "🤸",
-    "optional": false,
-    "inhalt": "achillo_mid_s5"
-   }
-  ],
-  "achillo_ins_stufen": [
-   {
-    "id": "ins1",
-    "stufe": 1,
-    "titel": "Isometrisches Halten",
-    "emoji": "⏸️",
-    "optional": false,
-    "inhalt": "achillo_ins_s1"
-   },
-   {
-    "id": "ins2",
-    "stufe": 2,
-    "titel": "Beidbeinige Wadenhebung (bis Neutralstellung)",
-    "emoji": "🦶",
-    "optional": false,
-    "inhalt": "achillo_ins_s2"
-   },
-   {
-    "id": "ins3",
-    "stufe": 3,
-    "titel": "Einbeinig / Heavy Slow Resistance (bis Neutralstellung)",
-    "emoji": "🏋️",
-    "optional": false,
-    "inhalt": "achillo_ins_s3"
-   },
-   {
-    "id": "ins4",
-    "stufe": 4,
-    "titel": "Kräftigung mit Zusatzlast (bis Neutralstellung)",
-    "emoji": "💪",
-    "optional": false,
-    "inhalt": "achillo_ins_s4"
-   },
-   {
-    "id": "ins5",
-    "stufe": 5,
-    "titel": "Plyometrie / Rückkehr zu Sport",
-    "emoji": "🤸",
-    "optional": false,
-    "inhalt": "achillo_ins_s5"
-   }
-  ],
-  "ksf_uebungen": [
-   {
-    "id": "ksf1",
-    "nr": 1,
-    "titel": "Haltekraft des hinteren Schienbeinmuskels",
-    "emoji": "💪",
-    "inhalt": "ksf_u1"
-   },
-   {
-    "id": "ksf2",
-    "nr": 2,
-    "titel": "Spiraldynamik",
-    "emoji": "🌀",
-    "inhalt": "ksf_u2"
-   },
-   {
-    "id": "ksf3",
-    "nr": 3,
-    "titel": "Fußsohle zusammenziehen (Short-Foot)",
-    "emoji": "🦶",
-    "inhalt": "ksf_u3"
-   },
-   {
-    "id": "ksf4",
-    "nr": 4,
-    "titel": "Dehnung der Achillessehne",
-    "emoji": "📐",
-    "inhalt": "ksf_u4"
-   },
-   {
-    "id": "ksf5",
-    "nr": 5,
-    "titel": "Hüftabduktoren & Außenrotatoren",
-    "emoji": "🍑",
-    "inhalt": "ksf_u5"
-   },
-   {
-    "id": "ksf6",
-    "nr": 6,
-    "titel": "Barfußlaufen",
-    "emoji": "👣",
-    "inhalt": "ksf_u6"
-   }
-  ],
-  "hv_uebungen": [
-   {
-    "id": "hv0",
-    "nr": 1,
-    "titel": "Vorbereitung: Massage",
-    "emoji": "🤲",
-    "inhalt": "hv_u0"
-   },
-   {
-    "id": "hv1",
-    "nr": 2,
-    "titel": "Zehengreifen",
-    "emoji": "✊",
-    "inhalt": "hv_u1"
-   },
-   {
-    "id": "hv2",
-    "nr": 3,
-    "titel": "Halteübungen",
-    "emoji": "💪",
-    "inhalt": "hv_u2"
-   },
-   {
-    "id": "hv3",
-    "nr": 4,
-    "titel": "Dehnung des Großzehen-Anziehers",
-    "emoji": "📐",
-    "inhalt": "hv_u3"
-   },
-   {
-    "id": "hv4",
-    "nr": 5,
-    "titel": "Abspreizen der Großzehe",
-    "emoji": "👍",
-    "inhalt": "hv_u4"
-   },
-   {
-    "id": "hv5",
-    "nr": 6,
-    "titel": "Spiraldynamik",
-    "emoji": "🌀",
-    "inhalt": "hv_u5"
-   },
-   {
-    "id": "hv6",
-    "nr": 7,
-    "titel": "Fußsohle zusammenziehen (Short-Foot)",
-    "emoji": "🦶",
-    "inhalt": "hv_u6"
-   },
-   {
-    "id": "hv7",
-    "nr": 8,
-    "titel": "Dehnung der Achillessehne",
-    "emoji": "📏",
-    "inhalt": "hv_u7"
-   }
-  ],
-  "pf_uebungen": [
-   {
-    "id": "pf1",
-    "nr": 1,
-    "titel": "Sanfte Dehnung im Sitzen",
-    "emoji": "🤚",
-    "inhalt": "pf_u1"
-   },
-   {
-    "id": "pf2",
-    "nr": 2,
-    "titel": "Plantarfaszie-Dehnung im Sitzen",
-    "emoji": "🦶",
-    "inhalt": "pf_u2"
-   },
-   {
-    "id": "pf3",
-    "nr": 3,
-    "titel": "Dehnung der Faszie an der Wand",
-    "emoji": "🧱",
-    "inhalt": "pf_u3"
-   },
-   {
-    "id": "pf4",
-    "nr": 4,
-    "titel": "Waden- und Achillessehnendehnung an der Wand",
-    "emoji": "📏",
-    "inhalt": "pf_u4"
-   },
-   {
-    "id": "pf5",
-    "nr": 5,
-    "titel": "Fasziendehnung unter dem Fuß",
-    "emoji": "⚪",
-    "inhalt": "pf_u5"
-   },
-   {
-    "id": "pf6",
-    "nr": 6,
-    "titel": "Zehengreifen mit Handtuch",
-    "emoji": "✊",
-    "inhalt": "pf_u6"
-   },
-   {
-    "id": "pf7",
-    "nr": 7,
-    "titel": "Short-Foot-Übung",
-    "emoji": "🦵",
-    "inhalt": "pf_u7"
-   }
-  ],
-  "waden_uebungen": [
-   {
-    "id": "wd1",
-    "nr": 1,
-    "titel": "Zwillingswadenmuskel dehnen (Knie gestreckt)",
-    "emoji": "",
-    "inhalt": "wd_u1"
-   },
-   {
-    "id": "wd2",
-    "nr": 2,
-    "titel": "Schollenmuskel dehnen (Knie gebeugt)",
-    "emoji": "",
-    "inhalt": "wd_u2"
-   },
-   {
-    "id": "wd3",
-    "nr": 3,
-    "titel": "Dehnung auf einer Stufe",
-    "emoji": "",
-    "inhalt": "wd_u3"
-   }
-  ],
-  "sgi_uebungen": [
-   {
-    "id": "sgi1",
-    "nr": 1,
-    "titel": "Einbeinige Kniebeuge",
-    "emoji": "",
-    "inhalt": "sgi_u1"
-   },
-   {
-    "id": "sgi2",
-    "nr": 2,
-    "titel": "Beidbeiniger Zehenspitzenstand",
-    "emoji": "",
-    "inhalt": "sgi_u2"
-   },
-   {
-    "id": "sgi3",
-    "nr": 3,
-    "titel": "Einbeinstand",
-    "emoji": "",
-    "inhalt": "sgi_u3"
-   },
-   {
-    "id": "sgi4",
-    "nr": 4,
-    "titel": "Läuferpose",
-    "emoji": "",
-    "inhalt": "sgi_u4"
-   },
-   {
-    "id": "sgi5",
-    "nr": 5,
-    "titel": "Überkreuzschwung der Beine",
-    "emoji": "",
-    "inhalt": "sgi_u5"
-   },
-   {
-    "id": "sgi6",
-    "nr": 6,
-    "titel": "Zehenspitzengang",
-    "emoji": "",
-    "inhalt": "sgi_u6"
-   }
-  ],
-  "hr_uebungen": [
-   {
-    "id": "hr1",
-    "nr": 1,
-    "titel": "Beweglichkeit des Großzehengrundgelenks",
-    "emoji": "",
-    "inhalt": "hr_u1"
-   },
-   {
-    "id": "hr2",
-    "nr": 2,
-    "titel": "Sanfte Mobilisation mit der Hand",
-    "emoji": "",
-    "inhalt": "hr_u2"
-   },
-   {
-    "id": "hr3",
-    "nr": 3,
-    "titel": "Dehnung der Wade",
-    "emoji": "",
-    "inhalt": "hr_u3"
-   }
-  ],
-  "sga_uebungen": [
-   {
-    "id": "sga1",
-    "nr": 1,
-    "titel": "Beweglichkeit des Sprunggelenks erhalten",
-    "emoji": "",
-    "inhalt": "sga_u1"
-   },
-   {
-    "id": "sga2",
-    "nr": 2,
-    "titel": "Kräftigung der stabilisierenden Muskulatur",
-    "emoji": "",
-    "inhalt": "sga_u2"
-   },
-   {
-    "id": "sga3",
-    "nr": 3,
-    "titel": "Gleichgewicht und Tiefenwahrnehmung",
-    "emoji": "",
-    "inhalt": "sga_u3"
-   }
-  ]
- },
- "NONOP_AMPEL": {
-  "achillo_ampel": {
-   "grundregel": "Ein Schmerz bis etwa 5 von 10 ist beim Sehnentraining erlaubt, solange er bis zum nächsten Morgen abklingt und die Morgensteifigkeit nicht von Woche zu Woche zunimmt.",
-   "stufen": [
-    {
-     "farbe": "gruen",
-     "emoji": "🟢",
-     "label": "Grün",
-     "bedeutung": "Schmerz ≤ 5/10 bei und nach Belastung, am nächsten Morgen abgeklungen, keine zunehmende Morgensteifigkeit.",
-     "empfehlung": "Gut so. Wenn die Stufe sicher sitzt, können Sie die nächste Stufe erwägen."
-    },
-    {
-     "farbe": "gelb",
-     "emoji": "🟡",
-     "label": "Gelb",
-     "bedeutung": "Schmerz um 5/10, morgens noch spürbar, aber rückläufig.",
-     "empfehlung": "Bleiben Sie auf dieser Stufe, noch nicht steigern."
-    },
-    {
-     "farbe": "rot",
-     "emoji": "🔴",
-     "label": "Rot",
-     "bedeutung": "Schmerz > 5/10 oder Morgensteifigkeit nimmt von Woche zu Woche zu.",
-     "empfehlung": "Gehen Sie eine Stufe zurück, bis es sich beruhigt."
-    }
-   ]
-  }
- }
 }

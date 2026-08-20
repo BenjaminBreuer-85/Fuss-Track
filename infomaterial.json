@@ -945,6 +945,10 @@
         {
           "id": "hallux_rigidus_q19",
           "text": "de Bot RTAL, Veldman HD, Eurlings R, Stevens J, Hermus JPS, Witlox AM. Metallic hemiarthroplasty or arthrodesis of the first metatarsophalangeal joint as treatment for hallux rigidus: a systematic review and meta-analysis. Foot Ankle Surg. 2021;28(2):139–152. doi:10.1016/j.fas.2021.03.004"
+        },
+        {
+          "id": "hallux_rigidus_q20",
+          "text": "Miettinen M, Sirola T, Lähdeoja T, Sandelin H, Nummela M, Repo JP, Ponkilainen V, Rämö L. Surgery versus watchful waiting for first metatarsophalangeal joint osteoarthritis: a randomized controlled trial. Ann Intern Med. 2026. doi:10.7326/ANNALS-26-00710 (randomisierte Studie, 90 Patienten, Gehschmerz nach 12 Monaten im Mittel 1,3 gegenüber 5,7 von 10 Punkten zugunsten der Arthrodese)"
         }
       ]
     },
@@ -1082,6 +1086,10 @@
         {
           "id": "mtp1_arthrodese_q1",
           "text": "Roukis TS. Nonunion after arthrodesis of the first metatarsal-phalangeal joint: a systematic review. J Foot Ankle Surg. 2011;50(6):710-713. doi:10.1053/j.jfas.2011.06.012 (2818 Arthrodesen: Pseudarthrose 5,4 %, davon symptomatisch 1,8 %; Materialentfernung 8,5 %)"
+        },
+        {
+          "id": "mtp1_arthrodese_q2",
+          "text": "Miettinen M, Sirola T, Lähdeoja T, Sandelin H, Nummela M, Repo JP, Ponkilainen V, Rämö L. Surgery versus watchful waiting for first metatarsophalangeal joint osteoarthritis: a randomized controlled trial. Ann Intern Med. 2026. doi:10.7326/ANNALS-26-00710 (randomisierte Studie, 90 Patienten, Gehschmerz nach 12 Monaten im Mittel 1,3 gegenüber 5,7 von 10 Punkten zugunsten der Arthrodese)"
         }
       ],
       "stand": "2026-08"
