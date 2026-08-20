@@ -49,7 +49,127 @@
           "op": "schede",
           "variante": "einfach"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Wie wird operiert?",
+        "optionen": [
+          {
+            "label": "Offene Operation",
+            "kurz": "z. B. Chevron/Akin, Scarf, Lapidus oder Schede/McBride",
+            "weiter": {
+              "frage": "Welcher Eingriff ist geplant?",
+              "optionen": [
+                {
+                  "label": "Chevron/Akin-Osteotomie",
+                  "kurz": "Korrektur am Köpfchen des ersten Mittelfußknochens",
+                  "weiter": {
+                    "frage": "Wird zusätzlich am Mittelfuß oder an den Kleinzehen etwas gemacht?",
+                    "optionen": [
+                      {
+                        "label": "Nein, Eingriff an der Großzehe allein",
+                        "kurz": "Standardeingriff ohne Zusatzkorrektur",
+                        "ziel": {
+                          "op": "chevron",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Mittelfuß- oder Kleinzehenkorrektur",
+                        "kurz": "z. B. Mittelfuß-Osteotomie (DMMO) oder Kleinzehenkorrektur",
+                        "ziel": {
+                          "op": "chevron",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Scarf-Osteotomie",
+                  "kurz": "Korrektur im Schaft des ersten Mittelfußknochens",
+                  "weiter": {
+                    "frage": "Wird zusätzlich am Mittelfuß oder an den Kleinzehen etwas gemacht?",
+                    "optionen": [
+                      {
+                        "label": "Nein, Eingriff an der Großzehe allein",
+                        "kurz": "Standardeingriff ohne Zusatzkorrektur",
+                        "ziel": {
+                          "op": "scarf",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Mittelfuß- oder Kleinzehenkorrektur",
+                        "kurz": "z. B. Mittelfuß-Osteotomie (DMMO) oder Kleinzehenkorrektur",
+                        "ziel": {
+                          "op": "scarf",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Lapidus-Arthrodese",
+                  "kurz": "Versteifung des ersten Strahls zur Korrektur",
+                  "weiter": {
+                    "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                    "optionen": [
+                      {
+                        "label": "Teilbelastung im Walker-Stiefel",
+                        "ziel": {
+                          "op": "lapidus",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Komplette Entlastung im Gips",
+                        "ziel": {
+                          "op": "lapidus",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Schede-/McBride-Operation",
+                  "kurz": "Einfache Nachbehandlung mit direkter Vollbelastung",
+                  "ziel": {
+                    "op": "schede",
+                    "variante": "einfach"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Minimal-invasiv",
+            "kurz": "z. B. MICA",
+            "weiter": {
+              "frage": "Wird zusätzlich am Mittelfuß oder an den Kleinzehen etwas gemacht?",
+              "optionen": [
+                {
+                  "label": "Nein, Eingriff an der Großzehe allein",
+                  "kurz": "Standardeingriff ohne Zusatzkorrektur",
+                  "ziel": {
+                    "op": "mica",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Mittelfuß- oder Kleinzehenkorrektur",
+                  "kurz": "z. B. Mittelfuß-Osteotomie (DMMO) oder Kleinzehenkorrektur",
+                  "ziel": {
+                    "op": "mica",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "key": "osg_arthrose",
@@ -98,7 +218,106 @@
           "variante": "komplex",
           "gruppe": "Gelenkerhaltende Korrektur"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Welches Verfahren ist geplant?",
+        "optionen": [
+          {
+            "label": "Versteifung des OSG (Arthrodese)",
+            "kurz": "Das obere Sprunggelenk wird dauerhaft versteift",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "osg_arthrodese",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "osg_arthrodese",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "OSG-Prothese (künstliches Gelenk)",
+            "kurz": "Die Beweglichkeit bleibt erhalten",
+            "weiter": {
+              "frage": "Erfolgt die Prothese allein oder mit einem Zusatzeingriff?",
+              "optionen": [
+                {
+                  "label": "Prothese allein",
+                  "kurz": "Endoprothese als alleinige Operation",
+                  "ziel": {
+                    "op": "osg_tep",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Prothese mit Zusatzeingriff",
+                  "kurz": "Mit zusätzlicher Versteifung, Korrekturbruch oder Bandstabilisierung",
+                  "ziel": {
+                    "op": "osg_tep",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Kombinierte Versteifung OSG + Subtalargelenk (Nagel)",
+            "kurz": "Transtalare Arthrodese mit Nagel",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "ttc",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "ttc",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Achskorrektur (supramalleoläre Osteotomie)",
+            "kurz": "Gelenkerhaltende Umstellung oberhalb des Sprunggelenks",
+            "weiter": {
+              "frage": "Erfolgt zusätzlich eine Stabilisierung der Außenbänder?",
+              "optionen": [
+                {
+                  "label": "Nein, Achskorrektur allein",
+                  "ziel": {
+                    "op": "smot_valgus",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Bandstabilisierung",
+                  "ziel": {
+                    "op": "smot_valgus",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "key": "usg_arthrose",
@@ -147,7 +366,104 @@
           "variante": "komplex",
           "gruppe": "Kombinierte Versteifungen"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Welche Gelenke werden versteift?",
+        "optionen": [
+          {
+            "label": "Subtalargelenk",
+            "kurz": "Das Gelenk unter dem Sprungbein",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "subtalar",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "subtalar",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Talonaviculargelenk (TN)",
+            "kurz": "Zwischen Sprungbein und Kahnbein",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "tn",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "tn",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Zwei Rückfußgelenke (Double-Arthrodese)",
+            "kurz": "Subtalar- und Talonaviculargelenk",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "double_arthrodese",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "double_arthrodese",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Drei Rückfußgelenke (Triple-Arthrodese)",
+            "kurz": "Subtalar-, Talonavicular- und Calcaneocuboidgelenk",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "triple",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "triple",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "key": "lisfranc_arthrose",
@@ -176,7 +492,58 @@
           "variante": "hallux_komplex",
           "gruppe": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Welche Versteifung ist geplant?",
+        "optionen": [
+          {
+            "label": "TMT 1–3 oder eines der Gelenkfächer",
+            "kurz": "Ohne Korrektur der Großzehe",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Entlastung bis zur trockenen Wunde, dann 15 kg Teilbelastung",
+                  "ziel": {
+                    "op": "tmt",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "8 Wochen komplette Entlastung",
+                  "ziel": {
+                    "op": "tmt",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3",
+            "kurz": "Mit Führung der Großzehe (Redression)",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Entlastung bis zur trockenen Wunde, dann 15 kg Teilbelastung",
+                  "ziel": {
+                    "op": "tmt",
+                    "variante": "hallux_einfach"
+                  }
+                },
+                {
+                  "label": "8 Wochen komplette Entlastung",
+                  "ziel": {
+                    "op": "tmt",
+                    "variante": "hallux_komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "key": "hallux_rigidus",
@@ -209,7 +576,77 @@
           "op": "mtp1_arthrodese",
           "variante": "komplex"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Cheilektomie",
+            "kurz": "Abtragung der störenden Knochenanbauten",
+            "ziel": {
+              "op": "cheilektomie",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Moberg-Osteotomie",
+            "kurz": "Umstellung des Grundglieds, oft mit Cheilektomie",
+            "ziel": {
+              "op": "moberg",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Youngswick-Osteotomie",
+            "kurz": "Umstellung am ersten Mittelfußköpfchen",
+            "weiter": {
+              "frage": "Wird zusätzlich am Mittelfuß oder an den Kleinzehen etwas gemacht?",
+              "optionen": [
+                {
+                  "label": "Nein, Eingriff an der Großzehe allein",
+                  "kurz": "Standardeingriff ohne Zusatzkorrektur",
+                  "ziel": {
+                    "op": "youngswick",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Mittelfuß- oder Kleinzehenkorrektur",
+                  "kurz": "z. B. Mittelfuß-Osteotomie (DMMO) oder Kleinzehenkorrektur",
+                  "ziel": {
+                    "op": "youngswick",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Versteifung des Großzehengrundgelenks (MTP1-Arthrodese)",
+            "kurz": "Dauerhafte Versteifung bei fortgeschrittenem Verschleiß",
+            "weiter": {
+              "frage": "Wird zusätzlich an den Kleinzehen etwas gemacht?",
+              "optionen": [
+                {
+                  "label": "Nein, Versteifung allein",
+                  "ziel": {
+                    "op": "mtp1_arthrodese",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Kleinzehenkorrektur",
+                  "kurz": "Mit Zehen-Taping in der Nachbehandlung",
+                  "ziel": {
+                    "op": "mtp1_arthrodese",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "key": "knorpelschaden_talus",
@@ -230,7 +667,45 @@
           "op": "teilprothese_talus",
           "variante": "einfach"
         }
-      ]
+      ],
+      "auswahl_baum": {
+        "frage": "Welches Verfahren ist geplant?",
+        "optionen": [
+          {
+            "label": "Knorpeltherapie",
+            "kurz": "AMIC, Nanofrakturierung oder Knorpel-Knochen-Zylinder (OATS)",
+            "weiter": {
+              "frage": "Erfolgt zusätzlich eine Stabilisierung der Außenbänder?",
+              "optionen": [
+                {
+                  "label": "Nein, Knorpeltherapie allein",
+                  "kurz": "6 Wochen Teilbelastung",
+                  "ziel": {
+                    "op": "knorpel_osg",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Bandstabilisierung",
+                  "kurz": "Danach 6 Wochen Orthese unter Vollbelastung",
+                  "ziel": {
+                    "op": "knorpel_osg",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Teilprothese des Talus",
+            "kurz": "Oberflächenersatz einer Talusschulter",
+            "ziel": {
+              "op": "teilprothese_talus",
+              "variante": "einfach"
+            }
+          }
+        ]
+      }
     },
     {
       "key": "tarsaltunnelsyndrom",
@@ -2421,9 +2896,9 @@
           ]
         },
         "komplex": {
-          "anzeigename": "TMT 1–3 oder eines der Gelenkfächer — mit Entlastung",
+          "anzeigename": "TMT 1–3 oder eines der Gelenkfächer (mit Entlastung)",
           "beschreibung": "TMT-Arthrodese ohne Korrektur der Großzehe, 8 Wochen Entlastung",
-          "auswahl_label": "TMT 1–3 oder eines der Gelenkfächer — mit Entlastung",
+          "auswahl_label": "TMT 1–3 oder eines der Gelenkfächer (mit Entlastung)",
           "auswahl_kurz": "8 Wochen vollständige Entlastung",
           "postop": [
             {
@@ -2607,9 +3082,9 @@
           ]
         },
         "hallux_komplex": {
-          "anzeigename": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3 — mit Entlastung",
+          "anzeigename": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3 (mit Entlastung)",
           "beschreibung": "TMT-Arthrodese mit Hallux-Korrektur, 8 Wochen Entlastung, Großzehen-Redression",
-          "auswahl_label": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3 — mit Entlastung",
+          "auswahl_label": "TMT 1 zur Korrektur des Hallux mit TMT 2 und/oder 3 (mit Entlastung)",
           "auswahl_kurz": "8 Wochen vollständige Entlastung; Großzehen-Redression",
           "postop": [
             {
@@ -7972,28 +8447,28 @@
       "thema": "Röntgenkontrolle und Wechsel ins normale Schuhwerk",
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung der Versteifung.",
-      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie vom Verbandschuh in normales, weites Schuhwerk wechseln — anfangs möglichst mit fester Sohle. Die Belastung war bereits erlaubt und wird nun im normalen Schuh fortgeführt.\n\nDie vollständige knöcherne Durchbauung der Versteifung kann noch einige Wochen dauern. Steigern Sie längere Gehstrecken und Aktivität deshalb schrittweise und nach Beschwerden.",
+      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie vom Verbandschuh in normales, weites Schuhwerk wechseln, anfangs möglichst mit fester Sohle. Die Belastung war bereits erlaubt und wird nun im normalen Schuh fortgeführt.\n\nDie vollständige knöcherne Durchbauung der Versteifung kann noch einige Wochen dauern. Steigern Sie längere Gehstrecken und Aktivität deshalb schrittweise und nach Beschwerden.",
       "subthemen": []
     },
     "redression_grosszehe_lapidus": {
       "thema": "Führung der Großzehe (Redression)",
       "emoji": "🦶",
-      "intro": "Die Lapidus-Arthrodese versteift den ersten Strahl zur Korrektur des Hallux valgus — die Großzehe muss nun in der Korrekturposition gehalten werden.",
-      "text": "Man spricht dabei von einer Redression. Bei jedem Verbandswechsel wird ein redressierender Verband angelegt, der die Großzehe zentriert, damit die korrigierten Weichteile in guter Stellung ausheilen. Ergänzend kommen Zwischenzehenkeile oder eine Schiene zum Einsatz. Die genaue Führung legt Ihr Behandler fest.\n\nDie Redression begleitet Sie über die gesamte Nachbehandlung — auch nach dem Ende der Verbände wird die Zehe noch mit Nachtschiene und Zwischenzehenkeil weiter geführt.",
+      "intro": "Die Lapidus-Arthrodese versteift den ersten Strahl zur Korrektur des Hallux valgus. Die Großzehe muss nun in der Korrekturposition gehalten werden.",
+      "text": "Man spricht dabei von einer Redression. Bei jedem Verbandswechsel wird ein redressierender Verband angelegt, der die Großzehe zentriert, damit die korrigierten Weichteile in guter Stellung ausheilen. Ergänzend kommen Zwischenzehenkeile oder eine Schiene zum Einsatz. Die genaue Führung legt Ihr Behandler fest.\n\nDie Redression begleitet Sie über die gesamte Nachbehandlung. Auch nach dem Ende der Verbände wird die Zehe noch mit Nachtschiene und Zwischenzehenkeil weiter geführt.",
       "subthemen": []
     },
     "verband_ab_lapidus": {
-      "thema": "Verband ab — Führung der Großzehe geht weiter",
+      "thema": "Verband ab, Führung der Großzehe geht weiter",
       "emoji": "👟",
       "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
-      "text": "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.\n\nDie Führung der Großzehe wird fortgesetzt — mit redressierendem Verband oder Zwischenzehenkeil, nachts ergänzt durch eine Nachtschiene. So reift die Korrektur in guter Stellung aus.",
+      "text": "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.\n\nDie Führung der Großzehe wird fortgesetzt, mit redressierendem Verband oder Zwischenzehenkeil, nachts ergänzt durch eine Nachtschiene. So reift die Korrektur in guter Stellung aus.",
       "subthemen": []
     },
     "roentgen_aufbelastung_lapidus": {
       "thema": "Röntgenkontrolle und Beginn der Aufbelastung",
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
-      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\nDie Führung der Großzehe ist damit noch nicht beendet — in den Wochen 6 bis 12 wird die Zehe weiter geführt, nachts mit einer Nachtschiene und tagsüber mit einem Zwischenzehenkeil, damit die Korrektur in guter Stellung ausreift.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
+      "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\nDie Führung der Großzehe ist damit noch nicht beendet. In den Wochen 6 bis 12 wird die Zehe weiter geführt, nachts mit einer Nachtschiene und tagsüber mit einem Zwischenzehenkeil, damit die Korrektur in guter Stellung ausreift.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
       "subthemen": []
     },
     "verband_woche1_einfach": {
@@ -8013,8 +8488,8 @@
     "redression_grosszehe_tmt_hallux": {
       "thema": "Führung der Großzehe (Redression)",
       "emoji": "🦶",
-      "intro": "Die Versteifung des ersten Strahls dient bei Ihnen der Korrektur des Hallux valgus — die Großzehe wird nun in der Korrekturposition gehalten.",
-      "text": "Man spricht dabei von einer Redression. Bei jedem Verbandswechsel wird ein redressierender Verband angelegt, der die Großzehe zentriert, damit die korrigierten Weichteile in guter Stellung ausheilen. Die genaue Führung legt Ihr Behandler fest.\n\nDie Redression begleitet Sie über die gesamte Nachbehandlung — solange Verbände getragen werden, erfolgt sie über diese. Nach der Abnahme der Verbände, etwa ab der 6. Woche, übernehmen tagsüber ein Zwischenzehenkeil und nachts eine Nachtschiene.",
+      "intro": "Die Versteifung des ersten Strahls dient bei Ihnen der Korrektur des Hallux valgus. Die Großzehe wird nun in der Korrekturposition gehalten.",
+      "text": "Man spricht dabei von einer Redression. Bei jedem Verbandswechsel wird ein redressierender Verband angelegt, der die Großzehe zentriert, damit die korrigierten Weichteile in guter Stellung ausheilen. Die genaue Führung legt Ihr Behandler fest.\n\nDie Redression begleitet Sie über die gesamte Nachbehandlung. Solange Verbände getragen werden, erfolgt sie über diese. Nach der Abnahme der Verbände, etwa ab der 6. Woche, übernehmen tagsüber ein Zwischenzehenkeil und nachts eine Nachtschiene.",
       "subthemen": []
     },
     "verband_redression_tmt_hallux": {
@@ -8025,10 +8500,10 @@
       "subthemen": []
     },
     "verband_ab_tmt_hallux": {
-      "thema": "Verbände ab — Zwischenzehenkeil und Nachtschiene",
+      "thema": "Verbände ab, Zwischenzehenkeil und Nachtschiene",
       "emoji": "🦶",
       "intro": "Etwa 6 Wochen nach dem Eingriff werden die redressierenden Verbände beendet.",
-      "text": "Die Führung der Großzehe geht damit nicht zu Ende — sie wechselt nur das Mittel. Tagsüber trägt ein Zwischenzehenkeil die Korrektur weiter, nachts übernimmt eine Nachtschiene. Diese Führung wird bis etwa zur 12. Woche fortgeführt.\n\nDie Wunde braucht jetzt in der Regel keinen Verband mehr; ein Pflaster schützt bei Bedarf vor Druckstellen.",
+      "text": "Die Führung der Großzehe geht damit nicht zu Ende, sie wechselt nur das Mittel. Tagsüber trägt ein Zwischenzehenkeil die Korrektur weiter, nachts übernimmt eine Nachtschiene. Diese Führung wird bis etwa zur 12. Woche fortgeführt.\n\nDie Wunde braucht jetzt in der Regel keinen Verband mehr; ein Pflaster schützt bei Bedarf vor Druckstellen.",
       "subthemen": []
     }
   },

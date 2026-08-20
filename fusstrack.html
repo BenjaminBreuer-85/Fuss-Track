@@ -572,6 +572,7 @@ function uebersetzeSchema2(data) {
     return {
       key: kb.key, label: kb.label, untertitel: kb.untertitel,
       emoji: kb.emoji, aufklaerungOp: kb.aufklaerungOp,
+      baum: kb.auswahl_baum || null,
       operationen: (kb.eingriffe || []).map(function(e) {
         const v = ((BEGL[e.op] || {}).varianten || {})[e.variante] || {};
         const o = { opKey: e.op, variant: e.variante,
@@ -2121,6 +2122,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   const nonopDeepLink = (initialNonop && typeof NONOP_KB !== "undefined" && NONOP_KB[initialNonop]) ? initialNonop : null;
   const [bereich, setBereich] = useState(initialKbKey || nonopDeepLink ? "begleiter" : (massnahmeDeepLink ? "info" : null));
   const [begleiterTyp, setBegleiterTyp] = useState(initialKbKey ? "op" : (nonopDeepLink ? "nonop" : null));
+  const [baumPfad, setBaumPfad] = useState([]);
   const [selectedKb, setSelectedKb] = useState(
     initialKbKey ? (KRANKHEITSBILDER.find(k => k.key === initialKbKey) || null) : null
   );
@@ -2602,7 +2604,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
           {KRANKHEITSBILDER.map(function(kb) {
             return (
               <div key={kb.key}
-                   onClick={function() { setSelectedKb(kb); setModus("begleitung"); }}
+                   onClick={function() { setSelectedKb(kb); setBaumPfad([]); setModus("begleitung"); }}
                    style={menuCardStyle}
                    onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                 <div style={{ flex: 1 }}>
@@ -2624,6 +2626,63 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   // === Stufe 2 (Phasenauswahl) entfernt: Krankheitsbild führt direkt in die Begleitung.
   //     Informations-Inhalte sind als eigene Sektion im Infomaterial verfügbar. ===
 
+
+  // === Stufe 3a: Geführte Auswahl (Entscheidungsbaum aus phasen.json) ===
+  // Führt Schritt für Schritt zu genau einem Begleiter, statt alle Varianten
+  // auf einmal anzubieten. Fällt auf die Listen-Ansicht zurück, wenn das
+  // Krankheitsbild keinen auswahl_baum hat.
+  if (selectedKb.baum) {
+    let knoten = selectedKb.baum;
+    const brotkrumen = [];
+    baumPfad.forEach(function(idx) {
+      const opt = knoten.optionen[idx];
+      brotkrumen.push(opt.label);
+      knoten = opt.weiter;
+    });
+    return (
+      <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
+          <div onClick={function() {
+                 if (baumPfad.length > 0) { setBaumPfad(baumPfad.slice(0, -1)); }
+                 else { setSelectedKb(null); setModus(null); }
+               }}
+               style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
+            ← zurück
+          </div>
+          <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.label}</div>
+          <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>· Begleitung</div>
+        </div>
+        {brotkrumen.length > 0 && (
+          <div style={{ marginBottom: 12, fontSize: 12, color: "var(--c-text-muted)" }}>
+            Ihre Auswahl: {brotkrumen.join(" → ")}
+          </div>
+        )}
+        {baumPfad.length === 0 && (
+          <p style={{ marginTop: 0, marginBottom: 12, fontSize: 13, color: "var(--c-text-muted)", lineHeight: 1.6 }}>
+            Die genaue Operation und ihre Variante hat Ihnen Ihr Behandler mitgeteilt. Fragen Sie bei Unsicherheit dort nach.
+          </p>
+        )}
+        <p style={{ marginTop: 0, marginBottom: 16, fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{knoten.frage}</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          {knoten.optionen.map(function(opt, i) {
+            return (
+              <div key={i}
+                   onClick={function() {
+                     if (opt.ziel) { goBegleitung(selectedKb, { opKey: opt.ziel.op, variant: opt.ziel.variante }); }
+                     else { setBaumPfad(baumPfad.concat([i])); }
+                   }}
+                   style={{ padding: "16px 18px", border: "2px solid var(--c-main)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }}
+                   onMouseEnter={function(e) { e.currentTarget.style.background = "var(--c-bg)"; }}
+                   onMouseLeave={function(e) { e.currentTarget.style.background = "#fff"; }}>
+                <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)", lineHeight: 1.35, marginBottom: opt.kurz ? 3 : 0 }}>{opt.label}</div>
+                {opt.kurz && <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>{opt.kurz}</div>}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
 
   // === Stufe 3: OP-Variante wählen (nur Begleit-Modus) ===
   // Gruppierung nach `gruppe`-Feld (falls vorhanden)
@@ -2647,8 +2706,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
       </div>
       <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
         Welche Operation ist geplant? Die genaue Variante hat Ihnen Ihr Behandler mitgeteilt.
-        Sind Sie unsicher, kontaktieren Sie bitte Ihren Behandler — ohne die richtige Auswahl
-        stimmen die Inhalte nicht.
+        Fragen Sie bei Unsicherheit dort nach.
       </p>
       {groupOrder.map(function(groupName, gi) {
         return (
@@ -4013,9 +4071,8 @@ function DatumEingabe({ session, onUpdate }) {
       <div className="card">
         <h2>Findet Ihr Eingriff stationär oder ambulant statt?</h2>
         <p style={{ marginBottom: 12 }}>
-          Voreingestellt ist der übliche Weg für diesen Eingriff. Maßgeblich ist die Planung Ihres
-          Behandlungsteams — stellen Sie um, wenn Ihr Eingriff anders geplant ist. Sie können die
-          Auswahl später jederzeit im Verlauf ändern.
+          Voreingestellt ist der übliche Weg für diesen Eingriff. Stellen Sie um, wenn Ihr
+          Eingriff anders geplant ist. Sie können die Auswahl später jederzeit im Verlauf ändern.
         </p>
         <div style={{ display: "flex", gap: 8 }}>
           <button
