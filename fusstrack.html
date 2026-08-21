@@ -196,6 +196,69 @@
     background: var(--c-main); color: white; border-radius: 10px;
     padding: 2px 8px; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.3px;
   }
+  /* Abschnitts-Trenner in der Verlaufsliste */
+  .abschnitt { display: flex; align-items: center; gap: 10px; margin: 16px 0 4px; }
+  .abschnitt-label {
+    font-size: 11px; font-weight: 700; color: var(--c-main);
+    text-transform: uppercase; letter-spacing: 0.8px; white-space: nowrap;
+  }
+  .abschnitt-linie { flex: 1; height: 1px; background: var(--c-border); }
+  /* Tages-Marker (relativer Tag zur OP) */
+  .phase-marker.tag { font-size: 13px; letter-spacing: -0.3px; }
+  .phase-marker.emoji { font-size: 17px; }
+  /* OP-Tag-Feld */
+  .op-feld {
+    background: var(--c-main); color: white;
+    border-radius: 10px; padding: 14px 16px; margin: 12px 0;
+    box-shadow: var(--c-shadow);
+  }
+  .op-feld-label {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; opacity: 0.85; margin-bottom: 2px;
+  }
+  .op-feld-datum { font-size: 12.5px; opacity: 0.85; margin-bottom: 6px; }
+  .op-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 6px; margin: 0 -6px; border-radius: 6px; cursor: pointer;
+  }
+  .op-item:hover { background: rgba(255,255,255,0.10); }
+  .op-item.selected { background: rgba(255,255,255,0.14); }
+  .op-item + .op-item { border-top: 1px solid rgba(255,255,255,0.22); }
+  .op-item-marker {
+    width: 30px; height: 30px; border-radius: 50%; flex: 0 0 30px;
+    background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.55);
+    display: flex; align-items: center; justify-content: center; font-size: 15px;
+  }
+  .op-item-titel { font-weight: 700; font-size: 14px; }
+  .op-item .current-badge { background: white; color: var(--c-main); }
+  /* Fortsetzen-Statuskarte im Hauptmenü */
+  .fs-karte {
+    background: var(--c-main); color: white;
+    border-radius: 12px; padding: 16px;
+    box-shadow: var(--c-shadow); cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .fs-karte:hover { opacity: 0.94; }
+  .fs-label {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; opacity: 0.8;
+  }
+  .fs-eingriff { font-size: 15px; font-weight: 700; margin-top: 3px; line-height: 1.35; }
+  .fs-op { font-size: 13px; margin-top: 8px; opacity: 0.92; }
+  .fs-zeilen {
+    margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 10px; display: flex; flex-direction: column; gap: 7px;
+  }
+  .fs-zeile { display: flex; gap: 8px; font-size: 13.5px; align-items: baseline; }
+  .fs-chip {
+    font-size: 11px; font-weight: 700; background: rgba(255,255,255,0.2);
+    border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0;
+  }
+  .fs-btn {
+    margin-top: 14px; background: white; color: var(--c-main);
+    border-radius: 8px; text-align: center;
+    font-size: 14px; font-weight: 700; padding: 11px;
+  }
   /* Datenschutz-Banner */
   .privacy-banner {
     position: fixed; bottom: 0; left: 0; right: 0;
@@ -811,20 +874,58 @@ function opAckSetzen() {
   try { localStorage.setItem(OP_DISCLAIMER_KEY, "yes"); } catch (e) {}
 }
 
-// Hinweis beim Wiedereinstieg: Die Startseite kommt zuerst, die letzte Stelle
-// wird nur auf Klick wiederhergestellt.
-function FortsetzenBanner({ text, onFortsetzen }) {
+// Statuskarte beim Wiedereinstieg: zeigt Eingriff, OP-Termin, aktuelles und
+// nächstes Thema. Die Startseite kommt zuerst, die letzte Stelle wird nur auf
+// Klick wiederhergestellt.
+function FortsetzenBanner({ session, onFortsetzen }) {
+  const eingriff = session && EINGRIFFE[session.eingriff];
+  const variante = eingriff && eingriff.varianten && eingriff.varianten[session.variante];
+
+  let opText = null, aktuell = null, naechste = null, inTagen = null;
+  if (eingriff && variante) {
+    const aufenthalt = session.aufenthalt || eingriff.aufenthaltDefault || "stationaer";
+    const phasen = getPhasenForVariant(session.eingriff, session.variante, aufenthalt);
+    if (session.opDatum) {
+      const diff = daysBetween(session.opDatum, todayIso());
+      const datumTxt = phasenDatum(session.opDatum, 0);
+      if (diff < 0) opText = ["OP am " + datumTxt, diff === -1 ? "in 1 Tag" : "in " + (-diff) + " Tagen"];
+      else if (diff === 0) opText = ["OP am " + datumTxt, "heute"];
+      else opText = ["OP am " + datumTxt, "Tag " + diff + " nach OP"];
+      const currentIdx = computeCurrentPhaseIndex(phasen, session.opDatum);
+      if (currentIdx >= 0) aktuell = phasen[currentIdx];
+      for (let i = currentIdx + 1; i < phasen.length; i++) {
+        const off = phasen[i].tagOffset;
+        if (off !== null && off !== undefined && off > diff) {
+          naechste = phasen[i];
+          inTagen = off - diff;
+          break;
+        }
+      }
+    }
+  }
+
   return (
     <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
-      <div onClick={onFortsetzen}
-           style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px",
-                    background: "rgba(44,79,124,.06)", border: "1px solid rgba(44,79,124,.25)",
-                    borderRadius: 10, cursor: "pointer" }}>
-        <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 13.5, fontWeight: 700, color: "var(--c-main)" }}>Dort weitermachen, wo Sie aufgehört haben</div>
-          {text && <div style={{ fontSize: 12, color: "var(--c-text-muted)", marginTop: 2 }}>{text}</div>}
+      <div className="fs-karte" onClick={onFortsetzen}>
+        <div className="fs-label">Ihr OP-Begleiter</div>
+        {variante && <div className="fs-eingriff">{variante.anzeigename}</div>}
+        <div className="fs-op">
+          {opText ? <>{opText[0]} <b>· {opText[1]}</b></> : "Bitte OP-Datum eintragen"}
         </div>
-        <div style={{ fontSize: 20, color: "var(--c-main)", fontWeight: 700 }}>›</div>
+        {(aktuell || naechste) && (
+          <div className="fs-zeilen">
+            {aktuell && (
+              <div className="fs-zeile"><span className="fs-chip">Aktuell</span><b>{aktuell.thema}</b></div>
+            )}
+            {naechste && (
+              <div className="fs-zeile">
+                <span className="fs-chip">Als Nächstes</span>
+                <span><b>{naechste.thema}</b> · {inTagen === 1 ? "in 1 Tag" : "in " + inTagen + " Tagen"}</span>
+              </div>
+            )}
+          </div>
+        )}
+        <div className="fs-btn">Weiter im Begleiter ›</div>
       </div>
     </div>
   );
@@ -900,6 +1001,32 @@ function daysBetween(isoA, isoB) {
   const a = new Date(isoA + "T00:00:00");
   const b = new Date(isoB + "T00:00:00");
   return Math.round((b - a) / (1000 * 60 * 60 * 24));
+}
+
+const WOCHENTAGE_KURZ = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+function phasenDatum(opDatumIso, offset) {
+  // Konkretes Datum einer Phase relativ zum OP-Datum, z. B. "Mo, 14.09."
+  if (!opDatumIso || offset === null || offset === undefined) return null;
+  const d = new Date(opDatumIso + "T12:00:00");
+  d.setDate(d.getDate() + offset);
+  return WOCHENTAGE_KURZ[d.getDay()] + ", " +
+    String(d.getDate()).padStart(2, "0") + "." +
+    String(d.getMonth() + 1).padStart(2, "0") + ".";
+}
+
+const PHASEN_LABEL_EXAKT = /^(\d+ Tage? vor OP|Tag \d+ nach OP|\d+ Wochen? nach OP|\d+ Monate? nach OP|OP-Tag)$/;
+function phasenMeta(phase, opDatumIso) {
+  // Unterzeile eines Listeneintrags: konkretes Datum, wo das Label einen exakten
+  // Tag benennt; "ca."-Angaben behalten das "ca."; alles andere (Zeiträume,
+  // Bedingungen, Onboarding) behält den Originaltext.
+  const label = phase.label || "";
+  const off = phase.tagOffset;
+  if (off === null || off === undefined || !opDatumIso) return label;
+  if (PHASEN_LABEL_EXAKT.test(label)) return phasenDatum(opDatumIso, off);
+  if (label.indexOf("ca. ") === 0 && PHASEN_LABEL_EXAKT.test(label.slice(4))) {
+    return "ca. " + phasenDatum(opDatumIso, off);
+  }
+  return label;
 }
 
 function computeCurrentPhaseIndex(phasen, opDatumIso) {
@@ -1196,7 +1323,7 @@ function App() {
         <Header showSwitcher={false} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         {hasSession && !urlParams.massnahme && !urlParams.nonop && !urlParams.kb && (
-          <FortsetzenBanner text={laufend ? laufend.anzeigename : null}
+          <FortsetzenBanner session={session}
                             onFortsetzen={function(){ setFortsetzen(true); }} />
         )}
         <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
@@ -4268,19 +4395,30 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
         <p style={{ fontSize: 13, color: "var(--c-text-muted)", marginBottom: 16 }}>
           Tippen Sie auf eine Phase, um die Inhalte zu öffnen.
         </p>
-        <div className="timeline">
-          {phasen.map((phase, idx) => {
+        {(() => {
+          const vor = [], op = [], nach = [];
+          phasen.forEach((phase, idx) => {
+            const off = phase.tagOffset;
+            if (off === 0) op.push({ phase, idx });
+            else if (off !== null && off !== undefined && off > 0) nach.push({ phase, idx });
+            else vor.push({ phase, idx });
+          });
+          const renderPhase = ({ phase, idx }) => {
             let cls = "phase";
             const isMissed = missedPhases.some(m => m.idx === idx);
             if (isMissed) cls += " missed";
             else if (idx === currentIdx) cls += " current";
             else if (idx < currentIdx) cls += " past";
             if (idx === selectedPhaseIdx) cls += " selected";
-            const markerContent = idx + 1;
+            const off = phase.tagOffset;
+            const hatTag = off !== null && off !== undefined;
+            const markerContent = hatTag
+              ? (off < 0 ? "−" + Math.abs(off) : "+" + off)
+              : (phase.emoji || "•");
             return (
               <div key={phase.id} className={cls} onClick={() => setSelectedPhaseIdx(idx)}>
                 <div className="phase-marker-wrap">
-                  <div className="phase-marker">{markerContent}</div>
+                  <div className={"phase-marker " + (hatTag ? "tag" : "emoji")}>{markerContent}</div>
                 </div>
                 <div className="phase-content">
                   <div className="phase-title">
@@ -4288,12 +4426,55 @@ function PhasenVerlauf({ session, onUpdate, onReset }) {
                     {idx === currentIdx && !isMissed && <span className="current-badge">Aktuell</span>}
                     {isMissed && <span className="current-badge" style={{ background: "#E0A422" }}>Nachholen</span>}
                   </div>
-                  <div className="phase-meta">{phase.label}</div>
+                  <div className="phase-meta">{phasenMeta(phase, session.opDatum)}</div>
                 </div>
               </div>
             );
-          })}
-        </div>
+          };
+          return (
+            <>
+              {vor.length > 0 && (
+                <>
+                  <div className="abschnitt">
+                    <span className="abschnitt-label">Vor der Operation</span>
+                    <div className="abschnitt-linie"></div>
+                  </div>
+                  <div className="timeline">{vor.map(renderPhase)}</div>
+                </>
+              )}
+              {op.length > 0 && (
+                <div className="op-feld">
+                  <div className="op-feld-label">Ihr OP-Tag</div>
+                  {session.opDatum && (
+                    <div className="op-feld-datum">{phasenDatum(session.opDatum, 0)}</div>
+                  )}
+                  {op.map(({ phase, idx }) => (
+                    <div
+                      key={phase.id}
+                      className={"op-item" + (idx === selectedPhaseIdx ? " selected" : "")}
+                      onClick={() => setSelectedPhaseIdx(idx)}
+                    >
+                      <div className="op-item-marker">{phase.emoji || "🏥"}</div>
+                      <div className="op-item-titel">
+                        {phase.thema}
+                        {idx === currentIdx && <span className="current-badge">Aktuell</span>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {nach.length > 0 && (
+                <>
+                  <div className="abschnitt">
+                    <span className="abschnitt-label">Nach der Operation</span>
+                    <div className="abschnitt-linie"></div>
+                  </div>
+                  <div className="timeline">{nach.map(renderPhase)}</div>
+                </>
+              )}
+            </>
+          );
+        })()}
       </div>
 
       {/* Phasen-Detail-Modal (Overlay) */}
