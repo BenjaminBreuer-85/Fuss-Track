@@ -466,6 +466,265 @@
       }
     },
     {
+      "key": "knick_senk_fuss",
+      "label": "Knick-Senk-Fuß",
+      "untertitel": "Erworbener Plattfuß (Pes planovalgus)",
+      "emoji": "🦶",
+      "aufklaerungOp": "calc_medial",
+      "eingriffe": [
+        {
+          "op": "arthrorise",
+          "variante": "einfach",
+          "gruppe": "Gelenkerhaltend"
+        },
+        {
+          "op": "calc_medial",
+          "variante": "einfach",
+          "gruppe": "Korrektur des Fersenbeins"
+        },
+        {
+          "op": "calc_medial",
+          "variante": "komplex",
+          "gruppe": "Korrektur des Fersenbeins"
+        },
+        {
+          "op": "calc_verlaengerung",
+          "variante": "einfach",
+          "gruppe": "Korrektur des Fersenbeins"
+        },
+        {
+          "op": "calc_verlaengerung",
+          "variante": "komplex",
+          "gruppe": "Korrektur des Fersenbeins"
+        },
+        {
+          "op": "double_arthrodese",
+          "variante": "einfach",
+          "gruppe": "Versteifung"
+        },
+        {
+          "op": "double_arthrodese",
+          "variante": "komplex",
+          "gruppe": "Versteifung"
+        },
+        {
+          "op": "triple",
+          "variante": "einfach",
+          "gruppe": "Versteifung"
+        },
+        {
+          "op": "triple",
+          "variante": "komplex",
+          "gruppe": "Versteifung"
+        },
+        {
+          "op": "calc_medial_sehne",
+          "variante": "einfach",
+          "gruppe": "Korrektur des Fersenbeins mit Sehneneingriff"
+        },
+        {
+          "op": "calc_medial_sehne",
+          "variante": "komplex",
+          "gruppe": "Korrektur des Fersenbeins mit Sehneneingriff"
+        },
+        {
+          "op": "calc_verlaengerung_sehne",
+          "variante": "einfach",
+          "gruppe": "Korrektur des Fersenbeins mit Sehneneingriff"
+        },
+        {
+          "op": "calc_verlaengerung_sehne",
+          "variante": "komplex",
+          "gruppe": "Korrektur des Fersenbeins mit Sehneneingriff"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist bei Ihnen geplant?",
+        "optionen": [
+          {
+            "label": "Arthrorise",
+            "kurz": "Schraube im Sinus tarsi, gelenkerhaltend",
+            "ziel": {
+              "op": "arthrorise",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Korrektur des Fersenbeins",
+            "kurz": "Verschiebe- oder Verlängerungsosteotomie, gegebenenfalls mit Zusatzeingriff wie Cotton-Osteotomie",
+            "weiter": {
+              "frage": "Welche Osteotomie des Fersenbeins ist geplant?",
+              "optionen": [
+                {
+                  "label": "Verschiebeosteotomie",
+                  "kurz": "Das Fersenbein wird zur Seite verschoben",
+                  "weiter": {
+                    "frage": "Wird zusätzlich an einer Sehne operiert?",
+                    "optionen": [
+                      {
+                        "label": "Nein, nur die Osteotomie",
+                        "weiter": {
+                          "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                          "optionen": [
+                            {
+                              "label": "Teilbelastung ab früh nach der OP",
+                              "ziel": {
+                                "op": "calc_medial",
+                                "variante": "einfach"
+                              }
+                            },
+                            {
+                              "label": "Komplette Entlastung in den ersten Wochen",
+                              "ziel": {
+                                "op": "calc_medial",
+                                "variante": "komplex"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Sehnentransfer oder Refixation",
+                        "kurz": "z. B. FDL-Transfer oder Refixation bei Os tibiale externum",
+                        "weiter": {
+                          "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                          "optionen": [
+                            {
+                              "label": "Teilbelastung ab früh nach der OP",
+                              "ziel": {
+                                "op": "calc_medial_sehne",
+                                "variante": "einfach"
+                              }
+                            },
+                            {
+                              "label": "Komplette Entlastung in den ersten Wochen",
+                              "ziel": {
+                                "op": "calc_medial_sehne",
+                                "variante": "komplex"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Verlängerungsosteotomie",
+                  "kurz": "Das Fersenbein wird verlängert",
+                  "weiter": {
+                    "frage": "Wird zusätzlich an einer Sehne operiert?",
+                    "optionen": [
+                      {
+                        "label": "Nein, nur die Osteotomie",
+                        "weiter": {
+                          "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                          "optionen": [
+                            {
+                              "label": "Teilbelastung ab früh nach der OP",
+                              "ziel": {
+                                "op": "calc_verlaengerung",
+                                "variante": "einfach"
+                              }
+                            },
+                            {
+                              "label": "Komplette Entlastung in den ersten Wochen",
+                              "ziel": {
+                                "op": "calc_verlaengerung",
+                                "variante": "komplex"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Sehnentransfer oder Refixation",
+                        "kurz": "z. B. FDL-Transfer oder Refixation bei Os tibiale externum",
+                        "weiter": {
+                          "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                          "optionen": [
+                            {
+                              "label": "Teilbelastung ab früh nach der OP",
+                              "ziel": {
+                                "op": "calc_verlaengerung_sehne",
+                                "variante": "einfach"
+                              }
+                            },
+                            {
+                              "label": "Komplette Entlastung in den ersten Wochen",
+                              "ziel": {
+                                "op": "calc_verlaengerung_sehne",
+                                "variante": "komplex"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Versteifung (Double- oder Triple-Arthrodese)",
+            "kurz": "Bei fortgeschrittener Fehlstellung oder Verschleiß",
+            "weiter": {
+              "frage": "Welche Versteifung ist geplant?",
+              "optionen": [
+                {
+                  "label": "Double-Arthrodese",
+                  "kurz": "Subtalar- und Talonaviculargelenk",
+                  "weiter": {
+                    "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                    "optionen": [
+                      {
+                        "label": "Teilbelastung ab früh nach der OP",
+                        "ziel": {
+                          "op": "double_arthrodese",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Komplette Entlastung in den ersten Wochen",
+                        "ziel": {
+                          "op": "double_arthrodese",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Triple-Arthrodese",
+                  "kurz": "Alle drei Rückfußgelenke",
+                  "weiter": {
+                    "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                    "optionen": [
+                      {
+                        "label": "Teilbelastung ab früh nach der OP",
+                        "ziel": {
+                          "op": "triple",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Komplette Entlastung in den ersten Wochen",
+                        "ziel": {
+                          "op": "triple",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "key": "lisfranc_arthrose",
       "label": "Mittelfuß-Arthrose (Lisfranc)",
       "untertitel": "Verschleiß der Fußwurzel-Mittelfuß-Gelenke",
@@ -3202,7 +3461,7 @@
       "varianten": {
         "einfach": {
           "anzeigename": "Calcaneus-Verschiebeosteotomie — Teilbelastung",
-          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, Teilbelastung in der Nachbehandlung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, Teilbelastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie.",
           "auswahl_label": "Mit Teilbelastung",
           "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
           "postop": [
@@ -3290,7 +3549,7 @@
         },
         "komplex": {
           "anzeigename": "Calcaneus-Verschiebeosteotomie — Entlastung",
-          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, vollständige Entlastung in der Nachbehandlung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, vollständige Entlastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie.",
           "auswahl_label": "Mit kompletter Entlastung",
           "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
           "postop": [
@@ -3394,7 +3653,7 @@
       "varianten": {
         "einfach": {
           "anzeigename": "Calcaneus-Verlängerungsosteotomie — Teilbelastung",
-          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, Teilbelastung in der Nachbehandlung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, Teilbelastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie.",
           "auswahl_label": "Mit Teilbelastung",
           "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
           "postop": [
@@ -3482,7 +3741,7 @@
         },
         "komplex": {
           "anzeigename": "Calcaneus-Verlängerungsosteotomie — Entlastung",
-          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, vollständige Entlastung in der Nachbehandlung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, vollständige Entlastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie.",
           "auswahl_label": "Mit kompletter Entlastung",
           "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
           "postop": [
@@ -7020,6 +7279,9 @@
             }
           ]
         }
+      },
+      "platzhalter": {
+        "SCHUH": "normalem, bequemem Schuhwerk"
       }
     },
     "tarsaltunnel": {
@@ -7095,6 +7357,9 @@
             }
           ]
         }
+      },
+      "platzhalter": {
+        "SCHUH": "normalem, bequemem Schuhwerk"
       }
     },
     "schede": {
@@ -7170,6 +7435,9 @@
             }
           ]
         }
+      },
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh"
       }
     },
     "moberg": {
@@ -7245,6 +7513,9 @@
             }
           ]
         }
+      },
+      "platzhalter": {
+        "SCHUH": "einem Verbandschuh"
       }
     },
     "mica": {
@@ -7592,6 +7863,1162 @@
         "THROMBOSE_WOCHEN": "6"
       },
       "aufenthalt_default": "stationaer"
+    },
+    "calc_medial_sehne": {
+      "label": "Calcaneus-Verschiebeosteotomie mit Sehneneingriff",
+      "kurzlabel": "Calcaneus-OT + Sehne",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {
+          "aktiv_bleiben": "aktiv_bleiben_sehne"
+        },
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Calcaneus-Verschiebeosteotomie mit Sehneneingriff — Teilbelastung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, Teilbelastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie. Zusätzlich wird an einer Sehne operiert, zum Beispiel durch einen FDL-Transfer oder die Refixation einer Sehne nach Entfernung eines Os tibiale externum. In den ersten sechs Wochen muss jede Auswärtsdrehung des Fußes (=Eversion) streng vermieden werden.",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_postop"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "sehne_schutz_erinnerung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_sehne"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Calcaneus-Verschiebeosteotomie mit Sehneneingriff — Entlastung",
+          "beschreibung": "Verschiebung des Fersenbeins zur Korrektur der Rückfußachse, vollständige Entlastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie. Zusätzlich wird an einer Sehne operiert, zum Beispiel durch einen FDL-Transfer oder die Refixation einer Sehne nach Entfernung eines Os tibiale externum. In den ersten sechs Wochen muss jede Auswärtsdrehung des Fußes (=Eversion) streng vermieden werden.",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_postop"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "sehne_schutz_erinnerung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      },
+      "aufenthalt_default": "stationaer"
+    },
+    "calc_verlaengerung_sehne": {
+      "label": "Calcaneus-Verlängerungsosteotomie mit Sehneneingriff",
+      "kurzlabel": "Calcaneus-Verlängerung + Sehne",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {
+          "aktiv_bleiben": "aktiv_bleiben_sehne"
+        },
+        "ergaenze": []
+      },
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Calcaneus-Verlängerungsosteotomie mit Sehneneingriff — Teilbelastung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, Teilbelastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie. Zusätzlich wird an einer Sehne operiert, zum Beispiel durch einen FDL-Transfer oder die Refixation einer Sehne nach Entfernung eines Os tibiale externum. In den ersten sechs Wochen muss jede Auswärtsdrehung des Fußes (=Eversion) streng vermieden werden.",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung ab früh nach OP",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_postop"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "sehne_schutz_erinnerung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_sehne"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Calcaneus-Verlängerungsosteotomie mit Sehneneingriff — Entlastung",
+          "beschreibung": "Verlängerung des Fersenbeins zur Korrektur des Knick-Senkfußes, vollständige Entlastung in der Nachbehandlung. Gegebenenfalls mit Zusatzeingriff wie einer Cotton-Osteotomie. Zusätzlich wird an einer Sehne operiert, zum Beispiel durch einen FDL-Transfer oder die Refixation einer Sehne nach Entfernung eines Os tibiale externum. In den ersten sechs Wochen muss jede Auswärtsdrehung des Fußes (=Eversion) streng vermieden werden.",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung in den ersten Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_postop"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 14,
+              "label": "2 Wochen nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "sehne_schutz_erinnerung"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      },
+      "aufenthalt_default": "stationaer"
+    },
+    "peroneal_riss": {
+      "label": "Peronealsehnen-Naht/Rekonstruktion",
+      "kurzlabel": "Peroneal-Naht",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "stationaer",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Peronealsehnen-Naht oder Rekonstruktion",
+          "beschreibung": "Naht oder Rekonstruktion der Peronealsehnen. In den ersten sechs Wochen müssen Drehbewegungen des Fußes nach innen und außen streng vermieden werden.",
+          "auswahl_label": "Standard",
+          "auswahl_kurz": "Naht oder Rekonstruktion der Sehne",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "entlastung_bis_wunde_trocken"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_peroneal_riss"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 7,
+              "label": "1 Woche nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "erinnerung_peroneal_riss"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "aufbau_woche6_sehne"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "kraftaufbau_woche8_peroneal"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "peroneal_instab": {
+      "label": "Peronealsehnen-Stabilisierung",
+      "kurzlabel": "Peroneal-Stabilisierung",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "stationaer",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Peronealsehnen-Stabilisierung",
+          "beschreibung": "Stabilisierung der Peronealsehnen in ihrer Führungsrinne. In den ersten sechs Wochen muss das aktive Drehen des Fußes nach außen streng vermieden werden.",
+          "auswahl_label": "Standard",
+          "auswahl_kurz": "Stabilisierung der Sehnen in der Führungsrinne",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_peroneal_instab"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung_20"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "erinnerung_peroneal_instab"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "aufbau_woche6_sehne"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "coalitio_tc": {
+      "label": "Coalitio-Resektion (talocalcanear)",
+      "kurzlabel": "Coalitio TC",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "verbandschuh",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "stationaer",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Coalitio-Resektion ohne Korrektur des Fersenbeins",
+          "beschreibung": "Entfernung der Knochenbrücke zwischen Sprungbein und Fersenbein. Nachbehandlung mit 20 kg Teilbelastung im Verbandschuh für 4 Wochen, danach Aufbelastung.",
+          "auswahl_label": "Ohne Fersenbein-Korrektur",
+          "auswahl_kurz": "4 Wochen 20 kg Teilbelastung im Verbandschuh",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_verbandschuh"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung_20"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_woche3_einfach"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "aufbelastung_woche4_coalitio"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Coalitio-Resektion mit Korrektur des Fersenbeins",
+          "beschreibung": "Entfernung der Knochenbrücke mit zusätzlicher Calcaneus-Osteotomie. Die Nachbehandlung folgt dem Schema der Osteotomie mit Teilbelastung über 6 Wochen.",
+          "auswahl_label": "Mit Fersenbein-Korrektur",
+          "auswahl_kurz": "Nachbehandlung nach dem Schema der Calcaneus-Osteotomie",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 35,
+              "label": "5 Wochen nach OP",
+              "baustein": "roentgen_heilungskontrolle"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "roentgen_aufbelastung"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
+    },
+    "smot_varus": {
+      "label": "Supramalleoläre Osteotomie (Varus)",
+      "kurzlabel": "SMOT Varus",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "8",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "8"
+      },
+      "praeop": {
+        "ersetze": {},
+        "ergaenze": []
+      },
+      "aufenthalt_default": "stationaer",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Supramalleoläre Osteotomie (Varus) — Teilbelastung",
+          "beschreibung": "Korrekturosteotomie oberhalb des Sprunggelenks bei Varus-Fehlstellung, Teilbelastung über 8 Wochen bis zur knöchernen Heilung.",
+          "auswahl_label": "Mit Teilbelastung",
+          "auswahl_kurz": "Mit Teilbelastung über 8 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_frei"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "roentgen_smot_aufbelastung_8wo"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "roentgen_verlauf_12wo"
+            }
+          ]
+        },
+        "komplex": {
+          "anzeigename": "Supramalleoläre Osteotomie (Varus) — Entlastung",
+          "beschreibung": "Korrekturosteotomie oberhalb des Sprunggelenks bei Varus-Fehlstellung, vollständige Entlastung über 8 Wochen.",
+          "auswahl_label": "Mit kompletter Entlastung",
+          "auswahl_kurz": "Mit kompletter Entlastung über 8 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_gips"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_entlastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 56,
+              "label": "8 Wochen nach OP",
+              "baustein": "roentgen_smot_aufbelastung_8wo"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_arthrodese"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            },
+            {
+              "tag": 84,
+              "label": "3 Monate nach OP",
+              "baustein": "roentgen_verlauf_12wo"
+            }
+          ]
+        }
+      }
+    },
+    "kidner": {
+      "label": "Kidner-Prozedur (Os tibiale externum)",
+      "kurzlabel": "Kidner",
+      "merkmale": {
+        "belastung": "teil",
+        "ruhigstellung": "walker",
+        "aufenthalt": "stationaer"
+      },
+      "platzhalter": {
+        "WOCHEN": "6",
+        "GELENK": "obere Sprunggelenk",
+        "THROMBOSE_WOCHEN": "6"
+      },
+      "praeop": {
+        "ersetze": {
+          "aktiv_bleiben": "aktiv_bleiben_sehne"
+        },
+        "ergaenze": []
+      },
+      "aufenthalt_default": "stationaer",
+      "varianten": {
+        "einfach": {
+          "anzeigename": "Kidner-Prozedur (Entfernung Os tibiale externum mit Sehnen-Refixation)",
+          "beschreibung": "Entfernung des zusätzlichen Knochens und Wiederbefestigung der Tibialis-posterior-Sehne. In den ersten sechs Wochen muss jede Auswärtsdrehung des Fußes (=Eversion) streng vermieden werden.",
+          "auswahl_label": "Standard",
+          "auswahl_kurz": "Teilbelastung im Walker über 6 Wochen",
+          "postop": [
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "op_tag_ruhiggestellt"
+            },
+            {
+              "tag": 0,
+              "label": "OP-Tag",
+              "baustein": "abschwellung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "hygiene_walker"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "wundkonditionierung"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "lymphdrainage"
+            },
+            {
+              "tag": 1,
+              "label": "Tag 1 nach OP",
+              "baustein": "sehne_schutz_postop"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2 nach OP",
+              "baustein": "verband_1_ruhiggestellt"
+            },
+            {
+              "tag": 2,
+              "label": "Tag 2–3 nach OP",
+              "baustein": "mobilisierung_teilbelastung"
+            },
+            {
+              "tag": 3,
+              "label": "sobald die Kriterien erfüllt sind",
+              "baustein": "entlassung_stationaer"
+            },
+            {
+              "tag": 17,
+              "label": "2 bis 3 Wochen nach OP",
+              "baustein": "sehne_schutz_erinnerung"
+            },
+            {
+              "tag": 18,
+              "label": "ca. 18 Tage nach OP",
+              "baustein": "faden_standard"
+            },
+            {
+              "tag": 21,
+              "label": "3 Wochen nach OP",
+              "baustein": "verband_ab_ruhiggestellt"
+            },
+            {
+              "tag": 28,
+              "label": "4 Wochen nach OP",
+              "baustein": "bewegung_osg_sehne"
+            },
+            {
+              "tag": 40,
+              "label": "ca. 6 Wochen nach OP",
+              "baustein": "narbenpflege"
+            },
+            {
+              "tag": 42,
+              "label": "6 Wochen nach OP",
+              "baustein": "aufbau_woche6_sehne"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "kontrolle_vorfuss_allgemein"
+            },
+            {
+              "tag": 84,
+              "label": "12 Wochen nach OP",
+              "baustein": "sport_rueckfuss"
+            }
+          ]
+        }
+      }
     }
   },
   "BEGLEITER_BAUSTEINE": {
@@ -8504,6 +9931,104 @@
       "emoji": "🦶",
       "intro": "Etwa 6 Wochen nach dem Eingriff werden die redressierenden Verbände beendet.",
       "text": "Die Führung der Großzehe geht damit nicht zu Ende, sie wechselt nur das Mittel. Tagsüber trägt ein Zwischenzehenkeil die Korrektur weiter, nachts übernimmt eine Nachtschiene. Diese Führung wird bis etwa zur 12. Woche fortgeführt.\n\nDie Wunde braucht jetzt in der Regel keinen Verband mehr; ein Pflaster schützt bei Bedarf vor Druckstellen.",
+      "subthemen": []
+    },
+    "aktiv_bleiben_sehne": {
+      "thema": "Bleiben Sie aktiv",
+      "emoji": "🚴",
+      "intro": "Auch wenn die Ursache Ihrer Behandlung zu Schmerzen führt, wird die Erholung schneller laufen, wenn Sie auch vor dem Eingriff möglichst aktiv bleiben.",
+      "text": "Sinnvoll sind hier Aktivitäten mit geringer Belastung für Ihre Gelenke, wie Schwimmen, Wassergymnastik, Radfahren, Ergometertraining oder Spazierengehen.\n\nBei Ihrer Operation wird zusätzlich an einer Sehne gearbeitet, zum Beispiel durch einen FDL-Transfer oder die Wiederbefestigung (=Refixation) einer Sehne nach Entfernung eines zusätzlichen Knochens (Os tibiale externum). Stellen Sie sich schon jetzt darauf ein, dass der Fuß in den ersten sechs Wochen nach der Operation nicht nach außen gedreht werden darf. Diese Auswärtsdrehung (=Eversion) belastet die operierte Sehne und würde die Einheilung gefährden.",
+      "subthemen": []
+    },
+    "sehne_schutz_postop": {
+      "thema": "Schutz der operierten Sehne",
+      "emoji": "⚠️",
+      "intro": "Bei Ihrer Operation wurde zusätzlich an einer Sehne gearbeitet, zum Beispiel durch einen FDL-Transfer oder die Refixation einer Sehne nach Entfernung eines Os tibiale externum.",
+      "text": "Damit die Sehne sicher einheilen kann, gilt ab sofort eine wichtige Regel: Vermeiden Sie in den ersten sechs Wochen streng jede Auswärtsdrehung des Fußes (=Eversion). Drehen Sie den Fuß also nicht nach außen und heben Sie den äußeren Fußrand nicht aktiv an. Auch beim Umlagern, beim Anziehen und bei der Körperpflege sollte der Fuß nicht in diese Richtung gedreht werden. Die Ruhigstellung im Walker oder Gips schützt die Sehne zusätzlich.",
+      "subthemen": []
+    },
+    "sehne_schutz_erinnerung": {
+      "thema": "Erinnerung: Sehne weiter schützen",
+      "emoji": "⚠️",
+      "intro": "Die ersten Wochen sind geschafft. Für die operierte Sehne gilt die Schutzregel aber weiterhin.",
+      "text": "Vermeiden Sie bis zum Ende der sechsten Woche weiterhin streng jede Auswärtsdrehung des Fußes (=Eversion). Gerade wenn die Schmerzen nachlassen, passiert eine unbedachte Drehbewegung schnell. Die Sehne braucht die volle Zeit, um am Knochen sicher einzuheilen.",
+      "subthemen": []
+    },
+    "bewegung_osg_sehne": {
+      "thema": "Sanfte Bewegungsübungen",
+      "emoji": "🦶",
+      "intro": "Eine Steife der nicht betroffenen Gelenke ist bei diesem Eingriff selten. Wegen des Sehneneingriffs gilt aber weiterhin eine wichtige Einschränkung.",
+      "text": "Machen Sie Bewegungsübungen ohne Belastung für Hüfte und Knie. Auch Anspannungsübungen der Muskeln gegen Widerstand (= Isometrie) oder Übungen mit einem Theraband sind möglich. Dies dient auch der Thromboseprophylaxe und der Erhaltung der Gelenkbeweglichkeit.\n\nIm oberen Sprunggelenk selber darf sanft auf und ab bewegt werden, wenn Ihnen dies vom Behandler freigegeben wurde. Weiterhin streng zu vermeiden ist bis zum Ende der sechsten Woche jede Auswärtsdrehung des Fußes (=Eversion), also das Drehen des Fußes nach außen. Kreisende Bewegungen des Fußes sind deshalb noch nicht erlaubt.",
+      "subthemen": []
+    },
+    "entlastung_bis_wunde_trocken": {
+      "thema": "Entlastung in der ersten Woche",
+      "emoji": "🛌",
+      "intro": "In der ersten Woche nach der Operation wird der Fuß vollständig entlastet.",
+      "text": "Der Fuß bleibt zunächst in der Schiene oder im Gips ruhiggestellt und wird an zwei Unterarmgehstützen nicht belastet, bis die Wunden trocken sind. Danach, in der Regel nach etwa einer Woche, erfolgt der Wechsel in den Walker und es wird mit einer 15-kg-Teilbelastung begonnen. Ein gutes Gefühl dafür bekommen Sie mit einer Personenwaage: Drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 15 kg anzeigt, mehr soll es beim Gehen nicht werden.\n\nEin Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) ist nötig und wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
+      "subthemen": []
+    },
+    "sehne_schutz_peroneal_riss": {
+      "thema": "Schutz der genähten Sehne",
+      "emoji": "⚠️",
+      "intro": "Bei Ihrer Operation wurde die Peronealsehne genäht oder rekonstruiert.",
+      "text": "Damit die Sehne sicher heilen kann, vermeiden Sie in den ersten sechs Wochen streng jede Drehbewegung des Fußes, weder nach innen (=Inversion) noch nach außen (=Eversion). Sanftes Heben und Senken des Fußes ist nur erlaubt, wenn Ihr Behandler es je nach Stabilität der Naht ausdrücklich freigegeben hat. Die Ruhigstellung in Schiene, Gips oder Walker schützt die Sehne zusätzlich.",
+      "subthemen": []
+    },
+    "erinnerung_peroneal_riss": {
+      "thema": "Erinnerung: Sehne weiter schützen",
+      "emoji": "⚠️",
+      "intro": "Die ersten Wochen sind geschafft. Für die genähte Sehne gilt die Schutzregel aber weiterhin.",
+      "text": "Vermeiden Sie bis zum Ende der sechsten Woche weiterhin streng Drehbewegungen des Fußes nach innen und außen (Inversion und Eversion). Gerade wenn die Schmerzen nachlassen, passiert eine unbedachte Bewegung schnell. Die Sehne braucht die volle Zeit, um sicher zu heilen.",
+      "subthemen": []
+    },
+    "sehne_schutz_peroneal_instab": {
+      "thema": "Schutz der stabilisierten Sehnen",
+      "emoji": "⚠️",
+      "intro": "Bei Ihrer Operation wurden die Peronealsehnen stabilisiert, damit sie nicht mehr aus ihrer Führungsrinne springen.",
+      "text": "Damit die Rekonstruktion sicher einheilen kann, vermeiden Sie in den ersten sechs Wochen streng das aktive Drehen des Fußes nach außen (=Eversion), also das aktive Anheben des äußeren Fußrandes. Genau diese Bewegung spannt die Peronealsehnen an. Die Ruhigstellung im Walker schützt zusätzlich.",
+      "subthemen": []
+    },
+    "erinnerung_peroneal_instab": {
+      "thema": "Erinnerung: Sehnen weiter schützen",
+      "emoji": "⚠️",
+      "intro": "Die ersten Wochen sind geschafft. Für die stabilisierten Sehnen gilt die Schutzregel aber weiterhin.",
+      "text": "Vermeiden Sie bis zum Ende der sechsten Woche weiterhin streng das aktive Drehen des Fußes nach außen (=Eversion). Gerade wenn die Schmerzen nachlassen, passiert eine unbedachte Bewegung schnell. Die Rekonstruktion braucht die volle Zeit, um sicher einzuheilen.",
+      "subthemen": []
+    },
+    "aufbau_woche6_sehne": {
+      "thema": "Aufbau ab Woche 6",
+      "emoji": "💪",
+      "intro": "Sechs Wochen sind geschafft. Die Ruhigstellung kann nun schrittweise beendet werden.",
+      "text": "In Absprache mit Ihrem Behandler wird der Walker abgelegt und die Belastung schrittweise bis zur Vollbelastung gesteigert. Am besten geschieht dies physiotherapeutisch angeleitet mit Anspannungsübungen (=Isometrie), aktiven und passiven Bewegungsübungen und Gangschule. Auch die bisher verbotenen Drehbewegungen des Fußes werden nun langsam und kontrolliert wieder aufgenommen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt. Den genauen Endpunkt legt Ihr Behandler fest.",
+      "subthemen": []
+    },
+    "kraftaufbau_woche8_peroneal": {
+      "thema": "Kraftaufbau",
+      "emoji": "🏋️",
+      "intro": "Ab der achten Woche beginnt der gezielte Kraftaufbau.",
+      "text": "Nun kommen exzentrische und konzentrische Kraftübungen hinzu, zum Beispiel mit dem Theraband oder in der Wassergymnastik. Steigern Sie die Übungen langsam und schmerzadaptiert, am besten unter physiotherapeutischer Anleitung. Ziel ist ein sicheres Gangbild und eine kräftige Muskulatur rund um das Sprunggelenk. Ein langsamer Wiederbeginn des Sports ist ab Woche 12 nach individueller Abwägung mit Ihrem Behandler möglich.",
+      "subthemen": []
+    },
+    "mobilisierung_teilbelastung_20": {
+      "thema": "Mobilisierung und Thromboseschutz",
+      "emoji": "🚶",
+      "intro": "Nach dem Eingriff können Sie in der Regel auf den operierten Fuß in einem begrenzten Maße auftreten.",
+      "text": "Hierbei spricht man von einer 20-kg-Teilbelastung: Der Fuß wird an den Unterarmgehstützen mit aufgesetzt und abgerollt, das Körpergewicht tragen aber die Stützen. Ein gutes Gefühl dafür bekommen Sie mit einer Personenwaage: Drücken Sie den Fuß im Stehen so auf die Waage, dass sie etwa 20 kg anzeigt, mehr soll es beim Gehen nicht werden.\n\nMit der Teilbelastung wird begonnen, wenn die Wunde sich beruhigt hat und eine Wundkontrolle vorgenommen wurde. Treten Sie also zunächst gar nicht auf den Fuß auf und warten Sie ab, bis die Teilbelastung in Absprache mit Ihrem Behandler freigegeben wird.\n\nEin Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) ist nötig und wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.\n\nSollte eine Neigung zu Thrombosen bei Ihnen bekannt sein oder bereits vor der Operation eine Blutverdünnung vorgelegen haben, kann Ihr Konzept abweichen, und Sie sollten hier spezifisch Ihre Behandler fragen.\n\nWeitere nicht-medikamentöse Maßnahmen zur Abwendung von Thrombosen sind regelmäßige Bewegungs- und Anspannungsübungen der Beine im Bett.",
+      "subthemen": []
+    },
+    "aufbelastung_woche4_coalitio": {
+      "thema": "Aufbelastung",
+      "emoji": "🚶",
+      "intro": "Vier Wochen sind vorbei. Nun wird die Belastung gesteigert.",
+      "text": "Nach vier Wochen wird die 20-kg-Teilbelastung in Absprache mit Ihrem Behandler schrittweise bis zur Vollbelastung gesteigert. Die Unterarmgehstützen werden dabei nach und nach weggelassen. Auch der Verbandschuh kann je nach Wundverhältnissen und Schwellung abgelegt werden.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt. Den genauen Endpunkt legt Ihr Behandler fest.",
+      "subthemen": []
+    },
+    "roentgen_smot_aufbelastung_8wo": {
+      "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "emoji": "🩻",
+      "intro": "Es erfolgt 8 Wochen nach dem Eingriff eine Röntgenkontrolle.",
+      "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung der Osteotomie. Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, steigern Sie im Stiefel und mit den Stützen die Belastung schrittweise bis zur Vollbelastung. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, Mobilisierung und die Lastaufnahme mit Steigerung zur Vollbelastung.",
       "subthemen": []
     }
   },
