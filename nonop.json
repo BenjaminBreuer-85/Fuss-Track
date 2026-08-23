@@ -1,7 +1,8 @@
 {
   "_meta": {
     "version": "0.1-entwurf",
-    "hinweis": "ENTWURF Non-OP-Begleiter. Anker = Unfalltag (tagOffset ab Unfall). Inhalte 1:1 aus Benjamins Text. Stufen 4-5 optional (Sportler)."
+    "hinweis": "ENTWURF Non-OP-Begleiter. Anker = Unfalltag (tagOffset ab Unfall). Inhalte 1:1 aus Benjamins Text. Stufen 4-5 optional (Sportler).",
+    "bilder_hinweis": "Uebungsbilder liegen unter bilder/uebungen/. Feld 'bilder' je Inhaltsblock: Liste aus {datei, alt, bu, format, schritt}. 'format' ist hoch (Standard), quer oder quadrat. 'schritt' ordnet ein Bild einem nummerierten Schritt zu; ohne 'schritt' erscheint das Bild unter der Schrittliste."
   },
   "NONOP_KB": {
     "aussenband_konservativ": {
@@ -518,15 +519,51 @@
     },
     "achillo_ins_s2": {
       "was": "Beidbeinige Wadenhebung, Absenken nur bis die Ferse den Boden/Neutralstellung erreicht, nicht tiefer.",
-      "dosis": "3 × 15, Tempo 3 s / 3 s, täglich. Keine Dehnung unter Bodenhöhe."
+      "dosis": "3 × 15, Tempo 3 s / 3 s, täglich. Keine Dehnung unter Bodenhöhe.",
+      "bilder": [
+        {
+          "datei": "achillo_ins_hebung_oben.jpg",
+          "alt": "Seitenansicht: beide Fersen angehoben, Stand auf den Fußballen",
+          "bu": "Ausgangsposition: aus dem Zehenspitzenstand heraus."
+        },
+        {
+          "datei": "achillo_ins_hebung_neutral.jpg",
+          "alt": "Seitenansicht: Ferse auf Höhe des Vorfußes, nicht tiefer",
+          "bu": "Endposition: Absenken endet in Neutralstellung, die Ferse geht nicht tiefer."
+        }
+      ]
     },
     "achillo_ins_s3": {
       "was": "Einbeinige Wadenhebung bzw. mit Gewicht, Bewegung nur bis Neutralstellung, keine Dehnung unter Bodenhöhe.",
-      "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last. Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind."
+      "dosis": "3–4 Sätze, Tempo 3 s / 3 s, 3×/Woche, Wiederholungen 15 → 6 bei steigender Last. Orientierung Last: so viel Gewicht, dass die letzten Wiederholungen deutlich anstrengend sind.",
+      "bilder": [
+        {
+          "datei": "achillo_ins_hebung_oben.jpg",
+          "alt": "Seitenansicht: beide Fersen angehoben, Stand auf den Fußballen",
+          "bu": "Ausgangsposition: aus dem Zehenspitzenstand heraus."
+        },
+        {
+          "datei": "achillo_ins_hebung_neutral.jpg",
+          "alt": "Seitenansicht: Ferse auf Höhe des Vorfußes, nicht tiefer",
+          "bu": "Endposition: Absenken endet in Neutralstellung, die Ferse geht nicht tiefer."
+        }
+      ]
     },
     "achillo_ins_s4": {
       "was": "Kräftigung mit Gewicht, gestreckt und gebeugt, ohne Absenken unter die Stufenkante.",
-      "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag). Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren."
+      "dosis": "3 × 15, täglich (Frequenz nach Verträglichkeit; bei Reizung eher 1×/Tag). Ein Fersenkeil im Schuh kann die Belastung am Ansatz zusätzlich reduzieren.",
+      "bilder": [
+        {
+          "datei": "achillo_ins_hebung_oben.jpg",
+          "alt": "Seitenansicht: beide Fersen angehoben, Stand auf den Fußballen",
+          "bu": "Ausgangsposition: aus dem Zehenspitzenstand heraus."
+        },
+        {
+          "datei": "achillo_ins_hebung_neutral.jpg",
+          "alt": "Seitenansicht: Ferse auf Höhe des Vorfußes, nicht tiefer",
+          "bu": "Endposition: Absenken endet in Neutralstellung, die Ferse geht nicht tiefer."
+        }
+      ]
     },
     "achillo_ins_s5": {
       "was": "Federnde Belastung, sportartspezifisch, langsam aufbauend.",

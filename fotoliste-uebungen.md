@@ -174,3 +174,48 @@ Vorschlag für den Ablauf, sortiert nach Ausgangsposition statt nach Programm, d
 8. **Draußen:** B2.6
 
 Wenn die Zeit nicht reicht, ist die Rangfolge: erst Teil A, dann B1, dann B2.3 (Short-Foot), dann B6.4 (das Achillodynie-Paar). Diese vier decken die meisten Textstellen ab.
+
+---
+
+## Nachtrag: technische Mindestanforderungen
+
+Die ersten Probeaufnahmen kamen mit **640 × 480 Pixeln** an. Das ist zu wenig: Auf einem heutigen Handy wird ein bildschirmbreites Foto mit rund 1200 Pixeln dargestellt, ein 480 Pixel breites Bild erscheint sichtbar unscharf. Die Kamera liefert etwa 3000 × 4000; irgendwo auf dem Übertragungsweg wird verkleinert.
+
+- **Mindestens 1600 Pixel auf der langen Seite**, besser die unveränderte Originaldatei.
+- Übertragung als Datei, nicht über einen Messenger. Bei AirDrop und Mail die Option „Originalgröße" wählen, nicht „klein" oder „mittel".
+- Die Verkleinerung auf App-Maß übernehme ich, dabei entsteht auch die Variante für kleine Bildschirme.
+
+## Nachtrag: Achillodynie, die beiden Formen sauber trennen
+
+Für die ansatznahe Form (`achillo_ins_*`) gilt: kein Absenken unter Bodenhöhe. Wenn diese Übung auf einer Stufe fotografiert wird, sieht man der Aufnahme nicht an, dass die Ferse dort **nicht** tiefer gehen darf — die Ferse schwebt hinter der Kante, und genau das ist die verbotene Ausgangslage.
+
+Vorschlag, der den Unterschied ohne jeden Text sichtbar macht:
+
+- **Ansatznahe Form auf ebenem Boden.** Keine Stufe im Bild. Absenken endet, wenn die Ferse den Boden berührt. Das entspricht auch dem App-Text „Keine Dehnung unter Bodenhöhe".
+- **Mittlere Form auf der Stufe.** Ferse deutlich unter die Kante abgesenkt.
+
+Beide Serien jeweils in zwei Aufnahmen, oben und unten, aus derselben Kameraposition. Wer die beiden Bildpaare nebeneinander sieht, versteht den Unterschied sofort — Stufe gegen kein Stufe.
+
+## Nachtrag: die App zeigt Übungsbilder jetzt an
+
+Umgesetzt am 23.08.2026. In `fusstrack.html` gibt es die Komponente `UebungsBilder`, in `nonop.json` das Feld `bilder` je Inhaltsblock. Die Dateien liegen unter `bilder/uebungen/`.
+
+Aufbau eines Eintrags:
+
+```json
+"bilder": [
+  { "datei": "achillo_ins_hebung_oben.jpg",
+    "alt": "Seitenansicht: beide Fersen angehoben, Stand auf den Fußballen",
+    "bu": "Ausgangsposition: aus dem Zehenspitzenstand heraus." }
+]
+```
+
+- `datei` ist der Dateiname, ohne Pfad.
+- `alt` beschreibt das Bild für Vorleseprogramme.
+- `bu` ist die Bildunterschrift, die unter dem Bild erscheint.
+- `format` ist optional: `hoch` (Standard, 3:4), `quer` (4:3) oder `quadrat`.
+- `schritt` ist optional und ordnet ein Bild einem nummerierten Schritt zu; ohne Angabe erscheint das Bild unter der Schrittliste.
+
+Darstellung: Ein Bild füllt die Breite, zwei Bilder stehen nebeneinander als Paar, ab drei Bildern in zwei Spalten. Tippen öffnet das Bild formatfüllend. Wo noch keine Bilder hinterlegt sind, bleibt der bisherige Platzhalterkasten stehen, es ändert sich also nichts an Programmen ohne Fotos.
+
+**Für den Fototermin heißt das:** Aufnahmen im Hochformat, Seitenverhältnis 3:4 oder höher. Der Zuschnitt erfolgt mittig auf 3:4, deshalb sollte das Wesentliche mittig im Bild liegen und oben wie unten etwas Luft bleiben.

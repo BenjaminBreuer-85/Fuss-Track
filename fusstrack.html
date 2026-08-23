@@ -1376,6 +1376,61 @@ function nonopClear() {
   try { localStorage.removeItem(NONOP_STORAGE_KEY); } catch (e) {}
 }
 
+// === Übungsbilder ===
+// Erwartet ein Array aus { datei, alt, bu, format, schritt }. Die Dateien liegen unter
+// bilder/uebungen/. Ohne Bilder erscheint der bisherige Platzhaltertext, damit die
+// Ansicht in Programmen ohne Fotos unverändert bleibt.
+function UebungsBilder({ bilder, platzhalter, rand }) {
+  var [gross, setGross] = useState(null);
+  var liste = (bilder || []).filter(function(b){ return b && b.datei; });
+  var aussen = { marginTop: 12, marginBottom: 4 };
+  if (rand) { aussen.marginLeft = rand; aussen.marginRight = rand; }
+  if (!liste.length) {
+    if (!platzhalter) return null;
+    return (
+      <div style={Object.assign({}, aussen, { padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" })}>{platzhalter}</div>
+    );
+  }
+  function verhaeltnis(b) {
+    if (b.format === "quer") return "4 / 3";
+    if (b.format === "quadrat") return "1 / 1";
+    return "3 / 4";
+  }
+  return (
+    <div style={aussen}>
+      <div style={{ display: "grid", gridTemplateColumns: liste.length > 1 ? "1fr 1fr" : "1fr", gap: 10 }}>
+        {liste.map(function(b, i){
+          return (
+            <figure key={i} style={{ margin: 0 }}>
+              <img
+                src={"bilder/uebungen/" + b.datei}
+                alt={b.alt || b.bu || ""}
+                loading="lazy"
+                decoding="async"
+                onClick={function(){ setGross(b); }}
+                style={{ display: "block", width: "100%", aspectRatio: verhaeltnis(b), objectFit: "cover", borderRadius: 10, border: "1px solid rgba(0,0,0,.10)", background: "var(--c-bg)", cursor: "zoom-in" }}
+              />
+              {b.bu && <figcaption style={{ fontSize: 11.5, color: "var(--c-text-muted)", lineHeight: 1.45, marginTop: 6 }}>{b.bu}</figcaption>}
+            </figure>
+          );
+        })}
+      </div>
+      {gross && (
+        <div
+          onClick={function(){ setGross(null); }}
+          style={{ position: "fixed", top: 0, right: 0, bottom: 0, left: 0, zIndex: 9000, background: "rgba(15,23,42,.93)", display: "flex", alignItems: "center", justifyContent: "center", padding: 16, cursor: "zoom-out" }}
+        >
+          <div style={{ maxWidth: "100%", textAlign: "center" }}>
+            <img src={"bilder/uebungen/" + gross.datei} alt={gross.alt || gross.bu || ""} style={{ display: "block", margin: "0 auto", maxWidth: "100%", maxHeight: "78vh", borderRadius: 10 }} />
+            {gross.bu && <div style={{ color: "#fff", fontSize: 13, lineHeight: 1.5, marginTop: 12 }}>{gross.bu}</div>}
+            <div style={{ color: "rgba(255,255,255,.6)", fontSize: 11, marginTop: 10 }}>Zum Schließen tippen</div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function NonOpView({ onBack, startKb }) {
   var persisted = nonopLoad();
   // Ohne Deep-Link startet der Begleiter bei der Auswahl. Die letzte Stelle steht
@@ -1772,7 +1827,7 @@ function NonOpView({ onBack, startKb }) {
           <div style={{ marginBottom: 14 }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Übung</div>
             <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{c.was}</div>
-            <div style={{ marginTop: 12, marginBottom: 4, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video folgt</div>
+            <UebungsBilder bilder={c.bilder} platzhalter="Bild / Video folgt" />
           </div>
         )}
 
@@ -1785,9 +1840,7 @@ function NonOpView({ onBack, startKb }) {
               </div>
               <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>{u.titel}</div>
               <div style={{ fontSize: 14, color: "var(--c-text)", lineHeight: 1.65, whiteSpace: "pre-line" }}>{u.text}</div>
-              <div style={{ marginTop: 12, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center", fontSize: 11, color: "var(--c-text-muted)" }}>
-                {"Bild zu \u201E" + u.titel + "\u201C folgt"}
-              </div>
+              <UebungsBilder bilder={u.bilder} platzhalter={"Bild zu \u201E" + u.titel + "\u201C folgt"} />
             </div>
           );
         })}
@@ -1927,14 +1980,15 @@ function NonOpView({ onBack, startKb }) {
                       <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
                       <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{renderInline(st)}</div>
                     </div>
-                    <div style={{ marginLeft: 38, padding: "22px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                                            <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu Schritt {i + 1} folgt</div>
-                    </div>
+                    <UebungsBilder rand={38}
+                      bilder={(c.bilder || []).filter(function(b){ return b.schritt === i + 1; })}
+                      platzhalter={"Bild / Video zu Schritt " + (i + 1) + " folgt"} />
                   </div>
                 );
               })}
             </div>
           )}
+          <UebungsBilder bilder={(c.bilder || []).filter(function(b){ return !b.schritt; })} />
           {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
           {c.dosis && (
             <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
@@ -2203,9 +2257,7 @@ function NonOpView({ onBack, startKb }) {
                           return <li key={j} style={{ marginBottom: 4, lineHeight: 1.5, color: jetzt ? "var(--c-text)" : "var(--c-text-muted)" }}>{v.text} <span style={{ fontSize: 11, color: jetzt ? "#2E7D32" : "var(--c-text-muted)", fontWeight: jetzt ? 700 : 400 }}>· ab Woche {v.woche}{jetzt ? " \u2713" : ""}</span></li>;
                         })}
                       </ol>
-                      <div style={{ margin: "0 12px 12px", padding: "26px 16px", borderRadius: 10, background: "var(--c-bg)", border: "1px dashed rgba(0,0,0,.18)", textAlign: "center" }}>
-                                                <div style={{ fontSize: 11, color: "var(--c-text-muted)" }}>Bild / Video zu „{u.name}“ folgt</div>
-                      </div>
+                      <UebungsBilder rand={12} bilder={u.bilder} platzhalter={"Bild / Video zu \u201E" + u.name + "\u201C folgt"} />
                     </div>
                   )}
                 </div>
@@ -2490,12 +2542,14 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
                         <div style={{ flexShrink: 0, width: 26, height: 26, borderRadius: "50%", background: "var(--c-main)", color: "#fff", fontSize: 13, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
                         <div style={{ flex: 1, fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.6, paddingTop: 3 }}>{renderInline(st)}</div>
                       </div>
+                      <UebungsBilder rand={38} bilder={(c.bilder || []).filter(function(b){ return b.schritt === i + 1; })} />
                     </div>
                   );
                 })}
               </div>
             )}
-            {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
+            <UebungsBilder bilder={(c.bilder || []).filter(function(b){ return !b.schritt; })} />
+          {c.verweis && <div style={{ marginBottom: 16, padding: "12px 14px", background: "var(--c-bg)", borderRadius: 8, fontSize: 13, color: "var(--c-text-muted)", fontStyle: "italic" }}>{c.verweis}</div>}
             {c.dosis && (
               <div style={{ marginBottom: 14, padding: "14px 16px", background: "rgba(46,125,50,.08)", borderRadius: 8 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>Dosierung und Hinweise</div>
