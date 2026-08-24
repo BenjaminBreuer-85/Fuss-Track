@@ -44,6 +44,10 @@
         {
           "id": "osg_arthrose_q4",
           "text": "SooHoo NF, Zingmond DS, Ko CY. Comparison of reoperation rates following ankle arthrodesis and total ankle arthroplasty. J Bone Joint Surg Am. 2007;89(10):2143-2149. doi:10.2106/JBJS.F.01611"
+        },
+        {
+          "id": "osg_arthrose_q5",
+          "text": "Coden G, Efremov K, Hanna P, Wood C, Beckles M, Modi J, Hofmann K. Ankle arthrodesis associated with risk of progression to subtalar arthrodesis compared to total ankle arthroplasty. Foot Ankle Orthop. 2026;11(3):24730114261469567. doi: [10.1177/24730114261469567](https://doi.org/10.1177/24730114261469567) (je 2105 gematchte Eingriffe; Subtalarversteifung nach fünf Jahren 4,2 Prozent gegenüber 1,4 Prozent, Odds Ratio 1,90)"
         }
       ],
       "stand": "2026-08"
@@ -170,6 +174,10 @@
         {
           "id": "osg_arth_q17",
           "text": "Kakarala G, Rajan DT. Comparative study of ankle arthrodesis using cross screw fixation versus anterior contoured plate plus cross screw fixation. Acta Orthop Belg. 2006;72(6):716-721. PMID:17260609"
+        },
+        {
+          "id": "osg_arth_q27",
+          "text": "Coden G, Efremov K, Hanna P, Wood C, Beckles M, Modi J, Hofmann K. Ankle arthrodesis associated with risk of progression to subtalar arthrodesis compared to total ankle arthroplasty. Foot Ankle Orthop. 2026;11(3):24730114261469567. doi: [10.1177/24730114261469567](https://doi.org/10.1177/24730114261469567) (je 2105 gematchte Eingriffe; Subtalarversteifung nach fünf Jahren 4,2 Prozent gegenüber 1,4 Prozent, Odds Ratio 1,90)"
         }
       ]
     },
@@ -366,6 +374,10 @@
         {
           "id": "osg_tep_veljkovic",
           "text": "Veljkovic AN, Daniels TR, Glazebrook MA, Dryden PJ, Penner MJ, Wing KJ, Younger ASE. Outcomes of total ankle replacement, arthroscopic ankle arthrodesis, and open ankle arthrodesis for isolated non-deformed end-stage ankle arthritis. J Bone Joint Surg Am. 2019;101(17):1523-1529. doi: [10.2106/JBJS.18.01012](https://doi.org/10.2106/JBJS.18.01012)"
+        },
+        {
+          "id": "osg_tep_coden",
+          "text": "Coden G, Efremov K, Hanna P, Wood C, Beckles M, Modi J, Hofmann K. Ankle arthrodesis associated with risk of progression to subtalar arthrodesis compared to total ankle arthroplasty. Foot Ankle Orthop. 2026;11(3):24730114261469567. doi: [10.1177/24730114261469567](https://doi.org/10.1177/24730114261469567) (je 2105 gematchte Eingriffe; Subtalarversteifung nach fünf Jahren 4,2 Prozent gegenüber 1,4 Prozent, Odds Ratio 1,90)"
         }
       ],
       "_review": false,
@@ -825,6 +837,10 @@
         {
           "id": "akin_q5",
           "text": "Kaufmann G, Hofmann M, Braito M, Ulmer H, Brunner A, Dammerer D. Need for concomitant Akin osteotomy in patients undergoing chevron osteotomy can be determined preoperatively: a retrospective comparative study of 859 cases. J Orthop Surg Res. 2019;14(1):277. doi: [10.1186/s13018-019-1319-2](https://doi.org/10.1186/s13018-019-1319-2)"
+        },
+        {
+          "id": "akin_q6",
+          "text": "Genuth G, Moses N, Brown C, Stavrou P, Iselin LD. Recurrence after combined minimally invasive transverse-Akin and distal minimally invasive metatarsal osteotomies: association with preoperative deformity severity in a multicentre retrospective cohort study. Foot Ankle Orthop. 2026;11(3):24730114261471555. doi: [10.1177/24730114261471555](https://doi.org/10.1177/24730114261471555) (120 Patienten; Rezidiv nach zwölf Monaten 0 Prozent bei leichter, 30 Prozent bei mittlerer und 42,5 Prozent bei ausgeprägter Fehlstellung)"
         }
       ],
       "_review": false,
@@ -949,6 +965,10 @@
         {
           "id": "hallux_rigidus_q20",
           "text": "Miettinen M, Sirola T, Lähdeoja T, Sandelin H, Nummela M, Repo JP, Ponkilainen V, Rämö L. Surgery versus watchful waiting for first metatarsophalangeal joint osteoarthritis: a randomized controlled trial. Ann Intern Med. 2026. doi:10.7326/ANNALS-26-00710 (randomisierte Studie, 90 Patienten, Gehschmerz nach 12 Monaten im Mittel 1,3 gegenüber 5,7 von 10 Punkten zugunsten der Arthrodese)"
+        },
+        {
+          "id": "hallux_rigidus_q21",
+          "text": "Lim B, Lim G, Kon C. Does an adjunct Moberg osteotomy improve outcomes in patients undergoing cheilectomy for hallux rigidus? A systematic review. J Foot Ankle Surg. 2026. doi: [10.1053/j.jfas.2026.08.015](https://doi.org/10.1053/j.jfas.2026.08.015) (systematische Übersicht, drei Vergleichsstudien, 282 Patienten; kein durchgängiger Unterschied bei den patientenberichteten Ergebnissen, keine erhöhte Komplikationsrate)"
         }
       ]
     },
@@ -2822,6 +2842,10 @@
         {
           "id": "moberg_q1",
           "text": "Literatur zur Moberg-(Kessel-Bonney-)Osteotomie bei Hallux rigidus, oft kombiniert mit Cheilektomie."
+        },
+        {
+          "id": "moberg_q2",
+          "text": "Lim B, Lim G, Kon C. Does an adjunct Moberg osteotomy improve outcomes in patients undergoing cheilectomy for hallux rigidus? A systematic review. J Foot Ankle Surg. 2026. doi: [10.1053/j.jfas.2026.08.015](https://doi.org/10.1053/j.jfas.2026.08.015)"
         }
       ]
     },
