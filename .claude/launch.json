@@ -8,6 +8,15 @@
         "/Users/benjaminbreuer/Desktop/GitHub/Fuss-Track/dev-server.py"
       ],
       "port": 8081
+    },
+    {
+      "name": "toolbox",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "/private/tmp/claude-501/-Users-benjaminbreuer-Desktop-GitHub-Fuss-Track/3edbd0ad-5da3-4702-94bb-7b2de26e97e8/scratchpad/toolbox-server.py"
+      ],
+      "port": 8010,
+      "autoPort": true
     }
   ]
 }
