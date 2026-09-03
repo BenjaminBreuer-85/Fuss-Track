@@ -5539,6 +5539,176 @@
     "kb_charcot_quellen"
    ]
   },
+  "cmt_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Charcot-Marie-Tooth-Erkrankung (HMSN)",
+   "titel": "Charcot-Marie-Tooth-Erkrankung",
+   "untertitel": "Erbliche Nervenerkrankung mit Hohl-Ballen-Fuß und Fußheberschwäche",
+   "quellen": [
+    {
+     "id": "cmt_kb_burns26",
+     "text": "Burns J, Timmerman V, Laurá M, et al. Charcot-Marie-Tooth disease and related neuropathies. Nat Rev Dis Primers. 2026;12(1):3. doi:10.1038/s41572-025-00679-2"
+    },
+    {
+     "id": "cmt_kb_eggermann18",
+     "text": "Eggermann K, Gess B, Häusler M, Weis J, Hahn A, Kurth I. Hereditary neuropathies. Dtsch Arztebl Int. 2018;115(6):91–97. doi:10.3238/arztebl.2018.0091"
+    },
+    {
+     "id": "cmt_kb_ma23",
+     "text": "Ma M, Li Y, Dai S, et al. A meta-analysis on the prevalence of Charcot-Marie-Tooth disease and related inherited peripheral neuropathies. J Neurol. 2023;270(5):2468–2482. doi:10.1007/s00415-023-11559-8"
+    },
+    {
+     "id": "cmt_kb_vaeth17",
+     "text": "Vaeth S, Vaeth M, Andersen H, Christensen R, Jensen UB. Charcot-Marie-Tooth disease in Denmark: a nationwide register-based study of mortality, prevalence and incidence. BMJ Open. 2017;7(11):e018048. doi:10.1136/bmjopen-2017-018048"
+    },
+    {
+     "id": "cmt_kb_moon26",
+     "text": "Moon SJ, Min YK, Pfeffer GB, et al. Charcot-Marie-Tooth cavovarus foot: current concepts and emerging strategies for deformity correction. J Clin Med. 2026;15(16):6474. doi:10.3390/jcm15166474"
+    },
+    {
+     "id": "cmt_kb_laura18",
+     "text": "Laurá M, Singh D, Ramdharry G, et al. Prevalence and orthopedic management of foot and ankle deformities in Charcot-Marie-Tooth disease. Muscle Nerve. 2018;57(2):255–259. doi:10.1002/mus.25724"
+    },
+    {
+     "id": "cmt_kb_nagai06",
+     "text": "Nagai MK, Chan G, Guille JT, Kumar SJ, Scavina M, Mackenzie WG. Prevalence of Charcot-Marie-Tooth disease in patients who have bilateral cavovarus feet. J Pediatr Orthop. 2006;26(4):438–443. doi:10.1097/01.bpo.0000226278.16449.c4"
+    },
+    {
+     "id": "cmt_kb_waldman23",
+     "text": "Waldman LE, Michalski MP, Giaconi JC, Pfeffer GB, Learch TJ. Charcot-Marie-Tooth disease of the foot and ankle: imaging features and pathophysiology. Radiographics. 2023;43(4):e220114. doi:10.1148/rg.220114"
+    },
+    {
+     "id": "cmt_kb_pareyson09",
+     "text": "Pareyson D, Marchesi C. Diagnosis, natural history, and management of Charcot-Marie-Tooth disease. Lancet Neurol. 2009;8(7):654–667. doi:10.1016/S1474-4422(09)70110-3"
+    },
+    {
+     "id": "cmt_kb_sivera25",
+     "text": "Sivera Mascaró R, García Sobrino T, Horga Hernández A, et al. Clinical practice guidelines for the diagnosis and management of Charcot-Marie-Tooth disease. Neurologia (Engl Ed). 2025;40(3):290–305. doi:10.1016/j.nrleng.2024.02.008"
+    },
+    {
+     "id": "cmt_kb_pfeffer20",
+     "text": "Pfeffer GB, Gonzalez T, Brodsky J, et al. A consensus statement on the surgical treatment of Charcot-Marie-Tooth disease. Foot Ankle Int. 2020;41(7):870–880. doi:10.1177/1071100720922220"
+    },
+    {
+     "id": "cmt_kb_ferbert20",
+     "text": "Ferbert A, Roth C. Hereditäre Polyneuropathien. Fortschr Neurol Psychiatr. 2020;88(3):198–209. doi:10.1055/a-1009-2270"
+    },
+    {
+     "id": "cmt_kb_pfeffer23",
+     "text": "Pfeffer GB, Haupt ET. The surgical correction of cavovarus deformity in Charcot-Marie-Tooth disease. J Am Acad Orthop Surg. 2023;31(21):e930–e939. doi:10.5435/JAAOS-D-23-00056"
+    },
+    {
+     "id": "cmt_kb_harrasser21",
+     "text": "Harrasser N, Lenze F, Hamel J. Der Ballenhohlfuß. Orthopäde. 2021;50(1):75–85. doi:10.1007/s00132-020-04053-w"
+    },
+    {
+     "id": "cmt_kb_azevedo18",
+     "text": "Azevedo H, Pupe C, Pereira R, Nascimento OJM. Pain in Charcot-Marie-Tooth disease: an update. Arq Neuropsiquiatr. 2018;76(4):273–276. doi:10.1590/0004-282x20180021"
+    },
+    {
+     "id": "cmt_kb_bellofatto23",
+     "text": "Bellofatto M, Bertini A, Tramacere I, et al. Frequency, entity and determinants of fatigue in Charcot-Marie-Tooth disease. Eur J Neurol. 2023;30(3):710–718. doi:10.1111/ene.15643"
+    },
+    {
+     "id": "cmt_kb_ramdharry18",
+     "text": "Ramdharry GM, Reilly-O'Donnell L, Grant R, Reilly MM. Frequency and circumstances of falls for people with Charcot-Marie-Tooth disease: a cross sectional survey. Physiother Res Int. 2018;23(2):e1702. doi:10.1002/pri.1702"
+    },
+    {
+     "id": "cmt_kb_kennedy19",
+     "text": "Kennedy RA, Carroll K, Hepworth G, Paterson KL, Ryan MM, McGinley JL. Falls in paediatric Charcot-Marie-Tooth disease: a 6-month prospective cohort study. Arch Dis Child. 2019;104(6):535–540. doi:10.1136/archdischild-2018-314890"
+    },
+    {
+     "id": "cmt_kb_cornett17",
+     "text": "Cornett KMD, Menezes MP, Shy RR, et al. Natural history of Charcot-Marie-Tooth disease during childhood. Ann Neurol. 2017;82(3):353–359. doi:10.1002/ana.25009"
+    },
+    {
+     "id": "cmt_kb_pipis19",
+     "text": "Pipis M, Rossor AM, Laura M, Reilly MM. Next-generation sequencing in Charcot-Marie-Tooth disease: opportunities and challenges. Nat Rev Neurol. 2019;15(11):644–656. doi:10.1038/s41582-019-0254-5"
+    },
+    {
+     "id": "cmt_kb_song24",
+     "text": "Song JH, Michalski MP, Pfeffer GB. 3D analysis of joint-sparing Charcot-Marie-Tooth surgery effect on initial standing foot alignment. Foot Ankle Int. 2024;45(6):601–611. doi:10.1177/10711007241232976"
+    },
+    {
+     "id": "cmt_kb_gess15",
+     "text": "Gess B, Baets J, De Jonghe P, Reilly MM, Pareyson D, Young P. Ascorbic acid for the treatment of Charcot-Marie-Tooth disease. Cochrane Database Syst Rev. 2015;2015(12):CD011952. doi:10.1002/14651858.CD011952"
+    },
+    {
+     "id": "cmt_kb_attarian21",
+     "text": "Attarian S, Young P, Brannagan TH, et al. A double-blind, placebo-controlled, randomized trial of PXT3003 for the treatment of Charcot-Marie-Tooth type 1A. Orphanet J Rare Dis. 2021;16(1):433. doi:10.1186/s13023-021-02040-8"
+    },
+    {
+     "id": "cmt_kb_burns17",
+     "text": "Burns J, Sman AD, Cornett KMD, et al. Safety and efficacy of progressive resistance exercise for Charcot-Marie-Tooth disease in children: a randomised, double-blind, sham-controlled trial. Lancet Child Adolesc Health. 2017;1(2):106–113. doi:10.1016/S2352-4642(17)30013-5"
+    },
+    {
+     "id": "cmt_kb_conde23",
+     "text": "Conde RM, Senem I, Dos Santos M, de Lima Osório F, Marques Júnior W. Effectiveness of exercise therapy for individuals diagnosed with Charcot-Marie-Tooth disease: a systematic review of randomized clinical trials. J Peripher Nerv Syst. 2023;28(2):169–178. doi:10.1111/jns.12548"
+    },
+    {
+     "id": "cmt_kb_sman15",
+     "text": "Sman AD, Hackett D, Fiatarone Singh M, Fornusek C, Menezes MP, Burns J. Systematic review of exercise for Charcot-Marie-Tooth disease. J Peripher Nerv Syst. 2015;20(4):347–362. doi:10.1111/jns.12116"
+    },
+    {
+     "id": "cmt_kb_dudziec24",
+     "text": "Dudziec MM, Lee LE, Massey C, et al. Home-based multi-sensory and proximal strengthening program to improve balance in Charcot-Marie-Tooth disease type 1A: a proof of concept study. Muscle Nerve. 2024;69(3):354–361. doi:10.1002/mus.28032"
+    },
+    {
+     "id": "cmt_kb_yiu22",
+     "text": "Yiu EM, Bray P, Baets J, et al. Clinical practice guideline for the management of paediatric Charcot-Marie-Tooth disease. J Neurol Neurosurg Psychiatry. 2022;93(5):530–538. doi:10.1136/jnnp-2021-328483"
+    },
+    {
+     "id": "cmt_kb_kim24",
+     "text": "Kim A, Frecklington M, Philps A, Stewart S. The effect of ankle-foot orthoses on gait characteristics in people with Charcot-Marie-Tooth disease: a systematic review and meta-analysis. J Foot Ankle Res. 2024;17(3):e70003. doi:10.1002/jfa2.70003"
+    },
+    {
+     "id": "cmt_kb_welsink26",
+     "text": "Welsink-Karssies MM, Waterval NFJ, Ploeger HE, Nollet F, Brehm MA. Guideline-based provision of ankle-foot orthoses improves walking ability in individuals with Charcot-Marie-Tooth disease. Disabil Rehabil. 2026:1–14. doi:10.1080/09638288.2026.2717417"
+    },
+    {
+     "id": "cmt_kb_anderson25",
+     "text": "Anderson KM, Chrea B, Zuccarino R, Shy ME, Wilken JM. Balance confidence and falls in individuals with Charcot-Marie-Tooth disease: a cross-sectional observational study. Health Sci Rep. 2025;8(4):e70682. doi:10.1002/hsr2.70682"
+    },
+    {
+     "id": "cmt_kb_ounpuu25",
+     "text": "Õunpuu S, Pierz KA, Rethlefsen SA, et al. Outcomes of triceps surae lengthening surgery in children with Charcot-Marie-Tooth disease: a multisite investigation. J Pediatr Orthop. 2025;45(4):226–233. doi:10.1097/BPO.0000000000002899"
+    },
+    {
+     "id": "cmt_kb_haupt24",
+     "text": "Haupt ET, Porter GM, Blough C, Michalski MP, Pfeffer GB. Outcomes of Charcot-Marie-Tooth disease cavovarus surgical reconstruction. Foot Ankle Int. 2024;45(11):1175–1183. doi:10.1177/10711007241271283"
+    },
+    {
+     "id": "cmt_kb_tejero21",
+     "text": "Tejero S, Chans-Veres J, Carranza-Bencano A, et al. Functional results and quality of life after joint preserving or sacrificing surgery in Charcot-Marie-Tooth foot deformities. Int Orthop. 2021;45(10):2569–2578. doi:10.1007/s00264-021-04978-7"
+    },
+    {
+     "id": "cmt_kb_chen25",
+     "text": "Chen S, Zhou W, Yan Y, et al. Surgical correction of cavus foot may promote quality of life in patients with Charcot-Marie-Tooth disease: a retrospective study. J Foot Ankle Surg. 2025;64(4):349–354. doi:10.1053/j.jfas.2024.12.008"
+    },
+    {
+     "id": "cmt_kb_ramdharry21",
+     "text": "Ramdharry G, Singh D, Gray J, et al. A prospective study on surgical management of foot deformities in Charcot Marie Tooth disease. J Peripher Nerv Syst. 2021;26(2):187–192. doi:10.1111/jns.12437"
+    },
+    {
+     "id": "cmt_kb_lin19",
+     "text": "Lin T, Gibbons P, Mudge AJ, Cornett KMD, Menezes MP, Burns J. Surgical outcomes of cavovarus foot deformity in children with Charcot-Marie-Tooth disease. Neuromuscul Disord. 2019;29(6):427–436. doi:10.1016/j.nmd.2019.04.004"
+    },
+    {
+     "id": "cmt_kb_ward08",
+     "text": "Ward CM, Dolan LA, Bennett DL, Morcuende JA, Cooper RR. Long-term results of reconstruction for treatment of a flexible cavovarus foot in Charcot-Marie-Tooth disease. J Bone Joint Surg Am. 2008;90(12):2631–2642. doi:10.2106/JBJS.G.01356"
+    }
+   ],
+   "stand": "2026-09",
+   "slides": [
+    "kb_cmt_ueberblick",
+    "kb_cmt_ursachen",
+    "kb_cmt_diagnostik",
+    "kb_cmt_konservativ",
+    "kb_cmt_operativ",
+    "kb_cmt_alltag",
+    "kb_cmt_quellen"
+   ]
+  },
   "clai_kb": {
    "infoKategorie": "krankheitsbild",
    "infoTitel": "Chronische laterale Instabilität des oberen Sprunggelenks",
