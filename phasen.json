@@ -48,6 +48,22 @@
         {
           "op": "schede",
           "variante": "einfach"
+        },
+        {
+          "op": "scarf",
+          "variante": "einfach"
+        },
+        {
+          "op": "scarf",
+          "variante": "komplex"
+        },
+        {
+          "op": "lapidus",
+          "variante": "einfach"
+        },
+        {
+          "op": "lapidus",
+          "variante": "komplex"
         }
       ],
       "auswahl_baum": {
@@ -217,6 +233,14 @@
           "op": "smot_valgus",
           "variante": "komplex",
           "gruppe": "Gelenkerhaltende Korrektur"
+        },
+        {
+          "op": "smot_varus",
+          "variante": "einfach"
+        },
+        {
+          "op": "smot_varus",
+          "variante": "komplex"
         }
       ],
       "auswahl_baum": {
@@ -297,20 +321,52 @@
             "label": "Achskorrektur (supramalleoläre Osteotomie)",
             "kurz": "Gelenkerhaltende Umstellung oberhalb des Sprunggelenks",
             "weiter": {
-              "frage": "Erfolgt zusätzlich eine Stabilisierung der Außenbänder?",
+              "frage": "In welche Richtung steht das Sprunggelenk schief?",
               "optionen": [
                 {
-                  "label": "Nein, Achskorrektur allein",
-                  "ziel": {
-                    "op": "smot_valgus",
-                    "variante": "einfach"
+                  "label": "Nach außen (Valgus)",
+                  "kurz": "X-Fehlstellung",
+                  "weiter": {
+                    "frage": "Erfolgt zusätzlich eine Stabilisierung der Außenbänder?",
+                    "optionen": [
+                      {
+                        "label": "Nein, Achskorrektur allein",
+                        "ziel": {
+                          "op": "smot_valgus",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Bandstabilisierung",
+                        "ziel": {
+                          "op": "smot_valgus",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
                   }
                 },
                 {
-                  "label": "Ja, mit Bandstabilisierung",
-                  "ziel": {
-                    "op": "smot_valgus",
-                    "variante": "komplex"
+                  "label": "Nach innen (Varus)",
+                  "kurz": "O-Fehlstellung",
+                  "weiter": {
+                    "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+                    "optionen": [
+                      {
+                        "label": "Teilbelastung über 8 Wochen",
+                        "ziel": {
+                          "op": "smot_varus",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Komplette Entlastung über 8 Wochen",
+                        "ziel": {
+                          "op": "smot_varus",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
                   }
                 }
               ]
@@ -536,6 +592,22 @@
           "op": "calc_verlaengerung_sehne",
           "variante": "komplex",
           "gruppe": "Korrektur des Fersenbeins mit Sehneneingriff"
+        },
+        {
+          "op": "coalitio_cn",
+          "variante": "einfach"
+        },
+        {
+          "op": "coalitio_tc",
+          "variante": "einfach"
+        },
+        {
+          "op": "coalitio_tc",
+          "variante": "komplex"
+        },
+        {
+          "op": "kidner",
+          "variante": "einfach"
         }
       ],
       "auswahl_baum": {
@@ -719,6 +791,54 @@
                   }
                 }
               ]
+            }
+          },
+          {
+            "label": "Coalitio-Resektion",
+            "kurz": "Entfernung einer knöchernen Verbindung zwischen zwei Fußwurzelknochen",
+            "weiter": {
+              "frage": "Welche Verbindung wird entfernt?",
+              "optionen": [
+                {
+                  "label": "Zwischen Fersenbein und Kahnbein (calcaneonavicular)",
+                  "ziel": {
+                    "op": "coalitio_cn",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Zwischen Sprungbein und Fersenbein (talocalcanear)",
+                  "weiter": {
+                    "frage": "Wird zusätzlich das Fersenbein korrigiert?",
+                    "optionen": [
+                      {
+                        "label": "Nein, Resektion allein",
+                        "kurz": "4 Wochen 20 kg Teilbelastung im Verbandschuh",
+                        "ziel": {
+                          "op": "coalitio_tc",
+                          "variante": "einfach"
+                        }
+                      },
+                      {
+                        "label": "Ja, mit Fersenbein-Korrektur",
+                        "kurz": "Nachbehandlung nach dem Schema der Calcaneus-Osteotomie",
+                        "ziel": {
+                          "op": "coalitio_tc",
+                          "variante": "komplex"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Kidner-Prozedur (Os tibiale externum)",
+            "kurz": "Entfernung des zusätzlichen Knochens mit Sehnen-Refixation, ohne Osteotomie",
+            "ziel": {
+              "op": "kidner",
+              "variante": "einfach"
             }
           }
         ]
@@ -991,6 +1111,594 @@
           "variante": "einfach"
         }
       ]
+    },
+    {
+      "key": "metatarsalgie",
+      "label": "Metatarsalgie / Kleinzehen",
+      "untertitel": "Schmerzen unter dem Vorfuß, Kleinzehen-Fehlstellung",
+      "emoji": "🦶",
+      "aufklaerungOp": "metatarsalgie_kb",
+      "eingriffe": [
+        {
+          "op": "dmmo",
+          "variante": "einfach"
+        },
+        {
+          "op": "dmmo",
+          "variante": "komplex"
+        },
+        {
+          "op": "weil",
+          "variante": "einfach"
+        },
+        {
+          "op": "weil",
+          "variante": "komplex"
+        },
+        {
+          "op": "kleinzehen_pip",
+          "variante": "einfach"
+        },
+        {
+          "op": "kleinzehen_pip",
+          "variante": "komplex"
+        },
+        {
+          "op": "morton",
+          "variante": "einfach"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "DMMO (Mittelfuß-Osteotomie)",
+            "kurz": "Minimal-invasive Verkürzung der Mittelfußknochen",
+            "weiter": {
+              "frage": "Wird zusätzlich an den Kleinzehen operiert?",
+              "optionen": [
+                {
+                  "label": "Nein, nur die Mittelfuß-Osteotomie",
+                  "ziel": {
+                    "op": "dmmo",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Kleinzehenkorrektur",
+                  "ziel": {
+                    "op": "dmmo",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Weil-Osteotomie",
+            "kurz": "Offene Verkürzung der Mittelfußknochen",
+            "weiter": {
+              "frage": "Wird zusätzlich an den Kleinzehen operiert?",
+              "optionen": [
+                {
+                  "label": "Nein, nur die Mittelfuß-Osteotomie",
+                  "ziel": {
+                    "op": "weil",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Kleinzehenkorrektur",
+                  "ziel": {
+                    "op": "weil",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Kleinzehenkorrektur",
+            "kurz": "Korrektur von Hammer- oder Krallenzehen",
+            "weiter": {
+              "frage": "Wird die Zehe mit einem Draht gesichert?",
+              "optionen": [
+                {
+                  "label": "Nein, ohne Draht",
+                  "ziel": {
+                    "op": "kleinzehen_pip",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Draht",
+                  "kurz": "Der Draht wird nach einigen Wochen entfernt",
+                  "ziel": {
+                    "op": "kleinzehen_pip",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Entfernung Morton-Neurom",
+            "kurz": "Entfernung des verdickten Nervs zwischen den Mittelfußköpfchen",
+            "ziel": {
+              "op": "morton",
+              "variante": "einfach"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "osg_instabil",
+      "label": "OSG-Instabilität",
+      "untertitel": "Chronische Außenbandinstabilität",
+      "emoji": "🦴",
+      "aufklaerungOp": "clai_kb",
+      "eingriffe": [
+        {
+          "op": "brostrom",
+          "variante": "einfach"
+        },
+        {
+          "op": "brostrom",
+          "variante": "komplex"
+        },
+        {
+          "op": "lat_stabil",
+          "variante": "einfach"
+        },
+        {
+          "op": "lat_stabil",
+          "variante": "komplex"
+        },
+        {
+          "op": "osg_arthroskopie",
+          "variante": "einfach"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Außenbandreparatur (Broström)",
+            "kurz": "Raffung und Verstärkung der eigenen Bänder",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "brostrom",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "brostrom",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Bandplastik mit Sehnentransplantat",
+            "kurz": "Ersatz der Außenbänder durch eine Sehne",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "lat_stabil",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "lat_stabil",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Arthroskopie des OSG",
+            "kurz": "Gelenkspiegelung allein, direkte Vollbelastung",
+            "ziel": {
+              "op": "osg_arthroskopie",
+              "variante": "einfach"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "haglund_achillodynie",
+      "label": "Haglund / Achillodynie",
+      "untertitel": "Schmerzen am Ansatz der Achillessehne",
+      "emoji": "🦶",
+      "aufklaerungOp": "achilles_insertional_kb",
+      "eingriffe": [
+        {
+          "op": "calcaneoplastie",
+          "variante": "einfach"
+        },
+        {
+          "op": "haglund_split",
+          "variante": "einfach"
+        },
+        {
+          "op": "haglund_split",
+          "variante": "komplex"
+        },
+        {
+          "op": "tendoskopie_achilles",
+          "variante": "einfach"
+        },
+        {
+          "op": "achilles_nekrose",
+          "variante": "einfach"
+        },
+        {
+          "op": "achilles_nekrose",
+          "variante": "komplex"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Calcaneoplastie",
+            "kurz": "Abtragung des Fersenbeinhöckers, die Sehne bleibt am Ansatz",
+            "ziel": {
+              "op": "calcaneoplastie",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Haglund-OP mit Sehnen-Refixation",
+            "kurz": "Abtragung mit Ablösung und Wiederbefestigung der Achillessehne",
+            "weiter": {
+              "frage": "Wird zusätzlich eine Sehne verlagert (FHL-Transfer)?",
+              "optionen": [
+                {
+                  "label": "Nein",
+                  "kurz": "Abtragung mit Sehnen-Split und Refixation",
+                  "ziel": {
+                    "op": "haglund_split",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit FHL-Transfer",
+                  "kurz": "Transfer der langen Großzehenbeugesehne zur Verstärkung",
+                  "ziel": {
+                    "op": "haglund_split",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Achillessehnen-Tendoskopie",
+            "kurz": "Spiegelung entlang der Sehne, ohne Ruhigstellung",
+            "ziel": {
+              "op": "tendoskopie_achilles",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Débridement der Achillessehne",
+            "kurz": "Entfernung des kranken Sehnengewebes mit Refixation",
+            "weiter": {
+              "frage": "Wird zusätzlich eine Sehne verlagert (FHL-Transfer)?",
+              "optionen": [
+                {
+                  "label": "Nein",
+                  "kurz": "Débridement und Refixation allein",
+                  "ziel": {
+                    "op": "achilles_nekrose",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit FHL-Transfer",
+                  "kurz": "Transfer der langen Großzehenbeugesehne zur Verstärkung",
+                  "ziel": {
+                    "op": "achilles_nekrose",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "achillessehnenriss",
+      "label": "Achillessehnenriss",
+      "untertitel": "Akuter Riss der Achillessehne",
+      "emoji": "🦶",
+      "aufklaerungOp": "achilles_riss_kb",
+      "eingriffe": [
+        {
+          "op": "achilles_naht",
+          "variante": "einfach"
+        },
+        {
+          "op": "achilles_naht",
+          "variante": "komplex"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Wie wird die Sehne genäht?",
+        "optionen": [
+          {
+            "label": "Perkutane Naht",
+            "kurz": "Minimal-invasiv über kleine Schnitte",
+            "ziel": {
+              "op": "achilles_naht",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Offene Naht",
+            "kurz": "Offene Naht der Sehne über einen Schnitt",
+            "ziel": {
+              "op": "achilles_naht",
+              "variante": "komplex"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "peronealsehnen",
+      "label": "Peronealsehnen",
+      "untertitel": "Riss oder Herausspringen der Sehnen am Außenknöchel",
+      "emoji": "🦴",
+      "aufklaerungOp": "peroneal_luxation_kb",
+      "eingriffe": [
+        {
+          "op": "peroneal_riss",
+          "variante": "einfach"
+        },
+        {
+          "op": "peroneal_instab",
+          "variante": "einfach"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Naht oder Rekonstruktion der Sehne",
+            "kurz": "Bei Riss oder Einriss der Sehne",
+            "ziel": {
+              "op": "peroneal_riss",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Stabilisierung der Sehnen",
+            "kurz": "Bei Herausspringen aus der Führungsrinne",
+            "ziel": {
+              "op": "peroneal_instab",
+              "variante": "einfach"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "plantarfasziitis",
+      "label": "Plantarfasziitis",
+      "untertitel": "Fersensporn, Schmerz unter der Ferse",
+      "emoji": "🦶",
+      "aufklaerungOp": "plantarfasziitis_kb",
+      "eingriffe": [
+        {
+          "op": "plantarfascie",
+          "variante": "einfach"
+        },
+        {
+          "op": "gastroc",
+          "variante": "einfach"
+        },
+        {
+          "op": "gastroc",
+          "variante": "komplex"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Plantarfaszien-Release",
+            "kurz": "Teilweise Durchtrennung der Sehnenplatte",
+            "ziel": {
+              "op": "plantarfascie",
+              "variante": "einfach"
+            }
+          },
+          {
+            "label": "Wadenmuskel-Verlängerung",
+            "kurz": "Verlängerung des verkürzten Wadenmuskels",
+            "weiter": {
+              "frage": "Wo wird der Wadenmuskel verlängert?",
+              "optionen": [
+                {
+                  "label": "Am Muskelübergang (proximal)",
+                  "kurz": "Sofortige Vollbelastung",
+                  "ziel": {
+                    "op": "gastroc",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Am Sehnenübergang (distal, Strayer)",
+                  "kurz": "4 Wochen Teilbelastung im Walker",
+                  "ziel": {
+                    "op": "gastroc",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "hohlfuss",
+      "label": "Hohlfuß",
+      "untertitel": "Pes cavus, überhöhtes Fußgewölbe",
+      "emoji": "🦶",
+      "aufklaerungOp": "hohlfuss_kb",
+      "eingriffe": [
+        {
+          "op": "dwyer",
+          "variante": "einfach"
+        },
+        {
+          "op": "dwyer",
+          "variante": "komplex"
+        },
+        {
+          "op": "lambrinudi",
+          "variante": "einfach"
+        },
+        {
+          "op": "lambrinudi",
+          "variante": "komplex"
+        },
+        {
+          "op": "kleinzehen_pip",
+          "variante": "einfach"
+        },
+        {
+          "op": "kleinzehen_pip",
+          "variante": "komplex"
+        },
+        {
+          "op": "gastroc",
+          "variante": "einfach"
+        },
+        {
+          "op": "gastroc",
+          "variante": "komplex"
+        }
+      ],
+      "auswahl_baum": {
+        "frage": "Welcher Eingriff ist geplant?",
+        "optionen": [
+          {
+            "label": "Dwyer-Osteotomie",
+            "kurz": "Korrektur des Fersenbeins",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "dwyer",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "dwyer",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Versteifung der drei Rückfußgelenke (Lambrinudi)",
+            "kurz": "Bei fortgeschrittener Fehlstellung",
+            "weiter": {
+              "frage": "Welche Belastung hat Ihr Behandler für die ersten Wochen festgelegt?",
+              "optionen": [
+                {
+                  "label": "Teilbelastung ab früh nach der OP",
+                  "ziel": {
+                    "op": "lambrinudi",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Komplette Entlastung in den ersten Wochen",
+                  "ziel": {
+                    "op": "lambrinudi",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Kleinzehenkorrektur",
+            "kurz": "Korrektur von Krallenzehen",
+            "weiter": {
+              "frage": "Wird die Zehe mit einem Draht gesichert?",
+              "optionen": [
+                {
+                  "label": "Nein, ohne Draht",
+                  "ziel": {
+                    "op": "kleinzehen_pip",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Ja, mit Draht",
+                  "kurz": "Der Draht wird nach einigen Wochen entfernt",
+                  "ziel": {
+                    "op": "kleinzehen_pip",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Wadenmuskel-Verlängerung",
+            "kurz": "Verlängerung des verkürzten Wadenmuskels",
+            "weiter": {
+              "frage": "Wo wird der Wadenmuskel verlängert?",
+              "optionen": [
+                {
+                  "label": "Am Muskelübergang (proximal)",
+                  "kurz": "Sofortige Vollbelastung",
+                  "ziel": {
+                    "op": "gastroc",
+                    "variante": "einfach"
+                  }
+                },
+                {
+                  "label": "Am Sehnenübergang (distal, Strayer)",
+                  "kurz": "4 Wochen Teilbelastung im Walker",
+                  "ziel": {
+                    "op": "gastroc",
+                    "variante": "komplex"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ],
   "ONBOARDING_PHASEN": [
@@ -5883,7 +6591,7 @@
           ]
         }
       },
-      "aufenthalt_default": "ambulant"
+      "aufenthalt_default": "stationaer"
     },
     "calcaneoplastie": {
       "label": "Calcaneoplastie",
@@ -6101,7 +6809,7 @@
           ]
         }
       },
-      "aufenthalt_default": "ambulant"
+      "aufenthalt_default": "stationaer"
     },
     "dwyer": {
       "label": "Dwyer-Osteotomie",
