@@ -63,6 +63,13 @@
   }
   .nav-leiste .zl-btn { min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; }
   .nav-leiste .zl-btn.nl-aus { opacity: .4; cursor: default; }
+  /* Schmale Bildschirme: Titel darf zweizeilig umbrechen statt zu kuerzen. */
+  @media (max-width: 520px) {
+    .nl-seite { flex-basis: 76px; }
+    .nav-leiste .zl-btn { padding: 5px 8px; }
+    .nl-titel { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden; line-height: 1.2; }
+  }
   .app { max-width: 720px; margin: 0 auto; padding: 16px; min-height: 100vh; }
   .app-header {
     text-align: center; padding: 16px 0 8px;
@@ -231,6 +238,7 @@
   .op-item .current-badge { background: white; color: var(--c-main); }
   /* Fortsetzen-Statuskarte im Hauptmenü */
   .fs-karte {
+    position: relative;
     background: var(--c-main); color: white;
     border-radius: 12px; padding: 16px;
     box-shadow: var(--c-shadow); cursor: pointer;
@@ -252,6 +260,23 @@
     font-size: 11px; font-weight: 700; background: rgba(255,255,255,0.2);
     border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0;
   }
+  .fs-karte .fs-label, .fs-karte .fs-eingriff { padding-right: 40px; }
+  .fs-x {
+    position: absolute; top: 8px; right: 8px; width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,0.55); border-radius: 8px;
+    background: var(--c-main); color: white; font-size: 16px; line-height: 1; cursor: pointer; padding: 0;
+  }
+  .fs-x:hover { background: var(--c-main-dark); }
+  .fs-chip-neu { background: white; color: var(--c-main); }
+  /* Schmale Fortsetzen-Zeile (Karte ausgeblendet) */
+  .fs-schmal {
+    height: 44px; box-sizing: border-box; display: flex; align-items: center; gap: 10px;
+    padding: 0 14px; background: var(--c-bg); border: 1px solid var(--c-border);
+    border-radius: 10px; cursor: pointer; font-size: 14px;
+  }
+  .fs-schmal-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--c-text); }
+  .fs-schmal-weiter { flex-shrink: 0; color: var(--c-main); font-weight: 700; }
   .fs-btn {
     margin-top: 14px; background: white; color: var(--c-main);
     border-radius: 8px; text-align: center;
@@ -461,6 +486,7 @@ let NONOP_INHALTE = {};  // Non-OP-Begleiter: Inhaltsbausteine
 let NONOP_AMPEL = {};    // Non-OP-Begleiter: Ampel-Bausteine (stufenloses Modell)
 let NONOP_MASSNAHMEN = {}; // Non-OP-Begleiter: allgemeine nicht-operative Maßnahmen (aus infomaterial.json)
 let KATALOG = null;   // Daten aus katalog.json (Beschwerde-Wegweiser) — null bevor geladen
+let BEGLEITER_BAUSTEINE = {}; // Schema 2: Bausteine des Begleiters (u. a. Feld meilenstein)
 
 // Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey].
 // aufenthalt ("stationaer" | "ambulant") passt die Liste an den gewaehlten Weg an:
@@ -522,6 +548,7 @@ async function loadPhasenData() {
  * ============================================================ */
 function uebersetzeSchema2(data) {
   const B = data.BEGLEITER_BAUSTEINE || {};
+  BEGLEITER_BAUSTEINE = B;
   PHASEN_INHALTE = {};
   Object.keys(B).forEach(function(k) {
     PHASEN_INHALTE[k] = { intro: B[k].intro, text: B[k].text, subthemen: B[k].subthemen || [] };
@@ -875,7 +902,8 @@ function opAckSetzen() {
 // Statuskarte beim Wiedereinstieg: zeigt Eingriff, OP-Termin, aktuelles und
 // nächstes Thema. Die Startseite kommt zuerst, die letzte Stelle wird nur auf
 // Klick wiederhergestellt.
-function FortsetzenBanner({ session, onFortsetzen }) {
+function FortsetzenBanner({ session, onFortsetzen, onSchliessen }) {
+  const neu = !!(session && session.karteAusgeblendet);
   const eingriff = session && EINGRIFFE[session.eingriff];
   const variante = eingriff && eingriff.varianten && eingriff.varianten[session.variante];
 
@@ -905,15 +933,20 @@ function FortsetzenBanner({ session, onFortsetzen }) {
   return (
     <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
       <div className="fs-karte" onClick={onFortsetzen}>
+        {onSchliessen && (
+          <button className="fs-x" aria-label="Karte ausblenden oder Verlauf löschen"
+                  onClick={function(e){ e.stopPropagation(); onSchliessen(); }}>✕</button>
+        )}
         <div className="fs-label">Ihr OP-Begleiter</div>
         {variante && <div className="fs-eingriff">{variante.anzeigename}</div>}
         <div className="fs-op">
+          {neu && !aktuell && <><span className="fs-chip fs-chip-neu">Neu</span> </>}
           {opText ? <>{opText[0]} <b>· {opText[1]}</b></> : "Bitte OP-Datum eintragen"}
         </div>
         {(aktuell || naechste) && (
           <div className="fs-zeilen">
             {aktuell && (
-              <div className="fs-zeile"><span className="fs-chip">Aktuell</span><b>{aktuell.thema}</b></div>
+              <div className="fs-zeile">{neu && <span className="fs-chip fs-chip-neu">Neu</span>}<span className="fs-chip">Aktuell</span><b>{aktuell.thema}</b></div>
             )}
             {naechste && (
               <div className="fs-zeile">
@@ -924,6 +957,21 @@ function FortsetzenBanner({ session, onFortsetzen }) {
           </div>
         )}
         <div className="fs-btn">Weiter im Begleiter ›</div>
+      </div>
+    </div>
+  );
+}
+
+// Schmale Zeile an Stelle der ausgeblendeten Fortsetzen-Karte.
+function FortsetzenZeile({ session, onFortsetzen }) {
+  const eingriff = session && EINGRIFFE[session.eingriff];
+  const variante = eingriff && eingriff.varianten && eingriff.varianten[session.variante];
+  const name = session && session.opDatum ? (variante ? variante.anzeigename : "") : "OP-Datum eintragen";
+  return (
+    <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
+      <div className="fs-schmal" onClick={onFortsetzen}>
+        <span className="fs-schmal-text">Ihr OP-Begleiter: {name}</span>
+        <span className="fs-schmal-weiter">Weiter ›</span>
       </div>
     </div>
   );
@@ -1059,6 +1107,33 @@ function computeCurrentPhaseIndex(phasen, opDatumIso) {
   return idx;
 }
 
+// Aktueller Phasen-Index einer Sitzung (−1 ohne OP-Datum).
+function sitzungPhaseIdx(session) {
+  const eingriff = session && EINGRIFFE[session.eingriff];
+  if (!eingriff || !session.opDatum) return -1;
+  const aufenthalt = session.aufenthalt || eingriff.aufenthaltDefault || "stationaer";
+  return computeCurrentPhaseIndex(getPhasenForVariant(session.eingriff, session.variante, aufenthalt), session.opDatum);
+}
+
+// Fortsetzen-Karte auf der Startseite: ausgeblendet bleibt sie, bis (a) das
+// OP-Datum eingetragen oder geaendert wird oder (b) seit dem Ausblenden eine
+// Phase erreicht ist, deren Baustein als meilenstein markiert ist.
+function karteZeigen(session) {
+  const aus = session && session.karteAusgeblendet;
+  if (!aus) return true;
+  if ((session.opDatum || null) !== (aus.opDatum || null)) return true;
+  const eingriff = EINGRIFFE[session.eingriff];
+  if (!eingriff || !session.opDatum) return false;
+  const aufenthalt = session.aufenthalt || eingriff.aufenthaltDefault || "stationaer";
+  const phasen = getPhasenForVariant(session.eingriff, session.variante, aufenthalt);
+  const heute = computeCurrentPhaseIndex(phasen, session.opDatum);
+  for (let i = Math.max(0, aus.phaseIdx + 1); i <= heute; i++) {
+    const b = BEGLEITER_BAUSTEINE[phasen[i].baustein];
+    if (b && b.meilenstein === true) return true;
+  }
+  return false;
+}
+
 /* ============================================================
  * REACT COMPONENTS
  * ============================================================ */
@@ -1070,6 +1145,7 @@ function App() {
   const [session, setSession] = useState(Storage.get());
   const [opAck, setOpAck] = useState(opAckGelesen());
   const [showResetModal, setShowResetModal] = useState(false);
+  const [showKarteDialog, setShowKarteDialog] = useState(false);
   // Beim Wiedereinstieg zuerst die Startseite zeigen; die letzte Stelle wird
   // nur auf ausdruecklichen Klick wiederhergestellt.
   const [fortsetzen, setFortsetzen] = useState(false);
@@ -1142,6 +1218,14 @@ function App() {
     }
   }
 
+  // X in der Fortsetzen-Karte → „Nur ausblenden": Stand merken, ab dem die
+  // Karte erst beim naechsten Meilenstein oder neuem OP-Datum wiederkommt.
+  function karteAusblenden() {
+    updateSession({ karteAusgeblendet: { phaseIdx: sitzungPhaseIdx(session), opDatum: session.opDatum,
+                                         am: new Date().toISOString() } });
+    setShowKarteDialog(false);
+  }
+
   function acceptPrivacy() {
     Storage.setPrivacy();
     setPrivacyOk(true);
@@ -1165,7 +1249,7 @@ function App() {
     return (
       <div className="app">
         <NavLeiste />
-        <Header showSwitcher={false} hideSubtitle={true} />
+        <Header showSwitcher={false} hideSubtitle={true} ohneTitel={true} />
         <AuffangSeite text={"Der Link oder QR-Code, über den Sie hierher gekommen sind, verweist auf ein Thema, das in Fuss-Track nicht (mehr) vorhanden ist. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an."} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -1209,8 +1293,8 @@ function App() {
     }
     return (
       <div className="app">
-        <NavLeiste />
-        <Header showSwitcher={false} />
+        <NavLeiste titel={(WISSEN[urlParams.wissen] && WISSEN[urlParams.wissen].titel) || "Wissen"} />
+        <Header showSwitcher={false} ohneTitel={true} />
         <WissenDirektView wissenKey={urlParams.wissen} />
         <Branding />
         <FooterLinks />
@@ -1250,7 +1334,7 @@ function App() {
       return (
         <div className="app">
           <NavLeiste />
-          <Header showSwitcher={false} hideSubtitle={true} />
+          <Header showSwitcher={false} hideSubtitle={true} ohneTitel={true} />
           <AuffangSeite />
           <FooterLinks />
           {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -1321,8 +1405,8 @@ function App() {
             direkt in die App, der Weg nach draussen geht ueber den Hinweis am
             Seitenende. In-App geoeffnet (IN_APP_NAV): volle Navigation, ohne
             Fokus-Kopf und -Fusstext. */}
-        <NavLeiste />
-        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} />
+        <NavLeiste titel={IN_APP_NAV ? "Aufklärung" : "Information"} />
+        <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} ohneTitel={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         {!IN_APP_NAV && <FokusKopf opKontext={opKontext} />}
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} themaFehlt={themaFehlt} />
@@ -1342,21 +1426,30 @@ function App() {
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
-        {hasSession && !urlParams.massnahme && !urlParams.nonop && !urlParams.kb && (
-          <FortsetzenBanner session={session}
-                            onFortsetzen={function(){ setFortsetzen(true); }} />
+        {hasSession && !urlParams.massnahme && !urlParams.nonop && !urlParams.kb && (karteZeigen(session)
+          ? <FortsetzenBanner session={session}
+                              onFortsetzen={function(){ setFortsetzen(true); }}
+                              onSchliessen={function(){ setShowKarteDialog(true); }} />
+          : <FortsetzenZeile session={session}
+                             onFortsetzen={function(){ setFortsetzen(true); }} />
         )}
         <LandingView initialKbKey={urlParams.kb} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
+        {showKarteDialog && (
+          <KarteDialog onAusblenden={karteAusblenden}
+                       onLoeschen={function(){ setShowKarteDialog(false); resetSession(); }}
+                       onCancel={function(){ setShowKarteDialog(false); }} />
+        )}
       </div>
     );
   }
 
   return (
     <div className="app">
-      <NavLeiste />
-      <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} />
+      <NavLeiste titel={(session && EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante]
+                         && EINGRIFFE[session.eingriff].varianten[session.variante].anzeigename) || "OP-Begleiter"} />
+      <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} ohneTitel={true} />
       <FokusRuecksprung ziel={urlParams.fokus} />
       {session && !opAck && (
         <OpDisclaimerGate titel={EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante]
@@ -2923,7 +3016,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
 }
 
 // Die Knoepfe Zurueck/Hauptmenue stehen seit 19.09.2026 in der NavLeiste davor.
-function Header({ showSwitcher, switcherTarget, urlParams, hideSubtitle, titel }) {
+function Header({ showSwitcher, switcherTarget, urlParams, hideSubtitle, titel, ohneTitel }) {
   function switchMode() {
     if (!urlParams || !urlParams.op) return;
     if (switcherTarget === "aufklaerung") {
@@ -2950,6 +3043,23 @@ function Header({ showSwitcher, switcherTarget, urlParams, hideSubtitle, titel }
       window.location.href = ziel;
     }
   }
+  const wechsel = showSwitcher && (
+    <button onClick={switchMode}
+            style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-main)",
+                     background: "transparent", color: "var(--c-main)", fontSize: 12, fontWeight: 600,
+                     cursor: "pointer" }}>
+      {switcherTarget === "aufklaerung"
+        ? "ⓘ Infomaterial zum Krankheitsbild ansehen"
+        : "→ Zum Patientenbegleiter"}
+    </button>
+  );
+  // ohneTitel: Der Ansichtstitel steht in der NavLeiste; hier bleibt nur der
+  // Moduswechsel (ohne h1, Untertitel und Trennlinie).
+  if (ohneTitel) {
+    return wechsel
+      ? <div style={{ textAlign: "center", display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap", marginBottom: 12 }}>{wechsel}</div>
+      : null;
+  }
   return (
     <div className="app-header">
       <h1>{titel || "Fuss-Track"}</h1>
@@ -2958,16 +3068,7 @@ function Header({ showSwitcher, switcherTarget, urlParams, hideSubtitle, titel }
       )}
       {showSwitcher && (
         <div style={{ marginTop: 10, textAlign: "center", display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
-          {showSwitcher && (
-            <button onClick={switchMode}
-                    style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-main)",
-                             background: "transparent", color: "var(--c-main)", fontSize: 12, fontWeight: 600,
-                             cursor: "pointer" }}>
-              {switcherTarget === "aufklaerung"
-                ? "ⓘ Infomaterial zum Krankheitsbild ansehen"
-                : "→ Zum Patientenbegleiter"}
-            </button>
-          )}
+          {wechsel}
         </div>
       )}
     </div>
@@ -3416,7 +3517,7 @@ function ErrorPage() {
   return (
     <div className="app">
       <NavLeiste />
-      <Header />
+      <Header ohneTitel={true} />
       <div className="error-page">
         <svg className="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="14" y="20" width="36" height="28" rx="4" />
@@ -5070,6 +5171,29 @@ function ResetModal({ onConfirm, onCancel }) {
         <div className="modal-actions">
           <button className="btn btn-secondary btn-small" onClick={onCancel}>Abbrechen</button>
           <button className="btn btn-primary btn-small" onClick={onConfirm}>Ja, zurücksetzen</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Dialog zum X der Fortsetzen-Karte (Muster ResetModal).
+function KarteDialog({ onAusblenden, onLoeschen, onCancel }) {
+  return (
+    <div className="modal-overlay" onClick={onCancel}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <h3>Hinweis zum Begleiter</h3>
+        <p>Ihr Begleiter läuft weiter. Wollen Sie nur diese Karte ausblenden oder den Verlauf löschen?</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 16 }}>
+          <button className="btn btn-primary btn-block" onClick={onAusblenden}>Nur ausblenden</button>
+          <div>
+            <button className="btn btn-secondary btn-block" style={{ color: "#C62828", borderColor: "#C62828" }}
+                    onClick={onLoeschen}>Verlauf löschen</button>
+            <div style={{ fontSize: 12, color: "var(--c-text-muted)", marginTop: 4 }}>
+              Auswahl, OP-Datum und Fortschritt werden gelöscht. Das lässt sich nicht rückgängig machen.
+            </div>
+          </div>
+          <button className="btn btn-secondary btn-block" onClick={onCancel}>Abbrechen</button>
         </div>
       </div>
     </div>
