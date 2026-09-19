@@ -63,6 +63,9 @@
   }
   .nav-leiste .zl-btn { min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; }
   .nav-leiste .zl-btn.nl-aus { opacity: .4; cursor: default; }
+  /* Leiste als erstes Kind einer Karte reicht bis an den Kartenrand.
+     --kp = Innenabstand der Karte (Standard 24 px, abweichende Karten setzen ihn selbst). */
+  .card > .nav-leiste:first-child { margin: calc(-1 * var(--kp, 24px)) calc(-1 * var(--kp, 24px)) 12px; border-radius: 10px 10px 0 0; }
   /* Schmale Bildschirme: Titel darf zweizeilig umbrechen statt zu kuerzen. */
   @media (max-width: 520px) {
     .nl-seite { flex-basis: 76px; }
@@ -266,6 +269,7 @@
     display: flex; align-items: center; justify-content: center;
     border: 1px solid rgba(255,255,255,0.55); border-radius: 8px;
     background: var(--c-main); color: white; font-size: 16px; line-height: 1; cursor: pointer; padding: 0;
+    z-index: 1;
   }
   .fs-x:hover { background: var(--c-main-dark); }
   .fs-chip-neu { background: white; color: var(--c-main); }
@@ -1258,10 +1262,13 @@ function App() {
   }
 
   // 0. Hauptmenü erzwingen: ?home=1 (zeigt LandingView, auch wenn Session existiert)
-  if (urlParams.home === "1") {
+  if (urlParams.home === "1" && !fortsetzen) {
     return (
       <div className="app">
         <Header showSwitcher={false} hideSubtitle={true} />
+        {hasSession && !urlParams.massnahme && !urlParams.nonop && !urlParams.kb && (
+          <FortsetzenZeile session={session} onFortsetzen={function(){ setFortsetzen(true); }} />
+        )}
         <LandingView initialKbKey={null} initialMassnahme={urlParams.massnahme} initialNonop={urlParams.nonop} />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -1278,7 +1285,7 @@ function App() {
     return (
       <div className="app">
         <NavLeiste titel="Beschwerde-Wegweiser" />
-        <Header showSwitcher={false} showHauptmenue={true} titel="Beschwerde-Wegweiser" />
+        <Header showSwitcher={false} showHauptmenue={true} titel="Beschwerde-Wegweiser" ohneTitel={true} />
         <FinderView />
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
@@ -1582,7 +1589,7 @@ function NonOpView({ onBack, startKb }) {
   }
   function DisclaimerGate({ titel, onBack, onConfirm }) {
     return (
-      <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+      <div className="card" style={{ marginTop: 12, padding: 18, "--kp": "18px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <NavLeiste onBack={onBack} titel={titel} />
         <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{DISCLAIMER_TITEL}</div>
@@ -1599,7 +1606,7 @@ function NonOpView({ onBack, startKb }) {
   // Gemeinsamer Seiten-Rahmen: volle Breite, Stepper oben, Tap-Spalten links/rechts
   function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, weiterText, children }) {
     return (
-      <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+      <div className="card" style={{ marginTop: 12, padding: "16px 16px", "--kp": "16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <NavLeiste onBack={onBack} titel={titel} />
         {items && items.length > 0 && (
           <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 0 12px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
@@ -1748,7 +1755,7 @@ function NonOpView({ onBack, startKb }) {
     var info = NONOP_MASSNAHMEN[massnahmeOffen] || {};
     var abschnitte = info.abschnitte || [];
     return (
-      <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
+      <div className="card" style={{ marginTop: 12, padding: "16px 16px", "--kp": "16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <NavLeiste onBack={function(){ setMassnahmeOffen(null); }} titel={info.titel || "Maßnahme"} />
         {info.kurz && <div style={{ fontSize: 14, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{info.kurz}</div>}
         {abschnitte.map(function(a, i){
