@@ -9802,6 +9802,7 @@
     },
     "ct_walker_wechsel": {
       "thema": "CT-Kontrolle und Wechsel in Walker",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
       "text": "Wenn der Fortschritt der Fusion von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie nun vom Rollstuhl bzw. den Stützen in den Walker-Stiefel wechseln. In den folgenden 4 Wochen wird die Belastung im Walker schmerzadaptiert und schrittweise gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun mit Physiotherapie begonnen werden. Ziele: Gangschule, belastungsfreie Mobilisierung der Gelenke und Aufbau in Richtung Vollbelastung.\n\nAuf Grund der aufgehobenen Beweglichkeit im §GELENK_VERSTEIFT§ profitieren viele Patientinnen und Patienten von §SCHUHVERSORGUNG§. Diese wird durch Ihren Arzt verordnet und kann beim Orthopädietechniker angefertigt werden.",
@@ -9820,6 +9821,7 @@
     },
     "entlassung_stationaer": {
       "thema": "Entlassung",
+      "meilenstein": true,
       "emoji": "🏡",
       "intro": "Ihr Eingriff erfolgt stationär.",
       "text": "Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist, die Wunde unauffällig ist und Sie die ersten Schritte sicher selber bewältigt haben. Die Dauer des Aufenthalts richtet sich also nicht nach einem festen Tag, sondern danach, wann diese Kriterien erreicht sind. Bei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
@@ -9851,6 +9853,7 @@
     },
     "faden_standard": {
       "thema": "Fadenzug",
+      "meilenstein": true,
       "emoji": "✂️",
       "intro": "Das einliegende Nahtmaterial wird 14–18 Tage nach dem Eingriff entfernt.",
       "text": "Bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Dies sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer Verband angelegt und das weitere Procedere besprochen.",
@@ -9858,6 +9861,7 @@
     },
     "faden_vorfuss": {
       "thema": "Fadenzug und dritter Verbandwechsel",
+      "meilenstein": true,
       "emoji": "✂️",
       "intro": "Das einliegende Nahtmaterial wird entfernt; bei resorbierbaren Fäden müssen nur die Knoten gekappt werden. Im gleichen Termin wird auch der dritte Verbandwechsel durchgeführt.",
       "text": "Der Fadenzug sollte immer durch eine Ärztin oder einen Arzt erfolgen, die in der Behandlung von Wunden erfahren sind.\n\nEs wird ein neuer redressierender Verband angelegt und das weitere Procedere besprochen. Sollten die Zwischenzehenkeile und eine Hallux-Schiene noch nicht vorliegen, können Sie nun mit Ihrem Behandler besprechen, ob dieser Ihnen die Hilfsmittel noch verschreibt. Die Zwischenzehenkeile sind in der Regel nicht verschreibungsfähig und müssen für wenige Euro im Sanitätshaus gekauft werden.",
@@ -9876,6 +9880,7 @@
     },
     "heimkehr_ambulant": {
       "thema": "Zu Hause ankommen",
+      "meilenstein": true,
       "emoji": "🏡",
       "intro": "Dieser Eingriff findet häufig ambulant statt.",
       "text": "Bei aufwendigerem Kombinationseingriff, beidseitiger OP oder relevanten Vorerkrankungen kann hier auch eine stationäre Überwachung nötig sein. Eine Entlassung findet dann statt, wenn Ihr Schmerzniveau erträglich ist und Sie die ersten Schritte selber bewältigt haben.\n\nBei stationärer Behandlung kann Ihnen ein Taxischein im Rahmen des Entlassmanagements ausgestellt werden. Sinnvollerweise ist es aber, wenn Sie eine Vertrauensperson abholt, die direkt mit Gepäck und der Ankunft im häuslichen Umfeld helfen kann. Sollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
@@ -9948,6 +9953,7 @@
     },
     "letzter_abend": {
       "thema": "Entspannung am Vorabend",
+      "meilenstein": true,
       "emoji": "🌙",
       "intro": "Nutzen Sie den letzten Abend ruhig, um sich etwas zu zerstreuen und abzulenken.",
       "text": "Machen Sie eine Entspannungsübung, kochen Sie etwas Leckeres und trinken Sie ruhig auch ein Glas Wein. Seien Sie zuversichtlich und denken Sie an die positiven Erwartungen, die Sie an den Eingriff knüpfen.",
@@ -10031,6 +10037,7 @@
     },
     "op_tag_ruhiggestellt": {
       "thema": "Am OP-Tag",
+      "meilenstein": true,
       "emoji": "🏥",
       "intro": "Vor der OP sind Sie informiert worden, wie Sie sich anschließend verhalten können, um Ihre Genesung zu fördern.",
       "text": "Der Fuß sollte vorerst hochgelagert werden und kann gekühlt werden. Nach dem Eingriff ist das Sprunggelenk in einem Verband und einer Schiene oder einem Walker ruhiggestellt. Nach dem Eingriff wird in aller Regel eine Kollegin oder ein Kollege vom OP-Team bei Ihnen vorbeikommen und Sie über den Verlauf des Eingriffes informieren. Treten Sie vorerst nicht auf den Fuß auf, bis man Ihnen nach dem Eingriff hier die Freigabe erteilt. Je nach Befund in der OP kann es durchaus mal sein, dass das Behandlungs- und Belastungskonzept individuell angepasst werden muss.\n\nDie erste Mobilisierung findet in aller Regel mit einer Pflegeperson statt, die Sie anleitet und Ihnen hilft. Sobald die Schutzreflexe komplett wieder vorhanden sind, können Sie etwas essen und trinken. Seien Sie nicht besorgt, wenn man etwas Blut durch den Verband sieht. Dies ist nicht selten. Ebenfalls ist es möglich, dass der komplette Fuß oder Teile davon sich gefühlslos oder taub anfühlen. Auch dies ist kein Grund zur Sorge, da häufig eine Betäubung am Ende der OP zur besseren Einstellung der Schmerzen gegeben wird. Fragen Sie diesbezüglich bei der nächsten Visite aber einmal nach.\n\nSchmerz und Übelkeit sind nach einem Eingriff nicht immer zu vermeiden. Die Schwestern und Pfleger haben hier Bedarfsmedikamente angeordnet, die Sie sich selbst einfordern können, sollte dies nötig sein. Fragen Sie also stets gerne aktiv nach, wenn Sie Unterstützung benötigen.",
@@ -10039,6 +10046,7 @@
     },
     "op_tag_vorfuss": {
       "thema": "Am OP-Tag",
+      "meilenstein": true,
       "emoji": "🏥",
       "intro": "Vor der OP sind Sie informiert worden, wie Sie sich anschließend verhalten können, um Ihre Genesung zu fördern.",
       "text": "Der Fuß sollte vorerst hochgelagert werden und kann gekühlt werden. Nach dem Eingriff wird in aller Regel eine Kollegin oder ein Kollege vom OP-Team bei Ihnen vorbeikommen und Sie über den Verlauf des Eingriffes informieren. Treten Sie vorerst nicht auf den Fuß auf, bis man Ihnen nach dem Eingriff hier die Freigabe erteilt. Je nach Befund in der OP kann es durchaus mal sein, dass das Behandlungs- und Belastungskonzept individuell angepasst werden muss.\n\nDie erste Mobilisierung findet in aller Regel mit einer Pflegeperson statt, die Sie anleitet und Ihnen hilft. Sobald die Schutzreflexe komplett wieder vorhanden sind, können Sie etwas essen und trinken. Seien Sie nicht besorgt, wenn man etwas Blut durch den Verband sieht. Dies ist nicht selten. Ebenfalls ist es möglich, dass der komplette Fuß oder Teile davon sich gefühlslos oder taub anfühlen. Auch dies ist kein Grund zur Sorge, da häufig eine Betäubung am Ende der OP zur besseren Einstellung der Schmerzen gegeben wird. Fragen Sie diesbezüglich bei der nächsten Visite aber einmal nach.\n\nSchmerz und Übelkeit sind nach einem Eingriff nicht immer zu vermeiden. Die Schwestern und Pfleger haben hier Bedarfsmedikamente angeordnet, die Sie sich selbst einfordern können, sollte dies nötig sein. Fragen Sie also stets gerne aktiv nach, wenn Sie Unterstützung benötigen.",
@@ -10054,6 +10062,7 @@
     },
     "praemed_vorbereitung": {
       "thema": "Vorbereitung auf die Prämedikation",
+      "meilenstein": true,
       "emoji": "📋",
       "intro": "Der Eingriff rückt näher, und bald werden Sie zur OP-Vorbereitung in die Klinik fahren müssen, damit der Eingriff und die Narkose mit Ihnen besprochen werden.",
       "text": "Überlegen Sie sich nun noch genau, welche Fragen Sie zum Eingriff haben, und schreiben Sie sich diese auf. Ebenfalls sollten Sie Dokumente, die Sie benötigen, schon einmal zusammensuchen (Einweisung/Überweisung, Versicherungskarte, Ausweise, Medikamentenplan, Implantatpässe, Allergiepass, Narkosepass, Vorbefunde).",
@@ -10072,6 +10081,7 @@
     },
     "roentgen_bandstabilisierung": {
       "thema": "Röntgenkontrolle und Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
       "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig bei dieser Variante: Aufgrund der zusätzlichen Bandstabilisierung soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
@@ -10079,6 +10089,7 @@
     },
     "roentgen_prothese": {
       "thema": "Röntgenkontrolle und Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
       "text": "In Zweifelsfällen und in Abhängigkeit von den Zusatzeingriffen kann eine CT-Kontrolle durchgeführt werden.\n\nWenn die Heilung von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie die Stützen oder den Stiefel nutzen.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
@@ -10086,6 +10097,7 @@
     },
     "roentgen_vollbelastung": {
       "thema": "Röntgenkontrolle und Vollbelastung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute steht die Röntgenkontrolle an. Sie zeigt den Stand der knöchernen Durchbauung 12 Wochen nach dem Eingriff.",
       "text": "Wenn der Fortschritt als regelrecht befundet wurde, wird die Vollbelastung freigegeben. Sie können nun aus dem Walker in das normale, weite Schuhwerk wechseln.\n\nDie Vollbelastung sollte trotzdem schrittweise weiter aufgebaut werden — Ihr Körper braucht einige Wochen, um sich an die volle Belastung zu gewöhnen.\n\nFalls die knöcherne Heilung noch nicht abgeschlossen ist, wird das weitere Vorgehen individuell mit Ihrem Behandler abgestimmt — meist erfolgt dann eine Verlängerung der Walker-Phase und eine erneute Kontrolle in einigen Wochen.",
@@ -10100,6 +10112,7 @@
     },
     "sport_nach_bandstabilisierung": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
       "text": "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sollte nach einer Bandstabilisierung frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
@@ -10107,6 +10120,7 @@
     },
     "sport_prothese": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie eine langsame sportliche Belastungssteigerung wagen.",
       "text": "Dies sollte nur probiert werden, wenn die Mobilität im Alltag unter geringen Schmerzen sicher funktioniert.\n\nIn aller Regel bieten sich hier Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sind mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit nicht empfehlenswert.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele sind: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
@@ -10114,6 +10128,7 @@
     },
     "sport_rueckfuss": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie eine langsame sportliche Belastungssteigerung wagen.",
       "text": "Dies sollte nur probiert werden, wenn die Mobilität im Alltag unter geringen Schmerzen sicher funktioniert.\n\nIn aller Regel bieten sich hier vorerst Radfahren auf dem Ergometer, Wassergymnastik oder Rudern an der Maschine im Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele sind: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
@@ -10121,6 +10136,7 @@
     },
     "sport_vorfuss": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Sie können nun mit sportlicher Betätigung beginnen.",
       "text": "In aller Regel bieten sich hier vorerst Radfahren auf dem Ergometer, Wassergymnastik oder Rudern an der Maschine im weiten Schuh an. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nLauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist meistens 6 Wochen nach dem Eingriff noch nicht umsetzbar. Ab jetzt können Sie, bei guter Mobilität im Alltag, langsam nach eigenem Bauchgefühl schrittweise die sportliche Belastung steigern. Sollten Sie im Alltag und im Rahmen des Wiederbeginns der beruflichen Betätigung aber noch Schmerz und Schwellung im relevanten Ausmaß empfinden, ist es sinnvoll, noch etwas Geduld zu haben.",
@@ -10182,6 +10198,7 @@
     },
     "verband_ab_ruhiggestellt": {
       "thema": "Erneuter Verbandwechsel",
+      "meilenstein": true,
       "emoji": "👟",
       "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
       "text": "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.",
@@ -10189,6 +10206,7 @@
     },
     "verband_ab_vorfuss": {
       "thema": "Abnahme des Verbandes",
+      "meilenstein": true,
       "emoji": "👟",
       "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
       "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Wenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Alternativ kann die Großzehe mit einem Tape geführt werden — dieses muss regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden.",
@@ -10200,6 +10218,7 @@
     },
     "verband_ab_vorfuss_komplex": {
       "thema": "Abnahme des Verbandes",
+      "meilenstein": true,
       "emoji": "👟",
       "intro": "Es sind nun ca. 4 Wochen seit dem Eingriff vergangen.",
       "text": "Der Verband kann nun abgenommen werden; die Wunde an der Innenseite des Fußes kann aber weiter mit einem Pflaster vor Druck geschützt werden. Sollte ein Draht in eine Zehe eingesetzt worden sein, wird dieser nun entfernt, und die Kleinzehen müssen weiter mit einem Tape zentrierend positioniert werden. Dies muss zwingend von einem in Fußchirurgie erfahrenen Behandler erfolgen.\n\nWenn die Abschwellung gut vorangeschritten ist, kann jetzt in das normale Schuhwerk gewechselt werden. Hier ist in aller Regel erst einmal die Nutzung von weitem oder offenem Schuhwerk nötig. Sollte der Fuß noch zu geschwollen sein, kann auch der Verbandschuh vorerst weiter getragen werden. Dies wäre nicht ungewöhnlich.\n\nNach Abnahme des Verbandes muss die Großzehe weiterhin positioniert werden. Dafür nutzen Sie die Zwischenzehenkeile tagsüber und die Hallux-Schiene zur Nacht. Alternativ kann die Großzehe mit einem Tape geführt werden — dieses muss regelmäßig gewechselt und von einem erfahrenen Behandler angelegt werden. Gerade bei komplexen Eingriffen an mehreren Zehen ergeben sich aber sehr individuelle Konzepte. Hier sollte genau mit den Operateuren geklärt werden, wie die Nachbehandlung und das Taping/Zentrieren der Zehen erfolgt, und keinen pauschalen Konzepten gefolgt werden.",
@@ -10246,6 +10265,7 @@
     },
     "roentgen_heilungskontrolle": {
       "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "In etwa einer Woche steht Ihre Röntgenkontrolle an — vereinbaren Sie den Termin jetzt, falls noch nicht geschehen.",
       "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung. Sie sollte etwa 6 bis 8 Wochen nach dem Eingriff stattfinden.\n\nWenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie im Stiefel und mit den Stützen langsam die Belastung steigern. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind: Gangschule, belastungsfreie Mobilisierung der Gelenke und Lastaufnahme mit Steigerung zur Vollbelastung.",
@@ -10260,6 +10280,7 @@
     },
     "roentgen_bandreparatur": {
       "thema": "Röntgenkontrolle und Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
       "text": "Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde, können Sie die Belastung schrittweise zur Vollbelastung steigern.\n\nWichtig: Aufgrund der Bandreparatur soll für weitere 6 Wochen — also bis zur 12. Woche nach OP — eine OSG-stabilisierende Bandage getragen werden. Diese schützt die Bänder in der Heilungsphase und gibt Ihnen Sicherheit bei der Aufbelastung. Die Bandage erhalten Sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nNachts können Sie die Schiene weglassen.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden — die Inhalte werden gemeinsam mit Ihrer Therapeutin abgestimmt und nehmen Rücksicht auf die Bandstabilisierung.",
@@ -10267,6 +10288,7 @@
     },
     "sport_nach_bandreparatur": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
       "text": "Nach einer Bandreparatur gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport sollte nach einer Bandreparatur frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
@@ -10295,6 +10317,7 @@
     },
     "draht_entfernung": {
       "thema": "Entfernung des Drahtes",
+      "meilenstein": true,
       "emoji": "🔩",
       "intro": "Zur Sicherung der Korrektur wurde ein dünner Draht eingebracht — dieser wird nun entfernt.",
       "text": "Die Entfernung erfolgt in der Regel 3 bis 6 Wochen nach dem Eingriff in der Sprechstunde. Eine Betäubung ist dafür nicht nötig, das Herausziehen ist nur kurz unangenehm.\n\nSolange der Draht einliegt, sollte das Drahtende trocken und sauber gehalten werden. Baden und Schwimmen sind in dieser Zeit nicht möglich. Selbstauflösende Stifte verbleiben dagegen im Knochen und müssen nicht entfernt werden.",
@@ -10309,6 +10332,7 @@
     },
     "schuh_breiter_vorfuss": {
       "thema": "Wechsel in den eigenen Schuh",
+      "meilenstein": true,
       "emoji": "👟",
       "intro": "Etwa 4 Wochen nach dem Eingriff können Sie vom Verbandschuh in eigenes Schuhwerk wechseln.",
       "text": "Geeignet ist ein Schuh mit breitem Vorfußbereich, steifer Sohle und weichem Oberleder, damit die Zehen nicht eingeengt werden und der Vorfuß beim Abrollen geschützt bleibt. Das Taping läuft dabei weiter, bis Ihr Behandler es beendet.\n\nSollte der Fuß noch deutlich geschwollen sein, tragen Sie den Verbandschuh einfach noch etwas länger — das wäre nicht ungewöhnlich.",
@@ -10365,6 +10389,7 @@
     },
     "aufbelastung_knorpel": {
       "thema": "Aufbelastung",
+      "meilenstein": true,
       "emoji": "🚶",
       "intro": "Nach 6 Wochen Teilbelastung kann die Belastung nun schrittweise gesteigert werden.",
       "text": "Wenn Ihr Behandler die Freigabe erteilt, steigern Sie die Belastung im Stiefel und mit den Stützen langsam und schmerzadaptiert bis zur Vollbelastung. „Schmerzadaptiert\" heißt: nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Ein Wechsel in das normale Schuhwerk ist je nach Verlauf möglich.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, belastungsfreie Mobilisierung des Gelenks und die Lastaufnahme mit Steigerung zur Vollbelastung.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.",
@@ -10372,6 +10397,7 @@
     },
     "orthese_vollbelastung_knorpel": {
       "thema": "Wechsel in die Orthese und Aufbelastung",
+      "meilenstein": true,
       "emoji": "🦵",
       "intro": "Nach 6 Wochen Teilbelastung folgen bei dieser Variante weitere 6 Wochen in einer Orthese — nun unter Vollbelastung.",
       "text": "Wenn Ihr Behandler die Freigabe erteilt, wechseln Sie vom Walker in eine sprunggelenkstabilisierende Orthese und steigern die Belastung schrittweise und schmerzadaptiert bis zur Vollbelastung. Die Orthese wird nur bei Belastung getragen — also beim Stehen und Gehen; in Ruhe können Sie sie ablegen. Sie schützt vor allem vor einem erneuten Umknicken in dieser frühen Phase, in der der Gang oft noch unsicher ist, und wird bis zur 12. Woche nach der Operation genutzt. Sie erhalten sie über Ihren Behandler oder direkt im Sanitätshaus.\n\nForcierte Verdrehungen und ein Kippen des Fußes nach innen sollten Sie weiterhin vermeiden. Der Fokus der Physiotherapie liegt jetzt auf der Mobilisierung des Sprunggelenks und auf neuromuskulärem Training — also Übungen für Gleichgewicht, Koordination und die muskuläre Kontrolle des Gelenks.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — mit dem Wechsel in die Orthese und sicherer Vollbelastung kann er in aller Regel beendet werden. Den genauen Endpunkt legt Ihr Behandler fest.",
@@ -10397,6 +10423,7 @@
     },
     "entlassung_ambulant": {
       "thema": "Entlassung",
+      "meilenstein": true,
       "emoji": "🏡",
       "intro": "Ihr Eingriff erfolgt ambulant — Sie können noch am OP-Tag nach Hause.",
       "text": "Die Entlassung findet statt, wenn Sie wach und kreislaufstabil sind, Ihr Schmerzniveau erträglich ist und Sie die ersten Schritte sicher bewältigt haben. Lassen Sie sich von einer Vertrauensperson abholen. Nach einer Narkose oder Sedierung dürfen Sie am OP-Tag nicht selbst Auto fahren und sollten auch wichtige Entscheidungen auf den nächsten Tag verschieben. Für die erste Nacht sollte eine Person in Ihrer Nähe oder gut erreichbar sein.\n\nSollten Sie Rezepte über Medikamente oder Thromboseschutzmittel erhalten haben, können Sie diese auf dem Heimweg direkt abholen. Nehmen Sie die verordneten Schmerzmittel nach Plan ein, bevor starke Schmerzen entstehen.\n\nWichtig: Bei auffälliger Wunde, Fieber, deutlicher Schmerzzunahme, Verlust des Verbandes oder Blutung sollte immer eine außerplanmäßige umgehende ärztliche Kontrolle erfolgen. Fragen Sie hier Ihren Behandler nach der Anlaufstelle oder Kontaktdaten für den Notfall.",
@@ -10447,6 +10474,7 @@
     },
     "stufe_walker_0": {
       "thema": "Walker-Umstellung auf Stufe 0",
+      "meilenstein": true,
       "emoji": "🥾",
       "intro": "Zu Beginn der siebten Woche erreicht der Fuß wieder die normale Stellung.",
       "text": "Der letzte Fersenkeil wird entfernt beziehungsweise die Schiene auf Stufe 0 umgestellt — der Fuß steht nun wieder im 90-Grad-Winkel. Spätestens jetzt ist die Vollbelastung im Walker schmerzabhängig möglich. „Schmerzabhängig\" heißt, dass Sie nur so viel belasten, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist.",
@@ -10475,6 +10503,7 @@
     },
     "freie_bewegung_achilles": {
       "thema": "Freie Bewegung und Belastungsaufbau",
+      "meilenstein": true,
       "emoji": "🏃",
       "intro": "Nach 3 Monaten wird die Bewegung freigegeben.",
       "text": "Das Sprunggelenk darf nun frei bewegt werden. Erlaubt sind Belastungen ohne Stoß- und Sprungelemente (non-impact), etwa zügiges Gehen, Radfahren, Crosstrainer oder Schwimmen. Die Physiotherapie ergänzt Mobilisation unter Vollbelastung, isometrische Übungen und propriozeptive neuromuskuläre Bahnung (PNF, eine Technik zur Verbesserung des Zusammenspiels von Nerven und Muskeln).\n\nSportarten mit Sprüngen, schnellen Richtungswechseln oder explosivem Abdruck brauchen deutlich länger. Die Rückkehr dorthin wird individuell mit Ihren Behandlern abgestimmt und dauert je nach Sportart oft mehrere Monate bis etwa ein Jahr.",
@@ -10500,6 +10529,7 @@
     },
     "sport_tendoskopie": {
       "thema": "Sportliche Steigerung",
+      "meilenstein": true,
       "emoji": "🏃",
       "intro": "Ab etwa der vierten Woche kann die sportliche Belastung gesteigert werden.",
       "text": "Wie schnell die Steigerung gelingt, ist je nach Ausgangslage sehr unterschiedlich — üblich sind vier bis acht Wochen bis zur sportlichen Belastung. Steigern Sie schrittweise und beschwerdeorientiert, beginnend mit Radfahren, Schwimmen oder zügigem Gehen, bevor Lauf- und Sprungbelastungen dazukommen.\n\nErgänzend ist eine Infiltration mit Hyaluronsäure möglich. Ob dies bei Ihnen sinnvoll ist, besprechen Sie mit Ihren Behandlern.",
@@ -10514,6 +10544,7 @@
     },
     "roentgen_smot_aufbelastung": {
       "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Es erfolgt 6 Wochen nach dem Eingriff eine Röntgenkontrolle.",
       "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung der Osteotomie. Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, steigern Sie im Stiefel und mit den Stützen die Belastung schrittweise bis zur Vollbelastung. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, Mobilisierung und die Lastaufnahme mit Steigerung zur Vollbelastung.",
@@ -10528,6 +10559,7 @@
     },
     "sport_nach_bandstabilisierung_prothese": {
       "thema": "Sportliche Belastungssteigerung",
+      "meilenstein": true,
       "emoji": "🚴",
       "intro": "Wenn die Aufbelastung gut gelingt, können Sie sich vorsichtig einer sportlichen Belastungssteigerung annähern.",
       "text": "Bei dieser Variante mit Bandstabilisierung gilt eine zurückhaltendere Vorgehensweise.\n\nVoraussetzungen für den Sportstart sind: gutes neuromuskuläres Zusammenspiel im Sprunggelenk, ausreichender Gleichgewichtssinn und eine ärztliche Freigabe durch Ihren Behandler. Erst dann kann mit Sport begonnen werden — nicht allein nach Kalender.\n\nBeim Sport sollte das Sprunggelenk weiterhin geschützt werden, etwa durch ein Taping oder eine Bandage. Die Auswahl klären Sie mit Ihrer Physiotherapie.\n\nIn aller Regel bieten sich gelenkschonende Sportarten an: Radfahren auf dem Ergometer mit geringem Widerstand, Wassergymnastik oder Rudern an der Maschine im Schuh. Ebenfalls können Sie Fitnessübungen am Gerät in sitzender Position machen.\n\nImpact-Sport wie Lauf-, Sprung-, Kampf-, Ball- oder Mannschaftssport ist mit einer Sprunggelenkprothese zur Sicherstellung einer langen Haltbarkeit ohnehin kritisch. Bei zusätzlicher Bandstabilisierung sollte Impact-Sport frühestens 6 Monate nach dem Eingriff erwogen werden — und auch dann nur nach individueller ärztlicher Beratung.\n\nEs kann nun die Physiotherapie gesteigert werden. Ziele: Beweglichkeits-, Kraft- und Koordinationstraining, Propriozeptionstraining und Erarbeitung eines funktionellen Gangbildes.",
@@ -10560,6 +10592,7 @@
     },
     "walker_ende_gastroc_distal": {
       "thema": "Walker-Ende und Beübung",
+      "meilenstein": true,
       "emoji": "🦵",
       "intro": "Nach 4 Wochen endet die Ruhigstellung — nun beginnt die Beübung.",
       "text": "Wenn Ihre Behandler die Freigabe erteilen, wird der Walker abgelegt und die Belastung schrittweise bis zur Vollbelastung gesteigert. Nun beginnt die Beübung mit sanften Bewegungsübungen des Sprunggelenks, vorsichtiger Dehnung der Wade und einer zunehmenden Kräftigung der Wadenmuskulatur. Die Kräftigung hat besonderes Gewicht, da die Wade nach einer Verlängerung vorübergehend an Kraft verliert. Die Physiotherapie leitet Sie an, geübt wird zusätzlich täglich zu Hause.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — mit dem Walker-Ende und sicherer Vollbelastung kann er in aller Regel beendet werden. Den genauen Endpunkt legt Ihr Behandler fest.",
@@ -10567,12 +10600,14 @@
     },
     "ct_aufbelastung_arthrodese": {
       "thema": "CT-Kontrolle und Beginn der Aufbelastung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute findet Ihre CT-Kontrolle statt. Sie zeigt, wie weit die knöcherne Heilung der Versteifung fortgeschritten ist.",
       "text": "Im Anschluss an die CT-Kontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der Fusion als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Walker-Stiefel in den folgenden Wochen schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt."
     },
     "roentgen_aufbelastung": {
       "thema": "Röntgenkontrolle und Beginn der Aufbelastung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
       "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
@@ -10580,6 +10615,7 @@
     },
     "roentgen_schuhwechsel_mtp1": {
       "thema": "Röntgenkontrolle und Wechsel ins normale Schuhwerk",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung der Versteifung.",
       "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, können Sie vom Verbandschuh in normales, weites Schuhwerk wechseln, anfangs möglichst mit fester Sohle. Die Belastung war bereits erlaubt und wird nun im normalen Schuh fortgeführt.\n\nDie vollständige knöcherne Durchbauung der Versteifung kann noch einige Wochen dauern. Steigern Sie längere Gehstrecken und Aktivität deshalb schrittweise und nach Beschwerden.",
@@ -10594,6 +10630,7 @@
     },
     "verband_ab_lapidus": {
       "thema": "Verband ab, Führung der Großzehe geht weiter",
+      "meilenstein": true,
       "emoji": "👟",
       "intro": "Es sind nun 3 Wochen seit dem Eingriff vergangen.",
       "text": "Der Verband kann nun abgenommen werden; die Wunde sollte aber weiter mit einem Pflaster vor Druck geschützt werden. Verzichten Sie noch auf das Auftragen von Salben oder Cremes direkt auf die Wunde. Der Stiefel oder die Schiene bleibt weiterhin angelegt, da die knöcherne Heilung Zeit braucht.\n\nDie Führung der Großzehe wird fortgesetzt, mit redressierendem Verband oder Zwischenzehenkeil, nachts ergänzt durch eine Nachtschiene. So reift die Korrektur in guter Stellung aus.",
@@ -10601,6 +10638,7 @@
     },
     "roentgen_aufbelastung_lapidus": {
       "thema": "Röntgenkontrolle und Beginn der Aufbelastung",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Heute findet Ihre Röntgenkontrolle statt. Sie zeigt den Stand der knöchernen Heilung.",
       "text": "Im Anschluss an die Röntgenkontrolle bespricht Ihr Arzt mit Ihnen das Ergebnis und die weitere Belastung. Wenn der Fortschritt der knöchernen Heilung als regelrecht befundet wurde und Sie die Freigabe erhalten, wird die Belastung im Stiefel schmerzadaptiert und schrittweise bis zur Vollbelastung gesteigert. Ein Wechsel in normales, weites Schuhwerk ist je nach Schwellung und Schmerz im Verlauf möglich. Der Fuß kann physiotherapeutisch beübt werden und darf auch eigenständig frei bewegt werden.\n\nDie Führung der Großzehe ist damit noch nicht beendet. In den Wochen 6 bis 12 wird die Zehe weiter geführt, nachts mit einer Nachtschiene und tagsüber mit einem Zwischenzehenkeil, damit die Korrektur in guter Stellung ausreift.\n\n„Schmerzadaptiert\" heißt: Belastung nur in dem Maße, wie es ohne deutliche Beschwerden im Operationsgebiet möglich ist. Tasten Sie sich vorsichtig heran.\n\nDer Thromboseschutz wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt.",
@@ -10636,6 +10674,7 @@
     },
     "verband_ab_tmt_hallux": {
       "thema": "Verbände ab, Zwischenzehenkeil und Nachtschiene",
+      "meilenstein": true,
       "emoji": "🦶",
       "intro": "Etwa 6 Wochen nach dem Eingriff werden die redressierenden Verbände beendet.",
       "text": "Die Führung der Großzehe geht damit nicht zu Ende, sie wechselt nur das Mittel. Tagsüber trägt ein Zwischenzehenkeil die Korrektur weiter, nachts übernimmt eine Nachtschiene. Diese Führung wird bis etwa zur 12. Woche fortgeführt.\n\nDie Wunde braucht jetzt in der Regel keinen Verband mehr; ein Pflaster schützt bei Bedarf vor Druckstellen.",
@@ -10706,6 +10745,7 @@
     },
     "aufbau_woche6_sehne": {
       "thema": "Aufbau ab Woche 6",
+      "meilenstein": true,
       "emoji": "💪",
       "intro": "Sechs Wochen sind geschafft. Die Ruhigstellung kann nun schrittweise beendet werden.",
       "text": "In Absprache mit Ihrem Behandler wird der Walker abgelegt und die Belastung schrittweise bis zur Vollbelastung gesteigert. Am besten geschieht dies physiotherapeutisch angeleitet mit Anspannungsübungen (=Isometrie), aktiven und passiven Bewegungsübungen und Gangschule. Auch die bisher verbotenen Drehbewegungen des Fußes werden nun langsam und kontrolliert wieder aufgenommen.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt. Den genauen Endpunkt legt Ihr Behandler fest.",
@@ -10713,6 +10753,7 @@
     },
     "kraftaufbau_woche8_peroneal": {
       "thema": "Kraftaufbau",
+      "meilenstein": true,
       "emoji": "🏋️",
       "intro": "Ab der achten Woche beginnt der gezielte Kraftaufbau.",
       "text": "Nun kommen exzentrische und konzentrische Kraftübungen hinzu, zum Beispiel mit dem Theraband oder in der Wassergymnastik. Steigern Sie die Übungen langsam und schmerzadaptiert, am besten unter physiotherapeutischer Anleitung. Ziel ist ein sicheres Gangbild und eine kräftige Muskulatur rund um das Sprunggelenk. Ein langsamer Wiederbeginn des Sports ist ab Woche 12 nach individueller Abwägung mit Ihrem Behandler möglich.",
@@ -10727,6 +10768,7 @@
     },
     "aufbelastung_woche4_coalitio": {
       "thema": "Aufbelastung",
+      "meilenstein": true,
       "emoji": "🚶",
       "intro": "Vier Wochen sind vorbei. Nun wird die Belastung gesteigert.",
       "text": "Nach vier Wochen wird die 20-kg-Teilbelastung in Absprache mit Ihrem Behandler schrittweise bis zur Vollbelastung gesteigert. Die Unterarmgehstützen werden dabei nach und nach weggelassen. Auch der Verbandschuh kann je nach Wundverhältnissen und Schwellung abgelegt werden.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wird) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt. Den genauen Endpunkt legt Ihr Behandler fest.",
@@ -10734,6 +10776,7 @@
     },
     "roentgen_smot_aufbelastung_8wo": {
       "thema": "Röntgenkontrolle und Belastungsaufbau",
+      "meilenstein": true,
       "emoji": "🩻",
       "intro": "Es erfolgt 8 Wochen nach dem Eingriff eine Röntgenkontrolle.",
       "text": "Die Röntgenkontrolle zeigt den Stand der knöchernen Heilung der Osteotomie. Wenn der Fortschritt von Ihrem Arzt als regelrecht befundet wurde und Sie die Freigabe erhalten, steigern Sie im Stiefel und mit den Stützen die Belastung schrittweise bis zur Vollbelastung. Ein Wechsel in das normale weite Schuhwerk ist je nach Verlauf möglich.\n\nDer Thromboseschutz (wenn keine Blutverdünnungsmedikation von Hause aus eingenommen wurde) wird bis zur Vollbelastung und aufgehobener Ruhigstellung des oberen Sprunggelenkes fortgeführt — also so lange, wie Sie noch einen Walker oder Cast tragen oder an den Stützen nur teilbelasten. Den genauen Endpunkt legt Ihr Behandler fest.\n\nEs kann nun auch mit Physiotherapie begonnen werden. Ziele sind Gangschule, Mobilisierung und die Lastaufnahme mit Steigerung zur Vollbelastung.",
