@@ -46,25 +46,23 @@
   h1, h2, h3, h4 {
     font-family: 'Source Serif 4', Georgia, "Times New Roman", serif;
   }
-  /* Kopfzeile der Unteransichten. Lange Titel dürfen die Buttons nicht überlaufen;
-     auf schmalen Bildschirmen rutscht der Titel auf eine eigene volle Zeile. */
-  .zurueck-leiste {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 14px; padding-bottom: 12px;
-    border-bottom: 1px solid rgba(0,0,0,.06);
-  }
+  /* Feste Navigationsleiste aller Ansichten: bleibt beim Scrollen oben stehen.
+     Beide Seiten gleich breit, damit der Titel mittig steht; der Titel kuerzt
+     sich bei Ueberlaenge mit „…". Knoepfe mindestens 36 px hoch (Daumen). */
+  .nav-leiste { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px; padding-top: calc(8px + env(safe-area-inset-top));
+    background: var(--c-card); border-bottom: 1px solid rgba(0,0,0,.08); margin-bottom: 12px; }
+  .nl-seite { flex: 0 0 86px; display: flex; }
+  .nl-rechts { justify-content: flex-end; }
+  .nl-titel { flex: 1; min-width: 0; text-align: center; font-family: 'Source Serif 4', Georgia, "Times New Roman", serif;
+    font-size: 15px; font-weight: 700; color: var(--c-main);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .zl-btn {
     cursor: pointer; padding: 5px 12px; background: var(--c-bg); border-radius: 4px;
     font-size: 12px; color: var(--c-text); font-weight: 600; flex-shrink: 0; white-space: nowrap;
   }
-  .zl-titel {
-    font-size: 17px; font-weight: 700; color: var(--c-main);
-    flex: 1; min-width: 0; overflow-wrap: anywhere; hyphens: auto; line-height: 1.3;
-  }
-  @media (max-width: 520px) {
-    .zurueck-leiste { flex-wrap: wrap; }
-    .zl-titel { flex: 1 1 100%; order: 3; font-size: 16px; }
-  }
+  .nav-leiste .zl-btn { min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; }
+  .nav-leiste .zl-btn.nl-aus { opacity: .4; cursor: default; }
   .app { max-width: 720px; margin: 0 auto; padding: 16px; min-height: 100vh; }
   .app-header {
     text-align: center; padding: 16px 0 8px;
@@ -961,13 +959,30 @@ function buildUrl(params) {
   return url.pathname + (url.search || "");
 }
 
-// Einheitliche Kopfzeile aller Unteransichten: zurück + Titel + Start (Hauptmenü erzwingen)
-function ZurueckLeiste({ onBack, titel }) {
+// Feste Navigationsleiste aller Ansichten (Auftrag 19.09.2026): links zurück,
+// Mitte Titel, rechts Start. onBack fehlt → Browser-Verlauf, sonst Startseite;
+// onBack === null → Startseite selbst: kein Zurück, Start ausgegraut.
+function navZurStartseite() { window.location.href = buildUrl({ home: "1" }); }
+function navZurVorseite() {
+  // Alle Querlinks sind volle Seitenwechsel, der Verlauf fuehrt also genau zurueck.
+  // Ohne Verlauf (Direkteinstieg per QR) geht es zur Startseite.
+  if (window.history && window.history.length > 1) window.history.back();
+  else navZurStartseite();
+}
+function NavLeiste({ onBack, titel, zurueckLabel }) {
+  var istStart = onBack === null;
+  var zurueck = onBack === undefined ? navZurVorseite : onBack;
   return (
-    <div className="zurueck-leiste">
-      <div onClick={onBack} className="zl-btn">← zurück</div>
-      <div className="zl-titel">{titel}</div>
-      <div onClick={function(){ window.location.href = buildUrl({ home: "1" }); }} title="Zur Startseite" className="zl-btn">⌂ Start</div>
+    <div className="nav-leiste">
+      <div className="nl-seite">
+        {!istStart && <div onClick={zurueck} className="zl-btn">{zurueckLabel || "‹ Zurück"}</div>}
+      </div>
+      <div className="nl-titel">{titel || "Fuss-Track"}</div>
+      <div className="nl-seite nl-rechts">
+        <div onClick={istStart ? undefined : navZurStartseite} title="Zur Startseite"
+             aria-disabled={istStart ? "true" : undefined}
+             className={"zl-btn" + (istStart ? " nl-aus" : "")}>⌂ Start</div>
+      </div>
     </div>
   );
 }
@@ -1149,6 +1164,7 @@ function App() {
   if (unbekannterSchluessel) {
     return (
       <div className="app">
+        <NavLeiste />
         <Header showSwitcher={false} hideSubtitle={true} />
         <AuffangSeite text={"Der Link oder QR-Code, über den Sie hierher gekommen sind, verweist auf ein Thema, das in Fuss-Track nicht (mehr) vorhanden ist. Bitte sprechen Sie Ihre Ärztin oder Ihren Arzt darauf an."} />
         <FooterLinks />
@@ -1177,6 +1193,7 @@ function App() {
     }
     return (
       <div className="app">
+        <NavLeiste titel="Beschwerde-Wegweiser" />
         <Header showSwitcher={false} showHauptmenue={true} titel="Beschwerde-Wegweiser" />
         <FinderView />
         <FooterLinks />
@@ -1192,6 +1209,7 @@ function App() {
     }
     return (
       <div className="app">
+        <NavLeiste />
         <Header showSwitcher={false} />
         <WissenDirektView wissenKey={urlParams.wissen} />
         <Branding />
@@ -1231,6 +1249,7 @@ function App() {
     if (!urlParams.op || !aufklObj || !aufklaerungAvailable) {
       return (
         <div className="app">
+          <NavLeiste />
           <Header showSwitcher={false} hideSubtitle={true} />
           <AuffangSeite />
           <FooterLinks />
@@ -1302,6 +1321,7 @@ function App() {
             direkt in die App, der Weg nach draussen geht ueber den Hinweis am
             Seitenende. In-App geoeffnet (IN_APP_NAV): volle Navigation, ohne
             Fokus-Kopf und -Fusstext. */}
+        <NavLeiste />
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         {!IN_APP_NAV && <FokusKopf opKontext={opKontext} />}
@@ -1335,6 +1355,7 @@ function App() {
 
   return (
     <div className="app">
+      <NavLeiste />
       <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} />
       <FokusRuecksprung ziel={urlParams.fokus} />
       {session && !opAck && (
@@ -1469,7 +1490,7 @@ function NonOpView({ onBack, startKb }) {
   function DisclaimerGate({ titel, onBack, onConfirm }) {
     return (
       <div className="card" style={{ marginTop: 12, padding: 18, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={onBack} titel={titel} />
+        <NavLeiste onBack={onBack} titel={titel} />
         <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{DISCLAIMER_TITEL}</div>
           <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{DISCLAIMER_TEXT}</div>
@@ -1486,7 +1507,7 @@ function NonOpView({ onBack, startKb }) {
   function BlaetterRahmen({ titel, onBack, items, activeIdx, onJump, onPrev, onNext, canPrev, canNext, weiterText, children }) {
     return (
       <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={onBack} titel={titel} />
+        <NavLeiste onBack={onBack} titel={titel} />
         {items && items.length > 0 && (
           <div style={{ display: "flex", gap: 6, overflowX: "auto", padding: "0 0 12px", marginBottom: 4, WebkitOverflowScrolling: "touch" }}>
             {items.map(function(it, i){
@@ -1635,10 +1656,7 @@ function NonOpView({ onBack, startKb }) {
     var abschnitte = info.abschnitte || [];
     return (
       <div className="card" style={{ marginTop: 12, padding: "16px 16px", background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-          <div onClick={function(){ setMassnahmeOffen(null); }} style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>← zurück</div>
-          <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)" }}>{info.titel || "Maßnahme"}</div>
-        </div>
+        <NavLeiste onBack={function(){ setMassnahmeOffen(null); }} titel={info.titel || "Maßnahme"} />
         {info.kurz && <div style={{ fontSize: 14, fontWeight: 600, color: "var(--c-text)", lineHeight: 1.6, marginBottom: 16 }}>{info.kurz}</div>}
         {abschnitte.map(function(a, i){
           return (
@@ -1691,7 +1709,7 @@ function NonOpView({ onBack, startKb }) {
   if (!kbKey) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={onBack} titel="Non-OP-Begleiter" />
+        <NavLeiste onBack={onBack} titel="Non-OP-Begleiter" />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>Worum geht es bei Ihnen?</p>
         {/* Letzte Stelle nur auf Klick wiederherstellen — sonst landet man beim
             Wiedereinstieg mitten in einem Text. */}
@@ -2038,7 +2056,7 @@ function NonOpView({ onBack, startKb }) {
   if (!unfallDatum) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
+        <NavLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
         {einleitung.intro && <p style={{ marginTop: 0, marginBottom: 14, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6, fontWeight: 600 }}>{einleitung.intro}</p>}
         {einleitung.text && <div style={{ marginBottom: 18 }}><MarkdownView source={einleitung.text} /></div>}
         <EvidenzBlock text={einleitung.evidenz} quellen={einleitung.quellen} />
@@ -2135,7 +2153,7 @@ function NonOpView({ onBack, startKb }) {
   if (seite === 0) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
+        <NavLeiste onBack={function(){ setKbKey(null); }} titel={kb.label} />
 
         <div style={{ marginBottom: 16, padding: "14px 16px", background: "rgba(44,79,124,.06)", borderRadius: 10 }}>
           <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 10 }}>Ihr Heilungsverlauf</div>
@@ -2352,6 +2370,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   if (bereich === null) {
     return (
       <React.Fragment>
+      <NavLeiste onBack={null} titel="Fuss-Track" />
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
         <h2 style={{ marginTop: 0, marginBottom: 12, fontSize: 20, color: "var(--c-main)" }}>Willkommen bei Fuss-Track</h2>
         <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
@@ -2563,15 +2582,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
 
       return (
         <div style={{ maxWidth: 720, margin: "16px auto", padding: "0 16px", minWidth: 0 }}>
-          {/* Zurück zur Auswahl / Herkunftsseite */}
-          <div style={{ marginBottom: 8 }}>
-            <div onClick={mZurueck}
-                 style={{ display: "inline-flex", alignItems: "center", gap: 4, padding: "6px 12px",
-                          background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)",
-                          fontWeight: 600, cursor: "pointer" }}>
-              ← Zurück zur Auswahl
-            </div>
-          </div>
+          <NavLeiste onBack={mZurueck} titel={mInfo.titel || "Maßnahme"} />
 
           {/* Persistenter Header — wie bei Krankheitsbildern/OP-Techniken */}
           <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
@@ -2639,7 +2650,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
     if (!infoKat) {
       return (
         <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-          <ZurueckLeiste onBack={function() { setBereich(null); setInfoKat(null); }} titel="Infomaterial" />
+          <NavLeiste onBack={function() { setBereich(null); setInfoKat(null); }} titel="Infomaterial" />
           <p style={{ marginTop: 0, marginBottom: 18, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
             Verständliche Informationen rund um Fuß und Sprunggelenk. Wählen Sie einen Bereich.
           </p>
@@ -2683,7 +2694,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
 
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function() { setInfoKat(null); }} titel={aktiveKat.label} />
+        <NavLeiste onBack={function() { setInfoKat(null); }} titel={aktiveKat.label} />
         <p style={{ marginTop: 0, marginBottom: 12, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wählen Sie ein Thema aus.
         </p>
@@ -2733,7 +2744,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   if (bereich === "begleiter" && !begleiterTyp) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function() { setBereich(null); }} titel="Begleiter" />
+        <NavLeiste onBack={function() { setBereich(null); }} titel="Begleiter" />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wofür möchten Sie begleitet werden?
         </p>
@@ -2776,7 +2787,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   if (!selectedKb) {
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <ZurueckLeiste onBack={function() { setBegleiterTyp(null); }} titel="OP-Begleiter" />
+        <NavLeiste onBack={function() { setBegleiterTyp(null); }} titel="OP-Begleiter" />
         <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
           Wir begleiten Sie rund um eine geplante oder bereits durchgeführte Operation am Fuß oder Sprunggelenk.
           Wählen Sie zunächst Ihr Krankheitsbild aus.
@@ -2822,17 +2833,10 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
     });
     return (
       <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-          <div onClick={function() {
-                 if (baumPfad.length > 0) { setBaumPfad(baumPfad.slice(0, -1)); }
-                 else { setSelectedKb(null); setModus(null); }
-               }}
-               style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
-            ← zurück
-          </div>
-          <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.label}</div>
-          <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>· Begleitung</div>
-        </div>
+        <NavLeiste onBack={function() {
+                     if (baumPfad.length > 0) { setBaumPfad(baumPfad.slice(0, -1)); }
+                     else { setSelectedKb(null); setModus(null); }
+                   }} titel={selectedKb.label + " · Begleitung"} />
         {brotkrumen.length > 0 && (
           <div style={{ marginBottom: 12, fontSize: 12, color: "var(--c-text-muted)" }}>
             Ihre Auswahl: {brotkrumen.join(" → ")}
@@ -2877,14 +2881,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
 
   return (
     <div className="card" style={{ marginTop: 16, padding: 24, background: "#fff", border: "1px solid rgba(0,0,0,.08)", borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.04)" }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16, paddingBottom: 12, borderBottom: "1px solid rgba(0,0,0,.06)" }}>
-        <div onClick={function() { setSelectedKb(null); setModus(null); }}
-             style={{ cursor: "pointer", padding: "5px 12px", background: "var(--c-bg)", borderRadius: 4, fontSize: 12, color: "var(--c-text)", fontWeight: 600 }}>
-          ← zurück
-        </div>
-        <div style={{ fontSize: 18, fontWeight: 700, color: "var(--c-main)" }}>{selectedKb.label}</div>
-        <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>· Begleitung</div>
-      </div>
+      <NavLeiste onBack={function() { setSelectedKb(null); setModus(null); }} titel={selectedKb.label + " · Begleitung"} />
       <p style={{ marginTop: 0, marginBottom: 16, fontSize: 14, color: "var(--c-text)", lineHeight: 1.6 }}>
         Welche Operation ist geplant? Die genaue Variante hat Ihnen Ihr Behandler mitgeteilt.
         Fragen Sie bei Unsicherheit dort nach.
@@ -2925,7 +2922,8 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop }) {
   );
 }
 
-function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideSubtitle, titel }) {
+// Die Knoepfe Zurueck/Hauptmenue stehen seit 19.09.2026 in der NavLeiste davor.
+function Header({ showSwitcher, switcherTarget, urlParams, hideSubtitle, titel }) {
   function switchMode() {
     if (!urlParams || !urlParams.op) return;
     if (switcherTarget === "aufklaerung") {
@@ -2952,44 +2950,14 @@ function Header({ showSwitcher, switcherTarget, urlParams, showHauptmenue, hideS
       window.location.href = ziel;
     }
   }
-  function goHauptmenue() {
-    // Zur Startseite (LandingView) — Hash-Marker verhindert Auto-Restore der Session
-    window.location.href = window.location.pathname + "?home=1";
-  }
-  function goBack() {
-    // Zur vorherigen Ansicht über den Browser-Verlauf (z. B. Krankheitsbild → Einlagen → zurück).
-    // Alle Querlinks sind volle Seitenwechsel, daher landet man exakt auf der vorigen Seite.
-    // Fällt auf das Hauptmenü zurück, wenn kein Verlauf existiert (z. B. Direkteinstieg per QR).
-    if (typeof window !== "undefined" && window.history && window.history.length > 1) {
-      window.history.back();
-    } else {
-      goHauptmenue();
-    }
-  }
   return (
     <div className="app-header">
       <h1>{titel || "Fuss-Track"}</h1>
       {!hideSubtitle && (
         <div className="subtitle">Ihr Begleiter bei Erkrankungen von Fuß und Sprunggelenk</div>
       )}
-      {(showSwitcher || showHauptmenue) && (
+      {showSwitcher && (
         <div style={{ marginTop: 10, textAlign: "center", display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
-          {showHauptmenue && (
-            <button onClick={goBack}
-                    style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-text-muted)",
-                             background: "transparent", color: "var(--c-text-muted)", fontSize: 12, fontWeight: 600,
-                             cursor: "pointer" }}>
-              ← Zurück
-            </button>
-          )}
-          {showHauptmenue && (
-            <button onClick={goHauptmenue}
-                    style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-text-muted)",
-                             background: "transparent", color: "var(--c-text-muted)", fontSize: 12, fontWeight: 600,
-                             cursor: "pointer" }}>
-              ⌂ Hauptmenü
-            </button>
-          )}
           {showSwitcher && (
             <button onClick={switchMode}
                     style={{ padding: "6px 14px", borderRadius: 6, border: "1px solid var(--c-main)",
@@ -3447,6 +3415,7 @@ function SupportCard() {
 function ErrorPage() {
   return (
     <div className="app">
+      <NavLeiste />
       <Header />
       <div className="error-page">
         <svg className="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
