@@ -34,4 +34,14 @@ Cowork-Prüfstand (Kopie mit 3t-`phasen.json`, 393 px, `localStorage` gestellt):
 
 Abnahme des Autors am Handy: Startseite mit laufendem Begleiter → X → „Nur ausblenden": schmale Zeile; App schließen und neu öffnen: Zeile bleibt; „Weiter ›" führt in den Begleiter. Zweites Gerät oder Reset: X → „Verlauf löschen" → Startseite ohne Karte.
 
-Vollzugsmeldung bitte mit Commit-Hash und den Zeilennummern von `KarteDialog`, `karteZeigen` und `FortsetzenZeile`.
+Vollzugsmeldung bitte mit Commit-Hash und den Zeilennummern von `KarteDialog`, `karteZeigen`, `FortsetzenZeile`, der `@media`-Regel für `.nl-titel` und der `Header`-Eigenschaft `ohneTitel`.
+
+## Nachtrag 19.09.2026: zwei Beobachtungen aus der Gegenprobe der Navigationsleiste (Prüfstand-Bericht Abschnitt 23), im selben Commit
+
+Entscheidung des Autors 19.09.2026: (a) und (b) wie vorgeschlagen, im selben Commit wie die Fortsetzen-Karte.
+
+(a) **Titel wird bei 393 px gekürzt** („Beschwerde-Wegweis…", „Frische Außenbandverletzung O…"). Ursache: zwei Seitenfelder `.nl-seite` zu je 86 px. Änderung: unter 520 px darf der Titel auf zwei Zeilen umbrechen statt zu kürzen (`.nl-titel { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.2; }` in einer `@media (max-width: 520px)`-Regel), die Seitenfelder werden 76 px breit (die Knöpfe „‹ Zurück" und „⌂ Start" passen mit 5 px seitlichem Innenabstand hinein, der bisherige `padding: 5px 12px` wird in der Leiste zu `5px 8px`). Über 520 px bleibt alles wie heute. Die Leiste darf dadurch zweizeilig werden; sticky bleibt.
+
+(b) **Doppeltes „Fuss-Track"** in den Ansichten mit `Header` (Begleiter Z. 1358, Aufklärung Z. 1324, Fokus, Wissen direkt Z. 1212, Auffang Z. 1252, unbekannter Schlüssel Z. 1167, Fehlerseite Z. 3418): in der Leiste steht „Fuss-Track", direkt darunter das `h1` „Fuss-Track" des `Header`. Änderung: die Leiste trägt den Ansichtsnamen, der `Header` rendert in diesen Ansichten kein `h1` und keinen Untertitel mehr, sondern nur noch den Moduswechsel-Knopf (neue Eigenschaft `ohneTitel`, bei allen sieben Aufrufen gesetzt; die Marke „Fuss-Track" bleibt auf der Startseite und im `document.title`). Titel je Ansicht: Begleiter → `variante.anzeigename` (Z. 1341 f., z. B. „Chevron/Akin-Osteotomie"), ohne gültige Variante „OP-Begleiter"; Aufklärung mit Navigation → „Aufklärung"; Fokus-Ansicht → „Information"; Wissen direkt → `WISSEN[key].titel` oder „Wissen"; Auffangseite und unbekannter Schlüssel → „Fuss-Track"; Fehlerseite → „Fuss-Track"; Wegweiser bleibt „Beschwerde-Wegweiser". Der Abstand unter der Leiste (`margin-bottom: 12px`) bleibt, die `.app-header`-Trennlinie entfällt mit dem `h1`; der Moduswechsel-Knopf steht damit direkt unter der Leiste, zentriert wie heute.
+
+Abnahme dazu: 393 px Wegweiser und Nicht-OP „Frische Außenbandverletzung OSG": Titel vollständig auf zwei Zeilen, Leiste bleibt sticky; Begleiter, Aufklärung, Fokus, Wissen: genau ein Titel im Kopf (Leiste), kein zweites „Fuss-Track"; Moduswechsel-Knopf sichtbar und funktionsfähig; Startseite unverändert (Marke im `h1`, Leiste „Fuss-Track" ausgegraut).
