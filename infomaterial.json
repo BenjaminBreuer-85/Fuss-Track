@@ -6106,6 +6106,130 @@
     "kb_metatarsalgie_quellen"
    ]
   },
+  "kleinzehen_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Fehlstellungen der Kleinzehen",
+   "titel": "Fehlstellungen der Kleinzehen",
+   "untertitel": "Hammer-, Krallen- und Malletzehe und ihr Zusammenhang mit der Metatarsalgie",
+   "stand": "2026-09",
+   "_review": false,
+   "slides": [
+    "kb_kleinzehen_ueberblick",
+    "kb_kleinzehen_ursachen",
+    "kb_kleinzehen_diagnostik",
+    "kb_kleinzehen_konservativ",
+    "kb_kleinzehen_operativ",
+    "kb_kleinzehen_quellen"
+   ],
+   "weitereMassnahmen": [
+    {
+     "ref": "einlagen",
+     "kurztext": "Einlage mit Abstützung hinter den Mittelfußköpfen; entlastet Mittelfußkopf und Zehe zugleich."
+    },
+    {
+     "ref": "short_foot",
+     "kurztext": "Training der kurzen Fußmuskeln, die das Zehengrundgelenk in der Mitte halten."
+    },
+    {
+     "ref": "waden_dehnung",
+     "kurztext": "Eine verkürzte Wade erhöht den Druck auf den Vorfuß; regelmäßiges Dehnen entlastet."
+    }
+   ],
+   "quellen": [
+    {
+     "id": "kleinzehen_kb_trnka24",
+     "text": "Trnka HJ, Trnka P. Classical surgical alternatives for the treatment of lesser toe deformities. Foot Ankle Clin. 2024;29(4):651–670. doi:10.1016/j.fcl.2024.02.002"
+    },
+    {
+     "id": "kleinzehen_kb_kim24",
+     "text": "Kim KC, Schmidt E, de Carvalho KAM, et al. Prevalence of midfoot arthritis and lesser toe deformities. Foot Ankle Surg. 2024;30(5):423–431. doi:10.1016/j.fas.2024.03.001"
+    },
+    {
+     "id": "kleinzehen_kb_mens25",
+     "text": "Mens MA, Stufkens SAS, Busch-Westbroek T, et al. Defining and evaluating claw toe and hammertoe deformity: a scoping review and questionnaire study. J Am Podiatr Med Assoc. 2025;115(5). doi:10.7547/23-224"
+    },
+    {
+     "id": "kleinzehen_kb_shirzad11",
+     "text": "Shirzad K, Kiesau CD, DeOrio JK, Parekh SG. Lesser toe deformities. J Am Acad Orthop Surg. 2011;19(8):505–514. doi:10.5435/00124635-201108000-00006"
+    },
+    {
+     "id": "kleinzehen_kb_darcel22",
+     "text": "Darcel V, Piclet-Legré B. Lesser-toe deformity. Orthop Traumatol Surg Res. 2023;109(1S):103464. doi:10.1016/j.otsr.2022.103464"
+    },
+    {
+     "id": "kleinzehen_kb_malhotra16",
+     "text": "Malhotra K, Davda K, Singh D. The pathology and management of lesser toe deformities. EFORT Open Rev. 2016;1(11):409–419. doi:10.1302/2058-5241.1.160017"
+    },
+    {
+     "id": "kleinzehen_kb_mcgroarty24",
+     "text": "McGroarty NK, Anastasio AT, Nunley JA. Is it necessary to repair the plantar plate in the management of metatarsophalangeal joint instability? Foot Ankle Clin. 2024;29(4):741–752. doi:10.1016/j.fcl.2024.02.009"
+    },
+    {
+     "id": "kleinzehen_kb_federer18",
+     "text": "Federer AE, Tainter DM, Adams SB, Schweitzer KM. Conservative management of metatarsalgia and lesser toe deformities. Foot Ankle Clin. 2018;23(1):9–20. doi:10.1016/j.fcl.2017.09.003"
+    },
+    {
+     "id": "kleinzehen_kb_mickle09",
+     "text": "Mickle KJ, Munro BJ, Lord SR, Menz HB, Steele JR. Toe weakness and deformity increase the risk of falls in older people. Clin Biomech. 2009;24(10):787–791. doi:10.1016/j.clinbiomech.2009.08.011"
+    },
+    {
+     "id": "kleinzehen_kb_menz06",
+     "text": "Menz HB, Morris ME, Lord SR. Foot and ankle risk factors for falls in older people: a prospective study. J Gerontol A Biol Sci Med Sci. 2006;61(8):866–870. doi:10.1093/gerona/61.8.866"
+    },
+    {
+     "id": "kleinzehen_kb_hyer22",
+     "text": "Hyer CF, Consul D, McAlister JE, Cottom JM. Lesser metatarsophalangeal plantar plate repair. Clin Podiatr Med Surg. 2022;39(2):167–185. doi:10.1016/j.cpm.2021.11.008"
+    },
+    {
+     "id": "kleinzehen_kb_frey18",
+     "text": "Frey-Ollivier S, Catena F, Hélix-Giordanino M, Piclet-Legré B. Treatment of flexible lesser toe deformities. Foot Ankle Clin. 2018;23(1):69–90. doi:10.1016/j.fcl.2017.10.002"
+    },
+    {
+     "id": "kleinzehen_kb_monteagudo24",
+     "text": "Monteagudo M, Orejana ÁM. Orthotics for the treatment of lesser toe deformities. Foot Ankle Clin. 2024;29(4):591–603. doi:10.1016/j.fcl.2024.03.003"
+    },
+    {
+     "id": "kleinzehen_kb_plapler24",
+     "text": "Plapler PG, Ling D. Treatment of lesser toe deformities based on physical therapy. Foot Ankle Clin. 2024;29(4):605–615. doi:10.1016/j.fcl.2024.03.005"
+    },
+    {
+     "id": "kleinzehen_kb_baker22",
+     "text": "Baker JR, Albright R, Jameson R, et al. Treatment of lesser metatarsophalangeal joint instability with plantar plate repair: a systematic review and meta-analysis. J Foot Ankle Surg. 2022;61(5):1114–1118. doi:10.1053/j.jfas.2022.02.002"
+    },
+    {
+     "id": "kleinzehen_kb_olsen23",
+     "text": "Olsen E, King J, Pollock JR, et al. Hammer toe correction with proximal interphalangeal joint arthrodesis. JBJS Essent Surg Tech. 2023;13(1):e21.00046. doi:10.2106/JBJS.ST.21.00046"
+    },
+    {
+     "id": "kleinzehen_kb_doty18",
+     "text": "Doty JF, Fogleman JA. Treatment of rigid hammer-toe deformity: permanent versus removable implant selection. Foot Ankle Clin. 2018;23(1):91–101. doi:10.1016/j.fcl.2017.09.007"
+    },
+    {
+     "id": "kleinzehen_kb_wei20",
+     "text": "Wei RX, Ling SK, Lui TH, Yung PS. Ideal implant choice for proximal interphalangeal joint arthrodesis in hammer toe/claw toe deformity correction: a systematic review. J Orthop Surg (Hong Kong). 2020;28(1):2309499020911168. doi:10.1177/2309499020911168"
+    },
+    {
+     "id": "kleinzehen_kb_arumugam25",
+     "text": "Arumugam V, Chitnis SS, Singh E, Paterson AM, Welck M. Implants for proximal interphalangeal joint arthrodesis of the lesser toes: where are we? A systematic review. Foot (Edinb). 2025;62:102157. doi:10.1016/j.foot.2025.102157"
+    },
+    {
+     "id": "kleinzehen_kb_fitzke23",
+     "text": "Fitzke TM, Chong ACM, Barth TA, Patel SH, Uglem TP. Symptomatic hammertoes treatment comparison: peg-in-hole arthrodesis versus end-to-end screw fixation. J Foot Ankle Surg. 2023;62(3):543–547. doi:10.1053/j.jfas.2022.12.011"
+    },
+    {
+     "id": "kleinzehen_kb_vernois24",
+     "text": "Vernois J, Redfern D. Minimally invasive alternatives for the treatment of lesser toe deformities. Foot Ankle Clin. 2024;29(4):671–679. doi:10.1016/j.fcl.2024.03.004"
+    },
+    {
+     "id": "kleinzehen_kb_mateen24",
+     "text": "Mateen S, Raja S, Casciato DJ, Siddiqui NA. Minimally invasive versus open hammertoe correction: a retrospective comparative study. J Foot Ankle Surg. 2024;63(2):156–160. doi:10.1053/j.jfas.2023.09.014"
+    },
+    {
+     "id": "kleinzehen_kb_thomas18",
+     "text": "Thomas M, Jordan M. Minimalinvasive Korrektur von Deformitäten der Kleinzehen und Behandlung der Metatarsalgie. Oper Orthop Traumatol. 2018;30(3):171–183. doi:10.1007/s00064-018-0548-6"
+    }
+   ]
+  },
   "mpe_kb": {
    "infoKategorie": "krankheitsbild",
    "infoTitel": "Metatarsus primus elevatus",
