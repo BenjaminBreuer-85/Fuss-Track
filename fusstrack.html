@@ -1454,7 +1454,10 @@ function App() {
 
   return (
     <div className="app">
-      <NavLeiste titel={(session && EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante]
+      {/* Fortgesetzt aus der Startseite: Der Wechsel ist nur ein Zustand, kein
+          Seitenwechsel — history.back() fuehrte deshalb aus der App hinaus. */}
+      <NavLeiste onBack={fortsetzen ? function(){ setFortsetzen(false); } : undefined}
+                 titel={(session && EINGRIFFE[session.eingriff] && EINGRIFFE[session.eingriff].varianten[session.variante]
                          && EINGRIFFE[session.eingriff].varianten[session.variante].anzeigename) || "OP-Begleiter"} />
       <Header showSwitcher={aufklaerungAvailable} switcherTarget="aufklaerung" urlParams={urlParams} showHauptmenue={true} hideSubtitle={true} ohneTitel={true} />
       <FokusRuecksprung ziel={urlParams.fokus} />
