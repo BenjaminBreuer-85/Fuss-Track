@@ -1412,7 +1412,7 @@ function App() {
             direkt in die App, der Weg nach draussen geht ueber den Hinweis am
             Seitenende. In-App geoeffnet (IN_APP_NAV): volle Navigation, ohne
             Fokus-Kopf und -Fusstext. */}
-        <NavLeiste titel={IN_APP_NAV ? "Aufklärung" : "Information"} />
+        <NavLeiste titel="Information" />
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} ohneTitel={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         {!IN_APP_NAV && <FokusKopf opKontext={opKontext} />}
