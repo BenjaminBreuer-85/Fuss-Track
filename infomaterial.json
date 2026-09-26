@@ -3333,10 +3333,12 @@
    "infoKategorie": "op_technik",
    "infoTitel": "Arthroskopie des OSG",
    "titel": "Arthroskopie des OSG",
-   "untertitel": "",
+   "untertitel": "Gelenkspiegelung des oberen Sprunggelenks bei Impingement, freien Gelenkkörpern, Knorpelschäden und Instabilität",
    "betrifft_eingriffe": [],
    "slides": [
     "op_osg_arthroskopie_ueberblick",
+    "op_osg_arthroskopie_indikationen",
+    "op_osg_arthroskopie_ablauf",
     "op_osg_arthroskopie_ergebnisse",
     "op_osg_arthroskopie_nachbehandlung",
     "op_osg_arthroskopie_komplikationen",
@@ -3344,10 +3346,139 @@
    ],
    "_quelle": "Entwurf (Claude) — kein mediq-Quelltext",
    "_review": true,
+   "stand": "Entwurf + PubMed-Recherche 09/2026 (DOI-verifiziert) — ärztlich zu prüfen",
    "quellen": [
     {
-     "id": "osg_arthroskopie_q1",
-     "text": "Literatur zur vorderen/hinteren OSG-Arthroskopie (Impingement, OCL, freie Körper; Zugänge, Komplikationen) — u. a. van Dijk CN et al."
+     "id": "osg_ask_zwiers",
+     "text": "Zwiers R, Wiegerinck JI, Murawski CD, Fraser EJ, Kennedy JG, van Dijk CN. Arthroscopic treatment for anterior ankle impingement: a systematic review of the current literature. Arthroscopy. 2015;31(8):1585-1596. doi: [10.1016/j.arthro.2015.01.023](https://doi.org/10.1016/j.arthro.2015.01.023)"
+    },
+    {
+     "id": "osg_ask_yang",
+     "text": "Yang M, Fei X, Li F, et al. Systematic review of anterior ankle impingement: subtype-specific diagnosis & intervention. J Foot Ankle Surg. 2026;65(5):172.e1-172.e7. doi: [10.1053/j.jfas.2026.05.009](https://doi.org/10.1053/j.jfas.2026.05.009)"
+    },
+    {
+     "id": "osg_ask_gianakos",
+     "text": "Gianakos AL, Ivander A, DiGiovanni CW, Kennedy JG. Outcomes after arthroscopic surgery for anterior impingement in the ankle joint in the general and athletic populations: does sex play a role? Am J Sports Med. 2021;49(10):2834-2842. doi: [10.1177/0363546520980096](https://doi.org/10.1177/0363546520980096)"
+    },
+    {
+     "id": "osg_ask_tol",
+     "text": "Tol JL, Verheyen CP, van Dijk CN. Arthroscopic treatment of anterior impingement in the ankle. J Bone Joint Surg Br. 2001;83(1):9-13. doi: [10.1302/0301-620x.83b1.10571](https://doi.org/10.1302/0301-620x.83b1.10571)"
+    },
+    {
+     "id": "osg_ask_katakura",
+     "text": "Katakura M, Odagiri H, Charpail C, et al. Arthroscopic treatment for anterolateral impingement of the ankle: systematic review and exploration of evidence about role of ankle instability. Orthop Traumatol Surg Res. 2022;108(7):103159. doi: [10.1016/j.otsr.2021.103159](https://doi.org/10.1016/j.otsr.2021.103159)"
+    },
+    {
+     "id": "osg_ask_simonson",
+     "text": "Simonson DC, Roukis TS. Safety of ankle arthroscopy for the treatment of anterolateral soft-tissue impingement. Arthroscopy. 2014;30(2):256-259. doi: [10.1016/j.arthro.2013.10.014](https://doi.org/10.1016/j.arthro.2013.10.014)"
+    },
+    {
+     "id": "osg_ask_yasui",
+     "text": "Yasui Y, Hannon CP, Hurley E, Kennedy JG. Posterior ankle impingement syndrome: a systematic four-stage approach. World J Orthop. 2016;7(10):657-663. doi: [10.5312/wjo.v7.i10.657](https://doi.org/10.5312/wjo.v7.i10.657)"
+    },
+    {
+     "id": "osg_ask_vandijk",
+     "text": "van Dijk CN. Hindfoot endoscopy for posterior ankle pain. Instr Course Lect. 2006;55:545-554. (kein DOI, PMID 16958487)"
+    },
+    {
+     "id": "osg_ask_miyamoto",
+     "text": "Miyamoto W, Takao M, Matsushita T. Hindfoot endoscopy for posterior ankle impingement syndrome and flexor hallucis longus tendon disorders. Foot Ankle Clin. 2015;20(1):139-147. doi: [10.1016/j.fcl.2014.10.005](https://doi.org/10.1016/j.fcl.2014.10.005)"
+    },
+    {
+     "id": "osg_ask_vila",
+     "text": "Vilá J, Vega J, Mellado M, Ramazzini R, Golanó P. Hindfoot endoscopy for the treatment of posterior ankle impingement syndrome: a safe and reproducible technique. Foot Ankle Surg. 2014;20(3):174-179. doi: [10.1016/j.fas.2014.03.002](https://doi.org/10.1016/j.fas.2014.03.002)"
+    },
+    {
+     "id": "osg_ask_lopez",
+     "text": "López Valerio V, Seijas R, Alvarez P, et al. Endoscopic repair of posterior ankle impingement syndrome due to os trigonum in soccer players. Foot Ankle Int. 2015;36(1):70-74. doi: [10.1177/1071100714552078](https://doi.org/10.1177/1071100714552078)"
+    },
+    {
+     "id": "osg_ask_maffulli",
+     "text": "Maffulli N, Aicale R, Migliorini F, Wagner E, Saxena A, Oliva F. The double posteromedial portals endoscopy for posterior ankle impingement syndrome in athletes. J Orthop Traumatol. 2022;23(1):28. doi: [10.1186/s10195-022-00651-w](https://doi.org/10.1186/s10195-022-00651-w)"
+    },
+    {
+     "id": "osg_ask_ling",
+     "text": "Ling CT, Walsh SJ. Outcomes of a 2-portal endoscopic technique for osseous lesions resulting in posterior ankle impingement syndrome. J Foot Ankle Surg. 2020;59(5):938-941. doi: [10.1053/j.jfas.2020.03.013](https://doi.org/10.1053/j.jfas.2020.03.013)"
+    },
+    {
+     "id": "osg_ask_shimozono",
+     "text": "Shimozono Y, Mori D, Mizuno Y, et al. Clinical outcomes of posterior hindfoot endoscopic surgery using 1.9-mm-diameter needle arthroscopy for posterior ankle impingement in athletes. Eur J Orthop Surg Traumatol. 2025;35(1):338. doi: [10.1007/s00590-025-04464-5](https://doi.org/10.1007/s00590-025-04464-5)"
+    },
+    {
+     "id": "osg_ask_bojanic",
+     "text": "Bojanić I, Plečko M, Mataić A, Dimnjaković D. Anterior and posterior arthroscopic treatment of primary synovial chondromatosis of the ankle. Foot Ankle Int. 2021;42(4):440-447. doi: [10.1177/1071100720970961](https://doi.org/10.1177/1071100720970961)"
+    },
+    {
+     "id": "osg_ask_kok",
+     "text": "Kok AC, den Dunnen S, Tuijthof GJ, van Dijk CN, Kerkhoffs GM. Is technique performance a prognostic factor in bone marrow stimulation of the talus? J Foot Ankle Surg. 2012;51(6):777-782. doi: [10.1053/j.jfas.2012.08.005](https://doi.org/10.1053/j.jfas.2012.08.005)"
+    },
+    {
+     "id": "osg_ask_wen",
+     "text": "Wen J, Syed B, Abed I, et al. Mid- to long-term outcomes of osteochondral lesions of the talus repair: a systematic review. J Orthop Surg Res. 2025;20(1):892. doi: [10.1186/s13018-025-06214-z](https://doi.org/10.1186/s13018-025-06214-z)"
+    },
+    {
+     "id": "osg_ask_liu",
+     "text": "Liu J, Wan J, Zhang W, Sun K, Zhang R. Arthroscopic vs. open Broström-Gould procedure for chronic lateral ankle instability: a systematic review and meta-analysis. Front Surg. 2026;13:1859946. doi: [10.3389/fsurg.2026.1859946](https://doi.org/10.3389/fsurg.2026.1859946)"
+    },
+    {
+     "id": "osg_ask_tonsuthanluck",
+     "text": "Tonsuthanluck S, Handoyo HR, Tharincharoen R, Angthong C. Comparative analyses of arthroscopic and open repairs of lateral ligament complex injuries of the ankle: a systematic review and meta-analysis of the medium-term outcomes. Eur J Orthop Surg Traumatol. 2024;34(3):1487-1495. doi: [10.1007/s00590-023-03825-2](https://doi.org/10.1007/s00590-023-03825-2)"
+    },
+    {
+     "id": "osg_ask_feng",
+     "text": "Feng SM, Maffulli N, van Dijk CN, et al. All-inside arthroscopic procedures for chronic lateral ankle instability: evidence-based clinical practice guidelines. Br Med Bull. 2025;154(1):ldaf001. doi: [10.1093/bmb/ldaf001](https://doi.org/10.1093/bmb/ldaf001)"
+    },
+    {
+     "id": "osg_ask_barbieri",
+     "text": "Barbieri C, Bocchino G, Grassa D, et al. Arthroscopic management of medial or rotational ankle instability: a comprehensive review of current evidence. Healthcare (Basel). 2025;13(12):1398. doi: [10.3390/healthcare13121398](https://doi.org/10.3390/healthcare13121398)"
+    },
+    {
+     "id": "osg_ask_chen",
+     "text": "Chen XZ, Chen Y, Liu CG, Yang H, Xu XD, Lin P. Arthroscopy-assisted surgery for acute ankle fractures: a systematic review. Arthroscopy. 2015;31(11):2224-2231. doi: [10.1016/j.arthro.2015.03.043](https://doi.org/10.1016/j.arthro.2015.03.043)"
+    },
+    {
+     "id": "osg_ask_williamson",
+     "text": "Williamson ERC, Shimozono Y, Toale J, et al. Incidence of chondral and osteochondral lesions in ankle fracture patients identified with ankle arthroscopy following rotational ankle fracture: a systematic review. J Foot Ankle Surg. 2022;61(3):668-673. doi: [10.1053/j.jfas.2021.12.013](https://doi.org/10.1053/j.jfas.2021.12.013)"
+    },
+    {
+     "id": "osg_ask_acevedo",
+     "text": "Acevedo JI, Rivera S, Crawford KA, Queen JD, Harris TG, Carreira DS. Multicenter treatment of ankle fractures: does arthroscopic examination make a difference? Foot Ankle Spec. 2026:19386400261451599. doi: [10.1177/19386400261451599](https://doi.org/10.1177/19386400261451599)"
+    },
+    {
+     "id": "osg_ask_park",
+     "text": "Park JH, Kim HJ, Suh DH, et al. Arthroscopic versus open ankle arthrodesis: a systematic review. Arthroscopy. 2018;34(3):988-997. doi: [10.1016/j.arthro.2017.08.284](https://doi.org/10.1016/j.arthro.2017.08.284)"
+    },
+    {
+     "id": "osg_ask_arshad",
+     "text": "Arshad Z, Aslam A, Al Shdefat S, Khan R, Jamil O, Bhatia M. Complications following ankle arthroscopy. Bone Joint J. 2023;105-B(3):239-246. doi: [10.1302/0301-620X.105B3.BJJ-2022-0796.R1](https://doi.org/10.1302/0301-620X.105B3.BJJ-2022-0796.R1)"
+    },
+    {
+     "id": "osg_ask_zengerink",
+     "text": "Zengerink M, van Dijk CN. Complications in ankle arthroscopy. Knee Surg Sports Traumatol Arthrosc. 2012;20(8):1420-1431. doi: [10.1007/s00167-012-2063-x](https://doi.org/10.1007/s00167-012-2063-x)"
+    },
+    {
+     "id": "osg_ask_defazio",
+     "text": "De Fazio A, Bocchi MB, Miele G, et al. Epidemiology and treatment of surgical infection after ankle arthroscopy: a systematic review. J Clin Med. 2024;13(4):983. doi: [10.3390/jcm13040983](https://doi.org/10.3390/jcm13040983)"
+    },
+    {
+     "id": "osg_ask_yammine",
+     "text": "Yammine K, Kheir N, Daher J, Assi C. Pseudoaneurysm following ankle arthroscopy: a systematic review of case series. Eur J Orthop Surg Traumatol. 2019;29(3):689-696. doi: [10.1007/s00590-018-2324-6](https://doi.org/10.1007/s00590-018-2324-6)"
+    },
+    {
+     "id": "osg_ask_marder",
+     "text": "Marder RA, Danielsen B, White RH, Meehan JP. Incidence and time course of symptomatic thromboembolic outcomes after lower extremity arthroscopic surgery, ankle fracture surgery, and Achilles tendon repair. J Am Acad Orthop Surg. 2024;32(13):597-603. doi: [10.5435/JAAOS-D-23-00495](https://doi.org/10.5435/JAAOS-D-23-00495)"
+    },
+    {
+     "id": "osg_ask_huntley",
+     "text": "Huntley SR, Abyar E, Lehtonen EJ, Patel HA, Naranje S, Shah A. Incidence of and risk factors for venous thromboembolism after foot and ankle surgery. Foot Ankle Spec. 2019;12(3):218-227. doi: [10.1177/1938640018769740](https://doi.org/10.1177/1938640018769740)"
+    },
+    {
+     "id": "osg_ask_lau",
+     "text": "Lau B, Kothari V, Trowbridge S, et al. Tourniquet use in ankle arthroscopy: a systematic review. Foot Ankle Surg. 2024;30(1):50-56. doi: [10.1016/j.fas.2023.09.005](https://doi.org/10.1016/j.fas.2023.09.005)"
+    },
+    {
+     "id": "osg_ask_burt",
+     "text": "Burt J, Smith V, Gee CW, Clarke JV, Hall AJ. The role of outpatient needle arthroscopy in the diagnosis and management of musculoskeletal complaints: a systematic review of the Arthrex NanoScope. Knee. 2023;42:246-257. doi: [10.1016/j.knee.2023.04.003](https://doi.org/10.1016/j.knee.2023.04.003)"
     }
    ]
   },
