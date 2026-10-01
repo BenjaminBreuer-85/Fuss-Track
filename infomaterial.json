@@ -7565,6 +7565,128 @@
     }
    ],
    "_freigegeben": "2026-08-13 (Benjamin, mit Korrekturen)"
+  },
+  "syndesmose_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Syndesmosenverletzung (hohe Sprunggelenkverstauchung)",
+   "titel": "Syndesmosenverletzung",
+   "untertitel": "Verletzung der Bandverbindung zwischen Schienbein und Wadenbein — stabil oder instabil entscheidet über die Behandlung",
+   "slides": [
+    "kb_synd_ueberblick",
+    "kb_synd_ursachen",
+    "kb_synd_diagnostik",
+    "kb_synd_konservativ",
+    "kb_synd_operativ",
+    "kb_synd_quellen"
+   ],
+   "stand": "Entwurf + PubMed-Recherche 09/2026 (DOI-verifiziert) — ärztlich zu prüfen",
+   "_review": true,
+   "quellen": [
+    {
+     "id": "syndesmose_kb_vandijk",
+     "text": "van Dijk CN, Longo UG, Loppini M, Florio P, Maltese L, Ciuffreda M, Denaro V. Classification and diagnosis of acute isolated syndesmotic injuries: ESSKA-AFAS consensus and guidelines. Knee Surg Sports Traumatol Arthrosc. 2016;24(4):1200–1216. doi:10.1007/s00167-015-3942-8"
+    },
+    {
+     "id": "syndesmose_kb_calder",
+     "text": "Calder JD, Bamford R, Petrie A, McCollum GA. Stable versus unstable grade II high ankle sprains: a prospective study predicting the need for surgical stabilization and time to return to sports. Arthroscopy. 2016;32(4):634–642. doi:10.1016/j.arthro.2015.10.003"
+    },
+    {
+     "id": "syndesmose_kb_spindler",
+     "text": "Spindler FT, Böcker W, Polzer H, Baumbach SF. A systematic review of studies on the diagnostics and classification system used in surgically treated, acute, isolated, unstable syndesmotic injury: a plea for uniform definition of syndesmotic injuries. EFORT Open Rev. 2024;9(1):16–24. doi:10.1530/EOR-23-0097"
+    },
+    {
+     "id": "syndesmose_kb_gerber",
+     "text": "Gerber JP, Williams GN, Scoville CR, Arciero RA, Taylor DC. Persistent disability associated with ankle sprains: a prospective examination of an athletic population. Foot Ankle Int. 1998;19(10):653–660. doi:10.1177/107110079801901002"
+    },
+    {
+     "id": "syndesmose_kb_sikka",
+     "text": "Sikka RS, Fetzer GB, Sugarman E, Wright RW, Fritts H, Boyd JL, Fischer DA. Correlating MRI findings with disability in syndesmotic sprains of NFL players. Foot Ankle Int. 2012;33(5):371–378. doi:10.3113/FAI.2012.0371"
+    },
+    {
+     "id": "syndesmose_kb_mccollum",
+     "text": "McCollum GA, van den Bekerom MP, Kerkhoffs GM, Calder JD, van Dijk CN. Syndesmosis and deltoid ligament injuries in the athlete. Knee Surg Sports Traumatol Arthrosc. 2013;21(6):1328–1337. doi:10.1007/s00167-012-2205-1"
+    },
+    {
+     "id": "syndesmose_kb_delahunt",
+     "text": "Delahunt E, Farrell G, Boylan A, Kerin F, Tierney P, Hogan H, et al. Mechanisms of acute ankle syndesmosis ligament injuries in professional male rugby union players: a systematic visual video analysis. Br J Sports Med. 2021;55(12):691–696. doi:10.1136/bjsports-2020-102281"
+    },
+    {
+     "id": "syndesmose_kb_silva",
+     "text": "Silva LNM, Morimoto LR, Watanabe GG, Rhodes NG, Cruz IAN, Arruda PHC, et al. Distal tibiofibular syndesmosis: anatomy, biomechanics, imaging approach, and postoperative evaluation. Radiographics. 2026;46(2):e250065. doi:10.1148/rg.250065"
+    },
+    {
+     "id": "syndesmose_kb_kennedy",
+     "text": "Kennedy OT, Ralph JE, Hodakowski A, Lau BC. Diagnostic criteria and severity assessment for syndesmosis injury using magnetic resonance imaging: a systematic review. Foot Ankle Surg. 2026;32(7):657–667. doi:10.1016/j.fas.2026.04.009"
+    },
+    {
+     "id": "syndesmose_kb_lubberts",
+     "text": "Lubberts B, Guss D, Vopat BG, Johnson AH, van Dijk CN, Lee H, DiGiovanni CW. The arthroscopic syndesmotic assessment tool can differentiate between stable and unstable ankle syndesmoses. Knee Surg Sports Traumatol Arthrosc. 2020;28(1):193–201. doi:10.1007/s00167-018-5229-3"
+    },
+    {
+     "id": "syndesmose_kb_protasowicki",
+     "text": "Protasowicki N, Guerrero F, Kyling A, Chaparro F, Carcuro G, Pellegrini MJ. Unlocking the surgical threshold: WBCT as a predictor in unstable ankle syndesmosis injuries. Foot Ankle Surg. 2026;32(7):725–729. doi:10.1016/j.fas.2026.04.003"
+    },
+    {
+     "id": "syndesmose_kb_karaismailoglu",
+     "text": "Karaismailoglu B, Ashkani-Esfahani S, DiGiovanni CW. Weight-bearing computed tomography volumetric analysis for diagnosis of syndesmotic instability: a new standard of care? Knee Surg Sports Traumatol Arthrosc. 2026;34(3):1081–1087. doi:10.1002/ksa.70066"
+    },
+    {
+     "id": "syndesmose_kb_gaube",
+     "text": "Gaube FP, Maßen F, Polzer H, Böcker W, Reidler P, Saller MM, et al. Syndesmotic and deltoid injuries: companions or coincidences. Foot Ankle Int. 2024;45(11):1239–1246. doi:10.1177/10711007241274712"
+    },
+    {
+     "id": "syndesmose_kb_rellensmann",
+     "text": "Rellensmann K, Behzadi C, Usseglio J, Vosseller JT, Böcker W, Polzer H, et al. Acute, isolated and unstable syndesmotic injuries are frequently associated with intra-articular pathologies. Knee Surg Sports Traumatol Arthrosc. 2021;29(5):1516–1522. doi:10.1007/s00167-020-06141-y"
+    },
+    {
+     "id": "syndesmose_kb_dhooghe",
+     "text": "D'Hooghe P, Grassi A, Alkhelaifi K, Calder J, Baltes TPA, Zaffagnini S, et al. Return to play after surgery for isolated unstable syndesmotic ankle injuries (West Point grade IIB and III) in 110 male professional football players: a retrospective cohort study. Br J Sports Med. 2020;54(19):1168–1173. doi:10.1136/bjsports-2018-100298"
+    },
+    {
+     "id": "syndesmose_kb_salameh",
+     "text": "Salameh M, Hantouly AT, Rayyan A, Dabbas J, Toubasi AA, Hartnett DA, et al. Return to play after isolated syndesmotic ligamentous injury in athletes: a systematic review and meta-analysis. Foot Ankle Orthop. 2022;7(2):24730114221096482. doi:10.1177/24730114221096482"
+    },
+    {
+     "id": "syndesmose_kb_bolia",
+     "text": "Bolia IK, Bogdanov J, Schoell K, Ouyang Y, Petrigliano FA, Weber AE, et al. Elite athletes successfully return to the preinjury level of sport following ankle syndesmosis injuries: a systematic review and meta-analysis. Clin J Sport Med. 2023;33(1):90–96. doi:10.1097/JSM.0000000000001019"
+    },
+    {
+     "id": "syndesmose_kb_li",
+     "text": "Li R, Sun C, Qi P, Xu Z. Return-to-sport rate and time in elite athletes after ankle syndesmosis injuries: a systematic review and meta-analysis. J Orthop Surg Res. 2026;21(1):69. doi:10.1186/s13018-025-06566-6"
+    },
+    {
+     "id": "syndesmose_kb_kuhn",
+     "text": "Kuhn AW, Coughlin MJ, McGonegle SJ, Herzog MM, Weir N, Meade Spratley E, O'Cain CM, Anderson RB. Distal tibiofibular syndesmosis injuries in the National Football League (NFL): a spectrum of pathology that correlates with time to return to full participation. Sports Health. 2025;17(2):404–411. doi:10.1177/19417381241253223"
+    },
+    {
+     "id": "syndesmose_kb_beeler",
+     "text": "Beeler S, Furrer PR, Comolli L, Calek AK, Sutter R, Viehöfer AF, Wirth SH. Stable syndesmosis after conservative and operative treatment of isolated grade II high ankle sprains with more than two years follow-up; a retrospective case-control study with bilateral external torque CT. J Foot Ankle Surg. 2026. doi:10.1053/j.jfas.2026.05.013"
+    },
+    {
+     "id": "syndesmose_kb_cehic",
+     "text": "Cehic MG, Jaarsma R, Whitehorn A. Effectiveness of suture button fixation vs screw fixation for the management of acute distal tibiofibular syndesmotic injuries: a systematic review and meta-analysis. JBI Evid Synth. 2026;24(9):1782–1807. doi:10.11124/JBIES-24-00547"
+    },
+    {
+     "id": "syndesmose_kb_nieuwenkamp",
+     "text": "Nieuwenkamp CL, Tausendfreund J, Schepers T. Suture button versus syndesmotic screw fixation in acute ankle fractures with syndesmotic injury: an umbrella review of functional outcomes and clinical relevance based on the minimal clinically important difference. Injury. 2026;57(3):113054. doi:10.1016/j.injury.2026.113054"
+    },
+    {
+     "id": "syndesmose_kb_fu",
+     "text": "Fu K, Jia S, Lin S, Xu C, Fang Z. Risk factors for chronic syndesmotic instability after the first episode of acute ankle sprain: a cross-sectional study of 356 cases. Foot Ankle Int. 2025;46(1):92–101. doi:10.1177/10711007241291051"
+    },
+    {
+     "id": "syndesmose_kb_cortereal",
+     "text": "Corte-Real N, Caetano J. Ankle and syndesmosis instability: consensus and controversies. EFORT Open Rev. 2021;6(6):420–431. doi:10.1302/2058-5241.6.210017"
+    },
+    {
+     "id": "syndesmose_kb_panchbhavi",
+     "text": "Panchbhavi M, Panchbhavi V, Liu R, Lam R, McGarvey W. Beyond the screw: mapping the evidence landscape of modern syndesmotic fixation. JBJS Rev. 2026;14(6). doi:10.2106/JBJS.RVW.26.00034"
+    },
+    {
+     "id": "syndesmose_kb_alpert",
+     "text": "Alpert M, Duchman K, Johnson A, Jelsing E. Evaluation and management of syndesmotic injuries: a review of the literature. Curr Sports Med Rep. 2026;25(6):174–178. doi:10.1249/JSR.0000000000001344"
+    }
+   ]
   }
  },
  "NONOP_MASSNAHMEN": {
