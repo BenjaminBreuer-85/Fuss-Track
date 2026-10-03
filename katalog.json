@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.1",
+    "version": "1.2",
     "erstellt": "2026-05-19",
-    "beschreibung": "Schmerz-Finder-Daten der Fuß-Track-Patient-App. Basiert auf SCHMERZFINDER_KONZEPT.md v2. Version 1.1 (10/2026): Fragen und Antworten laienverständlich umformuliert, Antworten ohne Punkte ergänzt, Titel/Kurztexte, info_ref-Nachträge.",
+    "beschreibung": "Schmerz-Finder-Daten der Fuß-Track-Patient-App. Basiert auf SCHMERZFINDER_KONZEPT.md v2. Version 1.1 (10/2026): Fragen und Antworten laienverständlich umformuliert, Antworten ohne Punkte ergänzt, Titel/Kurztexte, info_ref-Nachträge. 1.2: Titel der Krankheitsbilder fachlich nach Infomaterial.",
     "konzept_dokument": "SCHMERZFINDER_KONZEPT.md"
   },
   "haeufigkeits_bonus": {
@@ -73,7 +73,7 @@
     },
     {
       "id": "hallux_limitus",
-      "titel": "Hallux limitus",
+      "titel": "Hallux limitus (belastungsabhängige Bewegungseinschränkung der Großzehe)",
       "kurz": "Beginnende Versteifung des Großzehengrundgelenks (Vorstufe Hallux rigidus)",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -84,7 +84,7 @@
     },
     {
       "id": "sesamoidopathie",
-      "titel": "Beschwerden der Sesambeine",
+      "titel": "Sesamoidopathie (Beschwerden der Sesambeine)",
       "kurz": "Reizung der zwei kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -94,7 +94,7 @@
     },
     {
       "id": "gichtanfall",
-      "titel": "Akuter Gichtanfall",
+      "titel": "Akuter Gichtanfall (Gicht am Fuß / Podagra)",
       "kurz": "Akute Gelenkentzündung durch Harnsäure-Kristalle (oft Großzehengrundgelenk)",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -106,7 +106,7 @@
     },
     {
       "id": "bursitis_bunion",
-      "titel": "Schleimbeutelentzündung am Großzehenballen",
+      "titel": "Bursitis am Hallux valgus (Schleimbeutelentzündung am Ballen)",
       "kurz": "Entzündung des Polsters über der Beule an der Innenseite des Großzehenballens",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -115,7 +115,7 @@
     },
     {
       "id": "hammerzehe",
-      "titel": "Hammerzehe / Krallenzehe",
+      "titel": "Hammerzehe / Krallenzehe (Fehlstellung der Kleinzehen)",
       "kurz": "Krümmungsfehlstellung einer oder mehrerer Kleinzehen",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -135,7 +135,7 @@
     },
     {
       "id": "bunionette_bursitis",
-      "titel": "Schneiderballen mit Schleimbeutelentzündung",
+      "titel": "Schneiderballen (Bunionette) mit Bursitis",
       "kurz": "Beule am Kleinzehenballen mit zusätzlicher Entzündung des Polsters darüber",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -145,7 +145,7 @@
     },
     {
       "id": "mortonneurom",
-      "titel": "Morton-Neurom",
+      "titel": "Morton-Neurom (interdigitale Neuralgie)",
       "kurz": "Eingeklemmter Nerv zwischen den Zehenballen, zieht brennend oder taub in zwei Zehen",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -157,7 +157,7 @@
     },
     {
       "id": "metatarsalgie",
-      "titel": "Metatarsalgie (Schmerz unter dem Vorfußballen)",
+      "titel": "Metatarsalgie",
       "kurz": "Überlastung des Ballens vor den Zehen",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -169,7 +169,7 @@
     },
     {
       "id": "stressfraktur_mt",
-      "titel": "Ermüdungsbruch eines Mittelfußknochens",
+      "titel": "Stressfraktur eines Mittelfußknochens",
       "kurz": "Feiner Knochenriss im Mittelfuß nach starker Belastung",
       "haeufigkeit": "selten",
       "regionen": [
@@ -180,7 +180,7 @@
     },
     {
       "id": "freiberg_koehler",
-      "titel": "Morbus Freiberg-Köhler",
+      "titel": "Morbus Köhler-Freiberg (Mittelfußkopf-Osteonekrose)",
       "kurz": "Durchblutungsstörung des Knochens am Ballen der zweiten oder dritten Zehe",
       "haeufigkeit": "selten",
       "regionen": [
@@ -191,7 +191,7 @@
     },
     {
       "id": "plantar_plate_ruptur",
-      "titel": "Riss der Plantarplatte",
+      "titel": "Plantarplatten-Ruptur (Riss der Plantarplatte)",
       "kurz": "Riss der festen Platte unter dem Zehenballen, die Zehe weicht dann oft nach oben ab",
       "haeufigkeit": "selten",
       "regionen": [
@@ -202,7 +202,7 @@
     },
     {
       "id": "tpsd",
-      "titel": "Schwäche der inneren Fußsehne (Tibialis posterior)",
+      "titel": "Tibialis-posterior-Dysfunktion (Knick-Senk-Fuß des Erwachsenen)",
       "kurz": "Die Sehne, die das Fußgewölbe hält, gibt nach; der Fuß wird flacher",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -214,7 +214,7 @@
     },
     {
       "id": "naviculare_stressfx",
-      "titel": "Ermüdungsbruch des Kahnbeins",
+      "titel": "Stressfraktur des Kahnbeins (Os naviculare)",
       "kurz": "Feiner Knochenriss im Kahnbein, dem Knochen in der Mitte des inneren Fußrückens",
       "haeufigkeit": "selten",
       "regionen": [
@@ -225,7 +225,7 @@
     },
     {
       "id": "os_tibiale_externum",
-      "titel": "Zusätzlicher Knochen am inneren Fußrand (Os tibiale externum)",
+      "titel": "Os tibiale externum (akzessorisches Kahnbein)",
       "kurz": "Angeborener kleiner Extra-Knochen am inneren Fußrand, oft seit der Jugend bekannt",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -237,7 +237,7 @@
     },
     {
       "id": "tmt_arthrose",
-      "titel": "Verschleiß der Mittelfußgelenke",
+      "titel": "Tarsometatarsal-Arthrose (Lisfranc-Gelenke)",
       "kurz": "Abnutzung der kleinen Gelenke in der Mitte des Fußrückens",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -247,7 +247,7 @@
     },
     {
       "id": "talo_naviculare_arthrose",
-      "titel": "Verschleiß des Gelenks am inneren Fußrücken",
+      "titel": "Talonavikular-Arthrose",
       "kurz": "Abnutzung des Gelenks zwischen Sprungbein und Kahnbein vor dem Innenknöchel",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -257,7 +257,7 @@
     },
     {
       "id": "peroneal_tendinitis",
-      "titel": "Reizung der äußeren Fußsehnen (Peronealsehnen)",
+      "titel": "Peronealsehnen-Tendinopathie",
       "kurz": "Reizung der Sehnen, die hinter dem Außenknöchel zum äußeren Fußrand laufen",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -267,7 +267,7 @@
     },
     {
       "id": "peroneal_luxation",
-      "titel": "Springende äußere Fußsehnen",
+      "titel": "Peronealsehnen-Instabilität und -Luxation",
       "kurz": "Die Sehnen hinter dem Außenknöchel springen aus ihrer Rinne",
       "haeufigkeit": "selten",
       "regionen": [
@@ -277,7 +277,7 @@
     },
     {
       "id": "sinus_tarsi_syndrom",
-      "titel": "Reizung in der Mulde unter dem Außenknöchel (Sinus-tarsi-Syndrom)",
+      "titel": "Sinus-tarsi-Syndrom",
       "kurz": "Schmerz in der kleinen Mulde direkt unter dem Außenknöchel, oft nach Umknicken",
       "haeufigkeit": "selten",
       "regionen": [
@@ -289,7 +289,7 @@
     },
     {
       "id": "jones_fraktur",
-      "titel": "Bruch am Ansatz des fünften Mittelfußknochens",
+      "titel": "Proximale Fraktur des 5. Mittelfußknochens",
       "kurz": "Knochenbruch am äußeren Fußrand, dort wo man den Knochen tastet",
       "haeufigkeit": "selten",
       "regionen": [
@@ -300,7 +300,7 @@
     },
     {
       "id": "jones_pseudarthrose",
-      "titel": "Nicht verheilter Bruch am äußeren Fußrand",
+      "titel": "Pseudarthrose nach Jones-Fraktur (5. Mittelfußknochen)",
       "kurz": "Ein früherer Bruch am fünften Mittelfußknochen ist nicht zusammengewachsen",
       "haeufigkeit": "selten",
       "regionen": [
@@ -309,7 +309,7 @@
     },
     {
       "id": "subtalare_arthrose",
-      "titel": "Verschleiß des unteren Sprunggelenks",
+      "titel": "USG-Arthrose (unteres Sprunggelenk)",
       "kurz": "Abnutzung des Gelenks zwischen Sprungbein und Fersenbein",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -321,7 +321,7 @@
     },
     {
       "id": "calcaneocuboid_arthrose",
-      "titel": "Verschleiß am äußeren Fußrand (Calcaneocuboid-Gelenk)",
+      "titel": "Calcaneocuboid-Arthrose",
       "kurz": "Abnutzung des Gelenks zwischen Fersenbein und Würfelbein am äußeren Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
@@ -330,7 +330,7 @@
     },
     {
       "id": "osg_arthrose",
-      "titel": "Verschleiß des oberen Sprunggelenks",
+      "titel": "OSG-Arthrose",
       "kurz": "Abnutzung des Knorpels im Sprunggelenk",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -343,7 +343,7 @@
     },
     {
       "id": "anteriores_impingement",
-      "titel": "Einklemmung vorne im Sprunggelenk",
+      "titel": "Anteriores Impingement des oberen Sprunggelenks",
       "kurz": "Knochenvorsprünge vorne im Gelenk stoßen beim Hochziehen des Fußes aneinander",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -353,7 +353,7 @@
     },
     {
       "id": "synovitis_osg",
-      "titel": "Entzündung der Gelenkschleimhaut im Sprunggelenk",
+      "titel": "Synovitis des oberen Sprunggelenks",
       "kurz": "Gereizte Gelenkinnenhaut mit Schwellung und Schmerz",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -364,7 +364,7 @@
     },
     {
       "id": "talus_sporn_anterior",
-      "titel": "Knochensporn vorne am Sprunggelenk",
+      "titel": "Anteriorer Talus-Osteophyt (Footballer's Ankle)",
       "kurz": "Vorderer Knochenvorsprung am Sprungbein, oft durch Sport",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -374,7 +374,7 @@
     },
     {
       "id": "tibialis_post_beschwerden",
-      "titel": "Reizung der inneren Fußsehne (Tibialis posterior)",
+      "titel": "Tibialis-posterior-Tendinopathie (Knick-Senk-Fuß des Erwachsenen, Frühstadium)",
       "kurz": "Reizung der Sehne hinter dem Innenknöchel, ohne dass der Fuß schon flacher ist",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -385,7 +385,7 @@
     },
     {
       "id": "deltoidband_verletzung",
-      "titel": "Verletzung des inneren Knöchelbandes",
+      "titel": "Deltaband-Verletzung (Innenband des oberen Sprunggelenks)",
       "kurz": "Verletzung des Bandes an der Innenseite des Sprunggelenks",
       "haeufigkeit": "selten",
       "regionen": [
@@ -394,7 +394,7 @@
     },
     {
       "id": "tarsaltunnel_syndrom",
-      "titel": "Eingeklemmter Nerv hinter dem Innenknöchel (Tarsaltunnel-Syndrom)",
+      "titel": "Tarsaltunnelsyndrom",
       "kurz": "Druck auf den Nerv hinter dem Innenknöchel, brennt oder kribbelt in die Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
@@ -404,7 +404,7 @@
     },
     {
       "id": "vorderes_tarsaltunnel_syndrom",
-      "titel": "Eingeklemmter Nerv oben auf dem Fuß",
+      "titel": "Vorderes Tarsaltunnelsyndrom",
       "kurz": "Druck auf einen Nerv am Fußrücken, kribbelt zwischen Großzehe und zweiter Zehe",
       "haeufigkeit": "selten",
       "regionen": [
@@ -414,7 +414,7 @@
     },
     {
       "id": "fhl_tendinopathie",
-      "titel": "Reizung der Großzehen-Beugesehne",
+      "titel": "Tendinopathie der Flexor-hallucis-longus-Sehne",
       "kurz": "Reizung der Sehne, die hinter dem Innenknöchel zur Großzehe läuft",
       "haeufigkeit": "selten",
       "regionen": [
@@ -423,7 +423,7 @@
     },
     {
       "id": "aussenbandverletzung_akut",
-      "titel": "Frische Verletzung der äußeren Knöchelbänder",
+      "titel": "Frische Außenbandruptur (oberes Sprunggelenk)",
       "kurz": "Bänderriss oder -dehnung außen am Sprunggelenk nach Umknicken",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -433,7 +433,7 @@
     },
     {
       "id": "chron_sg_instabilitaet",
-      "titel": "Wackeliges Sprunggelenk (chronische Instabilität)",
+      "titel": "Chronische laterale Instabilität des oberen Sprunggelenks",
       "kurz": "Der Fuß knickt immer wieder um, die Bänder halten nicht mehr",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -444,7 +444,7 @@
     },
     {
       "id": "ocl",
-      "titel": "Knorpel-Knochen-Schaden im Sprunggelenk",
+      "titel": "Osteochondrale Läsion / Osteochondrosis dissecans des Talus",
       "kurz": "Schaden an Knorpel und Knochen des Sprungbeins, oft nach Umknicken",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -456,7 +456,7 @@
     },
     {
       "id": "posteriores_impingement",
-      "titel": "Einklemmung hinten im Sprunggelenk",
+      "titel": "Posteriores Impingement des oberen Sprunggelenks",
       "kurz": "Schmerz hinten im Gelenk, wenn der Fuß weit nach unten gestreckt wird",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -465,7 +465,7 @@
     },
     {
       "id": "achillodynie_midportion",
-      "titel": "Reizung der Achillessehne in der Mitte",
+      "titel": "Achillessehne — Mid-Portion-Tendinopathie",
       "kurz": "Dauerreizung der Achillessehne zwischen Wade und Ferse",
       "haeufigkeit": "haeufig",
       "regionen": [
@@ -475,7 +475,7 @@
     },
     {
       "id": "achillesruptur_akut",
-      "titel": "Akuter Achillessehnenriss",
+      "titel": "Achillessehnenriss (akute Ruptur)",
       "kurz": "Plötzlicher Riss der Achillessehne — typisch: Gefühl eines Tritts oder Peitschenschlags in die Wade mit Kraftverlust beim Abstoßen",
       "haeufigkeit": "selten",
       "regionen": [
@@ -485,7 +485,7 @@
     },
     {
       "id": "achilles_insertion_haglund",
-      "titel": "Reizung am Ansatz der Achillessehne mit Fersenbeule",
+      "titel": "Achillessehne — insertionsnahe Tendinopathie",
       "kurz": "Schmerz, wo die Achillessehne am Fersenbein ansetzt, oft mit knöcherner Beule",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -495,7 +495,7 @@
     },
     {
       "id": "retrocalcaneare_bursitis",
-      "titel": "Schleimbeutelentzündung hinter der Ferse",
+      "titel": "Retrocalcaneare Bursitis",
       "kurz": "Entzündung des Polsters zwischen Achillessehne und Fersenbein",
       "haeufigkeit": "selten",
       "regionen": [
@@ -504,7 +504,7 @@
     },
     {
       "id": "achilles_distal",
-      "titel": "Reizung der Achillessehne am Übergang zur Wade",
+      "titel": "Achillodynie (Achillessehnenschmerz)",
       "kurz": "Reizung dort, wo die Sehne in den Wadenmuskel übergeht",
       "haeufigkeit": "selten",
       "regionen": [
@@ -525,7 +525,7 @@
     },
     {
       "id": "stressfraktur_calcaneus",
-      "titel": "Ermüdungsbruch des Fersenbeins",
+      "titel": "Stressfraktur des Fersenbeins (Calcaneus)",
       "kurz": "Feiner Knochenriss im Fersenbein nach viel Laufen",
       "haeufigkeit": "selten",
       "regionen": [
@@ -536,7 +536,7 @@
     },
     {
       "id": "polyneuropathie",
-      "titel": "Nervenschädigung an den Füßen (Polyneuropathie)",
+      "titel": "Polyneuropathie",
       "kurz": "Geschädigte Nerven, oft an beiden Füßen, mit Brennen, Kribbeln oder Taubheit",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -553,7 +553,7 @@
     },
     {
       "id": "charcot_fuss",
-      "titel": "Charcot-Fuß",
+      "titel": "Charcot-Arthropathie (Charcot-Fuß)",
       "kurz": "Zerstörung von Knochen und Gelenken bei Diabetes mit Nervenschädigung, muss sofort behandelt werden",
       "haeufigkeit": "selten",
       "regionen": [
@@ -563,7 +563,7 @@
     },
     {
       "id": "crps",
-      "titel": "CRPS",
+      "titel": "CRPS am Fuß (Komplexes regionales Schmerzsyndrom, Morbus Sudeck)",
       "kurz": "Komplexes regionales Schmerzsyndrom, oft nach OP oder Verletzung",
       "haeufigkeit": "selten",
       "regionen": [],
@@ -571,7 +571,7 @@
     },
     {
       "id": "ip_arthrose_d1",
-      "titel": "Verschleiß des Gelenks in der Mitte der Großzehe",
+      "titel": "Arthrose des Großzehen-Endgelenks (IP-Gelenk)",
       "kurz": "Abnutzung des Gelenks zwischen Nagel und Ballen der Großzehe",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -580,7 +580,7 @@
     },
     {
       "id": "subunguales_haematom_d1",
-      "titel": "Bluterguss unter dem Großzehennagel",
+      "titel": "Subunguales Hämatom (Bluterguss unter dem Großzehennagel)",
       "kurz": "Blut unter dem Nagel, meist nach Stoß oder Druck im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
@@ -589,7 +589,7 @@
     },
     {
       "id": "unguis_incarnatus_d1",
-      "titel": "Eingewachsener Großzehennagel",
+      "titel": "Unguis incarnatus (eingewachsener Nagel)",
       "kurz": "Der Nagelrand wächst in die Haut ein, oft gerötet oder eitrig",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -599,7 +599,7 @@
     },
     {
       "id": "marschfraktur",
-      "titel": "Ermüdungsbruch im Mittelfuß (Marschfraktur)",
+      "titel": "Marschfraktur (Stressfraktur des Mittelfußschafts)",
       "kurz": "Feiner Knochenriss in einem Mittelfußknochen nach Überlastung",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -609,7 +609,7 @@
     },
     {
       "id": "tarsaler_hoecker",
-      "titel": "Knochenhöcker oben auf dem Fuß",
+      "titel": "Dorsale Fußwurzel-Exostose (Tarsal Boss)",
       "kurz": "Harte knöcherne Beule oben am Fußrücken, drückt im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
@@ -618,7 +618,7 @@
     },
     {
       "id": "n_peroneus_prof_kompression",
-      "titel": "Eingeklemmter Nerv oben auf dem Fuß",
+      "titel": "Vorderes Tarsaltunnelsyndrom (Nervus peroneus profundus)",
       "kurz": "Druck auf einen Nerv am Fußrücken, oft mit Taubheit zwischen Großzehe und zweiter Zehe",
       "haeufigkeit": "selten",
       "regionen": [
@@ -629,7 +629,7 @@
     },
     {
       "id": "n_peroneus_superf_kompression",
-      "titel": "Eingeklemmter Hautnerv am äußeren Fußrücken",
+      "titel": "Engpass-Syndrom des Nervus peroneus superficialis",
       "kurz": "Druck auf einen Hautnerv außen am Unterschenkel oder Fußrücken, mit Brennen oder Kribbeln",
       "haeufigkeit": "selten",
       "regionen": [
@@ -639,7 +639,7 @@
     },
     {
       "id": "n_plantaris_med_lat_kompression",
-      "titel": "Eingeklemmte Nerven der Fußsohle",
+      "titel": "Jogger's Foot (Nervenengpass am inneren Fußgewölbe)",
       "kurz": "Druck auf die Sohlennerven, mit Brennen oder Taubheit der Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
@@ -650,7 +650,7 @@
     },
     {
       "id": "baxter_neuropathie",
-      "titel": "Eingeklemmter Nerv an der Innenseite der Ferse (Baxter-Nerv)",
+      "titel": "Baxter-Neuropathie (Nervenengpass an der Ferse)",
       "kurz": "Nervenreizung innen an der Ferse, oft mit lange bestehendem Fersenschmerz",
       "haeufigkeit": "selten",
       "regionen": [
@@ -660,7 +660,7 @@
     },
     {
       "id": "n_suralis_kompression",
-      "titel": "Eingeklemmter Hautnerv außen an der Ferse",
+      "titel": "Engpass-Syndrom des Nervus suralis",
       "kurz": "Druck auf einen Hautnerv außen am Rückfuß, mit Brennen oder Kribbeln",
       "haeufigkeit": "selten",
       "regionen": [
@@ -672,7 +672,7 @@
     },
     {
       "id": "n_saphenus_kompression",
-      "titel": "Eingeklemmter Hautnerv an der Innenseite des Knöchels",
+      "titel": "Engpass-Syndrom des Nervus saphenus",
       "kurz": "Druck auf einen Hautnerv innen am Knöchel oder Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
@@ -682,7 +682,7 @@
     },
     {
       "id": "joplin_neurom",
-      "titel": "Gereizter Hautnerv an der Großzehe (Joplin-Neurom)",
+      "titel": "Joplin-Neurom",
       "kurz": "Nervenreizung an der Innenseite des Großzehenballens, oft durch Druck im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
@@ -692,7 +692,7 @@
     },
     {
       "id": "intersection_knot_henry",
-      "titel": "Reizung an der Sehnenkreuzung in der Fußsohle",
+      "titel": "Knot-of-Henry-Syndrom (Sehnenkreuzung an der Fußsohle)",
       "kurz": "Reizung dort, wo sich zwei Beugesehnen an der Innenseite der Fußsohle kreuzen",
       "haeufigkeit": "selten",
       "regionen": [
@@ -702,7 +702,7 @@
     },
     {
       "id": "sesamoiditis",
-      "titel": "Entzündung der Sesambeine",
+      "titel": "Sesamoiditis",
       "kurz": "Akute Reizung der zwei kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -711,7 +711,7 @@
     },
     {
       "id": "sesambein_stressfraktur",
-      "titel": "Ermüdungsbruch eines Sesambeins",
+      "titel": "Stressfraktur eines Sesambeins",
       "kurz": "Feiner Knochenriss in einem der kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "selten",
       "regionen": [
@@ -721,7 +721,7 @@
     },
     {
       "id": "fettkoerperatrophie_ferse",
-      "titel": "Dünnes Fersenpolster",
+      "titel": "Fettpolsteratrophie der Ferse (plantarer Fersenschmerz)",
       "kurz": "Das schützende Fettpolster unter der Ferse ist dünner geworden",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -731,7 +731,7 @@
     },
     {
       "id": "morbus_sever",
-      "titel": "Reizung der Wachstumsfuge an der Ferse (Morbus Sever)",
+      "titel": "Morbus Sever (Fersen-Apophysitis)",
       "kurz": "Fersenschmerz bei Kindern und Jugendlichen durch Sport",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -741,7 +741,7 @@
     },
     {
       "id": "fhl_stenose",
-      "titel": "Eingeengte Großzehen-Beugesehne",
+      "titel": "Stenosierende Tendovaginitis der Flexor-hallucis-longus-Sehne",
       "kurz": "Die Sehne zur Großzehe hinter dem Innenknöchel gleitet nicht frei, oft bei Tänzern und Sportlern",
       "haeufigkeit": "selten",
       "regionen": [
@@ -750,7 +750,7 @@
     },
     {
       "id": "tc_coalitio",
-      "titel": "Angeborene Knochenbrücke zwischen Sprung- und Fersenbein",
+      "titel": "Talokalkaneare Coalitio (angeborene Fußwurzelverbindung)",
       "kurz": "Zwei Fußknochen sind von Geburt an verbunden, der Fuß ist steif und platt",
       "haeufigkeit": "selten",
       "regionen": [
@@ -761,7 +761,7 @@
     },
     {
       "id": "kalkaneuszyste",
-      "titel": "Hohlraum im Fersenbein (Knochenzyste)",
+      "titel": "Knochenzyste im Fersenbein (Calcaneus)",
       "kurz": "Gutartiger, mit Flüssigkeit gefüllter Hohlraum im Fersenbein",
       "haeufigkeit": "selten",
       "regionen": [
@@ -770,7 +770,7 @@
     },
     {
       "id": "syndesmosen_verletzung",
-      "titel": "Verletzung der Bandverbindung zwischen Schien- und Wadenbein (Syndesmose)",
+      "titel": "Syndesmosenverletzung (hohe Sprunggelenkverstauchung)",
       "kurz": "Verletzung knapp oberhalb des Sprunggelenks, oft nach Verdrehen des Fußes nach außen; heilt oft langsam",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -782,7 +782,7 @@
     },
     {
       "id": "pops_syndrom",
-      "titel": "Schmerzhafter Knochen in der äußeren Fußsehne (Os peroneum)",
+      "titel": "Painful Os Peroneum Syndrome (POPS)",
       "kurz": "Reizung oder Bruch eines kleinen Knochens in der Sehne am äußeren Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
@@ -793,7 +793,7 @@
     },
     {
       "id": "cn_coalitio",
-      "titel": "Angeborene Knochenbrücke zwischen Fersen- und Kahnbein",
+      "titel": "Calcaneonavikulare Coalitio (angeborene Fußwurzelverbindung)",
       "kurz": "Zwei Fußknochen sind von Geburt an verbunden, ab der Jugend steifer, schmerzhafter Plattfuß",
       "haeufigkeit": "selten",
       "regionen": [
@@ -805,7 +805,7 @@
     },
     {
       "id": "mueller_weiss",
-      "titel": "Müller-Weiss-Erkrankung des Kahnbeins",
+      "titel": "Müller-Weiss-Syndrom",
       "kurz": "Verformung und Verschleiß des Kahnbeins am inneren Fußrücken",
       "haeufigkeit": "selten",
       "regionen": [
@@ -816,7 +816,7 @@
     },
     {
       "id": "shin_splints",
-      "titel": "Schienbeinkanten-Schmerz (Shin Splints)",
+      "titel": "Mediales Tibiakanten-Syndrom (Shin Splints)",
       "kurz": "Belastungsschmerz an der inneren Schienbeinkante, typisch bei Läufern",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -825,7 +825,7 @@
     },
     {
       "id": "tibia_stressfraktur",
-      "titel": "Ermüdungsbruch des Schienbeins",
+      "titel": "Stressfraktur der Tibia (Schienbein)",
       "kurz": "Feiner Knochenriss im Schienbein nach wiederholter Überlastung",
       "haeufigkeit": "selten",
       "regionen": [
@@ -835,7 +835,7 @@
     },
     {
       "id": "laterale_ueberlastung",
-      "titel": "Überlastung des äußeren Fußrandes",
+      "titel": "Überlastung des lateralen Fußstrahls",
       "kurz": "Beschwerden am ganzen äußeren Fußrand durch Fehl- oder Mehrbelastung, ohne einzelne Ursache",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -846,7 +846,7 @@
     },
     {
       "id": "peroneale_sehnenlaesion",
-      "titel": "Riss in einer äußeren Fußsehne (Peronealsehne)",
+      "titel": "Ruptur der Peronealsehnen (Wadenbeinsehnen-Riss)",
       "kurz": "Teilriss einer Sehne hinter dem Außenknöchel, mit Schmerz und Schwäche beim Auswärtsdrehen",
       "haeufigkeit": "mittel",
       "regionen": [
@@ -857,7 +857,7 @@
     },
     {
       "id": "morbus_koehler_1",
-      "titel": "Morbus Köhler I (Kahnbein beim Kind)",
+      "titel": "Morbus Köhler I (Kahnbein-Osteonekrose)",
       "kurz": "Durchblutungsstörung des Kahnbeins beim Kind, heilt meist von selbst",
       "haeufigkeit": "selten",
       "regionen": [
@@ -868,7 +868,7 @@
     },
     {
       "id": "morbus_ledderhose",
-      "titel": "Knoten in der Fußsohle (Morbus Ledderhose)",
+      "titel": "Morbus Ledderhose (plantare Fibromatose)",
       "kurz": "Gutartige derbe Knoten im Bindegewebe der Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
@@ -878,7 +878,7 @@
     },
     {
       "id": "morbus_renander",
-      "titel": "Morbus Renander (Sesambein)",
+      "titel": "Morbus Renander (Sesambein-Osteonekrose)",
       "kurz": "Durchblutungsstörung eines kleinen Knochens unter dem Großzehenballen",
       "haeufigkeit": "selten",
       "regionen": [
