@@ -1,0 +1,47 @@
+# Auftrag Fuss-Track: Beschwerde-Wegweiser Stufe 2 (Punktesystem, Sonderfall, Rückwege)
+
+Stand 03.10.2026, Cowork-Sitzung. Datei `fusstrack.html`, Ausgangsstand 7eab10e (690.458 B, md5 c3e0154e…; Zeilenangaben darauf), Komponente `FinderView` Z. 3820–4319. Daten: `katalog.json` Version 1.1 (Stufe 1, heute geschrieben; Punkte unverändert gegenüber 1.0). Befund: `claude/befund-beschwerde-wegweiser.md`. Ein Commit, eine Vollzugsmeldung mit Commit-Hash und Zeilennummern. Keine Änderung an `katalog.json`, `infomaterial.json`, `bausteine.json`, Begleiter, Artikeln, `FootSvg` (Bild und Trefferflächen sind Stufe 3).
+
+## Befund (Kurzfassung)
+
+`computeScores` (Z. 4171–4194) addiert zu den Antwortpunkten einen Häufigkeitsbonus (häufig 1,5 / mittel 0,5 / selten 0). Weil fast jede Antwort einem häufigen Bild einen Punkt gibt, kommt ein seltenes Bild mit seiner eigenen 2-Punkte-Antwort praktisch nie auf Platz 1 (36 Region-Thema-Paare nie Platz 1, alle Nervenengpässe). Jede Antwort mit mindestens einem Punkt wird angezeigt, darum ist „kein passendes Thema“ (Z. 4226, 4236–4240) in keiner Kombination erreichbar. Gleichstände (gleiche Punkte, gleicher Bonus) werden nach der Reihenfolge der Punktevergabe sortiert (`Object.keys`, Z. 4200), das Etikett „Am besten passendes Thema“ ist dann Zufall. `top2_min_score` aus `ergebnis_logik` wird nicht verwendet. Der Sonderfall Achillessehne (`schwere: "akut"`) warnt vor einem Riss und führt mit „Verstanden, weiter“ (Z. 4146) durch fünf weitere Fragen zu einem Ergebnis. Der Wegweiser schreibt keinen Verlaufseintrag: „‹ Zurück“ in der Leiste (`navZurVorseite`, Z. 1025–1030), Browser-Zurück und Wischgeste verlassen den Wegweiser samt Antworten, während „Zurück“ in der Karte (Z. 4155) eine Frage zurückgeht. Nach „Mehr zum Krankheitsbild“ (Z. 4251, voller Seitenwechsel) und Zurück steht der Wegweiser bei Schritt 1, das Ergebnis ist weg. Fragen mit `ansichten`-Feld (`getFragen`, Z. 3838–3844) werden nur gestellt, wenn die Region aus dieser Ansicht gewählt wurde; wer den äußeren Fußrand von „Unten“ antippt, kann Würfelbein, Coalitio und laterale Überlastung nie erreichen.
+
+## 1. Punktesystem (`computeScores`, `renderErgebnis`)
+
+(a) **Bonus nur noch als Gleichstandsregel.** `computeScores` liefert reine Antwortpunkte (Z. 4186–4192 entfällt). Sortierung (Z. 4211–4214): Punkte absteigend, dann Häufigkeitsbonus absteigend, dann Zahl der Antworten, die dem Bild Punkte gegeben haben (neu mitzählen), dann Titel alphabetisch. Damit ist die Reihenfolge immer bestimmt und nicht von der Antwortreihenfolge abhängig.
+
+(b) **Mindestpunkte.** Angezeigt werden nur Bilder mit mindestens `ergebnis_logik.top1_min_score` Antwortpunkten; das Feld gibt es noch nicht, im Code Standardwert 2 (`logic.top1_min_score || 2`), `top2_min_score` bleibt ungenutzt und wird nicht gelesen. Gibt es kein Bild mit ≥ 2 Punkten, erscheint der vorhandene Zweig „Zu Ihren Angaben haben wir kein passendes Thema gefunden“ (Z. 4226, 4236–4240) unverändert. Erwartete Häufigkeit laut Durchrechnung aller Kombinationen mit Katalog 1.1: rund 0,1 %, also nur bei fast lauter „Nichts davon“-Antworten.
+
+(c) **Etikett nur bei echter Spitze.** `istEindeutig` (Z. 4219) bleibt (Abstand > `top1_min_abstand` 1,5, bei ganzen Punkten also ≥ 2: dann nur Platz 1). Neu: Hat Platz 2 dieselben Punkte wie Platz 1, bekommt keine Karte die grüne Hervorhebung und das Etikett „Am besten passendes Thema“; alle Karten heißen dann „Passende Themen“ (gleiche graue Karte wie heute Z. 4260). Nur bei echtem Vorsprung (Platz 1 > Platz 2) bleibt die grüne Karte (Z. 4243–4255). Die Häufigkeits-Zeile („insgesamt häufiges Krankheitsbild“) bleibt in beiden Fällen.
+
+(d) **Debug-Zeile** (Z. 4290): „Antwort: x + Häufigkeit: y“ wird zu „Punkte: x · Häufigkeit: haeufig/mittel/selten · Antworten: n“.
+
+## 2. Sonderfall mit `schwere: "akut"` beendet den Weg
+
+Im Sonderfall-Kasten (Z. 4141–4151) das Feld `triggeredSonderfall.trigger.schwere` auswerten. Bei `"akut"` (heute nur Achillessehne, Verdacht Riss): Überschrift „Bitte lassen Sie diese Beschwerden umgehend ärztlich abklären“, der Empfehlungstext aus dem Katalog, darunter die Hinweise mit 116 117 und 112 wie im Akut-Zweig (Z. 3904–3919, in eine kleine gemeinsame Komponente ziehen), und als einzige Schaltfläche „Zum Anfang“ (= `resetFinder`). Kein „Verstanden, weiter“, kein Ergebnis. Bei `"moderat"` (Gicht, Stressfraktur) wie bisher: Hinweis, „Verstanden, weiter“, Weg geht weiter. Fehlt `schwere`, wie „moderat“.
+
+## 3. Verlauf und Rückwege
+
+(a) **Verlaufseintrag je Schritt.** Beim Wechsel von Schritt zu Schritt und von Frage zu Frage (`setStep`, `goToNextFrage`) `history.pushState({ finder: { step, currentRegionIdx, currentFrageIdx } }, "")` schreiben; `popstate` in `FinderView` (useEffect, einmalig registriert, beim Unmount entfernt) stellt den Zustand aus `event.state.finder` wieder her (Antworten und Regionswahl bleiben im State, `triggeredSonderfall` auf null). Beim ersten Rendern den Startzustand mit `replaceState` setzen. Damit tun Browser-Zurück, Wischgeste und „‹ Zurück“ in der Leiste (`navZurVorseite`, Z. 1028 ruft `history.back()`) dasselbe wie der Karten-Knopf „Zurück“: eine Frage bzw. einen Schritt zurück. Erst vom Schritt 1 aus führt Zurück aus dem Wegweiser hinaus (wie heute). Die URL bleibt `?finder=1` (kein Parameter je Frage).
+
+(b) **Ergebnis merken.** Beim Erreichen von `step === "ergebnis"` den Zustand `{ selectedRegions, selectionAnsicht, answers, zeit: Date.now() }` in `sessionStorage` unter `fusstrack_finder` ablegen (try/catch wie beim Datenschutz-Merker). Beim Mount von `FinderView`: liegt ein Eintrag vor, der jünger als 30 Minuten ist, direkt mit `step = "ergebnis"` und diesen Werten starten (die Ergebnisseite rechnet aus `answers` neu). „Erneut starten“ (Z. 4281, `resetFinder`) löscht den Eintrag. Der Knopf „Mehr zum Krankheitsbild“ (Z. 4251) und die Links (Z. 4268) bleiben volle Seitenwechsel; der Artikel-„‹ Zurück“ (`navZurVorseite`) landet dann wieder auf der Ergebnisseite statt auf Schritt 1. Zusätzlich auf der Ergebnisseite unter den Karten den Hinweis „Sie können jedes Thema öffnen und mit „‹ Zurück“ hierher zurückkehren.“ (13 px, muted).
+
+(c) **Ansichtsabhängige Fragen immer stellen.** `getFragen` (Z. 3838–3844) gibt alle Fragen der Region zurück; das Feld `ansichten` an Fragen wird nicht mehr ausgewertet (`selectionAnsicht` kann bleiben, wird aber nicht mehr für die Filterung gebraucht). Katalog bleibt unverändert.
+
+## 4. Toter Code (mit aufräumen)
+
+Hinweis „Ihre Angaben betreffen zwei Bereiche“ (Z. 4229–4233, seit der Einzelauswahl unerreichbar), Hinweis „Keine Regionen in dieser Ansicht“ (Z. 4007–4011, nie wahr), `renderPlatzhalter` (Z. 3784–3793, nicht aufgerufen), Berechnung `totalFragen`/`aktuelle` über mehrere Regionen (Z. 4046–4053) auf die eine gewählte Region vereinfachen. `selectedRegions` darf als Array bleiben.
+
+## Nicht Teil dieses Auftrags
+
+Bild und Trefferflächen (`FootSvg`, Tabs, Zonengrößen, Katalog-`ansichten` ↔ SVG) = Stufe 3. Dritte Antwort der Akut-Frage („plötzlich, aber ohne Unfall“) und Anheben einzelner 1-Punkt-Zuordnungen (z. B. Gicht am Großzehen-Endgelenk) = Datenschritt, folgt nach der Gegenprobe. Clinic unverändert.
+
+## Abnahme
+
+Cowork-Prüfstand (393 px, iPhone-Safari-UA, Katalog 1.1): (1) Nachrechnung: für jede Region alle Antwortkombinationen gegen eine Python-Nachbildung der neuen Regel (Punkte ohne Bonus, Mindestpunkte 2, Sortierung Punkte/Bonus/Antwortzahl/Titel), Ergebnisseite muss in Stichproben (je Region drei Kombinationen, darunter die Lehrbuchfälle Morton, Tarsaltunnel, Gicht, Nagel-Bluterguss, Joplin, Ledderhose) dieselbe Reihenfolge zeigen wie die Nachbildung; `?debug=1` zeigt Punkte/Häufigkeit/Antwortzahl. (2) Alle Antworten „Nichts davon“ → „kein passendes Thema“. (3) Gleichstand Platz 1 = Platz 2 → keine grüne Karte, Etikett „Passende Themen“. (4) Achillessehne, Verlauf „Plötzlich, wie ein Tritt …“ → Kasten mit 116 117/112 und nur „Zum Anfang“; Großzehe Gicht → wie bisher „Verstanden, weiter“. (5) Browser-Zurück und „‹ Zurück“ in der Leiste aus Frage 3 → Frage 2 mit erhaltener Antwort; aus Schritt 1 → verlässt den Wegweiser. (6) Ergebnis → „Mehr zum Krankheitsbild“ → Artikel → „‹ Zurück“ → Ergebnisseite mit denselben Karten; „Erneut starten“ → Schritt 1, Neuladen → Schritt 1. (7) Äußerer Fußrand aus „Unten“ gewählt → 7 Fragen (mit „Trifft eine dieser Beschreibungen zu?“). (8) Keine Konsolenfehler; JSX-Transpile-Prüfung; Begleiter, Artikel, Startseite unverändert.
+
+Am Handy: Wegweiser → Außen → Zone unter dem Außenknöchel → Fragen beantworten → Ergebnis → Thema öffnen → „‹ Zurück“ → Ergebnis ist noch da; Wischgeste in Frage 3 → Frage 2.
+
+Deploy: Push `fusstrack.html` (keine Daten).
+
+Vollzugsmeldung bitte mit Commit-Hash und Zeilennummern.
