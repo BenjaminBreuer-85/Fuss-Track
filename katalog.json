@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0",
+    "version": "1.1",
     "erstellt": "2026-05-19",
-    "beschreibung": "Schmerz-Finder-Daten der Fuß-Track-Patient-App. Basiert auf SCHMERZFINDER_KONZEPT.md v2.",
+    "beschreibung": "Schmerz-Finder-Daten der Fuß-Track-Patient-App. Basiert auf SCHMERZFINDER_KONZEPT.md v2. Version 1.1 (10/2026): Fragen und Antworten laienverständlich umformuliert, Antworten ohne Punkte ergänzt, Titel/Kurztexte, info_ref-Nachträge.",
     "konzept_dokument": "SCHMERZFINDER_KONZEPT.md"
   },
   "haeufigkeits_bonus": {
@@ -84,8 +84,8 @@
     },
     {
       "id": "sesamoidopathie",
-      "titel": "Sesamoidopathie",
-      "kurz": "Beschwerden der kleinen Knochen unter dem Großzehengrundgelenk",
+      "titel": "Beschwerden der Sesambeine",
+      "kurz": "Reizung der zwei kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe",
@@ -106,8 +106,8 @@
     },
     {
       "id": "bursitis_bunion",
-      "titel": "Bursitis am Bunion",
-      "kurz": "Schleimbeutel-Entzündung am Großzehenballen",
+      "titel": "Schleimbeutelentzündung am Großzehenballen",
+      "kurz": "Entzündung des Polsters über der Beule an der Innenseite des Großzehenballens",
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe"
@@ -120,7 +120,8 @@
       "haeufigkeit": "haeufig",
       "regionen": [
         "kleinzehen"
-      ]
+      ],
+      "info_ref": "kleinzehen_kb"
     },
     {
       "id": "schneiderballen",
@@ -134,8 +135,8 @@
     },
     {
       "id": "bunionette_bursitis",
-      "titel": "Bunionette mit Bursitis",
-      "kurz": "Schneiderballen mit zusätzlicher Schleimbeutel-Entzündung",
+      "titel": "Schneiderballen mit Schleimbeutelentzündung",
+      "kurz": "Beule am Kleinzehenballen mit zusätzlicher Entzündung des Polsters darüber",
       "haeufigkeit": "mittel",
       "regionen": [
         "kleinzehen",
@@ -144,8 +145,8 @@
     },
     {
       "id": "mortonneurom",
-      "titel": "Mortonneurom",
-      "kurz": "Nervenkompression zwischen den Mittelfußköpfchen mit Ausstrahlung in die Zehen",
+      "titel": "Morton-Neurom",
+      "kurz": "Eingeklemmter Nerv zwischen den Zehenballen, zieht brennend oder taub in zwei Zehen",
       "haeufigkeit": "haeufig",
       "regionen": [
         "fusssohle",
@@ -156,8 +157,8 @@
     },
     {
       "id": "metatarsalgie",
-      "titel": "Metatarsalgie",
-      "kurz": "Schmerzen unter den Mittelfußköpfchen (Vorfuß-Ballen)",
+      "titel": "Metatarsalgie (Schmerz unter dem Vorfußballen)",
+      "kurz": "Überlastung des Ballens vor den Zehen",
       "haeufigkeit": "haeufig",
       "regionen": [
         "mtp5_lateral",
@@ -168,8 +169,8 @@
     },
     {
       "id": "stressfraktur_mt",
-      "titel": "Stressfraktur Metatarsale",
-      "kurz": "Ermüdungsbruch eines Mittelfußknochens nach starker Belastung",
+      "titel": "Ermüdungsbruch eines Mittelfußknochens",
+      "kurz": "Feiner Knochenriss im Mittelfuß nach starker Belastung",
       "haeufigkeit": "selten",
       "regionen": [
         "mtp_region",
@@ -179,8 +180,8 @@
     },
     {
       "id": "freiberg_koehler",
-      "titel": "Freiberg-Köhler (Köhler II)",
-      "kurz": "Knochennekrose eines Mittelfußkopfes (meist Metatarsale II)",
+      "titel": "Morbus Freiberg-Köhler",
+      "kurz": "Durchblutungsstörung des Knochens am Ballen der zweiten oder dritten Zehe",
       "haeufigkeit": "selten",
       "regionen": [
         "mtp_region",
@@ -190,8 +191,8 @@
     },
     {
       "id": "plantar_plate_ruptur",
-      "titel": "Plantar-plate-Ruptur",
-      "kurz": "Riss der Gelenkkapsel-Platte unter einem Mittelfußköpfchen",
+      "titel": "Riss der Plantarplatte",
+      "kurz": "Riss der festen Platte unter dem Zehenballen, die Zehe weicht dann oft nach oben ab",
       "haeufigkeit": "selten",
       "regionen": [
         "fusssohle",
@@ -201,8 +202,8 @@
     },
     {
       "id": "tpsd",
-      "titel": "Tibialis-posterior-Dysfunktion",
-      "kurz": "Funktionsstörung der inneren Sehne, oft mit erworbenem Plattfuß",
+      "titel": "Schwäche der inneren Fußsehne (Tibialis posterior)",
+      "kurz": "Die Sehne, die das Fußgewölbe hält, gibt nach; der Fuß wird flacher",
       "haeufigkeit": "haeufig",
       "regionen": [
         "medialer_fussrand",
@@ -213,8 +214,8 @@
     },
     {
       "id": "naviculare_stressfx",
-      "titel": "Naviculare-Stressfraktur",
-      "kurz": "Ermüdungsbruch des Kahnbeins",
+      "titel": "Ermüdungsbruch des Kahnbeins",
+      "kurz": "Feiner Knochenriss im Kahnbein, dem Knochen in der Mitte des inneren Fußrückens",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand",
@@ -224,8 +225,8 @@
     },
     {
       "id": "os_tibiale_externum",
-      "titel": "Os tibiale externum",
-      "kurz": "Zusätzlicher Knochen am inneren Fußrand (oft seit Jugend bekannt)",
+      "titel": "Zusätzlicher Knochen am inneren Fußrand (Os tibiale externum)",
+      "kurz": "Angeborener kleiner Extra-Knochen am inneren Fußrand, oft seit der Jugend bekannt",
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand",
@@ -236,8 +237,8 @@
     },
     {
       "id": "tmt_arthrose",
-      "titel": "TMT-Arthrose (Lisfranc)",
-      "kurz": "Verschleiß der Mittelfußwurzel-Gelenke",
+      "titel": "Verschleiß der Mittelfußgelenke",
+      "kurz": "Abnutzung der kleinen Gelenke in der Mitte des Fußrückens",
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand",
@@ -246,8 +247,8 @@
     },
     {
       "id": "talo_naviculare_arthrose",
-      "titel": "Talo-naviculare Arthrose",
-      "kurz": "Verschleiß zwischen Sprungbein und Kahnbein",
+      "titel": "Verschleiß des Gelenks am inneren Fußrücken",
+      "kurz": "Abnutzung des Gelenks zwischen Sprungbein und Kahnbein vor dem Innenknöchel",
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand",
@@ -256,8 +257,8 @@
     },
     {
       "id": "peroneal_tendinitis",
-      "titel": "Peronealsehnen-Tendinitis",
-      "kurz": "Reizung/Entzündung der Wadenbein-Sehnen am äußeren Fußrand",
+      "titel": "Reizung der äußeren Fußsehnen (Peronealsehnen)",
+      "kurz": "Reizung der Sehnen, die hinter dem Außenknöchel zum äußeren Fußrand laufen",
       "haeufigkeit": "mittel",
       "regionen": [
         "lateraler_fussrand",
@@ -266,8 +267,8 @@
     },
     {
       "id": "peroneal_luxation",
-      "titel": "Peronealsehnen-Luxation",
-      "kurz": "Springen der Wadenbein-Sehnen aus ihrer Führung",
+      "titel": "Springende äußere Fußsehnen",
+      "kurz": "Die Sehnen hinter dem Außenknöchel springen aus ihrer Rinne",
       "haeufigkeit": "selten",
       "regionen": [
         "sg_aussen_hinter"
@@ -276,8 +277,8 @@
     },
     {
       "id": "sinus_tarsi_syndrom",
-      "titel": "Sinus-tarsi-Syndrom",
-      "kurz": "Schmerzhafte Reizung in der Mulde unter dem Außenknöchel",
+      "titel": "Reizung in der Mulde unter dem Außenknöchel (Sinus-tarsi-Syndrom)",
+      "kurz": "Schmerz in der kleinen Mulde direkt unter dem Außenknöchel, oft nach Umknicken",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand",
@@ -288,8 +289,8 @@
     },
     {
       "id": "jones_fraktur",
-      "titel": "Jones-Fraktur",
-      "kurz": "Bruch der Basis des 5. Mittelfußknochens (äußerer Vorfuß)",
+      "titel": "Bruch am Ansatz des fünften Mittelfußknochens",
+      "kurz": "Knochenbruch am äußeren Fußrand, dort wo man den Knochen tastet",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand",
@@ -299,8 +300,8 @@
     },
     {
       "id": "jones_pseudarthrose",
-      "titel": "Pseudarthrose nach Jones-Fraktur",
-      "kurz": "Nicht-Heilung einer früheren Jones-Fraktur",
+      "titel": "Nicht verheilter Bruch am äußeren Fußrand",
+      "kurz": "Ein früherer Bruch am fünften Mittelfußknochen ist nicht zusammengewachsen",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand"
@@ -308,8 +309,8 @@
     },
     {
       "id": "subtalare_arthrose",
-      "titel": "Subtalare Arthrose",
-      "kurz": "Verschleiß des unteren Sprunggelenks",
+      "titel": "Verschleiß des unteren Sprunggelenks",
+      "kurz": "Abnutzung des Gelenks zwischen Sprungbein und Fersenbein",
       "haeufigkeit": "mittel",
       "regionen": [
         "lateraler_fussrand",
@@ -320,8 +321,8 @@
     },
     {
       "id": "calcaneocuboid_arthrose",
-      "titel": "Calcaneocuboidal-Arthrose",
-      "kurz": "Verschleiß zwischen Fersenbein und Würfelbein",
+      "titel": "Verschleiß am äußeren Fußrand (Calcaneocuboid-Gelenk)",
+      "kurz": "Abnutzung des Gelenks zwischen Fersenbein und Würfelbein am äußeren Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand"
@@ -329,8 +330,8 @@
     },
     {
       "id": "osg_arthrose",
-      "titel": "OSG-Arthrose",
-      "kurz": "Verschleiß des oberen Sprunggelenks",
+      "titel": "Verschleiß des oberen Sprunggelenks",
+      "kurz": "Abnutzung des Knorpels im Sprunggelenk",
       "haeufigkeit": "haeufig",
       "regionen": [
         "sg_aussen_vor",
@@ -342,8 +343,8 @@
     },
     {
       "id": "anteriores_impingement",
-      "titel": "Anteriores Impingement",
-      "kurz": "Eingrenzungsschmerz vorne im Sprunggelenk durch Knochensporne",
+      "titel": "Einklemmung vorne im Sprunggelenk",
+      "kurz": "Knochenvorsprünge vorne im Gelenk stoßen beim Hochziehen des Fußes aneinander",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_vorne",
@@ -352,8 +353,8 @@
     },
     {
       "id": "synovitis_osg",
-      "titel": "Synovitis OSG",
-      "kurz": "Entzündung der Gelenkinnenhaut des Sprunggelenks",
+      "titel": "Entzündung der Gelenkschleimhaut im Sprunggelenk",
+      "kurz": "Gereizte Gelenkinnenhaut mit Schwellung und Schmerz",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_innen_vor",
@@ -363,8 +364,8 @@
     },
     {
       "id": "talus_sporn_anterior",
-      "titel": "Talus-Knochensporn anterior (Footballer's ankle)",
-      "kurz": "Vorderer Knochensporn am Sprungbein, oft durch Sport",
+      "titel": "Knochensporn vorne am Sprunggelenk",
+      "kurz": "Vorderer Knochenvorsprung am Sprungbein, oft durch Sport",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_vorne",
@@ -373,8 +374,8 @@
     },
     {
       "id": "tibialis_post_beschwerden",
-      "titel": "Tibialis-posterior-Beschwerden",
-      "kurz": "Reizung der inneren Sehne ohne (noch) Plattfuß-Bildung",
+      "titel": "Reizung der inneren Fußsehne (Tibialis posterior)",
+      "kurz": "Reizung der Sehne hinter dem Innenknöchel, ohne dass der Fuß schon flacher ist",
       "haeufigkeit": "mittel",
       "regionen": [
         "medialer_fussrand_tief",
@@ -384,8 +385,8 @@
     },
     {
       "id": "deltoidband_verletzung",
-      "titel": "Deltoidbandverletzung",
-      "kurz": "Verletzung des inneren Sprunggelenk-Bandes",
+      "titel": "Verletzung des inneren Knöchelbandes",
+      "kurz": "Verletzung des Bandes an der Innenseite des Sprunggelenks",
       "haeufigkeit": "selten",
       "regionen": [
         "sg_innen_vor"
@@ -393,8 +394,8 @@
     },
     {
       "id": "tarsaltunnel_syndrom",
-      "titel": "Tarsaltunnel-Syndrom",
-      "kurz": "Nervenkompression hinter dem Innenknöchel mit Ausstrahlung in die Sohle",
+      "titel": "Eingeklemmter Nerv hinter dem Innenknöchel (Tarsaltunnel-Syndrom)",
+      "kurz": "Druck auf den Nerv hinter dem Innenknöchel, brennt oder kribbelt in die Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
         "sg_innen_hinter"
@@ -403,8 +404,8 @@
     },
     {
       "id": "vorderes_tarsaltunnel_syndrom",
-      "titel": "Vorderes Tarsaltunnel-Syndrom",
-      "kurz": "Nervenkompression am Fußrücken mit Ausstrahlung in den Zwischenraum der ersten und zweiten Zehe",
+      "titel": "Eingeklemmter Nerv oben auf dem Fuß",
+      "kurz": "Druck auf einen Nerv am Fußrücken, kribbelt zwischen Großzehe und zweiter Zehe",
       "haeufigkeit": "selten",
       "regionen": [
         "sg_vorne"
@@ -413,8 +414,8 @@
     },
     {
       "id": "fhl_tendinopathie",
-      "titel": "FHL-Tendinopathie",
-      "kurz": "Reizung der Großzehen-Beugesehne hinter dem Innenknöchel",
+      "titel": "Reizung der Großzehen-Beugesehne",
+      "kurz": "Reizung der Sehne, die hinter dem Innenknöchel zur Großzehe läuft",
       "haeufigkeit": "selten",
       "regionen": [
         "sg_innen_hinter"
@@ -422,8 +423,8 @@
     },
     {
       "id": "aussenbandverletzung_akut",
-      "titel": "Akute Außenbandverletzung",
-      "kurz": "Frische Verletzung der äußeren Sprunggelenkbänder (Umknicken)",
+      "titel": "Frische Verletzung der äußeren Knöchelbänder",
+      "kurz": "Bänderriss oder -dehnung außen am Sprunggelenk nach Umknicken",
       "haeufigkeit": "haeufig",
       "regionen": [
         "sg_aussen_vor"
@@ -432,8 +433,8 @@
     },
     {
       "id": "chron_sg_instabilitaet",
-      "titel": "Chronische Sprunggelenksinstabilität",
-      "kurz": "Wiederholtes Umknicken trotz unauffälliger Bildgebung",
+      "titel": "Wackeliges Sprunggelenk (chronische Instabilität)",
+      "kurz": "Der Fuß knickt immer wieder um, die Bänder halten nicht mehr",
       "haeufigkeit": "haeufig",
       "regionen": [
         "sg_aussen_vor",
@@ -443,8 +444,8 @@
     },
     {
       "id": "ocl",
-      "titel": "OCL (Osteochondrale Läsion)",
-      "kurz": "Knorpel-Knochen-Schaden am Sprungbein",
+      "titel": "Knorpel-Knochen-Schaden im Sprunggelenk",
+      "kurz": "Schaden an Knorpel und Knochen des Sprungbeins, oft nach Umknicken",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_aussen_vor",
@@ -455,8 +456,8 @@
     },
     {
       "id": "posteriores_impingement",
-      "titel": "Posteriores Impingement",
-      "kurz": "Eingrenzungsschmerz hinten im Sprunggelenk (oft mit Os trigonum)",
+      "titel": "Einklemmung hinten im Sprunggelenk",
+      "kurz": "Schmerz hinten im Gelenk, wenn der Fuß weit nach unten gestreckt wird",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_aussen_hinter"
@@ -464,8 +465,8 @@
     },
     {
       "id": "achillodynie_midportion",
-      "titel": "Mid-portion-Achillodynie",
-      "kurz": "Chronische Reizung im mittleren Bereich der Achillessehne",
+      "titel": "Reizung der Achillessehne in der Mitte",
+      "kurz": "Dauerreizung der Achillessehne zwischen Wade und Ferse",
       "haeufigkeit": "haeufig",
       "regionen": [
         "achillessehne_verlauf"
@@ -484,8 +485,8 @@
     },
     {
       "id": "achilles_insertion_haglund",
-      "titel": "Insertionsbeschwerden mit Haglund-Exostose",
-      "kurz": "Schmerzen am Achillessehnen-Ansatz mit knöchernem Vorsprung am Fersenbein",
+      "titel": "Reizung am Ansatz der Achillessehne mit Fersenbeule",
+      "kurz": "Schmerz, wo die Achillessehne am Fersenbein ansetzt, oft mit knöcherner Beule",
       "haeufigkeit": "mittel",
       "regionen": [
         "achillessehne_ansatz"
@@ -494,8 +495,8 @@
     },
     {
       "id": "retrocalcaneare_bursitis",
-      "titel": "Retrocalcaneare Bursitis",
-      "kurz": "Schleimbeutel-Entzündung zwischen Achillessehne und Fersenbein",
+      "titel": "Schleimbeutelentzündung hinter der Ferse",
+      "kurz": "Entzündung des Polsters zwischen Achillessehne und Fersenbein",
       "haeufigkeit": "selten",
       "regionen": [
         "achillessehne_ansatz"
@@ -503,8 +504,8 @@
     },
     {
       "id": "achilles_distal",
-      "titel": "Distale Achillessehnen-Tendopathie",
-      "kurz": "Reizung am Übergang Achillessehne zur Wadenmuskulatur",
+      "titel": "Reizung der Achillessehne am Übergang zur Wade",
+      "kurz": "Reizung dort, wo die Sehne in den Wadenmuskel übergeht",
       "haeufigkeit": "selten",
       "regionen": [
         "achillessehne_verlauf"
@@ -513,8 +514,8 @@
     },
     {
       "id": "plantarfasziitis",
-      "titel": "Plantarfasziitis",
-      "kurz": "Reizung der Fußsohlensehnenplatte (oft mit Fersensporn)",
+      "titel": "Plantarfasziitis (Fersensporn)",
+      "kurz": "Reizung der Sehnenplatte unter der Fußsohle am Ansatz an der Ferse",
       "haeufigkeit": "haeufig",
       "regionen": [
         "fusssohle",
@@ -524,8 +525,8 @@
     },
     {
       "id": "stressfraktur_calcaneus",
-      "titel": "Stressfraktur Calcaneus",
-      "kurz": "Ermüdungsbruch des Fersenbeins",
+      "titel": "Ermüdungsbruch des Fersenbeins",
+      "kurz": "Feiner Knochenriss im Fersenbein nach viel Laufen",
       "haeufigkeit": "selten",
       "regionen": [
         "ferse_plantar_tuber",
@@ -535,8 +536,8 @@
     },
     {
       "id": "polyneuropathie",
-      "titel": "Polyneuropathie",
-      "kurz": "Schädigung peripherer Nerven (oft beidseits, brennend)",
+      "titel": "Nervenschädigung an den Füßen (Polyneuropathie)",
+      "kurz": "Geschädigte Nerven, oft an beiden Füßen, mit Brennen, Kribbeln oder Taubheit",
       "haeufigkeit": "mittel",
       "regionen": [
         "fusssohle",
@@ -553,11 +554,12 @@
     {
       "id": "charcot_fuss",
       "titel": "Charcot-Fuß",
-      "kurz": "Akute Knochen-Gelenk-Zerstörung bei Diabetes (Notfall!)",
+      "kurz": "Zerstörung von Knochen und Gelenken bei Diabetes mit Nervenschädigung, muss sofort behandelt werden",
       "haeufigkeit": "selten",
       "regionen": [
         "mittelfuss_zentral"
-      ]
+      ],
+      "info_ref": "charcot_kb"
     },
     {
       "id": "crps",
@@ -569,8 +571,8 @@
     },
     {
       "id": "ip_arthrose_d1",
-      "titel": "Arthrose des Großzehen-Endgelenks (IP-Gelenk)",
-      "kurz": "Gelenkverschleiß im Endgelenk der Großzehe",
+      "titel": "Verschleiß des Gelenks in der Mitte der Großzehe",
+      "kurz": "Abnutzung des Gelenks zwischen Nagel und Ballen der Großzehe",
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe_ip"
@@ -578,8 +580,8 @@
     },
     {
       "id": "subunguales_haematom_d1",
-      "titel": "Bluterguss unter dem Großzehennagel (subunguales Hämatom)",
-      "kurz": "Blutansammlung unter dem Nagel, meist nach Stoß oder Druck",
+      "titel": "Bluterguss unter dem Großzehennagel",
+      "kurz": "Blut unter dem Nagel, meist nach Stoß oder Druck im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
         "grosszehe_ip"
@@ -587,8 +589,8 @@
     },
     {
       "id": "unguis_incarnatus_d1",
-      "titel": "Eingewachsener Großzehennagel (Unguis incarnatus)",
-      "kurz": "Nagelrand wächst in das umgebende Gewebe ein",
+      "titel": "Eingewachsener Großzehennagel",
+      "kurz": "Der Nagelrand wächst in die Haut ein, oft gerötet oder eitrig",
       "haeufigkeit": "mittel",
       "regionen": [
         "grosszehe_ip"
@@ -597,8 +599,8 @@
     },
     {
       "id": "marschfraktur",
-      "titel": "Marschfraktur (Stressfraktur Mittelfußschaft)",
-      "kurz": "Ermüdungsbruch eines Mittelfußknochens nach Überlastung",
+      "titel": "Ermüdungsbruch im Mittelfuß (Marschfraktur)",
+      "kurz": "Feiner Knochenriss in einem Mittelfußknochen nach Überlastung",
       "haeufigkeit": "mittel",
       "regionen": [
         "mittelfuss_zentral"
@@ -607,8 +609,8 @@
     },
     {
       "id": "tarsaler_hoecker",
-      "titel": "Dorsaler Fußwurzel-Höcker (Tarsal Boss / dorsale Exostose)",
-      "kurz": "Knöcherner Höcker oben am Übergang Fußwurzel/Mittelfuß",
+      "titel": "Knochenhöcker oben auf dem Fuß",
+      "kurz": "Harte knöcherne Beule oben am Fußrücken, drückt im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
         "mittelfuss_zentral"
@@ -616,8 +618,8 @@
     },
     {
       "id": "n_peroneus_prof_kompression",
-      "titel": "Vorderes Tarsaltunnel-Syndrom (Einengung des N. peroneus profundus)",
-      "kurz": "Druck auf den tiefen Wadennerv am Fußrücken, oft mit Taubheit im 1. Zehenzwischenraum",
+      "titel": "Eingeklemmter Nerv oben auf dem Fuß",
+      "kurz": "Druck auf einen Nerv am Fußrücken, oft mit Taubheit zwischen Großzehe und zweiter Zehe",
       "haeufigkeit": "selten",
       "regionen": [
         "mittelfuss_zentral",
@@ -627,8 +629,8 @@
     },
     {
       "id": "n_peroneus_superf_kompression",
-      "titel": "Engpass des N. peroneus superficialis",
-      "kurz": "Einengung eines Hautnervs am äußeren Unterschenkel/Fußrücken mit Missempfindungen",
+      "titel": "Eingeklemmter Hautnerv am äußeren Fußrücken",
+      "kurz": "Druck auf einen Hautnerv außen am Unterschenkel oder Fußrücken, mit Brennen oder Kribbeln",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand",
@@ -637,8 +639,8 @@
     },
     {
       "id": "n_plantaris_med_lat_kompression",
-      "titel": "Engpass der Fußsohlennerven (Nn. plantares)",
-      "kurz": "Einengung der Sohlennerven mit Brennen/Taubheit der Fußsohle",
+      "titel": "Eingeklemmte Nerven der Fußsohle",
+      "kurz": "Druck auf die Sohlennerven, mit Brennen oder Taubheit der Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
         "fusssohle",
@@ -648,8 +650,8 @@
     },
     {
       "id": "baxter_neuropathie",
-      "titel": "Baxter-Neuropathie (Einengung des 1. Astes des N. plantaris lateralis)",
-      "kurz": "Nervenengpass an der Innenseite der Ferse, oft mit chronischem Fersenschmerz",
+      "titel": "Eingeklemmter Nerv an der Innenseite der Ferse (Baxter-Nerv)",
+      "kurz": "Nervenreizung innen an der Ferse, oft mit lange bestehendem Fersenschmerz",
       "haeufigkeit": "selten",
       "regionen": [
         "rueckfuss_medial_tief"
@@ -658,8 +660,8 @@
     },
     {
       "id": "n_suralis_kompression",
-      "titel": "Engpass des N. suralis",
-      "kurz": "Einengung eines Hautnervs am äußeren Rückfuß mit Missempfindungen",
+      "titel": "Eingeklemmter Hautnerv außen an der Ferse",
+      "kurz": "Druck auf einen Hautnerv außen am Rückfuß, mit Brennen oder Kribbeln",
       "haeufigkeit": "selten",
       "regionen": [
         "achillessehne_verlauf",
@@ -670,8 +672,8 @@
     },
     {
       "id": "n_saphenus_kompression",
-      "titel": "Engpass des N. saphenus",
-      "kurz": "Einengung eines Hautnervs an der Innenseite von Knöchel/Fußrand",
+      "titel": "Eingeklemmter Hautnerv an der Innenseite des Knöchels",
+      "kurz": "Druck auf einen Hautnerv innen am Knöchel oder Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand",
@@ -680,8 +682,8 @@
     },
     {
       "id": "joplin_neurom",
-      "titel": "Joplin-Neurom (Reizung des Großzehen-Hautnervs)",
-      "kurz": "Nervenreizung an der Innenseite des Großzehengrundgelenks, oft nach Druck",
+      "titel": "Gereizter Hautnerv an der Großzehe (Joplin-Neurom)",
+      "kurz": "Nervenreizung an der Innenseite des Großzehenballens, oft durch Druck im Schuh",
       "haeufigkeit": "selten",
       "regionen": [
         "grosszehe",
@@ -690,8 +692,8 @@
     },
     {
       "id": "intersection_knot_henry",
-      "titel": "Knot-of-Henry-Syndrom (Konflikt der Beugesehnen-Kreuzung)",
-      "kurz": "Reizung an der Kreuzungsstelle zweier Beugesehnen an der Fußsohlen-Innenseite",
+      "titel": "Reizung an der Sehnenkreuzung in der Fußsohle",
+      "kurz": "Reizung dort, wo sich zwei Beugesehnen an der Innenseite der Fußsohle kreuzen",
       "haeufigkeit": "selten",
       "regionen": [
         "fusssohle",
@@ -700,8 +702,8 @@
     },
     {
       "id": "sesamoiditis",
-      "titel": "Sesamoiditis",
-      "kurz": "Akute Reizung/Entzündung der Sesambeine (Form der Sesamoidopathie)",
+      "titel": "Entzündung der Sesambeine",
+      "kurz": "Akute Reizung der zwei kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "mittel",
       "regionen": [
         "mtp1_plantar"
@@ -709,8 +711,8 @@
     },
     {
       "id": "sesambein_stressfraktur",
-      "titel": "Sesambein-Stressfraktur",
-      "kurz": "Ermüdungsbruch eines Sesambeins unter dem Großzehengrundgelenk",
+      "titel": "Ermüdungsbruch eines Sesambeins",
+      "kurz": "Feiner Knochenriss in einem der kleinen Knochen unter dem Großzehenballen",
       "haeufigkeit": "selten",
       "regionen": [
         "mtp1_plantar"
@@ -719,8 +721,8 @@
     },
     {
       "id": "fettkoerperatrophie_ferse",
-      "titel": "Fettkörperatrophie der Ferse",
-      "kurz": "Schwund des schützenden Fettpolsters unter dem Fersenbein",
+      "titel": "Dünnes Fersenpolster",
+      "kurz": "Das schützende Fettpolster unter der Ferse ist dünner geworden",
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber"
@@ -729,8 +731,8 @@
     },
     {
       "id": "morbus_sever",
-      "titel": "Morbus Sever (Apophysitis calcanei)",
-      "kurz": "Reizung der Wachstumsfuge am Fersenbein bei Jugendlichen",
+      "titel": "Reizung der Wachstumsfuge an der Ferse (Morbus Sever)",
+      "kurz": "Fersenschmerz bei Kindern und Jugendlichen durch Sport",
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber"
@@ -739,8 +741,8 @@
     },
     {
       "id": "fhl_stenose",
-      "titel": "FHL-Stenose (Flexor-hallucis-longus-Sehne)",
-      "kurz": "Einengung der Großzehenbeuger-Sehne hinter dem Innenknöchel, oft bei Tänzern/Sportlern",
+      "titel": "Eingeengte Großzehen-Beugesehne",
+      "kurz": "Die Sehne zur Großzehe hinter dem Innenknöchel gleitet nicht frei, oft bei Tänzern und Sportlern",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand_tief"
@@ -748,8 +750,8 @@
     },
     {
       "id": "tc_coalitio",
-      "titel": "Talokalkaneare Coalitio",
-      "kurz": "Angeborene knöcherne/knorpelige Verbindung zwischen Sprung- und Fersenbein",
+      "titel": "Angeborene Knochenbrücke zwischen Sprung- und Fersenbein",
+      "kurz": "Zwei Fußknochen sind von Geburt an verbunden, der Fuß ist steif und platt",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand_tief",
@@ -759,8 +761,8 @@
     },
     {
       "id": "kalkaneuszyste",
-      "titel": "Knochenzyste im Fersenbein",
-      "kurz": "Gutartiger flüssigkeitsgefüllter Hohlraum im Fersenbein (Tuber calcanei)",
+      "titel": "Hohlraum im Fersenbein (Knochenzyste)",
+      "kurz": "Gutartiger, mit Flüssigkeit gefüllter Hohlraum im Fersenbein",
       "haeufigkeit": "selten",
       "regionen": [
         "rueckfuss_medial_tief"
@@ -768,19 +770,20 @@
     },
     {
       "id": "syndesmosen_verletzung",
-      "titel": "Syndesmosenverletzung",
-      "kurz": "Verletzung der hohen Bandverbindung zwischen Schien- und Wadenbein knapp oberhalb des Sprunggelenks (hohe Sprunggelenkverstauchung), oft nach Verdrehung mit Auswärtsdrehung; kann subakut oder chronisch Beschwerden machen.",
+      "titel": "Verletzung der Bandverbindung zwischen Schien- und Wadenbein (Syndesmose)",
+      "kurz": "Verletzung knapp oberhalb des Sprunggelenks, oft nach Verdrehen des Fußes nach außen; heilt oft langsam",
       "haeufigkeit": "mittel",
       "regionen": [
         "sg_aussen_vor",
         "sg_vorne",
         "syndesmose_distale_tibia"
-      ]
+      ],
+      "info_ref": "syndesmose_kb"
     },
     {
       "id": "pops_syndrom",
-      "titel": "Painful Os Peroneum Syndrome (POPS)",
-      "kurz": "Schmerzhafte Reizung oder Bruch eines kleinen Knochens (Os peroneum) in der äußeren Wadenbeinsehne am Würfelbein; Schmerz am äußeren Mittelfuß.",
+      "titel": "Schmerzhafter Knochen in der äußeren Fußsehne (Os peroneum)",
+      "kurz": "Reizung oder Bruch eines kleinen Knochens in der Sehne am äußeren Fußrand",
       "haeufigkeit": "selten",
       "regionen": [
         "ferse_plantar_tuber",
@@ -790,8 +793,8 @@
     },
     {
       "id": "cn_coalitio",
-      "titel": "Calcaneonavikulare Coalitio",
-      "kurz": "Angeborene knöcherne oder knorpelige Brücke zwischen Fersen- und Kahnbein; führt häufig ab dem Jugendalter zu einem steifen, schmerzhaften Knick-Senkfuß.",
+      "titel": "Angeborene Knochenbrücke zwischen Fersen- und Kahnbein",
+      "kurz": "Zwei Fußknochen sind von Geburt an verbunden, ab der Jugend steifer, schmerzhafter Plattfuß",
       "haeufigkeit": "selten",
       "regionen": [
         "lateraler_fussrand",
@@ -802,8 +805,8 @@
     },
     {
       "id": "mueller_weiss",
-      "titel": "Müller-Weiss-Syndrom",
-      "kurz": "Verformung und Verschleiß des Kahnbeins (Os naviculare) beim Erwachsenen mit Schmerz am inneren/mittleren Fußrücken.",
+      "titel": "Müller-Weiss-Erkrankung des Kahnbeins",
+      "kurz": "Verformung und Verschleiß des Kahnbeins am inneren Fußrücken",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand",
@@ -813,8 +816,8 @@
     },
     {
       "id": "shin_splints",
-      "titel": "Mediales Tibiakanten-Syndrom (Shin Splints)",
-      "kurz": "Belastungsabhängiger Schmerz entlang der inneren Schienbeinkante, typisch bei Läufern; bessert sich oft nach dem Aufwärmen.",
+      "titel": "Schienbeinkanten-Schmerz (Shin Splints)",
+      "kurz": "Belastungsschmerz an der inneren Schienbeinkante, typisch bei Läufern",
       "haeufigkeit": "mittel",
       "regionen": [
         "syndesmose_distale_tibia"
@@ -822,8 +825,8 @@
     },
     {
       "id": "tibia_stressfraktur",
-      "titel": "Stressfraktur der Tibia",
-      "kurz": "Feiner Ermüdungsbruch im Schienbein nach wiederholter Überlastung; punktueller Belastungs-, teils Ruhe- oder Nachtschmerz.",
+      "titel": "Ermüdungsbruch des Schienbeins",
+      "kurz": "Feiner Knochenriss im Schienbein nach wiederholter Überlastung",
       "haeufigkeit": "selten",
       "regionen": [
         "syndesmose_distale_tibia"
@@ -832,8 +835,8 @@
     },
     {
       "id": "laterale_ueberlastung",
-      "titel": "Überlastung des lateralen Fußstrahls",
-      "kurz": "Belastungsabhängige Beschwerden am äußeren Fußrand durch Mehr- oder Fehlbelastung der Außenseite, ohne einzelne klar abgrenzbare Struktur.",
+      "titel": "Überlastung des äußeren Fußrandes",
+      "kurz": "Beschwerden am ganzen äußeren Fußrand durch Fehl- oder Mehrbelastung, ohne einzelne Ursache",
       "haeufigkeit": "mittel",
       "regionen": [
         "ferse_plantar_tuber",
@@ -843,8 +846,8 @@
     },
     {
       "id": "peroneale_sehnenlaesion",
-      "titel": "Peronealsehnen-Läsion (Längs-/Teilriss)",
-      "kurz": "Längs- oder Teilriss einer der beiden Wadenbeinsehnen hinter/unter dem Außenknöchel; Schmerz und Schwäche beim Auswärtsdrehen des Fußes.",
+      "titel": "Riss in einer äußeren Fußsehne (Peronealsehne)",
+      "kurz": "Teilriss einer Sehne hinter dem Außenknöchel, mit Schmerz und Schwäche beim Auswärtsdrehen",
       "haeufigkeit": "mittel",
       "regionen": [
         "lateraler_fussrand",
@@ -854,8 +857,8 @@
     },
     {
       "id": "morbus_koehler_1",
-      "titel": "Morbus Köhler I",
-      "kurz": "Aseptische Kahnbein-Osteonekrose beim Kind — meist selbstheilend",
+      "titel": "Morbus Köhler I (Kahnbein beim Kind)",
+      "kurz": "Durchblutungsstörung des Kahnbeins beim Kind, heilt meist von selbst",
       "haeufigkeit": "selten",
       "regionen": [
         "medialer_fussrand",
@@ -865,8 +868,8 @@
     },
     {
       "id": "morbus_ledderhose",
-      "titel": "Morbus Ledderhose (plantare Fibromatose)",
-      "kurz": "Gutartige derbe Bindegewebsknoten in der Fußsohle",
+      "titel": "Knoten in der Fußsohle (Morbus Ledderhose)",
+      "kurz": "Gutartige derbe Knoten im Bindegewebe der Fußsohle",
       "haeufigkeit": "selten",
       "regionen": [
         "fusssohle"
@@ -875,8 +878,8 @@
     },
     {
       "id": "morbus_renander",
-      "titel": "Morbus Renander",
-      "kurz": "Aseptische Osteonekrose eines Großzehen-Sesambeins",
+      "titel": "Morbus Renander (Sesambein)",
+      "kurz": "Durchblutungsstörung eines kleinen Knochens unter dem Großzehenballen",
       "haeufigkeit": "selten",
       "regionen": [
         "mtp1_plantar",
@@ -899,51 +902,55 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau tut es weh?",
+          "frage": "Wo genau an der Großzehe tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Am Knochen-Vorsprung an der Innenseite",
+              "label": "An der Beule an der Innenseite des Großzehenballens",
               "punkte": {
                 "hallux_valgus": 1,
                 "bursitis_bunion": 1
               }
             },
             {
-              "label": "Oben auf dem Großzehengrundgelenk",
+              "label": "Oben auf dem Gelenk am Übergang von der Großzehe zum Fuß",
               "punkte": {
                 "hallux_rigidus": 1,
                 "hallux_limitus": 1
               }
             },
             {
-              "label": "Unten am Großzehenballen (Fußsohle)",
+              "label": "Unten am Großzehenballen, auf der Fußsohle",
               "punkte": {
                 "sesamoidopathie": 1
               }
             },
             {
-              "label": "Das ganze Gelenk schmerzt rundherum",
+              "label": "Rund um das ganze Gelenk, nicht an einer bestimmten Stelle",
               "punkte": {
                 "gichtanfall": 1,
                 "hallux_rigidus": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Plötzlich innerhalb von Stunden, das Gelenk wurde heiß und rot",
+              "label": "Plötzlich innerhalb weniger Stunden, das Gelenk wurde dabei heiß, rot und dick",
               "punkte": {
                 "gichtanfall": 2
               }
             },
             {
-              "label": "Schleichend über Monate bis Jahre",
+              "label": "Langsam über Monate oder Jahre",
               "punkte": {
                 "hallux_valgus": 1,
                 "hallux_rigidus": 1,
@@ -952,21 +959,25 @@
               }
             },
             {
-              "label": "Nach längerer Belastung (Sport, Wandern, viel Stehen)",
+              "label": "Nach einer längeren Belastung, zum Beispiel Sport, Wandern oder langes Stehen",
               "punkte": {
                 "sesamoidopathie": 1,
                 "bursitis_bunion": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "fehlstellung",
-          "frage": "Ist die Großzehe sichtbar schräg nach außen abgewichen?",
+          "frage": "Steht die Großzehe sichtbar schräg, mit der Spitze zu den anderen Zehen hin?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, deutlich nach außen geneigt",
+              "label": "Ja, deutlich schräg",
               "punkte": {
                 "hallux_valgus": 2
               }
@@ -985,11 +996,11 @@
         },
         {
           "id": "beweglichkeit",
-          "frage": "Können Sie die Großzehe noch frei nach oben strecken?",
+          "frage": "Können Sie die Großzehe mit der Hand nach oben biegen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, problemlos und ohne Schmerz",
+              "label": "Ja, ohne Schmerzen und ohne Widerstand",
               "punkte": {
                 "hallux_valgus": 1,
                 "sesamoidopathie": 1,
@@ -997,13 +1008,13 @@
               }
             },
             {
-              "label": "Nur eingeschränkt, mit Schmerzen",
+              "label": "Nur ein Stück weit, und es tut dabei weh",
               "punkte": {
                 "hallux_limitus": 2
               }
             },
             {
-              "label": "Kaum noch, das Gelenk ist sehr steif",
+              "label": "Kaum, das Gelenk ist sehr steif",
               "punkte": {
                 "hallux_rigidus": 2
               }
@@ -1016,21 +1027,21 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Beim Abrollen mit dem Fuß",
+              "label": "Beim Abrollen des Fußes, wenn die Zehe nach oben gebogen wird",
               "punkte": {
                 "hallux_rigidus": 1,
                 "hallux_limitus": 1
               }
             },
             {
-              "label": "Wenn ich enge Schuhe trage",
+              "label": "In engen Schuhen",
               "punkte": {
                 "hallux_valgus": 1,
                 "bursitis_bunion": 1
               }
             },
             {
-              "label": "Wenn ich auf den Ballen drücke",
+              "label": "Wenn ich von unten auf den Ballen drücke",
               "punkte": {
                 "sesamoidopathie": 1
               }
@@ -1040,6 +1051,10 @@
               "punkte": {
                 "gichtanfall": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
@@ -1049,13 +1064,13 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennender/elektrisierender Schmerz an der Innenseite der Großzehe nach Druck",
+              "label": "Brennend oder wie ein Stromschlag, vor allem an der Innenseite der Großzehe, wenn etwas darauf drückt",
               "punkte": {
                 "joplin_neurom": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -1080,82 +1095,90 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Was sehen Sie an der Zehe?",
+          "frage": "Was sehen Sie an den kleinen Zehen?",
           "multi": true,
           "antworten": [
             {
-              "label": "Eine oder mehrere Zehen sind nach unten gekrümmt",
+              "label": "Eine oder mehrere Zehen sind gekrümmt und stehen nicht mehr flach auf",
               "punkte": {
                 "hammerzehe": 2
               }
             },
             {
-              "label": "Am äußeren Fußrand wölbt sich ein Knubbel",
+              "label": "Am äußeren Fußrand, am Ballen der kleinen Zehe, wölbt sich eine Beule",
               "punkte": {
                 "schneiderballen": 2
               }
             },
             {
-              "label": "Knubbel mit Rötung, Wärme, Druckempfindlichkeit",
+              "label": "Diese Beule ist gerötet, warm und tut bei Druck weh",
               "punkte": {
                 "bunionette_bursitis": 2
               }
             },
             {
-              "label": "Keine sichtbare Veränderung, nur Schmerz",
+              "label": "Nichts Auffälliges, es tut nur weh",
               "punkte": {}
             }
           ]
         },
         {
           "id": "trigger",
-          "frage": "Was schmerzt wann?",
+          "frage": "Wann und wo tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Druckschmerz im Schuh, vor allem an der Schuh-Innenseite",
+              "label": "Im Schuh, wenn die Zehe oben an die Schuhdecke drückt",
               "punkte": {
                 "hammerzehe": 1
               }
             },
             {
-              "label": "Druckschmerz an der Schuh-Außenseite",
+              "label": "Im Schuh, wenn der äußere Fußrand an die Schuhwand drückt",
               "punkte": {
                 "schneiderballen": 1,
                 "bunionette_bursitis": 1
               }
             },
             {
-              "label": "Schwielen oder Hornhaut an der gekrümmten Zehe",
+              "label": "An der gekrümmten Zehe hat sich Hornhaut oder eine Schwiele gebildet",
               "punkte": {
                 "hammerzehe": 1
               }
             },
             {
-              "label": "Auch ohne Schuhe, geschwollen oder gerötet",
+              "label": "Auch ohne Schuhe, die Stelle ist geschwollen oder gerötet",
               "punkte": {
                 "bunionette_bursitis": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Jahre",
+              "label": "Langsam über Jahre",
               "punkte": {
                 "hammerzehe": 1,
                 "schneiderballen": 1
               }
             },
             {
-              "label": "Erst der Knubbel, dann später die Entzündung",
+              "label": "Zuerst war nur die Beule da, später kam die Rötung und der Schmerz dazu",
               "punkte": {
                 "bunionette_bursitis": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -1170,45 +1193,49 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau auf der Fußsohle?",
+          "frage": "Wo genau auf der Fußsohle tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Diffus unter dem Vorfuß-Ballen",
+              "label": "Großflächig unter dem Ballen, vor den Zehen",
               "punkte": {
                 "metatarsalgie": 1,
                 "plantar_plate_ruptur": 1
               }
             },
             {
-              "label": "Zwischen den Zehen, Ausstrahlung in 2 Zehen",
+              "label": "Zwischen zwei Zehen, der Schmerz zieht in diese beiden Zehen",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Punktuell an einer Stelle",
+              "label": "An einer einzigen, kleinen Stelle",
               "punkte": {
                 "stressfraktur_mt": 1,
                 "freiberg_koehler": 1
               }
             },
             {
-              "label": "Konkret unter dem 2. Mittelfußkopf",
+              "label": "Unter dem Ballen der zweiten Zehe",
               "punkte": {
                 "freiberg_koehler": 1,
                 "plantar_plate_ruptur": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate",
+              "label": "Langsam über Monate",
               "punkte": {
                 "mortonneurom": 1,
                 "metatarsalgie": 1,
@@ -1216,21 +1243,25 @@
               }
             },
             {
-              "label": "Nach starker Belastung (Wandern, Laufen)",
+              "label": "Nach einer starken Belastung, zum Beispiel Wandern oder Laufen",
               "punkte": {
                 "stressfraktur_mt": 2,
                 "plantar_plate_ruptur": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "ausstrahlung",
-          "frage": "Gibt es Ausstrahlungsgefühl oder Taubheit?",
+          "frage": "Zieht der Schmerz in die Zehen, oder fühlen sich Zehen taub an?",
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen, Stechen oder Taubheit bis in 2 Zehen",
+              "label": "Ja, es brennt, sticht oder ist taub bis in zwei Zehen",
               "punkte": {
                 "mortonneurom": 2
               }
@@ -1250,11 +1281,11 @@
         },
         {
           "id": "zehenstellung",
-          "frage": "Ist eine Zehe nach oben gerichtet oder zur Seite gewichen?",
+          "frage": "Steht eine Zehe nach oben oder ist sie zur Seite gerutscht?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, eine Zehe (meist die 2.)",
+              "label": "Ja, eine Zehe, meist die zweite",
               "punkte": {
                 "plantar_plate_ruptur": 2
               }
@@ -1271,7 +1302,7 @@
           "multi": true,
           "antworten": [
             {
-              "label": "Beim Gehen barfuß auf hartem Boden",
+              "label": "Beim Barfußgehen auf hartem Boden",
               "punkte": {
                 "metatarsalgie": 1,
                 "plantar_plate_ruptur": 1,
@@ -1279,13 +1310,13 @@
               }
             },
             {
-              "label": "In engen Schuhen / mit Absatz",
+              "label": "In engen Schuhen oder Schuhen mit Absatz",
               "punkte": {
                 "mortonneurom": 1
               }
             },
             {
-              "label": "Beim Sport / unter Belastung",
+              "label": "Beim Sport oder bei anderer Belastung",
               "punkte": {
                 "stressfraktur_mt": 1,
                 "freiberg_koehler": 1
@@ -1297,6 +1328,10 @@
                 "stressfraktur_mt": 1,
                 "freiberg_koehler": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
@@ -1306,19 +1341,19 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Taubheit im Vorfuß-Sohlenbereich",
+              "label": "Brennen oder Taubheit unter dem Ballen, ohne dass es in die Zehen zieht",
               "punkte": {
                 "n_plantaris_med_lat_kompression": 2
               }
             },
             {
-              "label": "Brennen/Kribbeln/Taubheit mit Ausstrahlung in die Zehen",
+              "label": "Brennen, Kribbeln oder Taubheit, das in die Zehen zieht",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -1342,17 +1377,17 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Hinter dem Innenknöchel und am inneren Fußrand",
+              "label": "Hinter dem Innenknöchel und am inneren Fußrand entlang",
               "punkte": {
                 "tpsd": 2
               }
             },
             {
-              "label": "Über der Mitte des Fußrückens",
+              "label": "Oben auf dem Fußrücken, in der Mitte des Fußes",
               "punkte": {
                 "tmt_arthrose": 1,
                 "naviculare_stressfx": 1,
@@ -1360,13 +1395,13 @@
               }
             },
             {
-              "label": "Tastbarer Knubbel am inneren Fußrand",
+              "label": "An einer Beule am inneren Fußrand, die man tasten kann",
               "punkte": {
                 "os_tibiale_externum": 2
               }
             },
             {
-              "label": "Tief im Fuß, schwer lokalisierbar",
+              "label": "Tief im Fuß, ich kann es nicht genau zeigen",
               "punkte": {
                 "talo_naviculare_arthrose": 1
               }
@@ -1375,11 +1410,11 @@
         },
         {
           "id": "fussgewoelbe",
-          "frage": "Hat sich das Fußgewölbe verändert?",
+          "frage": "Ist der Fuß an der Innenseite flacher geworden, steht er mehr auf dem Boden auf als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, deutlich flacher",
+              "label": "Ja, deutlich",
               "punkte": {
                 "tpsd": 2
               }
@@ -1398,15 +1433,15 @@
         },
         {
           "id": "zehenstand",
-          "frage": "Können Sie auf einem Bein auf die Zehenspitzen gehen?",
+          "frage": "Können Sie sich auf dem betroffenen Fuß allein auf die Zehenspitzen stellen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, kein Problem",
+              "label": "Ja, ohne Probleme",
               "punkte": {}
             },
             {
-              "label": "Schwierig oder gar nicht möglich am betroffenen Fuß",
+              "label": "Nur schwer oder gar nicht",
               "punkte": {
                 "tpsd": 2
               }
@@ -1428,7 +1463,7 @@
               }
             },
             {
-              "label": "Nur bei Druck auf Innenknubbel",
+              "label": "Nur wenn etwas auf die Beule am inneren Fußrand drückt",
               "punkte": {
                 "os_tibiale_externum": 2
               }
@@ -1439,16 +1474,20 @@
                 "naviculare_stressfx": 1,
                 "talo_naviculare_arthrose": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "ausloeser",
-          "frage": "Hat es einen Auslöser gegeben?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate",
+              "label": "Langsam über Monate",
               "punkte": {
                 "tpsd": 1,
                 "tmt_arthrose": 1,
@@ -1457,16 +1496,20 @@
               }
             },
             {
-              "label": "Nach starker sportlicher Belastung",
+              "label": "Nach einer starken sportlichen Belastung",
               "punkte": {
                 "naviculare_stressfx": 2
               }
             },
             {
-              "label": "Knubbel seit Jugend bekannt",
+              "label": "Die Beule am inneren Fußrand kenne ich schon seit meiner Jugend",
               "punkte": {
                 "os_tibiale_externum": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
@@ -1476,19 +1519,19 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Missempfindung an der Innenseite statt dumpfem Schmerz",
+              "label": "Brennen oder ein komisches Gefühl der Haut an der Innenseite, kein dumpfer Schmerz",
               "punkte": {
                 "n_saphenus_kompression": 2
               }
             },
             {
-              "label": "Schmerz plantar-innen, verstärkt bei Großzehen-Beugung",
+              "label": "Schmerz an der Fußsohle innen, schlimmer, wenn ich die Großzehe nach unten beuge",
               "punkte": {
                 "intersection_knot_henry": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -1506,73 +1549,81 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo schmerzt es genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Hinter dem Außenknöchel (Sehnenverlauf)",
+              "label": "Hinter dem Außenknöchel, Richtung Ferse",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "peroneale_sehnenlaesion": 1
               }
             },
             {
-              "label": "Unter dem Außenknöchel (Mulde)",
+              "label": "Direkt unterhalb des Außenknöchels",
               "punkte": {
                 "sinus_tarsi_syndrom": 2
               }
             },
             {
-              "label": "Übergang Fußrand–Fußsohle (Fußmitte)",
+              "label": "Am äußeren Fußrand, etwa in der Mitte zwischen Ferse und Zehen",
               "punkte": {
                 "subtalare_arthrose": 1,
                 "calcaneocuboid_arthrose": 1
               }
             },
             {
-              "label": "Am Knochen am äußeren Vorfuß (5. Mittelfußknochen)",
+              "label": "Am äußeren Fußrand kurz vor der kleinen Zehe, dort wo man einen Knochen tastet",
               "punkte": {
                 "jones_fraktur": 1,
                 "jones_pseudarthrose": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "ausloeser",
-          "frage": "Hat es einen Auslöser gegeben?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Wochen",
+              "label": "Langsam über Wochen",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "subtalare_arthrose": 1
               }
             },
             {
-              "label": "Nach Umknicken",
+              "label": "Nachdem ich umgeknickt bin",
               "punkte": {
                 "sinus_tarsi_syndrom": 1,
                 "jones_fraktur": 1
               }
             },
             {
-              "label": "Nach Belastung (Sport)",
+              "label": "Nach Belastung, zum Beispiel Sport",
               "punkte": {
                 "jones_fraktur": 1,
                 "peroneal_tendinitis": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "geraeusch",
-          "frage": "Schnappen, Springen oder Geräusch?",
+          "frage": "Hören oder spüren Sie etwas im Fuß, wenn Sie ihn bewegen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Knirschen",
+              "label": "Ja, es knirscht oder reibt",
               "punkte": {
                 "subtalare_arthrose": 1,
                 "calcaneocuboid_arthrose": 1
@@ -1586,7 +1637,7 @@
         },
         {
           "id": "trigger",
-          "frage": "Wann schmerzt es?",
+          "frage": "Wann tut es weh?",
           "multi": true,
           "antworten": [
             {
@@ -1598,7 +1649,7 @@
               }
             },
             {
-              "label": "Bei Belastung des äußeren Fußrandes",
+              "label": "Wenn ich den äußeren Fußrand belaste",
               "punkte": {
                 "jones_fraktur": 1,
                 "jones_pseudarthrose": 1,
@@ -1612,23 +1663,27 @@
                 "jones_pseudarthrose": 1,
                 "calcaneocuboid_arthrose": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "umgeknickt",
-          "frage": "Sind Sie früher mit dem Fuß umgeknickt?",
+          "frage": "Sind Sie mit diesem Fuß früher schon einmal umgeknickt?",
           "multi": false,
           "antworten": [
             {
-              "label": "Mehrmals",
+              "label": "Ja, mehrmals",
               "punkte": {
                 "sinus_tarsi_syndrom": 1,
                 "subtalare_arthrose": 1
               }
             },
             {
-              "label": "Einmal schwer",
+              "label": "Ja, einmal schwer",
               "punkte": {
                 "sinus_tarsi_syndrom": 1
               }
@@ -1645,48 +1700,52 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Missempfindung am äußeren Fußrücken statt dumpfem Schmerz",
+              "label": "Brennen oder ein komisches Gefühl der Haut oben am äußeren Fußrücken, kein dumpfer Schmerz",
               "punkte": {
                 "n_peroneus_superf_kompression": 2
               }
             },
             {
-              "label": "Brennen/Taubheit am äußeren Rückfuß",
+              "label": "Brennen oder Taubheit außen an der Ferse",
               "punkte": {
                 "n_suralis_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
         },
         {
           "id": "lateral_spezifisch",
-          "frage": "Wie zeigt sich der Schmerz am äußeren Fuß?",
+          "frage": "Trifft eine dieser Beschreibungen zu?",
           "multi": true,
           "ansichten": [
             "aussen"
           ],
           "antworten": [
             {
-              "label": "Druckpunkt am Würfelbein, evtl. nach Umknicken (äußerer Mittelfuß)",
+              "label": "Eine kleine Stelle am äußeren Fußrand, in der Mitte des Fußes, tut bei Druck weh, oft seit einem Umknicken",
               "punkte": {
                 "pops_syndrom": 2
               }
             },
             {
-              "label": "Steifer, hartnäckiger Knick-Senkfuß seit der Jugend (knöcherne Brücke)",
+              "label": "Der Fuß ist seit der Jugend auffällig steif und platt, Kippen und Drehen des Fußes geht kaum",
               "punkte": {
                 "cn_coalitio": 2
               }
             },
             {
-              "label": "Diffuser Belastungsschmerz am ganzen äußeren Fußrand bei viel Gehen/Stehen",
+              "label": "Der ganze äußere Fußrand tut bei viel Gehen oder Stehen weh, ohne bestimmte Stelle",
               "punkte": {
                 "laterale_ueberlastung": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -1702,51 +1761,59 @@
       "fragen": [
         {
           "id": "symptomatik",
-          "frage": "Wie äußern sich die Beschwerden am mittleren Fußrücken?",
+          "frage": "Wie äußern sich die Beschwerden oben in der Mitte des Fußes?",
           "multi": true,
           "antworten": [
             {
-              "label": "Belastungsschmerz mit Steifigkeit, schlimmer abends",
+              "label": "Schmerz beim Gehen und Stehen, der Fuß fühlt sich steif an, abends schlimmer",
               "punkte": {
                 "tmt_arthrose": 2
               }
             },
             {
-              "label": "Tastbarer harter Höcker oben, drückt im Schuh",
+              "label": "Oben auf dem Fuß ist eine harte Beule, die im Schuh drückt",
               "punkte": {
                 "tarsaler_hoecker": 2
               }
             },
             {
-              "label": "Diffuser Schmerz nach Überlastung/Lauftraining",
+              "label": "Schmerz oben am Fuß nach viel Laufen oder Training, ohne bestimmte Stelle",
               "punkte": {
                 "marschfraktur": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate/Jahre",
+              "label": "Langsam über Monate oder Jahre",
               "punkte": {
                 "tmt_arthrose": 2
               }
             },
             {
-              "label": "Nach Überlastung, zunehmend belastungsabhängig",
+              "label": "Nach Überlastung, und seitdem wird es bei Belastung schlimmer",
               "punkte": {
                 "marschfraktur": 2
               }
             },
             {
-              "label": "Höcker besteht länger, drückt zunehmend",
+              "label": "Die Beule gibt es schon länger, sie drückt immer mehr",
               "punkte": {
                 "tarsaler_hoecker": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
@@ -1756,20 +1823,20 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Kribbeln/Taubheit am Fußrücken statt dumpfem Schmerz",
+              "label": "Brennen, Kribbeln oder Taubheit oben auf dem Fuß, kein dumpfer Schmerz",
               "punkte": {
                 "n_peroneus_prof_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
         },
         {
           "id": "charcot_check",
-          "frage": "Besteht bei Ihnen ein Diabetes mellitus mit Gefühlsstörung oder Taubheit am Fuß?",
+          "frage": "Haben Sie eine Zuckerkrankheit (Diabetes) und spüren Sie am Fuß weniger als früher, zum Beispiel Taubheit?",
           "multi": false,
           "antworten": [
             {
@@ -1779,7 +1846,7 @@
               }
             },
             {
-              "label": "Nein / nicht bekannt",
+              "label": "Nein oder nicht bekannt",
               "punkte": {}
             }
           ]
@@ -1797,11 +1864,11 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Vorne, beim Anheben des Fußes",
+              "label": "Vorne am Sprunggelenk, wenn ich den Fuß nach oben ziehe",
               "punkte": {
                 "anteriores_impingement": 1,
                 "talus_sporn_anterior": 1,
@@ -1809,14 +1876,14 @@
               }
             },
             {
-              "label": "Diffus im ganzen Sprunggelenk",
+              "label": "Im ganzen Sprunggelenk, nicht an einer bestimmten Stelle",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
               }
             },
             {
-              "label": "Punktuell vorne (eingeklemmt-Gefühl)",
+              "label": "An einer kleinen Stelle vorne, wie eingeklemmt",
               "punkte": {
                 "anteriores_impingement": 1,
                 "talus_sporn_anterior": 1
@@ -1830,7 +1897,7 @@
               }
             },
             {
-              "label": "Knapp oberhalb des Gelenks, zwischen Schien- und Wadenbein, nach Verdrehung",
+              "label": "Knapp oberhalb des Sprunggelenks, zwischen den beiden Knöcheln, seit einer Verdrehung des Fußes",
               "punkte": {
                 "syndesmosen_verletzung": 2
               }
@@ -1839,18 +1906,18 @@
         },
         {
           "id": "beweglichkeit",
-          "frage": "Beweglichkeit eingeschränkt?",
+          "frage": "Lässt sich der Fuß schlechter bewegen als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Fuß kaum nach oben ziehbar",
+              "label": "Ja, ich kann den Fuß kaum noch nach oben ziehen",
               "punkte": {
                 "osg_arthrose": 2,
                 "anteriores_impingement": 1
               }
             },
             {
-              "label": "Nur beim tiefen Beugen (Hocken)",
+              "label": "Nur in der tiefen Hocke, wenn das Knie weit nach vorne geht",
               "punkte": {
                 "anteriores_impingement": 1,
                 "talus_sporn_anterior": 1
@@ -1867,11 +1934,11 @@
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz beim Aufstehen?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, morgens",
+              "label": "Ja, vor allem morgens",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
@@ -1889,11 +1956,11 @@
         },
         {
           "id": "verletzung",
-          "frage": "Frühere OSG-Verletzung?",
+          "frage": "Hatten Sie früher eine Verletzung an diesem Sprunggelenk?",
           "multi": false,
           "antworten": [
             {
-              "label": "Umknicken oder Bruch",
+              "label": "Ja, ich bin umgeknickt oder hatte einen Knochenbruch",
               "punkte": {
                 "ocl": 1,
                 "osg_arthrose": 1,
@@ -1908,7 +1975,7 @@
               }
             },
             {
-              "label": "Verdrehung mit ungewöhnlich langer Heilung",
+              "label": "Ja, eine Verdrehung, die ungewöhnlich lange gebraucht hat, bis sie besser wurde",
               "punkte": {
                 "syndesmosen_verletzung": 1
               }
@@ -1917,18 +1984,18 @@
         },
         {
           "id": "schwellung",
-          "frage": "Sichtbare Schwellung?",
+          "frage": "Ist das Sprunggelenk sichtbar geschwollen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Regelmäßig",
+              "label": "Ja, regelmäßig",
               "punkte": {
                 "synovitis_osg": 2,
                 "osg_arthrose": 1
               }
             },
             {
-              "label": "Manchmal nach Belastung",
+              "label": "Manchmal, nach Belastung",
               "punkte": {
                 "anteriores_impingement": 1,
                 "ocl": 1
@@ -1948,13 +2015,13 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Kribbeln/Taubheit vorne am Sprunggelenk/Fußrücken",
+              "label": "Brennen, Kribbeln oder Taubheit vorne am Sprunggelenk oder oben auf dem Fuß",
               "punkte": {
                 "n_peroneus_prof_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -1976,66 +2043,74 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Diffus im Gelenk, eher tief",
+              "label": "Tief im Gelenk, nicht an einer bestimmten Stelle",
               "punkte": {
                 "osg_arthrose": 2,
                 "synovitis_osg": 1
               }
             },
             {
-              "label": "Punktuell am Band-Ansatz, eher oberflächlich",
+              "label": "An einer kleinen Stelle direkt unter dem Innenknöchel, eher oberflächlich",
               "punkte": {
                 "deltoidband_verletzung": 2
               }
             },
             {
-              "label": "Beim Anheben des Fußes",
+              "label": "Vor allem, wenn ich den Fuß nach oben ziehe",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "ausloeser",
-          "frage": "Auslöser?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate / Jahre",
+              "label": "Langsam über Monate oder Jahre",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
               }
             },
             {
-              "label": "Nach Umknicken / Verletzung",
+              "label": "Nachdem ich umgeknickt bin oder mich verletzt habe",
               "punkte": {
                 "deltoidband_verletzung": 2
               }
             },
             {
-              "label": "Nach längerer Belastung",
+              "label": "Nach einer längeren Belastung",
               "punkte": {
                 "synovitis_osg": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beweglichkeit",
-          "frage": "Beweglichkeit verändert?",
+          "frage": "Lässt sich der Fuß schlechter bewegen als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, Fuß lässt sich nicht mehr voll bewegen",
+              "label": "Ja, der Fuß lässt sich nicht mehr voll bewegen",
               "punkte": {
                 "osg_arthrose": 2
               }
             },
             {
-              "label": "Nein, eher gleich",
+              "label": "Nein, etwa wie immer",
               "punkte": {
                 "deltoidband_verletzung": 1,
                 "synovitis_osg": 1
@@ -2045,7 +2120,7 @@
         },
         {
           "id": "schwellung",
-          "frage": "Sichtbare Schwellung?",
+          "frage": "Ist das Sprunggelenk sichtbar geschwollen?",
           "multi": false,
           "antworten": [
             {
@@ -2070,11 +2145,11 @@
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz beim Aufstehen?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, klassisch",
+              "label": "Ja",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
@@ -2094,13 +2169,13 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Missempfindung an der Innenseite des Knöchels",
+              "label": "Brennen oder ein komisches Gefühl der Haut an der Innenseite des Knöchels",
               "punkte": {
                 "n_saphenus_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -2116,11 +2191,11 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Direkt hinter dem Innenknöchel entlang einer Sehne",
+              "label": "Direkt hinter dem Innenknöchel, als Strich von oben nach unten zur Fußsohle",
               "punkte": {
                 "tpsd": 1,
                 "tibialis_post_beschwerden": 1,
@@ -2128,19 +2203,19 @@
               }
             },
             {
-              "label": "Brennen / Stechen / Taubheit in die Fußsohle",
+              "label": "Es brennt, sticht oder ist taub, und das zieht in die Fußsohle",
               "punkte": {
                 "tarsaltunnel_syndrom": 2
               }
             },
             {
-              "label": "Tief, entlang einer Beugesehne der Großzehe",
+              "label": "Tief hinter dem Innenknöchel, schlimmer, wenn ich die Großzehe nach unten beuge",
               "punkte": {
                 "fhl_tendinopathie": 2
               }
             },
             {
-              "label": "Klassisch nach Belastung, allmählich",
+              "label": "Hinter dem Innenknöchel, langsam gekommen nach Belastung",
               "punkte": {
                 "tibialis_post_beschwerden": 1,
                 "tpsd": 1
@@ -2150,11 +2225,11 @@
         },
         {
           "id": "fussgewoelbe",
-          "frage": "Hat sich das Fußgewölbe verändert?",
+          "frage": "Ist der Fuß an der Innenseite flacher geworden, steht er mehr auf dem Boden auf als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, deutlich flacher",
+              "label": "Ja, deutlich",
               "punkte": {
                 "tpsd": 2
               }
@@ -2171,11 +2246,11 @@
         },
         {
           "id": "taubheit",
-          "frage": "Taubheit oder Kribbeln in der Fußsohle?",
+          "frage": "Fühlt sich die Fußsohle taub an oder kribbelt sie?",
           "multi": false,
           "antworten": [
             {
-              "label": "Vor allem nachts oder nach Belastung",
+              "label": "Ja, vor allem nachts oder nach Belastung",
               "punkte": {
                 "tarsaltunnel_syndrom": 2
               }
@@ -2188,43 +2263,47 @@
         },
         {
           "id": "ausloeser",
-          "frage": "Auslöser?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend bei Belastung",
+              "label": "Langsam, bei Belastung",
               "punkte": {
                 "tibialis_post_beschwerden": 1,
                 "tpsd": 1
               }
             },
             {
-              "label": "Beim Sport (Spitzentanz, Fußball-Strecken)",
+              "label": "Beim Sport, zum Beispiel Tanzen auf den Zehenspitzen oder kräftiges Abstoßen",
               "punkte": {
                 "fhl_tendinopathie": 2
               }
             },
             {
-              "label": "Nach längerem Sitzen / Stehen verstärkt",
+              "label": "Nach längerem Sitzen oder Stehen wird es schlimmer",
               "punkte": {
                 "tarsaltunnel_syndrom": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "bewegungen",
-          "frage": "Schmerzhafte Bewegungen?",
+          "frage": "Bei welchen Bewegungen tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Heben des inneren Fußrandes (Inversion)",
+              "label": "Wenn ich den inneren Fußrand nach oben kippe",
               "punkte": {
                 "tibialis_post_beschwerden": 1
               }
             },
             {
-              "label": "Beugen der Großzehe",
+              "label": "Wenn ich die Großzehe nach unten beuge",
               "punkte": {
                 "fhl_tendinopathie": 1
               }
@@ -2237,10 +2316,14 @@
               }
             },
             {
-              "label": "In Ruhe / nachts",
+              "label": "In Ruhe oder nachts",
               "punkte": {
                 "tarsaltunnel_syndrom": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -2256,31 +2339,31 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Direkt am Außenknöchel (Bänder)",
+              "label": "Direkt am Außenknöchel und knapp davor",
               "punkte": {
                 "aussenbandverletzung_akut": 1,
                 "chron_sg_instabilitaet": 1
               }
             },
             {
-              "label": "Unter dem Außenknöchel (Mulde)",
+              "label": "Direkt unterhalb des Außenknöchels",
               "punkte": {
                 "sinus_tarsi_syndrom": 1
               }
             },
             {
-              "label": "Diffus im Sprunggelenk, eher tief",
+              "label": "Tief im Sprunggelenk, nicht an einer bestimmten Stelle",
               "punkte": {
                 "osg_arthrose": 1,
                 "ocl": 1
               }
             },
             {
-              "label": "Oberhalb des Gelenks, zwischen den beiden Unterschenkelknochen",
+              "label": "Oberhalb des Sprunggelenks, zwischen den beiden Knöcheln",
               "punkte": {
                 "syndesmosen_verletzung": 2
               }
@@ -2289,18 +2372,18 @@
         },
         {
           "id": "umknicken",
-          "frage": "Umgeknickt?",
+          "frage": "Sind Sie mit diesem Fuß umgeknickt?",
           "multi": false,
           "antworten": [
             {
-              "label": "Mehrmals — Fuß kippt weiter",
+              "label": "Ja, mehrmals, der Fuß kippt immer wieder weg",
               "punkte": {
                 "chron_sg_instabilitaet": 2,
                 "sinus_tarsi_syndrom": 1
               }
             },
             {
-              "label": "Einmal heftig — seitdem Probleme",
+              "label": "Ja, einmal heftig, seitdem habe ich Probleme",
               "punkte": {
                 "sinus_tarsi_syndrom": 1,
                 "ocl": 1
@@ -2313,7 +2396,7 @@
               }
             },
             {
-              "label": "Mit Auswärtsdrehung, hält ungewöhnlich lange an",
+              "label": "Ja, der Fuß wurde dabei nach außen verdreht, und es dauert ungewöhnlich lange",
               "punkte": {
                 "syndesmosen_verletzung": 1
               }
@@ -2322,11 +2405,11 @@
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, klassisch",
+              "label": "Ja",
               "punkte": {
                 "osg_arthrose": 1
               }
@@ -2339,17 +2422,17 @@
         },
         {
           "id": "beweglichkeit",
-          "frage": "Beweglichkeit verändert?",
+          "frage": "Lässt sich der Fuß schlechter bewegen als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Fuß lässt sich nicht mehr voll bewegen",
+              "label": "Ja, der Fuß lässt sich nicht mehr voll bewegen",
               "punkte": {
                 "osg_arthrose": 2
               }
             },
             {
-              "label": "Nein, eher gleich",
+              "label": "Nein, etwa wie immer",
               "punkte": {
                 "chron_sg_instabilitaet": 1,
                 "ocl": 1
@@ -2359,11 +2442,11 @@
         },
         {
           "id": "untergrund",
-          "frage": "Auf unebenem Boden schmerzhaft?",
+          "frage": "Tut es auf unebenem Boden besonders weh?",
           "multi": false,
           "antworten": [
             {
-              "label": "Deutlich",
+              "label": "Ja, deutlich",
               "punkte": {
                 "chron_sg_instabilitaet": 1,
                 "sinus_tarsi_syndrom": 1
@@ -2384,13 +2467,13 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Missempfindung außen statt dumpfem Schmerz",
+              "label": "Brennen oder ein komisches Gefühl der Haut außen am Knöchel, kein dumpfer Schmerz",
               "punkte": {
                 "n_peroneus_superf_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -2406,11 +2489,11 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Direkt hinter dem Außenknöchel entlang der Sehne",
+              "label": "Direkt hinter dem Außenknöchel, als Strich von oben nach unten",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "peroneal_luxation": 1,
@@ -2418,33 +2501,37 @@
               }
             },
             {
-              "label": "Unter dem Außenknöchel, eher tief",
+              "label": "Unterhalb des Außenknöchels, eher tief",
               "punkte": {
                 "subtalare_arthrose": 1,
                 "sinus_tarsi_syndrom": 1
               }
             },
             {
-              "label": "Ganz hinten am Sprunggelenk",
+              "label": "Ganz hinten am Sprunggelenk, zwischen Knöchel und Ferse",
               "punkte": {
                 "posteriores_impingement": 2
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "geraeusch",
-          "frage": "Schnappen, Springen oder Geräusch?",
+          "frage": "Hören oder spüren Sie etwas, wenn Sie den Fuß bewegen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Sehne springt hörbar",
+              "label": "Ja, hinter dem Außenknöchel schnappt oder springt etwas, manchmal hörbar",
               "punkte": {
                 "peroneal_luxation": 2
               }
             },
             {
-              "label": "Knirschen im Gelenk",
+              "label": "Ja, es knirscht im Gelenk",
               "punkte": {
                 "subtalare_arthrose": 1
               }
@@ -2457,17 +2544,17 @@
         },
         {
           "id": "bewegungen",
-          "frage": "Welche Bewegungen tun weh?",
+          "frage": "Bei welchen Bewegungen tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Anheben auf die Zehenspitze",
+              "label": "Wenn ich mich auf die Zehenspitzen stelle",
               "punkte": {
                 "posteriores_impingement": 1
               }
             },
             {
-              "label": "Drehen des Fußes nach außen",
+              "label": "Wenn ich den Fuß nach außen drehe",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "peroneal_luxation": 1,
@@ -2480,23 +2567,27 @@
                 "subtalare_arthrose": 1,
                 "peroneal_tendinitis": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beweglichkeit",
-          "frage": "Beweglichkeit verändert?",
+          "frage": "Lässt sich der Fuß schlechter bewegen als früher?",
           "multi": false,
           "antworten": [
             {
-              "label": "Fuß lässt sich nicht mehr voll bewegen",
+              "label": "Ja, der Fuß lässt sich nicht mehr voll bewegen",
               "punkte": {
                 "subtalare_arthrose": 1,
                 "posteriores_impingement": 1
               }
             },
             {
-              "label": "Nein, eher gleich",
+              "label": "Nein, etwa wie immer",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "peroneal_luxation": 1
@@ -2506,11 +2597,11 @@
         },
         {
           "id": "umknicken",
-          "frage": "Früher umgeknickt?",
+          "frage": "Sind Sie mit diesem Fuß früher schon einmal umgeknickt?",
           "multi": false,
           "antworten": [
             {
-              "label": "Mehrmals",
+              "label": "Ja, mehrmals",
               "punkte": {
                 "peroneal_tendinitis": 1,
                 "peroneal_luxation": 1,
@@ -2527,20 +2618,20 @@
         },
         {
           "id": "lateral_spezifisch",
-          "frage": "Steifer Knick-Senkfuß seit der Jugend?",
+          "frage": "Ist der Fuß schon seit der Jugend auffällig steif und platt, sodass Kippen und Drehen kaum geht?",
           "multi": false,
           "ansichten": [
             "aussen"
           ],
           "antworten": [
             {
-              "label": "Ja, mit knöcherner Brücke/Steife außen seit der Jugend",
+              "label": "Ja",
               "punkte": {
                 "cn_coalitio": 2
               }
             },
             {
-              "label": "Nein / trifft nicht zu",
+              "label": "Nein oder trifft nicht zu",
               "punkte": {}
             }
           ]
@@ -2557,48 +2648,56 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau in der Sehne?",
+          "frage": "Wo genau hinten am Unterschenkel tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Mitten in der Sehne (zwischen Wade und Ferse)",
+              "label": "In der Mitte zwischen Wade und Ferse, am dünnen Strang",
               "punkte": {
                 "achillodynie_midportion": 2
               }
             },
             {
-              "label": "Höher, am Übergang zur Wade",
+              "label": "Weiter oben, wo der Strang in die Wade übergeht",
               "punkte": {
                 "achilles_distal": 2
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wann begann es?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Plötzlich — wie ein Tritt oder Schlag in die Wade, seitdem Kraftverlust",
+              "label": "Plötzlich, wie ein Tritt oder Schlag in die Wade, seitdem kann ich mich kaum abstoßen",
               "punkte": {}
             },
             {
-              "label": "Schleichend nach Belastungsschub",
+              "label": "Langsam, nach einer Zeit mit mehr Belastung als sonst",
               "punkte": {
                 "achillodynie_midportion": 1,
                 "achilles_distal": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz beim Aufstehen?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Klassisch — erste Schritte tut weh, dann besser",
+              "label": "Ja, die ersten Schritte tun weh, dann wird es besser",
               "punkte": {
                 "achillodynie_midportion": 2
               }
@@ -2613,11 +2712,11 @@
         },
         {
           "id": "verdickung",
-          "frage": "Tastbare Verdickung?",
+          "frage": "Können Sie hinten am Unterschenkel eine Verdickung tasten?",
           "multi": false,
           "antworten": [
             {
-              "label": "Knotenartige Verdickung in der Sehnenmitte",
+              "label": "Ja, eine knotige Verdickung in der Mitte zwischen Wade und Ferse",
               "punkte": {
                 "achillodynie_midportion": 2
               }
@@ -2630,21 +2729,25 @@
         },
         {
           "id": "kraft",
-          "frage": "Schmerzen beim Zehenspitzenstand?",
+          "frage": "Tut es weh, wenn Sie sich auf die Zehenspitzen stellen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Sehr deutlich",
+              "label": "Ja, sehr deutlich",
               "punkte": {
                 "achillodynie_midportion": 1,
                 "achilles_distal": 1
               }
             },
             {
-              "label": "Beim Dehnen der Wade",
+              "label": "Eher, wenn ich die Wade dehne",
               "punkte": {
                 "achilles_distal": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
@@ -2654,13 +2757,13 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Taubheit seitlich neben der Achillessehne",
+              "label": "Brennen oder Taubheit seitlich neben dem Strang hinten am Unterschenkel",
               "punkte": {
                 "n_suralis_kompression": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -2684,42 +2787,46 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau?",
+          "frage": "Wo genau an der Ferse tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Direkt am Fersenbein, wo die Sehne ansetzt",
+              "label": "Ganz unten hinten an der Ferse, wo der Strang in den Fersenknochen übergeht",
               "punkte": {
                 "achilles_insertion_haglund": 1
               }
             },
             {
-              "label": "An der Hinterseite der Ferse, etwas oberhalb",
+              "label": "Hinten an der Ferse, etwas oberhalb des Knochens",
               "punkte": {
                 "retrocalcaneare_bursitis": 1
               }
             },
             {
-              "label": "Mit Knochenvorsprung tastbar",
-              "punkte": {
-                "achilles_insertion_haglund": 2
-              }
-            }
-          ]
-        },
-        {
-          "id": "veraenderung",
-          "frage": "Sichtbare oder tastbare Veränderung?",
-          "multi": false,
-          "antworten": [
-            {
-              "label": "Knöcherner Vorsprung an der Ferse",
+              "label": "An einer Beule hinten an der Ferse, die man tasten kann",
               "punkte": {
                 "achilles_insertion_haglund": 2
               }
             },
             {
-              "label": "Weiche Schwellung",
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
+            }
+          ]
+        },
+        {
+          "id": "veraenderung",
+          "frage": "Sehen oder tasten Sie eine Veränderung an der Ferse?",
+          "multi": false,
+          "antworten": [
+            {
+              "label": "Ja, eine harte, knöcherne Beule hinten an der Ferse",
+              "punkte": {
+                "achilles_insertion_haglund": 2
+              }
+            },
+            {
+              "label": "Ja, eine weiche Schwellung",
               "punkte": {
                 "retrocalcaneare_bursitis": 2
               }
@@ -2732,31 +2839,35 @@
         },
         {
           "id": "schuhe",
-          "frage": "Druck durch Schuhe?",
+          "frage": "Drücken Schuhe an der Ferse?",
           "multi": false,
           "antworten": [
             {
-              "label": "Vor allem im Schuh-Fersenbereich",
+              "label": "Ja, vor allem die Fersenkappe des Schuhs drückt",
               "punkte": {
                 "achilles_insertion_haglund": 1,
                 "retrocalcaneare_bursitis": 1
               }
             },
             {
-              "label": "Auch ohne Schuhe",
+              "label": "Es tut auch ohne Schuhe weh",
               "punkte": {
                 "achilles_insertion_haglund": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Klassisch",
+              "label": "Ja",
               "punkte": {
                 "achilles_insertion_haglund": 1
               }
@@ -2768,7 +2879,7 @@
               }
             },
             {
-              "label": "Beim Druck im Schuh",
+              "label": "Nein, eher wenn der Schuh drückt",
               "punkte": {
                 "achilles_insertion_haglund": 1
               }
@@ -2777,7 +2888,7 @@
         },
         {
           "id": "kraft",
-          "frage": "Schmerz beim Zehenspitzenstand?",
+          "frage": "Tut es weh, wenn Sie sich auf die Zehenspitzen stellen?",
           "multi": false,
           "antworten": [
             {
@@ -2787,7 +2898,7 @@
               }
             },
             {
-              "label": "Nicht spürbar, nur Druckgefühl",
+              "label": "Nein, ich spüre nur ein Druckgefühl",
               "punkte": {
                 "retrocalcaneare_bursitis": 1
               }
@@ -2805,18 +2916,18 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Schmerz in welchem Bereich?",
+          "frage": "Wo auf der Fußsohle tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Vom Fersenansatz bis zur Mitte",
+              "label": "Von der Ferse bis zur Mitte der Sohle",
               "punkte": {
                 "plantarfasziitis": 2,
                 "morbus_ledderhose": 1
               }
             },
             {
-              "label": "Vorderes Drittel",
+              "label": "Im vorderen Drittel, vor den Zehen",
               "punkte": {
                 "mortonneurom": 1,
                 "plantar_plate_ruptur": 1
@@ -2827,53 +2938,61 @@
               "punkte": {
                 "polyneuropathie": 2
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "qualitaet",
-          "frage": "Welche Qualität?",
+          "frage": "Wie fühlt sich der Schmerz an?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ziehend, wie gespannter Faden",
+              "label": "Ziehend, wie ein gespannter Faden unter der Sohle",
               "punkte": {
                 "plantarfasziitis": 1
               }
             },
             {
-              "label": "Stechend mit Taubheit in 2 Zehen",
+              "label": "Stechend, dazu sind zwei Zehen taub",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Brennend, oft beidseits",
+              "label": "Brennend, oft an beiden Füßen",
               "punkte": {
                 "polyneuropathie": 2
               }
             },
             {
-              "label": "Lokal druckempfindlich",
+              "label": "Eine Stelle tut weh, wenn man darauf drückt",
               "punkte": {
                 "plantar_plate_ruptur": 1
               }
             },
             {
-              "label": "Tastbarer derber Knoten oder Strang in der Fußsohle",
+              "label": "Ich taste einen derben Knoten oder Strang in der Fußsohle",
               "punkte": {
                 "morbus_ledderhose": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz?",
+          "frage": "Tut es bei den ersten Schritten nach dem Aufstehen oder nach längerem Sitzen besonders weh und wird dann besser?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, klassisch",
+              "label": "Ja",
               "punkte": {
                 "plantarfasziitis": 1
               }
@@ -2886,7 +3005,7 @@
         },
         {
           "id": "seitigkeit",
-          "frage": "Einseitig oder beidseits?",
+          "frage": "Ist ein Fuß betroffen oder beide?",
           "multi": false,
           "antworten": [
             {
@@ -2898,7 +3017,7 @@
               }
             },
             {
-              "label": "Beidseits",
+              "label": "Beide Füße",
               "punkte": {
                 "polyneuropathie": 2
               }
@@ -2907,7 +3026,7 @@
         },
         {
           "id": "diabetes",
-          "frage": "Bekannte Diabetes-Erkrankung?",
+          "frage": "Haben Sie eine Zuckerkrankheit (Diabetes)?",
           "multi": false,
           "antworten": [
             {
@@ -2924,29 +3043,29 @@
         },
         {
           "id": "schmerzcharakter",
-          "frage": "Wie fühlt sich der Schmerz an?",
+          "frage": "Welche Beschreibung passt am besten?",
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Taubheit der Fußsohle statt dumpfem Druckschmerz",
+              "label": "Brennen oder Taubheit der Fußsohle, kein dumpfer Schmerz bei Druck",
               "punkte": {
                 "n_plantaris_med_lat_kompression": 2
               }
             },
             {
-              "label": "Schmerz an der Fußsohlen-Innenseite, verstärkt bei Großzehen-Bewegung",
+              "label": "Schmerz an der Innenseite der Fußsohle, schlimmer, wenn ich die Großzehe bewege",
               "punkte": {
                 "intersection_knot_henry": 2
               }
             },
             {
-              "label": "Brennen/Kribbeln/Taubheit mit Ausstrahlung in die Zehen",
+              "label": "Brennen, Kribbeln oder Taubheit, das in die Zehen zieht",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -2965,119 +3084,131 @@
       "fragen": [
         {
           "id": "symptomatik",
-          "frage": "Wie äußern sich die Beschwerden am inneren Fußrücken (TN-Gelenk)?",
+          "frage": "Wie äußern sich die Beschwerden am inneren Fußrücken, vor dem Innenknöchel?",
           "multi": true,
           "antworten": [
             {
-              "label": "Belastungsschmerz am inneren Fußrücken mit Steifigkeit",
+              "label": "Schmerz beim Gehen und Stehen, der Fuß fühlt sich steif an",
               "punkte": {
                 "talo_naviculare_arthrose": 2
               }
             },
             {
-              "label": "Belastungsabhängiger Schmerz, evtl. nach Überlastung",
+              "label": "Schmerz bei Belastung, vielleicht nach einer Zeit mit mehr Belastung als sonst",
               "punkte": {
                 "naviculare_stressfx": 2
               }
             },
             {
-              "label": "Druckschmerz an einem knöchernen Vorsprung an der Innenseite",
+              "label": "Eine Beule am inneren Fußrand, die bei Druck weh tut",
               "punkte": {
                 "os_tibiale_externum": 2
               }
             },
             {
-              "label": "Schmerz innen mit zunehmendem Knick-Senkfuß",
+              "label": "Schmerz an der Innenseite, und der Fuß wird dabei immer flacher",
               "punkte": {
                 "tpsd": 2
               }
             },
             {
-              "label": "Dumpfer Schmerz am mittleren Fußrücken beim Erwachsenen, Fuß wirkt verformt",
+              "label": "Dumpfer Schmerz oben in der Mitte des Fußes, der Fuß sieht verformt aus",
               "punkte": {
                 "mueller_weiss": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate/Jahre, zunehmende Steifigkeit",
+              "label": "Langsam über Monate oder Jahre, der Fuß wird immer steifer",
               "punkte": {
                 "talo_naviculare_arthrose": 2
               }
             },
             {
-              "label": "Nach Überlastung/Sport, belastungsabhängig zunehmend",
+              "label": "Nach Überlastung oder Sport, bei Belastung immer schlimmer",
               "punkte": {
                 "naviculare_stressfx": 2
               }
             },
             {
-              "label": "Besteht schon lange, knöcherner Vorsprung von jeher",
+              "label": "Die Beule am inneren Fußrand gibt es schon immer",
               "punkte": {
                 "os_tibiale_externum": 2
               }
             },
             {
-              "label": "Mit zunehmendem Absinken des Fußgewölbes",
+              "label": "Der Fuß wird langsam flacher, und dabei kam der Schmerz",
               "punkte": {
                 "tpsd": 2
               }
             },
             {
-              "label": "Schleichend im Erwachsenenalter, mit zunehmender Verformung",
+              "label": "Langsam, und der Fuß verformt sich dabei zunehmend",
               "punkte": {
                 "mueller_weiss": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "belastung",
-          "frage": "Wie verändert sich der Schmerz unter Belastung?",
+          "frage": "Wie verändert sich der Schmerz bei Belastung?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schlimmer beim Gehen auf unebenem Grund / Zehenstand",
+              "label": "Schlimmer auf unebenem Boden oder auf den Zehenspitzen",
               "punkte": {
                 "tpsd": 2
               }
             },
             {
-              "label": "Anlaufschmerz, besser nach Einlaufen, abends schlechter",
+              "label": "Bei den ersten Schritten schlimm, nach dem Einlaufen besser, abends wieder schlechter",
               "punkte": {
                 "talo_naviculare_arthrose": 2
               }
             },
             {
-              "label": "Punktueller Schmerz, der bei Belastung sofort zunimmt",
+              "label": "Eine kleine Stelle, die bei Belastung sofort weh tut",
               "punkte": {
                 "naviculare_stressfx": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "lateral_spezifisch",
-          "frage": "Knöcherne Brücke zwischen Fersen- und Kahnbein?",
+          "frage": "Ist der Fuß schon seit der Jugend auffällig steif und platt, sodass Kippen und Drehen kaum geht?",
           "multi": false,
           "ansichten": [
             "aussen"
           ],
           "antworten": [
             {
-              "label": "Ja, Steife/Brücke seit der Jugend",
+              "label": "Ja",
               "punkte": {
                 "cn_coalitio": 2
               }
             },
             {
-              "label": "Nein / trifft nicht zu",
+              "label": "Nein oder trifft nicht zu",
               "punkte": {}
             }
           ]
@@ -3095,96 +3226,108 @@
       "fragen": [
         {
           "id": "symptomatik",
-          "frage": "Wie äußern sich die Beschwerden im Bereich der Mittelfußköpfchen?",
+          "frage": "Wie äußern sich die Beschwerden am Ballen vor den Zehen?",
           "multi": true,
           "antworten": [
             {
-              "label": "Brennend oder elektrisierend zwischen den Zehen, teils Taubheitsgefühl",
+              "label": "Brennen oder Stromschlag-Gefühl zwischen den Zehen, teils Taubheit",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Druckschmerz unter den Mittelfußköpfchen beim Gehen/Abrollen",
+              "label": "Schmerz unter dem Ballen beim Gehen und Abrollen, wie auf einem Stein",
               "punkte": {
                 "metatarsalgie": 2
               }
             },
             {
-              "label": "Plötzlicher Belastungsschmerz, evtl. nach Überlastung oder Sport",
+              "label": "Plötzlicher Schmerz bei Belastung, vielleicht nach Überlastung oder Sport",
               "punkte": {
                 "stressfraktur_mt": 2
               }
             },
             {
-              "label": "Schmerz und Schwellung am 2./3. Mittelfußköpfchen mit Bewegungseinschränkung",
+              "label": "Schmerz und Schwellung oben am Ballen der zweiten oder dritten Zehe, die Zehe lässt sich schlechter bewegen",
               "punkte": {
                 "freiberg_koehler": 2
               }
             },
             {
-              "label": "Eine Zehe weicht ab oder krallt, Schmerz direkt unter dem Köpfchen",
+              "label": "Eine Zehe steht schief oder krallt sich, der Schmerz sitzt direkt unter ihrem Ballen",
               "punkte": {
                 "plantar_plate_ruptur": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend, Druckgefühl wie 'Stein im Schuh'",
+              "label": "Langsam, mit einem Gefühl wie ein Stein im Schuh",
               "punkte": {
                 "mortonneurom": 2,
                 "metatarsalgie": 1
               }
             },
             {
-              "label": "Nach Überlastung/Lauftraining, zunehmend",
+              "label": "Nach Überlastung oder viel Lauftraining, immer schlimmer",
               "punkte": {
                 "stressfraktur_mt": 2
               }
             },
             {
-              "label": "Schleichend bei jüngeren Patienten, am 2./3. Köpfchen",
+              "label": "Langsam, am Ballen der zweiten oder dritten Zehe",
               "punkte": {
                 "freiberg_koehler": 2
               }
             },
             {
-              "label": "Nach Überstreckung der Zehe / plötzlichem Ereignis",
+              "label": "Nach einem Überstrecken der Zehe oder einem plötzlichen Ereignis",
               "punkte": {
                 "plantar_plate_ruptur": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "linderung",
-          "frage": "Was lindert oder verstärkt es?",
+          "frage": "Was macht es besser oder schlimmer?",
           "multi": false,
           "antworten": [
             {
-              "label": "Besser barfuß / ohne enge Schuhe, schlimmer in engem Schuh",
+              "label": "Besser barfuß oder in weiten Schuhen, schlimmer in engen Schuhen",
               "punkte": {
                 "mortonneurom": 2
               }
             },
             {
-              "label": "Schlimmer beim Abrollen, Druckschmerz unter dem Köpfchen",
+              "label": "Schlimmer beim Abrollen und bei Druck von unten auf den Ballen",
               "punkte": {
                 "metatarsalgie": 2
               }
             },
             {
-              "label": "Schmerz bleibt auch in Ruhe / nachts",
+              "label": "Es bleibt auch in Ruhe oder nachts",
               "punkte": {
                 "stressfraktur_mt": 1,
                 "freiberg_koehler": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -3201,79 +3344,91 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo / wie äußert sich der Schmerz?",
+          "frage": "Wo und wie tut es weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Knochenvorsprung außen am Kleinzehengrundgelenk",
+              "label": "An einer harten Beule außen am Ballen der kleinen Zehe",
               "punkte": {
                 "schneiderballen": 2
               }
             },
             {
-              "label": "Geröteter, druckschmerzhafter Schleimbeutel außen",
+              "label": "Außen am Ballen der kleinen Zehe, die Stelle ist gerötet und tut bei Druck weh",
               "punkte": {
                 "bunionette_bursitis": 2
               }
             },
             {
-              "label": "Schmerz unter dem Vorfuß außen beim Gehen",
+              "label": "Unter dem Ballen außen, beim Gehen",
               "punkte": {
                 "metatarsalgie": 1
               }
             },
             {
-              "label": "Schmerz eher am Knochen weiter hinten (Außenkante)",
+              "label": "Weiter hinten am äußeren Fußrand, dort wo man einen Knochen tastet",
               "punkte": {
                 "jones_fraktur": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend, Vorsprung wurde langsam größer",
+              "label": "Langsam, die Beule ist nach und nach größer geworden",
               "punkte": {
                 "schneiderballen": 2
               }
             },
             {
-              "label": "Nach viel Druck im Schuh, Hautrötung außen",
+              "label": "Nach viel Druck im Schuh, die Haut außen ist gerötet",
               "punkte": {
                 "bunionette_bursitis": 2
               }
             },
             {
-              "label": "Nach Belastung / Umknicken, plötzlicher Schmerz",
+              "label": "Plötzlich, nach Belastung oder Umknicken",
               "punkte": {
                 "jones_fraktur": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "lateral_spezifisch",
-          "frage": "Schmerz am äußeren Fußstrahl (laterale Ansicht)?",
+          "frage": "Trifft eine dieser Beschreibungen zu?",
           "multi": true,
           "ansichten": [
             "aussen"
           ],
           "antworten": [
             {
-              "label": "Diffuser Belastungsschmerz am ganzen äußeren Fußstrahl bei viel Gehen/Stehen",
+              "label": "Der ganze äußere Fußrand tut bei viel Gehen oder Stehen weh, ohne bestimmte Stelle",
               "punkte": {
                 "laterale_ueberlastung": 2
               }
             },
             {
-              "label": "Brennen/Kribbeln am äußeren Fußrand",
+              "label": "Es brennt oder kribbelt am äußeren Fußrand",
               "punkte": {
                 "n_suralis_kompression": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -3289,29 +3444,29 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wo genau sitzt das Problem?",
+          "frage": "Wo genau an der Großzehe sitzt das Problem?",
           "multi": true,
           "antworten": [
             {
-              "label": "Im Endgelenk der Großzehe (zwischen Nagel und Grundgelenk)",
+              "label": "Im Gelenk in der Mitte der Großzehe, zwischen Nagel und Ballen",
               "punkte": {
                 "ip_arthrose_d1": 2
               }
             },
             {
-              "label": "Unter dem Nagel, dunkle Verfärbung",
+              "label": "Unter dem Nagel, der Nagel ist dunkel verfärbt",
               "punkte": {
                 "subunguales_haematom_d1": 2
               }
             },
             {
-              "label": "Am seitlichen Nagelrand, gerötet / entzündet",
+              "label": "Am seitlichen Nagelrand, die Haut dort ist gerötet oder entzündet",
               "punkte": {
                 "unguis_incarnatus_d1": 2
               }
             },
             {
-              "label": "Das Endgelenk wurde heiß und rot",
+              "label": "Das Gelenk in der Mitte der Großzehe wurde heiß und rot",
               "punkte": {
                 "gichtanfall": 1
               }
@@ -3320,20 +3475,24 @@
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Monate, Gelenk wird steifer",
+              "label": "Langsam über Monate, das Gelenk wird steifer",
               "punkte": {
                 "ip_arthrose_d1": 2
               }
             },
             {
-              "label": "Nagelrand schmerzt zunehmend, evtl. Eiter",
+              "label": "Der Nagelrand tut immer mehr weh, vielleicht mit Eiter",
               "punkte": {
                 "unguis_incarnatus_d1": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -3348,18 +3507,18 @@
       "fragen": [
         {
           "id": "lokalisation",
-          "frage": "Wie äußert sich der Schmerz?",
+          "frage": "Wie äußert sich der Schmerz oben am Großzehenballen?",
           "multi": true,
           "antworten": [
             {
-              "label": "Schmerz oben auf dem Gelenk beim Abrollen / Hochziehen der Zehe",
+              "label": "Schmerz oben auf dem Gelenk beim Abrollen oder wenn ich die Zehe nach oben ziehe",
               "punkte": {
                 "hallux_rigidus": 2,
                 "hallux_limitus": 2
               }
             },
             {
-              "label": "Spürbarer Höcker / Knochenvorsprung oben am Gelenk",
+              "label": "Oben auf dem Gelenk ist eine harte Beule zu tasten",
               "punkte": {
                 "hallux_rigidus": 2
               }
@@ -3371,32 +3530,36 @@
               }
             },
             {
-              "label": "Großzehe weicht zusätzlich nach außen ab",
+              "label": "Die Großzehe steht außerdem schräg zu den anderen Zehen hin",
               "punkte": {
                 "hallux_valgus": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beweglichkeit",
-          "frage": "Wie ist die Beweglichkeit der Großzehe?",
+          "frage": "Können Sie die Großzehe mit der Hand nach oben biegen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Hochziehen ist deutlich eingeschränkt und schmerzhaft",
+              "label": "Nur wenig, und es tut dabei deutlich weh",
               "punkte": {
                 "hallux_rigidus": 2
               }
             },
             {
-              "label": "Nur endgradig eingeschränkt, beginnt gerade",
+              "label": "Fast ganz, nur am Ende der Bewegung stößt es an",
               "punkte": {
                 "hallux_limitus": 2
               }
             },
             {
-              "label": "Beweglichkeit normal",
+              "label": "Ja, ganz normal",
               "punkte": {}
             }
           ]
@@ -3407,19 +3570,19 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Brennen/Kribbeln/Taubheit im 1. Zehenzwischenraum statt dumpfem Schmerz",
+              "label": "Brennen, Kribbeln oder Taubheit in der Lücke zwischen Großzehe und zweiter Zehe",
               "punkte": {
                 "n_peroneus_prof_kompression": 2
               }
             },
             {
-              "label": "Brennender/elektrisierender Schmerz an der Innenseite, oft nach Druck",
+              "label": "Brennend oder wie ein Stromschlag an der Innenseite, oft nach Druck",
               "punkte": {
                 "joplin_neurom": 2
               }
             },
             {
-              "label": "Eher dumpfer/belastungsabhängiger Schmerz (kein Brennen/Kribbeln)",
+              "label": "Eher dumpf oder drückend, ohne Brennen oder Kribbeln",
               "punkte": {}
             }
           ]
@@ -3436,11 +3599,11 @@
       "fragen": [
         {
           "id": "zeitpunkt",
-          "frage": "Wann tut es weh?",
+          "frage": "Wann tut es unter dem Großzehenballen weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Beim Abrollen / im Zehenstand",
+              "label": "Beim Abrollen oder auf den Zehenspitzen",
               "punkte": {
                 "sesamoiditis": 2,
                 "sesamoidopathie": 1,
@@ -3448,27 +3611,31 @@
               }
             },
             {
-              "label": "Auch in Ruhe / nachts",
+              "label": "Auch in Ruhe oder nachts",
               "punkte": {
                 "sesambein_stressfraktur": 2
               }
             },
             {
-              "label": "Nur auf harten Böden / in dünnen Schuhen",
+              "label": "Nur auf hartem Boden oder in dünnen Schuhen",
               "punkte": {
                 "sesamoiditis": 1,
                 "sesamoidopathie": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beginn",
-          "frage": "Wie hat es begonnen?",
-          "multi": true,
+          "frage": "Wie haben die Beschwerden begonnen?",
+          "multi": false,
           "antworten": [
             {
-              "label": "Schleichend über Wochen",
+              "label": "Langsam über Wochen",
               "punkte": {
                 "sesamoiditis": 2,
                 "sesamoidopathie": 1,
@@ -3476,10 +3643,14 @@
               }
             },
             {
-              "label": "Nach Sprung/Aufprall oder vielem Laufen",
+              "label": "Nach einem Sprung, Aufprall oder sehr viel Laufen",
               "punkte": {
                 "sesambein_stressfraktur": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -3499,19 +3670,19 @@
           "multi": true,
           "antworten": [
             {
-              "label": "Erste Schritte morgens / nach dem Sitzen",
+              "label": "Bei den ersten Schritten morgens oder nach dem Sitzen",
               "punkte": {
                 "plantarfasziitis": 2
               }
             },
             {
-              "label": "Nach langem Stehen/Gehen",
+              "label": "Nach langem Stehen oder Gehen",
               "punkte": {
                 "plantarfasziitis": 1
               }
             },
             {
-              "label": "Gleichbleibend den ganzen Tag",
+              "label": "Den ganzen Tag gleich",
               "punkte": {}
             }
           ]
@@ -3522,16 +3693,20 @@
           "multi": true,
           "antworten": [
             {
-              "label": "Vorne an der Ferse, wo die Fußsohle beginnt",
+              "label": "Vorne an der Ferse, dort wo die Fußsohle beginnt",
               "punkte": {
                 "plantarfasziitis": 2
               }
             },
             {
-              "label": "In der ganzen Fußsohle ziehend",
+              "label": "Ziehend durch die ganze Fußsohle",
               "punkte": {
                 "plantarfasziitis": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         }
@@ -3552,7 +3727,7 @@
           "multi": false,
           "antworten": [
             {
-              "label": "Kind / Jugendlich (etwa 8–16 Jahre)",
+              "label": "Kind oder Jugendlicher, etwa 8 bis 16 Jahre",
               "punkte": {
                 "morbus_sever": 2
               }
@@ -3568,73 +3743,85 @@
         },
         {
           "id": "charakter",
-          "frage": "Wann und wie tut es weh?",
+          "frage": "Wann und wie tut es unter der Ferse weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Beim Auftreten auf harten Böden, wie auf einem Stein",
+              "label": "Beim Auftreten auf hartem Boden, wie auf einem Stein",
               "punkte": {
                 "fettkoerperatrophie_ferse": 2
               }
             },
             {
-              "label": "Auch in Ruhe / Dauerschmerz nach Belastung",
+              "label": "Auch in Ruhe, oder als Dauerschmerz nach Belastung",
               "punkte": {
                 "stressfraktur_calcaneus": 2
               }
             },
             {
-              "label": "Beim Sport/Springen, bessert sich in Ruhe",
+              "label": "Beim Sport oder Springen, in Ruhe wird es besser",
               "punkte": {
                 "morbus_sever": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beginn",
-          "frage": "Wie hat es begonnen?",
-          "multi": true,
+          "frage": "Wie haben die Beschwerden begonnen?",
+          "multi": false,
           "antworten": [
             {
-              "label": "Schleichend, mit zunehmendem Alter/Gewicht",
+              "label": "Langsam, mit den Jahren oder mit mehr Gewicht",
               "punkte": {
                 "fettkoerperatrophie_ferse": 2
               }
             },
             {
-              "label": "Nach viel Laufen/Training",
+              "label": "Nach viel Laufen oder Training",
               "punkte": {
                 "stressfraktur_calcaneus": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "lateral_spezifisch",
-          "frage": "Schmerz am äußeren Fuß (laterale Ansicht)?",
+          "frage": "Trifft eine dieser Beschreibungen zu?",
           "multi": true,
           "ansichten": [
             "aussen"
           ],
           "antworten": [
             {
-              "label": "Druckschmerz am äußeren Mittelfuß / Würfelbein",
+              "label": "Eine kleine Stelle am äußeren Fußrand, in der Mitte des Fußes, tut bei Druck weh",
               "punkte": {
                 "pops_syndrom": 2
               }
             },
             {
-              "label": "Diffuser Belastungsschmerz am äußeren Fußrand",
+              "label": "Der ganze äußere Fußrand tut bei viel Gehen oder Stehen weh",
               "punkte": {
                 "laterale_ueberlastung": 2
               }
             },
             {
-              "label": "Brennen/Kribbeln am äußeren Rückfuß",
+              "label": "Es brennt oder kribbelt außen an der Ferse",
               "punkte": {
                 "n_suralis_kompression": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         }
@@ -3650,49 +3837,53 @@
       "fragen": [
         {
           "id": "charakter",
-          "frage": "Wann und wie tut es weh?",
+          "frage": "Wann und wie tut es am inneren Fußrand weh?",
           "multi": true,
           "antworten": [
             {
-              "label": "Beim Gehen/Stehen, das innere Längsgewölbe sackt ein",
+              "label": "Beim Gehen und Stehen, der Fuß wird dabei an der Innenseite immer flacher",
               "punkte": {
                 "tibialis_post_beschwerden": 2,
                 "os_tibiale_externum": 1
               }
             },
             {
-              "label": "Druckschmerz an einem tastbaren Knöchelchen am inneren Fußrand",
+              "label": "An einer kleinen Beule am inneren Fußrand, die bei Druck weh tut",
               "punkte": {
                 "os_tibiale_externum": 2
               }
             },
             {
-              "label": "Beim Abrollen / Großzehe beugen, hinter dem Innenknöchel",
+              "label": "Beim Abrollen oder beim Beugen der Großzehe, der Schmerz sitzt hinter dem Innenknöchel",
               "punkte": {
                 "fhl_stenose": 2
               }
             },
             {
-              "label": "Gefühl der Steife, diffuser tiefer Schmerz, ggf. hartnäckiger Knick-Senkfuß",
+              "label": "Der Fuß fühlt sich steif an, der Schmerz sitzt tief und ist schwer zu zeigen",
               "punkte": {
                 "tc_coalitio": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beginn",
           "frage": "Seit wann bestehen die Beschwerden?",
-          "multi": true,
+          "multi": false,
           "antworten": [
             {
-              "label": "Schleichend im Erwachsenenalter",
+              "label": "Langsam gekommen, im Erwachsenenalter",
               "punkte": {
                 "tibialis_post_beschwerden": 2
               }
             },
             {
-              "label": "Schon immer / seit Kindheit oder Jugend",
+              "label": "Schon immer, seit der Kindheit oder Jugend",
               "punkte": {
                 "tc_coalitio": 2,
                 "os_tibiale_externum": 1
@@ -3712,56 +3903,60 @@
       "fragen": [
         {
           "id": "charakter",
-          "frage": "Wie fühlt sich der Schmerz an?",
+          "frage": "Wie fühlt sich der Schmerz an der Innenseite der Ferse an?",
           "multi": true,
           "antworten": [
             {
-              "label": "Tiefer Schmerz im Rückfuß beim Gehen auf unebenem Boden / bei Drehbewegungen",
+              "label": "Tief in der Ferse, beim Gehen auf unebenem Boden oder beim Drehen des Fußes",
               "punkte": {
                 "subtalare_arthrose": 2
               }
             },
             {
-              "label": "Gefühl der Steife, hartnäckiger Knick-Senkfuß, diffuser tiefer Schmerz",
+              "label": "Der Fuß fühlt sich steif an, der Schmerz sitzt tief und ist schwer zu zeigen",
               "punkte": {
                 "tc_coalitio": 2
               }
             },
             {
-              "label": "Brennen/Kribbeln an der inneren Ferse, ausstrahlend",
+              "label": "Brennen oder Kribbeln an der Innenseite der Ferse, das ausstrahlt",
               "punkte": {
                 "baxter_neuropathie": 2
               }
             },
             {
-              "label": "Dumpfer Dauerschmerz, auch nachts / in Ruhe",
+              "label": "Dumpfer Dauerschmerz, auch nachts oder in Ruhe",
               "punkte": {
                 "kalkaneuszyste": 2,
                 "stressfraktur_calcaneus": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "beginn",
-          "frage": "Wie hat es begonnen?",
-          "multi": true,
+          "frage": "Wie haben die Beschwerden begonnen?",
+          "multi": false,
           "antworten": [
             {
-              "label": "Nach viel Laufen/Training, belastungsabhängig",
+              "label": "Nach viel Laufen oder Training, bei Belastung schlimmer",
               "punkte": {
                 "stressfraktur_calcaneus": 2
               }
             },
             {
-              "label": "Schleichend über Monate/Jahre",
+              "label": "Langsam über Monate oder Jahre",
               "punkte": {
                 "subtalare_arthrose": 2,
                 "kalkaneuszyste": 1
               }
             },
             {
-              "label": "Schon seit Kindheit/Jugend",
+              "label": "Schon seit der Kindheit oder Jugend",
               "punkte": {
                 "tc_coalitio": 2
               }
@@ -3783,20 +3978,20 @@
           "multi": true,
           "antworten": [
             {
-              "label": "Knapp oberhalb des Sprunggelenks, zwischen Schien- und Wadenbein",
+              "label": "Knapp oberhalb des Sprunggelenks, zwischen den beiden Knöcheln",
               "punkte": {
                 "syndesmosen_verletzung": 2
               }
             },
             {
-              "label": "Am Schienbein, handbreit oberhalb des Knöchels",
+              "label": "Vorne am Schienbein, etwa eine Handbreit oberhalb des Knöchels",
               "punkte": {
                 "shin_splints": 2,
                 "tibia_stressfraktur": 1
               }
             },
             {
-              "label": "Vorn im Sprunggelenk, beim Anheben des Fußes",
+              "label": "Vorne im Sprunggelenk, wenn ich den Fuß nach oben ziehe",
               "punkte": {
                 "anteriores_impingement": 1,
                 "talus_sporn_anterior": 1,
@@ -3804,13 +3999,13 @@
               }
             },
             {
-              "label": "Direkt am Außenknöchel / an den Bändern",
+              "label": "Direkt am Außenknöchel",
               "punkte": {
                 "chron_sg_instabilitaet": 1
               }
             },
             {
-              "label": "Unter dem Außenknöchel (Mulde)",
+              "label": "Direkt unterhalb des Außenknöchels",
               "punkte": {
                 "sinus_tarsi_syndrom": 2
               }
@@ -3821,72 +4016,80 @@
                 "ocl": 1,
                 "synovitis_osg": 1
               }
+            },
+            {
+              "label": "Kann ich nicht genauer sagen",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "verlauf",
-          "frage": "Wie hat es begonnen?",
+          "frage": "Wie haben die Beschwerden begonnen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Nach Verdrehen mit Auswärtsdrehung, hält ungewöhnlich lange an",
+              "label": "Nach einer Verdrehung des Fußes nach außen, und es dauert ungewöhnlich lange",
               "punkte": {
                 "syndesmosen_verletzung": 2
               }
             },
             {
-              "label": "Schleichend nach viel Lauftraining auf hartem Boden",
+              "label": "Langsam, nach viel Lauftraining auf hartem Boden",
               "punkte": {
                 "shin_splints": 2
               }
             },
             {
-              "label": "Punktueller, zunehmender Belastungsschmerz am Knochen, auch in Ruhe",
+              "label": "Eine kleine Stelle am Schienbein tut bei Belastung immer mehr weh, auch in Ruhe",
               "punkte": {
                 "tibia_stressfraktur": 2
               }
             },
             {
-              "label": "Mehrmaliges Umknicken, Fuß kippt weiter",
+              "label": "Ich bin mehrmals umgeknickt, der Fuß kippt immer wieder weg",
               "punkte": {
                 "chron_sg_instabilitaet": 2,
                 "sinus_tarsi_syndrom": 1
               }
             },
             {
-              "label": "Schleichend über Monate/Jahre",
+              "label": "Langsam über Monate oder Jahre",
               "punkte": {
                 "osg_arthrose": 2
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "schmerzverhalten",
-          "frage": "Wann und wie schmerzt es?",
+          "frage": "Wann und wie tut es weh?",
           "multi": false,
           "antworten": [
             {
-              "label": "Beim Abdrücken/Treppensteigen, Instabilitätsgefühl oben am Gelenk",
+              "label": "Beim Abstoßen oder Treppensteigen, das Gelenk fühlt sich oben wackelig an",
               "punkte": {
                 "syndesmosen_verletzung": 1
               }
             },
             {
-              "label": "Bessert sich nach dem Aufwärmen, kehrt nach Belastung zurück",
+              "label": "Nach dem Aufwärmen besser, nach der Belastung wieder da",
               "punkte": {
                 "shin_splints": 1
               }
             },
             {
-              "label": "Nacht-/Ruheschmerz, punktueller Klopfschmerz",
+              "label": "Nachts oder in Ruhe, und eine kleine Stelle tut beim Klopfen weh",
               "punkte": {
                 "tibia_stressfraktur": 1
               }
             },
             {
-              "label": "Eingeklemmt-Gefühl vorne bei tiefer Beugung/Hocke",
+              "label": "Vorne wie eingeklemmt, wenn ich tief in die Hocke gehe",
               "punkte": {
                 "anteriores_impingement": 1,
                 "talus_sporn_anterior": 1
@@ -3898,23 +4101,27 @@
                 "sinus_tarsi_syndrom": 1,
                 "chron_sg_instabilitaet": 1
               }
+            },
+            {
+              "label": "Nichts davon trifft zu",
+              "punkte": {}
             }
           ]
         },
         {
           "id": "anlauf",
-          "frage": "Anlaufschmerz oder Steifigkeit?",
+          "frage": "Ist das Gelenk morgens oder nach Ruhe steif oder schmerzhaft?",
           "multi": false,
           "antworten": [
             {
-              "label": "Ja, morgens / nach Ruhe",
+              "label": "Ja, morgens oder nach Ruhe",
               "punkte": {
                 "osg_arthrose": 1,
                 "synovitis_osg": 1
               }
             },
             {
-              "label": "Fuß lässt sich kaum nach oben ziehen",
+              "label": "Ich kann den Fuß kaum nach oben ziehen",
               "punkte": {
                 "osg_arthrose": 2,
                 "anteriores_impingement": 1
@@ -3928,18 +4135,18 @@
         },
         {
           "id": "schwellung",
-          "frage": "Sichtbare Schwellung?",
+          "frage": "Ist das Sprunggelenk sichtbar geschwollen?",
           "multi": false,
           "antworten": [
             {
-              "label": "Regelmäßig",
+              "label": "Ja, regelmäßig",
               "punkte": {
                 "synovitis_osg": 2,
                 "osg_arthrose": 1
               }
             },
             {
-              "label": "Manchmal nach Belastung",
+              "label": "Manchmal, nach Belastung",
               "punkte": {
                 "ocl": 1,
                 "anteriores_impingement": 1
@@ -3953,11 +4160,11 @@
         },
         {
           "id": "verletzung",
-          "frage": "Frühere Verletzung am Sprunggelenk?",
+          "frage": "Hatten Sie früher eine Verletzung an diesem Sprunggelenk?",
           "multi": false,
           "antworten": [
             {
-              "label": "Umknicken oder Bruch",
+              "label": "Ja, ich bin umgeknickt oder hatte einen Knochenbruch",
               "punkte": {
                 "ocl": 1,
                 "osg_arthrose": 1,
