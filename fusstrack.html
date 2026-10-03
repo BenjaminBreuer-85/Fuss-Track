@@ -3781,17 +3781,6 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
     );
   }
 
-  function renderPlatzhalter(text) {
-    return (
-      <div style={{ padding: 40, textAlign: "center", background: "#F9FAFB", borderRadius: 8, color: "#6B7280", fontSize: 14 }}>
-                <div>{text}</div>
-        <div style={{ fontSize: 12, marginTop: 8, color: "#9CA3AF" }}>
-          Tippen Sie nochmal auf den Tab „Von oben", um Regionen auszuwählen.
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       {ansicht === "oben"   && renderOben()}
@@ -3800,6 +3789,32 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
       {ansicht === "aussen" && renderAussen()}
       {ansicht === "osg"    && renderOsg()}
     </div>
+  );
+}
+
+// Wohin sich der Patient wenden kann — gleicher Wortlaut im Akut-Zweig und
+// beim Sonderfall mit schwere: "akut".
+const FINDER_MERKER = "fusstrack_finder";
+function WohinWenden() {
+  return (
+    <React.Fragment>
+      <p style={{ marginTop: 12, fontWeight: 600 }}>Wohin Sie sich wenden können:</p>
+      <ul style={{ marginTop: 8, paddingLeft: 18, lineHeight: 1.6 }}>
+        <li>
+          <strong>Ärztlicher Bereitschaftsdienst der KV:</strong>{" "}
+          <a href="tel:116117" style={{ color: "var(--c-main)", fontWeight: 700 }}>116&nbsp;117</a>
+          {" "}— außerhalb der Sprechzeiten, bundesweit, kostenfrei
+        </li>
+        <li>
+          <strong>Nächstgelegene Notaufnahme</strong> oder unfallchirurgische Akutsprechstunde —
+          insbesondere wenn Sie nicht auftreten können oder eine starke Schwellung besteht
+        </li>
+        <li>
+          <strong>Im Notfall (Lebensgefahr, starke Blutung, offene Wunde):</strong>{" "}
+          <a href="tel:112" style={{ color: "var(--c-main)", fontWeight: 700 }}>112</a>
+        </li>
+      </ul>
+    </React.Fragment>
   );
 }
 
@@ -3818,29 +3833,51 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
  * angezeigt (z.B. Gicht-Bypass bei Großzehe-„plötzlich heiß/rot").
  * ============================================================ */
 function FinderView() {
-  const [step, setStep] = useState("akut");
+  // Liegt ein frisches Ergebnis in der Sitzung, startet der Wegweiser dort —
+  // so landet „‹ Zurück" aus einem Artikel wieder auf der Ergebnisseite.
+  const gemerkt = (function(){
+    try {
+      const roh = sessionStorage.getItem(FINDER_MERKER);
+      if (!roh) return null;
+      const z = JSON.parse(roh);
+      if (!z || !z.zeit || (Date.now() - z.zeit) > 30 * 60 * 1000) return null;
+      return z;
+    } catch (e) { return null; }
+  })();
+  const [step, setStep] = useState(gemerkt ? "ergebnis" : "akut");
   const [akutWarnung, setAkutWarnung] = useState(false); // ja-Antwort gewählt
-  const [selectedRegions, setSelectedRegions] = useState([]);
+  const [selectedRegions, setSelectedRegions] = useState((gemerkt && gemerkt.selectedRegions) || []);
   // answers Struktur: { regionId: { fragenId: [antwortIndex, ...] } }
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState((gemerkt && gemerkt.answers) || {});
   const [currentRegionIdx, setCurrentRegionIdx] = useState(0); // welche der gewählten Regionen wird gerade befragt
   const [currentFrageIdx, setCurrentFrageIdx] = useState(0);
   const [triggeredSonderfall, setTriggeredSonderfall] = useState(null); // { regionId, trigger }
   const [ansicht, setAnsicht] = useState("oben"); // Aktive SVG-Ansicht im Region-Schritt
-  const [selectionAnsicht, setSelectionAnsicht] = useState("oben"); // Ansicht, aus der die Region gewählt wurde
+  const [selectionAnsicht, setSelectionAnsicht] = useState((gemerkt && gemerkt.selectionAnsicht) || "oben"); // Ansicht, aus der die Region gewählt wurde
+
+  // Verlauf: Startzustand setzen und auf Browser-Zurück hören.
+  useEffect(function() {
+    try { window.history.replaceState({ finder: { step: step, currentRegionIdx: 0, currentFrageIdx: 0 } }, ""); } catch (e) {}
+    function aufPop(ev) {
+      const z = ev.state && ev.state.finder;
+      if (!z) return;   // ausserhalb des Wegweisers: Browser macht seine Arbeit
+      setTriggeredSonderfall(null);
+      setStep(z.step);
+      setCurrentRegionIdx(z.currentRegionIdx || 0);
+      setCurrentFrageIdx(z.currentFrageIdx || 0);
+    }
+    window.addEventListener("popstate", aufPop);
+    return function() { window.removeEventListener("popstate", aufPop); };
+  }, []);
 
   function getRegion(regionId) {
     return KATALOG && KATALOG.regionen.find(function(r) { return r.id === regionId; });
   }
-  // Fragen einer Region, gefiltert nach der Ansicht, aus der sie gewählt wurde.
-  // Fragen ohne ansichten-Feld gelten für alle Ansichten; Fragen mit Feld nur,
-  // wenn die Auswahl-Ansicht enthalten ist (ansichts-abhängige Diagnosen).
+  // Alle Fragen der Region. Das Feld ansichten wird seit 03.10.2026 nicht mehr
+  // ausgewertet: Wer dieselbe Stelle aus einer anderen Ansicht antippt, kam
+  // sonst nie zu den dort hinterlegten Krankheitsbildern.
   function getFragen(region) {
-    if (!region || !region.fragen) return [];
-    return region.fragen.filter(function(f) {
-      if (!f.ansichten || !f.ansichten.length) return true;
-      return f.ansichten.indexOf(selectionAnsicht) >= 0;
-    });
+    return (region && region.fragen) || [];
   }
   function getKb(kbId) {
     return KATALOG && KATALOG.kb_universum.find(function(kb) { return kb.id === kbId; });
@@ -3849,8 +3886,34 @@ function FinderView() {
     return (KATALOG && KATALOG.haeufigkeits_bonus[haeufigkeit]) || 0;
   }
 
+  // ===== Verlauf und Merker =====
+  // Jeder Schritt und jede Frage bekommt einen Verlaufseintrag; damit tun
+  // Browser-Zurück, Wischgeste und „‹ Zurück" in der Leiste dasselbe wie der
+  // Knopf „Zurück" in der Karte.
+  function verlaufSchreiben(z) {
+    try { window.history.pushState({ finder: z }, ""); } catch (e) {}
+  }
+  function ergebnisMerken(z) {
+    try { sessionStorage.setItem(FINDER_MERKER, JSON.stringify(z)); } catch (e) {}
+  }
+  function ergebnisVergessen() {
+    try { sessionStorage.removeItem(FINDER_MERKER); } catch (e) {}
+  }
+  // Gemerktes Ergebnis (30 Minuten), damit der Weg zurück aus einem Artikel
+  // wieder auf der Ergebnisseite landet.
+  function ergebnisGemerkt() {
+    try {
+      const roh = sessionStorage.getItem(FINDER_MERKER);
+      if (!roh) return null;
+      const z = JSON.parse(roh);
+      if (!z || !z.zeit || (Date.now() - z.zeit) > 30 * 60 * 1000) return null;
+      return z;
+    } catch (e) { return null; }
+  }
+
   // ===== Reset =====
   function resetFinder() {
+    ergebnisVergessen();
     setStep("akut");
     setAkutWarnung(false);
     setSelectedRegions([]);
@@ -3859,6 +3922,7 @@ function FinderView() {
     setCurrentFrageIdx(0);
     setTriggeredSonderfall(null);
     setAnsicht("oben");
+    verlaufSchreiben({ step: "akut", currentRegionIdx: 0, currentFrageIdx: 0 });
   }
 
   // ===== Step "akut": Akut-Bypass =====
@@ -3882,6 +3946,7 @@ function FinderView() {
                         setAkutWarnung(true);
                       } else {
                         setStep("regionen");
+                        verlaufSchreiben({ step: "regionen", currentRegionIdx: 0, currentFrageIdx: 0 });
                       }
                     }}
                   >
@@ -3901,22 +3966,7 @@ function FinderView() {
                 Untersuchung und ggf. ein Röntgenbild sind erforderlich, um z.&nbsp;B. einen Bruch
                 auszuschließen.
               </p>
-              <p style={{ marginTop: 12, fontWeight: 600 }}>Wohin Sie sich wenden können:</p>
-              <ul style={{ marginTop: 8, paddingLeft: 18, lineHeight: 1.6 }}>
-                <li>
-                  <strong>Ärztlicher Bereitschaftsdienst der KV:</strong>{" "}
-                  <a href="tel:116117" style={{ color: "var(--c-main)", fontWeight: 700 }}>116&nbsp;117</a>
-                  {" "}— außerhalb der Sprechzeiten, bundesweit, kostenfrei
-                </li>
-                <li>
-                  <strong>Nächstgelegene Notaufnahme</strong> oder unfallchirurgische Akutsprechstunde —
-                  insbesondere wenn Sie nicht auftreten können oder eine starke Schwellung besteht
-                </li>
-                <li>
-                  <strong>Im Notfall (Lebensgefahr, starke Blutung, offene Wunde):</strong>{" "}
-                  <a href="tel:112" style={{ color: "var(--c-main)", fontWeight: 700 }}>112</a>
-                </li>
-              </ul>
+              <WohinWenden />
               <p style={{ marginTop: 12, fontSize: 13, color: "var(--c-text-muted)" }}>
                 Der Beschwerde-Wegweiser ist ausschließlich für länger bestehende, schleichend entstandene
                 Beschwerden gedacht — nicht für frische Verletzungen.
@@ -4003,13 +4053,6 @@ function FinderView() {
             </div>
           </div>
 
-          {/* Hinweis bei leerer Ansicht */}
-          {ansicht === "oben" && regionenInAnsicht.length === 0 && (
-            <p style={{ fontSize: 13, color: "var(--c-text-muted)", marginTop: 12 }}>
-              Keine Regionen in dieser Ansicht.
-            </p>
-          )}
-
           {/* Auswahl-Status — bewusst OHNE Region-Namen, damit Patienten nicht nach dem
               vermeintlich passendsten Namen auswählen, sondern nach dem tatsächlichen Schmerzort */}
           {selectedRegions.length > 0 && (
@@ -4023,7 +4066,10 @@ function FinderView() {
           {/* Weiter-Button erscheint direkt nach Markierung einer Region */}
           {selectedRegions.length >= 1 && (
             <div style={{ marginTop: 16, textAlign: "right" }}>
-              <button className="btn btn-primary" onClick={function() { setStep("fragen"); }}>
+              <button className="btn btn-primary" onClick={function() {
+                setStep("fragen");
+                verlaufSchreiben({ step: "fragen", currentRegionIdx: 0, currentFrageIdx: 0 });
+              }}>
                 Weiter mit Fragen →
               </button>
             </div>
@@ -4043,14 +4089,9 @@ function FinderView() {
     const isMulti = frage.multi === true;
     const regionAnswers = (answers[region.id] || {})[frage.id] || [];
 
-    const totalFragen = selectedRegions.reduce(function(sum, rid) { return sum + getFragen(getRegion(rid)).length; }, 0);
-    const aktuelle = (function() {
-      var n = 0;
-      for (var i = 0; i < currentRegionIdx; i++) {
-        n += getFragen(getRegion(selectedRegions[i])).length;
-      }
-      return n + currentFrageIdx + 1;
-    })();
+    // Es wird genau eine Region befragt (Einzelauswahl seit 2026).
+    const totalFragen = fragen.length;
+    const aktuelle = currentFrageIdx + 1;
 
     function toggleAntwort(antwortIdx) {
       setAnswers(function(prev) {
@@ -4090,16 +4131,24 @@ function FinderView() {
       setTriggeredSonderfall(null);
       if (currentFrageIdx + 1 < fragen.length) {
         setCurrentFrageIdx(currentFrageIdx + 1);
+        verlaufSchreiben({ step: "fragen", currentRegionIdx: currentRegionIdx, currentFrageIdx: currentFrageIdx + 1 });
       } else if (currentRegionIdx + 1 < selectedRegions.length) {
         setCurrentRegionIdx(currentRegionIdx + 1);
         setCurrentFrageIdx(0);
+        verlaufSchreiben({ step: "fragen", currentRegionIdx: currentRegionIdx + 1, currentFrageIdx: 0 });
       } else {
         setStep("ergebnis");
+        verlaufSchreiben({ step: "ergebnis", currentRegionIdx: currentRegionIdx, currentFrageIdx: currentFrageIdx });
       }
     }
 
+    // Derselbe Weg wie Browser-Zurück und Wischgeste: ein Verlaufsschritt
+    // zurueck; den Zustand stellt der popstate-Zuhoerer wieder her.
     function back() {
       setTriggeredSonderfall(null);
+      var hatVerlauf = false;
+      try { hatVerlauf = !!(window.history.state && window.history.state.finder); } catch (e) {}
+      if (hatVerlauf) { window.history.back(); return; }
       if (currentFrageIdx > 0) {
         setCurrentFrageIdx(currentFrageIdx - 1);
       } else if (currentRegionIdx > 0) {
@@ -4107,7 +4156,6 @@ function FinderView() {
         const prevRegion = getRegion(selectedRegions[currentRegionIdx - 1]);
         setCurrentFrageIdx(getFragen(prevRegion).length - 1);
       } else {
-        // Zurück zur Region-Auswahl
         setStep("regionen");
       }
     }
@@ -4138,17 +4186,25 @@ function FinderView() {
             })}
           </div>
 
-          {triggeredSonderfall && (
-            <div className="card warning" style={{ marginTop: 16 }}>
-              <strong>{triggeredSonderfall.kb ? "Wichtiger Hinweis: Bitte zeitnah ärztlich abklären lassen" : "Bitte lassen Sie diese Beschwerden umgehend ärztlich abklären"}</strong>
-              <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
-              <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
-                <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>
-                  Verstanden, weiter
-                </button>
+          {triggeredSonderfall && (function() {
+            // schwere: "akut" (Verdacht auf Riss) beendet den Weg — weitere
+            // Fragen und ein Ergebnis waeren hier fehl am Platz.
+            const akut = triggeredSonderfall.trigger && triggeredSonderfall.trigger.schwere === "akut";
+            return (
+              <div className="card warning" style={{ marginTop: 16 }}>
+                <strong>{akut ? "Bitte lassen Sie diese Beschwerden umgehend ärztlich abklären"
+                  : (triggeredSonderfall.kb ? "Wichtiger Hinweis: Bitte zeitnah ärztlich abklären lassen"
+                    : "Bitte lassen Sie diese Beschwerden umgehend ärztlich abklären")}</strong>
+                <p style={{ marginTop: 8 }}>{triggeredSonderfall.trigger.empfehlung}</p>
+                {akut && <WohinWenden />}
+                <div style={{ marginTop: 12, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                  {akut
+                    ? <button className="btn btn-secondary" onClick={resetFinder}>Zum Anfang</button>
+                    : <button className="btn btn-primary" onClick={function() { goToNextFrage(); }}>Verstanden, weiter</button>}
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })()}
 
           {!triggeredSonderfall && (
             <div style={{ marginTop: 20, display: "flex", gap: 8, justifyContent: "space-between" }}>
@@ -4168,8 +4224,12 @@ function FinderView() {
   }
 
   // ===== Step "ergebnis": Top-KBs anzeigen =====
+  // Reine Antwortpunkte je Krankheitsbild, dazu die Zahl der Antworten, die
+  // Punkte gegeben haben. Die Haeufigkeit entscheidet seit 03.10.2026 nur noch
+  // bei Gleichstand (sonst gewann das haeufige Bild fast immer).
   function computeScores() {
-    const scores = {}; // { kbId: punktzahl }
+    const scores = {};   // { kbId: punktzahl }
+    const treffer = {};  // { kbId: Zahl der Antworten mit Punkten }
     selectedRegions.forEach(function(rid) {
       const region = getRegion(rid);
       const regionAnswers = answers[rid] || {};
@@ -4179,24 +4239,31 @@ function FinderView() {
           const punkte = f.antworten[i].punkte || {};
           Object.keys(punkte).forEach(function(kbId) {
             scores[kbId] = (scores[kbId] || 0) + punkte[kbId];
+            treffer[kbId] = (treffer[kbId] || 0) + 1;
           });
         });
       });
     });
-    // Häufigkeits-Bonus addieren (nur für KBs, die mind. 1 Punkt haben)
-    Object.keys(scores).forEach(function(kbId) {
-      const kb = getKb(kbId);
-      if (kb) {
-        scores[kbId] += getHaeufigkeitsBonus(kb.haeufigkeit);
-      }
-    });
-    return scores;
+    return { punkte: scores, treffer: treffer };
+  }
+  // Etikett der Haeufigkeit, einmal fuer alle Karten.
+  function HaeufigkeitsEtikett({ haeufigkeit }) {
+    const txt = haeufigkeit === "haeufig" ? "häufig" : haeufigkeit === "mittel" ? "mittelhäufig" : "selten";
+    return <span style={{ display: "inline-block", fontSize: 11, fontWeight: 700, letterSpacing: .5,
+      textTransform: "uppercase", color: "var(--c-text-muted)", background: "var(--c-bg)",
+      border: "1px solid var(--c-border)", borderRadius: 10, padding: "1px 8px", whiteSpace: "nowrap" }}>{txt}</span>;
   }
 
   function renderErgebnis() {
-    const scores = computeScores();
-    const logic = KATALOG.ergebnis_logik || { top1_min_abstand: 1.5, top2_min_score: 1.0, max_top_eintraege: 3 };
-    // Sortiert nach Score absteigend, Tiebreaker = Häufigkeits-Bonus
+    // Fuer den Rueckweg aus einem Artikel: Auswahl und Antworten merken.
+    ergebnisMerken({ selectedRegions: selectedRegions, selectionAnsicht: selectionAnsicht,
+                     answers: answers, zeit: Date.now() });
+    const roh = computeScores();
+    const scores = roh.punkte;
+    const logic = KATALOG.ergebnis_logik || { top1_min_abstand: 1.5, max_top_eintraege: 3 };
+    const minPunkte = logic.top1_min_score || 2;
+    // Reihenfolge: Punkte, dann Haeufigkeit, dann Zahl der treffenden Antworten,
+    // dann Titel — damit sie nie von der Antwortreihenfolge abhaengt.
     const ranked = Object.keys(scores)
       .map(function(kbId) {
         const kb = getKb(kbId);
@@ -4204,18 +4271,24 @@ function FinderView() {
           kbId: kbId,
           kb: kb,
           score: scores[kbId],
+          treffer: roh.treffer[kbId] || 0,
           haeufBonus: kb ? getHaeufigkeitsBonus(kb.haeufigkeit) : 0
         };
       })
-      .filter(function(e) { return e.kb && e.score > 0; })
+      .filter(function(e) { return e.kb && e.score >= minPunkte; })
       .sort(function(a, b) {
         if (b.score !== a.score) return b.score - a.score;
-        return b.haeufBonus - a.haeufBonus; // Tiebreaker
+        if (b.haeufBonus !== a.haeufBonus) return b.haeufBonus - a.haeufBonus;
+        if (b.treffer !== a.treffer) return b.treffer - a.treffer;
+        return String(a.kb.titel).localeCompare(String(b.kb.titel), "de");
       });
 
     const top = ranked.slice(0, logic.max_top_eintraege || 3);
     const top1 = top[0];
     const top2 = top[1];
+    // Grüne Karte nur bei echtem Vorsprung; bei Gleichstand steht alles
+    // gleichwertig in einer Karte.
+    const hatVorsprung = top1 && (!top2 || top1.score > top2.score);
     const istEindeutig = top1 && (!top2 || (top1.score - top2.score) > (logic.top1_min_abstand || 1.5));
 
     return (
@@ -4226,11 +4299,6 @@ function FinderView() {
             {top.length === 0 ? "Zu Ihren Angaben haben wir kein passendes Thema gefunden" :
              "Diese Themen passen zu Ihren Angaben"}
           </h2>
-          {selectedRegions.length > 1 && (
-            <p style={{ color: "var(--c-text-muted)", fontSize: 13, marginTop: 4 }}>
-              Ihre Angaben betreffen zwei Bereiche — hier finden Sie Informationen zu beiden: <strong>{selectedRegions.map(function(rid) { return getRegion(rid).titel; }).join(" + ")}</strong>
-            </p>
-          )}
         </div>
 
         {top.length === 0 && (
@@ -4239,13 +4307,15 @@ function FinderView() {
           </div>
         )}
 
-        {top1 && (
+        {/* Grüne Karte nur mit echtem Vorsprung; sonst stehen alle Themen
+            gleichwertig in der Sammelkarte darunter. */}
+        {hatVorsprung && top1 && (
           <div className="card success">
-            <div className="card-label">
-              Am besten passendes Thema
-              {" · "}{top1.kb.haeufigkeit === "haeufig" ? "insgesamt häufiges Krankheitsbild" : top1.kb.haeufigkeit === "mittel" ? "insgesamt mittelhäufiges Krankheitsbild" : "insgesamt seltenes Krankheitsbild"}
+            <div className="card-label">Am besten passendes Thema</div>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: 8 }}>
+              <h2 style={{ margin: 0 }}>{top1.kb.titel}</h2>
+              <HaeufigkeitsEtikett haeufigkeit={top1.kb.haeufigkeit} />
             </div>
-            <h2 style={{ marginTop: 0 }}>{top1.kb.titel}</h2>
             <p>{top1.kb.kurz}</p>
             {top1.kb.info_ref && (
               <button className="btn btn-primary" onClick={function() { window.location.href = buildUrl({ op: top1.kb.info_ref, modus: "aufklaerung", nav: "1" }); }}>
@@ -4255,21 +4325,39 @@ function FinderView() {
           </div>
         )}
 
-        {!istEindeutig && top.slice(1).map(function(e) {
+        {/* Alle weiteren Themen (ohne Vorsprung: alle) in einer Karte, je Thema
+            ein Block mit Trennlinie — nicht mehr je Thema eine eigene Karte. */}
+        {(function() {
+          const rest = hatVorsprung ? (istEindeutig ? [] : top.slice(1)) : top;
+          if (!rest.length) return null;
           return (
-            <div key={e.kbId} className="card" style={{ borderLeft: "3px solid #9CA3AF" }}>
-              <div className="card-label">
-                Ebenfalls passende Themen
-                {" · "}{e.kb.haeufigkeit === "haeufig" ? "insgesamt häufiges Krankheitsbild" : e.kb.haeufigkeit === "mittel" ? "insgesamt mittelhäufiges Krankheitsbild" : "insgesamt seltenes Krankheitsbild"}
-              </div>
-              <h3 style={{ marginTop: 0 }}>{e.kb.titel}</h3>
-              <p style={{ marginBottom: e.kb.info_ref ? 10 : 0 }}>{e.kb.kurz}</p>
-              {e.kb.info_ref && (
-                <a href={buildUrl({ op: e.kb.info_ref, modus: "aufklaerung", nav: "1" })} style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", textDecoration: "underline" }}>Mehr zum Krankheitsbild →</a>
-              )}
+            <div className="card" style={{ borderLeft: "3px solid #9CA3AF" }}>
+              <div className="card-label">{hatVorsprung ? "Weitere passende Themen" : "Passende Themen"}</div>
+              {rest.map(function(e, idx) {
+                return (
+                  <div key={e.kbId} style={{ paddingTop: idx === 0 ? 0 : 14, marginTop: idx === 0 ? 0 : 14,
+                    borderTop: idx === 0 ? "none" : "1px solid var(--c-border)" }}>
+                    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: 8 }}>
+                      <span style={{ fontSize: 17, fontWeight: 700, color: "var(--c-main)", minWidth: 0 }}>{e.kb.titel}</span>
+                      <HaeufigkeitsEtikett haeufigkeit={e.kb.haeufigkeit} />
+                    </div>
+                    <p style={{ margin: "6px 0 " + (e.kb.info_ref ? "8px" : "0") }}>{e.kb.kurz}</p>
+                    {e.kb.info_ref && (
+                      <a href={buildUrl({ op: e.kb.info_ref, modus: "aufklaerung", nav: "1" })}
+                         style={{ fontSize: 13, fontWeight: 600, color: "var(--c-main)", textDecoration: "underline" }}>Mehr zum Krankheitsbild →</a>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           );
-        })}
+        })()}
+
+        {top.length > 0 && (
+          <p style={{ fontSize: 13, color: "var(--c-text-muted)", margin: "0 0 12px" }}>
+            Sie können jedes Thema öffnen und mit „‹ Zurück" hierher zurückkehren.
+          </p>
+        )}
 
         <div className="card" style={{ background: "#F0F4F8", borderLeft: "3px solid #6B7280" }}>
           <p style={{ margin: 0, fontSize: 13, color: "var(--c-text-muted)" }}>
@@ -4287,7 +4375,7 @@ function FinderView() {
             <summary style={{ cursor: "pointer" }}>Score-Details (zur Prüfung)</summary>
             <pre style={{ fontSize: 11, background: "#F9FAFB", padding: 8, borderRadius: 4, overflow: "auto" }}>
               {ranked.map(function(e) {
-                return e.kb.titel + ": " + e.score.toFixed(1) + " (Antwort: " + (e.score - e.haeufBonus).toFixed(1) + " + Häufigkeit: " + e.haeufBonus.toFixed(1) + ")";
+                return e.kb.titel + ": Punkte: " + e.score.toFixed(1) + " · Häufigkeit: " + (e.kb.haeufigkeit || "?") + " · Antworten: " + e.treffer;
               }).join("\n")}
             </pre>
           </details>
