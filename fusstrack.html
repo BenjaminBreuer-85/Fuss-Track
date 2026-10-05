@@ -1424,8 +1424,9 @@ function App() {
         <Header showSwitcher={begleitVerfuegbar} switcherTarget="begleit" urlParams={switcherUrlParams} showHauptmenue={IN_APP_NAV} hideSubtitle={true} ohneTitel={true} />
         <FokusRuecksprung ziel={urlParams.fokus} />
         {!IN_APP_NAV && <FokusKopf opKontext={opKontext} />}
+        {!IN_APP_NAV && begleiterUrl && <BegleiterKarte url={begleiterUrl} />}
         <AufklaerungsView opKey={urlParams.op} kbOrigin={urlParams.kb} kbInfoOrigin={kbInfoOrigin} begleiterUrl={begleiterUrl} themaFehlt={themaFehlt} />
-        {!IN_APP_NAV && <FokusFuss opKontext={opKontext} />}
+        {!IN_APP_NAV && <FokusFuss opKontext={opKontext} begleiterUrl={begleiterUrl} />}
         <FooterLinks />
         {!privacyOk && <PrivacyBanner onAccept={acceptPrivacy} />}
       </div>
@@ -3162,11 +3163,40 @@ function FokusKopf({ opKontext }) {
   );
 }
 
+// Begleiter-Karte ganz oben in der Fokus-Ansicht. Wer ueber den QR-Code aus
+// dem Brief kommt, sah den Begleiter bisher nur im schmalen Umschalter oben
+// rechts und am Ende der Slides — beides leicht zu uebersehen. Die Karte steht
+// ueber den Reitern und ist damit von jedem Slide aus durch Hochscrollen
+// erreichbar; bewusst nicht fixiert, damit sie den Text nicht verdeckt.
+function BegleiterKarte({ url }) {
+  return (
+    <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
+      <div style={{ background: "var(--c-main)", borderRadius: 12, padding: "16px 18px", color: "#fff" }}>
+        <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3 }}>
+          Ihr OP-Begleiter: von der Vorbereitung bis zur Nachbehandlung
+        </div>
+        <div style={{ fontSize: 13, lineHeight: 1.55, marginTop: 6, opacity: .95 }}>
+          Fuss-Track begleitet Sie von den Wochen vor der Operation bis zum Ende der Nachbehandlung: was wann ansteht, mit Erinnerungen, Checklisten und Übungen.
+        </div>
+        <a href={url}
+           style={{ display: "inline-block", marginTop: 12, padding: "10px 18px", borderRadius: 8,
+                    background: "#fff", color: "var(--c-main)", fontSize: 14, fontWeight: 700,
+                    textDecoration: "none" }}>
+          Begleiter einrichten →
+        </a>
+        <div style={{ fontSize: 12, lineHeight: 1.55, marginTop: 10, opacity: .9 }}>
+          Lesen Sie zuerst die Information zu Ihrem Eingriff; der Begleiter wartet danach hier und am Ende des Textes.
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Abgesetzter Hinweis am Seitenende auf die vollständige App.
 // Fusshinweis der Fokus-Ansicht. Beim reinen Informationseinstieg fehlte bisher
 // jeder Weg in die App — es blieb nur der Sprung auf die Landingpage. Dort steht
 // deshalb zusaetzlich der Einstieg ins Hauptmenue (?home=1).
-function FokusFuss({ opKontext }) {
+function FokusFuss({ opKontext, begleiterUrl }) {
   return (
     <div style={{ maxWidth: 680, margin: "28px auto 0", padding: "0 16px" }}>
       <div style={{ borderTop: "1px solid var(--c-border, rgba(0,0,0,.1))", paddingTop: 14,
@@ -3176,6 +3206,16 @@ function FokusFuss({ opKontext }) {
             ? "Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern und einen Begleiter für die Zeit nach der Operation."
             : "Fuss-Track bietet darüber hinaus Informationen zu weiteren Krankheitsbildern und zu nicht-operativen Behandlungen."}
         </div>
+        {opKontext && begleiterUrl && (
+          <div style={{ marginBottom: 10 }}>
+            <a href={begleiterUrl}
+               style={{ display: "inline-block", padding: "8px 16px", borderRadius: 8,
+                        background: "var(--c-main)", color: "#fff", fontSize: 13,
+                        fontWeight: 700, textDecoration: "none" }}>
+              Zum OP-Begleiter
+            </a>
+          </div>
+        )}
         {!opKontext && (
           <div style={{ marginBottom: 10 }}>
             <a href={buildUrl({ home: "1" })}
@@ -3505,9 +3545,9 @@ function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl, themaFe
         <a href={begleiterUrl}
            style={{ display: "block", marginTop: 16, padding: "16px 18px", borderRadius: 10,
                     background: "var(--c-main)", color: "#fff", textDecoration: "none", textAlign: "center" }}>
-          <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3 }}>Nachbehandlung Schritt für Schritt — zum Begleiter</div>
+          <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.3 }}>Ihr OP-Begleiter: Vorbereitung und Nachbehandlung</div>
           <div style={{ fontSize: 12.5, opacity: .9, marginTop: 4, lineHeight: 1.45 }}>
-            Was in welcher Woche ansteht, mit Erinnerungen und Übungen.
+            Von den Wochen vor der Operation bis zum Ende der Nachbehandlung, mit Erinnerungen und Übungen.
           </div>
         </a>
       )}
