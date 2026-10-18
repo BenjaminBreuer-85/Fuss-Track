@@ -4482,12 +4482,12 @@ function DatumEingabe({ session, onUpdate }) {
   return (
     <>
       <div className="card">
-        <div className="card-label">Ihr Eingriff (vom Arzt vorausgewählt)</div>
+        <div className="card-label">Ihr Eingriff (nach Ihren Angaben)</div>
         <h2 style={{ marginTop: 0 }}>{variante.anzeigename}</h2>
         {variante.beschreibung !== variante.anzeigename && (
           <p style={{ margin: 0, color: "var(--c-text-muted)", fontSize: 13 }}>{variante.beschreibung}</p>
         )}
-        <div className="preselect-hint">Diese Auswahl wurde von Ihrem Arzt festgelegt</div>
+        <div className="preselect-hint">Grundlage ist das, was Ihr Behandler mit Ihnen besprochen hat. Fragen Sie dort nach, wenn etwas nicht passt.</div>
       </div>
 
       <div className="card">
