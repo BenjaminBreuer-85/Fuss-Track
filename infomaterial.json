@@ -7687,6 +7687,162 @@
      "text": "Alpert M, Duchman K, Johnson A, Jelsing E. Evaluation and management of syndesmotic injuries: a review of the literature. Curr Sports Med Rep. 2026;25(6):174–178. doi:10.1249/JSR.0000000000001344"
     }
    ]
+  },
+  "diabetischer_fuss_kb": {
+   "infoKategorie": "krankheitsbild",
+   "infoTitel": "Diabetisches Fußsyndrom (diabetischer Fuß)",
+   "titel": "Diabetisches Fußsyndrom",
+   "untertitel": "Nervenschädigung, Durchblutung und Druck: warum kleine Wunden gefährlich werden und wie sie sich verhindern lassen",
+   "quellen": [
+    {
+     "id": "df_kb_bus23",
+     "text": "Bus SA, Sacco ICN, Monteiro-Soares M, Raspovic A, Paton J, Rasmussen A, et al. Guidelines on the prevention of foot ulcers in persons with diabetes (IWGDF 2023 update). Diabetes Metab Res Rev. 2023;40(3):e3651. doi:10.1002/dmrr.3651"
+    },
+    {
+     "id": "df_kb_schaper23",
+     "text": "Schaper NC, van Netten JJ, Apelqvist J, Bus SA, Fitridge R, Game F, et al. Practical guidelines on the prevention and management of diabetes-related foot disease (IWGDF 2023 update). Diabetes Metab Res Rev. 2023;40(3):e3657. doi:10.1002/dmrr.3657"
+    },
+    {
+     "id": "df_kb_senneville23",
+     "text": "Senneville É, Albalawi Z, van Asten SA, Abbas ZG, Allison G, Aragón-Sánchez J, et al. IWGDF/IDSA guidelines on the diagnosis and treatment of diabetes-related foot infections (IWGDF/IDSA 2023). Diabetes Metab Res Rev. 2023;40(3):e3687. doi:10.1002/dmrr.3687"
+    },
+    {
+     "id": "df_kb_fitridge23",
+     "text": "Fitridge R, Chuter V, Mills J, Hinchliffe R, Azuma N, Behrendt CA, et al. The intersocietal IWGDF, ESVS, SVS guidelines on peripheral artery disease in people with diabetes and a foot ulcer. Diabetes Metab Res Rev. 2023;40(3):e3686. doi:10.1002/dmrr.3686"
+    },
+    {
+     "id": "df_kb_morbach22",
+     "text": "Morbach S, Eckhard M, Lobmann R, Müller E, Reike H, Risse A, Rümenapf G, Spraul M. Diabetisches Fußsyndrom. DDG-Praxisempfehlung. Diabetologe. 2022;18(3):302–311 (Erstveröffentlichung Diabetol Stoffwechs. 2021;16(Suppl 2):S362–S372). doi:10.1007/s11428-022-00881-w"
+    },
+    {
+     "id": "df_kb_ruemenapf21a",
+     "text": "Rümenapf G, Morbach S, Rother U, Uhl C, Görtz H, Böckler D, et al. Diabetisches Fußsyndrom – Teil 1: Definition, Pathophysiologie, Diagnostik und Klassifikation. Chirurg. 2021;92(1):81–94. doi:10.1007/s00104-020-01301-9"
+    },
+    {
+     "id": "df_kb_ruemenapf21b",
+     "text": "Rümenapf G, Morbach S, Rother U, Uhl C, Görtz H, Böckler D, et al. Diabetisches Fußsyndrom – Teil 2: Revaskularisation, Behandlungsalternativen, Versorgungsstrukturen, Rezidivprophylaxe. Chirurg. 2021;92(2):173–186. doi:10.1007/s00104-020-01313-5"
+    },
+    {
+     "id": "df_kb_eder23",
+     "text": "Eder S. Diabetisches Fußsyndrom: Druckentlastung ist entscheidend! Gefässchirurgie. 2023;28(1):31–36. doi:10.1007/s00772-023-00972-y"
+    },
+    {
+     "id": "df_kb_hartmann18",
+     "text": "Hartmann R, Wirth S. Chirurgische Massnahmen bei therapierefraktärem Ulcus beim diabetischen Fuss. Fuß Sprungg. 2018;16(2):113–117. doi:10.1016/j.fuspru.2018.03.007"
+    },
+    {
+     "id": "df_kb_rosskopf18",
+     "text": "Rosskopf AB, Berli MC. Die Rolle der radiologischen Bildgebung beim Charcot-Fuss. Fuß Sprungg. 2018;16(2):99–108. doi:10.1016/j.fuspru.2018.03.001"
+    },
+    {
+     "id": "df_kb_gba20",
+     "text": "Gemeinsamer Bundesausschuss. Richtlinie zum Zweitmeinungsverfahren: Aufnahme des Eingriffs Amputation beim diabetischen Fußsyndrom (§ 27b SGB V). Beschluss vom 16.04.2020, in Kraft seit Mai 2021"
+    },
+    {
+     "id": "df_kb_jeffcoate24",
+     "text": "Jeffcoate W, Boyko EJ, Game F, Cowled P, Senneville E, Fitridge R. Causes, prevention, and management of diabetes-related foot ulcers. Lancet Diabetes Endocrinol. 2024;12(7):472–482. doi:10.1016/S2213-8587(24)00110-4"
+    },
+    {
+     "id": "df_kb_armstrong17",
+     "text": "Armstrong DG, Boulton AJM, Bus SA. Diabetic foot ulcers and their recurrence. N Engl J Med. 2017;376(24):2367–2375. doi:10.1056/NEJMra1615439"
+    },
+    {
+     "id": "df_kb_armstrong20",
+     "text": "Armstrong DG, Swerdlow MA, Armstrong AA, Conte MS, Padula WV, Bus SA. Five year mortality and direct costs of care for people with diabetic foot complications are comparable to cancer. J Foot Ankle Res. 2020;13(1):16. doi:10.1186/s13047-020-00383-2"
+    },
+    {
+     "id": "df_kb_yammine20",
+     "text": "Yammine K, Hayek F, Assi C. A meta-analysis of mortality after minor amputation among patients with diabetes and/or peripheral vascular disease. J Vasc Surg. 2020;72(6):2197–2207. doi:10.1016/j.jvs.2020.07.086"
+    },
+    {
+     "id": "df_kb_meshkin21",
+     "text": "Meshkin DH, Zolper EG, Chang K, Bryant M, Bekeny JC, Evans KK, Attinger CE, Fan KL. Long-term mortality after nontraumatic major lower extremity amputation: a systematic review and meta-analysis. J Foot Ankle Surg. 2021;60(3):567–576. doi:10.1053/j.jfas.2020.06.027"
+    },
+    {
+     "id": "df_kb_hoffstad15",
+     "text": "Hoffstad O, Mitra N, Walsh J, Margolis DJ. Diabetes, lower-extremity amputation, and death. Diabetes Care. 2015;38(10):1852–1857. doi:10.2337/dc15-0536"
+    },
+    {
+     "id": "df_kb_greenfield25",
+     "text": "Greenfield SH, Samarth GM, McGregor AH, Khan M, Mohamed A, Kanakala S, Shalhoub J. A systematic review and meta-analysis on partial foot amputation in diabetic foot ulcers. J Vasc Surg. 2025;83(3):879–894. doi:10.1016/j.jvs.2025.11.005"
+    },
+    {
+     "id": "df_kb_carollo26",
+     "text": "Carollo M, Ingrasciotta Y, Crisafulli S, Maccarrone F, Pellegrino D, Francescon A, et al. Global epidemiology of diabetic foot: a systematic review and meta-analysis. Diabetes Metab Res Rev. 2026;42(6):e70223. doi:10.1002/dmrr.70223"
+    },
+    {
+     "id": "df_kb_lazaris26",
+     "text": "Lazaris AM, Angeli-Doulami K, Napp AE, Silbernagel G, Ionac M, Doulamis N, et al. Diabetic foot ulcer: a systematic review of risk factors. J Wound Care. 2026;35(3):246–259. doi:10.12968/jowc.2023.0017"
+    },
+    {
+     "id": "df_kb_lin25",
+     "text": "Lin C, Tian J, Zhang Z, Zheng C, Liu J. Risk factors associated with the recurrence of diabetic foot ulcers: a meta-analysis. PLoS One. 2025;20(2):e0318216. doi:10.1371/journal.pone.0318216"
+    },
+    {
+     "id": "df_kb_waaijman14",
+     "text": "Waaijman R, de Haart M, Arts ML, Wever D, Verlouw AJ, Nollet F, Bus SA. Risk factors for plantar foot ulcer recurrence in neuropathic diabetic patients. Diabetes Care. 2014;37(6):1697–1705. doi:10.2337/dc13-2470"
+    },
+    {
+     "id": "df_kb_kroeger17",
+     "text": "Kröger K, Berg C, Santosa F, Malyar N, Reinecke H. Lower limb amputation in Germany. Dtsch Arztebl Int. 2017;114(7):130–136. doi:10.3238/arztebl.2017.0130"
+    },
+    {
+     "id": "df_kb_mezatorres21",
+     "text": "Meza-Torres B, Carinci F, Heiss C, Joy M, de Lusignan S. Health service organisation impact on lower extremity amputations in people with type 2 diabetes with foot ulcers: systematic review and meta-analysis. Acta Diabetol. 2021;58(6):735–747. doi:10.1007/s00592-020-01662-x"
+    },
+    {
+     "id": "df_kb_zhao21",
+     "text": "Zhao N, Xu J, Zhou Q, Li X, Chen J, Zhou J, et al. Application of the Ipswich Touch Test for diabetic peripheral neuropathy screening: a systematic review and meta-analysis. BMJ Open. 2021;11(10):e046966. doi:10.1136/bmjopen-2020-046966"
+    },
+    {
+     "id": "df_kb_lazzarini20",
+     "text": "Lazzarini PA, Jarl G, Gooday C, Viswanathan V, Caravaggi CF, Armstrong DG, Bus SA. Effectiveness of offloading interventions to heal foot ulcers in persons with diabetes: a systematic review. Diabetes Metab Res Rev. 2020;36 Suppl 1:e3275. doi:10.1002/dmrr.3275"
+    },
+    {
+     "id": "df_kb_koonalinthip26",
+     "text": "Koonalinthip P, Koonalintip P, Koonalinthip N. Offloading strategies for diabetic foot ulcers: a systematic review and network meta-analysis of randomized controlled trials. Foot Ankle Surg. 2026. doi:10.1016/j.fas.2026.09.010"
+    },
+    {
+     "id": "df_kb_scott16",
+     "text": "Scott JE, Hendry GJ, Locke J. Effectiveness of percutaneous flexor tenotomies for the management and prevention of recurrence of diabetic toe ulcers: a systematic review. J Foot Ankle Res. 2016;9:25. doi:10.1186/s13047-016-0159-0"
+    },
+    {
+     "id": "df_kb_vannetten23",
+     "text": "van Netten JJ, Raspovic A, Lavery LA, Monteiro-Soares M, Paton J, Rasmussen A, et al. Prevention of foot ulcers in persons with diabetes at risk of ulceration: a systematic review and meta-analysis. Diabetes Metab Res Rev. 2023;40(3):e3652. doi:10.1002/dmrr.3652"
+    },
+    {
+     "id": "df_kb_golledge22",
+     "text": "Golledge J, Fernando ME, Alahakoon C, Lazzarini PA, Aan de Stegge WB, van Netten JJ, Bus SA. Efficacy of at home monitoring of foot temperature for risk reduction of diabetes-related foot ulcer: a meta-analysis. Diabetes Metab Res Rev. 2022;38(6):e3549. doi:10.1002/dmrr.3549"
+    },
+    {
+     "id": "df_kb_vannetten24",
+     "text": "van Netten JJ, Aan de Stegge WB, Dijkgraaf MGW, Bus SA. Cost-effectiveness of temperature monitoring to help prevent foot ulcer recurrence in people with diabetes: a multicenter randomized controlled trial. Diabetes Metab Res Rev. 2024;40(4):e3805. doi:10.1002/dmrr.3805"
+    },
+    {
+     "id": "df_kb_bus13",
+     "text": "Bus SA, Waaijman R, Arts M, de Haart M, Busch-Westbroek T, van Baal J, Nollet F. Effect of custom-made footwear on foot ulcer recurrence in diabetes: a multicenter randomized controlled trial. Diabetes Care. 2013;36(12):4109–4116. doi:10.2337/dc13-0996"
+    },
+    {
+     "id": "df_kb_dorresteijn14",
+     "text": "Dorresteijn JA, Kriegsman DM, Assendelft WJ, Valk GD. Patient education for preventing diabetic foot ulceration. Cochrane Database Syst Rev. 2014;(12):CD001488. doi:10.1002/14651858.CD001488.pub5"
+    },
+    {
+     "id": "df_kb_vannettenex23",
+     "text": "van Netten JJ, Sacco ICN, Lavery L, Monteiro-Soares M, Paton J, Rasmussen A, et al. Clinical and biomechanical effectiveness of foot-ankle exercise programs and weight-bearing activity in people with diabetes and neuropathy: a systematic review and meta-analysis. Diabetes Metab Res Rev. 2023;40(3):e3649. doi:10.1002/dmrr.3649"
+    }
+   ],
+   "stand": "2026-10",
+   "_review": false,
+   "slides": [
+    "kb_df_ueberblick",
+    "kb_df_ursachen",
+    "kb_df_diagnostik",
+    "kb_df_behandlung",
+    "kb_df_operativ",
+    "kb_df_praevention",
+    "kb_df_pflege",
+    "kb_df_quellen"
+   ]
   }
  },
  "NONOP_MASSNAHMEN": {
