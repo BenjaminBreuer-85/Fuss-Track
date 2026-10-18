@@ -129,6 +129,17 @@
   .btn-small { padding: 6px 12px; font-size: 13px; }
   .btn-large { padding: 14px 24px; font-size: 16px; }
   .btn-block { display: block; width: 100%; text-align: center; }
+  /* Tipp-Feedback: einheitlich für alle tippbaren Elemente (Buttons, Karten, Chips, Tabs, Listen).
+     Die Klasse is-pressed vergibt der Zuhörer beim App-Start (pointerdown/pointerup). */
+  button, .btn, .tap, .zl-btn, .phase, .modal-nav-btn, .fs-karte, .fs-schmal {
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+    user-select: none; -webkit-user-select: none;
+  }
+  .is-pressed { transform: scale(0.97); transition: transform 0.06s ease-out, background 0.06s, border-color 0.06s; }
+  .tap.is-pressed, .zl-btn.is-pressed { background: var(--c-bg) !important; border-color: var(--c-main) !important; }
+  .btn-primary.is-pressed { opacity: 0.8; }
+  .hotspot.is-pressed { opacity: 0.7; }
+  @media (prefers-reduced-motion: reduce) { .is-pressed { transform: none; } }
   /* Inputs */
   input[type="date"], input[type="text"], select {
     width: 100%; padding: 10px 12px;
@@ -498,6 +509,14 @@ let NONOP_AMPEL = {};    // Non-OP-Begleiter: Ampel-Bausteine (stufenloses Model
 let NONOP_MASSNAHMEN = {}; // Non-OP-Begleiter: allgemeine nicht-operative Maßnahmen (aus infomaterial.json)
 let KATALOG = null;   // Daten aus katalog.json (Beschwerde-Wegweiser) — null bevor geladen
 let BEGLEITER_BAUSTEINE = {}; // Schema 2: Bausteine des Begleiters (u. a. Feld meilenstein)
+
+// Tipp-Feedback für Karten, die sofort weiternavigieren: 120 ms gedrückt zeigen, dann handeln.
+function tapThen(e, fn) {
+  var el = e && e.currentTarget;
+  if (!el || !el.classList) { fn(); return; }
+  el.classList.add("is-pressed");
+  setTimeout(function() { el.classList.remove("is-pressed"); fn(); }, 120);
+}
 
 // Gesamtliste pro Variante: ONBOARDING + SHARED_PRE_OP + POST_OP[opKey][variantKey].
 // aufenthalt ("stationaer" | "ambulant") passt die Liste an den gewaehlten Weg an:
@@ -943,7 +962,7 @@ function FortsetzenBanner({ session, onFortsetzen, onSchliessen }) {
 
   return (
     <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
-      <div className="fs-karte" onClick={onFortsetzen}>
+      <div className="fs-karte" onClick={function(e){ tapThen(e, onFortsetzen); }}>
         {onSchliessen && (
           <button className="fs-x" aria-label="Karte ausblenden oder Verlauf löschen"
                   onClick={function(e){ e.stopPropagation(); onSchliessen(); }}>✕</button>
@@ -980,7 +999,7 @@ function FortsetzenZeile({ session, onFortsetzen }) {
   const name = session && session.opDatum ? (variante ? variante.anzeigename : "") : "OP-Datum eintragen";
   return (
     <div style={{ maxWidth: 680, margin: "12px auto 0", padding: "0 16px" }}>
-      <div className="fs-schmal" onClick={onFortsetzen}>
+      <div className="fs-schmal" onClick={function(e){ tapThen(e, onFortsetzen); }}>
         <span className="fs-schmal-text">Ihr OP-Begleiter: {name}</span>
         <span className="fs-schmal-weiter">Weiter ›</span>
       </div>
@@ -995,7 +1014,7 @@ function OpDisclaimerGate({ titel, onConfirm }) {
       <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
         <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{OP_DISCLAIMER_TITEL}</div>
         <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{OP_DISCLAIMER_TEXT}</div>
-        <div onClick={onConfirm}
+        <div className="tap" onClick={onConfirm}
              style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
           {OP_DISCLAIMER_BTN}
         </div>
@@ -1034,13 +1053,13 @@ function NavLeiste({ onBack, titel, zurueckLabel }) {
   return (
     <div className="nav-leiste">
       <div className="nl-seite">
-        {!istStart && <div onClick={zurueck} className="zl-btn">{zurueckLabel || "‹ Zurück"}</div>}
+        {!istStart && <div onClick={function(e){ tapThen(e, zurueck); }} className="zl-btn">{zurueckLabel || "‹ Zurück"}</div>}
       </div>
       <div className="nl-titel">{titel || "Fuss-Track"}</div>
       <div className="nl-seite nl-rechts">
-        <div onClick={istStart ? undefined : navZurStartseite} title="Zur Startseite"
+        <div onClick={istStart ? undefined : function(e){ tapThen(e, navZurStartseite); }} title="Zur Startseite"
              aria-disabled={istStart ? "true" : undefined}
-             className={"zl-btn" + (istStart ? " nl-aus" : "")}>⌂ Start</div>
+             className={"zl-btn tap" + (istStart ? " nl-aus" : "")}>⌂ Start</div>
       </div>
     </div>
   );
@@ -1608,7 +1627,7 @@ function NonOpView({ onBack, startKb }) {
         <div style={{ padding: "16px 18px", border: "1px solid #C99A06", borderRadius: 10, background: "rgba(245,158,11,.07)" }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: "#92670A", marginBottom: 10 }}>{DISCLAIMER_TITEL}</div>
           <div style={{ fontSize: 13.5, color: "var(--c-text)", lineHeight: 1.65, marginBottom: 16 }}>{DISCLAIMER_TEXT}</div>
-          <div onClick={onConfirm}
+          <div className="tap" onClick={onConfirm}
                style={{ textAlign: "center", padding: "13px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer", lineHeight: 1.4 }}>
             {DISCLAIMER_BTN}
           </div>
@@ -1627,7 +1646,7 @@ function NonOpView({ onBack, startKb }) {
             {items.map(function(it, i){
               var aktiv = i === activeIdx;
               return (
-                <div key={it.key} onClick={function(){ onJump(i); }}
+                <div className="tap" key={it.key} onClick={function(){ onJump(i); }}
                      style={{ flexShrink: 0, minWidth: it.wide ? "auto" : 38, height: 38, padding: it.wide ? "0 14px" : 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", borderRadius: it.wide ? 19 : "50%", cursor: "pointer", fontSize: 13, fontWeight: 700, lineHeight: 1, gap: 1,
                               background: aktiv ? "var(--c-main)" : "var(--c-bg)", color: aktiv ? "#fff" : "var(--c-text-muted)", border: aktiv ? "none" : "1px solid rgba(0,0,0,.10)" }}>
                   <span style={{ fontSize: 13 }}>{it.label}</span>
@@ -1640,10 +1659,10 @@ function NonOpView({ onBack, startKb }) {
         {(canPrev || canNext) && (
           <div style={{ marginTop: 20 }}>
             {canNext && (
-              <div onClick={onNext} style={{ textAlign: "center", padding: "14px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 15, fontWeight: 700, cursor: "pointer" }}>{weiterText || "Weiter →"}</div>
+              <div className="tap" onClick={onNext} style={{ textAlign: "center", padding: "14px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 15, fontWeight: 700, cursor: "pointer" }}>{weiterText || "Weiter →"}</div>
             )}
             {canPrev && (
-              <div onClick={onPrev} style={{ textAlign: "center", padding: "10px", marginTop: 8, color: "var(--c-text-muted)", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>← Zurück</div>
+              <div className="tap" onClick={onPrev} style={{ textAlign: "center", padding: "10px", marginTop: 8, color: "var(--c-text-muted)", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>← Zurück</div>
             )}
           </div>
         )}
@@ -1661,7 +1680,7 @@ function NonOpView({ onBack, startKb }) {
     if (!text && (!quellen || quellen.length === 0)) return null;
     return (
       <div style={{ marginBottom: 16, border: "1px solid rgba(44,79,124,.20)", borderRadius: 8, overflow: "hidden" }}>
-        <div onClick={function(){ setOffen(!offen); }}
+        <div className="tap" onClick={function(){ setOffen(!offen); }}
              style={{ padding: "9px 12px", background: "rgba(44,79,124,.05)", cursor: "pointer",
                       display: "flex", alignItems: "center", gap: 8 }}>
           <span style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, flex: 1 }}>
@@ -1717,7 +1736,7 @@ function NonOpView({ onBack, startKb }) {
           var offen = !!uebungOffen[mid];
           return (
             <div key={i} style={{ marginTop: 8, border: "1px solid rgba(0,0,0,.08)", borderRadius: 6, overflow: "hidden" }}>
-              <div onClick={function(){ toggleUebung(mid); }}
+              <div className="tap" onClick={function(){ toggleUebung(mid); }}
                    style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between", gap: 10 }}>
                 <span>{mn.titel}</span><span style={{ color: "var(--c-text-muted)" }}>{offen ? "▲" : "▼"}</span>
               </div>
@@ -1749,7 +1768,7 @@ function NonOpView({ onBack, startKb }) {
           {liste.map(function(m, i){
             var info = NONOP_MASSNAHMEN[m.ref] || {};
             return (
-              <div key={m.ref} onClick={function(){ setMassnahmeOffen(m.ref); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); }}
+              <div className="tap" key={m.ref} onClick={function(){ setMassnahmeOffen(m.ref); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); }}
                    style={{ padding: "10px 0", cursor: "pointer", borderBottom: i < liste.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <div style={{ flex: 1, fontSize: 13.5, fontWeight: 700, color: "var(--c-text)" }}>{info.titel || m.ref}</div>
@@ -1832,7 +1851,7 @@ function NonOpView({ onBack, startKb }) {
           var letzter = gesp.kbKey && NONOP_KB[gesp.kbKey];
           if (!letzter) return null;
           return (
-            <div onClick={function(){ setKbKey(gesp.kbKey); }}
+            <div className="tap" onClick={function(e){ tapThen(e, function(){ setKbKey(gesp.kbKey); }); }}
                  style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px", marginBottom: 14,
                           background: "rgba(44,79,124,.06)", border: "1px solid rgba(44,79,124,.25)",
                           borderRadius: 10, cursor: "pointer" }}>
@@ -1849,7 +1868,7 @@ function NonOpView({ onBack, startKb }) {
           {kbListe.map(function(k) {
             var kb = NONOP_KB[k];
             return (
-              <div key={k} onClick={function(){ setKbKey(k); setSeite(0); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
+              <div className="tap" key={k} onClick={function(e){ tapThen(e, function(){ setKbKey(k); setSeite(0); }); }} style={{ padding: "16px 18px", border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                 <div style={{ flex: 1, fontSize: 15, fontWeight: 700, color: "var(--c-text)" }}>{kb.label}</div>
                 <div style={{ fontSize: 28, lineHeight: 1, color: "var(--c-main)", fontWeight: 700, flexShrink: 0, paddingLeft: 6 }}>›</div>
               </div>
@@ -1928,7 +1947,7 @@ function NonOpView({ onBack, startKb }) {
             <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {stufen.length} Stufen</div>
             {stufen.map(function(st, i){
               return (
-                <div key={st.id} onClick={function(){ setStufe(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < stufen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                <div className="tap" key={st.id} onClick={function(){ setStufe(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < stufen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
                   <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{st.stufe}.</strong> {st.titel}{st.optional ? " (optional)" : ""}</div>
                   <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
                 </div>
@@ -2016,7 +2035,7 @@ function NonOpView({ onBack, startKb }) {
               var sel = ampelWahl === a.farbe;
               var bg = a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F9A825" : "#C62828";
               return (
-                <div key={a.farbe} onClick={function(){ waehleAmpel(a.farbe); }} style={{ flex: 1, textAlign: "center", padding: "12px 4px", borderRadius: 8, cursor: "pointer", background: sel ? bg : "var(--c-bg)", color: sel ? "#fff" : "var(--c-text)", border: sel ? "none" : "1px solid rgba(0,0,0,.12)" }}>
+                <div className="tap" key={a.farbe} onClick={function(){ waehleAmpel(a.farbe); }} style={{ flex: 1, textAlign: "center", padding: "12px 4px", borderRadius: 8, cursor: "pointer", background: sel ? bg : "var(--c-bg)", color: sel ? "#fff" : "var(--c-text)", border: sel ? "none" : "1px solid rgba(0,0,0,.12)" }}>
                   <div style={{ width: 20, height: 20, borderRadius: "50%", margin: "0 auto", background: a.farbe === "gruen" ? "#2E7D32" : a.farbe === "gelb" ? "#F0B429" : "#C62828" }}></div>
                   <div style={{ fontSize: 11, fontWeight: 700, marginTop: 2 }}>{a.label}</div>
                 </div>
@@ -2035,7 +2054,7 @@ function NonOpView({ onBack, startKb }) {
 
         <MassnahmenKachel liste={kb.weitereMassnahmen} />
 
-        <div onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8, marginTop: 14 }}>Programm zurücksetzen</div>
+        <div className="tap" onClick={resetAchillo} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginBottom: 8, marginTop: 14 }}>Programm zurücksetzen</div>
       </BlaetterRahmen>
     );
   }
@@ -2074,7 +2093,7 @@ function NonOpView({ onBack, startKb }) {
             <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {uebungen.length} Übungen</div>
             {uebungen.map(function(u, i){
               return (
-                <div key={u.id} onClick={function(){ geheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < uebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                <div className="tap" key={u.id} onClick={function(){ geheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < uebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
                   <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{u.nr}.</strong> {u.titel}</div>
                   <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
                 </div>
@@ -2188,7 +2207,7 @@ function NonOpView({ onBack, startKb }) {
               {ab.hinweis && <div style={{ fontSize: 13, fontWeight: 700, color: "#92670A", marginBottom: 6 }}>{ab.hinweis}</div>}
               {ab.studienlage && (
                 <div>
-                  <div onClick={function(){ setStudienOffen(!studienOffen); }} style={{ fontSize: 11.5, fontWeight: 600, color: "var(--c-main)", cursor: "pointer", marginTop: 4 }}>{studienOffen ? "▲ Studienlage ausblenden" : "▼ Studienlage anzeigen"}</div>
+                  <div className="tap" onClick={function(){ setStudienOffen(!studienOffen); }} style={{ fontSize: 11.5, fontWeight: 600, color: "var(--c-main)", cursor: "pointer", marginTop: 4 }}>{studienOffen ? "▲ Studienlage ausblenden" : "▼ Studienlage anzeigen"}</div>
                   {studienOffen && <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.55, marginTop: 6 }}>{ab.studienlage}</div>}
                 </div>
               )}
@@ -2199,14 +2218,14 @@ function NonOpView({ onBack, startKb }) {
           <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>{kb.ankerFrage || "Wann war der Unfall?"}</div>
           <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
             <input type="date" value={tempDatum} max={todayIso()} onChange={function(e){ setTempDatum(e.target.value); }} style={{ flex: 1, boxSizing: "border-box", padding: "10px 12px", fontSize: 15, border: "1px solid rgba(0,0,0,.15)", borderRadius: 8, color: "var(--c-text)" }} />
-            <div onClick={function(){ setTempDatum(todayIso()); }} style={{ padding: "10px 14px", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap", display: "flex", alignItems: "center" }}>Heute</div>
+            <div className="tap" onClick={function(){ setTempDatum(todayIso()); }} style={{ padding: "10px 14px", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: "pointer", whiteSpace: "nowrap", display: "flex", alignItems: "center" }}>Heute</div>
           </div>
           <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 14 }}>Die Belastungsstufen und Übungen richten sich nach dem Unfalltag. Idealerweise starten Sie direkt heute.</div>
           <div style={{ fontSize: 13, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Soll das Programm auch eine strukturierte Rückkehr in den ambitionierten Sport enthalten?</div>
           <div style={{ fontSize: 12, color: "var(--c-text-muted)", lineHeight: 1.5, marginBottom: 10 }}>Zusätzlich zu den Grundstufen 1–3 ergänzt dies die aufbauenden Stufen 4 & 5 (Rückkehr zu Training und Wettkampf). Für die meisten Alltags- und Freizeitaktivitäten sind die Stufen 1–3 ausreichend.</div>
           <div style={{ display: "flex", gap: 8 }}>
-            <div onClick={function(){ start(true); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Ja, mit Sport-Aufbau</div>
-            <div onClick={function(){ start(false); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "#fff", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Grundstufen genügen</div>
+            <div className="tap" onClick={function(){ start(true); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "var(--c-main)", color: "#fff", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Ja, mit Sport-Aufbau</div>
+            <div className="tap" onClick={function(){ start(false); }} style={{ flex: 1, textAlign: "center", padding: "12px", background: "#fff", border: "1px solid var(--c-main)", color: "var(--c-main)", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Grundstufen genügen</div>
           </div>
           <div style={{ fontSize: 11, color: "var(--c-text-muted)", marginTop: 8, textAlign: "center" }}>Die Sportler-Stufen 4 & 5 lassen sich später jederzeit ein- und ausblenden.</div>
         </div>
@@ -2244,7 +2263,7 @@ function NonOpView({ onBack, startKb }) {
         {kriterien.map(function(kr, i){
           var on = !!ck[i];
           return (
-            <div key={i} onClick={function(){ toggleCheck(sid, i); }} style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "6px 0", cursor: "pointer" }}>
+            <div className="tap" key={i} onClick={function(){ toggleCheck(sid, i); }} style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "6px 0", cursor: "pointer" }}>
               <div style={{ width: 18, height: 18, flexShrink: 0, borderRadius: 4, border: on ? "none" : "1.5px solid rgba(0,0,0,.25)", background: on ? "#2E7D32" : "#fff", color: "#fff", fontSize: 13, fontWeight: 700, textAlign: "center", lineHeight: "18px", marginTop: 1 }}>{on ? "✓" : ""}</div>
               <div style={{ fontSize: 13, color: "var(--c-text)", lineHeight: 1.45 }}>{kr}</div>
             </div>
@@ -2315,7 +2334,7 @@ function NonOpView({ onBack, startKb }) {
           var istAktuell = s.stufe === aktuelleStufe;
           var faellig = s.tagOffset <= tageSeitUnfall;
           return (
-            <div key={s.id} onClick={function(){ setSeite(i + 1); window.scrollTo(0, 0); }}
+            <div className="tap" key={s.id} onClick={function(){ setSeite(i + 1); window.scrollTo(0, 0); }}
                  style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10, padding: "12px 14px", cursor: "pointer", borderRadius: 10, border: istAktuell ? "2px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)", background: istAktuell ? "rgba(44,79,124,.06)" : "#fff" }}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: "var(--c-text)" }}>Stufe {s.stufe}: {s.titel}{s.optional && <span style={{ fontSize: 10, fontWeight: 600, color: "var(--c-text-muted)", marginLeft: 6 }}>· Sportler</span>}</div>
@@ -2328,10 +2347,10 @@ function NonOpView({ onBack, startKb }) {
           );
         })}
 
-        <div onClick={function(){ var nv = !zeigeSportler; setZeigeSportler(nv); persist({ zeigeSportler: nv }); }} style={{ marginTop: 6, textAlign: "center", padding: "10px", border: "1px dashed rgba(0,0,0,.18)", borderRadius: 8, fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)", cursor: "pointer" }}>
+        <div className="tap" onClick={function(){ var nv = !zeigeSportler; setZeigeSportler(nv); persist({ zeigeSportler: nv }); }} style={{ marginTop: 6, textAlign: "center", padding: "10px", border: "1px dashed rgba(0,0,0,.18)", borderRadius: 8, fontSize: 13, fontWeight: 600, color: "var(--c-text-muted)", cursor: "pointer" }}>
           {zeigeSportler ? "Sportler-Stufen (4 & 5) ausblenden" : "Sportler-Stufen (4 & 5) einblenden"}
         </div>
-        <div onClick={reset} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginTop: 14, textAlign: "center" }}>Unfalldatum ändern / zurücksetzen</div>
+        <div className="tap" onClick={reset} style={{ fontSize: 11, color: "#C62828", fontWeight: 600, cursor: "pointer", marginTop: 14, textAlign: "center" }}>Unfalldatum ändern / zurücksetzen</div>
       </div>
     );
   }
@@ -2378,7 +2397,7 @@ function NonOpView({ onBack, startKb }) {
               var uOpen = !!uebungOffen[uid];
               return (
                 <div key={i} style={{ marginTop: 8, border: "1px solid rgba(0,0,0,.08)", borderRadius: 6, overflow: "hidden" }}>
-                  <div onClick={function(){ toggleUebung(uid); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}>
+                  <div className="tap" onClick={function(){ toggleUebung(uid); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}>
                     <span>{u.name}</span><span style={{ color: "var(--c-text-muted)" }}>{uOpen ? "▲" : "▼"}</span>
                   </div>
                   {uOpen && (
@@ -2402,7 +2421,7 @@ function NonOpView({ onBack, startKb }) {
 
         {cAkt.testbatterie && (
           <div style={{ marginBottom: 12, border: "1px solid rgba(0,0,0,.10)", borderRadius: 8, overflow: "hidden" }}>
-            <div onClick={function(){ setTbOffen(!tbOffen); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}><span>{cAkt.testbatterie.titel}</span><span>{tbOffen ? "▲" : "▼"}</span></div>
+            <div className="tap" onClick={function(){ setTbOffen(!tbOffen); }} style={{ padding: "10px 12px", background: "var(--c-bg)", cursor: "pointer", fontWeight: 700, fontSize: 13, display: "flex", justifyContent: "space-between" }}><span>{cAkt.testbatterie.titel}</span><span>{tbOffen ? "▲" : "▼"}</span></div>
             {tbOffen && (
               <div style={{ padding: "12px 14px" }}>
                 <div style={{ marginBottom: 10 }}>{cAkt.testbatterie.intro}</div>
@@ -2492,7 +2511,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           {/* 1. Begleiter */}
-          <div onClick={function() { setBereich("begleiter"); setBegleiterTyp(null); }}
+          <div className="tap" onClick={function(e) { tapThen(e, function(){ setBereich("begleiter"); setBegleiterTyp(null); }); }}
                style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Begleiter</div>
@@ -2503,7 +2522,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
             {menuChevron}
           </div>
           {/* 2. Infomaterial */}
-          <div onClick={function() { setBereich("info"); setInfoKat(null); }}
+          <div className="tap" onClick={function(e) { tapThen(e, function(){ setBereich("info"); setInfoKat(null); }); }}
                style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Infomaterial</div>
@@ -2515,7 +2534,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
           </div>
           {/* 3. Beschwerde-Wegweiser */}
           {KATALOG && (
-            <div onClick={function() { window.location.href = buildUrl({ finder: "1" }); }}
+            <div className="tap" onClick={function(e) { tapThen(e, function(){ window.location.href = buildUrl({ finder: "1" }); }); }}
                  style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 17, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>Beschwerde-Wegweiser</div>
@@ -2616,7 +2635,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
               <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Das erwartet Sie: {mAbschnitte.length} Abschnitte</div>
               {mAbschnitte.map(function(a, i){
                 return (
-                  <div key={i} onClick={function(){ mGeheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mAbschnitte.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                  <div className="tap" key={i} onClick={function(){ mGeheZu(i + 1); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mAbschnitte.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
                     <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{i + 1}.</strong> {a.titel}</div>
                     <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
                   </div>
@@ -2628,7 +2647,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
                 <div style={{ fontSize: 12.5, fontWeight: 700, color: "var(--c-main)", marginBottom: 8 }}>Die Übungen: {mUebungen.length}</div>
                 {mUebungen.map(function(u, i){
                   return (
-                    <div key={u.id} onClick={function(){ mGeheZu(mAbschnitte.length + 1 + i); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mUebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
+                    <div className="tap" key={u.id} onClick={function(){ mGeheZu(mAbschnitte.length + 1 + i); }} style={{ display: "flex", alignItems: "center", gap: 10, padding: "9px 0", cursor: "pointer", borderBottom: i < mUebungen.length - 1 ? "1px solid rgba(0,0,0,.06)" : "none" }}>
                       <div style={{ flex: 1, fontSize: 13, color: "var(--c-text)" }}><strong>{u.nr}.</strong> {u.titel}</div>
                       <div style={{ fontSize: 13, color: "var(--c-text-muted)" }}>›</div>
                     </div>
@@ -2774,7 +2793,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {INFO_KATEGORIEN.map(function(kat) {
               return (
-                <div key={kat.key} onClick={function() { setInfoKat(kat.key); }}
+                <div className="tap" key={kat.key} onClick={function(ev) { tapThen(ev, function(){ setInfoKat(kat.key); }); }}
                      style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                   <div style={{ flex: 1 }}>
                     <div style={{ fontSize: 30, marginBottom: 6 }}>{kat.icon}</div>
@@ -2838,8 +2857,8 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
             {eintraege.map(function(e) {
               const titel = e.daten.infoTitel || e.daten.titel || e.key;
               return (
-                <div key={e.key}
-                     onClick={function() { if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung", nav: "1" }); } }}
+                <div className="tap" key={e.key}
+                     onClick={function(ev) { tapThen(ev, function(){ if (e.istMassnahme) { setMassnahmeSeite(0); setMassnahmeKey(e.key); if (typeof window !== "undefined" && window.scrollTo) window.scrollTo(0, 0); } else { window.location.href = buildUrl({ op: e.key, modus: "aufklaerung", nav: "1" }); } }); }}
                      style={{ padding: 16, border: "1px solid rgba(0,0,0,.12)", background: "#fff", borderRadius: 10, cursor: "pointer", transition: "all .15s", display: "flex", gap: 12, alignItems: "center", boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}
                      onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                   <div style={{ fontSize: 20, lineHeight: 1 }}>{aktiveKat.icon}</div>
@@ -2867,7 +2886,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
         </p>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {/* OP-Begleiter (aktiv) */}
-          <div onClick={function() { setBegleiterTyp("op"); setSelectedKb(null); setModus(null); }}
+          <div className="tap" onClick={function(e) { tapThen(e, function(){ setBegleiterTyp("op"); setSelectedKb(null); setModus(null); }); }}
                style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>OP-Begleiter</div>
@@ -2878,7 +2897,7 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
             {menuChevron}
           </div>
           {/* Non-OP-Begleiter (aktiv) */}
-          <div onClick={function() { setBegleiterTyp("nonop"); setSelectedKb(null); setModus(null); }}
+          <div className="tap" onClick={function(e) { tapThen(e, function(){ setBegleiterTyp("nonop"); setSelectedKb(null); setModus(null); }); }}
                style={menuCardStyle} onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 15, fontWeight: 700, color: "var(--c-text)", marginBottom: 4 }}>
@@ -2912,8 +2931,8 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 12, marginTop: 8 }}>
           {KRANKHEITSBILDER.map(function(kb) {
             return (
-              <div key={kb.key}
-                   onClick={function() { setSelectedKb(kb); setBaumPfad([]); setModus("begleitung"); }}
+              <div className="tap" key={kb.key}
+                   onClick={function(e) { tapThen(e, function(){ setSelectedKb(kb); setBaumPfad([]); setModus("begleitung"); }); }}
                    style={menuCardStyle}
                    onMouseEnter={cardHoverOn} onMouseLeave={cardHoverOff}>
                 <div style={{ flex: 1 }}>
@@ -2968,11 +2987,11 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           {knoten.optionen.map(function(opt, i) {
             return (
-              <div key={i}
-                   onClick={function() {
+              <div className="tap" key={i}
+                   onClick={function(e) { tapThen(e, function(){
                      if (opt.ziel) { goBegleitung(selectedKb, { opKey: opt.ziel.op, variant: opt.ziel.variante }); }
                      else { setBaumPfad(baumPfad.concat([i])); }
-                   }}
+                   }); }}
                    style={{ padding: "16px 18px", border: "2px solid var(--c-main)", background: "#fff", borderRadius: 8, cursor: "pointer", transition: "all .15s" }}
                    onMouseEnter={function(e) { e.currentTarget.style.background = "var(--c-bg)"; }}
                    onMouseLeave={function(e) { e.currentTarget.style.background = "#fff"; }}>
@@ -3014,8 +3033,8 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               {groups[groupName].map(function(op, i) {
                 return (
-                  <div key={i}
-                       onClick={function() { goBegleitung(selectedKb, op); }}
+                  <div className="tap" key={i}
+                       onClick={function(e) { tapThen(e, function(){ goBegleitung(selectedKb, op); }); }}
                        style={{
                          padding: "16px 18px",
                          border: "2px solid var(--c-main)",
@@ -3653,6 +3672,7 @@ function FootSvg({ ansicht, selectedRegions, onRegionClick, getRegionTitel }) {
   // Helfer für anklickbare Region (innerhalb SVG)
   function HotSpot({ regionId, d, points, cx, cy, r, x, y, width, height, label }) {
     const common = {
+      className: "hotspot",
       fill: fillFor(regionId),
       stroke: strokeFor(regionId),
       strokeWidth: isSelected(regionId) ? 2 : 1.5,
@@ -5361,7 +5381,7 @@ function HomescreenKarte({ onVerstanden, onSpaeter, alsSchritt }) {
         justifyContent: "space-between", gap: 10 }}>
       <span style={{ fontFamily: "'Source Serif 4',Georgia,serif", fontSize: 14, fontWeight: 700, color: "var(--c-main)" }}>
         Fuss-Track auf den Startbildschirm</span>
-      {!alsSchritt && <span onClick={onSpaeter} title="Später" role="button"
+      {!alsSchritt && <span className="tap" onClick={onSpaeter} title="Später" role="button"
         style={{ cursor: "pointer", fontSize: 17, lineHeight: 1, color: "var(--c-text-muted)", padding: "0 2px" }}>×</span>}
     </div>
     <div style={{ padding: "12px 16px 14px", fontSize: 13, lineHeight: 1.65, color: "var(--c-text)" }}>
@@ -5370,8 +5390,8 @@ function HomescreenKarte({ onVerstanden, onSpaeter, alsSchritt }) {
       </p>
       {schritte}
       {!alsSchritt && <div style={{ marginTop: 12, display: "flex", gap: 10, justifyContent: "flex-end" }}>
-        <span onClick={onSpaeter} style={{ fontSize: 12, color: "var(--c-text-muted)", cursor: "pointer" }}>Später</span>
-        <span onClick={onVerstanden} style={{ fontSize: 12, color: "var(--c-main)", fontWeight: 600,
+        <span className="tap" onClick={onSpaeter} style={{ fontSize: 12, color: "var(--c-text-muted)", cursor: "pointer" }}>Später</span>
+        <span className="tap" onClick={onVerstanden} style={{ fontSize: 12, color: "var(--c-main)", fontWeight: 600,
           textDecoration: "underline", cursor: "pointer" }}>Verstanden</span>
       </div>}
     </div>
@@ -5409,7 +5429,7 @@ function FooterLinks() {
   return (
     <div className="footer-links">
       {!inApp && <div style={{ marginBottom: 8 }}>
-        <span onClick={function(){ setTippOffen(!tippOffen); }}
+        <span className="tap" onClick={function(){ setTippOffen(!tippOffen); }}
           style={{ cursor: "pointer", color: "var(--c-main)", textDecoration: "underline" }}>
           Fuss-Track auf den Startbildschirm</span>
       </div>}
@@ -5509,6 +5529,22 @@ async function loadNonOpData() {
     console.warn("Non-OP-Daten nicht verfügbar:", e);
   }
 }
+
+// Tipp-Feedback: ein Zuhörer für alle tippbaren Elemente. Beim Drücken Klasse is-pressed,
+// beim Loslassen oder Abbruch (Wischen) wieder weg. Gilt für Maus, Finger und Stift.
+// Bewusst nicht über :active — das verhält sich bei Touch je nach Browser verschieden.
+(function() {
+  var SEL = "button, .btn, .tap, .zl-btn, .phase, .modal-nav-btn, .fs-karte, .fs-schmal, .hotspot";
+  var cur = null;
+  function loslassen() { if (cur) { cur.classList.remove("is-pressed"); cur = null; } }
+  document.addEventListener("pointerdown", function(e) {
+    var el = e.target && e.target.closest ? e.target.closest(SEL) : null;
+    if (!el || el.disabled) return;
+    cur = el; el.classList.add("is-pressed");
+  }, { passive: true });
+  document.addEventListener("pointerup", loslassen, { passive: true });
+  document.addEventListener("pointercancel", loslassen, { passive: true });
+})();
 
 loadPhasenData()
   .then(function() {
