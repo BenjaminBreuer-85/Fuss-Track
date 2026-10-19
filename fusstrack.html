@@ -140,6 +140,12 @@
   .btn-primary.is-pressed { opacity: 0.8; }
   .hotspot.is-pressed { opacity: 0.7; }
   @media (prefers-reduced-motion: reduce) { .is-pressed { transform: none; } }
+  /* Reiter der Artikel- und Maßnahmenansicht: feste Breite, Platz für zwei Zeilen, alle gleich groß */
+  .reiter { flex: 0 0 132px; width: 132px; height: 40px; padding: 4px 8px; border-radius: 6px;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+            font-size: 11px; line-height: 1.25; cursor: pointer; }
+  .reiter-txt { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+                hyphens: auto; -webkit-hyphens: auto; overflow-wrap: anywhere; }
   /* Inputs */
   input[type="date"], input[type="text"], select {
     width: 100%; padding: 10px 12px;
@@ -2735,14 +2741,12 @@ function LandingView({ initialKbKey, initialMassnahme, initialNonop, zeigeHomesc
                 var aktiv = i === mIdx;
                 var lbl = it.tab || it.label;
                 return (
-                  <button key={it.key} onClick={function(){ mGeheZu(i); }} title={lbl}
-                          style={{ flexShrink: 0, padding: "6px 10px", borderRadius: 6,
-                                   border: aktiv ? "1px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)",
+                  <button key={it.key} className="reiter" onClick={function(){ mGeheZu(i); }} title={lbl}
+                          style={{ border: aktiv ? "1px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)",
                                    background: aktiv ? "var(--c-main)" : "var(--c-card)",
-                                   color: aktiv ? "#fff" : "var(--c-text-muted)", fontSize: 11,
-                                   fontWeight: aktiv ? 700 : 500, cursor: "pointer", whiteSpace: "nowrap",
-                                   maxWidth: 160, textOverflow: "ellipsis", overflow: "hidden" }}>
-                    {(i + 1) + ". " + (lbl.length > 18 ? lbl.substring(0, 17) + "…" : lbl)}
+                                   color: aktiv ? "#fff" : "var(--c-text-muted)",
+                                   fontWeight: aktiv ? 700 : 500 }}>
+                    <span className="reiter-txt">{(i + 1) + ".\u00a0" + lbl}</span>
                   </button>
                 );
               })}
@@ -3428,25 +3432,18 @@ function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl, themaFe
           return (
             <button
               key={i}
+              className="reiter"
               onClick={function() { setStep(i); }}
               style={{
-                flexShrink: 0,
-                padding: "6px 10px",
-                borderRadius: 6,
                 border: active ? "1px solid var(--c-main)" : "1px solid rgba(0,0,0,.10)",
                 background: active ? "var(--c-main)" : "var(--c-card)",
                 color: active ? "#fff" : "var(--c-text-muted)",
-                fontSize: 11,
-                fontWeight: active ? 700 : 500,
-                cursor: "pointer",
-                whiteSpace: "nowrap",
-                maxWidth: 160,
-                textOverflow: "ellipsis",
-                overflow: "hidden"
+                fontWeight: active ? 700 : 500
               }}
               title={shortLabel}
             >
-              {i + 1}. {shortLabel.length > 18 ? shortLabel.substring(0, 17) + "…" : shortLabel}
+              {/* geschuetztes Leerzeichen nach der Nummer: sie soll nicht allein in der ersten Zeile stehen */}
+              <span className="reiter-txt">{(i + 1) + ".\u00a0" + shortLabel}</span>
             </button>
           );
         })}
@@ -3454,7 +3451,12 @@ function AufklaerungsView({ opKey, kbOrigin, kbInfoOrigin, begleiterUrl, themaFe
 
       <div style={{ background: "var(--c-card)", borderRadius: 12, boxShadow: "var(--c-shadow)",
                     padding: "20px 18px", minHeight: 240, overflow: "hidden", wordWrap: "break-word" }}>
-        {/* Slide-Titel entfernt – steht bereits in den Tabs */}
+        {/* Titel der Seite ausgeschrieben (die Reiter können lange Titel kürzen), wie in der Maßnahmenansicht */}
+        {current.titel && (
+          <div style={{ fontSize: 11, fontWeight: 700, color: "var(--c-main)", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>
+            {current.titel}
+          </div>
+        )}
         {current.untertitel && (
           <div style={{ fontSize: 14, fontWeight: 500, color: "var(--c-text)", marginBottom: 12 }}>
             {current.untertitel}
